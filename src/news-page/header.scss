@@ -1,0 +1,330 @@
+//body {width: 300px; margin: 0 auto}
+
+
+
+/////////////////////////////////////////////////////////////////////////////////
+//                                                                             //
+//                                                                             //
+//                                                                             //
+//                                   SCRIPTS                                   //
+//                                                                             //
+//                                                                             //
+//                                                                             //
+/////////////////////////////////////////////////////////////////////////////////
+
+
+@import '../utilities/utilities.scss';
+@include tablet {
+    body{ font-size: 20px;}
+}
+
+/////////////////////////////////////////////////////////////////////////////////
+//                                                                             //
+//                                                                             //
+//                                                                             //
+//                                  MOLECULES                                  //
+//                                                                             //
+//                                                                             //
+//                                                                             //
+/////////////////////////////////////////////////////////////////////////////////
+
+
+////////////////////////////////////////////////////////////////////////////////////////////
+// MOLECULE: COMNTENT THUMB
+
+
+
+.M__contentThumb-main {
+    width: 100%;
+    /* or whatever is required */
+    text-align: center;
+    /* ensures the image is always in the h-middle */
+    overflow: hidden;
+    /* hide the cropped portion */
+    height: 200px;
+    color: white;
+    margin-bottom: 18px;
+}
+.M__contentThumb-showcase {
+    margin-top: 15px;
+    display: none;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.M__contentThumb-image {
+    width: 100%;
+    position: relative;
+    /* allows repositioning */
+    left: 100%;
+    /* move the whole width of the image to the right */
+    margin-left: -200%;
+    /* magic! */
+}
+.M__contentThumb-container.u-absolute {
+    text-align: left;
+    width: 100%;
+    bottom: 0;
+}
+.M__contentThumb-label {
+    padding: 5px 15px 5px 10px;
+    ;
+    background: red;
+}
+.M__contentThumb-overlay {
+    padding: 0 20px;
+    background: rgba(0, 0, 0, 0.7);
+    height: 100px;
+    width: 100%;
+}
+.M__contentThumb-mediaPlay {
+    vertical-align: middle;
+    width: 70px;
+}
+.M__contentThumb-title {
+    font-weight: 700;
+    margin-top: 20px;
+}
+.M__contentThumb-date {
+    font-size: 13px;
+    color: #ccc;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+.M__contentThumb-subheading {
+    display: none;
+}
+
+
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////
+// MOLECULE: LEADERBOARD ADVERT
+
+
+
+
+#__leaderboard-main {
+    background: blue;
+}
+#__leaderboard-centre {
+    width: em(968);
+    margin: 0 auto;
+}
+@include tablet {
+    #__leaderboard-centre {
+        width: em(680);
+        margin: 0 auto;
+    }
+}
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////
+// MOLECULE: HEADING  
+
+.M__heading-main {
+    border-bottom: solid em(8) black;
+    font-family: "Roboto Condensed";
+    font-weight: 700;       
+    text-transform: uppercase;
+}
+.M__heading-title {
+    background: #ed1b25;
+    font-size: em(26);
+    color: white;
+    text-align: center;
+    padding: em(3) em(8) em(3) em(6);
+
+}
+.M__heading-prompt {
+    background: grey;
+    color: black;
+    font-size: em(16);
+    text-align: center;
+    padding: em(3) em(8) em(3) em(6);
+
+}
+
+
+.M__introParagraph-main {
+    background: #eeeeee;
+    padding: em(10) em(15);
+}
+
+@include mobile {
+    .M__heading-title {width: 100%;}
+}
+
+
+////////////////////////////////////////////////////////////////////////////////////////////
+// MOLECULE: CONTENT BUTTON
+
+.M__contentButton-main {
+    width: 100%;
+    padding: 11px;
+    font: 700 em(16) "Roboto Condensed";
+    text-transform: uppercase;
+    background: #eee;
+    border: none;
+    color: black;
+    cursor: pointer;
+        &:hover{background: #b8b8b8;}
+}
+.M__contentButton-main--filter {
+    width: 100%;
+    border-bottom: 2px solid white;
+}
+
+.M__contentButton-main--pagination{
+text-align: center;}
+
+@include mobile {
+    .M__contentButton-main {height: 100px;}
+}
+
+
+
+/////////////////////////////////////////////////////////////////////////////////
+//                                                                             //
+//                                                                             //
+//                                                                             //
+//                                  ORGANISMS                                  //
+//                                                                             //
+//                                                                             //
+//                                                                             //
+/////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////
+// ORGANISM: CATEGORY LIST  
+
+.O__categoryList-item {
+    width: col(3);
+    padding: 0 10px;
+}
+.O__categoryList-item:nth-of-type(3n+1) {
+    padding-left: 0;
+}
+.O__categoryList-item:nth-of-type(3n) {
+    padding-right: 0;
+}
+.O__categoryList-item:nth-child(1) {
+    width: col(1);
+    padding: 0
+}
+.O__categoryList-item:nth-child(1) .M__contentThumb-showcase {
+    display: block;
+}
+.O__categoryList-item:nth-child(-n+3) .M__contentThumb-title {
+    font: 700 38px "Roboto Condensed";
+    margin-top: 10px
+}
+.O__categoryList-item:nth-child(2) .M__contentThumb-title,
+.O__categoryList-item:nth-child(3) .M__contentThumb-title {
+    margin-top: 30px
+}
+.O__categoryList-item:nth-child(-n+3) .M__contentThumb-subheading {
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 40px
+}
+.O__categoryList-item:nth-child(-n+3) .M__contentThumb-date {
+    display: none;
+}
+.O__categoryList-item:nth-child(1) .M__contentThumb-main {
+    height: 450px;
+}
+.O__categoryList-item:nth-child(2) {
+    width: col(2);
+    padding-left: 0
+}
+.O__categoryList-item:nth-child(2) .M__contentThumb-main {
+    height: 300px;
+}
+.O__categoryList-item:nth-child(3) {
+    width: col(2);
+    padding-right: 0
+}
+.O__categoryList-item:nth-child(3) .M__contentThumb-main {
+    height: 300px;
+}
+O__categoryList-heading {
+    width: 100%;
+    margin-top: 60px;
+}
+
+////////////////////////////////////////////////////////////////////////////////////////////
+// ORGANISM: PAGINATION NUMBERS LIST           
+.O__paginationNumbers-item {width: 41px; margin-left: 5px;}
+
+
+
+/////////////////////////////////////////////////////////////////////////////////
+//-----------------------------------------------------------------------------//
+//-----------------------------------------------------------------------------//
+//-----------------------------------------------------------------------------//
+//---------------------------------- LAYOUT -----------------------------------//
+//-----------------------------------------------------------------------------//
+//-----------------------------------------------------------------------------//
+//-----------------------------------------------------------------------------//
+/////////////////////////////////////////////////////////////////////////////////
+
+
+
+//0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+// HEADER
+
+
+
+#__topNav-main {background: #26292a; color: white; }
+#__menuContent-main {background: red;}
+#__menuContent-centre {width: em(1255); margin: 0 auto;}
+#__mainNav-main {background: #efefef}
+#__mainNav-centre {width: em(1255); margin: 0 auto;}
+#__secondaryNav-main {background: #cdcdcd; }
+#__secondaryNav-centre {width: em(1255); margin: 0 auto;}
+
+
+
+
+//0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+    // MAIN
+
+
+
+#__content-main {padding-top: 80px; padding-bottom: 60px;}
+
+#__intro-centre {width: em(1255); margin: 0 auto;}
+#__intro-row2-col1 {width: em(827)}
+#__intro-row2-col2 {width: em(400)}
+
+#__pagination-main {margin-top: 60px;}
+#__pagination-centre {margin: 0 auto;}
+#__pageination-row1-col1 {width: em(217); margin-right: 10px;}
+#__pageination-row1-col2 {width: em(217); }
+#__pageination-row2  {margin: 0 auto; margin-top: 15px;}
+
+#__categoryList-main {margin-top: 60px;}
+#__categoryList-centre {width: em(1255); margin: 0 auto;}
+#__categoryList-main {width: 100%;}
+
+
+@include mobile {
+    //body {background: green !important;}
+    #__intro-centre {width: 90%}
+    #__intro-row2-col1 {display: none}
+    #__intro-row2-col2 {float: none; width: 100%}
+}
+
+@include mobile {
+    //body {background: green !important;}
+    #__categoryList-centre {width: 90%}
+
+}
+
+
