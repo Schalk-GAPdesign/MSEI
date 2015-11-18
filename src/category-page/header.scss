@@ -1,10 +1,3 @@
-
-
-
-
-@import '../utilities/spritesheet.scss';
-
-
 //body {width: 300px; margin: 0 auto}
 
 
@@ -21,17 +14,9 @@
 
 
 @import '../utilities/utilities.scss';
-//@include tablet {
-/////    body{ font-size: 20px;}
-//}
-
-
-
-
-
-
-
-
+@include tablet {
+    body{ font-size: 20px;}
+}
 
 /////////////////////////////////////////////////////////////////////////////////
 //                                                                             //
@@ -145,7 +130,6 @@
     font-family: "Roboto Condensed";
     font-weight: 700;       
     text-transform: uppercase;
-height: 51px;
 }
 .M__heading-title {
     background: #ed1b25;
@@ -153,24 +137,16 @@ height: 51px;
     color: white;
     text-align: center;
     padding: em(3) em(8) em(3) em(6);
-    height: 100%;
 
 }
 .M__heading-prompt {
-    height:100%;
-    background: #cdcdcd;
+    background: grey;
     color: black;
     font-size: em(16);
     text-align: center;
     padding: em(3) em(8) em(3) em(6);
-    padding: 13px 12px;
-       &:hover{background: #b8b8b8; color: white;}
-        &:hover .sprite-arrow-grey {@extend .sprite-arrow-white}
 
 }
-.M__heading-arrow {margin-top: 1px;}
-
-.M__heading-promptText {margin-right: 10px;}
 
 
 .M__introParagraph-main {
@@ -320,143 +296,35 @@ O__categoryList-heading {
     // MAIN
 
 
-#__articleHeader-centre{width: 1255px; margin: 0 auto; }
-#__articleContent-centre{width: 1255px; margin: 0 auto;}
-#__articleFooter-centre{width: 1255px; margin: 0 auto;}
+
+#__content-main {padding-top: 80px; padding-bottom: 60px;}
+
+#__intro-centre {width: em(1255); margin: 0 auto;}
+#__intro-row2-col1 {width: em(827)}
+#__intro-row2-col2 {width: em(400)}
+
+#__pagination-main {margin-top: 60px;}
+#__pagination-centre {margin: 0 auto;}
+#__pageination-row1-col1 {width: em(217); margin-right: 10px;}
+#__pageination-row1-col2 {width: em(217); }
+#__pageination-row2  {margin: 0 auto; margin-top: 15px;}
+
+#__categoryList-main {margin-top: 60px;}
+#__categoryList-centre {width: em(1255); margin: 0 auto;}
+#__categoryList-main {width: 100%;}
 
 
-#__articleHeader-col1 {width: 860px};
+@include mobile {
+    //body {background: green !important;}
+    #__intro-centre {width: 90%}
+    #__intro-row2-col1 {display: none}
+    #__intro-row2-col2 {float: none; width: 100%}
+}
 
-#__articleContent-col2 {margin-left: 150px;}
+@include mobile {
+    //body {background: green !important;}
+    #__categoryList-centre {width: 90%}
 
-#__articleHeader-main {height: 500px};
-
-
-.M__featuredImage-container{ width: 100%;
-    /* or whatever is required */
-    text-align: center;
-    /* ensures the image is always in the h-middle */
-    overflow: hidden;
-    /* hide the cropped portion */
-    height: 430px;
-    color: white;
-    margin-bottom: 18px;}
-
-.M__featuredImage-image{
-    height: 430px;
-    position: relative;
-    /* allows repositioning */
-    left: 100%;
-    /* move the whole width of the image to the right */
-    margin-left: -200%;
-    /* magic! */
-    
 }
 
 
-.M__featuredImage-label{background: red; bottom: 0;
-
- padding: 5px 15px 5px 10px;
-    color: white;
-    background: red;
-    margin-left: 20%;
-}
-
-
-.M__largeSkyscraperAdvert-main{
-    margin-top: 40px;
-    padding: 30px;
-    background: #eeeeee;
-    border: solid 1px #cdcdcd;
-}
-.M__largeSkyscraperAdvert-title{
-    font-size: 13px;
-    color: #a5a5a5;
-    text-transform: uppercase;
-    text-align: center;
-    letter-spacing: 1px;
-    margin-bottom: 10px;
-    font-weight: 700;
-}
-
-.M__largeSkyscraperAdvert-image{}
-
-
-#__content-main{padding: 90px  0 0 0}
-#__articleHeader-centre{width: 1255px;}
-
-#__articleContent-col1-row1 {width: 110px;}
-    
-.A__smallTitle-main
-{
-text-transform: uppercase;
-    white-space: nowrap;
-    font: 700 16px "Roboto Condensed";
-    color: #aaaaaa;
-    
-}
-.A__smallTitle-main--socialShare{
-    text-align: center;}
-
-    .M__socialShareButton-main {
-    padding: 7px 4px;
-    border-bottom: 1px solid #cdcdcd;
-    color: #999999;
-    &:hover {
-        background: #b8b8b8;
-        color: white
-    }
-    &:hover .sprite-facebook-share-01 {
-       @extend .sprite-facebook-share-white;
-    }
-    &:hover .sprite-Twitter-share-01 {
-        @extend .sprite-Twitter-share-white;
-    }
-    &:hover .sprite-Google-share-01 {
-        @extend .sprite-Google-share-white;
-    }
-    &:hover .sprite-Linkedin-share-01 {
-        @extend .sprite-Linkedin-share-white;
-    }
-    &:hover .sprite-Comment-share-01 {
-        @extend .sprite-Comment-share-white;
-    }
-    &:hover .sprite-Email-share-01 {
-        @extend .sprite-Email-share-white;
-    }
-
-
-
-
-}
-.M__socialShareButton-text {
-    text-transform: uppercase;
-    font-size: 13px;
-    font-weight: 700;
-    padding: 8px 0 8px 10px;
-}
-
-#__articleFooter-main{background: #eeeeee; padding-top: 60px;}
-#__articleFooter-col1{width: 827px;}
-#__articleFooter-col1-row3{padding-top: 60px;}
-
-
-.M__shortcodeBox-main{
-  
-    padding: 30px;
-    background: #eeeeee;
-border: solid 1px #cdcdcd;}
-
-#__articleFooter-col2-row2 {width: 400px;}
-
-
-.O__socialShareList-main {border-top: 1px solid #cdcdcd;}
-
-
-
-
-
-.M_textPrompt-main{color: black; background: white; border: 1px solid #cdcdcd; height: 43px; padding: 10px 12px; text-transform: uppercase; font-weight: 700; font-family: "Roboto Condensed"; &:hover{background: #b8b8b8; color: white;}
-&:hover .sprite-arrow-grey {@extend .sprite-arrow-white}}
-.M_textPrompt-text{}
-.M_textPrompt-arrow{}
