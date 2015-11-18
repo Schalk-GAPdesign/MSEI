@@ -1,3 +1,16 @@
+mixin M__pullQuote(Quote)
+    .M__pullQuote-main.u-floatRight
+            .M__pullQuote-quote.u-cf
+                .M__pullQuote-text "#{Quote}"
+                .M__pullQuote-icon.sprite.sprite-twitter-quote-01.u-floatLeft
+                .M__pullQuote-retweet.u-floatLeft Retweet this Quote
+
+
+//-////////////////^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ NEW
+
+
+
+
 |<!doctype html>
 |<html>
 |<head>
@@ -5,47 +18,73 @@ link(rel="stylesheet" type="text/css" href="css/stylesheet.css")
 |<meta charset="utf-8">
 |</head>
 |<body>
-//-
-//-
-//-///////////////////////////////////////////////////////////////////////////////
-//-                                                                             //
-//-                                                                             //
-//-                                                                             //
-//-                                 JSON IMPORT                                 //
-//-                                                                             //
-//-                                                                             //
-//-                                                                             //
-//-///////////////////////////////////////////////////////////////////////////////
-//-
-//-
-//- JSON HEADER
-//-
-//-
-- var head = {"static":{"topNav":[{"text":"About us","link":"*insert"},{"text":"Advertise","link":"*insert"},{"text":"Contact Us","link":"*insert"},{"text":"Register","link":"*insert"}],"mainNav":[{"text":"News","arrow":false,"link":"*insert","active":false},{"text":"Features","arrow":false,"link":"*insert","active":false},{"text":"Magazine","arrow":true,"link":"*insert","active":false},{"text":"Reports","arrow":false,"link":"*insert","active":false},{"text":"Tenders","arrow":false,"link":"*insert","active":false},{"text":"Multimedia","arrow":false,"link":"*insert","active":true},{"text":"Partners","arrow":false,"link":"*insert","active":false},{"text":"News","arrow":false,"link":"*insert","active":false}],"secondaryNav":[{"text":"Video","link":"*insert","active":false},{"text":"Audio","link":"*insert","active":false},{"text":"Webinar Archive","link":"*insert","active":false}]},"dynamic":{"page":{"signin":true,"account":"John Smith"},"adverts":{"leaderboard":{"desktop":"Community_968x100.jpg","tablet":"Community_680x100.jpg","color":"#017795"},"superbanner":"*insert"}}}
-//-
-//-
+
+/////////////////////////////////////////////////////////////////////////////////
+//                                                                             //
+//                                                                             //
+//                                                                             //
+//                                   IMPORTS                                   //
+//                                                                             //
+//                                                                             //
+//                                                                             //
+/////////////////////////////////////////////////////////////////////////////////
+
+
 //- JSON CONTENT
-//-
-//-
+- var head = {"static":{"topNav":[{"text":"About us","link":"*insert"},{"text":"Advertise","link":"*insert"},{"text":"Contact Us","link":"*insert"},{"text":"Register","link":"*insert"}],"mainNav":[{"text":"News","arrow":false,"link":"*insert","active":false},{"text":"Features","arrow":false,"link":"*insert","active":false},{"text":"Magazine","arrow":true,"link":"*insert","active":false},{"text":"Reports","arrow":false,"link":"*insert","active":false},{"text":"Tenders","arrow":false,"link":"*insert","active":false},{"text":"Multimedia","arrow":false,"link":"*insert","active":true},{"text":"Partners","arrow":false,"link":"*insert","active":false},{"text":"News","arrow":false,"link":"*insert","active":false}],"secondaryNav":[{"text":"Video","link":"*insert","active":false},{"text":"Audio","link":"*insert","active":false},{"text":"Webinar Archive","link":"*insert","active":false}]},"dynamic":{"page":{"signin":true,"account":"John Smith"},"adverts":{"leaderboard":{"desktop":"Community_968x100.jpg","tablet":"Community_680x100.jpg","color":"#017795"},"superbanner":"*insert"}}}
+
+//- JSON CONTENT
 - var content = {"static":{"pageContent":{"heading":{"title":"News Story","prompt":"Leave a Comment","link":true}},"comments":{"display":true,"heading":{"title":"Join the Discussion","prompt":"","link":false}},"socialShare":[{"icon":"facebook-share-01","prompt":"Share"},{"icon":"Twitter-share-01","prompt":"Share"},{"icon":"Linkedin-share-01","prompt":"Share"},{"icon":"Google-share-01","prompt":"Share"},{"icon":"Email-share-01","prompt":"Share"},{"icon":"Comment-share-01","prompt":"Share"}],"submitButtons":["Use Submit News Form","Send us an Email"]},"dynamic":{"socialShare":{"**Awaiting":""},"pullQuote":{"text":"Nullam sagittis. Maecenas malesuada. Etiam sollicitudin, ipsum eu pulvinar rutrum, tellus ipsum laoreet sapien, quis venenatis ante odio sit amet eros. Nulla facilisi..\r\n\r\nPellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque rutrum. Cras risus ipsum, faucibus ut, ullamcorper id, varius ac, leo. Suspendisse eu ligula. Vestibulum dapibus nunc ac augue.","source":"Donec interdum metus et hendrerit"},"pageContent":{"title":"Aenean ut eros et nisl","subHeading":"Vestibulum fringilla pede sit amet augue. Donec interdum, metus et hendrerit aliquet, dolor diam sagittis ligula, eget egestas libero turpis vel mi. Fusce egestas elit eget lorem. Phasellus blandit leo ut odio. Nunc interdum lacus sit amet orci.\r\n\r\nFusce fermentum odio nec arcu. Proin magna. Aenean ut eros et nisl sagittis vestibulum. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Cras sagittis.","wordpressContent":"placeholder","featuredImage":""},"relatedContent":[{"label":"Industry Insights","title":"SGIP Collaboration","date":"11 September 2015","image":"*insert","link":"http://www.google.com"},{"label":"Industry Insights","title":"SGIP Collaboration","date":"11 September 2015","image":"*insert","link":"http://www.google.com"},{"label":"Industry Insights","title":"SGIP Collaboration","date":"11 September 2015","image":"*insert","link":"http://www.google.com"},{"label":"Industry Insights","title":"SGIP Collaboration","date":"11 September 2015","image":"*insert","link":"http://www.google.com"}]}}
 
-//-
-//-
-//- JSON FOOTER
-//-
-//-
-//-//////////////////////////////////////////////////////////////////////////////////////////
-//- MOLECULE: LARGE SKYSCRAPER ADVERT       
-    
-    
+
+//-///////////////////////////////////////////////////////////////////////////////
+//-                                                                             //
+//-                                                                             //
+//-                                                                             //
+//-                                                                             //
+//-                                                                             //
+//-                                                                             //
+//-                                     A                                       //
+//-                                    A A                                      //
+//-                                   A   A                                     //
+//-                                  AAAAAAA                                    //
+//-                                 A       A                                   //
+//-                                A         A                                  //
+//-                                                                             //
+//-                                                                             //
+//-                                                                             //
+//-                                                                             //
+//-                                                                             //
+//-                                                                             //
+//-                                                                             //
+//-///////////////////////////////////////////////////////////////////////////////
+
+
+//-///////////////////////////////////////////////////////////////////////////////
+//-                                                                             //
+//-                                                                             //
+//-    ATOM                                                                     //
+//-   ---------------                                                           //
+//-    SMALL TITLE                                                              //
+//-                                                                             //
+//-                                                                             //
+//-///////////////////////////////////////////////////////////////////////////////
+
+
 mixin A__smallTitle(modifier, text)
     if(modifier=='--socialShare')
         .A__smallTitle-main.A__smallTitle-main--socialShare= text
     else
         .A__smallTitle-main= text
-    
+
 
 //-///////////////////////////////////////////////////////////////////////////////
+//-                                                                             //
+//-                                                                             //
+//-                                                                             //
+//-                                                                             //
+//-                                                                             //
+//-                                                                             //
 //-                                                                             //
 //-                                  M     M                                    //
 //-                                  MM   MM                                    //
@@ -53,16 +92,29 @@ mixin A__smallTitle(modifier, text)
 //-                                  M  M  M                                    //
 //-                                  M     M                                    //
 //-                                                                             //
+//-                                                                             //
+//-                                                                             //
+//-                                                                             //
+//-                                                                             //
+//-                                                                             //
+//-                                                                             //
 //-///////////////////////////////////////////////////////////////////////////////
 
 
-//-//////////////////////////////////////////////////////////////////////////////////////////
-//- MOLECULE: COMNTENT THUMB
+//-///////////////////////////////////////////////////////////////////////////////
+//-                                                                             //
+//-                                                                             //
+//-    MOLECULE                                                                 //
+//-   ---------------                                                           //
+//-    CONTENT THUMB                                                            //
+//-                                                                             //
+//-                                                                             //
+//-///////////////////////////////////////////////////////////////////////////////
 
 
 mixin M__contentThumb()
     .M__contentThumb-main.u-relative(style="background: lightgrey;")
-       
+
         picture
             img.M__contentThumb-image(src="http://lorempixel.com/400/200")
         .M__contentThumb-container.u-absolute
@@ -78,24 +130,46 @@ mixin M__contentThumb()
                         .M__contentThumb-date 11 SEPTEMBER 2015
 
 
-
-//-//////////////////////////////////////////////////////////////////////////////////////////
-//- MOLECULE: LEADERBOARD ADVERT
+//-///////////////////////////////////////////////////////////////////////////////
+//-                                                                             //
+//-                                                                             //
+//-    MOLECULE                                                                 //
+//-   ---------------                                                           //
+//-    LEADER BOARD ADVERT                                                      //
+//-                                                                             //
+//-                                                                             //
+//-///////////////////////////////////////////////////////////////////////////////
 
 
 mixin M__leaderboardAdvert
     picture
         img.M__leaderboardAdvert-image(src="#{head.dynamic.adverts.leaderboard.desktop}")
 
-//-//////////////////////////////////////////////////////////////////////////////////////////
-//- MOLECULE: TOP NAV BUTTON
+
+//-///////////////////////////////////////////////////////////////////////////////
+//-                                                                             //
+//-                                                                             //
+//-    MOLECULE                                                                 //
+//-   ---------------                                                           //
+//-    TOP NAV BUTTON                                                           //
+//-                                                                             //
+//-                                                                             //
+//-///////////////////////////////////////////////////////////////////////////////
 
 
 mixin M__topNavButton
     | ::
 
-//-//////////////////////////////////////////////////////////////////////////////////////////
-//- MOLECULE: FILTER BUTTON
+
+//-///////////////////////////////////////////////////////////////////////////////
+//-                                                                             //
+//-                                                                             //
+//-    MOLECULE                                                                 //
+//-   ---------------                                                           //
+//-    FILTER BUTTON                                                            //
+//-                                                                             //
+//-                                                                             //
+//-///////////////////////////////////////////////////////////////////////////////
 
 
 mixin M__filterButton(title, dropdown, ...options )
@@ -113,16 +187,30 @@ mixin M__filterButton(title, dropdown, ...options )
             .M__contentButton-main.M__contentButton-main--filter= title
 
 
-//-//////////////////////////////////////////////////////////////////////////////////////////
-//- MOLECULE: INTRO PARAGRAPH
+//-///////////////////////////////////////////////////////////////////////////////
+//-                                                                             //
+//-                                                                             //
+//-    MOLECULE                                                                 //
+//-   ---------------                                                           //
+//-    INTRO PARAGRAPH DIV                                                      //
+//-                                                                             //
+//-                                                                             //
+//-///////////////////////////////////////////////////////////////////////////////
 
 
 mixin M__introParagraph(text1)
     .M__introParagraph-main= text1
 
 
-//-//////////////////////////////////////////////////////////////////////////////////////////
-//-MOLECULE: HEADING
+//-///////////////////////////////////////////////////////////////////////////////
+//-                                                                             //
+//-                                                                             //
+//-    MOLECULE                                                                 //
+//-   ---------------                                                           //
+//-    HEADING                                                                  //
+//-                                                                             //
+//-                                                                             //
+//-///////////////////////////////////////////////////////////////////////////////
 
 
 mixin M__heading(text1, text2, link)
@@ -136,17 +224,32 @@ mixin M__heading(text1, text2, link)
                     if link
                         .M__heading-arrow.sprite.sprite-arrow-grey.u-floatRight
 
-//-//////////////////////////////////////////////////////////////////////////////////////////
-//- MOLECULE: PAGANIATION BUTTON
+
+//-///////////////////////////////////////////////////////////////////////////////
+//-                                                                             //
+//-                                                                             //
+//-    MOLECULE                                                                 //
+//-   ---------------                                                           //
+//-    PAGINATION BUTTON                                                        //
+//-                                                                             //
+//-                                                                             //
+//-///////////////////////////////////////////////////////////////////////////////
 
 
 mixin M__paginationButton(text)
     a.u-noUnderline(href="#")
         .M__contentButton-main.M__contentButton-main--pagination= text
-        
-        
-//-//////////////////////////////////////////////////////////////////////////////////////////
-//- MOLECULE: PAGANIATION BUTTON
+
+
+//-///////////////////////////////////////////////////////////////////////////////
+//-                                                                             //
+//-                                                                             //
+//-    MOLECULE                                                                 //
+//-   ---------------                                                           //
+//-    FEATURED IMAGE                                                           //
+//-                                                                             //
+//-                                                                             //
+//-///////////////////////////////////////////////////////////////////////////////
 
 mixin M__featuredImage(url, label)
     .M__featuredImage-main.u-relative
@@ -154,23 +257,38 @@ mixin M__featuredImage(url, label)
             picture
                 img.M__featuredImage-image(src="#{url}")
         .M__featuredImage-label.u-absolute= label
-        
-        
- //-//////////////////////////////////////////////////////////////////////////////////////////
-//- MOLECULE: LARGE SKYSCRAPER ADVERT    
-     
-mixin M__largeSkyscraperAdvert
-    .M__largeSkyscraperAdvert-main
-        .M__largeSkyscraperAdvert-title Advertisement
-        picture
-            img.M__largeSkyscraperAdvert-image(src="http://lorempixel.com/300/600")
-        
-            
 
-  //-//////////////////////////////////////////////////////////////////////////////////////////
-//- MOLECULE: LARGE SKYSCRAPER ADVERT         
-    
-     
+
+//-///////////////////////////////////////////////////////////////////////////////
+//-                                                                             //
+//-                                                                             //
+//-    MOLECULE                                                                 //
+//-   ---------------                                                           //
+//-    LARGE SKYSCRAPER BANNER                                                  //
+//-                                                                             //
+//-                                                                             //
+//-///////////////////////////////////////////////////////////////////////////////
+
+mixin M__largeSkyscraperAdvert
+    a(href="#").u-noUnderline
+        .M__largeSkyscraperAdvert-main
+            .M__largeSkyscraperAdvert-container
+                .M__largeSkyscraperAdvert-title Advertisement
+                picture
+                    img.M__largeSkyscraperAdvert-image(src="http://lorempixel.com/300/600")
+
+
+//-///////////////////////////////////////////////////////////////////////////////
+//-                                                                             //
+//-                                                                             //
+//-    MOLECULE                                                                 //
+//-   ---------------                                                           //
+//-    SOCIAL SHARE BUTTON                                                      //
+//-                                                                             //
+//-                                                                             //
+//-///////////////////////////////////////////////////////////////////////////////
+
+
 mixin M__socialShareButton(icon, text)
     a(href="#")
         .M__socialShareButton-main.u-cf
@@ -178,10 +296,17 @@ mixin M__socialShareButton(icon, text)
                 picture
                     .M__socialShareList-icon.sprite(class="sprite-#{icon}")
             .M__socialShareButton-text.u-floatLeft= text
-    
 
-  //-//////////////////////////////////////////////////////////////////////////////////////////
-//- MOLECULE: LARGE SKYSCRAPER ADVERT        
+
+//-///////////////////////////////////////////////////////////////////////////////
+//-                                                                             //
+//-                                                                             //
+//-    MOLECULE                                                                 //
+//-   ---------------                                                           //
+//-    TEXT PROMPT                                                              //
+//-                                                                             //
+//-                                                                             //
+//-///////////////////////////////////////////////////////////////////////////////
 
 
 mixin M__textPrompt(text)
@@ -190,7 +315,32 @@ mixin M__textPrompt(text)
             .M_textPrompt-text.u-floatLeft= text
             .M_textPrompt-arrow.sprite.sprite-arrow-grey.u-floatRight
 
+
 //-///////////////////////////////////////////////////////////////////////////////
+//-                                                                             //
+//-                                                                             //
+//-    MOLECULE                                                                 //
+//-   ---------------                                                           //
+//-    TEXT PROMPT                                                              //
+//-                                                                             //
+//-                                                                             //
+//-///////////////////////////////////////////////////////////////////////////////
+
+
+mixin M__textPrompt(text)
+    a(href="#")
+        .M_textPrompt-main.u-cf
+            .M_textPrompt-text.u-floatLeft= text
+            .M_textPrompt-arrow.sprite.sprite-arrow-grey.u-floatRight
+
+
+//-///////////////////////////////////////////////////////////////////////////////
+//-                                                                             //
+//-                                                                             //
+//-                                                                             //
+//-                                                                             //
+//-                                                                             //
+//-                                                                             //
 //-                                                                             //
 //-                                   OOOOOOO                                   //
 //-                                   O     O                                   //
@@ -198,11 +348,24 @@ mixin M__textPrompt(text)
 //-                                   O     O                                   //
 //-                                   OOOOOOO                                   //
 //-                                                                             //
+//-                                                                             //
+//-                                                                             //
+//-                                                                             //
+//-                                                                             //
+//-                                                                             //
+//-                                                                             //
 //-///////////////////////////////////////////////////////////////////////////////
 
 
-//-//////////////////////////////////////////////////////////////////////////////////////////
-//- ORGANISM: FILTER BUTTONS
+//-///////////////////////////////////////////////////////////////////////////////
+//-                                                                             //
+//-                                                                             //
+//-    ORGANISMS                                                                //
+//-   ---------------                                                           //
+//-    FILTER BUTTONS                                                           //
+//-                                                                             //
+//-                                                                             //
+//-///////////////////////////////////////////////////////////////////////////////
 
 
 mixin O__filterButtons
@@ -212,8 +375,15 @@ mixin O__filterButtons
                 +M__filterButton(val.title, val.dropdown, val.title, val.options[0], val.options[1], val.options[2], val.options[3], val.options[4], val.options[5], val.options[6], val.options[7], val.options[8])
 
 
-//-//////////////////////////////////////////////////////////////////////////////////////////
-//- ORGANISM: CATEGORY LIST
+//-///////////////////////////////////////////////////////////////////////////////
+//-                                                                             //
+//-                                                                             //
+//-    ORGANISMS                                                                //
+//-   ---------------                                                           //
+//-    CATEGORY LIST                                                            //
+//-                                                                             //
+//-                                                                             //
+//-///////////////////////////////////////////////////////////////////////////////
 
 
 mixin O__categoryList
@@ -227,10 +397,15 @@ mixin O__categoryList
                     +M__contentThumb
 
 
-
-
-//-//////////////////////////////////////////////////////////////////////////////////////////
-//- ORGANISM: CATEGORY LIST
+//-///////////////////////////////////////////////////////////////////////////////
+//-                                                                             //
+//-                                                                             //
+//-    ORGANISMS                                                                //
+//-   ---------------                                                           //
+//-    RELATED CONTENT LIST                                                     //
+//-                                                                             //
+//-                                                                             //
+//-///////////////////////////////////////////////////////////////////////////////
 
 
 mixin O__relatedContentList
@@ -238,13 +413,17 @@ mixin O__relatedContentList
         each val, index in content.dynamic.relatedContent
             .O__relatedContentList-item
                 +M__contentThumb
-    
 
 
-
-
-//-//////////////////////////////////////////////////////////////////////////////////////////
-//- ORGANISM: SOCIAL HEAD LIST
+//-///////////////////////////////////////////////////////////////////////////////
+//-                                                                             //
+//-                                                                             //
+//-    ORGANISMS                                                                //
+//-   ---------------                                                           //
+//-    SOCIAL ICONS LIST                                                        //
+//-                                                                             //
+//-                                                                             //
+//-///////////////////////////////////////////////////////////////////////////////
 
 
 mixin O__social
@@ -253,8 +432,17 @@ mixin O__social
             .O__social-item.u-floatLeft
                 |M__social--head-item
 
-//-//////////////////////////////////////////////////////////////////////////////////////////
-//- ORGANISM: SECONDARY NAV LIST
+
+//-///////////////////////////////////////////////////////////////////////////////
+//-                                                                             //
+//-                                                                             //
+//-    ORGANISMS                                                                //
+//-   ---------------                                                           //
+//-    SECONDARY NAV LIST                                                       //
+//-                                                                             //
+//-                                                                             //
+//-///////////////////////////////////////////////////////////////////////////////
+
 
 mixin O__secondaryNavList
     .O__secondaryNavList-main.u-cf
@@ -262,8 +450,16 @@ mixin O__secondaryNavList
             .O__secondaryNavList-item.u-floatLeft
                 |M__secondaryNavButton
 
-//-//////////////////////////////////////////////////////////////////////////////////////////
-//- ORGANISM: MAIN NAV LIST
+
+//-///////////////////////////////////////////////////////////////////////////////
+//-                                                                             //
+//-                                                                             //
+//-    ORGANISMS                                                                //
+//-   ---------------                                                           //
+//-    MAIN NAV LIST                                                            //
+//-                                                                             //
+//-                                                                             //
+//-///////////////////////////////////////////////////////////////////////////////
 
 
 mixin O__mainNavList
@@ -272,8 +468,17 @@ mixin O__mainNavList
             .O__mainNavList-item.u-floatLeft
                 |M__mainNavButton
 
-//-//////////////////////////////////////////////////////////////////////////////////////////
-//- ORGANISM: TOP NAV LIST
+
+//-///////////////////////////////////////////////////////////////////////////////
+//-                                                                             //
+//-                                                                             //
+//-    ORGANISMS                                                                //
+//-   ---------------                                                           //
+//-    TOP NAV LIST                                                             //
+//-                                                                             //
+//-                                                                             //
+//-///////////////////////////////////////////////////////////////////////////////
+
 
 mixin O__topNav
     .O__topNav-main.u-cf
@@ -281,18 +486,16 @@ mixin O__topNav
             .O__topNav-item.u-floatLeft
                 |M__topNavButton
 
-//-//////////////////////////////////////////////////////////////////////////////////////////
-//- ORGANISM: TOP NAV LIST
 
-mixin O__topNav
-    .O__topNav-main.u-cf
-        each val in head.static.topNav
-            .O__topNav-item.u-floatLeft
-                |M__topNavButton
-
-
-//-//////////////////////////////////////////////////////////////////////////////////////////
-//- ORGANISM: PAGINATION NUMBERS LIST
+//-///////////////////////////////////////////////////////////////////////////////
+//-                                                                             //
+//-                                                                             //
+//-    ORGANISMS                                                                //
+//-   ---------------                                                           //
+//-    PAGINATION NUMBERS LIST                                                  //
+//-                                                                             //
+//-                                                                             //
+//-///////////////////////////////////////////////////////////////////////////////
 
 
 
@@ -303,17 +506,32 @@ mixin O__paginationNumbers
                 +M__paginationButton(val)
 
 
-//-//////////////////////////////////////////////////////////////////////////////////////////
-//- ORGANISM: PAGINATION NUMBERS LIST
+//-///////////////////////////////////////////////////////////////////////////////
+//-                                                                             //
+//-                                                                             //
+//-    ORGANISMS                                                                //
+//-   ---------------                                                           //
+//-    SOCIAL SHARE LIST                                                        //
+//-                                                                             //
+//-                                                                             //
+//-///////////////////////////////////////////////////////////////////////////////
+
 
 mixin O__socialShareList
     .O__socialShareList-main
         each val in content.static.socialShare
             +M__socialShareButton(val.icon, val.prompt)
-            
-//-//////////////////////////////////////////////////////////////////////////////////////////
-//- ORGANISM: PAGINATION NUMBERS LIST            
-           
+
+
+//-///////////////////////////////////////////////////////////////////////////////
+//-                                                                             //
+//-                                                                             //
+//-    ORGANISMS                                                                //
+//-   ---------------                                                           //
+//-    TEXT PROMPT LIST                                                         //
+//-                                                                             //
+//-                                                                             //
+//-///////////////////////////////////////////////////////////////////////////////
 
 
 mixin M__textPromptList
@@ -325,30 +543,34 @@ mixin M__textPromptList
 
 
 //-///////////////////////////////////////////////////////////////////////////////
-//-----------------------------------------------------------------------------//
-//-----------------------------------------------------------------------------//
-//-----------------------------------------------------------------------------//
-//---------------------------------- LAYOUT -----------------------------------//
-//-----------------------------------------------------------------------------//
-//-----------------------------------------------------------------------------//
-//-----------------------------------------------------------------------------//
+//-                                                                             //
+//-                                                                             //
+//-                                                                             //
+//-                                                                             //
+//-                                                                             //
+//-                                                                             //
+//-                                                                             //
+//-                                     #  #                                    //
+//-                                   ########                                  //
+//-                                     #  #                                    //
+//-                                   ########                                  //
+//-                                     #  #                                    //
+//-                                                                             //
+//-                                                                             //
+//-                                                                             //
+//-                                                                             //
+//-                                                                             //
+//-                                                                             //
+//-                                                                             //
 //-///////////////////////////////////////////////////////////////////////////////
+
 
 // Head & Menu
 #__head-main
-
-
-    //-0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
-    //- HEADER
-
-
     //-/// HEAD: LEADBOARD
     #__leaderboard-main(style="background: #{head.dynamic.adverts.leaderboard.color}")
         #__leaderboard-centre
             +M__leaderboardAdvert
-
-
-
     //-/// HEAD: TOP NAV
     #__topNav-main
         #__topNav-centre.u-cf
@@ -359,7 +581,6 @@ mixin M__textPromptList
                     |+M__Login
             #__topNav-col2.u-floatRight
                 +O__social('Head')
-
     //-/// HEAD: MENU CONTENT
     #__menuContent-main
         #__menuContent-centre.u-cf
@@ -367,7 +588,6 @@ mixin M__textPromptList
                 |M__logo
             #__menuContent-col2.u-floatRight
                 |M__smallSuperbannerAdvert
-
      //-/// HEAD: MAIN NAV
     #__mainNav-main
         #__mainNav-centre.u-cf
@@ -375,22 +595,26 @@ mixin M__textPromptList
                 +O__mainNavList
             #__mainNav-col1.u-floatRight
                 |+M__mainNavsearch
-
-
     //-/// HEAD: SECONDARY NAV
     #__secondaryNav-main
         #__secondaryNav-centre
             +O__secondaryNavList
-            
-            
-            
 
-
-//-0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
-    //- MAIN
 
 // Content
 #__content-main
+
+
+    //-///////////////////////////////////////////////////////////////////////////////
+    //-                                                                             //
+    //-                                                                             //
+    //-    LAYOUT                                                                   //
+    //-   ---------------                                                           //
+    //-    ARTICLE HEADER SECTION                                                   //
+    //-                                                                             //
+    //-                                                                             //
+    //-///////////////////////////////////////////////////////////////////////////////
+
 
     #__articleHeader-main
         #__articleHeader-centre.u-cf
@@ -398,9 +622,21 @@ mixin M__textPromptList
                 #__articleHeader-col1-row1
                     +M__heading('News Story', 'Leave a Comment', true)
                 #__articleHeader-col1-row2
-                    +M__featuredImage('http://lorempixel.com/860/430', 'asdas')
+                    //Image Size - Hard Crop Featured Image: 860 x 685
+                    +M__featuredImage('http://lorempixel.com/860/430', 'Label')
             #__articleHeader-col2.u-floatRight
                 +M__largeSkyscraperAdvert
+
+
+    //-///////////////////////////////////////////////////////////////////////////////
+    //-                                                                             //
+    //-                                                                             //
+    //-    LAYOUT                                                                   //
+    //-   ---------------                                                           //
+    //-    ARTICLE CONTENT SECTION                                                   //
+    //-                                                                             //
+    //-                                                                             //
+    //-///////////////////////////////////////////////////////////////////////////////
 
 
     #__articleContent-main
@@ -418,9 +654,25 @@ mixin M__textPromptList
                 #__articleContent-col2-row3
                     h2 Post Sub-heading
                 #__articleContent-col2-row3
-                    p Post Content
+                    p Fusce vel dui. Phasellus consectetuer vestibulum elit. Aenean posuere, tortor sed cursus feugiat, nunc augue blandit nunc, eu sollicitudin urna dolor sagittis lacus. Suspendisse nisl elit, rhoncus eget, elementum ac, condimentum eget, diam. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+
                     .M__shortcodeBox-main asdasd
-       
+
+                    +M__pullQuote('The report expects the IIoT industry to grow at a CAGR of 26.56% over the next 4 years.')
+                    p Fusce vel dui. Phasellus consectetuer vestibulum elit. Aenean posuere, tortor sed cursus feugiat, nunc augue blandit nunc, eu sollicitudin urna dolor sagittis lacus. Suspendisse nisl elit, rhoncus eget, elementum ac, condimentum eget, diam. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+
+
+
+
+    //-///////////////////////////////////////////////////////////////////////////////
+    //-                                                                             //
+    //-                                                                             //
+    //-    LAYOUT                                                                   //
+    //-   ---------------                                                           //
+    //-    ARTICLE FOOTER SECTION                                                   //
+    //-                                                                             //
+    //-                                                                             //
+    //-///////////////////////////////////////////////////////////////////////////////
 
 
     #__articleFooter-main
@@ -441,12 +693,15 @@ mixin M__textPromptList
                     +O__relatedContentList
 
 
-// Footer
-
-
-
-
-
+/////////////////////////////////////////////////////////////////////////////////
+//                                                                             //
+//                                                                             //
+//                                                                             //
+//                                     END                                     //
+//                                                                             //
+//                                                                             //
+//                                                                             //
+/////////////////////////////////////////////////////////////////////////////////
 
 
 |</body>

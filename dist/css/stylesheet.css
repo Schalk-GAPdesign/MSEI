@@ -453,8 +453,8 @@ h3 {
 p {
   font-size: em(18);
   line-height: em(26);
-  margin-top: 0em;
-  margin-bottom: 2em;
+  margin-top: 1em;
+  margin-bottom: 1em;
 }
 
 ul {
@@ -511,13 +511,28 @@ li {
   display: table-cell !important;
 }
 
+.A__smallTitle-main {
+  text-transform: uppercase;
+  white-space: nowrap;
+  font: 700 16px "Roboto Condensed";
+  color: #aaaaaa;
+}
+
+.A__smallTitle-main--socialShare {
+  text-align: center;
+}
+
+.M__socialShareButton-text {
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 700;
+  padding: 8px 0 8px 10px;
+}
+
 .M__contentThumb-main {
   width: 100%;
-  /* or whatever is required */
   text-align: center;
-  /* ensures the image is always in the h-middle */
   overflow: hidden;
-  /* hide the cropped portion */
   height: 200px;
   color: white;
   margin-bottom: 18px;
@@ -533,11 +548,8 @@ li {
 .M__contentThumb-image {
   width: 100%;
   position: relative;
-  /* allows repositioning */
   left: 100%;
-  /* move the whole width of the image to the right */
   margin-left: -200%;
-  /* magic! */
 }
 
 .M__contentThumb-container.u-absolute {
@@ -553,6 +565,7 @@ li {
 
 .M__contentThumb-overlay {
   padding: 0 20px;
+  background: black;
   background: rgba(0, 0, 0, 0.7);
   height: 100px;
   width: 100%;
@@ -577,22 +590,6 @@ li {
 
 .M__contentThumb-subheading {
   display: none;
-}
-
-#__leaderboard-main {
-  background: blue;
-}
-
-#__leaderboard-centre {
-  width: 60.5em;
-  margin: 0 auto;
-}
-
-@media (max-width: 1000px) {
-  #__leaderboard-centre {
-    width: 42.5em;
-    margin: 0 auto;
-  }
 }
 
 .M__heading-main {
@@ -676,6 +673,64 @@ li {
   }
 }
 
+.M__featuredImage-container {
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+  height: 430px;
+  color: white;
+  margin-bottom: 18px;
+}
+
+.M__featuredImage-image {
+  height: 430px;
+  position: relative;
+  left: 100%;
+  margin-left: -200%;
+}
+
+.M__featuredImage-label {
+  background: red;
+  bottom: 0;
+  padding: 5px 15px 5px 10px;
+  color: white;
+  background: red;
+  margin-left: 20%;
+}
+
+.M__socialShareButton-main {
+  padding: 7px 4px;
+  border-bottom: 1px solid #cdcdcd;
+  color: #999999;
+}
+
+.M__socialShareButton-main:hover {
+  background: #b8b8b8;
+  color: white;
+}
+
+.M_textPrompt-main {
+  color: black;
+  background: white;
+  border: 1px solid #cdcdcd;
+  height: 43px;
+  padding: 10px 12px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: "Roboto Condensed";
+}
+
+.M_textPrompt-main:hover {
+  background: #b8b8b8;
+  color: white;
+}
+
+.M__shortcodeBox-main {
+  padding: 30px;
+  background: #eeeeee;
+  border: solid 1px #cdcdcd;
+}
+
 .O__categoryList-item {
   width: 33.33333%;
   padding: 0 10px;
@@ -750,6 +805,26 @@ O__categoryList-heading {
   margin-left: 5px;
 }
 
+.O__socialShareList-main {
+  border-top: 1px solid #cdcdcd;
+}
+
+#__leaderboard-main {
+  background: blue;
+}
+
+#__leaderboard-centre {
+  width: 60.5em;
+  margin: 0 auto;
+}
+
+@media (max-width: 1000px) {
+  #__leaderboard-centre {
+    width: 42.5em;
+    margin: 0 auto;
+  }
+}
+
 #__topNav-main {
   background: #26292a;
   color: white;
@@ -782,17 +857,11 @@ O__categoryList-heading {
   margin: 0 auto;
 }
 
+#__content-main {
+  padding: 90px 0 0 0;
+}
+
 #__articleHeader-centre {
-  width: 1255px;
-  margin: 0 auto;
-}
-
-#__articleContent-centre {
-  width: 1255px;
-  margin: 0 auto;
-}
-
-#__articleFooter-centre {
   width: 1255px;
   margin: 0 auto;
 }
@@ -801,64 +870,13 @@ O__categoryList-heading {
   width: 860px;
 }
 
-#__articleContent-col2 {
-  margin-left: 150px;
+#__articleHeader-col2 {
+  width: 370px;
+  margin-top: 43px;
 }
 
 #__articleHeader-main {
   height: 500px;
-}
-
-.M__featuredImage-container {
-  width: 100%;
-  /* or whatever is required */
-  text-align: center;
-  /* ensures the image is always in the h-middle */
-  overflow: hidden;
-  /* hide the cropped portion */
-  height: 430px;
-  color: white;
-  margin-bottom: 18px;
-}
-
-.M__featuredImage-image {
-  height: 430px;
-  position: relative;
-  /* allows repositioning */
-  left: 100%;
-  /* move the whole width of the image to the right */
-  margin-left: -200%;
-  /* magic! */
-}
-
-.M__featuredImage-label {
-  background: red;
-  bottom: 0;
-  padding: 5px 15px 5px 10px;
-  color: white;
-  background: red;
-  margin-left: 20%;
-}
-
-.M__largeSkyscraperAdvert-main {
-  margin-top: 40px;
-  padding: 30px;
-  background: #eeeeee;
-  border: solid 1px #cdcdcd;
-}
-
-.M__largeSkyscraperAdvert-title {
-  font-size: 13px;
-  color: #a5a5a5;
-  text-transform: uppercase;
-  text-align: center;
-  letter-spacing: 1px;
-  margin-bottom: 10px;
-  font-weight: 700;
-}
-
-#__content-main {
-  padding: 90px  0 0 0;
 }
 
 #__articleHeader-centre {
@@ -866,36 +884,21 @@ O__categoryList-heading {
 }
 
 #__articleContent-col1-row1 {
+  margin-bottom: 15px;
+}
+
+#__articleContent-centre {
+  width: 1255px;
+  margin: 0 auto;
+}
+
+#__articleContent-col1-row1 {
   width: 110px;
 }
 
-.A__smallTitle-main {
-  text-transform: uppercase;
-  white-space: nowrap;
-  font: 700 16px "Roboto Condensed";
-  color: #aaaaaa;
-}
-
-.A__smallTitle-main--socialShare {
-  text-align: center;
-}
-
-.M__socialShareButton-main {
-  padding: 7px 4px;
-  border-bottom: 1px solid #cdcdcd;
-  color: #999999;
-}
-
-.M__socialShareButton-main:hover {
-  background: #b8b8b8;
-  color: white;
-}
-
-.M__socialShareButton-text {
-  text-transform: uppercase;
-  font-size: 13px;
-  font-weight: 700;
-  padding: 8px 0 8px 10px;
+#__articleContent-col2 {
+  margin-left: 150px;
+  width: 600px;
 }
 
 #__articleFooter-main {
@@ -911,34 +914,70 @@ O__categoryList-heading {
   padding-top: 60px;
 }
 
-.M__shortcodeBox-main {
-  padding: 30px;
-  background: #eeeeee;
-  border: solid 1px #cdcdcd;
-}
-
 #__articleFooter-col2-row2 {
   width: 400px;
 }
 
-.O__socialShareList-main {
-  border-top: 1px solid #cdcdcd;
+#__articleFooter-centre {
+  width: 1255px;
+  margin: 0 auto;
 }
 
-.M_textPrompt-main {
-  color: black;
-  background: white;
+.M__largeSkyscraperAdvert-main {
   border: 1px solid #cdcdcd;
-  height: 43px;
-  padding: 10px 12px;
+  background: #eeeeee;
+  padding: 30px 0;
+}
+
+.M__largeSkyscraperAdvert-title {
+  font-size: 13px;
   text-transform: uppercase;
   font-weight: 700;
-  font-family: "Roboto Condensed";
+  color: #a5a5a5;
+  letter-spacing: 1px;
+  text-align: center;
+  margin-bottom: 10px;
 }
 
-.M_textPrompt-main:hover {
-  background: #b8b8b8;
-  color: white;
+.M__largeSkyscraperAdvert-container {
+  display: table;
+  margin: 0 auto;
+}
+
+.M__pullQuote-main {
+  height: auto;
+  background: white;
+  font-family: "Roboto Condensed";
+  font-weight: 700;
+  padding: 0.3125em 0;
+  width: 240px;
+}
+
+.M__pullQuote-quote {
+  border-left: 0.0625em solid grey;
+  padding-left: 1.25em;
+  margin-left: 1.25em;
+  margin-bottom: 2.5em;
+}
+
+.M__pullQuote-text {
+  color: black;
+  font-size: 1.25em;
+}
+
+.M__pullQuote-icon {
+  margin-top: 0.625em;
+  margin-right: 0.625em;
+}
+
+.M__pullQuote-retweet {
+  margin-bottom: 0.75em;
+  margin-top: 1.375em;
+  color: grey;
+  font-size: 0.75em;
+  margin-left: 1.125em;
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }
 
 /*# sourceMappingURL=stylesheet.css.map */

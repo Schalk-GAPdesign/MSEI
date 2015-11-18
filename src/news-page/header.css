@@ -2,462 +2,462 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,300italic,300,400italic,700,700italic);
 @import url(https://fonts.googleapis.com/css?family=Roboto+Condensed:400,300italic,300,400italic,700,700italic);
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300italic,300,400italic,700,700italic);
-/* line 1, C:/Users/Schalk/Desktop/MSEI Front End/src/utilities/spritesheet.scss */
+/* line 1, C:/MSEI/src/utilities/spritesheet.scss */
 .sprite {
   background-image: url(../img/spritesheet.png);
   background-repeat: no-repeat;
   display: block; }
 
-/* line 7, C:/Users/Schalk/Desktop/MSEI Front End/src/utilities/spritesheet.scss */
+/* line 7, C:/MSEI/src/utilities/spritesheet.scss */
 .sprite-Comment-share-01 {
   width: 30px;
   height: 30px;
   background-position: -5px -5px; }
 
-/* line 13, C:/Users/Schalk/Desktop/MSEI Front End/src/utilities/spritesheet.scss */
+/* line 13, C:/MSEI/src/utilities/spritesheet.scss */
 .sprite-Comment-share-white, .M__socialShareButton-main:hover .sprite-Comment-share-01 {
   width: 30px;
   height: 30px;
   background-position: -45px -5px; }
 
-/* line 19, C:/Users/Schalk/Desktop/MSEI Front End/src/utilities/spritesheet.scss */
+/* line 19, C:/MSEI/src/utilities/spritesheet.scss */
 .sprite-Email-share-01 {
   width: 30px;
   height: 30px;
   background-position: -85px -5px; }
 
-/* line 25, C:/Users/Schalk/Desktop/MSEI Front End/src/utilities/spritesheet.scss */
+/* line 25, C:/MSEI/src/utilities/spritesheet.scss */
 .sprite-Email-share-white, .M__socialShareButton-main:hover .sprite-Email-share-01 {
   width: 30px;
   height: 30px;
   background-position: -125px -5px; }
 
-/* line 31, C:/Users/Schalk/Desktop/MSEI Front End/src/utilities/spritesheet.scss */
+/* line 31, C:/MSEI/src/utilities/spritesheet.scss */
 .sprite-Google-share-01 {
   width: 30px;
   height: 30px;
   background-position: -165px -5px; }
 
-/* line 37, C:/Users/Schalk/Desktop/MSEI Front End/src/utilities/spritesheet.scss */
+/* line 37, C:/MSEI/src/utilities/spritesheet.scss */
 .sprite-Google-share-white, .M__socialShareButton-main:hover .sprite-Google-share-01 {
   width: 30px;
   height: 30px;
   background-position: -205px -5px; }
 
-/* line 43, C:/Users/Schalk/Desktop/MSEI Front End/src/utilities/spritesheet.scss */
+/* line 43, C:/MSEI/src/utilities/spritesheet.scss */
 .sprite-Linkedin-share-01 {
   width: 30px;
   height: 30px;
   background-position: -245px -5px; }
 
-/* line 49, C:/Users/Schalk/Desktop/MSEI Front End/src/utilities/spritesheet.scss */
+/* line 49, C:/MSEI/src/utilities/spritesheet.scss */
 .sprite-Linkedin-share-white, .M__socialShareButton-main:hover .sprite-Linkedin-share-01 {
   width: 30px;
   height: 30px;
   background-position: -5px -45px; }
 
-/* line 55, C:/Users/Schalk/Desktop/MSEI Front End/src/utilities/spritesheet.scss */
+/* line 55, C:/MSEI/src/utilities/spritesheet.scss */
 .sprite-Twitter-quote-blue {
   width: 26px;
   height: 26px;
   background-position: -45px -45px; }
 
-/* line 61, C:/Users/Schalk/Desktop/MSEI Front End/src/utilities/spritesheet.scss */
+/* line 61, C:/MSEI/src/utilities/spritesheet.scss */
 .sprite-Twitter-quote-blue-01 {
   width: 27px;
   height: 28px;
   background-position: -81px -45px; }
 
-/* line 67, C:/Users/Schalk/Desktop/MSEI Front End/src/utilities/spritesheet.scss */
+/* line 67, C:/MSEI/src/utilities/spritesheet.scss */
 .sprite-Twitter-share-01 {
   width: 30px;
   height: 31px;
   background-position: -118px -45px; }
 
-/* line 73, C:/Users/Schalk/Desktop/MSEI Front End/src/utilities/spritesheet.scss */
+/* line 73, C:/MSEI/src/utilities/spritesheet.scss */
 .sprite-Twitter-share-white, .M__socialShareButton-main:hover .sprite-Twitter-share-01 {
   width: 30px;
   height: 30px;
   background-position: -158px -45px; }
 
-/* line 79, C:/Users/Schalk/Desktop/MSEI Front End/src/utilities/spritesheet.scss */
+/* line 79, C:/MSEI/src/utilities/spritesheet.scss */
 .sprite-Untitled-4 {
   width: 20px;
   height: 16px;
   background-position: -198px -45px; }
 
-/* line 85, C:/Users/Schalk/Desktop/MSEI Front End/src/utilities/spritesheet.scss */
+/* line 85, C:/MSEI/src/utilities/spritesheet.scss */
 .sprite-arrow-blue {
   width: 9px;
   height: 15px;
   background-position: -228px -45px; }
 
-/* line 91, C:/Users/Schalk/Desktop/MSEI Front End/src/utilities/spritesheet.scss */
+/* line 91, C:/MSEI/src/utilities/spritesheet.scss */
 .sprite-arrow-grey {
   width: 10px;
   height: 16px;
   background-position: -247px -45px; }
 
-/* line 97, C:/Users/Schalk/Desktop/MSEI Front End/src/utilities/spritesheet.scss */
+/* line 97, C:/MSEI/src/utilities/spritesheet.scss */
 .sprite-arrow-white, .M__heading-prompt:hover .sprite-arrow-grey, .M_textPrompt-main:hover .sprite-arrow-grey {
   width: 10px;
   height: 16px;
   background-position: -267px -45px; }
 
-/* line 103, C:/Users/Schalk/Desktop/MSEI Front End/src/utilities/spritesheet.scss */
+/* line 103, C:/MSEI/src/utilities/spritesheet.scss */
 .sprite-cal-icon {
   width: 14px;
   height: 17px;
   background-position: -198px -71px; }
 
-/* line 109, C:/Users/Schalk/Desktop/MSEI Front End/src/utilities/spritesheet.scss */
+/* line 109, C:/MSEI/src/utilities/spritesheet.scss */
 .sprite-cal-icon-red {
   width: 16px;
   height: 18px;
   background-position: -222px -71px; }
 
-/* line 115, C:/Users/Schalk/Desktop/MSEI Front End/src/utilities/spritesheet.scss */
+/* line 115, C:/MSEI/src/utilities/spritesheet.scss */
 .sprite-close-quote-blue-01 {
   width: 32px;
   height: 26px;
   background-position: -5px -99px; }
 
-/* line 121, C:/Users/Schalk/Desktop/MSEI Front End/src/utilities/spritesheet.scss */
+/* line 121, C:/MSEI/src/utilities/spritesheet.scss */
 .sprite-close-quote-grey-01 {
   width: 32px;
   height: 26px;
   background-position: -47px -99px; }
 
-/* line 127, C:/Users/Schalk/Desktop/MSEI Front End/src/utilities/spritesheet.scss */
+/* line 127, C:/MSEI/src/utilities/spritesheet.scss */
 .sprite-downarrow-01 {
   width: 9px;
   height: 7px;
   background-position: -248px -71px; }
 
-/* line 133, C:/Users/Schalk/Desktop/MSEI Front End/src/utilities/spritesheet.scss */
+/* line 133, C:/MSEI/src/utilities/spritesheet.scss */
 .sprite-downarrow-blue-01 {
   width: 9px;
   height: 7px;
   background-position: -267px -71px; }
 
-/* line 139, C:/Users/Schalk/Desktop/MSEI Front End/src/utilities/spritesheet.scss */
+/* line 139, C:/MSEI/src/utilities/spritesheet.scss */
 .sprite-email-black {
   width: 20px;
   height: 15px;
   background-position: -89px -88px; }
 
-/* line 145, C:/Users/Schalk/Desktop/MSEI Front End/src/utilities/spritesheet.scss */
+/* line 145, C:/MSEI/src/utilities/spritesheet.scss */
 .sprite-email-blue {
   width: 20px;
   height: 15px;
   background-position: -119px -88px; }
 
-/* line 151, C:/Users/Schalk/Desktop/MSEI Front End/src/utilities/spritesheet.scss */
+/* line 151, C:/MSEI/src/utilities/spritesheet.scss */
 .sprite-email-grey {
   width: 20px;
   height: 15px;
   background-position: -149px -88px; }
 
-/* line 157, C:/Users/Schalk/Desktop/MSEI Front End/src/utilities/spritesheet.scss */
+/* line 157, C:/MSEI/src/utilities/spritesheet.scss */
 .sprite-email-white {
   width: 20px;
   height: 15px;
   background-position: -248px -88px; }
 
-/* line 163, C:/Users/Schalk/Desktop/MSEI Front End/src/utilities/spritesheet.scss */
+/* line 163, C:/MSEI/src/utilities/spritesheet.scss */
 .sprite-facebook-black {
   width: 8px;
   height: 17px;
   background-position: -179px -88px; }
 
-/* line 169, C:/Users/Schalk/Desktop/MSEI Front End/src/utilities/spritesheet.scss */
+/* line 169, C:/MSEI/src/utilities/spritesheet.scss */
 .sprite-facebook-blue {
   width: 8px;
   height: 17px;
   background-position: -89px -113px; }
 
-/* line 175, C:/Users/Schalk/Desktop/MSEI Front End/src/utilities/spritesheet.scss */
+/* line 175, C:/MSEI/src/utilities/spritesheet.scss */
 .sprite-facebook-grey {
   width: 8px;
   height: 17px;
   background-position: -107px -113px; }
 
-/* line 181, C:/Users/Schalk/Desktop/MSEI Front End/src/utilities/spritesheet.scss */
+/* line 181, C:/MSEI/src/utilities/spritesheet.scss */
 .sprite-facebook-share-01 {
   width: 30px;
   height: 30px;
   background-position: -125px -113px; }
 
-/* line 187, C:/Users/Schalk/Desktop/MSEI Front End/src/utilities/spritesheet.scss */
+/* line 187, C:/MSEI/src/utilities/spritesheet.scss */
 .sprite-facebook-share-white, .M__socialShareButton-main:hover .sprite-facebook-share-01 {
   width: 30px;
   height: 30px;
   background-position: -197px -113px; }
 
-/* line 193, C:/Users/Schalk/Desktop/MSEI Front End/src/utilities/spritesheet.scss */
+/* line 193, C:/MSEI/src/utilities/spritesheet.scss */
 .sprite-facebook-white {
   width: 8px;
   height: 17px;
   background-position: -237px -113px; }
 
-/* line 199, C:/Users/Schalk/Desktop/MSEI Front End/src/utilities/spritesheet.scss */
+/* line 199, C:/MSEI/src/utilities/spritesheet.scss */
 .sprite-footer-dot {
   width: 4px;
   height: 3px;
   background-position: -165px -113px; }
 
-/* line 205, C:/Users/Schalk/Desktop/MSEI Front End/src/utilities/spritesheet.scss */
+/* line 205, C:/MSEI/src/utilities/spritesheet.scss */
 .sprite-google-black {
   width: 18px;
   height: 18px;
   background-position: -255px -113px; }
 
-/* line 211, C:/Users/Schalk/Desktop/MSEI Front End/src/utilities/spritesheet.scss */
+/* line 211, C:/MSEI/src/utilities/spritesheet.scss */
 .sprite-google-blue {
   width: 18px;
   height: 18px;
   background-position: -5px -141px; }
 
-/* line 217, C:/Users/Schalk/Desktop/MSEI Front End/src/utilities/spritesheet.scss */
+/* line 217, C:/MSEI/src/utilities/spritesheet.scss */
 .sprite-google-grey {
   width: 18px;
   height: 18px;
   background-position: -33px -141px; }
 
-/* line 223, C:/Users/Schalk/Desktop/MSEI Front End/src/utilities/spritesheet.scss */
+/* line 223, C:/MSEI/src/utilities/spritesheet.scss */
 .sprite-google-white {
   width: 18px;
   height: 18px;
   background-position: -61px -141px; }
 
-/* line 229, C:/Users/Schalk/Desktop/MSEI Front End/src/utilities/spritesheet.scss */
+/* line 229, C:/MSEI/src/utilities/spritesheet.scss */
 .sprite-linkedin-black {
   width: 18px;
   height: 17px;
   background-position: -89px -141px; }
 
-/* line 235, C:/Users/Schalk/Desktop/MSEI Front End/src/utilities/spritesheet.scss */
+/* line 235, C:/MSEI/src/utilities/spritesheet.scss */
 .sprite-linkedin-blue {
   width: 18px;
   height: 17px;
   background-position: -165px -141px; }
 
-/* line 241, C:/Users/Schalk/Desktop/MSEI Front End/src/utilities/spritesheet.scss */
+/* line 241, C:/MSEI/src/utilities/spritesheet.scss */
 .sprite-linkedin-grey {
   width: 18px;
   height: 17px;
   background-position: -237px -141px; }
 
-/* line 247, C:/Users/Schalk/Desktop/MSEI Front End/src/utilities/spritesheet.scss */
+/* line 247, C:/MSEI/src/utilities/spritesheet.scss */
 .sprite-linkedin-white {
   width: 18px;
   height: 17px;
   background-position: -89px -168px; }
 
-/* line 253, C:/Users/Schalk/Desktop/MSEI Front End/src/utilities/spritesheet.scss */
+/* line 253, C:/MSEI/src/utilities/spritesheet.scss */
 .sprite-login-blue-01 {
   width: 13px;
   height: 13px;
   background-position: -265px -141px; }
 
-/* line 259, C:/Users/Schalk/Desktop/MSEI Front End/src/utilities/spritesheet.scss */
+/* line 259, C:/MSEI/src/utilities/spritesheet.scss */
 .sprite-login-grey-01 {
   width: 13px;
   height: 13px;
   background-position: -117px -164px; }
 
-/* line 265, C:/Users/Schalk/Desktop/MSEI Front End/src/utilities/spritesheet.scss */
+/* line 265, C:/MSEI/src/utilities/spritesheet.scss */
 .sprite-map-icon {
   width: 11px;
   height: 15px;
   background-position: -140px -164px; }
 
-/* line 271, C:/Users/Schalk/Desktop/MSEI Front End/src/utilities/spritesheet.scss */
+/* line 271, C:/MSEI/src/utilities/spritesheet.scss */
 .sprite-open-quote-blue-01 {
   width: 32px;
   height: 26px;
   background-position: -193px -164px; }
 
-/* line 277, C:/Users/Schalk/Desktop/MSEI Front End/src/utilities/spritesheet.scss */
+/* line 277, C:/MSEI/src/utilities/spritesheet.scss */
 .sprite-open-quote-grey {
   width: 32px;
   height: 26px;
   background-position: -235px -168px; }
 
-/* line 283, C:/Users/Schalk/Desktop/MSEI Front End/src/utilities/spritesheet.scss */
+/* line 283, C:/MSEI/src/utilities/spritesheet.scss */
 .sprite-play-blue {
   width: 81px;
   height: 81px;
   background-position: -287px -5px; }
 
-/* line 289, C:/Users/Schalk/Desktop/MSEI Front End/src/utilities/spritesheet.scss */
+/* line 289, C:/MSEI/src/utilities/spritesheet.scss */
 .sprite-play-blue-small {
   width: 31px;
   height: 31px;
   background-position: -283px -96px; }
 
-/* line 295, C:/Users/Schalk/Desktop/MSEI Front End/src/utilities/spritesheet.scss */
+/* line 295, C:/MSEI/src/utilities/spritesheet.scss */
 .sprite-play-white {
   width: 81px;
   height: 81px;
   background-position: -288px -137px; }
 
-/* line 301, C:/Users/Schalk/Desktop/MSEI Front End/src/utilities/spritesheet.scss */
+/* line 301, C:/MSEI/src/utilities/spritesheet.scss */
 .sprite-play-white-small {
   width: 31px;
   height: 31px;
   background-position: -324px -96px; }
 
-/* line 307, C:/Users/Schalk/Desktop/MSEI Front End/src/utilities/spritesheet.scss */
+/* line 307, C:/MSEI/src/utilities/spritesheet.scss */
 .sprite-rss-black {
   width: 16px;
   height: 16px;
   background-position: -5px -228px; }
 
-/* line 313, C:/Users/Schalk/Desktop/MSEI Front End/src/utilities/spritesheet.scss */
+/* line 313, C:/MSEI/src/utilities/spritesheet.scss */
 .sprite-rss-blue {
   width: 16px;
   height: 16px;
   background-position: -31px -228px; }
 
-/* line 319, C:/Users/Schalk/Desktop/MSEI Front End/src/utilities/spritesheet.scss */
+/* line 319, C:/MSEI/src/utilities/spritesheet.scss */
 .sprite-rss-grey {
   width: 16px;
   height: 16px;
   background-position: -57px -228px; }
 
-/* line 325, C:/Users/Schalk/Desktop/MSEI Front End/src/utilities/spritesheet.scss */
+/* line 325, C:/MSEI/src/utilities/spritesheet.scss */
 .sprite-rss-white {
   width: 16px;
   height: 16px;
   background-position: -83px -228px; }
 
-/* line 331, C:/Users/Schalk/Desktop/MSEI Front End/src/utilities/spritesheet.scss */
+/* line 331, C:/MSEI/src/utilities/spritesheet.scss */
 .sprite-search_black-01 {
   width: 20px;
   height: 20px;
   background-position: -109px -228px; }
 
-/* line 337, C:/Users/Schalk/Desktop/MSEI Front End/src/utilities/spritesheet.scss */
+/* line 337, C:/MSEI/src/utilities/spritesheet.scss */
 .sprite-search_black-02 {
   width: 20px;
   height: 20px;
   background-position: -139px -228px; }
 
-/* line 343, C:/Users/Schalk/Desktop/MSEI Front End/src/utilities/spritesheet.scss */
+/* line 343, C:/MSEI/src/utilities/spritesheet.scss */
 .sprite-search_blue {
   width: 19px;
   height: 19px;
   background-position: -169px -228px; }
 
-/* line 349, C:/Users/Schalk/Desktop/MSEI Front End/src/utilities/spritesheet.scss */
+/* line 349, C:/MSEI/src/utilities/spritesheet.scss */
 .sprite-submenubreak-01 {
   width: 2px;
   height: 15px;
   background-position: -365px -96px; }
 
-/* line 355, C:/Users/Schalk/Desktop/MSEI Front End/src/utilities/spritesheet.scss */
+/* line 355, C:/MSEI/src/utilities/spritesheet.scss */
 .sprite-top-break-01 {
   width: 2px;
   height: 17px;
   background-position: -198px -228px; }
 
-/* line 361, C:/Users/Schalk/Desktop/MSEI Front End/src/utilities/spritesheet.scss */
+/* line 361, C:/MSEI/src/utilities/spritesheet.scss */
 .sprite-twitter-black {
   width: 18px;
   height: 15px;
   background-position: -210px -228px; }
 
-/* line 367, C:/Users/Schalk/Desktop/MSEI Front End/src/utilities/spritesheet.scss */
+/* line 367, C:/MSEI/src/utilities/spritesheet.scss */
 .sprite-twitter-blue {
   width: 20px;
   height: 16px;
   background-position: -238px -228px; }
 
-/* line 373, C:/Users/Schalk/Desktop/MSEI Front End/src/utilities/spritesheet.scss */
+/* line 373, C:/MSEI/src/utilities/spritesheet.scss */
 .sprite-twitter-grey {
   width: 20px;
   height: 16px;
   background-position: -268px -228px; }
 
-/* line 379, C:/Users/Schalk/Desktop/MSEI Front End/src/utilities/spritesheet.scss */
+/* line 379, C:/MSEI/src/utilities/spritesheet.scss */
 .sprite-twitter-quote {
   width: 26px;
   height: 26px;
   background-position: -298px -228px; }
 
-/* line 385, C:/Users/Schalk/Desktop/MSEI Front End/src/utilities/spritesheet.scss */
+/* line 385, C:/MSEI/src/utilities/spritesheet.scss */
 .sprite-twitter-quote-01 {
   width: 27px;
   height: 28px;
   background-position: -334px -228px; }
 
-/* line 391, C:/Users/Schalk/Desktop/MSEI Front End/src/utilities/spritesheet.scss */
+/* line 391, C:/MSEI/src/utilities/spritesheet.scss */
 .sprite-twitter-white {
   width: 20px;
   height: 16px;
   background-position: -5px -266px; }
 
-/* line 397, C:/Users/Schalk/Desktop/MSEI Front End/src/utilities/spritesheet.scss */
+/* line 397, C:/MSEI/src/utilities/spritesheet.scss */
 .sprite-youtube-black {
   width: 22px;
   height: 16px;
   background-position: -35px -266px; }
 
-/* line 403, C:/Users/Schalk/Desktop/MSEI Front End/src/utilities/spritesheet.scss */
+/* line 403, C:/MSEI/src/utilities/spritesheet.scss */
 .sprite-youtube-blue {
   width: 22px;
   height: 16px;
   background-position: -67px -266px; }
 
-/* line 409, C:/Users/Schalk/Desktop/MSEI Front End/src/utilities/spritesheet.scss */
+/* line 409, C:/MSEI/src/utilities/spritesheet.scss */
 .sprite-youtube-grey {
   width: 22px;
   height: 16px;
   background-position: -99px -266px; }
 
-/* line 415, C:/Users/Schalk/Desktop/MSEI Front End/src/utilities/spritesheet.scss */
+/* line 415, C:/MSEI/src/utilities/spritesheet.scss */
 .sprite-youtube-white {
   width: 22px;
   height: 16px;
   background-position: -131px -266px; }
 
-/* line 10, C:/Users/Schalk/Desktop/MSEI Front End/src/utilities/utilities.scss */
+/* line 10, C:/MSEI/src/utilities/utilities.scss */
 * {
   Box-sizing: border-box; }
 
-/* line 12, C:/Users/Schalk/Desktop/MSEI Front End/src/utilities/utilities.scss */
+/* line 12, C:/MSEI/src/utilities/utilities.scss */
 body {
   font-family: Roboto, Arial; }
 
-/* line 15, C:/Users/Schalk/Desktop/MSEI Front End/src/utilities/utilities.scss */
+/* line 15, C:/MSEI/src/utilities/utilities.scss */
 h1 {
   font-size: em(38);
   font-weight: 700;
   line-height: 55px;
   font-weight: 700; }
 
-/* line 22, C:/Users/Schalk/Desktop/MSEI Front End/src/utilities/utilities.scss */
+/* line 22, C:/MSEI/src/utilities/utilities.scss */
 h2 {
   font-size: em(26);
   line-height: 32px;
   font-weight: 400; }
 
-/* line 28, C:/Users/Schalk/Desktop/MSEI Front End/src/utilities/utilities.scss */
+/* line 28, C:/MSEI/src/utilities/utilities.scss */
 h3 {
   font-size: em(26);
   font-weight: 700;
   margin-bottom: em(20);
   line-height: 32px; }
 
-/* line 35, C:/Users/Schalk/Desktop/MSEI Front End/src/utilities/utilities.scss */
+/* line 35, C:/MSEI/src/utilities/utilities.scss */
 p {
   font-size: em(18);
   line-height: em(26);
-  margin-top: 0em;
-  margin-bottom: 2em; }
+  margin-top: 1em;
+  margin-bottom: 1em; }
 
-/* line 42, C:/Users/Schalk/Desktop/MSEI Front End/src/utilities/utilities.scss */
+/* line 42, C:/MSEI/src/utilities/utilities.scss */
 ul {
   font-size: em(18);
   line-height: em(26);
@@ -465,136 +465,134 @@ ul {
   margin-bottom: 2.5em;
   text-decoration: none; }
 
-/* line 50, C:/Users/Schalk/Desktop/MSEI Front End/src/utilities/utilities.scss */
+/* line 50, C:/MSEI/src/utilities/utilities.scss */
 li {
   margin-bottom: 0.5em; }
 
-/* line 55, C:/Users/Schalk/Desktop/MSEI Front End/src/utilities/utilities.scss */
+/* line 55, C:/MSEI/src/utilities/utilities.scss */
 .u-cf:after {
   content: "" !important;
   display: table !important;
   clear: both !important; }
 
-/* line 61, C:/Users/Schalk/Desktop/MSEI Front End/src/utilities/utilities.scss */
+/* line 61, C:/MSEI/src/utilities/utilities.scss */
 .u-floatLeft {
   float: left; }
 
-/* line 65, C:/Users/Schalk/Desktop/MSEI Front End/src/utilities/utilities.scss */
+/* line 65, C:/MSEI/src/utilities/utilities.scss */
 .u-floatRight {
   float: right; }
 
-/* line 69, C:/Users/Schalk/Desktop/MSEI Front End/src/utilities/utilities.scss */
+/* line 69, C:/MSEI/src/utilities/utilities.scss */
 .u-absolute {
   position: absolute !important; }
 
-/* line 73, C:/Users/Schalk/Desktop/MSEI Front End/src/utilities/utilities.scss */
+/* line 73, C:/MSEI/src/utilities/utilities.scss */
 .u-relative {
   position: relative !important; }
 
-/* line 77, C:/Users/Schalk/Desktop/MSEI Front End/src/utilities/utilities.scss */
+/* line 77, C:/MSEI/src/utilities/utilities.scss */
 .u-noUnderline {
   text-decoration: none !important; }
 
-/* line 81, C:/Users/Schalk/Desktop/MSEI Front End/src/utilities/utilities.scss */
+/* line 81, C:/MSEI/src/utilities/utilities.scss */
 .u-noMargin {
   margin: 0 !important; }
 
-/* line 85, C:/Users/Schalk/Desktop/MSEI Front End/src/utilities/utilities.scss */
+/* line 85, C:/MSEI/src/utilities/utilities.scss */
 .u-table {
   display: table !important; }
 
-/* line 89, C:/Users/Schalk/Desktop/MSEI Front End/src/utilities/utilities.scss */
+/* line 89, C:/MSEI/src/utilities/utilities.scss */
 .u-tableRow {
   display: table-row !important; }
 
-/* line 93, C:/Users/Schalk/Desktop/MSEI Front End/src/utilities/utilities.scss */
+/* line 93, C:/MSEI/src/utilities/utilities.scss */
 .u-tableCell {
   display: table-cell !important; }
 
-/* line 52, C:/Users/Schalk/Desktop/MSEI Front End/src/news-page/header.scss */
+/* line 69, C:/MSEI/src/news-page/header.scss */
+.A__smallTitle-main {
+  text-transform: uppercase;
+  white-space: nowrap;
+  font: 700 16px "Roboto Condensed";
+  color: #aaaaaa; }
+
+/* line 75, C:/MSEI/src/news-page/header.scss */
+.A__smallTitle-main--socialShare {
+  text-align: center; }
+
+/* line 78, C:/MSEI/src/news-page/header.scss */
+.M__socialShareButton-text {
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 700;
+  padding: 8px 0 8px 10px; }
+
+/* line 120, C:/MSEI/src/news-page/header.scss */
 .M__contentThumb-main {
   width: 100%;
-  /* or whatever is required */
   text-align: center;
-  /* ensures the image is always in the h-middle */
   overflow: hidden;
-  /* hide the cropped portion */
   height: 200px;
   color: white;
   margin-bottom: 18px; }
 
-/* line 63, C:/Users/Schalk/Desktop/MSEI Front End/src/news-page/header.scss */
+/* line 128, C:/MSEI/src/news-page/header.scss */
 .M__contentThumb-showcase {
   margin-top: 15px;
   display: none;
   text-transform: uppercase;
   font-weight: 700; }
 
-/* line 69, C:/Users/Schalk/Desktop/MSEI Front End/src/news-page/header.scss */
+/* line 134, C:/MSEI/src/news-page/header.scss */
 .M__contentThumb-image {
   width: 100%;
   position: relative;
-  /* allows repositioning */
   left: 100%;
-  /* move the whole width of the image to the right */
-  margin-left: -200%;
-  /* magic! */ }
+  margin-left: -200%; }
 
-/* line 78, C:/Users/Schalk/Desktop/MSEI Front End/src/news-page/header.scss */
+/* line 140, C:/MSEI/src/news-page/header.scss */
 .M__contentThumb-container.u-absolute {
   text-align: left;
   width: 100%;
   bottom: 0; }
 
-/* line 83, C:/Users/Schalk/Desktop/MSEI Front End/src/news-page/header.scss */
+/* line 145, C:/MSEI/src/news-page/header.scss */
 .M__contentThumb-label {
   padding: 5px 15px 5px 10px;
   background: red; }
 
-/* line 88, C:/Users/Schalk/Desktop/MSEI Front End/src/news-page/header.scss */
+/* line 149, C:/MSEI/src/news-page/header.scss */
 .M__contentThumb-overlay {
   padding: 0 20px;
+  background: black;
   background: rgba(0, 0, 0, 0.7);
   height: 100px;
   width: 100%; }
 
-/* line 94, C:/Users/Schalk/Desktop/MSEI Front End/src/news-page/header.scss */
+/* line 156, C:/MSEI/src/news-page/header.scss */
 .M__contentThumb-mediaPlay {
   vertical-align: middle;
   width: 70px; }
 
-/* line 98, C:/Users/Schalk/Desktop/MSEI Front End/src/news-page/header.scss */
+/* line 160, C:/MSEI/src/news-page/header.scss */
 .M__contentThumb-title {
   font-weight: 700;
   margin-top: 20px; }
 
-/* line 102, C:/Users/Schalk/Desktop/MSEI Front End/src/news-page/header.scss */
+/* line 164, C:/MSEI/src/news-page/header.scss */
 .M__contentThumb-date {
   font-size: 13px;
   color: #ccc;
   margin-top: 10px;
   margin-bottom: 30px; }
 
-/* line 108, C:/Users/Schalk/Desktop/MSEI Front End/src/news-page/header.scss */
+/* line 170, C:/MSEI/src/news-page/header.scss */
 .M__contentThumb-subheading {
   display: none; }
 
-/* line 124, C:/Users/Schalk/Desktop/MSEI Front End/src/news-page/header.scss */
-#__leaderboard-main {
-  background: blue; }
-
-/* line 127, C:/Users/Schalk/Desktop/MSEI Front End/src/news-page/header.scss */
-#__leaderboard-centre {
-  width: 60.5em;
-  margin: 0 auto; }
-
-@media (max-width: 1000px) {
-  /* line 132, C:/Users/Schalk/Desktop/MSEI Front End/src/news-page/header.scss */
-  #__leaderboard-centre {
-    width: 42.5em;
-    margin: 0 auto; } }
-
-/* line 143, C:/Users/Schalk/Desktop/MSEI Front End/src/news-page/header.scss */
+/* line 187, C:/MSEI/src/news-page/header.scss */
 .M__heading-main {
   border-bottom: solid 0.5em black;
   font-family: "Roboto Condensed";
@@ -602,7 +600,7 @@ li {
   text-transform: uppercase;
   height: 51px; }
 
-/* line 150, C:/Users/Schalk/Desktop/MSEI Front End/src/news-page/header.scss */
+/* line 194, C:/MSEI/src/news-page/header.scss */
 .M__heading-title {
   background: #ed1b25;
   font-size: 1.625em;
@@ -611,7 +609,7 @@ li {
   padding: 0.1875em 0.5em 0.1875em 0.375em;
   height: 100%; }
 
-/* line 159, C:/Users/Schalk/Desktop/MSEI Front End/src/news-page/header.scss */
+/* line 202, C:/MSEI/src/news-page/header.scss */
 .M__heading-prompt {
   height: 100%;
   background: #cdcdcd;
@@ -620,30 +618,30 @@ li {
   text-align: center;
   padding: 0.1875em 0.5em 0.1875em 0.375em;
   padding: 13px 12px; }
-  /* line 167, C:/Users/Schalk/Desktop/MSEI Front End/src/news-page/header.scss */
+  /* line 210, C:/MSEI/src/news-page/header.scss */
   .M__heading-prompt:hover {
     background: #b8b8b8;
     color: white; }
 
-/* line 171, C:/Users/Schalk/Desktop/MSEI Front End/src/news-page/header.scss */
+/* line 218, C:/MSEI/src/news-page/header.scss */
 .M__heading-arrow {
   margin-top: 1px; }
 
-/* line 173, C:/Users/Schalk/Desktop/MSEI Front End/src/news-page/header.scss */
+/* line 221, C:/MSEI/src/news-page/header.scss */
 .M__heading-promptText {
   margin-right: 10px; }
 
-/* line 176, C:/Users/Schalk/Desktop/MSEI Front End/src/news-page/header.scss */
+/* line 224, C:/MSEI/src/news-page/header.scss */
 .M__introParagraph-main {
   background: #eeeeee;
   padding: 0.625em 0.9375em; }
 
 @media (max-width: 700px) {
-  /* line 182, C:/Users/Schalk/Desktop/MSEI Front End/src/news-page/header.scss */
+  /* line 231, C:/MSEI/src/news-page/header.scss */
   .M__heading-title {
     width: 100%; } }
 
-/* line 189, C:/Users/Schalk/Desktop/MSEI Front End/src/news-page/header.scss */
+/* line 249, C:/MSEI/src/news-page/header.scss */
 .M__contentButton-main {
   width: 100%;
   padding: 11px;
@@ -653,180 +651,41 @@ li {
   border: none;
   color: black;
   cursor: pointer; }
-  /* line 198, C:/Users/Schalk/Desktop/MSEI Front End/src/news-page/header.scss */
+  /* line 258, C:/MSEI/src/news-page/header.scss */
   .M__contentButton-main:hover {
     background: #b8b8b8; }
 
-/* line 200, C:/Users/Schalk/Desktop/MSEI Front End/src/news-page/header.scss */
+/* line 262, C:/MSEI/src/news-page/header.scss */
 .M__contentButton-main--filter {
   width: 100%;
   border-bottom: 2px solid white; }
 
-/* line 205, C:/Users/Schalk/Desktop/MSEI Front End/src/news-page/header.scss */
+/* line 266, C:/MSEI/src/news-page/header.scss */
 .M__contentButton-main--pagination {
   text-align: center; }
 
 @media (max-width: 700px) {
-  /* line 209, C:/Users/Schalk/Desktop/MSEI Front End/src/news-page/header.scss */
+  /* line 272, C:/MSEI/src/news-page/header.scss */
   .M__contentButton-main {
     height: 100px; } }
 
-/* line 230, C:/Users/Schalk/Desktop/MSEI Front End/src/news-page/header.scss */
-.O__categoryList-item {
-  width: 33.33333%;
-  padding: 0 10px; }
-
-/* line 234, C:/Users/Schalk/Desktop/MSEI Front End/src/news-page/header.scss */
-.O__categoryList-item:nth-of-type(3n+1) {
-  padding-left: 0; }
-
-/* line 237, C:/Users/Schalk/Desktop/MSEI Front End/src/news-page/header.scss */
-.O__categoryList-item:nth-of-type(3n) {
-  padding-right: 0; }
-
-/* line 240, C:/Users/Schalk/Desktop/MSEI Front End/src/news-page/header.scss */
-.O__categoryList-item:nth-child(1) {
-  width: 100%;
-  padding: 0; }
-
-/* line 244, C:/Users/Schalk/Desktop/MSEI Front End/src/news-page/header.scss */
-.O__categoryList-item:nth-child(1) .M__contentThumb-showcase {
-  display: block; }
-
-/* line 247, C:/Users/Schalk/Desktop/MSEI Front End/src/news-page/header.scss */
-.O__categoryList-item:nth-child(-n+3) .M__contentThumb-title {
-  font: 700 38px "Roboto Condensed";
-  margin-top: 10px; }
-
-/* line 252, C:/Users/Schalk/Desktop/MSEI Front End/src/news-page/header.scss */
-.O__categoryList-item:nth-child(2) .M__contentThumb-title,
-.O__categoryList-item:nth-child(3) .M__contentThumb-title {
-  margin-top: 30px; }
-
-/* line 255, C:/Users/Schalk/Desktop/MSEI Front End/src/news-page/header.scss */
-.O__categoryList-item:nth-child(-n+3) .M__contentThumb-subheading {
-  display: block;
-  margin-top: 5px;
-  margin-bottom: 40px; }
-
-/* line 260, C:/Users/Schalk/Desktop/MSEI Front End/src/news-page/header.scss */
-.O__categoryList-item:nth-child(-n+3) .M__contentThumb-date {
-  display: none; }
-
-/* line 263, C:/Users/Schalk/Desktop/MSEI Front End/src/news-page/header.scss */
-.O__categoryList-item:nth-child(1) .M__contentThumb-main {
-  height: 450px; }
-
-/* line 266, C:/Users/Schalk/Desktop/MSEI Front End/src/news-page/header.scss */
-.O__categoryList-item:nth-child(2) {
-  width: 50%;
-  padding-left: 0; }
-
-/* line 270, C:/Users/Schalk/Desktop/MSEI Front End/src/news-page/header.scss */
-.O__categoryList-item:nth-child(2) .M__contentThumb-main {
-  height: 300px; }
-
-/* line 273, C:/Users/Schalk/Desktop/MSEI Front End/src/news-page/header.scss */
-.O__categoryList-item:nth-child(3) {
-  width: 50%;
-  padding-right: 0; }
-
-/* line 277, C:/Users/Schalk/Desktop/MSEI Front End/src/news-page/header.scss */
-.O__categoryList-item:nth-child(3) .M__contentThumb-main {
-  height: 300px; }
-
-/* line 280, C:/Users/Schalk/Desktop/MSEI Front End/src/news-page/header.scss */
-O__categoryList-heading {
-  width: 100%;
-  margin-top: 60px; }
-
-/* line 287, C:/Users/Schalk/Desktop/MSEI Front End/src/news-page/header.scss */
-.O__paginationNumbers-item {
-  width: 41px;
-  margin-left: 5px; }
-
-/* line 308, C:/Users/Schalk/Desktop/MSEI Front End/src/news-page/header.scss */
-#__topNav-main {
-  background: #26292a;
-  color: white; }
-
-/* line 309, C:/Users/Schalk/Desktop/MSEI Front End/src/news-page/header.scss */
-#__menuContent-main {
-  background: red; }
-
-/* line 310, C:/Users/Schalk/Desktop/MSEI Front End/src/news-page/header.scss */
-#__menuContent-centre {
-  width: 78.4375em;
-  margin: 0 auto; }
-
-/* line 311, C:/Users/Schalk/Desktop/MSEI Front End/src/news-page/header.scss */
-#__mainNav-main {
-  background: #efefef; }
-
-/* line 312, C:/Users/Schalk/Desktop/MSEI Front End/src/news-page/header.scss */
-#__mainNav-centre {
-  width: 78.4375em;
-  margin: 0 auto; }
-
-/* line 313, C:/Users/Schalk/Desktop/MSEI Front End/src/news-page/header.scss */
-#__secondaryNav-main {
-  background: #cdcdcd; }
-
-/* line 314, C:/Users/Schalk/Desktop/MSEI Front End/src/news-page/header.scss */
-#__secondaryNav-centre {
-  width: 78.4375em;
-  margin: 0 auto; }
-
-/* line 323, C:/Users/Schalk/Desktop/MSEI Front End/src/news-page/header.scss */
-#__articleHeader-centre {
-  width: 1255px;
-  margin: 0 auto; }
-
-/* line 324, C:/Users/Schalk/Desktop/MSEI Front End/src/news-page/header.scss */
-#__articleContent-centre {
-  width: 1255px;
-  margin: 0 auto; }
-
-/* line 325, C:/Users/Schalk/Desktop/MSEI Front End/src/news-page/header.scss */
-#__articleFooter-centre {
-  width: 1255px;
-  margin: 0 auto; }
-
-/* line 328, C:/Users/Schalk/Desktop/MSEI Front End/src/news-page/header.scss */
-#__articleHeader-col1 {
-  width: 860px; }
-
-/* line 330, C:/Users/Schalk/Desktop/MSEI Front End/src/news-page/header.scss */
-#__articleContent-col2 {
-  margin-left: 150px; }
-
-/* line 332, C:/Users/Schalk/Desktop/MSEI Front End/src/news-page/header.scss */
-#__articleHeader-main {
-  height: 500px; }
-
-/* line 335, C:/Users/Schalk/Desktop/MSEI Front End/src/news-page/header.scss */
+/* line 290, C:/MSEI/src/news-page/header.scss */
 .M__featuredImage-container {
   width: 100%;
-  /* or whatever is required */
   text-align: center;
-  /* ensures the image is always in the h-middle */
   overflow: hidden;
-  /* hide the cropped portion */
   height: 430px;
   color: white;
   margin-bottom: 18px; }
 
-/* line 345, C:/Users/Schalk/Desktop/MSEI Front End/src/news-page/header.scss */
+/* line 299, C:/MSEI/src/news-page/header.scss */
 .M__featuredImage-image {
   height: 430px;
   position: relative;
-  /* allows repositioning */
   left: 100%;
-  /* move the whole width of the image to the right */
-  margin-left: -200%;
-  /* magic! */ }
+  margin-left: -200%; }
 
-/* line 357, C:/Users/Schalk/Desktop/MSEI Front End/src/news-page/header.scss */
+/* line 306, C:/MSEI/src/news-page/header.scss */
 .M__featuredImage-label {
   background: red;
   bottom: 0;
@@ -835,91 +694,17 @@ O__categoryList-heading {
   background: red;
   margin-left: 20%; }
 
-/* line 366, C:/Users/Schalk/Desktop/MSEI Front End/src/news-page/header.scss */
-.M__largeSkyscraperAdvert-main {
-  margin-top: 40px;
-  padding: 30px;
-  background: #eeeeee;
-  border: solid 1px #cdcdcd; }
-
-/* line 372, C:/Users/Schalk/Desktop/MSEI Front End/src/news-page/header.scss */
-.M__largeSkyscraperAdvert-title {
-  font-size: 13px;
-  color: #a5a5a5;
-  text-transform: uppercase;
-  text-align: center;
-  letter-spacing: 1px;
-  margin-bottom: 10px;
-  font-weight: 700; }
-
-/* line 385, C:/Users/Schalk/Desktop/MSEI Front End/src/news-page/header.scss */
-#__content-main {
-  padding: 90px  0 0 0; }
-
-/* line 386, C:/Users/Schalk/Desktop/MSEI Front End/src/news-page/header.scss */
-#__articleHeader-centre {
-  width: 1255px; }
-
-/* line 388, C:/Users/Schalk/Desktop/MSEI Front End/src/news-page/header.scss */
-#__articleContent-col1-row1 {
-  width: 110px; }
-
-/* line 390, C:/Users/Schalk/Desktop/MSEI Front End/src/news-page/header.scss */
-.A__smallTitle-main {
-  text-transform: uppercase;
-  white-space: nowrap;
-  font: 700 16px "Roboto Condensed";
-  color: #aaaaaa; }
-
-/* line 398, C:/Users/Schalk/Desktop/MSEI Front End/src/news-page/header.scss */
-.A__smallTitle-main--socialShare {
-  text-align: center; }
-
-/* line 401, C:/Users/Schalk/Desktop/MSEI Front End/src/news-page/header.scss */
+/* line 328, C:/MSEI/src/news-page/header.scss */
 .M__socialShareButton-main {
   padding: 7px 4px;
   border-bottom: 1px solid #cdcdcd;
   color: #999999; }
-  /* line 405, C:/Users/Schalk/Desktop/MSEI Front End/src/news-page/header.scss */
+  /* line 332, C:/MSEI/src/news-page/header.scss */
   .M__socialShareButton-main:hover {
     background: #b8b8b8;
     color: white; }
 
-/* line 432, C:/Users/Schalk/Desktop/MSEI Front End/src/news-page/header.scss */
-.M__socialShareButton-text {
-  text-transform: uppercase;
-  font-size: 13px;
-  font-weight: 700;
-  padding: 8px 0 8px 10px; }
-
-/* line 439, C:/Users/Schalk/Desktop/MSEI Front End/src/news-page/header.scss */
-#__articleFooter-main {
-  background: #eeeeee;
-  padding-top: 60px; }
-
-/* line 440, C:/Users/Schalk/Desktop/MSEI Front End/src/news-page/header.scss */
-#__articleFooter-col1 {
-  width: 827px; }
-
-/* line 441, C:/Users/Schalk/Desktop/MSEI Front End/src/news-page/header.scss */
-#__articleFooter-col1-row3 {
-  padding-top: 60px; }
-
-/* line 444, C:/Users/Schalk/Desktop/MSEI Front End/src/news-page/header.scss */
-.M__shortcodeBox-main {
-  padding: 30px;
-  background: #eeeeee;
-  border: solid 1px #cdcdcd; }
-
-/* line 450, C:/Users/Schalk/Desktop/MSEI Front End/src/news-page/header.scss */
-#__articleFooter-col2-row2 {
-  width: 400px; }
-
-/* line 453, C:/Users/Schalk/Desktop/MSEI Front End/src/news-page/header.scss */
-.O__socialShareList-main {
-  border-top: 1px solid #cdcdcd; }
-
-/* line 459, C:/Users/Schalk/Desktop/MSEI Front End/src/news-page/header.scss */
+/* line 368, C:/MSEI/src/news-page/header.scss */
 .M_textPrompt-main {
   color: black;
   background: white;
@@ -929,9 +714,263 @@ O__categoryList-heading {
   text-transform: uppercase;
   font-weight: 700;
   font-family: "Roboto Condensed"; }
-  /* line 459, C:/Users/Schalk/Desktop/MSEI Front End/src/news-page/header.scss */
+  /* line 377, C:/MSEI/src/news-page/header.scss */
   .M_textPrompt-main:hover {
     background: #b8b8b8;
     color: white; }
+
+/* line 399, C:/MSEI/src/news-page/header.scss */
+.M__shortcodeBox-main {
+  padding: 30px;
+  background: #eeeeee;
+  border: solid 1px #cdcdcd; }
+
+/* line 440, C:/MSEI/src/news-page/header.scss */
+.O__categoryList-item {
+  width: 33.33333%;
+  padding: 0 10px; }
+
+/* line 444, C:/MSEI/src/news-page/header.scss */
+.O__categoryList-item:nth-of-type(3n+1) {
+  padding-left: 0; }
+
+/* line 447, C:/MSEI/src/news-page/header.scss */
+.O__categoryList-item:nth-of-type(3n) {
+  padding-right: 0; }
+
+/* line 450, C:/MSEI/src/news-page/header.scss */
+.O__categoryList-item:nth-child(1) {
+  width: 100%;
+  padding: 0; }
+
+/* line 454, C:/MSEI/src/news-page/header.scss */
+.O__categoryList-item:nth-child(1) .M__contentThumb-showcase {
+  display: block; }
+
+/* line 457, C:/MSEI/src/news-page/header.scss */
+.O__categoryList-item:nth-child(-n+3) .M__contentThumb-title {
+  font: 700 38px "Roboto Condensed";
+  margin-top: 10px; }
+
+/* line 462, C:/MSEI/src/news-page/header.scss */
+.O__categoryList-item:nth-child(2) .M__contentThumb-title,
+.O__categoryList-item:nth-child(3) .M__contentThumb-title {
+  margin-top: 30px; }
+
+/* line 465, C:/MSEI/src/news-page/header.scss */
+.O__categoryList-item:nth-child(-n+3) .M__contentThumb-subheading {
+  display: block;
+  margin-top: 5px;
+  margin-bottom: 40px; }
+
+/* line 470, C:/MSEI/src/news-page/header.scss */
+.O__categoryList-item:nth-child(-n+3) .M__contentThumb-date {
+  display: none; }
+
+/* line 473, C:/MSEI/src/news-page/header.scss */
+.O__categoryList-item:nth-child(1) .M__contentThumb-main {
+  height: 450px; }
+
+/* line 476, C:/MSEI/src/news-page/header.scss */
+.O__categoryList-item:nth-child(2) {
+  width: 50%;
+  padding-left: 0; }
+
+/* line 480, C:/MSEI/src/news-page/header.scss */
+.O__categoryList-item:nth-child(2) .M__contentThumb-main {
+  height: 300px; }
+
+/* line 483, C:/MSEI/src/news-page/header.scss */
+.O__categoryList-item:nth-child(3) {
+  width: 50%;
+  padding-right: 0; }
+
+/* line 487, C:/MSEI/src/news-page/header.scss */
+.O__categoryList-item:nth-child(3) .M__contentThumb-main {
+  height: 300px; }
+
+/* line 490, C:/MSEI/src/news-page/header.scss */
+O__categoryList-heading {
+  width: 100%;
+  margin-top: 60px; }
+
+/* line 508, C:/MSEI/src/news-page/header.scss */
+.O__paginationNumbers-item {
+  width: 41px;
+  margin-left: 5px; }
+
+/* line 523, C:/MSEI/src/news-page/header.scss */
+.O__socialShareList-main {
+  border-top: 1px solid #cdcdcd; }
+
+/* line 549, C:/MSEI/src/news-page/header.scss */
+#__leaderboard-main {
+  background: blue; }
+
+/* line 552, C:/MSEI/src/news-page/header.scss */
+#__leaderboard-centre {
+  width: 60.5em;
+  margin: 0 auto; }
+
+@media (max-width: 1000px) {
+  /* line 557, C:/MSEI/src/news-page/header.scss */
+  #__leaderboard-centre {
+    width: 42.5em;
+    margin: 0 auto; } }
+
+/* line 562, C:/MSEI/src/news-page/header.scss */
+#__topNav-main {
+  background: #26292a;
+  color: white; }
+
+/* line 563, C:/MSEI/src/news-page/header.scss */
+#__menuContent-main {
+  background: red; }
+
+/* line 564, C:/MSEI/src/news-page/header.scss */
+#__menuContent-centre {
+  width: 78.4375em;
+  margin: 0 auto; }
+
+/* line 565, C:/MSEI/src/news-page/header.scss */
+#__mainNav-main {
+  background: #efefef; }
+
+/* line 566, C:/MSEI/src/news-page/header.scss */
+#__mainNav-centre {
+  width: 78.4375em;
+  margin: 0 auto; }
+
+/* line 567, C:/MSEI/src/news-page/header.scss */
+#__secondaryNav-main {
+  background: #cdcdcd; }
+
+/* line 568, C:/MSEI/src/news-page/header.scss */
+#__secondaryNav-centre {
+  width: 78.4375em;
+  margin: 0 auto; }
+
+/* line 571, C:/MSEI/src/news-page/header.scss */
+#__content-main {
+  padding: 90px 0 0 0; }
+
+/* line 587, C:/MSEI/src/news-page/header.scss */
+#__articleHeader-centre {
+  width: 1255px;
+  margin: 0 auto; }
+
+/* line 591, C:/MSEI/src/news-page/header.scss */
+#__articleHeader-col1 {
+  width: 860px; }
+
+/* line 594, C:/MSEI/src/news-page/header.scss */
+#__articleHeader-col2 {
+  width: 370px;
+  margin-top: 43px; }
+
+/* line 598, C:/MSEI/src/news-page/header.scss */
+#__articleHeader-main {
+  height: 500px; }
+
+/* line 601, C:/MSEI/src/news-page/header.scss */
+#__articleHeader-centre {
+  width: 1255px; }
+
+/* line 616, C:/MSEI/src/news-page/header.scss */
+#__articleContent-col1-row1 {
+  margin-bottom: 15px; }
+
+/* line 617, C:/MSEI/src/news-page/header.scss */
+#__articleContent-centre {
+  width: 1255px;
+  margin: 0 auto; }
+
+/* line 622, C:/MSEI/src/news-page/header.scss */
+#__articleContent-col1-row1 {
+  width: 110px; }
+
+/* line 626, C:/MSEI/src/news-page/header.scss */
+#__articleContent-col2 {
+  margin-left: 150px;
+  width: 600px; }
+
+/* line 642, C:/MSEI/src/news-page/header.scss */
+#__articleFooter-main {
+  background: #eeeeee;
+  padding-top: 60px; }
+
+/* line 646, C:/MSEI/src/news-page/header.scss */
+#__articleFooter-col1 {
+  width: 827px; }
+
+/* line 649, C:/MSEI/src/news-page/header.scss */
+#__articleFooter-col1-row3 {
+  padding-top: 60px; }
+
+/* line 652, C:/MSEI/src/news-page/header.scss */
+#__articleFooter-col2-row2 {
+  width: 400px; }
+
+/* line 653, C:/MSEI/src/news-page/header.scss */
+#__articleFooter-centre {
+  width: 1255px;
+  margin: 0 auto; }
+
+/* line 664, C:/MSEI/src/news-page/header.scss */
+.M__largeSkyscraperAdvert-main {
+  border: 1px solid #cdcdcd;
+  background: #eeeeee;
+  padding: 30px 0; }
+
+/* line 665, C:/MSEI/src/news-page/header.scss */
+.M__largeSkyscraperAdvert-title {
+  font-size: 13px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #a5a5a5;
+  letter-spacing: 1px;
+  text-align: center;
+  margin-bottom: 10px; }
+
+/* line 666, C:/MSEI/src/news-page/header.scss */
+.M__largeSkyscraperAdvert-container {
+  display: table;
+  margin: 0 auto; }
+
+/* line 672, C:/MSEI/src/news-page/header.scss */
+.M__pullQuote-main {
+  height: auto;
+  background: white;
+  font-family: "Roboto Condensed";
+  font-weight: 700;
+  padding: 0.3125em 0;
+  width: 240px; }
+
+/* line 680, C:/MSEI/src/news-page/header.scss */
+.M__pullQuote-quote {
+  border-left: 0.0625em solid grey;
+  padding-left: 1.25em;
+  margin-left: 1.25em;
+  margin-bottom: 2.5em; }
+
+/* line 686, C:/MSEI/src/news-page/header.scss */
+.M__pullQuote-text {
+  color: black;
+  font-size: 1.25em; }
+
+/* line 690, C:/MSEI/src/news-page/header.scss */
+.M__pullQuote-icon {
+  margin-top: 0.625em;
+  margin-right: 0.625em; }
+
+/* line 694, C:/MSEI/src/news-page/header.scss */
+.M__pullQuote-retweet {
+  margin-bottom: 0.75em;
+  margin-top: 1.375em;
+  color: grey;
+  font-size: 0.75em;
+  margin-left: 1.125em;
+  letter-spacing: 1px;
+  text-transform: uppercase; }
 
 /*# sourceMappingURL=header.css.map */
