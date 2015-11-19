@@ -1,10 +1,9 @@
 
-
-
-
 <!doctype html>
 <html>
 <head>
+<script src="https://cdn.rawgit.com/scottjehl/picturefill/master/dist/picturefill.min.js" async="async"></script>
+<script>document.createElement( "picture" );</script>
 <link rel="stylesheet" type="text/css" href="css/stylesheet.css"/><meta charset="utf-8">
 </head>
 <body>
@@ -43,64 +42,242 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
 <!-- Head & Menu-->
 <div id="__head-main">
-  <div id="__leaderboard-main" style="background: #017795">
+  <div id="__leaderboard-main">
     <div id="__leaderboard-centre">
-      <picture><img src="Community_968x100.jpg" class="M__leaderboardAdvert-image"/></picture>
+      <picture>
+        <source srcset="http://lorempixel.com/968/100" media="(min-width: 1001px)" class="M__featuredImage-image"/><img src="http://lorempixel.com/680/100" class="M__leaderboardAdvert-image"/>
+      </picture>
     </div>
   </div>
   <div id="__topNav-main">
     <div id="__topNav-centre" class="u-cf">
+      <div id="__topNav-container"></div>
       <div id="__topNav-col1" class="u-floatLeft u-cf">
         <div id="__topNav-col1-col1" class="u-floatLeft">
           <div class="O__topNav-main u-cf">
-            <div class="O__topNav-item u-floatLeft">M__topNavButton</div>
-            <div class="O__topNav-item u-floatLeft">M__topNavButton</div>
-            <div class="O__topNav-item u-floatLeft">M__topNavButton</div>
-            <div class="O__topNav-item u-floatLeft">M__topNavButton</div>
+            <div class="O__topNav-item u-floatLeft"><a href="#" class="u-noUnderline">
+                <div class="M__topNavButton-main">
+                  <div class="M__topNavButton-container">About us</div>
+                </div></a>
+            </div>
+            <div class="O__topNav-item u-floatLeft"><a href="#" class="u-noUnderline">
+                <div class="M__topNavButton-main">
+                  <div class="M__topNavButton-container">Advertise</div>
+                </div></a>
+            </div>
+            <div class="O__topNav-item u-floatLeft"><a href="#" class="u-noUnderline">
+                <div class="M__topNavButton-main">
+                  <div class="M__topNavButton-container">Contact Us</div>
+                </div></a>
+            </div>
+            <div class="O__topNav-item u-floatLeft"><a href="#" class="u-noUnderline">
+                <div class="M__topNavButton-main">
+                  <div class="M__topNavButton-container">Register</div>
+                </div></a>
+            </div>
           </div>
         </div>
-        <div id="__topNav-col1-col2" class="u-floatLeft">+M__Login</div>
+        <div id="__topNav-col1-col2" class="u-floatLeft"><a href="#" class="u-unUnderline">
+            <div class="M__Login-main">
+              <div class="M__Login-container u-cf">
+                <div class="M__Login-icon sprite sprite-login-grey-01 u-floatLeft"></div>
+                <div class="M__Login-text u-floatRight">Login</div>
+              </div>
+            </div></a>
+        </div>
       </div>
       <div id="__topNav-col2" class="u-floatRight">
-        <div class="O__social-main u-cf">
-          <div class="O__social-item u-floatLeft">M__social--head-item</div>
-          <div class="O__social-item u-floatLeft">M__social--head-item</div>
-          <div class="O__social-item u-floatLeft">M__social--head-item</div>
+        <div class="O__socialLinkList-main u-cf">
+          <div class="O__socialLinkList-item u-floatLeft"><a href="#" class="u-noUnderline">
+              <div class="M__socialLinkButton-main">
+                <div class="M__socialLinkButton-circle">
+                  <div class="M__socialLinkButton-container">
+                    <div class="M__socialLinkButton-icon icon-facebook"></div>
+                  </div>
+                </div>
+              </div></a>
+          </div>
+          <div class="O__socialLinkList-item u-floatLeft"><a href="#" class="u-noUnderline">
+              <div class="M__socialLinkButton-main">
+                <div class="M__socialLinkButton-circle">
+                  <div class="M__socialLinkButton-container">
+                    <div class="M__socialLinkButton-icon icon-google"></div>
+                  </div>
+                </div>
+              </div></a>
+          </div>
+          <div class="O__socialLinkList-item u-floatLeft"><a href="#" class="u-noUnderline">
+              <div class="M__socialLinkButton-main">
+                <div class="M__socialLinkButton-circle">
+                  <div class="M__socialLinkButton-container">
+                    <div class="M__socialLinkButton-icon icon-linkedin"></div>
+                  </div>
+                </div>
+              </div></a>
+          </div>
+          <div class="O__socialLinkList-item u-floatLeft"><a href="#" class="u-noUnderline">
+              <div class="M__socialLinkButton-main">
+                <div class="M__socialLinkButton-circle">
+                  <div class="M__socialLinkButton-container">
+                    <div class="M__socialLinkButton-icon icon-rss"></div>
+                  </div>
+                </div>
+              </div></a>
+          </div>
+          <div class="O__socialLinkList-item u-floatLeft"><a href="#" class="u-noUnderline">
+              <div class="M__socialLinkButton-main">
+                <div class="M__socialLinkButton-circle">
+                  <div class="M__socialLinkButton-container">
+                    <div class="M__socialLinkButton-icon icon-twitter"></div>
+                  </div>
+                </div>
+              </div></a>
+          </div>
+          <div class="O__socialLinkList-item u-floatLeft"><a href="#" class="u-noUnderline">
+              <div class="M__socialLinkButton-main">
+                <div class="M__socialLinkButton-circle">
+                  <div class="M__socialLinkButton-container">
+                    <div class="M__socialLinkButton-icon icon-youtube"></div>
+                  </div>
+                </div>
+              </div></a>
+          </div>
         </div>
       </div>
     </div>
   </div>
   <div id="__menuContent-main">
     <div id="__menuContent-centre" class="u-cf">
-      <div id="__menuContent-col1" class="u-floatLeft">M__logo</div>
-      <div id="__menuContent-col2" class="u-floatRight">M__smallSuperbannerAdvert</div>
+      <div id="__menuContent-col1" class="u-floatLeft"><a href="#">
+          <div class="A__logo-main">
+            <picture><img src="http://lorempixel.com/450/86"/></picture>
+          </div></a>
+      </div>
+      <div id="__menuContent-col2" class="u-floatRight"><a href="#">
+          <div class="A__smallSuperbannerAdvert-main">
+            <picture><img src="http://lorempixel.com/468/60"/></picture>
+          </div></a>
+      </div>
     </div>
   </div>
   <div id="__mainNav-main">
     <div id="__mainNav-centre" class="u-cf">
       <div id="__mainNav-col1" class="u-floatLeft">
         <div class="O__mainNavList-main u-cf">
-          <div class="O__mainNavList-item u-floatLeft">M__mainNavButton</div>
-          <div class="O__mainNavList-item u-floatLeft">M__mainNavButton</div>
-          <div class="O__mainNavList-item u-floatLeft">M__mainNavButton</div>
-          <div class="O__mainNavList-item u-floatLeft">M__mainNavButton</div>
-          <div class="O__mainNavList-item u-floatLeft">M__mainNavButton</div>
-          <div class="O__mainNavList-item u-floatLeft">M__mainNavButton</div>
-          <div class="O__mainNavList-item u-floatLeft">M__mainNavButton</div>
-          <div class="O__mainNavList-item u-floatLeft">M__mainNavButton</div>
+          <div class="O__mainNavList-item u-floatLeft"><a href="#">
+              <div class="M__mainNavButton-main">
+                <div class="M__mainNavButton-container">
+                  <div class="M__mainNavButton-centre u-cf">
+                    <div class="M__mainNavButton-text u-floatLeft">News</div>
+                  </div>
+                </div>
+              </div></a>
+          </div>
+          <div class="O__mainNavList-item u-floatLeft"><a href="#">
+              <div class="M__mainNavButton-main">
+                <div class="M__mainNavButton-container">
+                  <div class="M__mainNavButton-centre u-cf">
+                    <div class="M__mainNavButton-text u-floatLeft">Features</div>
+                  </div>
+                </div>
+              </div></a>
+          </div>
+          <div class="O__mainNavList-item u-floatLeft"><a href="#">
+              <div class="M__mainNavButton-main">
+                <div class="M__mainNavButton-container">
+                  <div class="M__mainNavButton-centre u-cf">
+                    <div class="M__mainNavButton-text u-floatLeft">Magazine</div>
+                    <div class="M__mainNavButton-arrow u-floatRight">x</div>
+                  </div>
+                </div>
+              </div></a>
+          </div>
+          <div class="O__mainNavList-item u-floatLeft"><a href="#">
+              <div class="M__mainNavButton-main">
+                <div class="M__mainNavButton-container">
+                  <div class="M__mainNavButton-centre u-cf">
+                    <div class="M__mainNavButton-text u-floatLeft">Reports</div>
+                  </div>
+                </div>
+              </div></a>
+          </div>
+          <div class="O__mainNavList-item u-floatLeft"><a href="#">
+              <div class="M__mainNavButton-main">
+                <div class="M__mainNavButton-container">
+                  <div class="M__mainNavButton-centre u-cf">
+                    <div class="M__mainNavButton-text u-floatLeft">Tenders</div>
+                  </div>
+                </div>
+              </div></a>
+          </div>
+          <div class="O__mainNavList-item u-floatLeft"><a href="#">
+              <div class="M__mainNavButton-main">
+                <div class="M__mainNavButton-container">
+                  <div class="M__mainNavButton-centre u-cf">
+                    <div class="M__mainNavButton-text u-floatLeft">Multimedia</div>
+                  </div>
+                </div>
+              </div></a>
+          </div>
+          <div class="O__mainNavList-item u-floatLeft"><a href="#">
+              <div class="M__mainNavButton-main">
+                <div class="M__mainNavButton-container">
+                  <div class="M__mainNavButton-centre u-cf">
+                    <div class="M__mainNavButton-text u-floatLeft">Partners</div>
+                  </div>
+                </div>
+              </div></a>
+          </div>
+          <div class="O__mainNavList-item u-floatLeft"><a href="#">
+              <div class="M__mainNavButton-main">
+                <div class="M__mainNavButton-container">
+                  <div class="M__mainNavButton-centre u-cf">
+                    <div class="M__mainNavButton-text u-floatLeft">News</div>
+                  </div>
+                </div>
+              </div></a>
+          </div>
         </div>
       </div>
-      <div id="__mainNav-col1" class="u-floatRight">+M__mainNavsearch</div>
+      <div id="__mainNav-col2" class="u-floatRight"><a href="#">
+          <div class="M__mainNavsearch-main">
+            <div class="M__mainNavsearch-container">1</div>
+          </div></a>
+      </div>
     </div>
   </div>
   <div id="__secondaryNav-main">
     <div id="__secondaryNav-centre">
       <div class="O__secondaryNavList-main u-cf">
-        <div class="O__secondaryNavList-item u-floatLeft">M__secondaryNavButton</div>
-        <div class="O__secondaryNavList-item u-floatLeft">M__secondaryNavButton</div>
-        <div class="O__secondaryNavList-item u-floatLeft">M__secondaryNavButton</div>
+        <div class="O__secondaryNavList-item u-floatLeft"><a href="#" class="u-noUnderline">
+            <div class="M__secondaryNavButton-main">
+              <div class="M__secondaryNavButton-container u-borderLeft">Video</div>
+            </div></a>
+        </div>
+        <div class="O__secondaryNavList-item u-floatLeft"><a href="#" class="u-noUnderline">
+            <div class="M__secondaryNavButton-main">
+              <div class="M__secondaryNavButton-container">Audio</div>
+            </div></a>
+        </div>
+        <div class="O__secondaryNavList-item u-floatLeft"><a href="#" class="u-noUnderline">
+            <div class="M__secondaryNavButton-main">
+              <div class="M__secondaryNavButton-container">Webinar Archive</div>
+            </div></a>
+        </div>
       </div>
     </div>
   </div>
@@ -116,9 +293,9 @@
             <div class="M__heading-title u-floatLeft">News Story</div><a href="#" class="u-noUnderline">
               <div class="M__heading-prompt u-floatLeft">
                 <!-- Het ekstra parent DIV ingesit: .M__heading-container-->
-                <div class="M__heading-container u-cf">
+                <div class="M__heading-promptContainer u-cf">
                   <div class="M__heading-promptText u-floatLeft">Leave a Comment</div>
-                  <div class="M__heading-arrow sprite sprite-arrow-grey u-floatRight"></div>
+                  <div style="display: inline-block;" class="M__heading-arrow icon-arrow u-floatRight"></div>
                 </div>
               </div></a>
           </div>
@@ -152,7 +329,7 @@
   
   <div id="__articleContent-main">
     <div id="__articleContent-centre">
-      <!--Het #__articleContent-container in gesit  -->
+      <!--Het #__articleContent-container in gesit-->
       <div id="__articleContent-container" class="u-cf">
         <!--Het inhoud van -col1 en -col2 omgeruil.-->
         
@@ -186,52 +363,64 @@
           <div id="__articleContent-col1-row2">
             <div class="O__socialShareList-main u-cf"><a href="#">
                 <div class="M__socialShareButton-main u-cf">
-                  <div class="M__socialShareButton-icon u-floatLeft">
-                    <picture>
-                      <div class="M__socialShareList-icon sprite sprite-facebook-share-01"></div>
-                    </picture>
+                  <div class="M__socialShareButton-container u-cf">
+                    <div class="M__socialShareButton-icon u-floatLeft">
+                      <picture>
+                        <div class="M__socialShareList-icon sprite sprite-facebook-share-01"></div>
+                      </picture>
+                    </div>
+                    <div class="M__socialShareButton-text u-floatLeft">Share</div>
                   </div>
-                  <div class="M__socialShareButton-text u-floatLeft">Share</div>
                 </div></a><a href="#">
                 <div class="M__socialShareButton-main u-cf">
-                  <div class="M__socialShareButton-icon u-floatLeft">
-                    <picture>
-                      <div class="M__socialShareList-icon sprite sprite-Twitter-share-01"></div>
-                    </picture>
+                  <div class="M__socialShareButton-container u-cf">
+                    <div class="M__socialShareButton-icon u-floatLeft">
+                      <picture>
+                        <div class="M__socialShareList-icon sprite sprite-Twitter-share-01"></div>
+                      </picture>
+                    </div>
+                    <div class="M__socialShareButton-text u-floatLeft">Share</div>
                   </div>
-                  <div class="M__socialShareButton-text u-floatLeft">Share</div>
                 </div></a><a href="#">
                 <div class="M__socialShareButton-main u-cf">
-                  <div class="M__socialShareButton-icon u-floatLeft">
-                    <picture>
-                      <div class="M__socialShareList-icon sprite sprite-Linkedin-share-01"></div>
-                    </picture>
+                  <div class="M__socialShareButton-container u-cf">
+                    <div class="M__socialShareButton-icon u-floatLeft">
+                      <picture>
+                        <div class="M__socialShareList-icon sprite sprite-Linkedin-share-01"></div>
+                      </picture>
+                    </div>
+                    <div class="M__socialShareButton-text u-floatLeft">Share</div>
                   </div>
-                  <div class="M__socialShareButton-text u-floatLeft">Share</div>
                 </div></a><a href="#">
                 <div class="M__socialShareButton-main u-cf">
-                  <div class="M__socialShareButton-icon u-floatLeft">
-                    <picture>
-                      <div class="M__socialShareList-icon sprite sprite-Google-share-01"></div>
-                    </picture>
+                  <div class="M__socialShareButton-container u-cf">
+                    <div class="M__socialShareButton-icon u-floatLeft">
+                      <picture>
+                        <div class="M__socialShareList-icon sprite sprite-Google-share-01"></div>
+                      </picture>
+                    </div>
+                    <div class="M__socialShareButton-text u-floatLeft">Share</div>
                   </div>
-                  <div class="M__socialShareButton-text u-floatLeft">Share</div>
                 </div></a><a href="#">
                 <div class="M__socialShareButton-main u-cf">
-                  <div class="M__socialShareButton-icon u-floatLeft">
-                    <picture>
-                      <div class="M__socialShareList-icon sprite sprite-Email-share-01"></div>
-                    </picture>
+                  <div class="M__socialShareButton-container u-cf">
+                    <div class="M__socialShareButton-icon u-floatLeft">
+                      <picture>
+                        <div class="M__socialShareList-icon sprite sprite-Email-share-01"></div>
+                      </picture>
+                    </div>
+                    <div class="M__socialShareButton-text u-floatLeft">Share</div>
                   </div>
-                  <div class="M__socialShareButton-text u-floatLeft">Share</div>
                 </div></a><a href="#">
                 <div class="M__socialShareButton-main u-cf">
-                  <div class="M__socialShareButton-icon u-floatLeft">
-                    <picture>
-                      <div class="M__socialShareList-icon sprite sprite-Comment-share-01"></div>
-                    </picture>
+                  <div class="M__socialShareButton-container u-cf">
+                    <div class="M__socialShareButton-icon u-floatLeft">
+                      <picture>
+                        <div class="M__socialShareList-icon sprite sprite-Comment-share-01"></div>
+                      </picture>
+                    </div>
+                    <div class="M__socialShareButton-text u-floatLeft">Share</div>
                   </div>
-                  <div class="M__socialShareButton-text u-floatLeft">Share</div>
                 </div></a>
             </div>
           </div>
@@ -367,6 +556,206 @@
                   </div>
                 </div></a>
             </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</div>
+<div id="__foot-main">
+  <div id="__footTopBar-main">
+    <div id="__footTopBar-centre" class="u-cf">
+      <div id="__footTopBar-col1" class="u-floatLeft"><a href="#" class="u-noUnderline">
+          <div class="A__textMSEI-main">Metering & Smart Energy International</div></a>
+      </div>
+      <div id="__footTopBar-col2" class="u-floatRight">
+        <div class="O__socialLinkList-main u-cf">
+          <div class="O__socialLinkList-item u-floatLeft"><a href="#" class="u-noUnderline">
+              <div class="M__socialLinkButton-main">
+                <div class="M__socialLinkButton-circle">
+                  <div class="M__socialLinkButton-container">
+                    <div class="M__socialLinkButton-icon icon-facebook"></div>
+                  </div>
+                </div>
+              </div></a>
+          </div>
+          <div class="O__socialLinkList-item u-floatLeft"><a href="#" class="u-noUnderline">
+              <div class="M__socialLinkButton-main">
+                <div class="M__socialLinkButton-circle">
+                  <div class="M__socialLinkButton-container">
+                    <div class="M__socialLinkButton-icon icon-google"></div>
+                  </div>
+                </div>
+              </div></a>
+          </div>
+          <div class="O__socialLinkList-item u-floatLeft"><a href="#" class="u-noUnderline">
+              <div class="M__socialLinkButton-main">
+                <div class="M__socialLinkButton-circle">
+                  <div class="M__socialLinkButton-container">
+                    <div class="M__socialLinkButton-icon icon-linkedin"></div>
+                  </div>
+                </div>
+              </div></a>
+          </div>
+          <div class="O__socialLinkList-item u-floatLeft"><a href="#" class="u-noUnderline">
+              <div class="M__socialLinkButton-main">
+                <div class="M__socialLinkButton-circle">
+                  <div class="M__socialLinkButton-container">
+                    <div class="M__socialLinkButton-icon icon-rss"></div>
+                  </div>
+                </div>
+              </div></a>
+          </div>
+          <div class="O__socialLinkList-item u-floatLeft"><a href="#" class="u-noUnderline">
+              <div class="M__socialLinkButton-main">
+                <div class="M__socialLinkButton-circle">
+                  <div class="M__socialLinkButton-container">
+                    <div class="M__socialLinkButton-icon icon-twitter"></div>
+                  </div>
+                </div>
+              </div></a>
+          </div>
+          <div class="O__socialLinkList-item u-floatLeft"><a href="#" class="u-noUnderline">
+              <div class="M__socialLinkButton-main">
+                <div class="M__socialLinkButton-circle">
+                  <div class="M__socialLinkButton-container">
+                    <div class="M__socialLinkButton-icon icon-youtube"></div>
+                  </div>
+                </div>
+              </div></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="__footContent-main">
+    <div id="__footContent-centre">
+      <div class="O__footColumnList-main u-cf">
+        <div class="O__footColumnList-item u-floatLeft">
+          <div class="M__footColumn-main"><a href="#" class="u-noUnderline">
+              <div class="M__footColumn-heading">News</div></a><a href="#" class="u-noUnderline">
+              <div class="M__footColumn-link">Europe and UK</div></a><a href="#" class="u-noUnderline">
+              <div class="M__footColumn-link">North America</div></a><a href="#" class="u-noUnderline">
+              <div class="M__footColumn-link">Asia</div></a><a href="#" class="u-noUnderline">
+              <div class="M__footColumn-link">Afirca and Middle East</div></a><a href="#" class="u-noUnderline">
+              <div class="M__footColumn-link">Australia and New Zealand</div></a><a href="#" class="u-noUnderline">
+              <div class="M__footColumn-link">Central and Latin America</div></a>
+          </div>
+        </div>
+        <div class="O__footColumnList-item u-floatLeft">
+          <div class="M__footColumn-main"><a href="#" class="u-noUnderline">
+              <div class="M__footColumn-heading">Features</div></a><a href="#" class="u-noUnderline">
+              <div class="M__footColumn-link">Industry Insights</div></a><a href="#" class="u-noUnderline">
+              <div class="M__footColumn-link">How-to Guides</div></a><a href="#" class="u-noUnderline">
+              <div class="M__footColumn-link">Engerati's Week in Smart Energy</div></a>
+          </div>
+        </div>
+        <div class="O__footColumnList-item u-floatLeft">
+          <div class="M__footColumn-main"><a href="#" class="u-noUnderline">
+              <div class="M__footColumn-heading">Magazines</div></a><a href="#" class="u-noUnderline">
+              <div class="M__footColumn-link">Latest Issue</div></a><a href="#" class="u-noUnderline">
+              <div class="M__footColumn-link">Back Issue</div></a>
+          </div>
+        </div>
+        <div class="O__footColumnList-item u-floatLeft">
+          <div class="M__footColumn-main"><a href="#" class="u-noUnderline">
+              <div class="M__footColumn-heading">Reports</div></a><a href="#" class="u-noUnderline">
+              <div class="M__footColumn-link">Free White Paper</div></a><a href="#" class="u-noUnderline">
+              <div class="M__footColumn-link">Industry Reports</div></a><a href="#" class="u-noUnderline">
+              <div class="M__footColumn-link">Special Reports</div></a>
+          </div>
+        </div>
+        <div class="O__footColumnList-item u-floatLeft">
+          <div class="M__footColumn-main"><a href="#" class="u-noUnderline">
+              <div class="M__footColumn-heading">Tenders</div></a><a href="#" class="u-noUnderline">
+              <div class="M__footColumn-link">Free Tenders</div></a><a href="#" class="u-noUnderline">
+              <div class="M__footColumn-link">Tender Library</div></a>
+          </div>
+        </div>
+        <div class="O__footColumnList-item u-floatLeft">
+          <div class="M__footColumn-main"><a href="#" class="u-noUnderline">
+              <div class="M__footColumn-heading">Multimedia</div></a><a href="#" class="u-noUnderline">
+              <div class="M__footColumn-link">Video</div></a><a href="#" class="u-noUnderline">
+              <div class="M__footColumn-link">Audio</div></a><a href="#" class="u-noUnderline">
+              <div class="M__footColumn-link">Webinar Archive</div></a>
+          </div>
+        </div>
+        <div class="O__footColumnList-item u-floatLeft">
+          <div class="M__footColumn-main"><a href="#" class="u-noUnderline">
+              <div class="M__footColumn-heading">Events</div></a><a href="#" class="u-noUnderline">
+              <div class="M__footColumn-link">MSEI Events</div></a><a href="#" class="u-noUnderline">
+              <div class="M__footColumn-link">Partner Events</div></a><a href="#" class="u-noUnderline">
+              <div class="M__footColumn-link">Training Academy</div></a>
+          </div>
+        </div>
+        <div class="O__footColumnList-item u-floatLeft">
+          <div class="M__footColumn-main"><a href="#" class="u-noUnderline">
+              <div class="M__footColumn-heading">Partners</div></a><a href="#" class="u-noUnderline">
+              <div class="M__footColumn-link">View Partners</div></a><a href="#" class="u-noUnderline">
+              <div class="M__footColumn-link">Become a Partner</div></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="__footBottomBar-main">
+    <div id="__footBottomBar-row1">
+      <div class="A__disclaimerText">All content copyright 1997—2015 Spintelligent (PTY) Ltd, unless specified otherwise. <br>Website designed and developed by Gap Design Cape Town<br>Website hosted and maintained by Web2Web</div>
+    </div>
+    <div id="__foot-BottomBar-row2">
+      <div class="O__disclaimerLinksList-main">
+        <div class="O__disclaimerLinksList-item u-floatLeft">
+          <div class="M__disclaimerLink-main u-cf"><a href="#" class="u-noUnderline">
+              <div class="M__disclaimerLink-text u-floatLeft">Terms of Use</div></a>
+          </div>
+        </div>
+        <div class="O__disclaimerLinksList-item u-floatLeft">
+          <div class="M__disclaimerLink-main u-cf">
+            <div class="M__disclaimerLink-icon u-floatLeft">
+              <div class="M__disclaimerLink-dot icon-footerDot"></div>
+            </div><a href="#" class="u-noUnderline">
+              <div class="M__disclaimerLink-text u-floatLeft">Privacy Policy</div></a>
+          </div>
+        </div>
+        <div class="O__disclaimerLinksList-item u-floatLeft">
+          <div class="M__disclaimerLink-main u-cf">
+            <div class="M__disclaimerLink-icon u-floatLeft">
+              <div class="M__disclaimerLink-dot icon-footerDot"></div>
+            </div><a href="#" class="u-noUnderline">
+              <div class="M__disclaimerLink-text u-floatLeft">Sitemap</div></a>
+          </div>
+        </div>
+        <div class="O__disclaimerLinksList-item u-floatLeft">
+          <div class="M__disclaimerLink-main u-cf">
+            <div class="M__disclaimerLink-icon u-floatLeft">
+              <div class="M__disclaimerLink-dot icon-footerDot"></div>
+            </div><a href="#" class="u-noUnderline">
+              <div class="M__disclaimerLink-text u-floatLeft">About Us</div></a>
+          </div>
+        </div>
+        <div class="O__disclaimerLinksList-item u-floatLeft">
+          <div class="M__disclaimerLink-main u-cf">
+            <div class="M__disclaimerLink-icon u-floatLeft">
+              <div class="M__disclaimerLink-dot icon-footerDot"></div>
+            </div><a href="#" class="u-noUnderline">
+              <div class="M__disclaimerLink-text u-floatLeft">Advisory Board</div></a>
+          </div>
+        </div>
+        <div class="O__disclaimerLinksList-item u-floatLeft">
+          <div class="M__disclaimerLink-main u-cf">
+            <div class="M__disclaimerLink-icon u-floatLeft">
+              <div class="M__disclaimerLink-dot icon-footerDot"></div>
+            </div><a href="#" class="u-noUnderline">
+              <div class="M__disclaimerLink-text u-floatLeft">Association Partners</div></a>
+          </div>
+        </div>
+        <div class="O__disclaimerLinksList-item u-floatLeft">
+          <div class="M__disclaimerLink-main u-cf">
+            <div class="M__disclaimerLink-icon u-floatLeft">
+              <div class="M__disclaimerLink-dot icon-footerDot"></div>
+            </div><a href="#" class="u-noUnderline">
+              <div class="M__disclaimerLink-text u-floatLeft">Contact</div></a>
           </div>
         </div>
       </div>
