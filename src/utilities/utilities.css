@@ -91,4 +91,8 @@ li {
 .u-tableCell {
   display: table-cell !important; }
 
+/* line 98, C:/MSEI/src/utilities/utilities.scss */
+.u-borderLeft {
+  border-left: 1px solid #999999; }
+
 /*# sourceMappingURL=utilities.css.map */

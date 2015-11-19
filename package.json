@@ -19,6 +19,7 @@
   "devDependencies": {
     "gulp": "^3.9.0",
     "gulp-copy": "0.0.2",
+    "gulp-spritesmith": "0.0.2",
     "gulp-watch": "^4.3.5",
     "gulp.spritesmith": "^5.0.1"
   }

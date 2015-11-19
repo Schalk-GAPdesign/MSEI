@@ -27,7 +27,9 @@
 @import '../utilities/spritesheet.scss';
 @import '../utilities/utilities.scss';
 @include tablet {
-   body{ font-size: 20px;}
+    body {
+        font-size: 1.2em;
+    }
 }
 
 
@@ -59,17 +61,65 @@
 //-                                                                             //
 //-    ATOM                                                                     //
 //-   ---------------                                                           //
+//-    Text MSEI Title                                                          //
+//-                                                                             //
+//-                                                                             //
+//-///////////////////////////////////////////////////////////////////////////////
+
+
+.A__disclaimerText {
+
+    line-height: em(18);
+    font-size: em(13);
+    letter-spacing: em(1);
+    text-align: center;
+}
+
+
+
+//-///////////////////////////////////////////////////////////////////////////////
+//-                                                                             //
+//-                                                                             //
+//-    ATOM                                                                     //
+//-   ---------------                                                           //
+//-    Text MSEI Title                                                          //
+//-                                                                             //
+//-                                                                             //
+//-///////////////////////////////////////////////////////////////////////////////
+
+
+.A__textMSEI-main {
+    font: 700 em(26) "Roboto Condensed";
+    text-transform: uppercase;
+    color: white;
+    &:hover {
+        color: red;
+    }
+}
+
+@include mobile {
+    .A__textMSEI-main {
+        text-align: center;
+    }
+}
+
+
+//-///////////////////////////////////////////////////////////////////////////////
+//-                                                                             //
+//-                                                                             //
+//-    ATOM                                                                     //
+//-   ---------------                                                           //
 //-    SMALL TITLE                                                              //
 //-                                                                             //
 //-                                                                             //
 //-///////////////////////////////////////////////////////////////////////////////
 
 
-    
+
 .A__smallTitle-main {
     text-transform: uppercase;
     white-space: nowrap;
-    font: 700 16px "Roboto Condensed";
+    font: 700 em(16) "Roboto Condensed";
     color: #aaaaaa;
 }
 .A__smallTitle-main--socialShare {
@@ -112,73 +162,94 @@
 //-///////////////////////////////////////////////////////////////////////////////
 
 
-
-
-
-
-
-
-    //-CORE
 .M__contentThumb-main {
     color: white;
-    margin-bottom: 18px;
+    margin-bottom: em(18);
 }
 .M__contentThumb-container.u-relative {
     width: 100%;
-    height: 200px;
+    height: em(200);
     overflow: hidden;
-   
-    
 }
 img.M__contentThumb-imageu.u-absolute {
- left: -1000%;
+    left: -1000%;
     right: -1000%;
     top: -1000%;
     bottom: -1000%;
     margin: auto;
     min-height: 100%;
     min-width: 100%;
-  
 }
-    .M__contentThumb-showcase {
-        margin-top: 15px;
-        display: none;
-        text-transform: uppercase;
-        font-weight: 700;
-    }
-    .M__contentThumb-container.u-absolute {
-        text-align: left;
-        width: 100%;
-        bottom: 0;
-    }
-    .M__contentThumb-label {
-        padding: 5px 15px 5px 10px;
-        background: red;
-    }
-    .M__contentThumb-overlay {
-        padding: 0 20px;
-        background: rgb(0, 0, 0);
-        background: rgba(0, 0, 0, 0.7);
-        height: 100px;
-        width: 100%;
-    }
-    .M__contentThumb-mediaPlay {
-        vertical-align: middle;
-        width: 70px;
-    }
-    .M__contentThumb-title {
-        font-weight: 700;
-        margin-top: 20px;
-    }
-    .M__contentThumb-date {
-        font-size: 13px;
-        color: #ccc;
-        margin-top: 10px;
-        margin-bottom: 30px;
-    }
-    .M__contentThumb-subheading {
-        display: none;
-    }
+.M__contentThumb-showcase {
+    margin-top: em(15);
+    display: none;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.M__contentThumb-container.u-absolute {
+    text-align: left;
+    width: 100%;
+    bottom: 0;
+}
+.M__contentThumb-label {
+    padding: em(5) em(15) em(5) em(10);
+    background: red;
+}
+.M__contentThumb-overlay {
+    padding: 0 em(20);
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.7);
+    height: em(100);
+    width: 100%;
+}
+.M__contentThumb-mediaPlay {
+    vertical-align: middle;
+    width: em(70);
+}
+.M__contentThumb-title {
+    font-weight: 700;
+    margin-top: em(20);
+}
+.M__contentThumb-date {
+    font-size: em(13);
+    color: #ccc;
+    margin-top: em(10);
+    margin-bottom: em(30);
+}
+.M__contentThumb-subheading {
+    display: none;
+}
+
+
+//-///////////////////////////////////////////////////////////////////////////////
+//-                                                                             //
+//-                                                                             //
+//-    MOLECULE                                                                 //
+//-   ---------------                                                           //
+//-    LARGE SKYSCRAPER ADVERT                                                  //
+//-                                                                             //
+//-                                                                             //
+//-///////////////////////////////////////////////////////////////////////////////
+
+
+.M__largeSkyscraperAdvert-main {
+    border: em(1) solid #cdcdcd;
+    background: #eeeeee;
+    padding: em(30) 0;
+}
+.M__largeSkyscraperAdvert-title {
+    font-size: em(13);
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #a5a5a5;
+    letter-spacing: em(1);
+    text-align: center;
+    margin-bottom: em(10);
+}
+.M__largeSkyscraperAdvert-container {
+    display: table;
+    margin: 0 auto;
+}
 
 
 
@@ -194,72 +265,79 @@ img.M__contentThumb-imageu.u-absolute {
 //-///////////////////////////////////////////////////////////////////////////////
 
 
-//-CORE
 .M__heading-main {
     border-bottom: solid em(8) black;
     font-family: "Roboto Condensed";
     font-weight: 700;
     text-transform: uppercase;
-    height: 51px;
 }
 .M__heading-title {
     background: #ed1b25;
     font-size: em(26);
     color: white;
     text-align: center;
-    padding: em(3) em(8) em(3) em(6);
-    height: 100%;
+    padding: em(3) em(8) 0 em(6);
+    height: em(42);
 }
 .M__heading-prompt {
-    height: 100%;
+    height: em(42);
     background: #cdcdcd;
     color: black;
     font-size: em(16);
     text-align: center;
-    padding: em(3) em(8) em(3) em(6);
-    padding: 13px 12px;
+    padding: em(3) em(8) 0 em(6);
+    padding: em(13) em(12);
     &:hover {
         background: #b8b8b8;
         color: white;
     }
-    &:hover .sprite-arrow-grey {
-        @extend .sprite-arrow-white
+    &:hover .icon-arrow {
+        @extend .icon-arrowWhite
     }
 }
 .M__heading-arrow {
-    margin-top: 1px;
-    margin-left: 12px;
+    margin-top: em(1);
+    margin-left: em(12);
 }
 .M__heading-promptText {
-    margin-right: 10px;
+    margin-right: em(10);
 }
 .M__introParagraph-main {
     background: #eeeeee;
     padding: em(10) em(15);
 }
-
-//-RESPONSIVE
-
-
 @include tablet {
-    .M__heading-main {height: auto;}
-    .M__heading-title {padding-top: 22px; height: 80px;}
-    .M__heading-prompt {padding-top: 30px; height: 80px;}
+    .M__heading-main {
+        height: auto;
+    }
+    .M__heading-title {
+        padding: em(22) em(10);
+        min-height: em(83);
+    }
+    .M__heading-prompt {
+        padding-top: em(30);
+        height: em(83);
+    }
     .M__heading-arrow {
-    margin-top: 4px;
+        margin-top: em(4);
+    }
 }
-}
-
 @include mobile {
     .M__heading-main {
         width: 100%;
     }
-    .M__heading-title {float: none;}
-    .M__heading-prompt {float: none;}
-    .M__heading-container {display: table; margin: 0 auto;}
- 
+    .M__heading-title {
+        float: none;
+        height: 100%;
+    }
+    .M__heading-prompt {
+        float: none;
+    }
+    .M__heading-promptContainer {
+        display: table;
+        margin: 0 auto;
+    }
 }
-
 
 
 //-///////////////////////////////////////////////////////////////////////////////
@@ -273,10 +351,9 @@ img.M__contentThumb-imageu.u-absolute {
 //-///////////////////////////////////////////////////////////////////////////////
 
 
-//-CORE
 .M__contentButton-main {
     width: 100%;
-    padding: 11px;
+    padding: em(11);
     font: 700 em(16) "Roboto Condensed";
     text-transform: uppercase;
     background: #eee;
@@ -289,16 +366,14 @@ img.M__contentThumb-imageu.u-absolute {
 }
 .M__contentButton-main--filter {
     width: 100%;
-    border-bottom: 2px solid white;
+    border-bottom: em(2) solid white;
 }
 .M__contentButton-main--pagination {
     text-align: center;
 }
-
-//-RESPONSIVE
 @include mobile {
     .M__contentButton-main {
-        height: 100px;
+        height: em(100);
     }
 }
 
@@ -314,14 +389,13 @@ img.M__contentThumb-imageu.u-absolute {
 //-///////////////////////////////////////////////////////////////////////////////
 
 
-//-CORE
 .M__featuredImage-container {
     width: 100%;
     text-align: center;
     overflow: hidden;
-    height: 430px;
+    height: em(430);
     color: white;
-    margin-bottom: 18px;
+    margin-bottom: em(18);
 }
 .M__featuredImage-image {
     left: -1000%;
@@ -331,28 +405,58 @@ img.M__contentThumb-imageu.u-absolute {
     margin: auto;
     min-height: 100%;
     min-width: 100%;
-    
 }
 .M__featuredImage-label {
     background: red;
     bottom: 0;
-    padding: 5px 15px 5px 10px;
+    padding: em(5) em(15) em(5) em(10);
     color: white;
     background: red;
-    margin-left: 20%;
+    margin-left: 29%;
 }
-
 @include mobile {
- .M__featuredImage-label{margin-left: 0;}
+    .M__featuredImage-label {
+        margin-left: 0;
+    }
 }
-
 @include laptop {
     .M__featuredImage-image {
-        height: 100%;}
-    .M__featuredImage-container  {height: 684px;}
+        height: 100%;
+    }
+    .M__featuredImage-container {
+        height: em(684);
+    }
 }
-    
-    
+
+
+//-///////////////////////////////////////////////////////////////////////////////
+//-                                                                             //
+//-                                                                             //
+//-    MOLECULE                                                                 //
+//-   ---------------                                                           //
+//-    TOP NAV BUTTON                                                           //
+//-                                                                             //
+//-                                                                             //
+//-///////////////////////////////////////////////////////////////////////////////
+
+
+.M__topNavButton-container {
+    border-right: em(1) solid #777;
+    padding: 0 em(15);
+    margin: em(15) 0;
+}
+@include tablet{
+.M__topNavButton-main {
+    font-size: em(13);
+    color: #cccccc;
+    height: 100%;
+    &:hover {
+        color: #ed1b25;
+    }
+}
+}
+
+
 //-///////////////////////////////////////////////////////////////////////////////
 //-                                                                             //
 //-                                                                             //
@@ -364,42 +468,75 @@ img.M__contentThumb-imageu.u-absolute {
 //-///////////////////////////////////////////////////////////////////////////////
 
 
-//-CORE
-.M__socialShareButton-main {
-   padding: 7px 4px;
-   border-bottom: 1px solid #cdcdcd;
-   color: #999999;
-   &:hover {
-       background: #b8b8b8;
-       color: white
-   }
-   &:hover .sprite-facebook-share-01 {
-       @extend .sprite-facebook-share-white;
-   }
-   &:hover .sprite-Twitter-share-01 {
-       @extend .sprite-Twitter-share-white;
-   }
-   &:hover .sprite-Google-share-01 {
-       @extend .sprite-Google-share-white;
-   }
-   &:hover .sprite-Linkedin-share-01 {
-       @extend .sprite-Linkedin-share-white;
-   }
-   &:hover .sprite-Comment-share-01 {
-       @extend .sprite-Comment-share-white;
-   }
-   &:hover .sprite-Email-share-01 {
-       @extend .sprite-Email-share-white;
-   }
+.M__socialShareButton-container {
+    padding: em(7) em(4);
+    border-bottom: em(1) solid #cdcdcd;
+    color: #999999;
+    &:hover .M__socialShareButton-container {
+        background: #b8b8b8;
+        color: white
+    }
 }
-
+.M__socialShareButton-main {
+    &:hover .M__socialShareButton-container {
+        background: #b8b8b8;
+        color: white
+    }
+    &:hover .sprite-facebook-share-01 {
+        @extend .sprite-facebook-share-white;
+    }
+    &:hover .sprite-Twitter-share-01 {
+        @extend .sprite-Twitter-share-white;
+    }
+    &:hover .sprite-Google-share-01 {
+        @extend .sprite-Google-share-white;
+    }
+    &:hover .sprite-Linkedin-share-01 {
+        @extend .sprite-Linkedin-share-white;
+    }
+    &:hover .sprite-Comment-share-01 {
+        @extend .sprite-Comment-share-white;
+    }
+    &:hover .sprite-Email-share-01 {
+        @extend .sprite-Email-share-white;
+    }
+}
 .M__socialShareButton-text {
     text-transform: uppercase;
-    font-size: 13px;
+    font-size: em(13);
     font-weight: 700;
-    padding: 8px 0 8px 10px;
+    padding: em(8) 0 em(8) em(10);
 }
-
+@include tablet {
+    .M__socialShareButton-main {
+        width: 16.6%;
+        border-bottom: 0;
+        float: left;
+    }
+    .M__socialShareButton-container {
+        background: #eee;
+        padding: em(20);
+        height: em(90);
+        margin-right: em(20);
+        border-radius: em(10);
+    }
+    .M__socialShareButton-icon {
+        float: none;
+        margin: 0 auto;
+        display: table;
+    }
+    .M__socialShareButton-text {
+        float: none;
+        text-align: center;
+        padding-left: 0;
+    }
+}
+@include mobile {
+    .M__socialShareButton-main {
+        width: 50%;
+        margin-bottom: em(20);
+    }
+}
 
 //-///////////////////////////////////////////////////////////////////////////////
 //-                                                                             //
@@ -411,13 +548,13 @@ img.M__contentThumb-imageu.u-absolute {
 //-                                                                             //
 //-///////////////////////////////////////////////////////////////////////////////
 
-//-CORE
+
 .M_textPrompt-main {
     color: black;
     background: white;
-    border: 1px solid #cdcdcd;
-    height: 43px;
-    padding: 10px 12px;
+    border: em(1) solid #cdcdcd;
+    height: em(43);
+    padding: em(10) em(12);
     text-transform: uppercase;
     font-weight: 700;
     font-family: "Roboto Condensed";
@@ -427,6 +564,12 @@ img.M__contentThumb-imageu.u-absolute {
     }
     &:hover .sprite-arrow-grey {
         @extend .sprite-arrow-white
+    }
+}
+@include tablet {
+    .M_textPrompt-main {
+        height: em(80);
+        padding: em(28);
     }
 }
 
@@ -444,383 +587,82 @@ img.M__contentThumb-imageu.u-absolute {
 
 
 .M__shortcodeBox-main {
-    padding: 30px;
+    padding: em(30);
     background: #eeeeee;
-    border: solid 1px #cdcdcd;
+    border: solid em(1) #cdcdcd;
+    margin: em(60) 0;
 }
 
 
 //-///////////////////////////////////////////////////////////////////////////////
 //-                                                                             //
 //-                                                                             //
-//-                                                                             //
-//-                                                                             //
-//-                                                                             //
-//-                                                                             //
-//-                                                                             //
-//-                                   OOOOOOO                                   //
-//-                                   O     O                                   //
-//-                                   O     O                                   //
-//-                                   O     O                                   //
-//-                                   OOOOOOO                                   //
-//-                                                                             //
-//-                                                                             //
-//-                                                                             //
-//-                                                                             //
-//-                                                                             //
-//-                                                                             //
-//-                                                                             //
-//-///////////////////////////////////////////////////////////////////////////////
-
-
-//-///////////////////////////////////////////////////////////////////////////////
-//-                                                                             //
-//-                                                                             //
-//-    ORGANISMS                                                                //
+//-    MOLECULE                                                                 //
 //-   ---------------                                                           //
-//-    CATEGORY LIST                                                            //
+//-    DISCLAIMER LINK ITEM                                                     //
 //-                                                                             //
 //-                                                                             //
 //-///////////////////////////////////////////////////////////////////////////////
 
 
+.M__disclaimerLink-main {
+    padding: 0 0 0 em(10);
+    text-transform: uppercase;
+    letter-spacing: em(1);
+    font-size: em(13);
 
-
-
-//-CORE
-.O__categoryList-item {
-    width: col(3);
-    padding: 0 10px;
 }
-.O__categoryList-item:nth-of-type(3n+1) {
-    padding-left: 0;
+.M__disclaimerLink-icon {
+    padding-right: em(10);
 }
-.O__categoryList-item:nth-of-type(3n) {
-    padding-right: 0;
+.M__disclaimerLink-text {
+color: #ccc;
+    &:hover {color: red;}
 }
-.O__categoryList-item:nth-child(1) {
-    width: col(1);
-    padding: 0
+.M__disclaimerLink-dot{
+    margin-top: em(6);
 }
-.O__categoryList-item:nth-child(1) .M__contentThumb-showcase {
-    display: block;
-}
-.O__categoryList-item:nth-child(-n+3) .M__contentThumb-title {
-    font: 700 38px "Roboto Condensed";
-    margin-top: 10px
-}
-.O__categoryList-item:nth-child(2) .M__contentThumb-title,
-.O__categoryList-item:nth-child(3) .M__contentThumb-title {
-    margin-top: 30px
-}
-.O__categoryList-item:nth-child(-n+3) .M__contentThumb-subheading {
-    display: block;
-    margin-top: 5px;
-    margin-bottom: 40px
-}
-.O__categoryList-item:nth-child(-n+3) .M__contentThumb-date {
-    display: none;
-}
-.O__categoryList-item:nth-child(1) .M__contentThumb-main {
-    height: 450px;
-}
-.O__categoryList-item:nth-child(2) {
-    width: col(2);
-    padding-left: 0
-}
-.O__categoryList-item:nth-child(2) .M__contentThumb-main {
-    height: 300px;
-}
-.O__categoryList-item:nth-child(3) {
-    width: col(2);
-    padding-right: 0
-}
-.O__categoryList-item:nth-child(3) .M__contentThumb-main {
-    height: 300px;
-}
-O__categoryList-heading {
-    width: 100%;
-    margin-top: 60px;
-}
-
 
 //-///////////////////////////////////////////////////////////////////////////////
 //-                                                                             //
 //-                                                                             //
-//-    ORGANISMS                                                                //
+//-    MOLECULE                                                                 //
 //-   ---------------                                                           //
-//-    PAGINATION NUMBERS LIST                                                  //
+//-    SECONDARY MENU BUTTON                                                    //
 //-                                                                             //
 //-                                                                             //
 //-///////////////////////////////////////////////////////////////////////////////
 
+.M__secondaryNavButton-container {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: em(13);
+    font-weight: 700;
+    border-right: em(1) solid #999999;
+    letter-spacing: em(1);
+}
+.M__secondaryNavButton-main {
+    padding: em(10) 0;
+    color: black;
+    height: 100%;
+    &:hover {
+        color: red;
+    }
+}
 
-//-CORE
-.O__paginationNumbers-item {width: 41px; margin-left: 5px;}
+
+
 
 
 //-///////////////////////////////////////////////////////////////////////////////
 //-                                                                             //
 //-                                                                             //
-//-    ORGANISMS                                                                //
+//-    MOLECULE                                                                 //
 //-   ---------------                                                           //
-//-    SOCIAL SHARE LIST                                                        //
+//-    PULL QUOTE SHORTCODE                                                     //
 //-                                                                             //
 //-                                                                             //
 //-///////////////////////////////////////////////////////////////////////////////
-
-
-//-CORE
-.O__socialShareList-main {border-top: 1px solid #cdcdcd;}
-
-
-//-///////////////////////////////////////////////////////////////////////////////
-//-                                                                             //
-//-                                                                             //
-//-                                                                             //
-//-                                                                             //
-//-                                                                             //
-//-                                                                             //
-//-                                                                             //
-//-                                     #  #                                    //
-//-                                   ########                                  //
-//-                                     #  #                                    //
-//-                                   ########                                  //
-//-                                     #  #                                    //
-//-                                                                             //
-//-                                                                             //
-//-                                                                             //
-//-                                                                             //
-//-                                                                             //
-//-                                                                             //
-//-                                                                             //
-//-///////////////////////////////////////////////////////////////////////////////
-
-
-#__leaderboard-main {
-    background: blue;
-}
-#__leaderboard-centre {
-    width: em(968);
-    margin: 0 auto;
-}
-@include tablet {
-    #__leaderboard-centre {
-        width: em(680);
-        margin: 0 auto;
-    }
-}
-#__topNav-main {background: #26292a; color: white; }
-#__menuContent-main {background: red;}
-#__menuContent-centre {width: em(1255); margin: 0 auto;}
-#__mainNav-main {background: #efefef}
-#__mainNav-centre {width: em(1255); margin: 0 auto;}
-#__secondaryNav-main {background: #cdcdcd; }
-#__secondaryNav-centre {width: em(1255); margin: 0 auto;}
-
-
-#__content-main {
-    padding: 90px 0 0 0
-}
-
-
-//-///////////////////////////////////////////////////////////////////////////////
-//-                                                                             //
-//-                                                                             //
-//-    LAYOUT                                                                   //
-//-   ---------------                                                           //
-//-    ARTICLE HEADER SECTION                                                   //
-//-                                                                             //
-//-                                                                             //
-//-///////////////////////////////////////////////////////////////////////////////
-
-//-CORE
-#__articleHeader-centre {
-    width: 1255px;
-    margin: 0 auto;
-}
-#__articleHeader-col1 {
-    width: 860px
-}
-#__articleHeader-col2 {
-    width: 370px;
-    margin-top: 43px;
-}
-#__articleHeader-main {
-    height: 500px
-}
-
-//-RESPONSIVE
-@include laptop
-{
-
- #__articleHeader-col1 {
-padding-right: 20px;
- width: 62.5%;
-    
-}   
-   #__articleHeader-centre {
-
-       width: 90%;
-
-} 
-    
-       #__articleHeader-main {
-
-      
-
-} 
-    
-    #__articleHeader-col2 {
-
-    width: 37.5%;
-    margin-top: 43px;
- 
-}
-    #__articleHeader-main {
-    height: auto;
-}
-    
-}
-
-@include tablet
-{
-  #__articleContent-main{margin-top: 35px;}  
-    #__articleContent-col1-row1{margin-bottom: 15px;}  
-  #__articleHeader-centre {
-    width: 90%;
-      
-} 
-    #__articleHeader-col1 {width: 80%}
-   
-    #__articleHeader-col2 {
-    width: 20%;
-    margin-top: 80px;
-}
-
-
-
-    
-}
-
-
-@include mobile
-{
-  #__articleContent-col1-row1{margin-bottom: 15px;}  
-  #__articleHeader-centre {
-    width: 90%;
-      
-} 
-    #__articleHeader-col1 {width: 100%;}
-   
-    #__articleHeader-col2 {
-    width: 100%;
-    margin-top: 43px;
-}
-
-    
-    
-    
-}
-
-
-//-///////////////////////////////////////////////////////////////////////////////
-//-                                                                             //
-//-                                                                             //
-//-    LAYOUT                                                                   //
-//-   ---------------                                                           //
-//-    ARTICLE CONTENT SECTION                                                  //
-//-                                                                             //
-//-                                                                             //
-//-///////////////////////////////////////////////////////////////////////////////
-
-#__articleContent-col1-row1 {
-    margin-bottom: 15px;
-}
-#__articleContent-centre {
-    width: 1255px;
-    margin: 0 auto;
-}
-#__articleContent-col1-row1 {
-    width: 110px;
-}
-#__articleContent-col2 {
-    width: 600px;
-}
-#__articleContent-container {
-    width: 858px
-}
-@include laptop {
-    #__articleContent-centre {
-        width: 90%;
-    }
-    #__articleContent-container {
-        width: 100%; padding-left: 90px;
-    }
-    #__articleContent-col2 {
-        float: left;
-    }
-    #__articleContent-col1 {
-        float: right;
-    }
-}
-
-@include tablet {
-       #__articleContent-col2 {
-        float: none;
-           width: 100%;
-    }
-    #__articleContent-col1 {
-        float: none;
-    }
-    
-        #__articleContent-container {
-        padding: 0;
-    }
-    
-}
-
-
-//-///////////////////////////////////////////////////////////////////////////////
-//-                                                                             //
-//-                                                                             //
-//-    LAYOUT                                                                   //
-//-   ---------------                                                           //
-//-    ARTICLE FOOTER SECTION                                                   //
-//-                                                                             //
-//-                                                                             //
-//-///////////////////////////////////////////////////////////////////////////////
-
-
-#__articleFooter-main {
-    background: #eeeeee;
-    padding-top: 60px;
-}
-#__articleFooter-col1 {
-    width: 827px;
-}
-#__articleFooter-col1-row3 {
-    padding-top: 60px;
-}
-#__articleFooter-col2 {width: 400px;}
-#__articleFooter-centre {
-    width: 1255px;
-    margin: 0 auto;
-}
-
-//-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^NEW
-
-
-
-
-
-.M__largeSkyscraperAdvert-main {border: 1px solid #cdcdcd; background: #eeeeee; padding: 30px 0;}
-
-.M__largeSkyscraperAdvert-title{font-size: 13px; text-transform: uppercase; font-weight: 700; color: #a5a5a5; letter-spacing: 1px; text-align: center; margin-bottom: 10px;}
-.M__largeSkyscraperAdvert-container{display: table; margin: 0 auto;}
-
-
-
 
 
 .M__pullQuote-main {
@@ -829,7 +671,7 @@ padding-right: 20px;
     font-family: "Roboto Condensed";
     font-weight: 700;
     padding: em(5) 0;
-    width: 240px;
+    width: em(240);
 }
 .M__pullQuote-quote {
     border-left: em(1) solid grey;
@@ -851,45 +693,791 @@ padding-right: 20px;
     color: grey;
     font-size: em(12);
     margin-left: em(18);
-    letter-spacing: 1px;
+    letter-spacing: em(1);
     text-transform: uppercase;
 }
-
-
-@include laptop{
-    #__articleContent-main {margin-top: 30px;}
-    #__articleFooter-centre { width: 90%}
-    #__articleFooter-col2 {width: 37.5%}
-    #__articleFooter-col1 {width: 62.5%; padding-right: 20px;}
+@include tablet {
+    .M__pullQuote-main {
+        max-width: em(300);
+        width: 100%;
+        margin: em(60) 0;
+    }
+}
+@include mobile {
+    .M__pullQuote-main {
+        max-width: 100%;
+    }
+    .M__pullQuote-quote {
+        margin: 0;
+        padding: 0;
+        border: 0;
+    }
 }
 
+
+//-///////////////////////////////////////////////////////////////////////////////
+//-                                                                             //
+//-                                                                             //
+//-    MOLECULE                                                                 //
+//-   ---------------                                                           //
+//-    FOOT COLUMN ITEM                                                         //
+//-                                                                             //
+//-                                                                             //
+//-///////////////////////////////////////////////////////////////////////////////
+
+
+.M__footColumn-main {
+    padding-left: em(20);
+}
+.M__footColumn-link {
+    margin-bottom: em(13);
+    color: #ccc;
+    font-size: em(13);
+    &:hover {color: red;}
+}
+
+.M__footColumn-heading {
+    font: 700 em(16) "Roboto Condensed";
+    text-transform: uppercase;
+    color: white;
+    margin-bottom: em(15);
+    color: #ccc;
+    &:hover {color: red;}
+}
+
+
+//-///////////////////////////////////////////////////////////////////////////////
+//-                                                                             //
+//-                                                                             //
+//-    MOLECULE                                                                 //
+//-   ---------------                                                           //
+//-    SOCIAL LINK BUTTON                                                       //
+//-                                                                             //
+//-                                                                             //
+//-///////////////////////////////////////////////////////////////////////////////
+
+
+@include tablet {
+.M__socialLinkButton-circle {
+    background: darkgrey;
+    height: em(80);
+    border-radius: em(40);
+}
+.M__socialLinkButton-container {
+    padding-top: em(30);
+}
+.M__socialLinkButton-icon {
+    margin: 0 auto;
+}
+}
+
+
+
+
+//-///////////////////////////////////////////////////////////////////////////////
+//-                                                                             //
+//-                                                                             //
+//-    MOLECULE                                                                 //
+//-   ---------------                                                           //
+//-    SEARCH ITEM                                                              //
+//-                                                                             //
+//-                                                                             //
+//-///////////////////////////////////////////////////////////////////////////////
+
+
+.M__mainNavsearch-main {
+    border-left: em(1) solid white;
+    border-right: em(1) solid white;
+}
+.M__mainNavsearch-container {
+    border-bottom: em(4) solid #aaaaaa;
+    height: em(50);
+}
+.M__mainNavsearch-main {
+    &:hover {
+        background: red;
+    }
+}
+
+
+//-///////////////////////////////////////////////////////////////////////////////
+//-                                                                             //
+//-                                                                             //
+//-    MOLECULE                                                                 //
+//-   ---------------                                                           //
+//-    SEARCH ITEM                                                              //
+//-                                                                             //
+//-                                                                             //
+//-///////////////////////////////////////////////////////////////////////////////
+
+
+.M__Login-main {
+    color: #ccc;
+    font-size: em(13);
+    font-weight: 700;
+    text-transform: uppercase;
+    height: 100%;
+    &:hover {
+        color: red;
+    }
+}
+.M__Login-container {
+    padding: 0 em(15);
+    margin: em(15) 0
+}
+.M__Login-icon {
+    margin-right: em(7)
+}
+
+
+//-///////////////////////////////////////////////////////////////////////////////
+//-                                                                             //
+//-                                                                             //
+//-    MOLECULE                                                                 //
+//-   ---------------                                                           //
+//-    SEARCH ITEM                                                              //
+//-                                                                             //
+//-                                                                             //
+//-///////////////////////////////////////////////////////////////////////////////
+
+
+.M__mainNavButton-main {
+    text-align: center;
+}
+.M__mainNavButton-centre {
+    display: table;
+    margin: 0 auto;
+}
+.M__mainNavButton-text {
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.M__mainNavButton-main {
+    color: black;
+    border-left: em(1) solid white;
+    &:hover {
+        background: red;
+        color: white
+    }
+    &:hover .M__mainNavButton-container {
+        border-bottom: em(4) solid red;
+    }
+}
+.M__mainNavButton-container {
+    border-bottom: em(4) solid #aaaaaa;
+    padding-top: em(15);
+    height: em(50);
+}
+
+
+//-///////////////////////////////////////////////////////////////////////////////
+//-                                                                             //
+//-                                                                             //
+//-                                                                             //
+//-                                                                             //
+//-                                                                             //
+//-                                                                             //
+//-                                                                             //
+//-                                   OOOOOOO                                   //
+//-                                   O     O                                   //
+//-                                   O     O                                   //
+//-                                   O     O                                   //
+//-                                   OOOOOOO                                   //
+//-                                                                             //
+//-                                                                             //
+//-                                                                             //
+//-                                                                             //
+//-                                                                             //
+//-                                                                             //
+//-                                                                             //
+//-///////////////////////////////////////////////////////////////////////////////
+
+
+//-///////////////////////////////////////////////////////////////////////////////
+//-                                                                             //
+//-                                                                             //
+//-    ORGANISMS                                                                //
+//-   ---------------                                                           //
+//-    SOCIAL ITEM                                                              //
+//-                                                                             //
+//-                                                                             //
+//-///////////////////////////////////////////////////////////////////////////////
+
+
+.O__socialLinkList-item {margin-left: em(20);}
+@include tablet{
+.O__socialLinkList-item {width: col(6); margin: 0; padding: em(10);;}
+
+}
 
 @include tablet{
-.M__pullQuote-main{max-width: 300px; width: 100%; margin: 60px 0;}
+   .O__socialLinkList-item {width: col(2)}
 }
 
-@include mobile{
-.M__pullQuote-main{max-width: 100%;}
-.M__pullQuote-quote{margin: 0; padding: 0; border: 0;}
-   
+//-///////////////////////////////////////////////////////////////////////////////
+//-                                                                             //
+//-                                                                             //
+//-    ORGANISMS                                                                //
+//-   ---------------                                                           //
+//-    CATEGORY LIST                                                            //
+//-                                                                             //
+//-                                                                             //
+//-///////////////////////////////////////////////////////////////////////////////
+
+
+.O__categoryList-item {
+    width: col(3);
+    padding: 0 em(10);
 }
-
-
-@include tablet{
-    
-    
-    #__articleFooter-col1 {
+.O__categoryList-item:nth-of-type(3n+1) {
+    padding-left: 0;
+}
+.O__categoryList-item:nth-of-type(3n) {
+    padding-right: 0;
+}
+.O__categoryList-item:nth-child(1) {
+    width: col(1);
+    padding: 0
+}
+.O__categoryList-item:nth-child(1) .M__contentThumb-showcase {
+    display: block;
+}
+.O__categoryList-item:nth-child(-n+3) .M__contentThumb-title {
+    font: 700 em(38) "Roboto Condensed";
+    margin-top: em(10)
+}
+.O__categoryList-item:nth-child(2) .M__contentThumb-title,
+.O__categoryList-item:nth-child(3) .M__contentThumb-title {
+    margin-top: em(30)
+}
+.O__categoryList-item:nth-child(-n+3) .M__contentThumb-subheading {
+    display: block;
+    margin-top: em(5);
+    margin-bottom: em(40)
+}
+.O__categoryList-item:nth-child(-n+3) .M__contentThumb-date {
+    display: none;
+}
+.O__categoryList-item:nth-child(1) .M__contentThumb-main {
+    height: em(450);
+}
+.O__categoryList-item:nth-child(2) {
+    width: col(2);
+    padding-left: 0
+}
+.O__categoryList-item:nth-child(2) .M__contentThumb-main {
+    height: em(300);
+}
+.O__categoryList-item:nth-child(3) {
+    width: col(2);
+    padding-right: 0
+}
+.O__categoryList-item:nth-child(3) .M__contentThumb-main {
+    height: em(300);
+}
+O__categoryList-heading {
     width: 100%;
-} #__articleFooter-col1 {padding-right: 0; display: table;}
-    #__articleContent-col1-row1 {margin: 120px auto 20px auto; }
-    .M__socialShareButton-main{padding: 20px; width: 13.4%; float: left; height: 90px; margin-right: 20px; border-bottom: 0; background:#eee; border-radius: 10px;}
-    .M__socialShareButton-icon{float:none; margin: 0 auto; display: table;}
-    .M__socialShareButton-text{float:none; text-align: center; padding-left: 0;}
-    .O__socialShareList-main {border: 0; margin-bottom: 30px;}
-    #__articleFooter-centre {width: 90%;}
-    #__articleFooter-col1 {float: none;}
-    #__articleFooter-col2 {float: none;}
-    #__articleFooter-col2 {width: 100%; margin-top: 60px;}
-    .M_textPrompt-main{ height: 80px; padding: 28px;}
+    margin-top: em(60);
 }
 
+
+//-///////////////////////////////////////////////////////////////////////////////
+//-                                                                             //
+//-                                                                             //
+//-    ORGANISMS                                                                //
+//-   ---------------                                                           //
+//-    PAGINATION NUMBERS LIST                                                  //
+//-                                                                             //
+//-                                                                             //
+//-///////////////////////////////////////////////////////////////////////////////
+
+
+.O__paginationNumbers-item {width: em(41); margin-left: em(5);}
+
+
+//-///////////////////////////////////////////////////////////////////////////////
+//-                                                                             //
+//-                                                                             //
+//-    ORGANISMS                                                                //
+//-   ---------------                                                           //
+//-    SECONDARY NAV LIST                                                       //
+//-                                                                             //
+//-                                                                             //
+//-///////////////////////////////////////////////////////////////////////////////
+
+
+.O__secondaryNavList-item {
+    width: col(6);
+}
+
+
+//-///////////////////////////////////////////////////////////////////////////////
+//-                                                                             //
+//-                                                                             //
+//-    ORGANISMS                                                                //
+//-   ---------------                                                           //
+//-    MAIN NAV BUTTON LIST                                                     //
+//-                                                                             //
+//-                                                                             //
+//-///////////////////////////////////////////////////////////////////////////////
+
+
+.O__mainNavList-item {
+    width: col(8);
+}
+
+
+//-///////////////////////////////////////////////////////////////////////////////
+//-                                                                             //
+//-                                                                             //
+//-    ORGANISMS                                                                //
+//-   ---------------                                                           //
+//-    FOOT COLUMN LIST                                                         //
+//-                                                                             //
+//-                                                                             //
+//-///////////////////////////////////////////////////////////////////////////////
+
+
+.O__footColumnList-item {
+    width: col(8);
+}
+@include tablet {
+    .O__footColumnList-item {
+        width: col(4)
+    }
+    .O__footColumnList-item:nth-of-type(-n+4) {
+        min-height: em(250);
+    }
+}
+
+//-///////////////////////////////////////////////////////////////////////////////
+//-                                                                             //
+//-                                                                             //
+//-    ORGANISMS                                                                //
+//-   ---------------                                                           //
+//-    DISCLAIMER LINKS LIST                                                    //
+//-                                                                             //
+//-                                                                             //
+//-///////////////////////////////////////////////////////////////////////////////
+
+
+.O__disclaimerLinksList-main {
+    display: table;
+    margin: 0 auto;
+}
+@include tablet {
+    .O__disclaimerLinksList-main {
+        margin: 0 auto;
+        display: table;
+    }
+    width: 100%;
+}
+
+
+//-///////////////////////////////////////////////////////////////////////////////
+//-                                                                             //
+//-                                                                             //
+//-    ORGANISMS                                                                //
+//-   ---------------                                                           //
+//-    SOCIAL SHARE LIST                                                        //
+//-                                                                             //
+//-                                                                             //
+//-///////////////////////////////////////////////////////////////////////////////
+
+
+.O__socialShareList-main {border-top: em(1) solid #cdcdcd;}
+ @include tablet {
+          .O__socialShareList-main {
+              border: 0;
+              margin-bottom: em(30);
+          }
+      }
+
+//-///////////////////////////////////////////////////////////////////////////////
+//-                                                                             //
+//-                                                                             //
+//-                                                                             //
+//-                                                                             //
+//-                                                                             //
+//-                                                                             //
+//-                                                                             //
+//-                                     #  #                                    //
+//-                                   ########                                  //
+//-                                     #  #                                    //
+//-                                   ########                                  //
+//-                                     #  #                                    //
+//-                                                                             //
+//-                                                                             //
+//-                                                                             //
+//-                                                                             //
+//-                                                                             //
+//-                                                                             //
+//-                                                                             //
+//-///////////////////////////////////////////////////////////////////////////////
+
+
+//-///////////////////////////////////////////////////////////////////////////////
+//-                                                                             //
+//-                                                                             //
+//-    LAYOUT                                                                   //
+//-   ---------------                                                           //
+//-    HEAD SECTION                                                             //
+//-                                                                             //
+//-                                                                             //
+//-///////////////////////////////////////////////////////////////////////////////
+
+#__leaderboard-main {
+    background: blue;
+}
+#__leaderboard-centre {
+    width: em(968);
+    margin: 0 auto;
+    height: em(100);
+}
+@include tablet {
+    #__leaderboard-centre {
+        width: em(680);
+    }
+}
+#__topNav-main {
+    background: #26292a;
+    color: white;
+}
+#__menuContent-main {
+    background: red;
+}
+#__menuContent-centre {
+    width: em(1255);
+    margin: 0 auto;
+}
+#__mainNav-main {
+    background: #efefef
+}
+#__mainNav-centre {
+    width: em(1255);
+    margin: 0 auto;
+}
+#__secondaryNav-main {
+    background: #cdcdcd;
+}
+#__secondaryNav-centre {
+    width: em(1255);
+    margin: 0 auto;
+}
+#__content-main {
+    padding: em(90) 0 0 0
+}
+#__menuContent-col1 {
+    margin: em(30) 0;
+}
+#__menuContent-col2 {
+    margin: em(30) 0;
+}
+#__mainNav-col1 {
+    background: #efefef;
+    width: em(1205);
+}
+#__mainNav-col2 {
+    width: em(50)
+}
+#__mainNav-main {
+    border-bottom: em(4) solid #aaaaaa;
+    height: em(50);
+}
+
+
+//-///////////////////////////////////////////////////////////////////////////////
+//-                                                                             //
+//-                                                                             //
+//-    LAYOUT                                                                   //
+//-   ---------------                                                           //
+//-    ARTICLE: HEADER SECTION                                                  //
+//-                                                                             //
+//-                                                                             //
+//-///////////////////////////////////////////////////////////////////////////////
+
+
+#__articleHeader-centre {
+    background: white;
+}
+#__articleHeader-centre {
+    width: em(1255);
+    margin-left: auto;
+    margin-right: auto;
+}
+#__articleHeader-col1 {
+    width: em(860)
+}
+#__articleHeader-col2 {
+    width: em(370);
+    margin-top: em(43);
+}
+#__articleHeader-main {
+    height: em(500)
+}
+@include laptop {
+    #__articleHeader-col1 {
+        padding-right: em(20);
+        width: 62.5%;
+    }
+    #__articleHeader-centre {
+        width: 90%;
+    }
+    #__articleHeader-main {}
+    #__articleHeader-col2 {
+        width: 37.5%;
+        margin-top: em(43);
+    }
+    #__articleHeader-main {
+        height: auto;
+    }
+}
+@include tablet {
+    #__articleContent-main {
+        margin-top: em(35);
+    }
+    #__articleContent-col1-row1 {
+        margin-bottom: em(15);
+    }
+    #__articleHeader-centre {
+        width: 90%;
+    }
+    #__articleHeader-col1 {
+        width: 80%
+    }
+    #__articleHeader-col2 {
+        width: 20%;
+        margin-top: em(80);
+    }
+}
+@include mobile {
+    #__articleContent-col1-row1 {
+        margin-bottom: em(15);
+    }
+    #__articleHeader-centre {
+        width: 90%;
+    }
+    #__articleHeader-col1 {
+        width: 100%;
+        padding: 0;
+    }
+    #__articleHeader-col2 {
+        width: 100%;
+        margin-top: em(43);
+    }
+}
+
+
+//-///////////////////////////////////////////////////////////////////////////////
+//-                                                                             //
+//-                                                                             //
+//-    LAYOUT                                                                   //
+//-   ---------------                                                           //
+//-    ARTICLE: CONTENT SECTION                                                 //
+//-                                                                             //
+//-                                                                             //
+//-///////////////////////////////////////////////////////////////////////////////
+
+
+#__articleContent-col1-row1 {
+    margin-bottom: em(15);
+}
+#__articleContent-centre {
+    width: em(1255);
+    margin: 0 auto;
+}
+#__articleContent-col1-row1 {
+    width: em(110);
+}
+#__articleContent-col2 {
+    width: em(600);
+}
+#__articleContent-container {
+    width: em(858)
+}
+@include laptop {
+    #__articleContent-centre {
+        width: 90%;
+    }
+    #__articleContent-container {
+        width: 100%;
+        padding-left: em(90);
+    }
+    #__articleContent-col2 {
+        float: left;
+    }
+    #__articleContent-col1 {
+        float: right;
+    }
+     #__articleContent-main {
+        margin-top: em(30);
+    }
+}
+@include tablet {
+    #__articleContent-col2 {
+        float: none;
+        width: 100%;
+    }
+    #__articleContent-col1 {
+        float: none;
+    }
+    #__articleContent-container {
+        padding: 0;
+    }
+     #__articleContent-col1-row1 {
+        margin: em(120) auto em(30) auto;
+    }
+}
+
+
+//-///////////////////////////////////////////////////////////////////////////////
+//-                                                                             //
+//-                                                                             //
+//-    LAYOUT                                                                   //
+//-   ---------------                                                           //
+//-    ARTICLE: FOOTER SECTION                                                  //
+//-                                                                             //
+//-                                                                             //
+//-///////////////////////////////////////////////////////////////////////////////
+
+
+#__articleFooter-main {
+    background: #eeeeee;
+    padding-top: em(60);
+}
+#__articleFooter-col1 {
+    width: em(827);
+}
+#__articleFooter-col1-row3 {
+    padding-top: em(60);
+}
+#__articleFooter-col2 {
+    width: em(400);
+}
+#__articleFooter-centre {
+    width: em(1255);
+    margin: 0 auto;
+}
+@include laptop {
+    #__articleFooter-centre {
+        width: 90%
+    }
+    #__articleFooter-col2 {
+        width: 37.5%
+    }
+    #__articleFooter-col1 {
+        width: 62.5%;
+        padding-right: em(20);
+    }
+}
+@include tablet {
+    #__articleFooter-centre {
+        width: 90%;
+    }
+    #__articleFooter-col1 {
+        float: none;
+    }
+    #__articleFooter-col2 {
+        float: none;
+    }
+    #__articleFooter-col2 {
+        width: 100%;
+        margin-top: em(60);
+    }
+     #__articleFooter-col1 {
+        padding-right: 0;
+         display: table;}
+}
+
+
+//-///////////////////////////////////////////////////////////////////////////////
+//-                                                                             //
+//-                                                                             //
+//-    LAYOUT                                                                   //
+//-   ---------------                                                           //
+//-    FOOT SECTION                                                             //
+//-                                                                             //
+//-                                                                             //
+//-///////////////////////////////////////////////////////////////////////////////
+
+
+
+#__foot-main {
+    background: #2b2b2b;
+    color: #cccccc
+}
+#__footTopBar-centre {
+    width: em(1255);
+    margin: 0 auto;
+}
+#__footContent-centre {
+    width: em(1255);
+    margin: 0 auto;
+}
+#__footBottomBar-centre {
+    width: em(1255);
+    margin: 0 auto;
+}
+#__footContent-centre {
+    border-top: em(1) solid white;
+    border-bottom: em(1) solid #cccccc;
+    padding: em(30) 0 em(40) 0;
+}
+#__footBottomBar-centre {
+    padding: em(30) 0;
+}
+#__foot-BottomBar-row2 {
+    padding-top: em(20);
+    padding-bottom: em(60);
+}
+#__footTopBar-main {
+    padding: em(35) 0;
+}
+#__footBottomBar-row1{
+        padding-top: em(30);
+
+}
+
+
+@include laptop {
+       #__footContent-centre {
+        width: 90%;
+    }
+    #__footTopBar-centre {
+        width: 90%;
+    }
+        #__footBottomBar {
+        width: 90%;
+    }
+
+}
+
+@include tablet {
+    #__foot-BottomBar-row2 {
+        width: em(500);
+        margin: em(30) auto;
+    }
+    #__foot-BottomBar-row2 {
+        float: none;
+        margin-top: em(30);
+    }
+
+    #__footBottomBar-row1 {
+        margin-top: em(30);
+    }
+
+    #__footTopBar-col1 {
+        float: none;
+        margin: 0 auto;
+        display: table;
+    }
+    #__footTopBar-col2 {
+        float: none;
+        //margin: 0 auto;
+        display: table;
+        width: 100%;
+    }
+
+    #__footTopBar-col2{padding-top: em(20);}
+
+}
