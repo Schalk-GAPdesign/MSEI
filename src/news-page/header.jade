@@ -111,23 +111,24 @@ mixin A__smallTitle(modifier, text)
 //-                                                                             //
 //-///////////////////////////////////////////////////////////////////////////////
 
-
 mixin M__contentThumb()
-    .M__contentThumb-main.u-relative(style="background: lightgrey;")
-
-        picture
-            img.M__contentThumb-image(src="http://lorempixel.com/400/200")
-        .M__contentThumb-container.u-absolute
-            .M__contentThumb-label.u-table Label
-            .M__contentThumb-overlay.u-table
-                .M__contentThumb-row.u-tableRow
-                    //-.M__contentThumb-mediaPlay.u-tableCell
-                        .sprite.sprite-play
-                    .M__contentThumb-content.u-tableCell
-                        .M__contentThumb-showcase Top Story
-                        .M__contentThumb-title Copenhagen builds carbon signaling waste-to-power plant
-                        .M__contentThumb-subheading Copenhagen builds carbon signaling waste-to-power plant
-                        .M__contentThumb-date 11 SEPTEMBER 2015
+    a(href="#")
+        .M__contentThumb-main.u-relative
+            .M__contentThumb-container.u-relative
+                picture
+                    source.M__contentThumb-image.u-absolute(srcset="http://lorempixel.com/640/200" media="(max-width: 700px)")
+                    img.M__contentThumb-imageu.u-absolute(src="http://lorempixel.com/885/200")
+            .M__contentThumb-container.u-absolute
+                .M__contentThumb-label.u-table Label
+                .M__contentThumb-overlay.u-table
+                    .M__contentThumb-row.u-tableRow
+                        //-.M__contentThumb-mediaPlay.u-tableCell
+                            .sprite.sprite-play
+                        .M__contentThumb-content.u-tableCell
+                            .M__contentThumb-showcase Top Story
+                            .M__contentThumb-title Copenhagen builds carbon signaling waste-to-power plant
+                            .M__contentThumb-subheading Copenhagen builds carbon signaling waste-to-power plant
+                            .M__contentThumb-date 11 SEPTEMBER 2015
 
 
 //-///////////////////////////////////////////////////////////////////////////////
@@ -218,11 +219,13 @@ mixin M__heading(text1, text2, link)
         if text1
             .M__heading-title.u-floatLeft= text1
         if text2
-            a(href="#")
-                .M__heading-prompt.u-floatLeft.u-cf
-                    .M__heading-promptText.u-floatLeft= text2
-                    if link
-                        .M__heading-arrow.sprite.sprite-arrow-grey.u-floatRight
+            a(href="#").u-noUnderline
+                .M__heading-prompt.u-floatLeft
+                    // Het ekstra parent DIV ingesit: .M__heading-container
+                    .M__heading-container.u-cf
+                        .M__heading-promptText.u-floatLeft= text2
+                        if link
+                            .M__heading-arrow.sprite.sprite-arrow-grey.u-floatRight
 
 
 //-///////////////////////////////////////////////////////////////////////////////
@@ -253,9 +256,10 @@ mixin M__paginationButton(text)
 
 mixin M__featuredImage(url, label)
     .M__featuredImage-main.u-relative
-        .M__featuredImage-container
+        .M__featuredImage-container.u-relative
             picture
-                img.M__featuredImage-image(src="#{url}")
+                source.M__featuredImage-image.u-absolute(srcset="http://lorempixel.com/640/570" media="(max-width: 700px)")
+                img.M__featuredImage-image.u-absolute(src="http://lorempixel.com/860/590")
         .M__featuredImage-label.u-absolute= label
 
 
@@ -275,7 +279,10 @@ mixin M__largeSkyscraperAdvert
             .M__largeSkyscraperAdvert-container
                 .M__largeSkyscraperAdvert-title Advertisement
                 picture
-                    img.M__largeSkyscraperAdvert-image(src="http://lorempixel.com/300/600")
+                    // Het mobile en tablet weergawe ook ingesit vir responsiveness
+                    source.M__largeSkyscraperAdvert-image--desktop(srcset="http://lorempixel.com/300/600" media="(min-width: 1001px)")
+                    source.M__largeSkyscraperAdvert-image--tablet(srcset="http://lorempixel.com/120/600" media="(min-width: 701px) and (max-width: 1000px)")
+                    img.M__largeSkyscraperAdvert-image--mobile(src="http://lorempixel.com/270/80")
 
 
 //-///////////////////////////////////////////////////////////////////////////////
@@ -518,7 +525,7 @@ mixin O__paginationNumbers
 
 
 mixin O__socialShareList
-    .O__socialShareList-main
+    .O__socialShareList-main.u-cf
         each val in content.static.socialShare
             +M__socialShareButton(val.icon, val.prompt)
 
@@ -640,27 +647,34 @@ mixin M__textPromptList
 
 
     #__articleContent-main
-        #__articleContent-centre.u-cf
-            #__articleContent-col1.u-floatLeft
-                #__articleContent-col1-row1
-                    +A__smallTitle('--socialShare','Share Article')
-                #__articleContent-col1-row2
-                    +O__socialShareList
-            #__articleContent-col2.u-floatLeft
-                #__articleContent-col2-row1
-                    +A__smallTitle(null, '17 SEPTEMBER 2015')
-                #__articleContent-col2-row2
-                    h1 Post Title
-                #__articleContent-col2-row3
-                    h2 Post Sub-heading
-                #__articleContent-col2-row3
-                    p Fusce vel dui. Phasellus consectetuer vestibulum elit. Aenean posuere, tortor sed cursus feugiat, nunc augue blandit nunc, eu sollicitudin urna dolor sagittis lacus. Suspendisse nisl elit, rhoncus eget, elementum ac, condimentum eget, diam. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+        #__articleContent-centre
+            //Het #__articleContent-container in gesit  
+            #__articleContent-container.u-cf
+                //Het inhoud van -col1 en -col2 omgeruil.
+           
 
-                    .M__shortcodeBox-main asdasd
+                #__articleContent-col2.u-floatRight
 
-                    +M__pullQuote('The report expects the IIoT industry to grow at a CAGR of 26.56% over the next 4 years.')
-                    p Fusce vel dui. Phasellus consectetuer vestibulum elit. Aenean posuere, tortor sed cursus feugiat, nunc augue blandit nunc, eu sollicitudin urna dolor sagittis lacus. Suspendisse nisl elit, rhoncus eget, elementum ac, condimentum eget, diam. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+                    #__articleContent-col2-row1
+                        +A__smallTitle(null, '17 SEPTEMBER 2015')
+                    #__articleContent-col2-row2
+                        h1 Post Title
+                    #__articleContent-col2-row3
+                        h2 Post Sub-heading
+                    #__articleContent-col2-row3
+                        p Fusce vel dui. Phasellus consectetuer vestibulum elit. Aenean posuere, tortor sed cursus feugiat, nunc augue blandit nunc, eu sollicitudin urna dolor sagittis lacus. Suspendisse nisl elit, rhoncus eget, elementum ac, condimentum eget, diam. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
 
+                        .M__shortcodeBox-main asdasd
+
+                        +M__pullQuote('The report expects the IIoT industry to grow at a CAGR of 26.56% over the next 4 years.')
+                        p Fusce vel dui. Phasellus consectetuer vestibulum elit. Aenean posuere, tortor sed cursus feugiat, nunc augue blandit nunc, eu sollicitudin urna dolor sagittis lacus. Suspendisse nisl elit, rhoncus eget, elementum ac, condimentum eget, diam. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+
+                 #__articleContent-col1.u-floatLeft
+
+                    #__articleContent-col1-row1
+                        +A__smallTitle('--socialShare','Share Article')
+                    #__articleContent-col1-row2
+                        +O__socialShareList
 
 
 

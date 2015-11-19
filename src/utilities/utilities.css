@@ -41,8 +41,8 @@ p {
 ul {
   font-size: em(18);
   line-height: em(26);
-  margin-top: 2.5em;
-  margin-bottom: 2.5em;
+  margin-top: 15px;
+  margin-bottom: 15px;
   text-decoration: none; }
 
 /* line 50, C:/MSEI/src/utilities/utilities.scss */

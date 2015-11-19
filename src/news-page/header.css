@@ -461,8 +461,8 @@ p {
 ul {
   font-size: em(18);
   line-height: em(26);
-  margin-top: 2.5em;
-  margin-bottom: 2.5em;
+  margin-top: 15px;
+  margin-bottom: 15px;
   text-decoration: none; }
 
 /* line 50, C:/MSEI/src/utilities/utilities.scss */
@@ -511,6 +511,11 @@ li {
 .u-tableCell {
   display: table-cell !important; }
 
+@media (max-width: 1000px) {
+  /* line 30, C:/MSEI/src/news-page/header.scss */
+  body {
+    font-size: 20px; } }
+
 /* line 69, C:/MSEI/src/news-page/header.scss */
 .A__smallTitle-main {
   text-transform: uppercase;
@@ -522,48 +527,46 @@ li {
 .A__smallTitle-main--socialShare {
   text-align: center; }
 
-/* line 78, C:/MSEI/src/news-page/header.scss */
-.M__socialShareButton-text {
-  text-transform: uppercase;
-  font-size: 13px;
-  font-weight: 700;
-  padding: 8px 0 8px 10px; }
-
-/* line 120, C:/MSEI/src/news-page/header.scss */
+/* line 122, C:/MSEI/src/news-page/header.scss */
 .M__contentThumb-main {
-  width: 100%;
-  text-align: center;
-  overflow: hidden;
-  height: 200px;
   color: white;
   margin-bottom: 18px; }
 
-/* line 128, C:/MSEI/src/news-page/header.scss */
+/* line 126, C:/MSEI/src/news-page/header.scss */
+.M__contentThumb-container.u-relative {
+  width: 100%;
+  height: 200px;
+  overflow: hidden; }
+
+/* line 133, C:/MSEI/src/news-page/header.scss */
+img.M__contentThumb-imageu.u-absolute {
+  left: -1000%;
+  right: -1000%;
+  top: -1000%;
+  bottom: -1000%;
+  margin: auto;
+  min-height: 100%;
+  min-width: 100%; }
+
+/* line 143, C:/MSEI/src/news-page/header.scss */
 .M__contentThumb-showcase {
   margin-top: 15px;
   display: none;
   text-transform: uppercase;
   font-weight: 700; }
 
-/* line 134, C:/MSEI/src/news-page/header.scss */
-.M__contentThumb-image {
-  width: 100%;
-  position: relative;
-  left: 100%;
-  margin-left: -200%; }
-
-/* line 140, C:/MSEI/src/news-page/header.scss */
+/* line 149, C:/MSEI/src/news-page/header.scss */
 .M__contentThumb-container.u-absolute {
   text-align: left;
   width: 100%;
   bottom: 0; }
 
-/* line 145, C:/MSEI/src/news-page/header.scss */
+/* line 154, C:/MSEI/src/news-page/header.scss */
 .M__contentThumb-label {
   padding: 5px 15px 5px 10px;
   background: red; }
 
-/* line 149, C:/MSEI/src/news-page/header.scss */
+/* line 158, C:/MSEI/src/news-page/header.scss */
 .M__contentThumb-overlay {
   padding: 0 20px;
   background: black;
@@ -571,28 +574,28 @@ li {
   height: 100px;
   width: 100%; }
 
-/* line 156, C:/MSEI/src/news-page/header.scss */
+/* line 165, C:/MSEI/src/news-page/header.scss */
 .M__contentThumb-mediaPlay {
   vertical-align: middle;
   width: 70px; }
 
-/* line 160, C:/MSEI/src/news-page/header.scss */
+/* line 169, C:/MSEI/src/news-page/header.scss */
 .M__contentThumb-title {
   font-weight: 700;
   margin-top: 20px; }
 
-/* line 164, C:/MSEI/src/news-page/header.scss */
+/* line 173, C:/MSEI/src/news-page/header.scss */
 .M__contentThumb-date {
   font-size: 13px;
   color: #ccc;
   margin-top: 10px;
   margin-bottom: 30px; }
 
-/* line 170, C:/MSEI/src/news-page/header.scss */
+/* line 179, C:/MSEI/src/news-page/header.scss */
 .M__contentThumb-subheading {
   display: none; }
 
-/* line 187, C:/MSEI/src/news-page/header.scss */
+/* line 198, C:/MSEI/src/news-page/header.scss */
 .M__heading-main {
   border-bottom: solid 0.5em black;
   font-family: "Roboto Condensed";
@@ -600,7 +603,7 @@ li {
   text-transform: uppercase;
   height: 51px; }
 
-/* line 194, C:/MSEI/src/news-page/header.scss */
+/* line 205, C:/MSEI/src/news-page/header.scss */
 .M__heading-title {
   background: #ed1b25;
   font-size: 1.625em;
@@ -609,7 +612,7 @@ li {
   padding: 0.1875em 0.5em 0.1875em 0.375em;
   height: 100%; }
 
-/* line 202, C:/MSEI/src/news-page/header.scss */
+/* line 213, C:/MSEI/src/news-page/header.scss */
 .M__heading-prompt {
   height: 100%;
   background: #cdcdcd;
@@ -618,30 +621,57 @@ li {
   text-align: center;
   padding: 0.1875em 0.5em 0.1875em 0.375em;
   padding: 13px 12px; }
-  /* line 210, C:/MSEI/src/news-page/header.scss */
+  /* line 221, C:/MSEI/src/news-page/header.scss */
   .M__heading-prompt:hover {
     background: #b8b8b8;
     color: white; }
 
-/* line 218, C:/MSEI/src/news-page/header.scss */
+/* line 229, C:/MSEI/src/news-page/header.scss */
 .M__heading-arrow {
-  margin-top: 1px; }
+  margin-top: 1px;
+  margin-left: 12px; }
 
-/* line 221, C:/MSEI/src/news-page/header.scss */
+/* line 233, C:/MSEI/src/news-page/header.scss */
 .M__heading-promptText {
   margin-right: 10px; }
 
-/* line 224, C:/MSEI/src/news-page/header.scss */
+/* line 236, C:/MSEI/src/news-page/header.scss */
 .M__introParagraph-main {
   background: #eeeeee;
   padding: 0.625em 0.9375em; }
 
-@media (max-width: 700px) {
-  /* line 231, C:/MSEI/src/news-page/header.scss */
+@media (max-width: 1000px) {
+  /* line 245, C:/MSEI/src/news-page/header.scss */
+  .M__heading-main {
+    height: auto; }
+  /* line 246, C:/MSEI/src/news-page/header.scss */
   .M__heading-title {
-    width: 100%; } }
+    padding-top: 22px;
+    height: 80px; }
+  /* line 247, C:/MSEI/src/news-page/header.scss */
+  .M__heading-prompt {
+    padding-top: 30px;
+    height: 80px; }
+  /* line 248, C:/MSEI/src/news-page/header.scss */
+  .M__heading-arrow {
+    margin-top: 4px; } }
 
-/* line 249, C:/MSEI/src/news-page/header.scss */
+@media (max-width: 700px) {
+  /* line 254, C:/MSEI/src/news-page/header.scss */
+  .M__heading-main {
+    width: 100%; }
+  /* line 257, C:/MSEI/src/news-page/header.scss */
+  .M__heading-title {
+    float: none; }
+  /* line 258, C:/MSEI/src/news-page/header.scss */
+  .M__heading-prompt {
+    float: none; }
+  /* line 259, C:/MSEI/src/news-page/header.scss */
+  .M__heading-container {
+    display: table;
+    margin: 0 auto; } }
+
+/* line 277, C:/MSEI/src/news-page/header.scss */
 .M__contentButton-main {
   width: 100%;
   padding: 11px;
@@ -651,25 +681,25 @@ li {
   border: none;
   color: black;
   cursor: pointer; }
-  /* line 258, C:/MSEI/src/news-page/header.scss */
+  /* line 286, C:/MSEI/src/news-page/header.scss */
   .M__contentButton-main:hover {
     background: #b8b8b8; }
 
-/* line 262, C:/MSEI/src/news-page/header.scss */
+/* line 290, C:/MSEI/src/news-page/header.scss */
 .M__contentButton-main--filter {
   width: 100%;
   border-bottom: 2px solid white; }
 
-/* line 266, C:/MSEI/src/news-page/header.scss */
+/* line 294, C:/MSEI/src/news-page/header.scss */
 .M__contentButton-main--pagination {
   text-align: center; }
 
 @media (max-width: 700px) {
-  /* line 272, C:/MSEI/src/news-page/header.scss */
+  /* line 300, C:/MSEI/src/news-page/header.scss */
   .M__contentButton-main {
     height: 100px; } }
 
-/* line 290, C:/MSEI/src/news-page/header.scss */
+/* line 318, C:/MSEI/src/news-page/header.scss */
 .M__featuredImage-container {
   width: 100%;
   text-align: center;
@@ -678,14 +708,17 @@ li {
   color: white;
   margin-bottom: 18px; }
 
-/* line 299, C:/MSEI/src/news-page/header.scss */
+/* line 326, C:/MSEI/src/news-page/header.scss */
 .M__featuredImage-image {
-  height: 430px;
-  position: relative;
-  left: 100%;
-  margin-left: -200%; }
+  left: -1000%;
+  right: -1000%;
+  top: -1000%;
+  bottom: -1000%;
+  margin: auto;
+  min-height: 100%;
+  min-width: 100%; }
 
-/* line 306, C:/MSEI/src/news-page/header.scss */
+/* line 336, C:/MSEI/src/news-page/header.scss */
 .M__featuredImage-label {
   background: red;
   bottom: 0;
@@ -694,17 +727,37 @@ li {
   background: red;
   margin-left: 20%; }
 
-/* line 328, C:/MSEI/src/news-page/header.scss */
+@media (max-width: 700px) {
+  /* line 346, C:/MSEI/src/news-page/header.scss */
+  .M__featuredImage-label {
+    margin-left: 0; } }
+
+@media (max-width: 1300px) {
+  /* line 350, C:/MSEI/src/news-page/header.scss */
+  .M__featuredImage-image {
+    height: 100%; }
+  /* line 352, C:/MSEI/src/news-page/header.scss */
+  .M__featuredImage-container {
+    height: 684px; } }
+
+/* line 368, C:/MSEI/src/news-page/header.scss */
 .M__socialShareButton-main {
   padding: 7px 4px;
   border-bottom: 1px solid #cdcdcd;
   color: #999999; }
-  /* line 332, C:/MSEI/src/news-page/header.scss */
+  /* line 372, C:/MSEI/src/news-page/header.scss */
   .M__socialShareButton-main:hover {
     background: #b8b8b8;
     color: white; }
 
-/* line 368, C:/MSEI/src/news-page/header.scss */
+/* line 396, C:/MSEI/src/news-page/header.scss */
+.M__socialShareButton-text {
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 700;
+  padding: 8px 0 8px 10px; }
+
+/* line 415, C:/MSEI/src/news-page/header.scss */
 .M_textPrompt-main {
   color: black;
   background: white;
@@ -714,215 +767,290 @@ li {
   text-transform: uppercase;
   font-weight: 700;
   font-family: "Roboto Condensed"; }
-  /* line 377, C:/MSEI/src/news-page/header.scss */
+  /* line 424, C:/MSEI/src/news-page/header.scss */
   .M_textPrompt-main:hover {
     background: #b8b8b8;
     color: white; }
 
-/* line 399, C:/MSEI/src/news-page/header.scss */
+/* line 446, C:/MSEI/src/news-page/header.scss */
 .M__shortcodeBox-main {
   padding: 30px;
   background: #eeeeee;
   border: solid 1px #cdcdcd; }
 
-/* line 440, C:/MSEI/src/news-page/header.scss */
+/* line 491, C:/MSEI/src/news-page/header.scss */
 .O__categoryList-item {
   width: 33.33333%;
   padding: 0 10px; }
 
-/* line 444, C:/MSEI/src/news-page/header.scss */
+/* line 495, C:/MSEI/src/news-page/header.scss */
 .O__categoryList-item:nth-of-type(3n+1) {
   padding-left: 0; }
 
-/* line 447, C:/MSEI/src/news-page/header.scss */
+/* line 498, C:/MSEI/src/news-page/header.scss */
 .O__categoryList-item:nth-of-type(3n) {
   padding-right: 0; }
 
-/* line 450, C:/MSEI/src/news-page/header.scss */
+/* line 501, C:/MSEI/src/news-page/header.scss */
 .O__categoryList-item:nth-child(1) {
   width: 100%;
   padding: 0; }
 
-/* line 454, C:/MSEI/src/news-page/header.scss */
+/* line 505, C:/MSEI/src/news-page/header.scss */
 .O__categoryList-item:nth-child(1) .M__contentThumb-showcase {
   display: block; }
 
-/* line 457, C:/MSEI/src/news-page/header.scss */
+/* line 508, C:/MSEI/src/news-page/header.scss */
 .O__categoryList-item:nth-child(-n+3) .M__contentThumb-title {
   font: 700 38px "Roboto Condensed";
   margin-top: 10px; }
 
-/* line 462, C:/MSEI/src/news-page/header.scss */
+/* line 513, C:/MSEI/src/news-page/header.scss */
 .O__categoryList-item:nth-child(2) .M__contentThumb-title,
 .O__categoryList-item:nth-child(3) .M__contentThumb-title {
   margin-top: 30px; }
 
-/* line 465, C:/MSEI/src/news-page/header.scss */
+/* line 516, C:/MSEI/src/news-page/header.scss */
 .O__categoryList-item:nth-child(-n+3) .M__contentThumb-subheading {
   display: block;
   margin-top: 5px;
   margin-bottom: 40px; }
 
-/* line 470, C:/MSEI/src/news-page/header.scss */
+/* line 521, C:/MSEI/src/news-page/header.scss */
 .O__categoryList-item:nth-child(-n+3) .M__contentThumb-date {
   display: none; }
 
-/* line 473, C:/MSEI/src/news-page/header.scss */
+/* line 524, C:/MSEI/src/news-page/header.scss */
 .O__categoryList-item:nth-child(1) .M__contentThumb-main {
   height: 450px; }
 
-/* line 476, C:/MSEI/src/news-page/header.scss */
+/* line 527, C:/MSEI/src/news-page/header.scss */
 .O__categoryList-item:nth-child(2) {
   width: 50%;
   padding-left: 0; }
 
-/* line 480, C:/MSEI/src/news-page/header.scss */
+/* line 531, C:/MSEI/src/news-page/header.scss */
 .O__categoryList-item:nth-child(2) .M__contentThumb-main {
   height: 300px; }
 
-/* line 483, C:/MSEI/src/news-page/header.scss */
+/* line 534, C:/MSEI/src/news-page/header.scss */
 .O__categoryList-item:nth-child(3) {
   width: 50%;
   padding-right: 0; }
 
-/* line 487, C:/MSEI/src/news-page/header.scss */
+/* line 538, C:/MSEI/src/news-page/header.scss */
 .O__categoryList-item:nth-child(3) .M__contentThumb-main {
   height: 300px; }
 
-/* line 490, C:/MSEI/src/news-page/header.scss */
+/* line 541, C:/MSEI/src/news-page/header.scss */
 O__categoryList-heading {
   width: 100%;
   margin-top: 60px; }
 
-/* line 508, C:/MSEI/src/news-page/header.scss */
+/* line 559, C:/MSEI/src/news-page/header.scss */
 .O__paginationNumbers-item {
   width: 41px;
   margin-left: 5px; }
 
-/* line 523, C:/MSEI/src/news-page/header.scss */
+/* line 574, C:/MSEI/src/news-page/header.scss */
 .O__socialShareList-main {
   border-top: 1px solid #cdcdcd; }
 
-/* line 549, C:/MSEI/src/news-page/header.scss */
+/* line 600, C:/MSEI/src/news-page/header.scss */
 #__leaderboard-main {
   background: blue; }
 
-/* line 552, C:/MSEI/src/news-page/header.scss */
+/* line 603, C:/MSEI/src/news-page/header.scss */
 #__leaderboard-centre {
   width: 60.5em;
   margin: 0 auto; }
 
 @media (max-width: 1000px) {
-  /* line 557, C:/MSEI/src/news-page/header.scss */
+  /* line 608, C:/MSEI/src/news-page/header.scss */
   #__leaderboard-centre {
     width: 42.5em;
     margin: 0 auto; } }
 
-/* line 562, C:/MSEI/src/news-page/header.scss */
+/* line 613, C:/MSEI/src/news-page/header.scss */
 #__topNav-main {
   background: #26292a;
   color: white; }
 
-/* line 563, C:/MSEI/src/news-page/header.scss */
+/* line 614, C:/MSEI/src/news-page/header.scss */
 #__menuContent-main {
   background: red; }
 
-/* line 564, C:/MSEI/src/news-page/header.scss */
+/* line 615, C:/MSEI/src/news-page/header.scss */
 #__menuContent-centre {
   width: 78.4375em;
   margin: 0 auto; }
 
-/* line 565, C:/MSEI/src/news-page/header.scss */
+/* line 616, C:/MSEI/src/news-page/header.scss */
 #__mainNav-main {
   background: #efefef; }
 
-/* line 566, C:/MSEI/src/news-page/header.scss */
+/* line 617, C:/MSEI/src/news-page/header.scss */
 #__mainNav-centre {
   width: 78.4375em;
   margin: 0 auto; }
 
-/* line 567, C:/MSEI/src/news-page/header.scss */
+/* line 618, C:/MSEI/src/news-page/header.scss */
 #__secondaryNav-main {
   background: #cdcdcd; }
 
-/* line 568, C:/MSEI/src/news-page/header.scss */
+/* line 619, C:/MSEI/src/news-page/header.scss */
 #__secondaryNav-centre {
   width: 78.4375em;
   margin: 0 auto; }
 
-/* line 571, C:/MSEI/src/news-page/header.scss */
+/* line 622, C:/MSEI/src/news-page/header.scss */
 #__content-main {
   padding: 90px 0 0 0; }
 
-/* line 587, C:/MSEI/src/news-page/header.scss */
+/* line 638, C:/MSEI/src/news-page/header.scss */
 #__articleHeader-centre {
   width: 1255px;
   margin: 0 auto; }
 
-/* line 591, C:/MSEI/src/news-page/header.scss */
+/* line 642, C:/MSEI/src/news-page/header.scss */
 #__articleHeader-col1 {
   width: 860px; }
 
-/* line 594, C:/MSEI/src/news-page/header.scss */
+/* line 645, C:/MSEI/src/news-page/header.scss */
 #__articleHeader-col2 {
   width: 370px;
   margin-top: 43px; }
 
-/* line 598, C:/MSEI/src/news-page/header.scss */
+/* line 649, C:/MSEI/src/news-page/header.scss */
 #__articleHeader-main {
   height: 500px; }
 
-/* line 601, C:/MSEI/src/news-page/header.scss */
-#__articleHeader-centre {
-  width: 1255px; }
+@media (max-width: 1300px) {
+  /* line 657, C:/MSEI/src/news-page/header.scss */
+  #__articleHeader-col1 {
+    padding-right: 20px;
+    width: 62.5%; }
+  /* line 662, C:/MSEI/src/news-page/header.scss */
+  #__articleHeader-centre {
+    width: 90%; }
+  /* line 674, C:/MSEI/src/news-page/header.scss */
+  #__articleHeader-col2 {
+    width: 37.5%;
+    margin-top: 43px; }
+  /* line 680, C:/MSEI/src/news-page/header.scss */
+  #__articleHeader-main {
+    height: auto; } }
 
-/* line 616, C:/MSEI/src/news-page/header.scss */
+@media (max-width: 1000px) {
+  /* line 688, C:/MSEI/src/news-page/header.scss */
+  #__articleContent-main {
+    margin-top: 35px; }
+  /* line 689, C:/MSEI/src/news-page/header.scss */
+  #__articleContent-col1-row1 {
+    margin-bottom: 15px; }
+  /* line 690, C:/MSEI/src/news-page/header.scss */
+  #__articleHeader-centre {
+    width: 90%; }
+  /* line 694, C:/MSEI/src/news-page/header.scss */
+  #__articleHeader-col1 {
+    width: 80%; }
+  /* line 696, C:/MSEI/src/news-page/header.scss */
+  #__articleHeader-col2 {
+    width: 20%;
+    margin-top: 80px; } }
+
+@media (max-width: 700px) {
+  /* line 709, C:/MSEI/src/news-page/header.scss */
+  #__articleContent-col1-row1 {
+    margin-bottom: 15px; }
+  /* line 710, C:/MSEI/src/news-page/header.scss */
+  #__articleHeader-centre {
+    width: 90%; }
+  /* line 714, C:/MSEI/src/news-page/header.scss */
+  #__articleHeader-col1 {
+    width: 100%; }
+  /* line 716, C:/MSEI/src/news-page/header.scss */
+  #__articleHeader-col2 {
+    width: 100%;
+    margin-top: 43px; } }
+
+/* line 737, C:/MSEI/src/news-page/header.scss */
 #__articleContent-col1-row1 {
   margin-bottom: 15px; }
 
-/* line 617, C:/MSEI/src/news-page/header.scss */
+/* line 740, C:/MSEI/src/news-page/header.scss */
 #__articleContent-centre {
   width: 1255px;
   margin: 0 auto; }
 
-/* line 622, C:/MSEI/src/news-page/header.scss */
+/* line 744, C:/MSEI/src/news-page/header.scss */
 #__articleContent-col1-row1 {
   width: 110px; }
 
-/* line 626, C:/MSEI/src/news-page/header.scss */
+/* line 747, C:/MSEI/src/news-page/header.scss */
 #__articleContent-col2 {
-  margin-left: 150px;
   width: 600px; }
 
-/* line 642, C:/MSEI/src/news-page/header.scss */
+/* line 750, C:/MSEI/src/news-page/header.scss */
+#__articleContent-container {
+  width: 858px; }
+
+@media (max-width: 1300px) {
+  /* line 754, C:/MSEI/src/news-page/header.scss */
+  #__articleContent-centre {
+    width: 90%; }
+  /* line 757, C:/MSEI/src/news-page/header.scss */
+  #__articleContent-container {
+    width: 100%;
+    padding-left: 90px; }
+  /* line 760, C:/MSEI/src/news-page/header.scss */
+  #__articleContent-col2 {
+    float: left; }
+  /* line 763, C:/MSEI/src/news-page/header.scss */
+  #__articleContent-col1 {
+    float: right; } }
+
+@media (max-width: 1000px) {
+  /* line 769, C:/MSEI/src/news-page/header.scss */
+  #__articleContent-col2 {
+    float: none;
+    width: 100%; }
+  /* line 773, C:/MSEI/src/news-page/header.scss */
+  #__articleContent-col1 {
+    float: none; }
+  /* line 777, C:/MSEI/src/news-page/header.scss */
+  #__articleContent-container {
+    padding: 0; } }
+
+/* line 795, C:/MSEI/src/news-page/header.scss */
 #__articleFooter-main {
   background: #eeeeee;
   padding-top: 60px; }
 
-/* line 646, C:/MSEI/src/news-page/header.scss */
+/* line 799, C:/MSEI/src/news-page/header.scss */
 #__articleFooter-col1 {
   width: 827px; }
 
-/* line 649, C:/MSEI/src/news-page/header.scss */
+/* line 802, C:/MSEI/src/news-page/header.scss */
 #__articleFooter-col1-row3 {
   padding-top: 60px; }
 
-/* line 652, C:/MSEI/src/news-page/header.scss */
-#__articleFooter-col2-row2 {
+/* line 805, C:/MSEI/src/news-page/header.scss */
+#__articleFooter-col2 {
   width: 400px; }
 
-/* line 653, C:/MSEI/src/news-page/header.scss */
+/* line 806, C:/MSEI/src/news-page/header.scss */
 #__articleFooter-centre {
   width: 1255px;
   margin: 0 auto; }
 
-/* line 664, C:/MSEI/src/news-page/header.scss */
+/* line 817, C:/MSEI/src/news-page/header.scss */
 .M__largeSkyscraperAdvert-main {
   border: 1px solid #cdcdcd;
   background: #eeeeee;
   padding: 30px 0; }
 
-/* line 665, C:/MSEI/src/news-page/header.scss */
+/* line 819, C:/MSEI/src/news-page/header.scss */
 .M__largeSkyscraperAdvert-title {
   font-size: 13px;
   text-transform: uppercase;
@@ -932,12 +1060,12 @@ O__categoryList-heading {
   text-align: center;
   margin-bottom: 10px; }
 
-/* line 666, C:/MSEI/src/news-page/header.scss */
+/* line 820, C:/MSEI/src/news-page/header.scss */
 .M__largeSkyscraperAdvert-container {
   display: table;
   margin: 0 auto; }
 
-/* line 672, C:/MSEI/src/news-page/header.scss */
+/* line 826, C:/MSEI/src/news-page/header.scss */
 .M__pullQuote-main {
   height: auto;
   background: white;
@@ -946,24 +1074,24 @@ O__categoryList-heading {
   padding: 0.3125em 0;
   width: 240px; }
 
-/* line 680, C:/MSEI/src/news-page/header.scss */
+/* line 834, C:/MSEI/src/news-page/header.scss */
 .M__pullQuote-quote {
   border-left: 0.0625em solid grey;
   padding-left: 1.25em;
   margin-left: 1.25em;
   margin-bottom: 2.5em; }
 
-/* line 686, C:/MSEI/src/news-page/header.scss */
+/* line 840, C:/MSEI/src/news-page/header.scss */
 .M__pullQuote-text {
   color: black;
   font-size: 1.25em; }
 
-/* line 690, C:/MSEI/src/news-page/header.scss */
+/* line 844, C:/MSEI/src/news-page/header.scss */
 .M__pullQuote-icon {
   margin-top: 0.625em;
   margin-right: 0.625em; }
 
-/* line 694, C:/MSEI/src/news-page/header.scss */
+/* line 848, C:/MSEI/src/news-page/header.scss */
 .M__pullQuote-retweet {
   margin-bottom: 0.75em;
   margin-top: 1.375em;
@@ -972,5 +1100,90 @@ O__categoryList-heading {
   margin-left: 1.125em;
   letter-spacing: 1px;
   text-transform: uppercase; }
+
+@media (max-width: 1300px) {
+  /* line 860, C:/MSEI/src/news-page/header.scss */
+  #__articleContent-main {
+    margin-top: 30px; }
+  /* line 861, C:/MSEI/src/news-page/header.scss */
+  #__articleFooter-centre {
+    width: 90%; }
+  /* line 862, C:/MSEI/src/news-page/header.scss */
+  #__articleFooter-col2 {
+    width: 37.5%; }
+  /* line 863, C:/MSEI/src/news-page/header.scss */
+  #__articleFooter-col1 {
+    width: 62.5%;
+    padding-right: 20px; } }
+
+@media (max-width: 1000px) {
+  /* line 868, C:/MSEI/src/news-page/header.scss */
+  .M__pullQuote-main {
+    max-width: 300px;
+    width: 100%;
+    margin: 60px 0; } }
+
+@media (max-width: 700px) {
+  /* line 872, C:/MSEI/src/news-page/header.scss */
+  .M__pullQuote-main {
+    max-width: 100%; }
+  /* line 873, C:/MSEI/src/news-page/header.scss */
+  .M__pullQuote-quote {
+    margin: 0;
+    padding: 0;
+    border: 0; } }
+
+@media (max-width: 1000px) {
+  /* line 881, C:/MSEI/src/news-page/header.scss */
+  #__articleFooter-col1 {
+    width: 100%; }
+  /* line 883, C:/MSEI/src/news-page/header.scss */
+  #__articleFooter-col1 {
+    padding-right: 0;
+    display: table; }
+  /* line 884, C:/MSEI/src/news-page/header.scss */
+  #__articleContent-col1-row1 {
+    margin: 120px auto 20px auto; }
+  /* line 885, C:/MSEI/src/news-page/header.scss */
+  .M__socialShareButton-main {
+    padding: 20px;
+    width: 13.4%;
+    float: left;
+    height: 90px;
+    margin-right: 20px;
+    border-bottom: 0;
+    background: #eee;
+    border-radius: 10px; }
+  /* line 886, C:/MSEI/src/news-page/header.scss */
+  .M__socialShareButton-icon {
+    float: none;
+    margin: 0 auto;
+    display: table; }
+  /* line 887, C:/MSEI/src/news-page/header.scss */
+  .M__socialShareButton-text {
+    float: none;
+    text-align: center;
+    padding-left: 0; }
+  /* line 888, C:/MSEI/src/news-page/header.scss */
+  .O__socialShareList-main {
+    border: 0;
+    margin-bottom: 30px; }
+  /* line 889, C:/MSEI/src/news-page/header.scss */
+  #__articleFooter-centre {
+    width: 90%; }
+  /* line 890, C:/MSEI/src/news-page/header.scss */
+  #__articleFooter-col1 {
+    float: none; }
+  /* line 891, C:/MSEI/src/news-page/header.scss */
+  #__articleFooter-col2 {
+    float: none; }
+  /* line 892, C:/MSEI/src/news-page/header.scss */
+  #__articleFooter-col2 {
+    width: 100%;
+    margin-top: 60px; }
+  /* line 893, C:/MSEI/src/news-page/header.scss */
+  .M_textPrompt-main {
+    height: 80px;
+    padding: 28px; } }
 
 /*# sourceMappingURL=header.css.map */

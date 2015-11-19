@@ -11,10 +11,7 @@
 
 // HACKS
 
-//body {width: 300px; margin: 0 auto}
-//@include tablet {
-/////    body{ font-size: 20px;}
-//}
+
 
 /////////////////////////////////////////////////////////////////////////////////
 //                                                                             //
@@ -29,6 +26,9 @@
 
 @import '../utilities/spritesheet.scss';
 @import '../utilities/utilities.scss';
+@include tablet {
+   body{ font-size: 20px;}
+}
 
 
 //-///////////////////////////////////////////////////////////////////////////////
@@ -75,12 +75,7 @@
 .A__smallTitle-main--socialShare {
     text-align: center;
 }
-.M__socialShareButton-text {
-    text-transform: uppercase;
-    font-size: 13px;
-    font-weight: 700;
-    padding: 8px 0 8px 10px;
-}
+
 
 
 //-///////////////////////////////////////////////////////////////////////////////
@@ -116,60 +111,76 @@
 //-                                                                             //
 //-///////////////////////////////////////////////////////////////////////////////
 
-//-CORE
+
+
+
+
+
+
+
+    //-CORE
 .M__contentThumb-main {
-    width: 100%;
-    text-align: center;
-    overflow: hidden;
-    height: 200px;
     color: white;
     margin-bottom: 18px;
 }
-.M__contentThumb-showcase {
-    margin-top: 15px;
-    display: none;
-    text-transform: uppercase;
-    font-weight: 700;
-}
-.M__contentThumb-image {
+.M__contentThumb-container.u-relative {
     width: 100%;
-    position: relative;
-    left: 100%;
-    margin-left: -200%;
+    height: 200px;
+    overflow: hidden;
+   
+    
 }
-.M__contentThumb-container.u-absolute {
-    text-align: left;
-    width: 100%;
-    bottom: 0;
+img.M__contentThumb-imageu.u-absolute {
+ left: -1000%;
+    right: -1000%;
+    top: -1000%;
+    bottom: -1000%;
+    margin: auto;
+    min-height: 100%;
+    min-width: 100%;
+  
 }
-.M__contentThumb-label {
-    padding: 5px 15px 5px 10px;
-    background: red;
-}
-.M__contentThumb-overlay {
-    padding: 0 20px;
-    background: rgb(0, 0, 0);
-    background: rgba(0, 0, 0, 0.7);
-    height: 100px;
-    width: 100%;
-}
-.M__contentThumb-mediaPlay {
-    vertical-align: middle;
-    width: 70px;
-}
-.M__contentThumb-title {
-    font-weight: 700;
-    margin-top: 20px;
-}
-.M__contentThumb-date {
-    font-size: 13px;
-    color: #ccc;
-    margin-top: 10px;
-    margin-bottom: 30px;
-}
-.M__contentThumb-subheading {
-    display: none;
-}
+    .M__contentThumb-showcase {
+        margin-top: 15px;
+        display: none;
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+    .M__contentThumb-container.u-absolute {
+        text-align: left;
+        width: 100%;
+        bottom: 0;
+    }
+    .M__contentThumb-label {
+        padding: 5px 15px 5px 10px;
+        background: red;
+    }
+    .M__contentThumb-overlay {
+        padding: 0 20px;
+        background: rgb(0, 0, 0);
+        background: rgba(0, 0, 0, 0.7);
+        height: 100px;
+        width: 100%;
+    }
+    .M__contentThumb-mediaPlay {
+        vertical-align: middle;
+        width: 70px;
+    }
+    .M__contentThumb-title {
+        font-weight: 700;
+        margin-top: 20px;
+    }
+    .M__contentThumb-date {
+        font-size: 13px;
+        color: #ccc;
+        margin-top: 10px;
+        margin-bottom: 30px;
+    }
+    .M__contentThumb-subheading {
+        display: none;
+    }
+
+
 
 
 //-///////////////////////////////////////////////////////////////////////////////
@@ -217,6 +228,7 @@
 }
 .M__heading-arrow {
     margin-top: 1px;
+    margin-left: 12px;
 }
 .M__heading-promptText {
     margin-right: 10px;
@@ -227,11 +239,27 @@
 }
 
 //-RESPONSIVE
+
+
+@include tablet {
+    .M__heading-main {height: auto;}
+    .M__heading-title {padding-top: 22px; height: 80px;}
+    .M__heading-prompt {padding-top: 30px; height: 80px;}
+    .M__heading-arrow {
+    margin-top: 4px;
+}
+}
+
 @include mobile {
-    .M__heading-title {
+    .M__heading-main {
         width: 100%;
     }
+    .M__heading-title {float: none;}
+    .M__heading-prompt {float: none;}
+    .M__heading-container {display: table; margin: 0 auto;}
+ 
 }
+
 
 
 //-///////////////////////////////////////////////////////////////////////////////
@@ -292,16 +320,18 @@
     text-align: center;
     overflow: hidden;
     height: 430px;
-  
     color: white;
     margin-bottom: 18px;
 }
 .M__featuredImage-image {
-    height: 430px;
+    left: -1000%;
+    right: -1000%;
+    top: -1000%;
+    bottom: -1000%;
+    margin: auto;
+    min-height: 100%;
+    min-width: 100%;
     
-    position: relative;
-    left: 100%;
-    margin-left: -200%;
 }
 .M__featuredImage-label {
     background: red;
@@ -312,7 +342,17 @@
     margin-left: 20%;
 }
 
+@include mobile {
+ .M__featuredImage-label{margin-left: 0;}
+}
 
+@include laptop {
+    .M__featuredImage-image {
+        height: 100%;}
+    .M__featuredImage-container  {height: 684px;}
+}
+    
+    
 //-///////////////////////////////////////////////////////////////////////////////
 //-                                                                             //
 //-                                                                             //
@@ -351,6 +391,13 @@
    &:hover .sprite-Email-share-01 {
        @extend .sprite-Email-share-white;
    }
+}
+
+.M__socialShareButton-text {
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 700;
+    padding: 8px 0 8px 10px;
 }
 
 
@@ -435,6 +482,10 @@
 //-                                                                             //
 //-                                                                             //
 //-///////////////////////////////////////////////////////////////////////////////
+
+
+
+
 
 //-CORE
 .O__categoryList-item {
@@ -583,7 +634,7 @@ O__categoryList-heading {
 //-                                                                             //
 //-///////////////////////////////////////////////////////////////////////////////
 
-
+//-CORE
 #__articleHeader-centre {
     width: 1255px;
     margin: 0 auto;
@@ -598,8 +649,78 @@ O__categoryList-heading {
 #__articleHeader-main {
     height: 500px
 }
-#__articleHeader-centre {
-    width: 1255px;
+
+//-RESPONSIVE
+@include laptop
+{
+
+ #__articleHeader-col1 {
+padding-right: 20px;
+ width: 62.5%;
+    
+}   
+   #__articleHeader-centre {
+
+       width: 90%;
+
+} 
+    
+       #__articleHeader-main {
+
+      
+
+} 
+    
+    #__articleHeader-col2 {
+
+    width: 37.5%;
+    margin-top: 43px;
+ 
+}
+    #__articleHeader-main {
+    height: auto;
+}
+    
+}
+
+@include tablet
+{
+  #__articleContent-main{margin-top: 35px;}  
+    #__articleContent-col1-row1{margin-bottom: 15px;}  
+  #__articleHeader-centre {
+    width: 90%;
+      
+} 
+    #__articleHeader-col1 {width: 80%}
+   
+    #__articleHeader-col2 {
+    width: 20%;
+    margin-top: 80px;
+}
+
+
+
+    
+}
+
+
+@include mobile
+{
+  #__articleContent-col1-row1{margin-bottom: 15px;}  
+  #__articleHeader-centre {
+    width: 90%;
+      
+} 
+    #__articleHeader-col1 {width: 100%;}
+   
+    #__articleHeader-col2 {
+    width: 100%;
+    margin-top: 43px;
+}
+
+    
+    
+    
 }
 
 
@@ -613,20 +734,52 @@ O__categoryList-heading {
 //-                                                                             //
 //-///////////////////////////////////////////////////////////////////////////////
 
-#__articleContent-col1-row1{margin-bottom: 15px;}
+#__articleContent-col1-row1 {
+    margin-bottom: 15px;
+}
 #__articleContent-centre {
     width: 1255px;
     margin: 0 auto;
 }
-
 #__articleContent-col1-row1 {
     width: 110px;
 }
-
 #__articleContent-col2 {
-    margin-left: 150px;
     width: 600px;
 }
+#__articleContent-container {
+    width: 858px
+}
+@include laptop {
+    #__articleContent-centre {
+        width: 90%;
+    }
+    #__articleContent-container {
+        width: 100%; padding-left: 90px;
+    }
+    #__articleContent-col2 {
+        float: left;
+    }
+    #__articleContent-col1 {
+        float: right;
+    }
+}
+
+@include tablet {
+       #__articleContent-col2 {
+        float: none;
+           width: 100%;
+    }
+    #__articleContent-col1 {
+        float: none;
+    }
+    
+        #__articleContent-container {
+        padding: 0;
+    }
+    
+}
+
 
 //-///////////////////////////////////////////////////////////////////////////////
 //-                                                                             //
@@ -649,7 +802,7 @@ O__categoryList-heading {
 #__articleFooter-col1-row3 {
     padding-top: 60px;
 }
-#__articleFooter-col2-row2 {width: 400px;}
+#__articleFooter-col2 {width: 400px;}
 #__articleFooter-centre {
     width: 1255px;
     margin: 0 auto;
@@ -662,6 +815,7 @@ O__categoryList-heading {
 
 
 .M__largeSkyscraperAdvert-main {border: 1px solid #cdcdcd; background: #eeeeee; padding: 30px 0;}
+
 .M__largeSkyscraperAdvert-title{font-size: 13px; text-transform: uppercase; font-weight: 700; color: #a5a5a5; letter-spacing: 1px; text-align: center; margin-bottom: 10px;}
 .M__largeSkyscraperAdvert-container{display: table; margin: 0 auto;}
 
@@ -701,4 +855,41 @@ O__categoryList-heading {
     text-transform: uppercase;
 }
 
+
+@include laptop{
+    #__articleContent-main {margin-top: 30px;}
+    #__articleFooter-centre { width: 90%}
+    #__articleFooter-col2 {width: 37.5%}
+    #__articleFooter-col1 {width: 62.5%; padding-right: 20px;}
+}
+
+
+@include tablet{
+.M__pullQuote-main{max-width: 300px; width: 100%; margin: 60px 0;}
+}
+
+@include mobile{
+.M__pullQuote-main{max-width: 100%;}
+.M__pullQuote-quote{margin: 0; padding: 0; border: 0;}
+   
+}
+
+
+@include tablet{
+    
+    
+    #__articleFooter-col1 {
+    width: 100%;
+} #__articleFooter-col1 {padding-right: 0; display: table;}
+    #__articleContent-col1-row1 {margin: 120px auto 20px auto; }
+    .M__socialShareButton-main{padding: 20px; width: 13.4%; float: left; height: 90px; margin-right: 20px; border-bottom: 0; background:#eee; border-radius: 10px;}
+    .M__socialShareButton-icon{float:none; margin: 0 auto; display: table;}
+    .M__socialShareButton-text{float:none; text-align: center; padding-left: 0;}
+    .O__socialShareList-main {border: 0; margin-bottom: 30px;}
+    #__articleFooter-centre {width: 90%;}
+    #__articleFooter-col1 {float: none;}
+    #__articleFooter-col2 {float: none;}
+    #__articleFooter-col2 {width: 100%; margin-top: 60px;}
+    .M_textPrompt-main{ height: 80px; padding: 28px;}
+}
 

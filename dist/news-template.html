@@ -43,7 +43,6 @@
 
 
 
-
 <!-- Head & Menu-->
 <div id="__head-main">
   <div id="__leaderboard-main" style="background: #017795">
@@ -114,18 +113,23 @@
       <div id="__articleHeader-col1" class="u-floatLeft">
         <div id="__articleHeader-col1-row1">
           <div class="M__heading-main u-cf">
-            <div class="M__heading-title u-floatLeft">News Story</div><a href="#">
-              <div class="M__heading-prompt u-floatLeft u-cf">
-                <div class="M__heading-promptText u-floatLeft">Leave a Comment</div>
-                <div class="M__heading-arrow sprite sprite-arrow-grey u-floatRight"></div>
+            <div class="M__heading-title u-floatLeft">News Story</div><a href="#" class="u-noUnderline">
+              <div class="M__heading-prompt u-floatLeft">
+                <!-- Het ekstra parent DIV ingesit: .M__heading-container-->
+                <div class="M__heading-container u-cf">
+                  <div class="M__heading-promptText u-floatLeft">Leave a Comment</div>
+                  <div class="M__heading-arrow sprite sprite-arrow-grey u-floatRight"></div>
+                </div>
               </div></a>
           </div>
         </div>
         <div id="__articleHeader-col1-row2">
           <!--Image Size - Hard Crop Featured Image: 860 x 685-->
           <div class="M__featuredImage-main u-relative">
-            <div class="M__featuredImage-container">
-              <picture><img src="http://lorempixel.com/860/430" class="M__featuredImage-image"/></picture>
+            <div class="M__featuredImage-container u-relative">
+              <picture>
+                <source srcset="http://lorempixel.com/640/570" media="(max-width: 700px)" class="M__featuredImage-image u-absolute"/><img src="http://lorempixel.com/860/590" class="M__featuredImage-image u-absolute"/>
+              </picture>
             </div>
             <div class="M__featuredImage-label u-absolute">Label</div>
           </div>
@@ -135,7 +139,11 @@
           <div class="M__largeSkyscraperAdvert-main">
             <div class="M__largeSkyscraperAdvert-container">
               <div class="M__largeSkyscraperAdvert-title">Advertisement</div>
-              <picture><img src="http://lorempixel.com/300/600" class="M__largeSkyscraperAdvert-image"/></picture>
+              <picture>
+                <!-- Het mobile en tablet weergawe ook ingesit vir responsiveness-->
+                <source srcset="http://lorempixel.com/300/600" media="(min-width: 1001px)" class="M__largeSkyscraperAdvert-image--desktop"/>
+                <source srcset="http://lorempixel.com/120/600" media="(min-width: 701px) and (max-width: 1000px)" class="M__largeSkyscraperAdvert-image--tablet"/><img src="http://lorempixel.com/270/80" class="M__largeSkyscraperAdvert-image--mobile"/>
+              </picture>
             </div>
           </div></a>
       </div>
@@ -143,85 +151,90 @@
   </div>
   
   <div id="__articleContent-main">
-    <div id="__articleContent-centre" class="u-cf">
-      <div id="__articleContent-col1" class="u-floatLeft">
-        <div id="__articleContent-col1-row1">
-          <div class="A__smallTitle-main A__smallTitle-main--socialShare">Share Article</div>
-        </div>
-        <div id="__articleContent-col1-row2">
-          <div class="O__socialShareList-main"><a href="#">
-              <div class="M__socialShareButton-main u-cf">
-                <div class="M__socialShareButton-icon u-floatLeft">
-                  <picture>
-                    <div class="M__socialShareList-icon sprite sprite-facebook-share-01"></div>
-                  </picture>
-                </div>
-                <div class="M__socialShareButton-text u-floatLeft">Share</div>
-              </div></a><a href="#">
-              <div class="M__socialShareButton-main u-cf">
-                <div class="M__socialShareButton-icon u-floatLeft">
-                  <picture>
-                    <div class="M__socialShareList-icon sprite sprite-Twitter-share-01"></div>
-                  </picture>
-                </div>
-                <div class="M__socialShareButton-text u-floatLeft">Share</div>
-              </div></a><a href="#">
-              <div class="M__socialShareButton-main u-cf">
-                <div class="M__socialShareButton-icon u-floatLeft">
-                  <picture>
-                    <div class="M__socialShareList-icon sprite sprite-Linkedin-share-01"></div>
-                  </picture>
-                </div>
-                <div class="M__socialShareButton-text u-floatLeft">Share</div>
-              </div></a><a href="#">
-              <div class="M__socialShareButton-main u-cf">
-                <div class="M__socialShareButton-icon u-floatLeft">
-                  <picture>
-                    <div class="M__socialShareList-icon sprite sprite-Google-share-01"></div>
-                  </picture>
-                </div>
-                <div class="M__socialShareButton-text u-floatLeft">Share</div>
-              </div></a><a href="#">
-              <div class="M__socialShareButton-main u-cf">
-                <div class="M__socialShareButton-icon u-floatLeft">
-                  <picture>
-                    <div class="M__socialShareList-icon sprite sprite-Email-share-01"></div>
-                  </picture>
-                </div>
-                <div class="M__socialShareButton-text u-floatLeft">Share</div>
-              </div></a><a href="#">
-              <div class="M__socialShareButton-main u-cf">
-                <div class="M__socialShareButton-icon u-floatLeft">
-                  <picture>
-                    <div class="M__socialShareList-icon sprite sprite-Comment-share-01"></div>
-                  </picture>
-                </div>
-                <div class="M__socialShareButton-text u-floatLeft">Share</div>
-              </div></a>
+    <div id="__articleContent-centre">
+      <!--Het #__articleContent-container in gesit  -->
+      <div id="__articleContent-container" class="u-cf">
+        <!--Het inhoud van -col1 en -col2 omgeruil.-->
+        
+        <div id="__articleContent-col2" class="u-floatRight">
+          <div id="__articleContent-col2-row1">
+            <div class="A__smallTitle-main">17 SEPTEMBER 2015</div>
+          </div>
+          <div id="__articleContent-col2-row2">
+            <h1>Post Title</h1>
+          </div>
+          <div id="__articleContent-col2-row3">
+            <h2>Post Sub-heading</h2>
+          </div>
+          <div id="__articleContent-col2-row3">
+            <p>Fusce vel dui. Phasellus consectetuer vestibulum elit. Aenean posuere, tortor sed cursus feugiat, nunc augue blandit nunc, eu sollicitudin urna dolor sagittis lacus. Suspendisse nisl elit, rhoncus eget, elementum ac, condimentum eget, diam. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+            <div class="M__shortcodeBox-main">asdasd</div>
+            <div class="M__pullQuote-main u-floatRight">
+              <div class="M__pullQuote-quote u-cf">
+                <div class="M__pullQuote-text">"The report expects the IIoT industry to grow at a CAGR of 26.56% over the next 4 years."</div>
+                <div class="M__pullQuote-icon sprite sprite-twitter-quote-01 u-floatLeft"></div>
+                <div class="M__pullQuote-retweet u-floatLeft">Retweet this Quote</div>
+              </div>
+            </div>
+            <p>Fusce vel dui. Phasellus consectetuer vestibulum elit. Aenean posuere, tortor sed cursus feugiat, nunc augue blandit nunc, eu sollicitudin urna dolor sagittis lacus. Suspendisse nisl elit, rhoncus eget, elementum ac, condimentum eget, diam. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
           </div>
         </div>
-      </div>
-      <div id="__articleContent-col2" class="u-floatLeft">
-        <div id="__articleContent-col2-row1">
-          <div class="A__smallTitle-main">17 SEPTEMBER 2015</div>
-        </div>
-        <div id="__articleContent-col2-row2">
-          <h1>Post Title</h1>
-        </div>
-        <div id="__articleContent-col2-row3">
-          <h2>Post Sub-heading</h2>
-        </div>
-        <div id="__articleContent-col2-row3">
-          <p>Fusce vel dui. Phasellus consectetuer vestibulum elit. Aenean posuere, tortor sed cursus feugiat, nunc augue blandit nunc, eu sollicitudin urna dolor sagittis lacus. Suspendisse nisl elit, rhoncus eget, elementum ac, condimentum eget, diam. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
-          <div class="M__shortcodeBox-main">asdasd</div>
-          <div class="M__pullQuote-main u-floatRight">
-            <div class="M__pullQuote-quote u-cf">
-              <div class="M__pullQuote-text">"The report expects the IIoT industry to grow at a CAGR of 26.56% over the next 4 years."</div>
-              <div class="M__pullQuote-icon sprite sprite-twitter-quote-01 u-floatLeft"></div>
-              <div class="M__pullQuote-retweet u-floatLeft">Retweet this Quote</div>
+        <div id="__articleContent-col1" class="u-floatLeft">
+          <div id="__articleContent-col1-row1">
+            <div class="A__smallTitle-main A__smallTitle-main--socialShare">Share Article</div>
+          </div>
+          <div id="__articleContent-col1-row2">
+            <div class="O__socialShareList-main u-cf"><a href="#">
+                <div class="M__socialShareButton-main u-cf">
+                  <div class="M__socialShareButton-icon u-floatLeft">
+                    <picture>
+                      <div class="M__socialShareList-icon sprite sprite-facebook-share-01"></div>
+                    </picture>
+                  </div>
+                  <div class="M__socialShareButton-text u-floatLeft">Share</div>
+                </div></a><a href="#">
+                <div class="M__socialShareButton-main u-cf">
+                  <div class="M__socialShareButton-icon u-floatLeft">
+                    <picture>
+                      <div class="M__socialShareList-icon sprite sprite-Twitter-share-01"></div>
+                    </picture>
+                  </div>
+                  <div class="M__socialShareButton-text u-floatLeft">Share</div>
+                </div></a><a href="#">
+                <div class="M__socialShareButton-main u-cf">
+                  <div class="M__socialShareButton-icon u-floatLeft">
+                    <picture>
+                      <div class="M__socialShareList-icon sprite sprite-Linkedin-share-01"></div>
+                    </picture>
+                  </div>
+                  <div class="M__socialShareButton-text u-floatLeft">Share</div>
+                </div></a><a href="#">
+                <div class="M__socialShareButton-main u-cf">
+                  <div class="M__socialShareButton-icon u-floatLeft">
+                    <picture>
+                      <div class="M__socialShareList-icon sprite sprite-Google-share-01"></div>
+                    </picture>
+                  </div>
+                  <div class="M__socialShareButton-text u-floatLeft">Share</div>
+                </div></a><a href="#">
+                <div class="M__socialShareButton-main u-cf">
+                  <div class="M__socialShareButton-icon u-floatLeft">
+                    <picture>
+                      <div class="M__socialShareList-icon sprite sprite-Email-share-01"></div>
+                    </picture>
+                  </div>
+                  <div class="M__socialShareButton-text u-floatLeft">Share</div>
+                </div></a><a href="#">
+                <div class="M__socialShareButton-main u-cf">
+                  <div class="M__socialShareButton-icon u-floatLeft">
+                    <picture>
+                      <div class="M__socialShareList-icon sprite sprite-Comment-share-01"></div>
+                    </picture>
+                  </div>
+                  <div class="M__socialShareButton-text u-floatLeft">Share</div>
+                </div></a>
             </div>
           </div>
-          <p>Fusce vel dui. Phasellus consectetuer vestibulum elit. Aenean posuere, tortor sed cursus feugiat, nunc augue blandit nunc, eu sollicitudin urna dolor sagittis lacus. Suspendisse nisl elit, rhoncus eget, elementum ac, condimentum eget, diam. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
         </div>
       </div>
     </div>
@@ -266,77 +279,93 @@
         </div>
         <div id="__articleFooter-col2-row2">
           <div class="O__relatedContentList-main">
-            <div class="O__relatedContentList-item">
-              <div style="background: lightgrey;" class="M__contentThumb-main u-relative">
-                <picture><img src="http://lorempixel.com/400/200" class="M__contentThumb-image"/></picture>
-                <div class="M__contentThumb-container u-absolute">
-                  <div class="M__contentThumb-label u-table">Label</div>
-                  <div class="M__contentThumb-overlay u-table">
-                    <div class="M__contentThumb-row u-tableRow">
-                      <div class="M__contentThumb-content u-tableCell">
-                        <div class="M__contentThumb-showcase">Top Story</div>
-                        <div class="M__contentThumb-title">Copenhagen builds carbon signaling waste-to-power plant</div>
-                        <div class="M__contentThumb-subheading">Copenhagen builds carbon signaling waste-to-power plant</div>
-                        <div class="M__contentThumb-date">11 SEPTEMBER 2015</div>
+            <div class="O__relatedContentList-item"><a href="#">
+                <div class="M__contentThumb-main u-relative">
+                  <div class="M__contentThumb-container u-relative">
+                    <picture>
+                      <source srcset="http://lorempixel.com/640/200" media="(max-width: 700px)" class="M__contentThumb-image u-absolute"/><img src="http://lorempixel.com/885/200" class="M__contentThumb-imageu u-absolute"/>
+                    </picture>
+                  </div>
+                  <div class="M__contentThumb-container u-absolute">
+                    <div class="M__contentThumb-label u-table">Label</div>
+                    <div class="M__contentThumb-overlay u-table">
+                      <div class="M__contentThumb-row u-tableRow">
+                        <div class="M__contentThumb-content u-tableCell">
+                          <div class="M__contentThumb-showcase">Top Story</div>
+                          <div class="M__contentThumb-title">Copenhagen builds carbon signaling waste-to-power plant</div>
+                          <div class="M__contentThumb-subheading">Copenhagen builds carbon signaling waste-to-power plant</div>
+                          <div class="M__contentThumb-date">11 SEPTEMBER 2015</div>
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
-              </div>
+                </div></a>
             </div>
-            <div class="O__relatedContentList-item">
-              <div style="background: lightgrey;" class="M__contentThumb-main u-relative">
-                <picture><img src="http://lorempixel.com/400/200" class="M__contentThumb-image"/></picture>
-                <div class="M__contentThumb-container u-absolute">
-                  <div class="M__contentThumb-label u-table">Label</div>
-                  <div class="M__contentThumb-overlay u-table">
-                    <div class="M__contentThumb-row u-tableRow">
-                      <div class="M__contentThumb-content u-tableCell">
-                        <div class="M__contentThumb-showcase">Top Story</div>
-                        <div class="M__contentThumb-title">Copenhagen builds carbon signaling waste-to-power plant</div>
-                        <div class="M__contentThumb-subheading">Copenhagen builds carbon signaling waste-to-power plant</div>
-                        <div class="M__contentThumb-date">11 SEPTEMBER 2015</div>
+            <div class="O__relatedContentList-item"><a href="#">
+                <div class="M__contentThumb-main u-relative">
+                  <div class="M__contentThumb-container u-relative">
+                    <picture>
+                      <source srcset="http://lorempixel.com/640/200" media="(max-width: 700px)" class="M__contentThumb-image u-absolute"/><img src="http://lorempixel.com/885/200" class="M__contentThumb-imageu u-absolute"/>
+                    </picture>
+                  </div>
+                  <div class="M__contentThumb-container u-absolute">
+                    <div class="M__contentThumb-label u-table">Label</div>
+                    <div class="M__contentThumb-overlay u-table">
+                      <div class="M__contentThumb-row u-tableRow">
+                        <div class="M__contentThumb-content u-tableCell">
+                          <div class="M__contentThumb-showcase">Top Story</div>
+                          <div class="M__contentThumb-title">Copenhagen builds carbon signaling waste-to-power plant</div>
+                          <div class="M__contentThumb-subheading">Copenhagen builds carbon signaling waste-to-power plant</div>
+                          <div class="M__contentThumb-date">11 SEPTEMBER 2015</div>
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
-              </div>
+                </div></a>
             </div>
-            <div class="O__relatedContentList-item">
-              <div style="background: lightgrey;" class="M__contentThumb-main u-relative">
-                <picture><img src="http://lorempixel.com/400/200" class="M__contentThumb-image"/></picture>
-                <div class="M__contentThumb-container u-absolute">
-                  <div class="M__contentThumb-label u-table">Label</div>
-                  <div class="M__contentThumb-overlay u-table">
-                    <div class="M__contentThumb-row u-tableRow">
-                      <div class="M__contentThumb-content u-tableCell">
-                        <div class="M__contentThumb-showcase">Top Story</div>
-                        <div class="M__contentThumb-title">Copenhagen builds carbon signaling waste-to-power plant</div>
-                        <div class="M__contentThumb-subheading">Copenhagen builds carbon signaling waste-to-power plant</div>
-                        <div class="M__contentThumb-date">11 SEPTEMBER 2015</div>
+            <div class="O__relatedContentList-item"><a href="#">
+                <div class="M__contentThumb-main u-relative">
+                  <div class="M__contentThumb-container u-relative">
+                    <picture>
+                      <source srcset="http://lorempixel.com/640/200" media="(max-width: 700px)" class="M__contentThumb-image u-absolute"/><img src="http://lorempixel.com/885/200" class="M__contentThumb-imageu u-absolute"/>
+                    </picture>
+                  </div>
+                  <div class="M__contentThumb-container u-absolute">
+                    <div class="M__contentThumb-label u-table">Label</div>
+                    <div class="M__contentThumb-overlay u-table">
+                      <div class="M__contentThumb-row u-tableRow">
+                        <div class="M__contentThumb-content u-tableCell">
+                          <div class="M__contentThumb-showcase">Top Story</div>
+                          <div class="M__contentThumb-title">Copenhagen builds carbon signaling waste-to-power plant</div>
+                          <div class="M__contentThumb-subheading">Copenhagen builds carbon signaling waste-to-power plant</div>
+                          <div class="M__contentThumb-date">11 SEPTEMBER 2015</div>
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
-              </div>
+                </div></a>
             </div>
-            <div class="O__relatedContentList-item">
-              <div style="background: lightgrey;" class="M__contentThumb-main u-relative">
-                <picture><img src="http://lorempixel.com/400/200" class="M__contentThumb-image"/></picture>
-                <div class="M__contentThumb-container u-absolute">
-                  <div class="M__contentThumb-label u-table">Label</div>
-                  <div class="M__contentThumb-overlay u-table">
-                    <div class="M__contentThumb-row u-tableRow">
-                      <div class="M__contentThumb-content u-tableCell">
-                        <div class="M__contentThumb-showcase">Top Story</div>
-                        <div class="M__contentThumb-title">Copenhagen builds carbon signaling waste-to-power plant</div>
-                        <div class="M__contentThumb-subheading">Copenhagen builds carbon signaling waste-to-power plant</div>
-                        <div class="M__contentThumb-date">11 SEPTEMBER 2015</div>
+            <div class="O__relatedContentList-item"><a href="#">
+                <div class="M__contentThumb-main u-relative">
+                  <div class="M__contentThumb-container u-relative">
+                    <picture>
+                      <source srcset="http://lorempixel.com/640/200" media="(max-width: 700px)" class="M__contentThumb-image u-absolute"/><img src="http://lorempixel.com/885/200" class="M__contentThumb-imageu u-absolute"/>
+                    </picture>
+                  </div>
+                  <div class="M__contentThumb-container u-absolute">
+                    <div class="M__contentThumb-label u-table">Label</div>
+                    <div class="M__contentThumb-overlay u-table">
+                      <div class="M__contentThumb-row u-tableRow">
+                        <div class="M__contentThumb-content u-tableCell">
+                          <div class="M__contentThumb-showcase">Top Story</div>
+                          <div class="M__contentThumb-title">Copenhagen builds carbon signaling waste-to-power plant</div>
+                          <div class="M__contentThumb-subheading">Copenhagen builds carbon signaling waste-to-power plant</div>
+                          <div class="M__contentThumb-date">11 SEPTEMBER 2015</div>
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
-              </div>
+                </div></a>
             </div>
           </div>
         </div>
