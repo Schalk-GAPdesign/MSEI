@@ -1,0 +1,325 @@
+@import 'utilities.scss';
+@import 'spritesheet.scss';
+@import 'A__atoms.scss';
+@import 'M__molecules.scss';
+@import 'O__organisms.scss';
+@import 'head.scss';
+@import 'foot.scss';
+
+@include tablet {
+    body{ font-size: em(20);}
+}
+
+
+//-///////////////////////////////////////////////////////////////////////////////
+//-                                                                             //
+//-                                                                             //
+//-                                                                             //
+//-                                                                             //
+//-                                                                             //
+//-                                                                             //
+//-                                                                             //
+//-                                      ██                                     //
+//-                                     ███                                     //
+//-                                       █                                     //
+//-                                       █                                     //
+//-                                     █████                                   //
+//-                                                                             //
+//-                                                                             //
+//-                                                                             //
+//-                                                                             //
+//-                                                                             //
+//-                                                                             //
+//-                                                                             //
+//-///////////////////////////////////////////////////////////////////////////////
+
+
+#__articleHeader-centre {
+    background: white;
+    height: em(500);
+    margin-top: em(60);
+
+}
+
+#__articleHeader-centre--photoGallery {
+    background: white;
+    height: auto;
+
+}
+
+#__articleHeader-centre {
+    width: em(1255);
+    margin-left: auto;
+    margin-right: auto;
+}
+#__articleHeader-col1 {
+    width: em(860)
+}
+#__articleHeader-col2 {
+    width: em(370);
+    margin-top: em(49);
+    
+}
+#__articleHeader-main {
+    height: auto;
+}
+@include laptop {
+    #__articleHeader-col1 {
+        padding-right: em(20);
+        width: 62.5%;
+    }
+    #__articleHeader-centre {
+        width: 90%;
+    }
+    #__articleHeader-main {}
+    #__articleHeader-col2 {
+        width: 37.5%;
+        margin-top: em(50);
+       
+    }
+    #__articleHeader-main {
+        height: auto;
+    }
+    #__menuSearch-centre{
+        width: 90%;
+    }
+    
+    
+#__articleHeader-centre {
+
+    height: auto;
+
+
+}
+    
+}
+@include tablet {
+    #__articleContent-main {
+        margin-top: em(35);
+    }
+    #__articleContent-col1-row1 {
+        margin-bottom: em(15);
+    }
+    #__articleHeader-centre {
+        width: 90%;
+    }
+    #__articleHeader-col1 {
+        width: 80%
+    }
+    #__articleHeader-col2 {
+        width: 20%;
+        margin-top: em(80);
+    }
+}
+@include mobile {
+    #__articleContent-col1-row1 {
+        margin-bottom: em(15);
+    }
+    #__articleHeader-centre {
+        width: 90%;
+    }
+    #__articleHeader-col1 {
+        width: 100%;
+        padding: 0;
+    }
+    #__articleHeader-col2 {
+        width: 100%;
+        margin-top: em(44);
+     
+    }
+}
+
+
+//-///////////////////////////////////////////////////////////////////////////////
+//-                                                                             //
+//-                                                                             //
+//-                                                                             //
+//-                                                                             //
+//-                                                                             //
+//-                                                                             //
+//-                                                                             //
+//-                                      ███                                    //
+//-                                     █   █                                   //
+//-                                       ██                                    //
+//-                                      █                                      //
+//-                                     █████                                   //
+//-                                                                             //
+//-                                                                             //
+//-                                                                             //
+//-                                                                             //
+//-                                                                             //
+//-                                                                             //
+//-                                                                             //
+//-///////////////////////////////////////////////////////////////////////////////
+
+
+#__articleContent-col1-row1 {
+    margin-bottom: em(15);
+}
+#__articleContent-centre {
+    width: em(1255);
+    margin: em(60) auto;
+}
+#__articleContent-col1-row1 {
+    width: em(110);
+}
+#__articleContent-col2 {
+    width: em(600);
+
+}
+#__articleContent-container {
+    width: em(858)
+}
+@include laptop {
+    #__articleContent-centre {
+        width: 90%;
+    }
+    #__articleContent-container {
+        width: 100%;
+        padding-left: em(90);
+    }
+    #__articleContent-col2 {
+        float: left;
+         
+    }
+    #__articleContent-col1 {
+        float: right;margin-right: 30px;
+    }
+    #__articleContent-main {
+        margin-top: em(30);
+    }
+}
+@include tablet {
+    #__articleContent-col2 {
+        float: none;
+        width: 100%;
+    }
+    #__articleContent-col1 {
+        float: none;
+    }
+    #__articleContent-container {
+        padding: 0;
+    }
+    #__articleContent-col1-row1 {
+        margin: em(120) auto em(30) auto;
+    }
+}
+
+
+
+
+//-///////////////////////////////////////////////////////////////////////////////
+//-                                                                             //
+//-                                                                             //
+//-                                                                             //
+//-                                                                             //
+//-                                                                             //
+//-                                                                             //
+//-                                                                             //
+//-                                      ███                                    //
+//-                                     █   █                                   //
+//-                                       ██                                    //
+//-                                     █   █                                   //
+//-                                      ███                                    //
+//-                                                                             //
+//-                                                                             //
+//-                                                                             //
+//-                                                                             //
+//-                                                                             //
+//-                                                                             //
+//-                                                                             //
+//-///////////////////////////////////////////////////////////////////////////////
+
+#__otherTenders-main {margin-bottom: em(60p);}
+
+
+#__articleFooter-main {
+    background: #eeeeee;
+    padding: em(60) 0;
+}
+#__articleFooter-col1 {
+    width: em(827);
+}
+#__articleFooter-col1-row3 {
+    padding-top: em(60);
+}
+#__articleFooter-col2 {
+    width: em(400);
+}
+#__articleFooter-centre {
+    width: em(1255);
+    margin: 0 auto;
+}
+@include laptop {
+    #__articleFooter-centre {
+        width: 90%
+    }
+    #__articleFooter-col2 {
+        width: 37.5%
+    }
+    #__articleFooter-col1 {
+        width: 62.5%;
+        padding-right: em(20);
+    }
+}
+@include tablet {
+    #__articleFooter-centre {
+        width: 90%;
+    }
+    #__articleFooter-col1 {
+        float: none;
+    }
+    #__articleFooter-col2 {
+        float: none;
+    }
+    #__articleFooter-col2 {
+        width: 100%;
+        margin-top: em(60);
+    }
+    #__articleFooter-col1 {
+        padding-right: 0;
+        display: table;
+    }
+}
+#__articleFooterelatedContentAlt-center {
+    width: em(1255);
+    margin: 0 auto;
+}
+#__otherFiles-centre {
+    width: em(1255);
+    margin: 0 auto;
+}
+#__presentationFiles-centre {
+    width: em(1255);
+    margin: 0 auto;
+}
+#__pressRelease-centre {
+    width: em(1255);
+    margin: 0 auto;
+}
+#__pressRelease-main {
+    margin: em(30) 0;
+}
+#__otherFiles-centre {
+    margin-top: em(30);
+    margin-bottom: em(30);
+}
+#__presentationFiles-centre {
+    margin-top: em(30);
+    margin-bottom: em(30);
+}
+#__pressRelease-centre {
+    margin-top: em(30);
+    margin-bottom: em(30);
+}
+#__otherTenders-centre {
+    width: em(600);
+}
+#__pressRelease-row2 {
+    overflow: hidden;
+}
+#__pressRelease-extend {
+    width: em(1265);
+}
+
+

@@ -1,0 +1,725 @@
+- var tablet = 62.563
+- var laptop = 81.313
+- var mobile = 43.813
+
+//-///////////////////////////////////////////////////////////////////////////////
+//-                                                                             //
+//-                                                                             //
+//-    MOLECULE (`1)                                                            //
+//-   ---------------                                                           //
+//-    NEWS THUMB ITEM                                                          //
+//-                                                                             //
+//-                                                                             //
+//-///////////////////////////////////////////////////////////////////////////////
+
+
+mixin M__newsThumbItem(image, label, title, index)
+    a(href="#")
+        .M__newsThumbItem-main.u-relative
+            .M__newsThumbItem-image
+                picture
+                    img.M__newsThumbItem-image.u-absolute(src="#{image}/#{index}")
+            .M__newsThumbItem-overlay.u-absolute
+
+                    .M__newsThumbItem-label= label
+                    .M__newsThumbItem-content
+                        .M__newsThumbItem-title Copenhagen builds carbon signaling waste-to-power plant
+                        .M__newsThumbItem-prompt Read More
+
+
+//-///////////////////////////////////////////////////////////////////////////////
+//-                                                                             //
+//-                                                                             //
+//-    MOLECULE                                                                 //
+//-   ---------------                                                           //
+//-    @???                                                                      //
+//-                                                                             //
+//-                                                                             //
+//-///////////////////////////////////////////////////////////////////////////////
+
+
+mixin M__labeledLinkItem(label, title)
+    .M__labeledLinkItem-main.u-table
+        .M__labeledLinkItem-main.u-tableRow
+            .M__labeledLinkItem-labelContainer.u-tableCell
+                .M__labeledLinkItem-label= label
+            .M__labeledLinkItem-title.u-tableCell= title
+
+mixin M__labeledLinkItem--presentation(label, title)
+    .M__labeledLinkItem-main.u-table
+        .M__labeledLinkItem-main.u-tableRow
+            .M__labeledLinkItem-labelContainer.u-tableCell
+                .M__labeledLinkItem-label.M__labeledLinkItem-label--presentation= label
+            .M__labeledLinkItem-title.u-tableCell= title
+
+//-///////////////////////////////////////////////////////////////////////////////
+//-                                                                             //
+//-                                                                             //
+//-    MOLECULE                                                                 //
+//-   ---------------                                                           //
+//-    Quote Module                                                             //
+//-                                                                             //
+//-                                                                             //
+//-///////////////////////////////////////////////////////////////////////////////
+
+
+mixin M__quote
+    .M__quote-main
+        .M__quote-row1.u-cf
+            .M__quote-openQuote.icon-openQuoteRed.u-floatLeft
+        .M__quote-row2
+            .M__quote-text Fusce commodo aliquam arcu. Aenean vulputate eleifend tellus. Duis vel nibh at velit scelerisque suscipit. Praesent porttitor, nulla vitae posuere iaculis, arcu nisl dignissim dolor, a pretium mi sem ut ipsum. Nunc egestas, augue at pellentesque laoreet, felis eros vehicula leo, at malesuada velit leo quis pede.
+        .M__quote-row3.u-cf
+            .M_quote-closeQuote.icon-closeQuoteRed.u-floatRight
+        .M__quote-row4
+            .M_quote-source - John Doe,
+
+
+//-///////////////////////////////////////////////////////////////////////////////
+//-                                                                             //
+//-                                                                             //
+//-    MOLECULE                                                                 //
+//-   ---------------                                                           //
+//-    MAGAZINE PREVIEW BUTTON                                                  //
+//-                                                                             //
+//-                                                                             //
+//-///////////////////////////////////////////////////////////////////////////////
+
+mixin M__magazinePreviewButton(text, modifier)
+    a(href="#").u-noUnderline
+        if(modifier=='--grey')
+            .M__magazinePreviewButton-main.M__magazinePreviewButton-main--grey= text
+        else
+            .M__magazinePreviewButton-main= text
+
+
+//-///////////////////////////////////////////////////////////////////////////////
+//-                                                                             //
+//-                                                                             //
+//-    MOLECULE                                                                 //
+//-   ---------------                                                           //
+//-    MAGAZINE PREVIEW THUMB                                                   //
+//-                                                                             //
+//-                                                                             //
+//-///////////////////////////////////////////////////////////////////////////////
+
+
+mixin M__magazinePreviewThumb
+        .M__magazinePreviewThumb-main
+            picture
+                img(src="http://lorempixel.com/175/250")
+
+
+//-///////////////////////////////////////////////////////////////////////////////
+//-                                                                             //
+//-                                                                             //
+//-    MOLECULE                                                                 //
+//-   ---------------                                                           //
+//-    Magazine Preview Article                                                 //
+//-                                                                             //
+//-                                                                             //
+//-///////////////////////////////////////////////////////////////////////////////
+
+
+mixin M__magazinePreviewArticle(text)
+    a(href="#").u-noUnderline
+        .M__magazinePreviewArticle-main= text
+
+
+//-///////////////////////////////////////////////////////////////////////////////
+//-                                                                             //
+//-                                                                             //
+//-    MOLECULE                                                                 //
+//-   ---------------                                                           //
+//-    DISCLAIMER LINK                                                          //
+//-                                                                             //
+//-                                                                             //
+//-///////////////////////////////////////////////////////////////////////////////
+
+
+mixin M__disclaimerLink(index, val)
+    .M__disclaimerLink-main.u-cf
+
+        if (index>0 && index!=4)
+            .M__disclaimerLink-icon.u-floatLeft
+                .M__disclaimerLink-dot.icon-footerDot
+
+        if (index==4)
+            .M__disclaimerLink-icon.u-floatLeft
+                .M__disclaimerLink-dot.M__disclaimerLink-dot--tabletHide.icon-footerDot
+
+        a(href="#").u-noUnderline
+            .M__disclaimerLink-text.u-floatLeft= val
+
+
+//-///////////////////////////////////////////////////////////////////////////////
+//-                                                                             //
+//-                                                                             //
+//-    MOLECULE                                                                 //
+//-   ---------------                                                           //
+//-    FOOT COLUMN ITEM                                                         //
+//-                                                                             //
+//-                                                                             //
+//-///////////////////////////////////////////////////////////////////////////////
+
+
+mixin M__footColumn(heading, ...links)
+    .M__footColumn-main
+        a(href="#").u-noUnderline
+            .M__footColumn-heading= heading
+        each val in links
+            if(val)
+                a(href="#").u-noUnderline
+                    .M__footColumn-link= val
+
+
+//-///////////////////////////////////////////////////////////////////////////////
+//-                                                                             //
+//-                                                                             //
+//-    MOLECULE                                                                 //
+//-   ---------------                                                           //
+//-    MAIN NAV BUTTON                                                          //
+//-                                                                             //
+//-                                                                             //
+//-///////////////////////////////////////////////////////////////////////////////
+
+
+mixin M__mainNavButton(text, arrow)
+    a(href="#")
+        .M__mainNavButton-main
+            .M__mainNavButton-container
+                .M__mainNavButton-centre.u-cf
+                    .M__mainNavButton-text.u-floatLeft= text
+                    if arrow
+                        .M__mainNavButton-arrow.icon-dropdown.u-floatRight
+
+
+//-///////////////////////////////////////////////////////////////////////////////
+//-                                                                             //
+//-                                                                             //
+//-    MOLECULE                                                                 //
+//-   ---------------                                                           //
+//-   MAIN NAV SEARCH                                                           //
+//-                                                                             //
+//-                                                                             //
+//-///////////////////////////////////////////////////////////////////////////////
+
+
+mixin M__mainNavsearch
+    a(href="#")
+        .M__mainNavsearch-main
+            .M__mainNavsearch-container
+                .M__mainNavsearch-icon.icon-search
+
+
+//-///////////////////////////////////////////////////////////////////////////////
+//-                                                                             //
+//-                                                                             //
+//-    MOLECULE                                                                 //
+//-   ---------------                                                           //
+//-    SECONDARY NAV BUTTON                                                     //
+//-                                                                             //
+//-                                                                             //
+//-///////////////////////////////////////////////////////////////////////////////
+
+
+mixin M__secondaryNavButton(index, text)
+    a(href="#").u-noUnderline
+        if(index==0)
+            .M__secondaryNavButton-main
+                .M__secondaryNavButton-container.u-borderLeft= text
+        else
+            .M__secondaryNavButton-main
+                .M__secondaryNavButton-container= text
+
+
+//-///////////////////////////////////////////////////////////////////////////////
+//-                                                                             //
+//-                                                                             //
+//-    MOLECULE                                                                 //
+//-   ---------------                                                           //
+//-    SMALL SUPERBANNER ADVERT                                                 //
+//-                                                                             //
+//-                                                                             //
+//-///////////////////////////////////////////////////////////////////////////////
+
+
+mixin A__smallSuperbannerAdvert
+    a(href="#")
+        .A__smallSuperbannerAdvert-main
+            picture
+                img(src="http://lorempixel.com/468/60")
+
+
+//-///////////////////////////////////////////////////////////////////////////////
+//-                                                                             //
+//-                                                                             //
+//-    MOLECULE                                                                 //
+//-   ---------------                                                           //
+//-    MENU SEARCH ITEM                                                         //
+//-                                                                             //
+//-                                                                             //
+//-///////////////////////////////////////////////////////////////////////////////
+
+mixin M__Search
+    M__Search-main.u-cf
+        .M__Search-keywordContainer.u-floatLeft
+            input.M__Search-keyword(placeholder="Search")
+        .M__Search-categoryContainer.u-floatLeft
+            select.M__Search-category
+                each val in head.static.mainNav
+                    option= val.text
+        .M__Search-buttonContainer.u-floatLeft
+            button.M__Search-button Search
+
+
+//-///////////////////////////////////////////////////////////////////////////////
+//-                                                                             //
+//-                                                                             //
+//-    MOLECULE                                                                 //
+//-   ---------------                                                           //
+//-    LOGIN BUTTON                                                             //
+//-                                                                             //
+//-                                                                             //
+//-///////////////////////////////////////////////////////////////////////////////
+
+
+mixin M__login(modifier)
+         a(href="#").u-unUnderline
+            .M__Login-main
+                .M__Login-container.u-cf
+                    .M__Login-icon.icon-login.u-floatLeft
+                    .M__Login-text.u-floatRight
+                        if(modifier=="--active")
+                            |John Smith
+                        else
+                            |Login
+
+
+
+//-///////////////////////////////////////////////////////////////////////////////
+//-                                                                             //
+//-                                                                             //
+//-    MOLECULE                                                                 //
+//-   ---------------                                                           //
+//-    PULL QUOTE SHORTCODE                                                     //
+//-                                                                             //
+//-                                                                             //
+//-///////////////////////////////////////////////////////////////////////////////
+
+
+mixin M__shortcodeBox-main(text)
+    .M__shortcodeBox-main= text
+
+
+
+//-///////////////////////////////////////////////////////////////////////////////
+//-                                                                             //
+//-                                                                             //
+//-    MOLECULE                                                                 //
+//-   ---------------                                                           //
+//-    PULL QUOTE SHORTCODE                                                     //
+//-                                                                             //
+//-                                                                             //
+//-///////////////////////////////////////////////////////////////////////////////
+
+
+mixin M__pullQuote(Quote)
+    .M__pullQuote-main.u-floatRight
+            .M__pullQuote-quote.u-cf
+                .M__pullQuote-text "#{Quote}"
+                .M__pullQuote-icon.icon-pullQuote.u-floatLeft
+                .M__pullQuote-retweet.u-floatLeft Retweet this Quote
+
+
+//-///////////////////////////////////////////////////////////////////////////////
+//-                                                                             //
+//-                                                                             //
+//-    MOLECULE                                                                 //
+//-   ---------------                                                           //
+//-    CONTENT THUMB                                                            //
+//-                                                                             //
+//-                                                                             //
+//-///////////////////////////////////////////////////////////////////////////////
+
+
+mixin M__contentThumb()
+    a(href="#")
+        .M__contentThumb-main.u-relative
+            .M__contentThumb-container.u-relative
+                picture
+                    source.M__contentThumb-image.u-absolute(srcset="http://lorempixel.com/640/200" media="(max-width: #{mobile}em)")
+                    img.M__contentThumb-imageu.u-absolute(src="http://lorempixel.com/885/200")
+            .M__contentThumb-container.u-absolute
+                .M__contentThumb-label.u-table Label
+                .M__contentThumb-overlay.u-table
+                    .M__contentThumb-row.u-tableRow
+                        .M__contentThumb-content.u-tableCell
+                            .M__contentThumb-showcase Top Story
+                            .M__contentThumb-title Copenhagen builds carbon signaling waste-to-power plant
+                            .M__contentThumb-subheading Copenhagen builds carbon signaling waste-to-power plant
+                            .M__contentThumb-date 11 SEPTEMBER 2015
+                            .M__contentThumb-prompt Read More
+
+
+//-///////////////////////////////////////////////////////////////////////////////
+//-                                                                             //
+//-                                                                             //
+//-    MOLECULE                                                                 //
+//-   ---------------                                                           //
+//-    LEADER BOARD ADVERT                                                      //
+//-                                                                             //
+//-                                                                             //
+//-///////////////////////////////////////////////////////////////////////////////
+
+
+mixin M__leaderboardAdvert
+    a(href="#")
+        picture
+            source.M__featuredImage-image(srcset="http://lorempixel.com/968/100" media="(min-width: #{tablet}em)")
+            img.M__leaderboardAdvert-image(src="http://lorempixel.com/680/100")
+
+
+
+//-///////////////////////////////////////////////////////////////////////////////
+//-                                                                             //
+//-                                                                             //
+//-    MOLECULE                                                                 //
+//-   ---------------                                                           //
+//-    TOP NAV BUTTON                                                           //
+//-                                                                             //
+//-                                                                             //
+//-///////////////////////////////////////////////////////////////////////////////
+
+
+mixin M__topNavButton(text)
+    a(href="#").u-noUnderline
+        .M__topNavButton-main
+            .M__topNavButton-container= text
+
+
+//-///////////////////////////////////////////////////////////////////////////////
+//-                                                                             //
+//-                                                                             //
+//-    MOLECULE                                                                 //
+//-   ---------------                                                           //
+//-    MAGAZINE MOCKUP                                                          //
+//-                                                                             //
+//-                                                                             //
+//-///////////////////////////////////////////////////////////////////////////////
+
+mixin M__magazineMockup
+    .M__magazineMockup-main
+        .M__magazineMockup-centre
+                .M__magazineMockup-container
+                    img.M__magazineMockup-background(src='http://dev.gapdesign.co.za/img/magazine-bg.png')
+                    .M__magazineMockup-imageContainer
+                        img(src="http://lorempixel.com/210/295").M__magazineMockup-image
+
+
+//-///////////////////////////////////////////////////////////////////////////////
+//-                                                                             //
+//-                                                                             //
+//-    MOLECULE                                                                 //
+//-   ---------------                                                           //
+//-    FILTER BUTTON                                                            //
+//-                                                                             //
+//-                                                                             //
+//-///////////////////////////////////////////////////////////////////////////////
+
+
+mixin M__filterButton(title, dropdown, ...options )
+    if(dropdown == true)
+        select.M__contentButton-main.M__contentButton-main--filter
+
+            each val, index in options
+                if(val!=null)
+                    if(index==0)
+                        option(disabled selected)= title
+                    if(index>0)
+                        option= val
+    if(dropdown == false)
+        a.u-noUnderline(href="#")
+            .M__contentButton-main.M__contentButton-main--filter= title
+
+
+
+//-///////////////////////////////////////////////////////////////////////////////
+//-                                                                             //
+//-                                                                             //
+//-    MOLECULE                                                                 //
+//-   ---------------                                                           //
+//-    CLOSE BUTTON                                                             //
+//-                                                                             //
+//-                                                                             //
+//-///////////////////////////////////////////////////////////////////////////////
+
+
+mixin M__closeButton
+    a(href="#").u-noUnderline
+        .M__closeButton-main.u-cf
+             .M__closeButton-col1.icon-close.u-floatLeft
+             .M__closeButton-col2.u-floatLeft Close
+
+
+
+
+//-///////////////////////////////////////////////////////////////////////////////
+//-                                                                             //
+//-                                                                             //
+//-    MOLECULE                                                                 //
+//-   ---------------                                                           //
+//-    INTRO PARAGRAPH DIV                                                      //
+//-                                                                             //
+//-                                                                             //
+//-///////////////////////////////////////////////////////////////////////////////
+
+
+mixin M__photoGalleryItem
+    a.fancybox(rel="gallery1" href="http://farm8.staticflickr.com/7308/15783866983_27160395b9_b.jpg")
+        .M__photoGallery-main
+            picture
+                img(src="http://lorempixel.com/60/60")
+
+//-///////////////////////////////////////////////////////////////////////////////
+//-                                                                             //
+//-                                                                             //
+//-    MOLECULE                                                                 //
+//-   ---------------                                                           //
+//-    INTRO PARAGRAPH DIV                                                      //
+//-                                                                             //
+//-                                                                             //
+//-///////////////////////////////////////////////////////////////////////////////
+
+
+
+mixin M__magazineReadPrompt
+    a(href="#").u-noUnderline
+        .M__magazineReadPrompt-main Click Here to Read Online
+
+//-///////////////////////////////////////////////////////////////////////////////
+//-                                                                             //
+//-                                                                             //
+//-    MOLECULE                                                                 //
+//-   ---------------                                                           //
+//-    INTRO PARAGRAPH DIV                                                      //
+//-                                                                             //
+//-                                                                             //
+//-///////////////////////////////////////////////////////////////////////////////
+
+
+
+mixin M__introParagraph(text1)
+    .M__introParagraph-main= text1
+
+
+//-///////////////////////////////////////////////////////////////////////////////
+//-                                                                             //
+//-                                                                             //
+//-    MOLECULE                                                                 //
+//-   ---------------                                                           //
+//-    HEADING                                                                  //
+//-                                                                             //
+//-                                                                             //
+//-///////////////////////////////////////////////////////////////////////////////
+
+
+mixin M__heading(text1, text2, link)
+
+    .M__heading-main.u-cf
+        if text1
+            .M__heading-title.u-floatLeft= text1
+        if text2
+            a(href="#").u-noUnderline
+                .M__heading-prompt.u-floatLeft
+                    // Het ekstra parent DIV ingesit: .M__heading-container
+                    .M__heading-promptContainer.u-cf
+                        .M__heading-promptText.u-floatLeft= text2
+                        if link
+                            .M__heading-arrow.icon-arrow.u-floatRight
+
+
+//-///////////////////////////////////////////////////////////////////////////////
+//-                                                                             //
+//-                                                                             //
+//-    MOLECULE                                                                 //
+//-   ---------------                                                           //
+//-    PAGINATION BUTTON                                                        //
+//-                                                                             //
+//-                                                                             //
+//-///////////////////////////////////////////////////////////////////////////////
+
+
+mixin M__paginationButton(text)
+    a.u-noUnderline(href="#")
+        .M__contentButton-main.M__contentButton-main--pagination= text
+
+
+//-///////////////////////////////////////////////////////////////////////////////
+//-                                                                             //
+//-                                                                             //
+//-    MOLECULE                                                                 //
+//-   ---------------                                                           //
+//-    FEATURED IMAGE                                                           //
+//-                                                                             //
+//-                                                                             //
+//-///////////////////////////////////////////////////////////////////////////////
+
+mixin M__featuredImage(url, label)
+    .M__featuredImage-main.u-relative
+        .M__featuredImage-container.u-relative
+            picture
+                source.M__featuredImage-image.u-absolute(srcset="http://lorempixel.com/640/570" media="(max-width: #{mobile}em)")
+                img.M__featuredImage-image.u-absolute(src="http://lorempixel.com/860/590")
+        .M__featuredImage-label.u-absolute= label
+
+
+//-///////////////////////////////////////////////////////////////////////////////
+//-                                                                             //
+//-                                                                             //
+//-    MOLECULE                                                                 //
+//-   ---------------                                                           //
+//-    LARGE SKYSCRAPER BANNER                                                  //
+//-                                                                             //
+//-                                                                             //
+//-///////////////////////////////////////////////////////////////////////////////
+
+mixin M__largeSkyscraperAdvert
+    a(href="#").u-noUnderline
+        .M__largeSkyscraperAdvert-main
+            .M__largeSkyscraperAdvert-container
+                .M__largeSkyscraperAdvert-title Advertisement
+                picture
+                    // Het mobile en tablet weergawe ook ingesit vir responsiveness
+                    source.M__largeSkyscraperAdvert-image--desktop(srcset="http://lorempixel.com/300/600" media="(min-width: #{tablet}em)")
+                    source.M__largeSkyscraperAdvert-image--tablet(srcset="http://lorempixel.com/120/600" media="(min-width: #{mobile}em) and (max-width: #{tablet}em)")
+                    img.M__largeSkyscraperAdvert-image--mobile(src="http://lorempixel.com/270/80")
+
+
+//-///////////////////////////////////////////////////////////////////////////////
+//-                                                                             //
+//-                                                                             //
+//-    MOLECULE                                                                 //
+//-   ---------------                                                           //
+//-    SOCIAL SHARE BUTTON                                                      //
+//-                                                                             //
+//-                                                                             //
+//-///////////////////////////////////////////////////////////////////////////////
+
+
+mixin M__socialShareButton(icon, text, prepend, data, append)
+    a(href="#")
+        .M__socialShareButton-main.u-cf
+            .M__socialShareButton-container.u-cf
+                .M__socialShareButton-icon.u-floatLeft
+                    .M__socialShareList-icon(class="icon-#{icon}")
+                .M__socialShareButton-text.u-floatLeft= text
+
+
+//-///////////////////////////////////////////////////////////////////////////////
+//-                                                                             //
+//-                                                                             //
+//-    MOLECULE                                                                 //
+//-   ---------------                                                           //
+//-    TEXT PROMPT                                                              //
+//-                                                                             //
+//-                                                                             //
+//-///////////////////////////////////////////////////////////////////////////////
+
+
+mixin M__textPrompt(text)
+        a(href="#").u-noUnderline
+            .M__textPrompt-main
+                .M__textPrompt-row2
+                    .M__textPrompt-container.u-table
+                        .M__textPrompt-row.u-tableRow
+                            .M__textPrompt-col1.u-tableCell
+                                .M__textPrompt-col1-row1.u-cf
+                                    .M__textPrompt-text.u-floatLeft= text
+                            .M__textPrompt-col2.u-tableCell.u-cf
+                                .M__textPrompt-arrow.icon-arrow
+
+
+mixin M__textPrompt--heading(text, heading)
+        a(href="#").u-noUnderline
+            .M__textPrompt-main
+                .M__textPrompt-row1
+                    .M__textPrompt-heading|= heading
+                .M__textPrompt-row2
+                    .M__textPrompt-container.u-table
+                        .M__textPrompt-row.u-tableRow
+                            .M__textPrompt-col1.u-tableCell
+                                .M__textPrompt-col1-row1.u-cf
+                                    .M__textPrompt-text.u-floatLeft= text
+                            .M__textPrompt-col2.u-tableCell.u-cf
+                                .M__textPrompt-arrow.icon-arrow
+
+
+mixin M__textPrompt--heading-report(heading, label, text)
+        a(href="#").u-noUnderline
+            .M__textPrompt-main
+                .M__textPrompt-row1
+                    .M__textPrompt-heading= heading
+                .M__textPrompt-row2
+                    .M__textPrompt-container.u-table
+                        .M__textPrompt-row.u-tableRow
+                            .M__textPrompt-col1.u-tableCell
+                                .M__textPrompt-textContainer
+                                    .M__textPrompt-col1-row1.u-cf
+                                        .M__textPrompt-label.u-floatLeft asd
+                                        .M__textPrompt-text.u-floatLeft= text
+                            .M__textPrompt-col2.u-tableCell.u-cf
+                                .M__textPrompt-arrow.icon-arrow
+
+
+
+
+mixin M__textPrompt--tenders(text, deadline, location)
+        a(href="#").u-noUnderline
+            .M__textPrompt-main
+                .M__textPrompt-row2
+                    .M__textPrompt-container.u-table
+                        .M__textPrompt-row.u-tableRow
+                            .M__textPrompt-col1.u-tableCell
+                                .M__textPrompt-col1-row1.u-cf
+                                    .M__textPrompt-text.u-floatLeft= text
+                                .M__textPrompt-col2-row1.u-cf
+                                    .M__textPrompt-location.u-floatLeft
+                                        span.M__textPrompt-field Location:
+                                        span.M__textPrompt-data= location
+                                    .M__textPrompt-deadline.u-floatLeft
+                                        span.M__textPrompt-field Deadline:
+                                        span.M__textPrompt-data= deadline
+                            .M__textPrompt-col2.u-tableCell.u-cf
+                                .M__textPrompt-arrow.icon-arrow
+
+
+mixin M__textPrompt--blue(text)
+        a(href="#").u-noUnderline
+            .M__textPrompt-main.M__textPrompt-row2--blue
+                .M__textPrompt-row2
+                    .M__textPrompt-container.u-table
+                        .M__textPrompt-row.u-tableRow
+                            .M__textPrompt-col1.u-tableCell
+                                .M__textPrompt-col1-row1.M__textPrompt-col1-row1.u-cf
+                                    .M__textPrompt-text.u-floatLeft Click Here to visit our Tender Library Micro-site
+                            .M__textPrompt-col2.u-tableCell.u-cf
+                                .M__textPrompt-arrow.icon-arrowWhite
+
+
+//-///////////////////////////////////////////////////////////////////////////////
+//-                                                                             //
+//-                                                                             //
+//-    MOLECULE                                                                 //
+//-   ---------------                                                           //
+//-    SOCIAL LINK BUTTON                                                       //
+//-                                                                             //
+//-                                                                             //
+//-///////////////////////////////////////////////////////////////////////////////
+
+mixin M__socialLinkButton(val)
+    a(href="#").u-noUnderline
+        .M__socialLinkButton-main
+            .M__socialLinkButton-circle
+                .M__socialLinkButton-container
+                    .M__socialLinkButton-icon(class="icon-#{val}")

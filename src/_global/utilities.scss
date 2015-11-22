@@ -1,0 +1,156 @@
+
+//---------------------------------------------------------- EM function
+$browser-context: 16;
+@function em($pixels, $context: $browser-context) {
+  @return #{$pixels/$context}em
+}
+
+@function col($number) {
+    @return #{100/$number}%
+}
+
+/////
+
+//---------------------------------------------------------- Imports
+@import url(https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css);
+
+
+//---------------------------------------------------------- Fonts
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300italic,300,400italic,700,700italic);
+@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed:400,300italic,300,400italic,700,700italic);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300italic,300,400italic,700,700italic);
+
+* { Box-sizing: border-box }
+
+body {
+    font-family: Roboto, Arial;
+}
+h1 {
+    font-size: em(38);
+    font-weight: 700;
+    line-height: em(25);
+    font-weight: 700;
+}
+
+h2 {
+  font-size: em(26);
+  line-height: em(32);
+    font-weight: 400;
+}
+
+h3 {
+    font-size: em(26);
+    font-weight: 700;
+    margin-bottom: em(20);
+    line-height: em(32);
+}
+
+p {
+    font-size: em(18);
+    line-height: em(26);
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+ul {
+    font-size: em(18);
+    line-height: em(26);
+    margin-top: em(15);
+    margin-bottom: em(15);
+    text-decoration: none;
+}
+
+li {
+    margin-bottom: 0.5em;
+}
+
+
+.u-cf:after {
+  content: "" !important;
+  display: table !important;
+  clear: both !important;
+}
+
+.u-floatLeft {
+  float: left;
+}
+
+.u-floatRight {
+  float: right;
+}
+
+.u-absolute {
+  position: absolute !important;
+}
+
+.u-relative {
+  position: relative !important;
+}
+
+.u-fixed {
+  position: fixed !important;
+}
+
+.u-noUnderline {
+    text-decoration: none !important;
+}
+
+.u-noMargin {
+    margin: 0 !important;
+}
+
+.u-table {
+    display: table !important;
+}
+
+.u-tableRow {
+    display: table-row !important;
+}
+
+.u-tableCell {
+    display: table-cell !important;
+}
+
+
+.u-borderLeft{
+    border-left: 1px solid #999999;
+    
+}
+
+
+
+
+
+$laptop-width: em(1300);
+$tablet-width: em(1000);
+$mobile-width: em(700);
+
+
+
+@mixin laptop {
+  @media (max-width: #{$laptop-width}) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (max-width: #{$tablet-width}) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media (max-width: #{$mobile-width}) {
+    @content;
+  }
+}
+
+
+
+
+//---------------------------------------------------------- Base Styles
+
+
+
+
+

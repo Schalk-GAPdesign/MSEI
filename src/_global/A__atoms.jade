@@ -1,0 +1,170 @@
+//-///////////////////////////////////////////////////////////////////////////////
+//-                                                                             //
+//-                                                                             //
+//-    ATOM                                                                     //
+//-   ---------------                                                           //
+//-    ???                                                                      //
+//-                                                                             //
+//-                                                                             //
+//-///////////////////////////////////////////////////////////////////////////////
+
+
+//-///////////////////////////////////////////////////////////////////////////////
+//-                                                                             //
+//-                                                                             //
+//-    ATOM                                                                     //
+//-   ---------------                                                           //
+//-    ???                                                                      //
+//-                                                                             //
+//-                                                                             //
+//-///////////////////////////////////////////////////////////////////////////////
+
+
+//-///////////////////////////////////////////////////////////////////////////////
+//-                                                                             //
+//-                                                                             //
+//-    ATOM                                                                     //
+//-   ---------------                                                           //
+//-    ???                                                                      //
+//-                                                                             //
+//-                                                                             //
+//-///////////////////////////////////////////////////////////////////////////////
+
+
+//-///////////////////////////////////////////////////////////////////////////////
+//-                                                                             //
+//-                                                                             //
+//-    ATOM                                                                     //
+//-   ---------------                                                           //
+//-    ???                                                                      //
+//-                                                                             //
+//-                                                                             //
+//-///////////////////////////////////////////////////////////////////////////////
+
+//-///////////////////////////////////////////////////////////////////////////////
+//-                                                                             //
+//-                                                                             //
+//-    ATOM                                                                     //
+//-   ---------------                                                           //
+//-    ???                                                                      //
+//-                                                                             //
+//-                                                                             //
+//-///////////////////////////////////////////////////////////////////////////////
+
+
+//mixin A__mediaEmbed
+    style
+
+    .A__mediaEmbed-main
+
+
+//-///////////////////////////////////////////////////////////////////////////////
+//-                                                                             //
+//-                                                                             //
+//-    ATOM                                                                     //
+//-   ---------------                                                           //
+//-    MAGAZINE MOCKUP TEXT DESCRIPTION                                         //
+//-                                                                             //
+//-                                                                             //
+//-///////////////////////////////////////////////////////////////////////////////
+
+
+mixin A__magazineMockupText
+    .A__magazineMockupText-main
+        |This article originally <strong>appeared in the following issue of our bi-monthly print magazine</strong>. The digital version of the magazine can be read online or downloaded entirely free of charge.
+
+
+//-///////////////////////////////////////////////////////////////////////////////
+//-                                                                             //
+//-                                                                             //
+//-    ATOM                                                                     //
+//-   ---------------                                                           //
+//-    MAGAZINE PREVIEW TEXT TITLE                                              //
+//-                                                                             //
+//-                                                                             //
+//-///////////////////////////////////////////////////////////////////////////////
+
+
+mixin A__magazinePreviewTitle
+    .A__magazinePreviewTitle-main September 2015 Issue44
+
+
+//-///////////////////////////////////////////////////////////////////////////////
+//-                                                                             //
+//-                                                                             //
+//-    ATOM                                                                     //
+//-   ---------------                                                           //
+//-    LOGO IMAGE                                                               //
+//-                                                                             //
+//-                                                                             //
+//-///////////////////////////////////////////////////////////////////////////////
+
+
+mixin A__logo
+    a(href="#")
+        .A__logo-main
+            picture
+                source.M__largeSkyscraperAdvert-image--desktop(srcset="img/logo-compact.png" media="(max-width: #{tablet}em)")
+                img(src="img/logo.png")
+
+
+//-///////////////////////////////////////////////////////////////////////////////
+//-                                                                             //
+//-                                                                             //
+//-    ATOM                                                                     //
+//-   ---------------                                                           //
+//-    DISCLAIMER TEXT                                                          //
+//-                                                                             //
+//-                                                                             //
+//-///////////////////////////////////////////////////////////////////////////////
+
+
+mixin A__disclaimerText
+    .A__disclaimerText-main
+        .A__disclaimerText-row.u-cf
+            .A__disclaimerText-line.u-floatLeft All content copyright
+            // insert PHP to make date generated dynamically
+            .A__disclaimerText-line.u-floatLeft 1997—2015 Spintelligent (PTY) Ltd,
+            .A__disclaimerText-line.u-floatLeft unless specified otherwise.
+        a(href="#").u-noUnderline
+            .A__disclaimerText-row.u-cf
+                .A__disclaimerText-line.u-floatLeft Website designed and developed by
+                .A__disclaimerText-line.u-floatLeft by Gap Design Cape Town
+        a(href="#").u-noUnderline
+            .A__disclaimerText-row.u-cf
+                .A__disclaimerText-line.u-floatLeft Website hosted and maintained by
+                .A__disclaimerText-line.u-floatLeft Web2Web
+
+
+//-///////////////////////////////////////////////////////////////////////////////
+//-                                                                             //
+//-                                                                             //
+//-    ATOM                                                                     //
+//-   ---------------                                                           //
+//-    TEXT MSEI TITLE PHRASE                                                   //
+//-                                                                             //
+//-                                                                             //
+//-///////////////////////////////////////////////////////////////////////////////
+
+
+mixin A__textMSEI
+    a(href="#").u-noUnderline
+        .A__textMSEI-main Metering & Smart Energy International
+
+
+//-///////////////////////////////////////////////////////////////////////////////
+//-                                                                             //
+//-                                                                             //
+//-    ATOM                                                                     //
+//-   ---------------                                                           //
+//-    SMALL TITLE TEXT PHRASE                                                  //
+//-                                                                             //
+//-                                                                             //
+//-///////////////////////////////////////////////////////////////////////////////
+
+
+mixin A__smallTitle(modifier, text)
+    if(modifier=='--socialShare')
+        .A__smallTitle-main.A__smallTitle-main--socialShare= text
+    else
+        .A__smallTitle-main= text

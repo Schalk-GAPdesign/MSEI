@@ -1,0 +1,67 @@
+
+
+#__foot-main
+
+    #__footTopBar-main
+        #__footTopBar-centre.u-cf
+            #__footTopBar-col1.u-floatLeft
+                +A__textMSEI
+            #__footTopBar-col2.u-floatRight
+                +O__socialLinkList
+
+    #__footContent-main
+    #__footContent-main
+        #__footContent-centre
+            +O__footColumnList
+
+    #__footBottomBar-main
+        #__footBottomBar-row1
+            +A__disclaimerText
+        #__foot-BottomBar-row2
+            +O__disclaimerLinksList
+
+
+link(rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.css')
+script(src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js')
+script(src='http://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.pack.js')
+script(src='http://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.12/jquery.mousewheel.min.js')
+
+
+script(src="js/scripts.js")
+script(src="js/libraries/sticky/jquery.sticky.js")
+
+
+
+
+script
+
+    |$(document).ready(function(){
+    |    $("#__articleContent-sticky").sticky({getWidthFrom: '#__articleContent-col1', topSpacing: 300});
+    |  });
+
+
+
+
+    |$(document).ready(function () {
+    |$(".fancybox").fancybox({
+    |   openEffect: 'fade',
+    |   /* none, fade, elastic */
+    |    closeEffect: 'fade',
+    |    openSpeed: 0,
+    |    /* ms, "slow", "normal", "fast"*/
+    |   closeSpeed: 0,
+    |    /* mouseWheel : false,*/
+    |   helpers: {
+    |       /*title : null */
+    |         title: {
+    |         type: 'inside' /* 'float', 'inside', 'outside', 'over', 'null' */
+    |     }
+    |   }
+    |  });
+    |  });
+
+
+
+
+|</body>
+|</html>

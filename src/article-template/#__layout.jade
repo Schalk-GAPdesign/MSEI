@@ -1,0 +1,536 @@
+include ../_global/A__atoms.jade
+include ../_global/M__molecules.jade
+include ../_global/O__organisms.jade
+
+include ../_global/head.jade
+
+
+//-///////////////////////////////////////////////////////////////////////////////
+//-                                                                             //
+//-                                                                             //
+//-                                                                             //
+//-                                                                             //
+//-                                                                             //
+//-                                                                             //
+//-                                                                             //
+//-                                      ██                                     //
+//-                                     ███                                     //
+//-                                       █                                     //
+//-                                       █                                     //
+//-                                     █████                                   //
+//-                                                                             //
+//-                                                                             //
+//-                                                                             //
+//-                                                                             //
+//-                                                                             //
+//-                                                                             //
+//-                                                                             //
+//-///////////////////////////////////////////////////////////////////////////////
+
+
+#__articleHeader-main
+        #__articleHeader-centre.u-cf
+
+
+            //-///////////////////////////////////////////////////////////////////////////////
+            //-                                                                             //
+            //-                                                                             //
+            //-    1                                                                        //
+            //-   ---------------                                                           //
+            //-    LARGE SKYSCRAPER ADVERT                                                  //
+            //-                                                                             //
+            //-                                                                             //
+            //-///////////////////////////////////////////////////////////////////////////////
+
+
+            if(article.content.header.imageHeader!=null)
+                //- IMAGE HEADER
+                #__articleHeader-col1.u-floatLeft
+                    #__articleHeader-col1-row1
+                        +M__heading(article.content.header.imageHeader.text1, article.content.header.imageHeader.text2, true)
+                    #__articleHeader-col1-row2
+                        //Image Size - Hard Crop Featured Image: 860 x 685
+                        +M__featuredImage('http://lorempixel.com/860/430/technics', '*WP Category*')
+
+
+                    //-///////////////////////////////////////////////////////////////////////////////
+                    //-                                                                             //
+                    //-                                                                             //
+                    //-    1                                                                        //
+                    //-   ---------------                                                           //
+                    //-    PHOTO GALLERY                                                            //
+                    //-                                                                             //
+                    //-                                                                             //
+                    //-///////////////////////////////////////////////////////////////////////////////
+
+
+                    if(article.content.header.photoGallery!=null)
+                        //- PHOTO GALLERY
+                        #__articleHeader-col1-row3
+                            +O__photoGalleryList
+
+
+            //-///////////////////////////////////////////////////////////////////////////////
+            //-                                                                             //
+            //-                                                                             //
+            //-    1                                                                        //
+            //-   ---------------                                                           //
+            //-    SKYSCRAPER ADVERT                                                        //
+            //-                                                                             //
+            //-                                                                             //
+            //-///////////////////////////////////////////////////////////////////////////////
+
+
+            if(article.content.header.largeSkyscraperAdvert!=null)
+                //- SKYSCRAPER ADVERT
+                #__articleHeader-col2.u-floatRight
+                    +M__largeSkyscraperAdvert
+
+
+            //-///////////////////////////////////////////////////////////////////////////////
+            //-                                                                             //
+            //-                                                                             //
+            //-    1                                                                        //
+            //-   ---------------                                                           //
+            //-    MAGAZINE ADVERT                                                          //
+            //-                                                                             //
+            //-                                                                             //
+            //-///////////////////////////////////////////////////////////////////////////////
+
+
+            if(article.content.header.magazineAdvertisement!=null)
+                //= MAGAZINE ADVERT
+                #__articleHeader-col2.u-floatRight
+                    +O__magazineMockupBlock
+
+
+//-///////////////////////////////////////////////////////////////////////////////
+//-                                                                             //
+//-                                                                             //
+//-                                                                             //
+//-                                                                             //
+//-                                                                             //
+//-                                                                             //
+//-                                                                             //
+//-                                      ███                                    //
+//-                                     █   █                                   //
+//-                                       ██                                    //
+//-                                      █                                      //
+//-                                     █████                                   //
+//-                                                                             //
+//-                                                                             //
+//-                                                                             //
+//-                                                                             //
+//-                                                                             //
+//-                                                                             //
+//-                                                                             //
+//-///////////////////////////////////////////////////////////////////////////////
+
+
+#__articleContent-main
+    #__articleContent-centre
+        #__articleContent-container.u-cf
+            #__articleContent-col2.u-floatRight
+
+
+                //-///////////////////////////////////////////////////////////////////////////////
+                //-                                                                             //
+                //-                                                                             //
+                //-    2                                                                        //
+                //-   ---------------                                                           //
+                //-    REPORT                                                                   //
+                //-                                                                             //
+                //-                                                                             //
+                //-///////////////////////////////////////////////////////////////////////////////
+
+
+                if(article.content.article.report!=null)
+                    //- REPORT
+                    #__articleContent-typeAssets
+                        +M__textPrompt--heading-report ('aheading', 'labelasdasd', 'textasdas')
+
+
+                //-///////////////////////////////////////////////////////////////////////////////
+                //-                                                                             //
+                //-                                                                             //
+                //-    2                                                                        //
+                //-   ---------------                                                           //
+                //-    REPORT SIGNED OUT                                                        //
+                //-                                                                             //
+                //-                                                                             //
+                //-///////////////////////////////////////////////////////////////////////////////
+
+                if(article.content.article.report__signedOut!=null)
+                    //- REPORT -- SIGNED OUT
+                    #__articleContent-typeAssets
+                        +M__textPrompt('--titleHeading', 'Download Report', 'PDF', 'Smart grid')
+
+
+                //-///////////////////////////////////////////////////////////////////////////////
+                //-                                                                             //
+                //-                                                                             //
+                //-    2                                                                        //
+                //-   ---------------                                                           //
+                //-    TENDER                                                                   //
+                //-                                                                             //
+                //-                                                                             //
+                //-///////////////////////////////////////////////////////////////////////////////
+
+
+                if(article.content.article.tenderDetails!=null)
+                    //- TENDER
+                    #__articleContent-typeAssets
+                        +M__textPrompt('--titleHeading', 'Download Report', 'PDF', 'Smart grid')
+
+
+                //-///////////////////////////////////////////////////////////////////////////////
+                //-                                                                             //
+                //-                                                                             //
+                //-    2                                                                        //
+                //-   ---------------                                                           //
+                //-    TENDER SIGNED OUT                                                        //
+                //-                                                                             //
+                //-                                                                             //
+                //-///////////////////////////////////////////////////////////////////////////////
+
+
+                if(article.content.article.tender__signedOut!=null)
+                    //- TENDER -- SIGNED OUT
+                    #__articleContent-typeAssets
+                        +M__textPrompt('--titleHeading', 'Download Report', 'PDF', 'Smart grid')
+
+
+                //-///////////////////////////////////////////////////////////////////////////////
+                //-                                                                             //
+                //-                                                                             //
+                //-    2                                                                        //
+                //-   ---------------                                                           //
+                //-    TENDER EXPIRED                                                           //
+                //-                                                                             //
+                //-                                                                             //
+                //-///////////////////////////////////////////////////////////////////////////////
+
+
+                if(article.content.article.tender__Expired!=null)
+                    //- TENDER -- EXPIRED
+                    #__articleContent-typeAssets
+                        +M__textPrompt('--titleHeading', 'Download Report', 'PDF', 'Smart grid')
+
+
+                //-///////////////////////////////////////////////////////////////////////////////
+                //-                                                                             //
+                //-                                                                             //
+                //-    2                                                                        //
+                //-   ---------------                                                           //
+                //-    EVENT INTRO                                                              //
+                //-                                                                             //
+                //-                                                                             //
+                //-///////////////////////////////////////////////////////////////////////////////
+
+
+                if(article.content.article.eventIntro!=null)
+                    //- EVENT INTRO
+                    #__articleContent-typeAssets
+                        +M__textPrompt('--titleHeading', 'Download Report', 'PDF', 'Smart grid')
+
+
+                //-///////////////////////////////////////////////////////////////////////////////
+                //-                                                                             //
+                //-                                                                             //
+                //-    2                                                                        //
+                //-   ---------------                                                           //
+                //-    REGULAR INTRO                                                            //
+                //-                                                                             //
+                //-                                                                             //
+                //-///////////////////////////////////////////////////////////////////////////////
+
+
+                if(article.content.article.regularIntro!=null)
+                    //- REGULAR INTRO
+                    #__articleContent-col2-row1
+                        +A__smallTitle(null, '17 SEPTEMBER 2015')
+                    #__articleContent-col2-row2
+                        h1 Post Title
+                    #__articleContent-col2-row3
+                        h2 Post Sub-heading
+
+
+
+                //-///////////////////////////////////////////////////////////////////////////////
+                //-                                                                             //
+                //-                                                                             //
+                //-    2                                                                        //
+                //-   ---------------                                                           //
+                //-    CONTENT                                                                  //
+                //-                                                                             //
+                //-                                                                             //
+                //-///////////////////////////////////////////////////////////////////////////////
+
+
+                if(article.content.article.content!=null)
+                    //-CONTENT
+                    #__articleContent-col2-row3
+                        include content.jade
+
+
+
+                //-    2                                                                        //
+                //-   ---------------                                                           //
+                //-    CONTENT                                                                  //
+                //-                                                                             //
+                //-                                                                             //
+                //-///////////////////////////////////////////////////////////////////////////////
+
+
+                if(article.content.article.textCTA!=null)
+                    //-CONTENT
+                    #__textCTA-main
+                        #__textCTA-main
+                            +M__heading('Interested in more Tenders?')
+                        #__textCTA-main
+                            +M__textPrompt--blue('text')
+
+            //-///////////////////////////////////////////////////////////////////////////////
+            //-                                                                             //
+            //-                                                                             //
+            //-    2                                                                        //
+            //-   ---------------                                                           //
+            //-    SOCIAL SHARE                                                             //
+            //-                                                                             //
+            //-                                                                             //
+            //-///////////////////////////////////////////////////////////////////////////////
+
+
+            if(article.content.article.socialShare!=null)
+                //- SOCIAL SHARE
+                #__articleContent-col1.u-floatLeft
+                    #__articleContent-sticky
+                        #__articleContent-col1-row1
+                            +A__smallTitle('--socialShare','Share Article')
+                        #__articleContent-col1-row2
+                            +O__socialShareList
+
+
+
+                    
+                    
+
+//-///////////////////////////////////////////////////////////////////////////////
+//-                                                                             //
+//-                                                                             //
+//-                                                                             //
+//-                                                                             //
+//-                                                                             //
+//-                                                                             //
+//-                                                                             //
+//-                                      ███                                    //
+//-                                     █   █                                   //
+//-                                       ██                                    //
+//-                                     █   █                                   //
+//-                                      ███                                    //
+//-                                                                             //
+//-                                                                             //
+//-                                                                             //
+//-                                                                             //
+//-                                                                             //
+//-                                                                             //
+//-                                                                             //
+//-///////////////////////////////////////////////////////////////////////////////
+
+
+#__articleFooter-main
+    #__articleFooter-centre.u-cf
+        #__articleFooter-col1.u-floatLeft
+
+
+            //-///////////////////////////////////////////////////////////////////////////////
+            //-                                                                             //
+            //-                                                                             //
+            //-    3                                                                        //
+            //-   ---------------                                                           //
+            //-    OTHER TENDERS                                                            //
+            //-                                                                             //
+            //-                                                                             //
+            //-///////////////////////////////////////////////////////////////////////////////
+
+
+            if(article.content.footer.otherTenders!=null)
+                #__otherTenders-main
+                    #__otherTenders-row1
+                        +M__heading('OTHER TENDERS')
+                    #__otherTenders-row2
+                        +O__textPromptList--tenders
+
+
+            //-///////////////////////////////////////////////////////////////////////////////
+            //-                                                                             //
+            //-                                                                             //
+            //-    3                                                                        //
+            //-   ---------------                                                           //
+            //-    OTHER TENDERS                                                            //
+            //-                                                                             //
+            //-                                                                             //
+            //-///////////////////////////////////////////////////////////////////////////////
+
+
+            if(article.content.footer.comments!=null)
+                #__articleFooter-col1-row1
+                    +M__heading('Join the Discussion')
+                #__articleFooter-col1-row2
+                    |HTML_comments
+                #__articleFooter-col1-row3
+                    +M__heading('Submit News Story')
+                #__articleFooter-col1-row4
+                    +O__textPromptList
+
+
+            //-///////////////////////////////////////////////////////////////////////////////
+            //-                                                                             //
+            //-                                                                             //
+            //-    3                                                                        //
+            //-   ---------------                                                           //
+            //-    RELATED CONTENT                                                          //
+            //-                                                                             //
+            //-                                                                             //
+            //-///////////////////////////////////////////////////////////////////////////////
+
+
+        if(article.content.footer.relatedContent!=null)
+            #__articleFooter-col2.u-floatRight
+                #__articleFooter-col2-row1
+                    +M__heading('Related Content')
+                #__articleFooter-col2-row2
+                    +O__relatedContentList
+
+
+            //-///////////////////////////////////////////////////////////////////////////////
+            //-                                                                             //
+            //-                                                                             //
+            //-    3                                                                        //
+            //-   ---------------                                                           //
+            //-    RELATED CONTENT ALTERNATIVE                                              //
+            //-                                                                             //
+            //-                                                                             //
+            //-///////////////////////////////////////////////////////////////////////////////
+
+
+    if(article.content.footer.relatedContentAlt!=null)
+        //- ARTICLE FOOTER RELATED CONTENT
+        #__articleFooterRelatedContentAlt-main
+            #__articleFooterelatedContentAlt-center
+                #__articleFooterRelatedContentAlt-row1
+                    +M__heading('Related Content')
+                #__articleFooterRelatedContentAlt-row2
+                    +O_noCommentrelated
+
+
+            //-///////////////////////////////////////////////////////////////////////////////
+            //-                                                                             //
+            //-                                                                             //
+            //-    3                                                                        //
+            //-   ---------------                                                           //
+            //-    OTHER FILES                                                              //
+            //-                                                                             //
+            //-                                                                             //
+            //-///////////////////////////////////////////////////////////////////////////////
+
+
+    if(article.content.footer.otherFiles!=null)
+        //- OTHER FILES
+        #__otherFiles-main
+            #__otherFiles-centre
+                #__otherFiles-row1
+                    +M__heading('Other Files')
+                #__otherFiles-row2
+                    +O__labeledLinksList--otherFiles
+
+
+            //-///////////////////////////////////////////////////////////////////////////////
+            //-                                                                             //
+            //-                                                                             //
+            //-    3                                                                        //
+            //-   ---------------                                                           //
+            //-    PRESENTATION FILES                                                       //
+            //-                                                                             //
+            //-                                                                             //
+            //-///////////////////////////////////////////////////////////////////////////////
+
+
+    if(article.content.footer.speakerSlides!=null)
+        //- PRESENTATION FILES
+        #__presentationFiles-main
+            #__presentationFiles-centre
+                #__presentationFiles-row1
+                    +M__heading('View Speaker Presentation Files')
+                #__presentationFiles-row2
+                    +O__labeledLinksList--presentationFiles
+
+
+            //-///////////////////////////////////////////////////////////////////////////////
+            //-                                                                             //
+            //-                                                                             //
+            //-    3                                                                        //
+            //-   ---------------                                                           //
+            //-    PRESS RELEASE                                                            //
+            //-                                                                             //
+            //-                                                                             //
+            //-///////////////////////////////////////////////////////////////////////////////
+
+
+    if(article.content.footer.pressRelease!=null)
+        //- PRESS RELEASE
+        #__pressReleases-main
+            #__pressRelease-centre
+                #__pressRelease-row1
+                    +M__heading('Press Releases')
+                #__pressRelease-row2
+                    +O_noCommentrelated--pressReleases
+
+            //-///////////////////////////////////////////////////////////////////////////////
+            //-                                                                             //
+            //-                                                                             //
+            //-    3                                                                        //
+            //-   ---------------                                                           //
+            //-    PRESS RELEASE                                                            //
+            //-                                                                             //
+            //-                                                                             //
+            //-///////////////////////////////////////////////////////////////////////////////
+
+
+    if(article.content.footer.media!=null)
+        //- PRESS RELEASE
+        #__pressReleases-main
+            #__pressRelease-centre
+                #__pressRelease-container
+                    #__pressRelease-row1
+                        +M__heading('Media')
+                    #__pressRelease-row2
+                        +O_noCommentrelated--media
+
+
+
+
+//-///////////////////////////////////////////////////////////////////////////////
+//-                                                                             //
+//-                                                                             //
+//-                                                                             //
+//-                                                                             //
+//-                                                                             //
+//-                                                                             //
+//-                                                                             //
+//-                                                                             //
+//-                                                                             //
+//-                                      END                                    //
+//-                                                                             //
+//-                                                                             //
+//-                                                                             //
+//-                                                                             //
+//-                                                                             //
+//-                                                                             //
+//-                                                                             //
+//-                                                                             //
+//-                                                                             //
+//-///////////////////////////////////////////////////////////////////////////////
+
+
+include ../_global/foot.jade

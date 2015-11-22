@@ -1,0 +1,275 @@
+/*
+Icon classes can be used entirely standalone. They are named after their original file names.
+
+```html
+<!-- `display: block` sprite -->
+<div class="icon-home"></div>
+
+<!-- `display: inline-block` sprite -->
+<img class="icon-home" />
+```
+*/
+.icon-arrow {
+  background-image: url(../img/spritesheet.png);
+  background-position: -172px -144px;
+  width: 10px;
+  height: 16px;
+}
+.icon-arrowWhite {
+  background-image: url(../img/spritesheet.png);
+  background-position: -172px -128px;
+  width: 10px;
+  height: 16px;
+}
+.icon-close {
+  background-image: url(../img/spritesheet.png);
+  background-position: -142px -56px;
+  width: 24px;
+  height: 25px;
+}
+.icon-closeQuote {
+  background-image: url(../img/spritesheet.png);
+  background-position: -66px -141px;
+  width: 32px;
+  height: 26px;
+}
+.icon-closeQuoteRed {
+  background-image: url(../img/spritesheet.png);
+  background-position: -98px -141px;
+  width: 32px;
+  height: 26px;
+}
+.icon-closeWhite {
+  background-image: url(../img/spritesheet.png);
+  background-position: -142px -81px;
+  width: 24px;
+  height: 25px;
+}
+.icon-dropdown {
+  background-image: url(../img/spritesheet.png);
+  background-position: -162px -106px;
+  width: 10px;
+  height: 7px;
+}
+.icon-dropdownWhite {
+  background-image: url(../img/spritesheet.png);
+  background-position: -172px -160px;
+  width: 10px;
+  height: 7px;
+}
+.icon-footerDot {
+  background-image: url(../img/spritesheet.png);
+  background-position: -186px -52px;
+  width: 4px;
+  height: 3px;
+}
+.icon-login {
+  background-image: url(../img/spritesheet.png);
+  background-position: -172px -82px;
+  width: 13px;
+  height: 13px;
+}
+.icon-loginRed {
+  background-image: url(../img/spritesheet.png);
+  background-position: -172px -69px;
+  width: 13px;
+  height: 13px;
+}
+.icon-openQuote {
+  background-image: url(../img/spritesheet.png);
+  background-position: 0px -141px;
+  width: 33px;
+  height: 26px;
+}
+.icon-openQuoteRed {
+  background-image: url(../img/spritesheet.png);
+  background-position: -33px -141px;
+  width: 33px;
+  height: 26px;
+}
+.icon-pullQuote {
+  background-image: url(../img/spritesheet.png);
+  background-position: -142px -30px;
+  width: 26px;
+  height: 26px;
+}
+.icon-search {
+  background-image: url(../img/spritesheet.png);
+  background-position: -142px -106px;
+  width: 20px;
+  height: 20px;
+}
+.icon-searchWhite {
+  background-image: url(../img/spritesheet.png);
+  background-position: -112px -90px;
+  width: 20px;
+  height: 20px;
+}
+.icon-facebook {
+  background-image: url(../img/spritesheet.png);
+  background-position: -172px -110px;
+  width: 9px;
+  height: 18px;
+}
+.icon-facebookRed {
+  background-image: url(../img/spritesheet.png);
+  background-position: -181px -110px;
+  width: 9px;
+  height: 18px;
+}
+.icon-google {
+  background-image: url(../img/spritesheet.png);
+  background-position: -172px 0px;
+  width: 18px;
+  height: 18px;
+}
+.icon-googleRed {
+  background-image: url(../img/spritesheet.png);
+  background-position: -149px -141px;
+  width: 18px;
+  height: 18px;
+}
+.icon-linkedin {
+  background-image: url(../img/spritesheet.png);
+  background-position: -130px -141px;
+  width: 19px;
+  height: 18px;
+}
+.icon-linkedinRed {
+  background-image: url(../img/spritesheet.png);
+  background-position: -120px -111px;
+  width: 19px;
+  height: 18px;
+}
+.icon-rss {
+  background-image: url(../img/spritesheet.png);
+  background-position: -172px -35px;
+  width: 17px;
+  height: 17px;
+}
+.icon-rssRed {
+  background-image: url(../img/spritesheet.png);
+  background-position: -172px -18px;
+  width: 17px;
+  height: 17px;
+}
+.icon-twitter {
+  background-image: url(../img/spritesheet.png);
+  background-position: -19px -167px;
+  width: 19px;
+  height: 16px;
+}
+.icon-twitterRed {
+  background-image: url(../img/spritesheet.png);
+  background-position: 0px -167px;
+  width: 19px;
+  height: 16px;
+}
+.icon-youtube {
+  background-image: url(../img/spritesheet.png);
+  background-position: -81px -62px;
+  width: 22px;
+  height: 16px;
+}
+.icon-youtubeRed {
+  background-image: url(../img/spritesheet.png);
+  background-position: -90px -81px;
+  width: 22px;
+  height: 16px;
+}
+.icon-commentShare {
+  background-image: url(../img/spritesheet.png);
+  background-position: -30px -111px;
+  width: 30px;
+  height: 30px;
+}
+.icon-commentShareWhite {
+  background-image: url(../img/spritesheet.png);
+  background-position: -30px -81px;
+  width: 30px;
+  height: 30px;
+}
+.icon-emailShare {
+  background-image: url(../img/spritesheet.png);
+  background-position: 0px -81px;
+  width: 30px;
+  height: 30px;
+}
+.icon-emailShareWhite {
+  background-image: url(../img/spritesheet.png);
+  background-position: -112px -30px;
+  width: 30px;
+  height: 30px;
+}
+.icon-facebookShare {
+  background-image: url(../img/spritesheet.png);
+  background-position: -60px -81px;
+  width: 30px;
+  height: 30px;
+}
+.icon-facebookShareWhite {
+  background-image: url(../img/spritesheet.png);
+  background-position: -60px -111px;
+  width: 30px;
+  height: 30px;
+}
+.icon-googleShare {
+  background-image: url(../img/spritesheet.png);
+  background-position: -90px -111px;
+  width: 30px;
+  height: 30px;
+}
+.icon-googleShareWhite {
+  background-image: url(../img/spritesheet.png);
+  background-position: -142px 0px;
+  width: 30px;
+  height: 30px;
+}
+.icon-linkedShareWhite {
+  background-image: url(../img/spritesheet.png);
+  background-position: -112px -60px;
+  width: 30px;
+  height: 30px;
+}
+.icon-linkedinShare {
+  background-image: url(../img/spritesheet.png);
+  background-position: 0px -111px;
+  width: 30px;
+  height: 30px;
+}
+.icon-twitterShare {
+  background-image: url(../img/spritesheet.png);
+  background-position: -81px -31px;
+  width: 30px;
+  height: 31px;
+}
+.icon-twitterShareWhite {
+  background-image: url(../img/spritesheet.png);
+  background-position: -112px 0px;
+  width: 30px;
+  height: 30px;
+}
+.icon-calender {
+  background-image: url(../img/spritesheet.png);
+  background-position: -172px -52px;
+  width: 14px;
+  height: 17px;
+}
+.icon-map {
+  background-image: url(../img/spritesheet.png);
+  background-position: -172px -95px;
+  width: 11px;
+  height: 15px;
+}
+.icon-play {
+  background-image: url(../img/spritesheet.png);
+  background-position: 0px 0px;
+  width: 81px;
+  height: 81px;
+}
+.icon-playSmall {
+  background-image: url(../img/spritesheet.png);
+  background-position: -81px 0px;
+  width: 31px;
+  height: 31px;
+}

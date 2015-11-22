@@ -1,0 +1,128 @@
+
+
+//-///////////////////////////////////////////////////////////////////////////////
+//-                                                                             //
+//-                                                                             //
+//-                                                                             //
+//-                                                                             //
+//-                                                                             //
+//-                                                                             //
+//-                                                                             //
+//-                                     #  #                                    //
+//-                                   ########                                  //
+//-                                     #  #                                    //
+//-                                   ########                                  //
+//-                                     #  #                                    //
+//-                                                                             //
+//-                                                                             //
+//-                                                                             //
+//-                                     4444                                     //
+//-                                                                             //
+//-                                                                             //
+//-                                                                             //
+//-///////////////////////////////////////////////////////////////////////////////
+
+
+//-///////////////////////////////////////////////////////////////////////////////
+//-                                                                             //
+//-                                                                             //
+//-    LAYOUT                                                                   //
+//-   ---------------                                                           //
+//-    HEAD SECTION                                                             //
+//-                                                                             //
+//-                                                                             //
+//-///////////////////////////////////////////////////////////////////////////////
+
+#__leaderboard-main {
+    background: blue;
+    height: 100px;
+}
+#__leaderboard-centre {
+    display: table;
+    margin: 0 auto;
+
+}
+
+
+#__topNav-main {
+    background: #26292a;
+    color: white;
+}
+#__menuContent-main {
+    background: red;
+}
+#__menuContent-centre {
+    width: em(1255);
+    margin: 0 auto;
+}
+#__mainNav-main {
+    background: #efefef
+}
+#__mainNav-centre {
+    width: em(1255);
+    margin: 0 auto;
+}
+#__secondaryNav-main {
+    background: #cdcdcd;
+    &:not(.is-activated){display: none;}
+}
+#__secondaryNav-centre {
+    width: em(1255);
+    margin: 0 auto;
+}
+#__content-main {
+    padding: em(90) 0 0 0
+}
+#__menuContent-col1 {
+    margin: em(30) 0;
+}
+#__menuContent-col2 {
+    margin: em(30) 0;
+}
+#__mainNav-col1 {
+    background: #efefef;
+    width: em(1205);
+}
+#__mainNav-col2 {
+    width: em(50)
+}
+#__mainNav-main {
+    border-bottom: em(4) solid #aaaaaa;
+    height: em(50);
+}
+#__topNav-centre {width: em(1255); margin: 0 auto;}
+#__topNav-col2{margin-top: em(11);}
+
+#__menuSearch-main {
+    background: #cdcdcd;
+    display: none;
+
+      &.is-activated {
+          display: block;
+    }
+
+}
+
+#__menuSearch-centre {max-width: em(1255); margin: 0 auto; padding: em(20) 0;}
+
+@include laptop {
+
+     #__topNav-centre {width: 90%;}
+      #__menuContent-centre {
+    width: 90%;}
+}
+
+
+@include tablet {
+    #__menuSearch-centre {width: 90%}
+    #__menuSearch-item {float: none;}
+    #__topNav-container {display: table; margin: 0 auto;}
+    #__topNav-col2 {display: none;}
+  
+
+}
+
+#__menuMagazine-main {background: #cdcdcd; padding-top: em(30); padding-bottom: 3em(5);}
+#__menuMagazine-centre {width: em(1255); margin: 0 auto;}
+
+#__menuMagazine-main:not(.is-activated) {display: none;}
