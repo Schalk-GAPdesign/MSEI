@@ -325,11 +325,13 @@ mixin M__shortcodeBox-main(text)
 
 
 mixin M__pullQuote(Quote)
+    
     .M__pullQuote-main.u-floatRight
-            .M__pullQuote-quote.u-cf
-                .M__pullQuote-text "#{Quote}"
-                .M__pullQuote-icon.icon-pullQuote.u-floatLeft
-                .M__pullQuote-retweet.u-floatLeft Retweet this Quote
+            a(href="#").u-noUnderline
+                .M__pullQuote-quote.u-cf
+                    .M__pullQuote-text "#{Quote}"
+                    .M__pullQuote-icon.icon-articleShare.u-floatLeft
+                    .M__pullQuote-retweet.u-floatLeft Retweet this Quote
 
 
 //-///////////////////////////////////////////////////////////////////////////////
@@ -376,7 +378,7 @@ mixin M__contentThumb()
 mixin M__leaderboardAdvert
     a(href="#")
         picture
-            source.M__featuredImage-image(srcset="http://lorempixel.com/968/100" media="(min-width: #{tablet}em)")
+            source.M__leaderboardAdvert-image(srcset="http://lorempixel.com/968/100" media="(min-width: #{tablet}em)")
             img.M__leaderboardAdvert-image(src="http://lorempixel.com/680/100")
 
 

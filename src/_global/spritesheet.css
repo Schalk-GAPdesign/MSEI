@@ -12,305 +12,319 @@ Icon classes can be used entirely standalone. They are named after their origina
 /* line 12, C:/MSEI/src/_global/spritesheet.scss */
 .icon-arrow {
   background-image: url(../img/spritesheet.png);
-  background-position: -172px -144px;
+  background-position: -10px -182px;
   width: 10px;
   height: 16px; }
 
 /* line 18, C:/MSEI/src/_global/spritesheet.scss */
 .icon-arrowWhite {
   background-image: url(../img/spritesheet.png);
-  background-position: -172px -128px;
+  background-position: 0px -182px;
   width: 10px;
   height: 16px; }
 
 /* line 24, C:/MSEI/src/_global/spritesheet.scss */
+.icon-articleShare {
+  background-image: url(../img/spritesheet.png);
+  background-position: -142px -30px;
+  width: 27px;
+  height: 27px; }
+
+/* line 30, C:/MSEI/src/_global/spritesheet.scss */
+.icon-articleShareRed {
+  background-image: url(../img/spritesheet.png);
+  background-position: -142px -57px;
+  width: 27px;
+  height: 27px; }
+
+/* line 36, C:/MSEI/src/_global/spritesheet.scss */
 .icon-close {
   background-image: url(../img/spritesheet.png);
-  background-position: -142px -56px;
+  background-position: -130px -141px;
   width: 24px;
   height: 25px; }
 
-/* line 30, C:/MSEI/src/_global/spritesheet.scss */
+/* line 42, C:/MSEI/src/_global/spritesheet.scss */
 .icon-closeQuote {
-  background-image: url(../img/spritesheet.png);
-  background-position: -66px -141px;
-  width: 32px;
-  height: 26px; }
-
-/* line 36, C:/MSEI/src/_global/spritesheet.scss */
-.icon-closeQuoteRed {
   background-image: url(../img/spritesheet.png);
   background-position: -98px -141px;
   width: 32px;
   height: 26px; }
 
-/* line 42, C:/MSEI/src/_global/spritesheet.scss */
+/* line 48, C:/MSEI/src/_global/spritesheet.scss */
+.icon-closeQuoteRed {
+  background-image: url(../img/spritesheet.png);
+  background-position: -66px -141px;
+  width: 32px;
+  height: 26px; }
+
+/* line 54, C:/MSEI/src/_global/spritesheet.scss */
 .icon-closeWhite {
   background-image: url(../img/spritesheet.png);
-  background-position: -142px -81px;
+  background-position: -142px -110px;
   width: 24px;
   height: 25px; }
 
-/* line 48, C:/MSEI/src/_global/spritesheet.scss */
+/* line 60, C:/MSEI/src/_global/spritesheet.scss */
 .icon-dropdown {
   background-image: url(../img/spritesheet.png);
-  background-position: -162px -106px;
+  background-position: -90px -101px;
   width: 10px;
   height: 7px; }
 
-/* line 54, C:/MSEI/src/_global/spritesheet.scss */
+/* line 66, C:/MSEI/src/_global/spritesheet.scss */
 .icon-dropdownWhite {
   background-image: url(../img/spritesheet.png);
-  background-position: -172px -160px;
+  background-position: -172px -155px;
   width: 10px;
   height: 7px; }
 
-/* line 60, C:/MSEI/src/_global/spritesheet.scss */
+/* line 72, C:/MSEI/src/_global/spritesheet.scss */
 .icon-footerDot {
   background-image: url(../img/spritesheet.png);
-  background-position: -186px -52px;
+  background-position: -191px -18px;
   width: 4px;
   height: 3px; }
 
-/* line 66, C:/MSEI/src/_global/spritesheet.scss */
+/* line 78, C:/MSEI/src/_global/spritesheet.scss */
 .icon-login {
   background-image: url(../img/spritesheet.png);
-  background-position: -172px -82px;
+  background-position: -154px -141px;
   width: 13px;
   height: 13px; }
 
-/* line 72, C:/MSEI/src/_global/spritesheet.scss */
+/* line 84, C:/MSEI/src/_global/spritesheet.scss */
 .icon-loginRed {
   background-image: url(../img/spritesheet.png);
-  background-position: -172px -69px;
+  background-position: -120px -127px;
   width: 13px;
   height: 13px; }
 
-/* line 78, C:/MSEI/src/_global/spritesheet.scss */
+/* line 90, C:/MSEI/src/_global/spritesheet.scss */
 .icon-openQuote {
   background-image: url(../img/spritesheet.png);
   background-position: 0px -141px;
   width: 33px;
   height: 26px; }
 
-/* line 84, C:/MSEI/src/_global/spritesheet.scss */
+/* line 96, C:/MSEI/src/_global/spritesheet.scss */
 .icon-openQuoteRed {
   background-image: url(../img/spritesheet.png);
   background-position: -33px -141px;
   width: 33px;
   height: 26px; }
 
-/* line 90, C:/MSEI/src/_global/spritesheet.scss */
+/* line 102, C:/MSEI/src/_global/spritesheet.scss */
 .icon-pullQuote {
   background-image: url(../img/spritesheet.png);
-  background-position: -142px -30px;
+  background-position: -142px -84px;
   width: 26px;
   height: 26px; }
 
-/* line 96, C:/MSEI/src/_global/spritesheet.scss */
+/* line 108, C:/MSEI/src/_global/spritesheet.scss */
 .icon-search {
-  background-image: url(../img/spritesheet.png);
-  background-position: -142px -106px;
-  width: 20px;
-  height: 20px; }
-
-/* line 102, C:/MSEI/src/_global/spritesheet.scss */
-.icon-searchWhite {
   background-image: url(../img/spritesheet.png);
   background-position: -112px -90px;
   width: 20px;
   height: 20px; }
 
-/* line 108, C:/MSEI/src/_global/spritesheet.scss */
-.icon-facebook {
-  background-image: url(../img/spritesheet.png);
-  background-position: -172px -110px;
-  width: 9px;
-  height: 18px; }
-
 /* line 114, C:/MSEI/src/_global/spritesheet.scss */
-.icon-facebookRed {
+.icon-searchWhite {
   background-image: url(../img/spritesheet.png);
-  background-position: -181px -110px;
-  width: 9px;
-  height: 18px; }
+  background-position: -90px -81px;
+  width: 20px;
+  height: 20px; }
 
 /* line 120, C:/MSEI/src/_global/spritesheet.scss */
-.icon-google {
+.icon-facebook {
   background-image: url(../img/spritesheet.png);
-  background-position: -172px 0px;
-  width: 18px;
+  background-position: -132px -90px;
+  width: 9px;
   height: 18px; }
 
 /* line 126, C:/MSEI/src/_global/spritesheet.scss */
-.icon-googleRed {
+.icon-facebookRed {
   background-image: url(../img/spritesheet.png);
-  background-position: -149px -141px;
-  width: 18px;
+  background-position: -191px 0px;
+  width: 9px;
   height: 18px; }
 
 /* line 132, C:/MSEI/src/_global/spritesheet.scss */
-.icon-linkedin {
+.icon-google {
   background-image: url(../img/spritesheet.png);
-  background-position: -130px -141px;
-  width: 19px;
+  background-position: -172px -54px;
+  width: 18px;
   height: 18px; }
 
 /* line 138, C:/MSEI/src/_global/spritesheet.scss */
-.icon-linkedinRed {
+.icon-googleRed {
   background-image: url(../img/spritesheet.png);
-  background-position: -120px -111px;
-  width: 19px;
+  background-position: -172px -36px;
+  width: 18px;
   height: 18px; }
 
 /* line 144, C:/MSEI/src/_global/spritesheet.scss */
-.icon-rss {
-  background-image: url(../img/spritesheet.png);
-  background-position: -172px -35px;
-  width: 17px;
-  height: 17px; }
-
-/* line 150, C:/MSEI/src/_global/spritesheet.scss */
-.icon-rssRed {
+.icon-linkedin {
   background-image: url(../img/spritesheet.png);
   background-position: -172px -18px;
+  width: 19px;
+  height: 18px; }
+
+/* line 150, C:/MSEI/src/_global/spritesheet.scss */
+.icon-linkedinRed {
+  background-image: url(../img/spritesheet.png);
+  background-position: -172px 0px;
+  width: 19px;
+  height: 18px; }
+
+/* line 156, C:/MSEI/src/_global/spritesheet.scss */
+.icon-rss {
+  background-image: url(../img/spritesheet.png);
+  background-position: -172px -121px;
   width: 17px;
   height: 17px; }
 
-/* line 156, C:/MSEI/src/_global/spritesheet.scss */
-.icon-twitter {
-  background-image: url(../img/spritesheet.png);
-  background-position: -19px -167px;
-  width: 19px;
-  height: 16px; }
-
 /* line 162, C:/MSEI/src/_global/spritesheet.scss */
-.icon-twitterRed {
+.icon-rssRed {
   background-image: url(../img/spritesheet.png);
-  background-position: 0px -167px;
-  width: 19px;
-  height: 16px; }
+  background-position: -172px -104px;
+  width: 17px;
+  height: 17px; }
 
 /* line 168, C:/MSEI/src/_global/spritesheet.scss */
+.icon-twitter {
+  background-image: url(../img/spritesheet.png);
+  background-position: -172px -88px;
+  width: 19px;
+  height: 16px; }
+
+/* line 174, C:/MSEI/src/_global/spritesheet.scss */
+.icon-twitterRed {
+  background-image: url(../img/spritesheet.png);
+  background-position: -172px -72px;
+  width: 19px;
+  height: 16px; }
+
+/* line 180, C:/MSEI/src/_global/spritesheet.scss */
 .icon-youtube {
+  background-image: url(../img/spritesheet.png);
+  background-position: -120px -111px;
+  width: 22px;
+  height: 16px; }
+
+/* line 186, C:/MSEI/src/_global/spritesheet.scss */
+.icon-youtubeRed {
   background-image: url(../img/spritesheet.png);
   background-position: -81px -62px;
   width: 22px;
   height: 16px; }
 
-/* line 174, C:/MSEI/src/_global/spritesheet.scss */
-.icon-youtubeRed {
-  background-image: url(../img/spritesheet.png);
-  background-position: -90px -81px;
-  width: 22px;
-  height: 16px; }
-
-/* line 180, C:/MSEI/src/_global/spritesheet.scss */
+/* line 192, C:/MSEI/src/_global/spritesheet.scss */
 .icon-commentShare {
   background-image: url(../img/spritesheet.png);
-  background-position: -30px -111px;
+  background-position: -112px -30px;
   width: 30px;
   height: 30px; }
 
-/* line 186, C:/MSEI/src/_global/spritesheet.scss */
+/* line 198, C:/MSEI/src/_global/spritesheet.scss */
 .icon-commentShareWhite {
   background-image: url(../img/spritesheet.png);
-  background-position: -30px -81px;
+  background-position: -112px -60px;
   width: 30px;
   height: 30px; }
 
-/* line 192, C:/MSEI/src/_global/spritesheet.scss */
+/* line 204, C:/MSEI/src/_global/spritesheet.scss */
 .icon-emailShare {
   background-image: url(../img/spritesheet.png);
   background-position: 0px -81px;
   width: 30px;
   height: 30px; }
 
-/* line 198, C:/MSEI/src/_global/spritesheet.scss */
+/* line 210, C:/MSEI/src/_global/spritesheet.scss */
 .icon-emailShareWhite {
   background-image: url(../img/spritesheet.png);
-  background-position: -112px -30px;
+  background-position: -30px -81px;
   width: 30px;
   height: 30px; }
 
-/* line 204, C:/MSEI/src/_global/spritesheet.scss */
+/* line 216, C:/MSEI/src/_global/spritesheet.scss */
 .icon-facebookShare {
   background-image: url(../img/spritesheet.png);
   background-position: -60px -81px;
   width: 30px;
   height: 30px; }
 
-/* line 210, C:/MSEI/src/_global/spritesheet.scss */
+/* line 222, C:/MSEI/src/_global/spritesheet.scss */
 .icon-facebookShareWhite {
   background-image: url(../img/spritesheet.png);
   background-position: -60px -111px;
   width: 30px;
   height: 30px; }
 
-/* line 216, C:/MSEI/src/_global/spritesheet.scss */
+/* line 228, C:/MSEI/src/_global/spritesheet.scss */
 .icon-googleShare {
   background-image: url(../img/spritesheet.png);
   background-position: -90px -111px;
   width: 30px;
   height: 30px; }
 
-/* line 222, C:/MSEI/src/_global/spritesheet.scss */
+/* line 234, C:/MSEI/src/_global/spritesheet.scss */
 .icon-googleShareWhite {
   background-image: url(../img/spritesheet.png);
-  background-position: -142px 0px;
+  background-position: -112px 0px;
   width: 30px;
   height: 30px; }
 
-/* line 228, C:/MSEI/src/_global/spritesheet.scss */
+/* line 240, C:/MSEI/src/_global/spritesheet.scss */
 .icon-linkedShareWhite {
-  background-image: url(../img/spritesheet.png);
-  background-position: -112px -60px;
-  width: 30px;
-  height: 30px; }
-
-/* line 234, C:/MSEI/src/_global/spritesheet.scss */
-.icon-linkedinShare {
   background-image: url(../img/spritesheet.png);
   background-position: 0px -111px;
   width: 30px;
   height: 30px; }
 
-/* line 240, C:/MSEI/src/_global/spritesheet.scss */
+/* line 246, C:/MSEI/src/_global/spritesheet.scss */
+.icon-linkedinShare {
+  background-image: url(../img/spritesheet.png);
+  background-position: -30px -111px;
+  width: 30px;
+  height: 30px; }
+
+/* line 252, C:/MSEI/src/_global/spritesheet.scss */
 .icon-twitterShare {
   background-image: url(../img/spritesheet.png);
   background-position: -81px -31px;
   width: 30px;
   height: 31px; }
 
-/* line 246, C:/MSEI/src/_global/spritesheet.scss */
+/* line 258, C:/MSEI/src/_global/spritesheet.scss */
 .icon-twitterShareWhite {
   background-image: url(../img/spritesheet.png);
-  background-position: -112px 0px;
+  background-position: -142px 0px;
   width: 30px;
   height: 30px; }
 
-/* line 252, C:/MSEI/src/_global/spritesheet.scss */
+/* line 264, C:/MSEI/src/_global/spritesheet.scss */
 .icon-calender {
   background-image: url(../img/spritesheet.png);
-  background-position: -172px -52px;
+  background-position: -172px -138px;
   width: 14px;
   height: 17px; }
 
-/* line 258, C:/MSEI/src/_global/spritesheet.scss */
+/* line 270, C:/MSEI/src/_global/spritesheet.scss */
 .icon-map {
   background-image: url(../img/spritesheet.png);
-  background-position: -172px -95px;
+  background-position: 0px -167px;
   width: 11px;
   height: 15px; }
 
-/* line 264, C:/MSEI/src/_global/spritesheet.scss */
+/* line 276, C:/MSEI/src/_global/spritesheet.scss */
 .icon-play {
   background-image: url(../img/spritesheet.png);
   background-position: 0px 0px;
   width: 81px;
   height: 81px; }
 
-/* line 270, C:/MSEI/src/_global/spritesheet.scss */
+/* line 282, C:/MSEI/src/_global/spritesheet.scss */
 .icon-playSmall {
   background-image: url(../img/spritesheet.png);
   background-position: -81px 0px;

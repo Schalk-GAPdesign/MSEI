@@ -23,6 +23,16 @@
 //-///////////////////////////////////////////////////////////////////////////////
 
 
+#__menuContent-col0 {display: none;}
+@include tablet {
+    #__menuContent-col0 {display: block;}
+    #__menuContent-col1 {display: none;}
+}
+
+@include mobile {
+    #__menuContent-col0 {display: none;}
+}
+
 //-///////////////////////////////////////////////////////////////////////////////
 //-                                                                             //
 //-                                                                             //
@@ -118,7 +128,8 @@
     #__menuSearch-item {float: none;}
     #__topNav-container {display: table; margin: 0 auto;}
     #__topNav-col2 {display: none;}
-  
+
+
 
 }
 
@@ -126,3 +137,51 @@
 #__menuMagazine-centre {width: em(1255); margin: 0 auto;}
 
 #__menuMagazine-main:not(.is-activated) {display: none;}
+
+
+
+
+
+@include laptop {
+
+
+    #__mainNav-centre {width: 90%}
+
+        #__mainNav-col1{ width: 95%;}
+         #__mainNav-col2{ width: 5%;}
+    #__secondaryNav-centre {width: 90%}
+    #__menuContent-col1 {width: 300px;}
+}
+
+
+
+
+@include tablet {
+
+   // #__menuContent-centre {width: em(460);}
+    
+ #__menuContent-col0 {float: none; text-align: center; padding-top: 20px;}
+ #__menuContent-col1 {float: none; text-align: center;}
+#__menuContent-col2 {float: none; text-align: center; margin-top: 20px;}
+    #__mainNav-centre {width: 100%;}
+
+       #__mainNav-col1{ width: 90%;}
+         #__mainNav-col2{ width: 10%;}
+
+    #__topNav-col1-col1 {float: none;}
+
+       #__topNav-col1-col2 {float: none; display: table; margin: 0 auto;}
+
+}
+
+
+@include mobile {
+
+    #__leaderboard-main {display: none;}
+    #__topNav-col1-col1 {display: none;}
+    #__topNav-col1-col2 {height: em(60); padding-top: em(10)}
+    #__menuContent-col1 {width: 100%;}
+    #__menuContent-col2 {display: none;}
+}
+
+

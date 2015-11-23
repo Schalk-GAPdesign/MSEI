@@ -29,7 +29,7 @@
 //-///////////////////////////////////////////////////////////////////////////////
 
 
-.M__magazineReadPrompt-main {background: red; color: white; padding: em(10) em(20); display: table; margin: em(30) auto em(30) auto;     text-transform: uppercase; }
+.M__magazineReadPrompt-main {background: red; color: white; padding: em(10) em(20); display: table; margin: em(30) auto em(30) auto; text-transform: uppercase; }
 .M__magazineReadPrompt-main:hover {background: #cdcdcd; color: black;}
 
 
@@ -210,7 +210,7 @@ img.M__contentThumb-imageu.u-absolute {
     background: rgba(0, 0, 0, 0.7);
     height: em(100);
     width: 100%;
-    padding-bottom: em(30);
+    padding-bottom: em(20);
 }
 .M__contentThumb-mediaPlay {
     vertical-align: middle;
@@ -232,14 +232,15 @@ img.M__contentThumb-imageu.u-absolute {
 
 .M__contentThumb-prompt {
     height: 0;
-    width: em(95);
+    width: em(112);
     padding: 0 0 0 em(10);
     overflow: hidden;
     transition: all 0.5s ease;
     opacity: 0;
+    margin-top: em(20)
 }
 .M__contentThumb-main:hover .M__contentThumb-container .M__contentThumb-overlay .M__contentThumb-row .M__contentThumb-content .M__contentThumb-prompt {
-    height: em(28);
+    height: em(30);
     padding: em(5) 0 0 em(10);
     transition: all 0.3s ease;
     opacity: 1;
@@ -292,6 +293,7 @@ img.M__contentThumb-imageu.u-absolute {
     -webkit-backface-visibility: hidden;
 }
 
+.M__largeSkyscraperAdvert-image--mobile {width:100%}
 
 //-///////////////////////////////////////////////////////////////////////////////
 //-                                                                             //
@@ -321,6 +323,11 @@ img.M__contentThumb-imageu.u-absolute {
 .M__largeSkyscraperAdvert-container {
     display: table;
     margin: 0 auto;
+}
+
+@include tablet {
+    .M__largeSkyscraperAdvert-title{font-size: em(10);}
+
 }
 
 
@@ -379,11 +386,11 @@ img.M__contentThumb-imageu.u-absolute {
 @include tablet {
     .M__heading-title {
         padding: em(14) em(10) 0 em(10);
-        height: em(56);
+        height: em(43);
     }
     .M__heading-prompt {
-        padding: em(30) em(10) 0 em(10);
-        height: em(90);
+        padding: em(30) em(15) 0 em(15);
+        height: em(70);
     }
     @include mobile {
         .M__heading-prompt {
@@ -403,6 +410,8 @@ img.M__contentThumb-imageu.u-absolute {
      .M__heading-title {
          float: none;
          height: 100%;
+         padding-bottom: em(10);
+             text-align: center;
      }
      .M__heading-main {
          width: 100%;
@@ -494,6 +503,7 @@ img.M__contentThumb-imageu.u-absolute {
         margin-left: 0;
     }
 }
+
 @include laptop {
     .M__featuredImage-image {
         height: 100%;
@@ -502,6 +512,15 @@ img.M__contentThumb-imageu.u-absolute {
         height: em(680);
     }
 }
+
+@include tablet {
+    .M__featuredImage-container {  height: em(564); }
+}
+
+@include mobile {
+    .M__featuredImage-container {  height: em(300); }
+}
+
 
 
 //-///////////////////////////////////////////////////////////////////////////////
@@ -597,7 +616,7 @@ img.M__contentThumb-imageu.u-absolute {
     }
     .M__socialShareButton-icon {
         float: none;
-        margin: 0 auto;
+        margin: em(14) auto;
         display: table;
     }
     .M__socialShareButton-text {
@@ -605,6 +624,14 @@ img.M__contentThumb-imageu.u-absolute {
         text-align: center;
         padding-left: 0;
     }
+
+    .M__socialShareButton-text
+    {
+        display: none;
+    }
+
+
+
 }
 @include mobile {
     .M__socialShareButton-main {
@@ -646,10 +673,16 @@ color: black;
 
 
 @include tablet {
-    .M__textPrompt-main {
+    .M__textPrompt-container {
         height: em(80);
-        padding: em(28);
+        padding: 0 em(10) 0 em(10);
+
     }
+    .M__textPrompt-col1 {
+        padding-top: em(28)
+    }
+
+
 }
 .M__textPrompt-col1-row1 {
     text-transform: uppercase;
@@ -795,6 +828,13 @@ color: black;
     }
 }
 
+@include tablet {
+    .M__secondaryNavButton-container{font-size: em(10); padding-top: 20px;}
+
+    .M__secondaryNavButton-main {height: 80px;}
+    .M__secondaryNavButton-container{ height: 60px; vertical-align: middle;}
+}
+
 
 //-///////////////////////////////////////////////////////////////////////////////
 //-                                                                             //
@@ -841,11 +881,12 @@ color: black;
     background: #ed1b25;
     color: white;
     border: none;
-    padding: 0 em(40);
+
+
     text-transform: uppercase;
     font-family: "Roboto Condensed";
     font-weight: 700;
-    &:hover {
+      &:hover {
         background: #777;
     }
 }
@@ -880,12 +921,50 @@ color: black;
     max-width: em(400)
 }
 
+    @include tablet {
+    .M__Search-button {
+        padding-left: em(15);
+        padding-right: em(15)
+        }}
+
+
+
+@include tablet {
+    .M__mainNavsearch-container {height: 100px;
+
+
+
+    }
+
+    .M__mainNavsearch-icon {
+    margin-top: 22px;
+}
+
+
+}
+
+@include mobile  {
+    .M__Search-keywordContainer {float: none; width: 100%}
+    .M__Search-categoryContainer {float: none; width: 100%}
+    .M__Search-buttonContainer {float: none; width: 100%}
+
+      .M__Search-keyword { width: 100%}
+    .M__Search-category {width: 100%}
+    .M__Search-button { width: 100%}
+
+}
+
+
+
+
 
 //---------------------------------------------------------------------------------
 //-------------------------------------------------------------------------- Tablet
 
 
 @include tablet {
+
+
     .M__Search-keywordContainer {
         width: 50%;
     }
@@ -896,14 +975,21 @@ color: black;
         width: 25%;
     }
      .M__Search-keyword {
-        height: em(90);
+        height: em(60);
     }
     .M__Search-button {
-        height: em(90);
+        height: em(60);
     }
     .M__Search-category {
-        height: em(90);
+        height: em(60);
     }
+
+       .M__Search-main{
+      height: 100px;
+
+    }
+
+
 }
 
 //-///////////////////////////////////////////////////////////////////////////////
@@ -925,6 +1011,13 @@ color: black;
     padding: em(5) 0;
     width: em(240);
 }
+
+
+
+.M__pullQuote-quote:hover .M__pullQuote-text {color: red;}
+.M__pullQuote-quote:hover .M__pullQuote-retweet {color: red;}
+.M__pullQuote-quote:hover .M__pullQuote-icon {@extend .icon-articleShareRed}
+
 .M__pullQuote-quote {
     border-left: em(1) solid grey;
     padding-left: em(20);
@@ -952,10 +1045,17 @@ color: black;
     .M__pullQuote-main {
         max-width: em(300);
         width: 100%;
-        margin: em(60) 0;
+
     }
+
+    .M__pullQuote-main{margin-bottom: em(50)}
+
 }
-@include mobile {
+
+
+
+
+@include tablet {
     .M__pullQuote-main {
         max-width: 100%;
     }
@@ -965,6 +1065,8 @@ color: black;
         border: 0;
     }
 }
+
+
 
 
 //-///////////////////////////////////////////////////////////////////////////////
@@ -1125,4 +1227,18 @@ color: black;
 .M__mainNavButton-arrow {
     margin-top: em(6);
     margin-left: em(3);
+}
+@include tablet {
+    .M__mainNavButton-container {
+        height: 100px;
+    }
+    .M__mainNavButton-arrow {
+        display: none;
+    }
+    .M__mainNavButton-centre {
+        font-size: em(10)
+    }
+    .M__mainNavButton-centre {
+        padding-top: 23px;
+    }
 }

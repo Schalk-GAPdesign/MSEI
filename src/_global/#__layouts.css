@@ -2,42 +2,42 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,300italic,300,400italic,700,700italic);
 @import url(https://fonts.googleapis.com/css?family=Roboto+Condensed:400,300italic,300,400italic,700,700italic);
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300italic,300,400italic,700,700italic);
-/* line 23, C:/MSEI/src/_global/utilities.scss */
+/* line 25, C:/MSEI/src/_global/utilities.scss */
 * {
   Box-sizing: border-box; }
 
-/* line 25, C:/MSEI/src/_global/utilities.scss */
+/* line 27, C:/MSEI/src/_global/utilities.scss */
 body {
   font-family: Roboto, Arial; }
 
-/* line 28, C:/MSEI/src/_global/utilities.scss */
+/* line 30, C:/MSEI/src/_global/utilities.scss */
 h1 {
   font-size: 2.375em;
   font-weight: 700;
   line-height: 1.5625em;
   font-weight: 700; }
 
-/* line 35, C:/MSEI/src/_global/utilities.scss */
+/* line 37, C:/MSEI/src/_global/utilities.scss */
 h2 {
   font-size: 1.625em;
   line-height: 2em;
   font-weight: 400; }
 
-/* line 41, C:/MSEI/src/_global/utilities.scss */
+/* line 43, C:/MSEI/src/_global/utilities.scss */
 h3 {
   font-size: 1.625em;
   font-weight: 700;
   margin-bottom: 1.25em;
   line-height: 2em; }
 
-/* line 48, C:/MSEI/src/_global/utilities.scss */
+/* line 50, C:/MSEI/src/_global/utilities.scss */
 p {
   font-size: 1.125em;
   line-height: 1.625em;
   margin-top: 1em;
   margin-bottom: 1em; }
 
-/* line 55, C:/MSEI/src/_global/utilities.scss */
+/* line 58, C:/MSEI/src/_global/utilities.scss */
 ul {
   font-size: 1.125em;
   line-height: 1.625em;
@@ -45,59 +45,66 @@ ul {
   margin-bottom: 0.9375em;
   text-decoration: none; }
 
-/* line 63, C:/MSEI/src/_global/utilities.scss */
+/* line 66, C:/MSEI/src/_global/utilities.scss */
 li {
   margin-bottom: 0.5em; }
 
-/* line 68, C:/MSEI/src/_global/utilities.scss */
+/* line 71, C:/MSEI/src/_global/utilities.scss */
 .u-cf:after {
   content: "" !important;
   display: table !important;
   clear: both !important; }
 
-/* line 74, C:/MSEI/src/_global/utilities.scss */
+/* line 77, C:/MSEI/src/_global/utilities.scss */
 .u-floatLeft {
   float: left; }
 
-/* line 78, C:/MSEI/src/_global/utilities.scss */
+/* line 81, C:/MSEI/src/_global/utilities.scss */
 .u-floatRight {
   float: right; }
 
-/* line 82, C:/MSEI/src/_global/utilities.scss */
+/* line 85, C:/MSEI/src/_global/utilities.scss */
 .u-absolute {
   position: absolute !important; }
 
-/* line 86, C:/MSEI/src/_global/utilities.scss */
+/* line 89, C:/MSEI/src/_global/utilities.scss */
 .u-relative {
   position: relative !important; }
 
-/* line 90, C:/MSEI/src/_global/utilities.scss */
+/* line 93, C:/MSEI/src/_global/utilities.scss */
 .u-fixed {
   position: fixed !important; }
 
-/* line 94, C:/MSEI/src/_global/utilities.scss */
+/* line 97, C:/MSEI/src/_global/utilities.scss */
 .u-noUnderline {
   text-decoration: none !important; }
 
-/* line 98, C:/MSEI/src/_global/utilities.scss */
+/* line 101, C:/MSEI/src/_global/utilities.scss */
 .u-noMargin {
   margin: 0 !important; }
 
-/* line 102, C:/MSEI/src/_global/utilities.scss */
+/* line 105, C:/MSEI/src/_global/utilities.scss */
 .u-table {
   display: table !important; }
 
-/* line 106, C:/MSEI/src/_global/utilities.scss */
+/* line 109, C:/MSEI/src/_global/utilities.scss */
 .u-tableRow {
   display: table-row !important; }
 
-/* line 110, C:/MSEI/src/_global/utilities.scss */
+/* line 113, C:/MSEI/src/_global/utilities.scss */
 .u-tableCell {
   display: table-cell !important; }
 
-/* line 115, C:/MSEI/src/_global/utilities.scss */
+/* line 118, C:/MSEI/src/_global/utilities.scss */
 .u-borderLeft {
   border-left: 1px solid #999999; }
+
+@media (max-width: 62.5em) {
+  /* line 159, C:/MSEI/src/_global/utilities.scss */
+  p {
+    line-height: 1.875em;
+    margin-top: 3em;
+    margin-bottom: 3em; } }
 
 /*
 Icon classes can be used entirely standalone. They are named after their original file names.
@@ -418,6 +425,10 @@ Icon classes can be used entirely standalone. They are named after their origina
   width: 31px;
   height: 31px; }
 
+/* line 57, C:/MSEI/src/_global/A__atoms.scss */
+.A__logo-image {
+  max-width: 100%; }
+
 /* line 70, C:/MSEI/src/_global/A__atoms.scss */
 .A__magazinePreviewTitle-main {
   font: 700 1.5625em "Roboto Condensed";
@@ -446,7 +457,7 @@ Icon classes can be used entirely standalone. They are named after their origina
 .A__disclaimerText-Link {
   color: #ccc; }
 
-@media (max-width: 43.75em) {
+@media (max-width: 62.5em) {
   /* line 107, C:/MSEI/src/_global/A__atoms.scss */
   .A__disclaimerText-line {
     float: none;
@@ -649,7 +660,7 @@ img.M__contentThumb-imageu.u-absolute {
   background: rgba(0, 0, 0, 0.7);
   height: 6.25em;
   width: 100%;
-  padding-bottom: 1.875em; }
+  padding-bottom: 1.25em; }
 
 /* line 215, C:/MSEI/src/_global/M__molecules.scss */
 .M__contentThumb-mediaPlay {
@@ -674,27 +685,28 @@ img.M__contentThumb-imageu.u-absolute {
 /* line 233, C:/MSEI/src/_global/M__molecules.scss */
 .M__contentThumb-prompt {
   height: 0;
-  width: 5.9375em;
+  width: 7em;
   padding: 0 0 0 0.625em;
   overflow: hidden;
   transition: all 0.5s ease;
-  opacity: 0; }
+  opacity: 0;
+  margin-top: 1.25em; }
 
-/* line 241, C:/MSEI/src/_global/M__molecules.scss */
+/* line 242, C:/MSEI/src/_global/M__molecules.scss */
 .M__contentThumb-main:hover .M__contentThumb-container .M__contentThumb-overlay .M__contentThumb-row .M__contentThumb-content .M__contentThumb-prompt {
-  height: 1.75em;
+  height: 1.875em;
   padding: 0.3125em 0 0 0.625em;
   transition: all 0.3s ease;
   opacity: 1; }
 
-/* line 260, C:/MSEI/src/_global/M__molecules.scss */
+/* line 261, C:/MSEI/src/_global/M__molecules.scss */
 .M__magazineMockup-main {
   background: #e5e5e5;
   width: 100%;
   height: 15.625em;
   display: table; }
 
-/* line 266, C:/MSEI/src/_global/M__molecules.scss */
+/* line 267, C:/MSEI/src/_global/M__molecules.scss */
 .M__magazineMockup-centre {
   position: relative;
   width: 19.375em;
@@ -703,20 +715,20 @@ img.M__contentThumb-imageu.u-absolute {
   margin: 0 auto;
   margin-top: 0.9375em; }
 
-/* line 274, C:/MSEI/src/_global/M__molecules.scss */
+/* line 275, C:/MSEI/src/_global/M__molecules.scss */
 .M__magazineMockup-background {
   position: absolute;
   top: 0.5em;
   left: -0.125em; }
 
-/* line 279, C:/MSEI/src/_global/M__molecules.scss */
+/* line 280, C:/MSEI/src/_global/M__molecules.scss */
 .M__magazineMockup-imageContainer {
   width: 8.8125em;
   height: 19.375em;
   perspective: 56.25em;
   position: absolute; }
 
-/* line 285, C:/MSEI/src/_global/M__molecules.scss */
+/* line 286, C:/MSEI/src/_global/M__molecules.scss */
 .M__magazineMockup-image {
   width: 12.5em;
   height: 15.625em;
@@ -726,13 +738,17 @@ img.M__contentThumb-imageu.u-absolute {
   transform: rotateY(33deg) rotateZ(-20deg) rotateX(52deg);
   -webkit-backface-visibility: hidden; }
 
-/* line 307, C:/MSEI/src/_global/M__molecules.scss */
+/* line 296, C:/MSEI/src/_global/M__molecules.scss */
+.M__largeSkyscraperAdvert-image--mobile {
+  width: 100%; }
+
+/* line 309, C:/MSEI/src/_global/M__molecules.scss */
 .M__largeSkyscraperAdvert-main {
   border: 0.0625em solid #cdcdcd;
   background: #eeeeee;
   padding: 1.875em 0; }
 
-/* line 312, C:/MSEI/src/_global/M__molecules.scss */
+/* line 314, C:/MSEI/src/_global/M__molecules.scss */
 .M__largeSkyscraperAdvert-title {
   font-size: 0.8125em;
   text-transform: uppercase;
@@ -742,19 +758,24 @@ img.M__contentThumb-imageu.u-absolute {
   text-align: center;
   margin-bottom: 0.625em; }
 
-/* line 321, C:/MSEI/src/_global/M__molecules.scss */
+/* line 323, C:/MSEI/src/_global/M__molecules.scss */
 .M__largeSkyscraperAdvert-container {
   display: table;
   margin: 0 auto; }
 
-/* line 342, C:/MSEI/src/_global/M__molecules.scss */
+@media (max-width: 62.5em) {
+  /* line 329, C:/MSEI/src/_global/M__molecules.scss */
+  .M__largeSkyscraperAdvert-title {
+    font-size: 0.625em; } }
+
+/* line 349, C:/MSEI/src/_global/M__molecules.scss */
 .M__heading-main {
   border-bottom: solid 0.5em black;
   font-family: "Roboto Condensed";
   font-weight: 700;
   text-transform: uppercase; }
 
-/* line 348, C:/MSEI/src/_global/M__molecules.scss */
+/* line 355, C:/MSEI/src/_global/M__molecules.scss */
 .M__heading-title {
   background: #ed1b25;
   font-size: 1.625em;
@@ -762,57 +783,59 @@ img.M__contentThumb-imageu.u-absolute {
   padding: 0.375em 0.5em 0 0.375em;
   height: 1.9375em; }
 
-/* line 355, C:/MSEI/src/_global/M__molecules.scss */
+/* line 362, C:/MSEI/src/_global/M__molecules.scss */
 .M__heading-prompt {
   background: #efefef;
   color: black;
   font-size: 1em;
   padding: 1em 1.25em 0 1.25em;
   height: 3.125em; }
-  /* line 361, C:/MSEI/src/_global/M__molecules.scss */
+  /* line 368, C:/MSEI/src/_global/M__molecules.scss */
   .M__heading-prompt:hover {
     background: #cdcdcd;
     color: white; }
 
-/* line 369, C:/MSEI/src/_global/M__molecules.scss */
+/* line 376, C:/MSEI/src/_global/M__molecules.scss */
 .M__heading-arrow {
   margin-top: 0.0625em;
   margin-left: 0.75em; }
 
 @media (max-width: 62.5em) {
-  /* line 380, C:/MSEI/src/_global/M__molecules.scss */
+  /* line 387, C:/MSEI/src/_global/M__molecules.scss */
   .M__heading-title {
     padding: 0.875em 0.625em 0 0.625em;
-    height: 3.5em; }
-  /* line 384, C:/MSEI/src/_global/M__molecules.scss */
+    height: 2.75em; }
+  /* line 391, C:/MSEI/src/_global/M__molecules.scss */
   .M__heading-prompt {
-    padding: 1.875em 0.625em 0 0.625em;
-    height: 5.625em; } }
+    padding: 1.875em 0.9375em 0 0.9375em;
+    height: 4.375em; } }
 
 @media (max-width: 62.5em) and (max-width: 43.75em) {
-  /* line 389, C:/MSEI/src/_global/M__molecules.scss */
+  /* line 396, C:/MSEI/src/_global/M__molecules.scss */
   .M__heading-prompt {
     float: none; } }
 
 @media (max-width: 62.5em) {
-  /* line 393, C:/MSEI/src/_global/M__molecules.scss */
+  /* line 400, C:/MSEI/src/_global/M__molecules.scss */
   .M__heading-arrow {
     margin-top: 0.125em; } }
 
 @media (max-width: 43.75em) {
-  /* line 403, C:/MSEI/src/_global/M__molecules.scss */
+  /* line 410, C:/MSEI/src/_global/M__molecules.scss */
   .M__heading-title {
     float: none;
-    height: 100%; }
-  /* line 407, C:/MSEI/src/_global/M__molecules.scss */
+    height: 100%;
+    padding-bottom: 0.625em;
+    text-align: center; }
+  /* line 416, C:/MSEI/src/_global/M__molecules.scss */
   .M__heading-main {
     width: 100%; }
-  /* line 410, C:/MSEI/src/_global/M__molecules.scss */
+  /* line 419, C:/MSEI/src/_global/M__molecules.scss */
   .M__heading-promptContainer {
     display: table;
     margin: 0 auto; } }
 
-/* line 429, C:/MSEI/src/_global/M__molecules.scss */
+/* line 438, C:/MSEI/src/_global/M__molecules.scss */
 .M__contentButton-main {
   width: 100%;
   padding: 0.6875em;
@@ -822,25 +845,25 @@ img.M__contentThumb-imageu.u-absolute {
   border: none;
   color: black;
   cursor: pointer; }
-  /* line 438, C:/MSEI/src/_global/M__molecules.scss */
+  /* line 447, C:/MSEI/src/_global/M__molecules.scss */
   .M__contentButton-main:hover {
     background: #b8b8b8; }
 
-/* line 442, C:/MSEI/src/_global/M__molecules.scss */
+/* line 451, C:/MSEI/src/_global/M__molecules.scss */
 .M__contentButton-main--filter {
   width: 100%;
   border-bottom: 0.125em solid white; }
 
-/* line 446, C:/MSEI/src/_global/M__molecules.scss */
+/* line 455, C:/MSEI/src/_global/M__molecules.scss */
 .M__contentButton-main--pagination {
   text-align: center; }
 
 @media (max-width: 43.75em) {
-  /* line 450, C:/MSEI/src/_global/M__molecules.scss */
+  /* line 459, C:/MSEI/src/_global/M__molecules.scss */
   .M__contentButton-main {
     height: 6.25em; } }
 
-/* line 467, C:/MSEI/src/_global/M__molecules.scss */
+/* line 476, C:/MSEI/src/_global/M__molecules.scss */
 .M__featuredImage-container {
   width: 100%;
   text-align: center;
@@ -849,7 +872,7 @@ img.M__contentThumb-imageu.u-absolute {
   color: white;
   margin-bottom: 1.125em; }
 
-/* line 475, C:/MSEI/src/_global/M__molecules.scss */
+/* line 484, C:/MSEI/src/_global/M__molecules.scss */
 .M__featuredImage-image {
   left: -1000%;
   right: -1000%;
@@ -859,7 +882,7 @@ img.M__contentThumb-imageu.u-absolute {
   min-height: 100%;
   min-width: 100%; }
 
-/* line 484, C:/MSEI/src/_global/M__molecules.scss */
+/* line 493, C:/MSEI/src/_global/M__molecules.scss */
 .M__featuredImage-label {
   background: red;
   bottom: 0;
@@ -869,49 +892,59 @@ img.M__contentThumb-imageu.u-absolute {
   margin-left: 29%; }
 
 @media (max-width: 43.75em) {
-  /* line 493, C:/MSEI/src/_global/M__molecules.scss */
+  /* line 502, C:/MSEI/src/_global/M__molecules.scss */
   .M__featuredImage-label {
     margin-left: 0; } }
 
 @media (max-width: 81.25em) {
-  /* line 498, C:/MSEI/src/_global/M__molecules.scss */
+  /* line 508, C:/MSEI/src/_global/M__molecules.scss */
   .M__featuredImage-image {
     height: 100%; }
-  /* line 501, C:/MSEI/src/_global/M__molecules.scss */
+  /* line 511, C:/MSEI/src/_global/M__molecules.scss */
   .M__featuredImage-container {
     height: 42.5em; } }
 
-/* line 518, C:/MSEI/src/_global/M__molecules.scss */
+@media (max-width: 62.5em) {
+  /* line 517, C:/MSEI/src/_global/M__molecules.scss */
+  .M__featuredImage-container {
+    height: 35.25em; } }
+
+@media (max-width: 43.75em) {
+  /* line 521, C:/MSEI/src/_global/M__molecules.scss */
+  .M__featuredImage-container {
+    height: 18.75em; } }
+
+/* line 537, C:/MSEI/src/_global/M__molecules.scss */
 .M__topNavButton-container {
   border-right: 1px solid #777;
   padding: 0 0.9375em;
   margin: 0.9375em 0; }
 
-/* line 524, C:/MSEI/src/_global/M__molecules.scss */
+/* line 543, C:/MSEI/src/_global/M__molecules.scss */
 .M__topNavButton-main {
   font-size: 0.8125em;
   color: #cccccc;
   height: 100%; }
-  /* line 528, C:/MSEI/src/_global/M__molecules.scss */
+  /* line 547, C:/MSEI/src/_global/M__molecules.scss */
   .M__topNavButton-main:hover {
     color: #ed1b25; }
 
-/* line 546, C:/MSEI/src/_global/M__molecules.scss */
+/* line 565, C:/MSEI/src/_global/M__molecules.scss */
 .M__socialShareButton-container {
   padding: 0.4375em 0.25em;
   border-bottom: 0.0625em solid #cdcdcd;
   color: #999999; }
-  /* line 550, C:/MSEI/src/_global/M__molecules.scss */
+  /* line 569, C:/MSEI/src/_global/M__molecules.scss */
   .M__socialShareButton-container:hover .M__socialShareButton-container {
     background: #b8b8b8;
     color: white; }
 
-/* line 556, C:/MSEI/src/_global/M__molecules.scss */
+/* line 575, C:/MSEI/src/_global/M__molecules.scss */
 .M__socialShareButton-main:hover .M__socialShareButton-container {
   background: #b8b8b8;
   color: white; }
 
-/* line 579, C:/MSEI/src/_global/M__molecules.scss */
+/* line 598, C:/MSEI/src/_global/M__molecules.scss */
 .M__socialShareButton-text {
   text-transform: uppercase;
   font-size: 0.8125em;
@@ -919,169 +952,175 @@ img.M__contentThumb-imageu.u-absolute {
   padding: 0.5em 0 0.5em 0.625em; }
 
 @media (max-width: 62.5em) {
-  /* line 586, C:/MSEI/src/_global/M__molecules.scss */
+  /* line 605, C:/MSEI/src/_global/M__molecules.scss */
   .M__socialShareButton-main {
     width: 16.6%;
     border-bottom: 0;
     float: left; }
-  /* line 591, C:/MSEI/src/_global/M__molecules.scss */
+  /* line 610, C:/MSEI/src/_global/M__molecules.scss */
   .M__socialShareButton-container {
     background: #eee;
     padding: 1.25em;
     height: 5.625em;
     margin-right: 1.25em;
     border-radius: 0.625em; }
-  /* line 598, C:/MSEI/src/_global/M__molecules.scss */
+  /* line 617, C:/MSEI/src/_global/M__molecules.scss */
   .M__socialShareButton-icon {
     float: none;
-    margin: 0 auto;
+    margin: 0.875em auto;
     display: table; }
-  /* line 603, C:/MSEI/src/_global/M__molecules.scss */
+  /* line 622, C:/MSEI/src/_global/M__molecules.scss */
   .M__socialShareButton-text {
     float: none;
     text-align: center;
-    padding-left: 0; } }
+    padding-left: 0; }
+  /* line 628, C:/MSEI/src/_global/M__molecules.scss */
+  .M__socialShareButton-text {
+    display: none; } }
 
 @media (max-width: 43.75em) {
-  /* line 610, C:/MSEI/src/_global/M__molecules.scss */
+  /* line 637, C:/MSEI/src/_global/M__molecules.scss */
   .M__socialShareButton-main {
     width: 50%;
     margin-bottom: 1.25em; } }
 
-/* line 627, C:/MSEI/src/_global/M__molecules.scss */
+/* line 654, C:/MSEI/src/_global/M__molecules.scss */
 .M__textPrompt-label {
   background: #222222;
   color: white;
   padding: 0.3125em 0.625em; }
 
-/* line 630, C:/MSEI/src/_global/M__molecules.scss */
+/* line 657, C:/MSEI/src/_global/M__molecules.scss */
 .M__textPrompt-main {
   border: 1px solid #cdcdcd;
   color: black; }
 
-/* line 635, C:/MSEI/src/_global/M__molecules.scss */
+/* line 662, C:/MSEI/src/_global/M__molecules.scss */
 .M__textPrompt-row2 {
   color: black; }
-  /* line 638, C:/MSEI/src/_global/M__molecules.scss */
+  /* line 665, C:/MSEI/src/_global/M__molecules.scss */
   .M__textPrompt-row2:hover {
     background: #b8b8b8;
     color: white; }
 
 @media (max-width: 62.5em) {
-  /* line 649, C:/MSEI/src/_global/M__molecules.scss */
-  .M__textPrompt-main {
+  /* line 676, C:/MSEI/src/_global/M__molecules.scss */
+  .M__textPrompt-container {
     height: 5em;
-    padding: 1.75em; } }
+    padding: 0 0.625em 0 0.625em; }
+  /* line 681, C:/MSEI/src/_global/M__molecules.scss */
+  .M__textPrompt-col1 {
+    padding-top: 1.75em; } }
 
-/* line 654, C:/MSEI/src/_global/M__molecules.scss */
+/* line 687, C:/MSEI/src/_global/M__molecules.scss */
 .M__textPrompt-col1-row1 {
   text-transform: uppercase;
   font-weight: 700;
   font-family: "Roboto Condensed"; }
 
-/* line 659, C:/MSEI/src/_global/M__molecules.scss */
+/* line 692, C:/MSEI/src/_global/M__molecules.scss */
 .M__textPrompt-col1-row2 {
   font-size: 0.875em;
   margin-top: 0.1875em; }
 
-/* line 663, C:/MSEI/src/_global/M__molecules.scss */
+/* line 696, C:/MSEI/src/_global/M__molecules.scss */
 .M__textPrompt-field {
   color: red;
   margin-right: 0.3125em; }
 
-/* line 667, C:/MSEI/src/_global/M__molecules.scss */
+/* line 700, C:/MSEI/src/_global/M__molecules.scss */
 .M__textPrompt-data {
   margin-right: 0.4375em; }
 
-/* line 670, C:/MSEI/src/_global/M__molecules.scss */
+/* line 703, C:/MSEI/src/_global/M__molecules.scss */
 .M__textPrompt-main {
   width: 100%; }
 
-/* line 673, C:/MSEI/src/_global/M__molecules.scss */
+/* line 706, C:/MSEI/src/_global/M__molecules.scss */
 .M__textPrompt-col2 {
   width: 1.25em;
   vertical-align: middle; }
 
-/* line 677, C:/MSEI/src/_global/M__molecules.scss */
+/* line 710, C:/MSEI/src/_global/M__molecules.scss */
 .M__textPrompt-col1 {
   width: auto; }
 
-/* line 680, C:/MSEI/src/_global/M__molecules.scss */
+/* line 713, C:/MSEI/src/_global/M__molecules.scss */
 .M__textPrompt-titleBar {
   background: #eeeeee;
   padding: 0.625em 0.75em;
   font: 700 1em "Roboto Condensed";
   text-transform: uppercase; }
 
-/* line 686, C:/MSEI/src/_global/M__molecules.scss */
+/* line 719, C:/MSEI/src/_global/M__molecules.scss */
 .M__textPrompt-row2 {
   padding: 0.9375em; }
 
-/* line 689, C:/MSEI/src/_global/M__molecules.scss */
+/* line 722, C:/MSEI/src/_global/M__molecules.scss */
 .M__textPrompt-container {
   width: 100%; }
 
-/* line 692, C:/MSEI/src/_global/M__molecules.scss */
+/* line 725, C:/MSEI/src/_global/M__molecules.scss */
 .M__textPrompt-row1 {
   text-transform: uppercase;
   font: 700 1em "Roboto Condensed";
   padding: 0.9375em;
   background: #eeeeee; }
 
-/* line 699, C:/MSEI/src/_global/M__molecules.scss */
+/* line 732, C:/MSEI/src/_global/M__molecules.scss */
 .M__textPrompt-row2--blue {
   background: #06c4f7;
   border: 0;
   color: white; }
 
-/* line 713, C:/MSEI/src/_global/M__molecules.scss */
+/* line 746, C:/MSEI/src/_global/M__molecules.scss */
 .M__shortcodeBox-main {
   padding: 1.875em;
   background: #eeeeee;
   border: solid 0.0625em #cdcdcd;
   margin: 3.75em 0; }
 
-/* line 732, C:/MSEI/src/_global/M__molecules.scss */
+/* line 765, C:/MSEI/src/_global/M__molecules.scss */
 .M__disclaimerLink-main {
   padding: 0 0 0 0.625em;
   text-transform: uppercase;
   letter-spacing: 0.0625em;
   font-size: 0.8125em; }
 
-/* line 738, C:/MSEI/src/_global/M__molecules.scss */
+/* line 771, C:/MSEI/src/_global/M__molecules.scss */
 .M__disclaimerLink-icon {
   padding-right: 0.625em; }
 
-/* line 741, C:/MSEI/src/_global/M__molecules.scss */
+/* line 774, C:/MSEI/src/_global/M__molecules.scss */
 .M__disclaimerLink-text {
   color: #ccc; }
-  /* line 743, C:/MSEI/src/_global/M__molecules.scss */
+  /* line 776, C:/MSEI/src/_global/M__molecules.scss */
   .M__disclaimerLink-text:hover {
     color: red; }
 
-/* line 747, C:/MSEI/src/_global/M__molecules.scss */
+/* line 780, C:/MSEI/src/_global/M__molecules.scss */
 .M__disclaimerLink-dot {
   margin-top: 0.375em; }
 
 @media (max-width: 62.5em) {
-  /* line 751, C:/MSEI/src/_global/M__molecules.scss */
+  /* line 784, C:/MSEI/src/_global/M__molecules.scss */
   .M__disclaimerLink-dot--tabletHide {
     display: none; } }
 
 @media (max-width: 43.75em) {
-  /* line 756, C:/MSEI/src/_global/M__molecules.scss */
+  /* line 789, C:/MSEI/src/_global/M__molecules.scss */
   .M__disclaimerLink-dot {
     display: none;
     text-align: center; }
-  /* line 760, C:/MSEI/src/_global/M__molecules.scss */
+  /* line 793, C:/MSEI/src/_global/M__molecules.scss */
   .M__disclaimerLink-text {
     width: 100%;
     text-align: center; }
-  /* line 764, C:/MSEI/src/_global/M__molecules.scss */
+  /* line 797, C:/MSEI/src/_global/M__molecules.scss */
   .M__disclaimerLink-main {
     padding: 0; } }
 
-/* line 781, C:/MSEI/src/_global/M__molecules.scss */
+/* line 814, C:/MSEI/src/_global/M__molecules.scss */
 .M__secondaryNavButton-container {
   text-align: center;
   text-transform: uppercase;
@@ -1090,20 +1129,33 @@ img.M__contentThumb-imageu.u-absolute {
   border-right: 1px solid #999999;
   letter-spacing: 0.0625em; }
 
-/* line 789, C:/MSEI/src/_global/M__molecules.scss */
+/* line 822, C:/MSEI/src/_global/M__molecules.scss */
 .M__secondaryNavButton-main {
   padding: 0.625em 0;
   color: black;
   height: 100%; }
-  /* line 793, C:/MSEI/src/_global/M__molecules.scss */
+  /* line 826, C:/MSEI/src/_global/M__molecules.scss */
   .M__secondaryNavButton-main:hover {
     color: red; }
 
-/* line 814, C:/MSEI/src/_global/M__molecules.scss */
+@media (max-width: 62.5em) {
+  /* line 832, C:/MSEI/src/_global/M__molecules.scss */
+  .M__secondaryNavButton-container {
+    font-size: 0.625em;
+    padding-top: 20px; }
+  /* line 834, C:/MSEI/src/_global/M__molecules.scss */
+  .M__secondaryNavButton-main {
+    height: 80px; }
+  /* line 835, C:/MSEI/src/_global/M__molecules.scss */
+  .M__secondaryNavButton-container {
+    height: 60px;
+    vertical-align: middle; } }
+
+/* line 854, C:/MSEI/src/_global/M__molecules.scss */
 .M__Search-keywordContainer {
   width: 25em; }
 
-/* line 817, C:/MSEI/src/_global/M__molecules.scss */
+/* line 857, C:/MSEI/src/_global/M__molecules.scss */
 .M__Search-keyword {
   font-weight: 700;
   color: #999;
@@ -1111,11 +1163,11 @@ img.M__contentThumb-imageu.u-absolute {
   padding: 0 0.625em;
   width: 100%; }
 
-/* line 824, C:/MSEI/src/_global/M__molecules.scss */
+/* line 864, C:/MSEI/src/_global/M__molecules.scss */
 .M__Search-categoryContainer {
   padding-left: 1.25em; }
 
-/* line 827, C:/MSEI/src/_global/M__molecules.scss */
+/* line 867, C:/MSEI/src/_global/M__molecules.scss */
 .M__Search-category {
   text-transform: uppercase;
   font-weight: 700;
@@ -1125,75 +1177,114 @@ img.M__contentThumb-imageu.u-absolute {
   cursor: pointer;
   width: 100%; }
 
-/* line 836, C:/MSEI/src/_global/M__molecules.scss */
+/* line 876, C:/MSEI/src/_global/M__molecules.scss */
 .M__Search-buttonContainer {
   padding-left: 1.25em; }
 
-/* line 839, C:/MSEI/src/_global/M__molecules.scss */
+/* line 879, C:/MSEI/src/_global/M__molecules.scss */
 .M__Search-button {
   height: 2.5em;
   background: #ed1b25;
   color: white;
   border: none;
-  padding: 0 2.5em;
   text-transform: uppercase;
   font-family: "Roboto Condensed";
   font-weight: 700; }
-  /* line 848, C:/MSEI/src/_global/M__molecules.scss */
+  /* line 889, C:/MSEI/src/_global/M__molecules.scss */
   .M__Search-button:hover {
     background: #777; }
 
-/* line 852, C:/MSEI/src/_global/M__molecules.scss */
+/* line 893, C:/MSEI/src/_global/M__molecules.scss */
 .M__mainNavsearch-main {
   border-left: 0.0625em solid white;
   border-right: 0.0625em solid white; }
 
-/* line 856, C:/MSEI/src/_global/M__molecules.scss */
+/* line 897, C:/MSEI/src/_global/M__molecules.scss */
 .M__mainNavsearch-container {
   border-bottom: 0.25em solid #aaaaaa;
   height: 3.125em;
   padding-top: 0.875em; }
-  /* line 860, C:/MSEI/src/_global/M__molecules.scss */
+  /* line 901, C:/MSEI/src/_global/M__molecules.scss */
   .M__mainNavsearch-container.is-activated {
     border-bottom: 0.25em solid #cdcdcd;
     background: #cdcdcd; }
-  /* line 864, C:/MSEI/src/_global/M__molecules.scss */
+  /* line 905, C:/MSEI/src/_global/M__molecules.scss */
   .M__mainNavsearch-container:hover:not(.is-activated) {
     border-bottom: 0.25em solid red; }
 
-/* line 869, C:/MSEI/src/_global/M__molecules.scss */
+/* line 910, C:/MSEI/src/_global/M__molecules.scss */
 .M__mainNavsearch-main:hover:not(.is-activated) {
   background: red; }
 
-/* line 873, C:/MSEI/src/_global/M__molecules.scss */
+/* line 914, C:/MSEI/src/_global/M__molecules.scss */
 .M__mainNavsearch-icon {
   margin: 0 auto; }
 
-/* line 879, C:/MSEI/src/_global/M__molecules.scss */
+/* line 920, C:/MSEI/src/_global/M__molecules.scss */
 .M__Search-keyword {
   max-width: 25em; }
 
 @media (max-width: 62.5em) {
-  /* line 889, C:/MSEI/src/_global/M__molecules.scss */
+  /* line 925, C:/MSEI/src/_global/M__molecules.scss */
+  .M__Search-button {
+    padding-left: 0.9375em;
+    padding-right: 0.9375em; } }
+
+@media (max-width: 62.5em) {
+  /* line 933, C:/MSEI/src/_global/M__molecules.scss */
+  .M__mainNavsearch-container {
+    height: 100px; }
+  /* line 939, C:/MSEI/src/_global/M__molecules.scss */
+  .M__mainNavsearch-icon {
+    margin-top: 22px; } }
+
+@media (max-width: 43.75em) {
+  /* line 947, C:/MSEI/src/_global/M__molecules.scss */
+  .M__Search-keywordContainer {
+    float: none;
+    width: 100%; }
+  /* line 948, C:/MSEI/src/_global/M__molecules.scss */
+  .M__Search-categoryContainer {
+    float: none;
+    width: 100%; }
+  /* line 949, C:/MSEI/src/_global/M__molecules.scss */
+  .M__Search-buttonContainer {
+    float: none;
+    width: 100%; }
+  /* line 951, C:/MSEI/src/_global/M__molecules.scss */
+  .M__Search-keyword {
+    width: 100%; }
+  /* line 952, C:/MSEI/src/_global/M__molecules.scss */
+  .M__Search-category {
+    width: 100%; }
+  /* line 953, C:/MSEI/src/_global/M__molecules.scss */
+  .M__Search-button {
+    width: 100%; } }
+
+@media (max-width: 62.5em) {
+  /* line 968, C:/MSEI/src/_global/M__molecules.scss */
   .M__Search-keywordContainer {
     width: 50%; }
-  /* line 892, C:/MSEI/src/_global/M__molecules.scss */
+  /* line 971, C:/MSEI/src/_global/M__molecules.scss */
   .M__Search-buttonContainer {
     width: 25%; }
-  /* line 895, C:/MSEI/src/_global/M__molecules.scss */
+  /* line 974, C:/MSEI/src/_global/M__molecules.scss */
   .M__Search-categoryContainer {
     width: 25%; }
-  /* line 898, C:/MSEI/src/_global/M__molecules.scss */
+  /* line 977, C:/MSEI/src/_global/M__molecules.scss */
   .M__Search-keyword {
-    height: 5.625em; }
-  /* line 901, C:/MSEI/src/_global/M__molecules.scss */
+    height: 3.75em; }
+  /* line 980, C:/MSEI/src/_global/M__molecules.scss */
   .M__Search-button {
-    height: 5.625em; }
-  /* line 904, C:/MSEI/src/_global/M__molecules.scss */
+    height: 3.75em; }
+  /* line 983, C:/MSEI/src/_global/M__molecules.scss */
   .M__Search-category {
-    height: 5.625em; } }
+    height: 3.75em; }
+  /* line 987, C:/MSEI/src/_global/M__molecules.scss */
+  .M__Search-main {
+    height: 100px; } }
 
-/* line 920, C:/MSEI/src/_global/M__molecules.scss */
+/* line 1006, C:/MSEI/src/_global/M__molecules.scss */
 .M__pullQuote-main {
   height: auto;
   background: white;
@@ -1202,24 +1293,24 @@ img.M__contentThumb-imageu.u-absolute {
   padding: 0.3125em 0;
   width: 15em; }
 
-/* line 928, C:/MSEI/src/_global/M__molecules.scss */
+/* line 1014, C:/MSEI/src/_global/M__molecules.scss */
 .M__pullQuote-quote {
   border-left: 0.0625em solid grey;
   padding-left: 1.25em;
   margin-left: 1.25em;
   margin-bottom: 2.5em; }
 
-/* line 934, C:/MSEI/src/_global/M__molecules.scss */
+/* line 1020, C:/MSEI/src/_global/M__molecules.scss */
 .M__pullQuote-text {
   color: black;
   font-size: 1.25em; }
 
-/* line 938, C:/MSEI/src/_global/M__molecules.scss */
+/* line 1024, C:/MSEI/src/_global/M__molecules.scss */
 .M__pullQuote-icon {
   margin-top: 0.625em;
   margin-right: 0.625em; }
 
-/* line 942, C:/MSEI/src/_global/M__molecules.scss */
+/* line 1028, C:/MSEI/src/_global/M__molecules.scss */
 .M__pullQuote-retweet {
   margin-bottom: 0.75em;
   margin-top: 1.375em;
@@ -1230,121 +1321,137 @@ img.M__contentThumb-imageu.u-absolute {
   text-transform: uppercase; }
 
 @media (max-width: 62.5em) {
-  /* line 952, C:/MSEI/src/_global/M__molecules.scss */
+  /* line 1038, C:/MSEI/src/_global/M__molecules.scss */
   .M__pullQuote-main {
     max-width: 18.75em;
-    width: 100%;
-    margin: 3.75em 0; } }
+    width: 100%; }
+  /* line 1044, C:/MSEI/src/_global/M__molecules.scss */
+  .M__pullQuote-main {
+    margin-bottom: 3.125em; } }
 
-@media (max-width: 43.75em) {
-  /* line 959, C:/MSEI/src/_global/M__molecules.scss */
+@media (max-width: 62.5em) {
+  /* line 1052, C:/MSEI/src/_global/M__molecules.scss */
   .M__pullQuote-main {
     max-width: 100%; }
-  /* line 962, C:/MSEI/src/_global/M__molecules.scss */
+  /* line 1055, C:/MSEI/src/_global/M__molecules.scss */
   .M__pullQuote-quote {
     margin: 0;
     padding: 0;
     border: 0; } }
 
-/* line 981, C:/MSEI/src/_global/M__molecules.scss */
+/* line 1074, C:/MSEI/src/_global/M__molecules.scss */
 .M__footColumn-main {
   padding-left: 1.25em; }
 
-/* line 984, C:/MSEI/src/_global/M__molecules.scss */
+/* line 1077, C:/MSEI/src/_global/M__molecules.scss */
 .M__footColumn-link {
   margin-bottom: 0.8125em;
   color: #ccc;
   font-size: 0.8125em; }
-  /* line 988, C:/MSEI/src/_global/M__molecules.scss */
+  /* line 1081, C:/MSEI/src/_global/M__molecules.scss */
   .M__footColumn-link:hover {
     color: red; }
 
-/* line 991, C:/MSEI/src/_global/M__molecules.scss */
+/* line 1084, C:/MSEI/src/_global/M__molecules.scss */
 .M__footColumn-heading {
   font: 700 1em "Roboto Condensed";
   text-transform: uppercase;
   color: white;
   margin-bottom: 0.9375em;
   color: #ccc; }
-  /* line 997, C:/MSEI/src/_global/M__molecules.scss */
+  /* line 1090, C:/MSEI/src/_global/M__molecules.scss */
   .M__footColumn-heading:hover {
     color: red; }
 
 @media (max-width: 62.5em) {
-  /* line 1032, C:/MSEI/src/_global/M__molecules.scss */
+  /* line 1125, C:/MSEI/src/_global/M__molecules.scss */
   .M__socialLinkButton-circle {
     background: #444;
     height: 5em;
     border-radius: 2.5em; }
-  /* line 1037, C:/MSEI/src/_global/M__molecules.scss */
+  /* line 1130, C:/MSEI/src/_global/M__molecules.scss */
   .M__socialLinkButton-container {
     padding-top: 1.875em; }
-  /* line 1040, C:/MSEI/src/_global/M__molecules.scss */
+  /* line 1133, C:/MSEI/src/_global/M__molecules.scss */
   .M__socialLinkButton-icon {
     margin: 0 auto; } }
 
-/* line 1057, C:/MSEI/src/_global/M__molecules.scss */
+/* line 1150, C:/MSEI/src/_global/M__molecules.scss */
 .M__Login-main {
   color: #ccc;
   font-size: 0.8125em;
   font-weight: 700;
   text-transform: uppercase;
   height: 100%; }
-  /* line 1063, C:/MSEI/src/_global/M__molecules.scss */
+  /* line 1156, C:/MSEI/src/_global/M__molecules.scss */
   .M__Login-main:hover {
     color: red; }
 
-/* line 1067, C:/MSEI/src/_global/M__molecules.scss */
+/* line 1160, C:/MSEI/src/_global/M__molecules.scss */
 .M__Login-container {
   padding: 0 0.9375em;
   margin: 0.9375em 0; }
 
-/* line 1071, C:/MSEI/src/_global/M__molecules.scss */
+/* line 1164, C:/MSEI/src/_global/M__molecules.scss */
 .M__Login-icon {
   margin-right: 0.4375em; }
 
-/* line 1074, C:/MSEI/src/_global/M__molecules.scss */
+/* line 1167, C:/MSEI/src/_global/M__molecules.scss */
 .M__Login-icon {
   margin-top: 1px; }
 
-/* line 1093, C:/MSEI/src/_global/M__molecules.scss */
+/* line 1186, C:/MSEI/src/_global/M__molecules.scss */
 .M__mainNavButton-main {
   text-align: center;
   font-family: "Roboto Condensed"; }
 
-/* line 1097, C:/MSEI/src/_global/M__molecules.scss */
+/* line 1190, C:/MSEI/src/_global/M__molecules.scss */
 .M__mainNavButton-centre {
   display: table;
   margin: 0 auto; }
 
-/* line 1101, C:/MSEI/src/_global/M__molecules.scss */
+/* line 1194, C:/MSEI/src/_global/M__molecules.scss */
 .M__mainNavButton-text {
   text-transform: uppercase;
   font-weight: 700; }
 
-/* line 1105, C:/MSEI/src/_global/M__molecules.scss */
+/* line 1198, C:/MSEI/src/_global/M__molecules.scss */
 .M__mainNavButton-main {
   color: black;
   border-left: 0.0625em solid white; }
-  /* line 1108, C:/MSEI/src/_global/M__molecules.scss */
+  /* line 1201, C:/MSEI/src/_global/M__molecules.scss */
   .M__mainNavButton-main:hover:not(.is-activated) {
     background: red;
     color: white; }
-  /* line 1112, C:/MSEI/src/_global/M__molecules.scss */
+  /* line 1205, C:/MSEI/src/_global/M__molecules.scss */
   .M__mainNavButton-main.is-activated .M__mainNavButton-container {
     border-bottom: 0.25em solid #cdcdcd;
     background: #cdcdcd; }
 
-/* line 1120, C:/MSEI/src/_global/M__molecules.scss */
+/* line 1213, C:/MSEI/src/_global/M__molecules.scss */
 .M__mainNavButton-container {
   border-bottom: 0.25em solid #aaaaaa;
   padding-top: 0.9375em;
   height: 3.125em; }
 
-/* line 1125, C:/MSEI/src/_global/M__molecules.scss */
+/* line 1218, C:/MSEI/src/_global/M__molecules.scss */
 .M__mainNavButton-arrow {
   margin-top: 0.375em;
   margin-left: 0.1875em; }
+
+@media (max-width: 62.5em) {
+  /* line 1223, C:/MSEI/src/_global/M__molecules.scss */
+  .M__mainNavButton-container {
+    height: 100px; }
+  /* line 1226, C:/MSEI/src/_global/M__molecules.scss */
+  .M__mainNavButton-arrow {
+    display: none; }
+  /* line 1229, C:/MSEI/src/_global/M__molecules.scss */
+  .M__mainNavButton-centre {
+    font-size: 0.625em; }
+  /* line 1232, C:/MSEI/src/_global/M__molecules.scss */
+  .M__mainNavButton-centre {
+    padding-top: 23px; } }
 
 /* line 45, C:/MSEI/src/_global/O__organisms.scss */
 .O__magazineMockupBlock-main {
@@ -1536,23 +1643,28 @@ O__categoryList-heading {
 .O__mainNavList-item {
   width: 12.5%; }
 
-/* line 356, C:/MSEI/src/_global/O__organisms.scss */
+@media (max-width: 62.5em) {
+  /* line 356, C:/MSEI/src/_global/O__organisms.scss */
+  .O__topNav-item:nth-last-child(1) a .M__topNavButton-main .M__topNavButton-container {
+    border: none; } }
+
+/* line 371, C:/MSEI/src/_global/O__organisms.scss */
 .O__footColumnList-item {
   width: 12.5%; }
 
 @media (max-width: 62.5em) {
-  /* line 360, C:/MSEI/src/_global/O__organisms.scss */
+  /* line 375, C:/MSEI/src/_global/O__organisms.scss */
   .O__footColumnList-item {
     width: 25%; }
-  /* line 363, C:/MSEI/src/_global/O__organisms.scss */
+  /* line 378, C:/MSEI/src/_global/O__organisms.scss */
   .O__footColumnList-item:nth-of-type(-n+4) {
     min-height: 15.625em; } }
 
 @media (max-width: 43.75em) {
-  /* line 368, C:/MSEI/src/_global/O__organisms.scss */
+  /* line 383, C:/MSEI/src/_global/O__organisms.scss */
   .M__footColumn-heading {
     margin: 0; }
-  /* line 371, C:/MSEI/src/_global/O__organisms.scss */
+  /* line 386, C:/MSEI/src/_global/O__organisms.scss */
   .O__footColumnList-item {
     float: none;
     width: 100%;
@@ -1560,36 +1672,36 @@ O__categoryList-heading {
     text-align: center;
     border-bottom: solid 0.0625em white;
     margin: 0; }
-  /* line 379, C:/MSEI/src/_global/O__organisms.scss */
+  /* line 394, C:/MSEI/src/_global/O__organisms.scss */
   .M__footColumn-link {
     display: none; }
-  /* line 382, C:/MSEI/src/_global/O__organisms.scss */
+  /* line 397, C:/MSEI/src/_global/O__organisms.scss */
   .O__footColumnList-item:nth-of-type(-n+4) {
     min-height: 0em;
     margin: 0; } }
 
-/* line 400, C:/MSEI/src/_global/O__organisms.scss */
+/* line 415, C:/MSEI/src/_global/O__organisms.scss */
 .O__disclaimerLinksList-main {
   display: table;
   margin: 0 auto; }
 
 @media (max-width: 43.75em) {
-  /* line 405, C:/MSEI/src/_global/O__organisms.scss */
+  /* line 420, C:/MSEI/src/_global/O__organisms.scss */
   .O__disclaimerLinksList-main {
     display: block;
     border-bottom: 1px solid white; }
-  /* line 409, C:/MSEI/src/_global/O__organisms.scss */
+  /* line 424, C:/MSEI/src/_global/O__organisms.scss */
   .O__disclaimerLinksList-item {
     float: none;
     padding: 1.875em 0;
     border-top: 1px solid white; } }
 
-/* line 429, C:/MSEI/src/_global/O__organisms.scss */
+/* line 444, C:/MSEI/src/_global/O__organisms.scss */
 .O__socialShareList-main {
   border-top: 0.0625em solid #cdcdcd; }
 
 @media (max-width: 62.5em) {
-  /* line 433, C:/MSEI/src/_global/O__organisms.scss */
+  /* line 448, C:/MSEI/src/_global/O__organisms.scss */
   .O__socialShareList-main {
     border: 0;
     margin-bottom: 1.875em; } }
@@ -1711,20 +1823,77 @@ O__categoryList-heading {
   #__topNav-col2 {
     display: none; } }
 
-/* line 125, C:/MSEI/src/_global/head.scss */
+/* line 126, C:/MSEI/src/_global/head.scss */
 #__menuMagazine-main {
   background: #cdcdcd;
   padding-top: 1.875em;
   padding-bottom: 3em 5; }
 
-/* line 126, C:/MSEI/src/_global/head.scss */
+/* line 127, C:/MSEI/src/_global/head.scss */
 #__menuMagazine-centre {
   width: 78.4375em;
   margin: 0 auto; }
 
-/* line 128, C:/MSEI/src/_global/head.scss */
+/* line 129, C:/MSEI/src/_global/head.scss */
 #__menuMagazine-main:not(.is-activated) {
   display: none; }
+
+@media (max-width: 81.25em) {
+  /* line 138, C:/MSEI/src/_global/head.scss */
+  #__mainNav-centre {
+    width: 90%; }
+  /* line 140, C:/MSEI/src/_global/head.scss */
+  #__mainNav-col1 {
+    width: 95%; }
+  /* line 141, C:/MSEI/src/_global/head.scss */
+  #__mainNav-col2 {
+    width: 5%; }
+  /* line 142, C:/MSEI/src/_global/head.scss */
+  #__secondaryNav-centre {
+    width: 90%; }
+  /* line 143, C:/MSEI/src/_global/head.scss */
+  #__menuContent-col1 {
+    width: 300px; } }
+
+@media (max-width: 62.5em) {
+  /* line 151, C:/MSEI/src/_global/head.scss */
+  #__menuContent-col1 {
+    width: 90px; }
+  /* line 152, C:/MSEI/src/_global/head.scss */
+  #__mainNav-centre {
+    width: 100%; }
+  /* line 154, C:/MSEI/src/_global/head.scss */
+  #__mainNav-col1 {
+    width: 90%; }
+  /* line 155, C:/MSEI/src/_global/head.scss */
+  #__mainNav-col2 {
+    width: 10%; }
+  /* line 157, C:/MSEI/src/_global/head.scss */
+  #__topNav-col1-col1 {
+    float: none; }
+  /* line 159, C:/MSEI/src/_global/head.scss */
+  #__topNav-col1-col2 {
+    float: none;
+    display: table;
+    margin: 0 auto; } }
+
+@media (max-width: 43.75em) {
+  /* line 166, C:/MSEI/src/_global/head.scss */
+  #__leaderboard-main {
+    display: none; }
+  /* line 167, C:/MSEI/src/_global/head.scss */
+  #__topNav-col1-col1 {
+    display: none; }
+  /* line 168, C:/MSEI/src/_global/head.scss */
+  #__topNav-col1-col2 {
+    height: 3.75em;
+    padding-top: 0.625em; }
+  /* line 169, C:/MSEI/src/_global/head.scss */
+  #__menuContent-col1 {
+    width: 100%; }
+  /* line 170, C:/MSEI/src/_global/head.scss */
+  #__menuContent-col2 {
+    display: none; } }
 
 /* line 15, C:/MSEI/src/_global/foot.scss */
 #__foot-main {
@@ -1784,7 +1953,7 @@ O__categoryList-heading {
   /* line 66, C:/MSEI/src/_global/foot.scss */
   #__foot-BottomBar-row2 {
     width: 31.25em;
-    margin: 1.875em auto; }
+    margin: 1.875em auto 0 auto; }
   /* line 70, C:/MSEI/src/_global/foot.scss */
   #__foot-BottomBar-row2 {
     float: none;
@@ -1810,266 +1979,281 @@ O__categoryList-heading {
     width: 25.625em; } }
 
 @media (max-width: 43.75em) {
-  /* line 101, C:/MSEI/src/_global/foot.scss */
+  /* line 103, C:/MSEI/src/_global/foot.scss */
   #__foot-BottomBar-row2 {
     display: block;
     width: 90%; }
-  /* line 102, C:/MSEI/src/_global/foot.scss */
+  /* line 104, C:/MSEI/src/_global/foot.scss */
   #__footContent-centre {
     border-bottom: 0;
     padding: 0; } }
 
+/* This class gets applied by JavaScript */
+/* line 119, C:/MSEI/src/_global/foot.scss */
+.sticky {
+  position: fixed;
+  background: red;
+  left: 0;
+  top: 0; }
+
+/* The scripts also wraps the element in this to avoid jumpy behaviour when switching to pos: fixed */
 @media (max-width: 62.5em) {
   /* line 10, C:/MSEI/src/_global/#__layouts.scss */
   body {
-    font-size: 1.25em; } }
+    font-size: 20px; } }
 
-/* line 37, C:/MSEI/src/_global/#__layouts.scss */
+/* line 40, C:/MSEI/src/_global/#__layouts.scss */
 #__articleHeader-centre {
   background: white;
   height: 31.25em;
   margin-top: 3.75em; }
 
-/* line 44, C:/MSEI/src/_global/#__layouts.scss */
+/* line 47, C:/MSEI/src/_global/#__layouts.scss */
 #__articleHeader-centre--photoGallery {
   background: white;
   height: auto; }
 
-/* line 50, C:/MSEI/src/_global/#__layouts.scss */
+/* line 53, C:/MSEI/src/_global/#__layouts.scss */
 #__articleHeader-centre {
   width: 78.4375em;
   margin-left: auto;
   margin-right: auto; }
 
-/* line 55, C:/MSEI/src/_global/#__layouts.scss */
+/* line 58, C:/MSEI/src/_global/#__layouts.scss */
 #__articleHeader-col1 {
   width: 53.75em; }
 
-/* line 58, C:/MSEI/src/_global/#__layouts.scss */
+/* line 61, C:/MSEI/src/_global/#__layouts.scss */
 #__articleHeader-col2 {
   width: 23.125em;
   margin-top: 3.0625em; }
 
-/* line 63, C:/MSEI/src/_global/#__layouts.scss */
+/* line 66, C:/MSEI/src/_global/#__layouts.scss */
 #__articleHeader-main {
   height: auto; }
 
 @media (max-width: 81.25em) {
-  /* line 67, C:/MSEI/src/_global/#__layouts.scss */
+  /* line 70, C:/MSEI/src/_global/#__layouts.scss */
   #__articleHeader-col1 {
     padding-right: 1.25em;
     width: 62.5%; }
-  /* line 71, C:/MSEI/src/_global/#__layouts.scss */
+  /* line 74, C:/MSEI/src/_global/#__layouts.scss */
   #__articleHeader-centre {
     width: 90%; }
-  /* line 75, C:/MSEI/src/_global/#__layouts.scss */
+  /* line 78, C:/MSEI/src/_global/#__layouts.scss */
   #__articleHeader-col2 {
     width: 37.5%;
     margin-top: 3.125em; }
-  /* line 80, C:/MSEI/src/_global/#__layouts.scss */
+  /* line 83, C:/MSEI/src/_global/#__layouts.scss */
   #__articleHeader-main {
     height: auto; }
-  /* line 83, C:/MSEI/src/_global/#__layouts.scss */
+  /* line 86, C:/MSEI/src/_global/#__layouts.scss */
   #__menuSearch-centre {
     width: 90%; }
-  /* line 88, C:/MSEI/src/_global/#__layouts.scss */
+  /* line 91, C:/MSEI/src/_global/#__layouts.scss */
   #__articleHeader-centre {
     height: auto; } }
 
 @media (max-width: 62.5em) {
-  /* line 97, C:/MSEI/src/_global/#__layouts.scss */
+  /* line 100, C:/MSEI/src/_global/#__layouts.scss */
   #__articleContent-main {
     margin-top: 2.1875em; }
-  /* line 100, C:/MSEI/src/_global/#__layouts.scss */
+  /* line 103, C:/MSEI/src/_global/#__layouts.scss */
   #__articleContent-col1-row1 {
     margin-bottom: 0.9375em; }
-  /* line 103, C:/MSEI/src/_global/#__layouts.scss */
+  /* line 106, C:/MSEI/src/_global/#__layouts.scss */
   #__articleHeader-centre {
     width: 90%; }
-  /* line 106, C:/MSEI/src/_global/#__layouts.scss */
+  /* line 109, C:/MSEI/src/_global/#__layouts.scss */
   #__articleHeader-col1 {
     width: 80%; }
-  /* line 109, C:/MSEI/src/_global/#__layouts.scss */
+  /* line 112, C:/MSEI/src/_global/#__layouts.scss */
   #__articleHeader-col2 {
     width: 20%;
-    margin-top: 5em; } }
+    margin-top: 5em; }
+  /* line 117, C:/MSEI/src/_global/#__layouts.scss */
+  #__mainNav-main {
+    height: 100px; } }
 
 @media (max-width: 43.75em) {
-  /* line 115, C:/MSEI/src/_global/#__layouts.scss */
+  /* line 128, C:/MSEI/src/_global/#__layouts.scss */
   #__articleContent-col1-row1 {
     margin-bottom: 0.9375em; }
-  /* line 118, C:/MSEI/src/_global/#__layouts.scss */
+  /* line 131, C:/MSEI/src/_global/#__layouts.scss */
   #__articleHeader-centre {
     width: 90%; }
-  /* line 121, C:/MSEI/src/_global/#__layouts.scss */
+  /* line 134, C:/MSEI/src/_global/#__layouts.scss */
   #__articleHeader-col1 {
     width: 100%;
     padding: 0; }
-  /* line 125, C:/MSEI/src/_global/#__layouts.scss */
+  /* line 138, C:/MSEI/src/_global/#__layouts.scss */
   #__articleHeader-col2 {
     width: 100%;
     margin-top: 2.75em; } }
 
-/* line 156, C:/MSEI/src/_global/#__layouts.scss */
+/* line 169, C:/MSEI/src/_global/#__layouts.scss */
 #__articleContent-col1-row1 {
   margin-bottom: 0.9375em; }
 
-/* line 159, C:/MSEI/src/_global/#__layouts.scss */
+/* line 172, C:/MSEI/src/_global/#__layouts.scss */
 #__articleContent-centre {
   width: 78.4375em;
   margin: 3.75em auto; }
 
-/* line 163, C:/MSEI/src/_global/#__layouts.scss */
+/* line 176, C:/MSEI/src/_global/#__layouts.scss */
 #__articleContent-col1-row1 {
   width: 6.875em; }
 
-/* line 166, C:/MSEI/src/_global/#__layouts.scss */
+/* line 179, C:/MSEI/src/_global/#__layouts.scss */
 #__articleContent-col2 {
   width: 37.5em; }
 
-/* line 170, C:/MSEI/src/_global/#__layouts.scss */
+/* line 183, C:/MSEI/src/_global/#__layouts.scss */
 #__articleContent-container {
   width: 53.625em; }
 
 @media (max-width: 81.25em) {
-  /* line 174, C:/MSEI/src/_global/#__layouts.scss */
+  /* line 187, C:/MSEI/src/_global/#__layouts.scss */
   #__articleContent-centre {
     width: 90%; }
-  /* line 177, C:/MSEI/src/_global/#__layouts.scss */
+  /* line 190, C:/MSEI/src/_global/#__layouts.scss */
   #__articleContent-container {
     width: 100%;
     padding-left: 5.625em; }
-  /* line 181, C:/MSEI/src/_global/#__layouts.scss */
+  /* line 194, C:/MSEI/src/_global/#__layouts.scss */
   #__articleContent-col2 {
     float: left; }
-  /* line 185, C:/MSEI/src/_global/#__layouts.scss */
+  /* line 198, C:/MSEI/src/_global/#__layouts.scss */
   #__articleContent-col1 {
     float: right;
     margin-right: 30px; }
-  /* line 188, C:/MSEI/src/_global/#__layouts.scss */
+  /* line 201, C:/MSEI/src/_global/#__layouts.scss */
   #__articleContent-main {
     margin-top: 1.875em; } }
 
 @media (max-width: 62.5em) {
-  /* line 193, C:/MSEI/src/_global/#__layouts.scss */
+  /* line 206, C:/MSEI/src/_global/#__layouts.scss */
   #__articleContent-col2 {
     float: none;
     width: 100%; }
-  /* line 197, C:/MSEI/src/_global/#__layouts.scss */
+  /* line 210, C:/MSEI/src/_global/#__layouts.scss */
   #__articleContent-col1 {
     float: none; }
-  /* line 200, C:/MSEI/src/_global/#__layouts.scss */
+  /* line 213, C:/MSEI/src/_global/#__layouts.scss */
   #__articleContent-container {
     padding: 0; }
-  /* line 203, C:/MSEI/src/_global/#__layouts.scss */
+  /* line 216, C:/MSEI/src/_global/#__layouts.scss */
   #__articleContent-col1-row1 {
     margin: 7.5em auto 1.875em auto; } }
 
-/* line 233, C:/MSEI/src/_global/#__layouts.scss */
+/* line 246, C:/MSEI/src/_global/#__layouts.scss */
 #__otherTenders-main {
   margin-bottom: 3.75pem; }
 
-/* line 236, C:/MSEI/src/_global/#__layouts.scss */
+/* line 249, C:/MSEI/src/_global/#__layouts.scss */
 #__articleFooter-main {
   background: #eeeeee;
   padding: 3.75em 0; }
 
-/* line 240, C:/MSEI/src/_global/#__layouts.scss */
+/* line 253, C:/MSEI/src/_global/#__layouts.scss */
 #__articleFooter-col1 {
   width: 51.6875em; }
 
-/* line 243, C:/MSEI/src/_global/#__layouts.scss */
+/* line 256, C:/MSEI/src/_global/#__layouts.scss */
 #__articleFooter-col1-row3 {
   padding-top: 3.75em; }
 
-/* line 246, C:/MSEI/src/_global/#__layouts.scss */
+/* line 259, C:/MSEI/src/_global/#__layouts.scss */
 #__articleFooter-col2 {
   width: 25em; }
 
-/* line 249, C:/MSEI/src/_global/#__layouts.scss */
+/* line 262, C:/MSEI/src/_global/#__layouts.scss */
 #__articleFooter-centre {
   width: 78.4375em;
   margin: 0 auto; }
 
 @media (max-width: 81.25em) {
-  /* line 254, C:/MSEI/src/_global/#__layouts.scss */
+  /* line 267, C:/MSEI/src/_global/#__layouts.scss */
   #__articleFooter-centre {
     width: 90%; }
-  /* line 257, C:/MSEI/src/_global/#__layouts.scss */
+  /* line 270, C:/MSEI/src/_global/#__layouts.scss */
   #__articleFooter-col2 {
     width: 37.5%; }
-  /* line 260, C:/MSEI/src/_global/#__layouts.scss */
+  /* line 273, C:/MSEI/src/_global/#__layouts.scss */
   #__articleFooter-col1 {
     width: 62.5%;
     padding-right: 1.25em; } }
 
 @media (max-width: 62.5em) {
-  /* line 266, C:/MSEI/src/_global/#__layouts.scss */
+  /* line 279, C:/MSEI/src/_global/#__layouts.scss */
   #__articleFooter-centre {
     width: 90%; }
-  /* line 269, C:/MSEI/src/_global/#__layouts.scss */
+  /* line 282, C:/MSEI/src/_global/#__layouts.scss */
   #__articleFooter-col1 {
     float: none; }
-  /* line 272, C:/MSEI/src/_global/#__layouts.scss */
+  /* line 285, C:/MSEI/src/_global/#__layouts.scss */
   #__articleFooter-col2 {
     float: none; }
-  /* line 275, C:/MSEI/src/_global/#__layouts.scss */
+  /* line 288, C:/MSEI/src/_global/#__layouts.scss */
   #__articleFooter-col2 {
     width: 100%;
     margin-top: 3.75em; }
-  /* line 279, C:/MSEI/src/_global/#__layouts.scss */
+  /* line 292, C:/MSEI/src/_global/#__layouts.scss */
   #__articleFooter-col1 {
     padding-right: 0;
-    display: table; } }
+    display: table; }
+  /* line 298, C:/MSEI/src/_global/#__layouts.scss */
+  #__articleFooter-col1 {
+    width: 100%; } }
 
-/* line 284, C:/MSEI/src/_global/#__layouts.scss */
+/* line 301, C:/MSEI/src/_global/#__layouts.scss */
 #__articleFooterelatedContentAlt-center {
   width: 78.4375em;
   margin: 0 auto; }
 
-/* line 288, C:/MSEI/src/_global/#__layouts.scss */
+/* line 305, C:/MSEI/src/_global/#__layouts.scss */
 #__otherFiles-centre {
   width: 78.4375em;
   margin: 0 auto; }
 
-/* line 292, C:/MSEI/src/_global/#__layouts.scss */
+/* line 309, C:/MSEI/src/_global/#__layouts.scss */
 #__presentationFiles-centre {
   width: 78.4375em;
   margin: 0 auto; }
 
-/* line 296, C:/MSEI/src/_global/#__layouts.scss */
+/* line 313, C:/MSEI/src/_global/#__layouts.scss */
 #__pressRelease-centre {
   width: 78.4375em;
   margin: 0 auto; }
 
-/* line 300, C:/MSEI/src/_global/#__layouts.scss */
+/* line 317, C:/MSEI/src/_global/#__layouts.scss */
 #__pressRelease-main {
   margin: 1.875em 0; }
 
-/* line 303, C:/MSEI/src/_global/#__layouts.scss */
+/* line 320, C:/MSEI/src/_global/#__layouts.scss */
 #__otherFiles-centre {
   margin-top: 1.875em;
   margin-bottom: 1.875em; }
 
-/* line 307, C:/MSEI/src/_global/#__layouts.scss */
+/* line 324, C:/MSEI/src/_global/#__layouts.scss */
 #__presentationFiles-centre {
   margin-top: 1.875em;
   margin-bottom: 1.875em; }
 
-/* line 311, C:/MSEI/src/_global/#__layouts.scss */
+/* line 328, C:/MSEI/src/_global/#__layouts.scss */
 #__pressRelease-centre {
   margin-top: 1.875em;
   margin-bottom: 1.875em; }
 
-/* line 315, C:/MSEI/src/_global/#__layouts.scss */
+/* line 332, C:/MSEI/src/_global/#__layouts.scss */
 #__otherTenders-centre {
   width: 37.5em; }
 
-/* line 318, C:/MSEI/src/_global/#__layouts.scss */
+/* line 335, C:/MSEI/src/_global/#__layouts.scss */
 #__pressRelease-row2 {
   overflow: hidden; }
 
-/* line 321, C:/MSEI/src/_global/#__layouts.scss */
+/* line 338, C:/MSEI/src/_global/#__layouts.scss */
 #__pressRelease-extend {
   width: 79.0625em; }
 

@@ -88,7 +88,7 @@ style
   <div id="__leaderboard-main">
     <div id="__leaderboard-centre"><a href="#">
         <picture>
-          <source srcset="http://lorempixel.com/968/100" media="(min-width: 62.563em)" class="M__featuredImage-image"/><img src="http://lorempixel.com/680/100" class="M__leaderboardAdvert-image"/>
+          <source srcset="http://lorempixel.com/968/100" media="(min-width: 62.563em)" class="M__leaderboardAdvert-image"/><img src="http://lorempixel.com/680/100" class="M__leaderboardAdvert-image"/>
         </picture></a>
     </div>
   </div>
@@ -193,10 +193,13 @@ style
   </div>
   <div id="__menuContent-main">
     <div id="__menuContent-centre" class="u-cf">
+      <div id="__menuContent-col0" class="u-floatLeft"><a href="#" class="u-noUnderline">
+          <div class="A__textMSEI-main">Metering & Smart Energy International</div></a>
+      </div>
       <div id="__menuContent-col1" class="u-floatLeft"><a href="#">
           <div class="A__logo-main">
             <picture>
-              <source srcset="img/logo-compact.png" media="(max-width: 62.563em)" class="M__largeSkyscraperAdvert-image--desktop"/><img src="img/logo.png"/>
+              <!--source.A__logo-image(srcset="img/logo-compact.png" media="(max-width: #{tablet}em) and (min-width: #{mobile}em)")--><img src="img/logo.png" class="A__logo-image"/>
             </picture>
           </div></a>
       </div>
@@ -331,7 +334,7 @@ style
         </div>
         <div class="O__magazinePreview-col2 u-floatLeft">
           <div class="O__magazinePreview-col2-row1">
-            <div class="A__magazinePreviewTitle-main">September 2015 Issue44</div>
+            <div class="A__magazinePreviewTitle-main">September 2015 Issue</div>
           </div>
           <div class="O__magazinePreview-col2-row2">
             <div class="O__magazinePreviewArticles-main">
@@ -392,7 +395,22 @@ style
         </div>
         <div class="O__secondaryNavList-item u-floatLeft"><a href="#" class="u-noUnderline">
             <div class="M__secondaryNavButton-main">
-              <div class="M__secondaryNavButton-container">Webinar Archive</div>
+              <div class="M__secondaryNavButton-container">Data &amp; Analytics</div>
+            </div></a>
+        </div>
+        <div class="O__secondaryNavList-item u-floatLeft"><a href="#" class="u-noUnderline">
+            <div class="M__secondaryNavButton-main">
+              <div class="M__secondaryNavButton-container">Video</div>
+            </div></a>
+        </div>
+        <div class="O__secondaryNavList-item u-floatLeft"><a href="#" class="u-noUnderline">
+            <div class="M__secondaryNavButton-main">
+              <div class="M__secondaryNavButton-container">Video</div>
+            </div></a>
+        </div>
+        <div class="O__secondaryNavList-item u-floatLeft"><a href="#" class="u-noUnderline">
+            <div class="M__secondaryNavButton-main">
+              <div class="M__secondaryNavButton-container">Video</div>
             </div></a>
         </div>
       </div>
@@ -472,13 +490,12 @@ style
           <h3>Smart prepayment in UK</h3>
           <p>On> a related note, UK energy supplier EON in early May offered its 30,000 existing customers the chance to switch from prepaid meters to smart meters to reduce electricity costs.</p>
           <p>E.ON's Smart Pay As You Go scheme will offer households with prepaid meters the same tariffs as post-paid households, which it claims makes bills GBP67 cheaper on average than its closest prepayment competitor, reported Metering.com.</p>
-          <div class="M__pullQuote-main u-floatRight">
-            <div class="M__pullQuote-quote u-cf">
-              <div class="M__pullQuote-text">"European regulators must recognise the electricity market value-chain paradigm is no fit for purpose"</div>
-              <div class="M__pullQuote-icon icon-pullQuote u-floatLeft"></div>
-              <div class="M__pullQuote-retweet u-floatLeft">Retweet this Quote</div>
-            </div>
-          </div>
+          <div class="M__pullQuote-main u-floatRight"><a href="#" class="u-noUnderline">
+              <div class="M__pullQuote-quote u-cf">
+                <div class="M__pullQuote-text">"European regulators must recognise the electricity market value-chain paradigm is no fit for purpose"</div>
+                <div class="M__pullQuote-icon icon-articleShare u-floatLeft"></div>
+                <div class="M__pullQuote-retweet u-floatLeft">Retweet this Quote</div>
+              </div></a></div>
           <p> E.ON customers will be able to top up using a mobile device app, online or over the phone, rather than paying cash at their local shop. On a related note, UK energy supplier EON in early May offered its 30,000 existing customers the chance to switch from prepaid meters to smart meters to reduce electricity costs.</p>
           <p>E.ON's Smart Pay As You Go scheme will offer households with prepaid meters the same tariffs as post-paid households, which it claims makes bills GBP67 cheaper on average than its closest prepayment competitor, reported Metering.com.</p>
           <p>The document states: "The trending analysis over the past twelve months shows that the pattern of line disturbances and outages are closely related, giving more proof that monitoring line disturbances as a precursor to outages should become an industry standard." And as found in previous reports, most events occur in the summer months then drop off dramatically in October, with a slight uptick in the winter during the months of November and December.</p>
@@ -722,7 +739,7 @@ style
   <div id="__footTopBar-main">
     <div id="__footTopBar-centre" class="u-cf">
       <div id="__footTopBar-col1" class="u-floatLeft"><a href="#" class="u-noUnderline">
-          <div class="A__textMSEI-main">Metering & Smart Energy International</div></a>
+          <div class="A__textMSEI-main A__textMSEI-main--footer">Metering & Smart Energy International</div></a>
       </div>
       <div id="__footTopBar-col2" class="u-floatRight">
         <div class="O__socialLinkList--head-main u-cf">
@@ -938,11 +955,14 @@ style
 <script src="http://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.pack.js"></script>
 <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.12/jquery.mousewheel.min.js"></script>
 <script src="js/scripts.js"></script>
-<script src="js/libraries/sticky/jquery.sticky.js"></script>
+<!--script(src="js/libraries/sticky/jquery.sticky.js")-->
+
+
+
 <script>
-  $(document).ready(function(){
-     $("#__articleContent-sticky").sticky({getWidthFrom: '#__articleContent-col1', topSpacing: 300});
-   });
+  
+  
+  
   $(document).ready(function () {
   $(".fancybox").fancybox({
     openEffect: 'fade',

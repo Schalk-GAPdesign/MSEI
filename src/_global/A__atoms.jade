@@ -71,7 +71,7 @@
 
 mixin A__magazineMockupText
     .A__magazineMockupText-main
-        |This article originally <strong>appeared in the following issue of our bi-monthly print magazine</strong>. The digital version of the magazine can be read online or downloaded entirely free of charge.
+        |This article originally <strong>appeared in the following issue of our bi-monthly print magazine</strong>. The digital version of the magazine can be read online or downloaded entirely free of charge.a
 
 
 //-///////////////////////////////////////////////////////////////////////////////
@@ -86,7 +86,7 @@ mixin A__magazineMockupText
 
 
 mixin A__magazinePreviewTitle
-    .A__magazinePreviewTitle-main September 2015 Issue44
+    .A__magazinePreviewTitle-main September 2015 Issue
 
 
 //-///////////////////////////////////////////////////////////////////////////////
@@ -104,8 +104,8 @@ mixin A__logo
     a(href="#")
         .A__logo-main
             picture
-                source.M__largeSkyscraperAdvert-image--desktop(srcset="img/logo-compact.png" media="(max-width: #{tablet}em)")
-                img(src="img/logo.png")
+                //source.A__logo-image(srcset="img/logo-compact.png" media="(max-width: #{tablet}em) and (min-width: #{mobile}em)")
+                img.A__logo-image(src="img/logo.png")
 
 
 //-///////////////////////////////////////////////////////////////////////////////
@@ -145,6 +145,11 @@ mixin A__disclaimerText
 //-                                                                             //
 //-                                                                             //
 //-///////////////////////////////////////////////////////////////////////////////
+
+
+mixin A__textMSEI--footer
+    a(href="#").u-noUnderline
+        .A__textMSEI-main.A__textMSEI-main--footer Metering & Smart Energy International
 
 
 mixin A__textMSEI

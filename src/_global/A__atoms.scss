@@ -54,7 +54,7 @@
 //-                                                                             //
 //-///////////////////////////////////////////////////////////////////////////////
 
-
+.A__logo-image{max-width: 100%;}
 
 //-///////////////////////////////////////////////////////////////////////////////
 //-                                                                             //
@@ -103,7 +103,7 @@
 .A__disclaimerText-Link {
     color: #ccc;
 }
-@include mobile {
+@include tablet {
     .A__disclaimerText-line {
         float: none;
         line-height: em(20);
@@ -126,9 +126,11 @@
     font: 700 em(26) "Roboto Condensed";
     text-transform: uppercase;
     color: white;
-    &:hover {
-        color: red;
-    }
+
+.A__textMSEI-main--footer:hover {
+    color: red;
+}
+
 }
 @include mobile {
     .A__textMSEI-main {

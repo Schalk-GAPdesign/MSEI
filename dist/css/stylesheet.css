@@ -99,6 +99,14 @@ li {
   border-left: 1px solid #999999;
 }
 
+@media (max-width: 62.5em) {
+  p {
+    line-height: 1.875em;
+    margin-top: 3em;
+    margin-bottom: 3em;
+  }
+}
+
 /*
 Icon classes can be used entirely standalone. They are named after their original file names.
 
@@ -112,77 +120,91 @@ Icon classes can be used entirely standalone. They are named after their origina
 */
 .icon-arrow {
   background-image: url(../img/spritesheet.png);
-  background-position: -172px -144px;
+  background-position: -10px -182px;
   width: 10px;
   height: 16px;
 }
 
 .icon-arrowWhite, .M__heading-prompt:hover .icon-arrow, .M__textPrompt-row2:hover .icon-arrow {
   background-image: url(../img/spritesheet.png);
-  background-position: -172px -128px;
+  background-position: 0px -182px;
   width: 10px;
   height: 16px;
 }
 
+.icon-articleShare {
+  background-image: url(../img/spritesheet.png);
+  background-position: -142px -30px;
+  width: 27px;
+  height: 27px;
+}
+
+.icon-articleShareRed, .M__pullQuote-quote:hover .M__pullQuote-icon {
+  background-image: url(../img/spritesheet.png);
+  background-position: -142px -57px;
+  width: 27px;
+  height: 27px;
+}
+
 .icon-close {
   background-image: url(../img/spritesheet.png);
-  background-position: -142px -56px;
+  background-position: -130px -141px;
   width: 24px;
   height: 25px;
 }
 
 .icon-closeQuote {
   background-image: url(../img/spritesheet.png);
-  background-position: -66px -141px;
+  background-position: -98px -141px;
   width: 32px;
   height: 26px;
 }
 
 .icon-closeQuoteRed {
   background-image: url(../img/spritesheet.png);
-  background-position: -98px -141px;
+  background-position: -66px -141px;
   width: 32px;
   height: 26px;
 }
 
 .icon-closeWhite, .M__closeButton-main:hover .M__closeButton-col1 {
   background-image: url(../img/spritesheet.png);
-  background-position: -142px -81px;
+  background-position: -142px -110px;
   width: 24px;
   height: 25px;
 }
 
 .icon-dropdown {
   background-image: url(../img/spritesheet.png);
-  background-position: -162px -106px;
+  background-position: -90px -101px;
   width: 10px;
   height: 7px;
 }
 
 .icon-dropdownWhite, .M__mainNavButton-main:hover:not(.is-activated) .M__mainNavButton-container .M__mainNavButton-centre .M__mainNavButton-arrow {
   background-image: url(../img/spritesheet.png);
-  background-position: -172px -160px;
+  background-position: -172px -155px;
   width: 10px;
   height: 7px;
 }
 
 .icon-footerDot {
   background-image: url(../img/spritesheet.png);
-  background-position: -186px -52px;
+  background-position: -191px -18px;
   width: 4px;
   height: 3px;
 }
 
 .icon-login {
   background-image: url(../img/spritesheet.png);
-  background-position: -172px -82px;
+  background-position: -154px -141px;
   width: 13px;
   height: 13px;
 }
 
 .icon-loginRed, .M__Login-main:hover .M__Login-container .icon-login {
   background-image: url(../img/spritesheet.png);
-  background-position: -172px -69px;
+  background-position: -120px -127px;
   width: 13px;
   height: 13px;
 }
@@ -203,119 +225,119 @@ Icon classes can be used entirely standalone. They are named after their origina
 
 .icon-pullQuote {
   background-image: url(../img/spritesheet.png);
-  background-position: -142px -30px;
+  background-position: -142px -84px;
   width: 26px;
   height: 26px;
 }
 
 .icon-search {
   background-image: url(../img/spritesheet.png);
-  background-position: -142px -106px;
+  background-position: -112px -90px;
   width: 20px;
   height: 20px;
 }
 
 .icon-searchWhite, .M__mainNavsearch-main:hover .M__mainNavsearch-container:not(.is-activated) .M__mainNavsearch-icon {
   background-image: url(../img/spritesheet.png);
-  background-position: -112px -90px;
+  background-position: -90px -81px;
   width: 20px;
   height: 20px;
 }
 
 .icon-facebook {
   background-image: url(../img/spritesheet.png);
-  background-position: -172px -110px;
+  background-position: -132px -90px;
   width: 9px;
   height: 18px;
 }
 
 .icon-facebookRed, .M__socialLinkButton-icon.icon-facebook:hover {
   background-image: url(../img/spritesheet.png);
-  background-position: -181px -110px;
+  background-position: -191px 0px;
   width: 9px;
   height: 18px;
 }
 
 .icon-google {
   background-image: url(../img/spritesheet.png);
-  background-position: -172px 0px;
+  background-position: -172px -54px;
   width: 18px;
   height: 18px;
 }
 
 .icon-googleRed, .M__socialLinkButton-icon.icon-google:hover {
   background-image: url(../img/spritesheet.png);
-  background-position: -149px -141px;
+  background-position: -172px -36px;
   width: 18px;
   height: 18px;
 }
 
 .icon-linkedin {
   background-image: url(../img/spritesheet.png);
-  background-position: -130px -141px;
+  background-position: -172px -18px;
   width: 19px;
   height: 18px;
 }
 
 .icon-linkedinRed, .M__socialLinkButton-icon.icon-linkedin:hover {
   background-image: url(../img/spritesheet.png);
-  background-position: -120px -111px;
+  background-position: -172px 0px;
   width: 19px;
   height: 18px;
 }
 
 .icon-rss {
   background-image: url(../img/spritesheet.png);
-  background-position: -172px -35px;
+  background-position: -172px -121px;
   width: 17px;
   height: 17px;
 }
 
 .icon-rssRed, .M__socialLinkButton-icon.icon-rss:hover {
   background-image: url(../img/spritesheet.png);
-  background-position: -172px -18px;
+  background-position: -172px -104px;
   width: 17px;
   height: 17px;
 }
 
 .icon-twitter {
   background-image: url(../img/spritesheet.png);
-  background-position: -19px -167px;
+  background-position: -172px -88px;
   width: 19px;
   height: 16px;
 }
 
 .icon-twitterRed, .M__socialLinkButton-icon.icon-twitter:hover {
   background-image: url(../img/spritesheet.png);
-  background-position: 0px -167px;
+  background-position: -172px -72px;
   width: 19px;
   height: 16px;
 }
 
 .icon-youtube {
   background-image: url(../img/spritesheet.png);
-  background-position: -81px -62px;
+  background-position: -120px -111px;
   width: 22px;
   height: 16px;
 }
 
 .icon-youtubeRed, .M__socialLinkButton-icon.icon-youtube:hover {
   background-image: url(../img/spritesheet.png);
-  background-position: -90px -81px;
+  background-position: -81px -62px;
   width: 22px;
   height: 16px;
 }
 
 .icon-commentShare {
   background-image: url(../img/spritesheet.png);
-  background-position: -30px -111px;
+  background-position: -112px -30px;
   width: 30px;
   height: 30px;
 }
 
 .icon-commentShareWhite, .M__socialShareButton-main:hover .icon-commentShare {
   background-image: url(../img/spritesheet.png);
-  background-position: -30px -81px;
+  background-position: -112px -60px;
   width: 30px;
   height: 30px;
 }
@@ -329,7 +351,7 @@ Icon classes can be used entirely standalone. They are named after their origina
 
 .icon-emailShareWhite, .M__socialShareButton-main:hover .icon-emailShare {
   background-image: url(../img/spritesheet.png);
-  background-position: -112px -30px;
+  background-position: -30px -81px;
   width: 30px;
   height: 30px;
 }
@@ -357,21 +379,21 @@ Icon classes can be used entirely standalone. They are named after their origina
 
 .icon-googleShareWhite, .M__socialShareButton-main:hover .icon-googleShare {
   background-image: url(../img/spritesheet.png);
-  background-position: -142px 0px;
+  background-position: -112px 0px;
   width: 30px;
   height: 30px;
 }
 
 .icon-linkedShareWhite, .M__socialShareButton-main:hover .icon-linkedinShare {
   background-image: url(../img/spritesheet.png);
-  background-position: -112px -60px;
+  background-position: 0px -111px;
   width: 30px;
   height: 30px;
 }
 
 .icon-linkedinShare {
   background-image: url(../img/spritesheet.png);
-  background-position: 0px -111px;
+  background-position: -30px -111px;
   width: 30px;
   height: 30px;
 }
@@ -385,21 +407,21 @@ Icon classes can be used entirely standalone. They are named after their origina
 
 .icon-twitterShareWhite, .M__socialShareButton-main:hover .icon-twitterShare {
   background-image: url(../img/spritesheet.png);
-  background-position: -112px 0px;
+  background-position: -142px 0px;
   width: 30px;
   height: 30px;
 }
 
 .icon-calender {
   background-image: url(../img/spritesheet.png);
-  background-position: -172px -52px;
+  background-position: -172px -138px;
   width: 14px;
   height: 17px;
 }
 
 .icon-map {
   background-image: url(../img/spritesheet.png);
-  background-position: -172px -95px;
+  background-position: 0px -167px;
   width: 11px;
   height: 15px;
 }
@@ -416,6 +438,10 @@ Icon classes can be used entirely standalone. They are named after their origina
   background-position: -81px 0px;
   width: 31px;
   height: 31px;
+}
+
+.A__logo-image {
+  max-width: 100%;
 }
 
 .A__magazinePreviewTitle-main {
@@ -446,7 +472,7 @@ Icon classes can be used entirely standalone. They are named after their origina
   color: #ccc;
 }
 
-@media (max-width: 43.75em) {
+@media (max-width: 62.5em) {
   .A__disclaimerText-line {
     float: none;
     line-height: 1.25em;
@@ -459,7 +485,7 @@ Icon classes can be used entirely standalone. They are named after their origina
   color: white;
 }
 
-.A__textMSEI-main:hover {
+.A__textMSEI-main .A__textMSEI-main--footer:hover {
   color: red;
 }
 
@@ -654,7 +680,7 @@ img.M__contentThumb-imageu.u-absolute {
   background: rgba(0, 0, 0, 0.7);
   height: 6.25em;
   width: 100%;
-  padding-bottom: 1.875em;
+  padding-bottom: 1.25em;
 }
 
 .M__contentThumb-mediaPlay {
@@ -679,16 +705,17 @@ img.M__contentThumb-imageu.u-absolute {
 
 .M__contentThumb-prompt {
   height: 0;
-  width: 5.9375em;
+  width: 7em;
   padding: 0 0 0 0.625em;
   overflow: hidden;
   -webkit-transition: all 0.5s ease;
           transition: all 0.5s ease;
   opacity: 0;
+  margin-top: 1.25em;
 }
 
 .M__contentThumb-main:hover .M__contentThumb-container .M__contentThumb-overlay .M__contentThumb-row .M__contentThumb-content .M__contentThumb-prompt {
-  height: 1.75em;
+  height: 1.875em;
   padding: 0.3125em 0 0 0.625em;
   -webkit-transition: all 0.3s ease;
           transition: all 0.3s ease;
@@ -736,6 +763,10 @@ img.M__contentThumb-imageu.u-absolute {
   -webkit-backface-visibility: hidden;
 }
 
+.M__largeSkyscraperAdvert-image--mobile {
+  width: 100%;
+}
+
 .M__largeSkyscraperAdvert-main {
   border: 0.0625em solid #cdcdcd;
   background: #eeeeee;
@@ -755,6 +786,12 @@ img.M__contentThumb-imageu.u-absolute {
 .M__largeSkyscraperAdvert-container {
   display: table;
   margin: 0 auto;
+}
+
+@media (max-width: 62.5em) {
+  .M__largeSkyscraperAdvert-title {
+    font-size: 0.625em;
+  }
 }
 
 .M__heading-main {
@@ -793,11 +830,11 @@ img.M__contentThumb-imageu.u-absolute {
 @media (max-width: 62.5em) {
   .M__heading-title {
     padding: 0.875em 0.625em 0 0.625em;
-    height: 3.5em;
+    height: 2.6875em;
   }
   .M__heading-prompt {
-    padding: 1.875em 0.625em 0 0.625em;
-    height: 5.625em;
+    padding: 1.875em 0.9375em 0 0.9375em;
+    height: 4.375em;
   }
 }
 
@@ -817,6 +854,8 @@ img.M__contentThumb-imageu.u-absolute {
   .M__heading-title {
     float: none;
     height: 100%;
+    padding-bottom: 0.625em;
+    text-align: center;
   }
   .M__heading-main {
     width: 100%;
@@ -900,6 +939,18 @@ img.M__contentThumb-imageu.u-absolute {
   }
 }
 
+@media (max-width: 62.5em) {
+  .M__featuredImage-container {
+    height: 35.25em;
+  }
+}
+
+@media (max-width: 43.75em) {
+  .M__featuredImage-container {
+    height: 18.75em;
+  }
+}
+
 .M__topNavButton-container {
   border-right: 1px solid #777;
   padding: 0 0.9375em;
@@ -954,13 +1005,16 @@ img.M__contentThumb-imageu.u-absolute {
   }
   .M__socialShareButton-icon {
     float: none;
-    margin: 0 auto;
+    margin: 0.875em auto;
     display: table;
   }
   .M__socialShareButton-text {
     float: none;
     text-align: center;
     padding-left: 0;
+  }
+  .M__socialShareButton-text {
+    display: none;
   }
 }
 
@@ -992,9 +1046,12 @@ img.M__contentThumb-imageu.u-absolute {
 }
 
 @media (max-width: 62.5em) {
-  .M__textPrompt-main {
+  .M__textPrompt-container {
     height: 5em;
-    padding: 1.75em;
+    padding: 0 0.625em 0 0.625em;
+  }
+  .M__textPrompt-col1 {
+    padding-top: 1.75em;
   }
 }
 
@@ -1128,6 +1185,20 @@ img.M__contentThumb-imageu.u-absolute {
   color: red;
 }
 
+@media (max-width: 62.5em) {
+  .M__secondaryNavButton-container {
+    font-size: 0.625em;
+    padding-top: 20px;
+  }
+  .M__secondaryNavButton-main {
+    height: 80px;
+  }
+  .M__secondaryNavButton-container {
+    height: 60px;
+    vertical-align: middle;
+  }
+}
+
 .M__Search-keywordContainer {
   width: 25em;
 }
@@ -1163,7 +1234,6 @@ img.M__contentThumb-imageu.u-absolute {
   background: #ed1b25;
   color: white;
   border: none;
-  padding: 0 2.5em;
   text-transform: uppercase;
   font-family: "Roboto Condensed";
   font-weight: 700;
@@ -1206,6 +1276,46 @@ img.M__contentThumb-imageu.u-absolute {
 }
 
 @media (max-width: 62.5em) {
+  .M__Search-button {
+    padding-left: 0.9375em;
+    padding-right: 0.9375em;
+  }
+}
+
+@media (max-width: 62.5em) {
+  .M__mainNavsearch-container {
+    height: 100px;
+  }
+  .M__mainNavsearch-icon {
+    margin-top: 22px;
+  }
+}
+
+@media (max-width: 43.75em) {
+  .M__Search-keywordContainer {
+    float: none;
+    width: 100%;
+  }
+  .M__Search-categoryContainer {
+    float: none;
+    width: 100%;
+  }
+  .M__Search-buttonContainer {
+    float: none;
+    width: 100%;
+  }
+  .M__Search-keyword {
+    width: 100%;
+  }
+  .M__Search-category {
+    width: 100%;
+  }
+  .M__Search-button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 62.5em) {
   .M__Search-keywordContainer {
     width: 50%;
   }
@@ -1216,13 +1326,16 @@ img.M__contentThumb-imageu.u-absolute {
     width: 25%;
   }
   .M__Search-keyword {
-    height: 5.625em;
+    height: 3.75em;
   }
   .M__Search-button {
-    height: 5.625em;
+    height: 3.75em;
   }
   .M__Search-category {
-    height: 5.625em;
+    height: 3.75em;
+  }
+  .M__Search-main {
+    height: 100px;
   }
 }
 
@@ -1233,6 +1346,14 @@ img.M__contentThumb-imageu.u-absolute {
   font-weight: 700;
   padding: 0.3125em 0;
   width: 15em;
+}
+
+.M__pullQuote-quote:hover .M__pullQuote-text {
+  color: red;
+}
+
+.M__pullQuote-quote:hover .M__pullQuote-retweet {
+  color: red;
 }
 
 .M__pullQuote-quote {
@@ -1266,11 +1387,13 @@ img.M__contentThumb-imageu.u-absolute {
   .M__pullQuote-main {
     max-width: 18.75em;
     width: 100%;
-    margin: 3.75em 0;
+  }
+  .M__pullQuote-main {
+    margin-bottom: 3.125em;
   }
 }
 
-@media (max-width: 43.75em) {
+@media (max-width: 62.5em) {
   .M__pullQuote-main {
     max-width: 100%;
   }
@@ -1385,6 +1508,21 @@ img.M__contentThumb-imageu.u-absolute {
 .M__mainNavButton-arrow {
   margin-top: 0.375em;
   margin-left: 0.1875em;
+}
+
+@media (max-width: 62.5em) {
+  .M__mainNavButton-container {
+    height: 100px;
+  }
+  .M__mainNavButton-arrow {
+    display: none;
+  }
+  .M__mainNavButton-centre {
+    font-size: 0.625em;
+  }
+  .M__mainNavButton-centre {
+    padding-top: 23px;
+  }
 }
 
 .O__magazineMockupBlock-main {
@@ -1579,6 +1717,12 @@ O__categoryList-heading {
   width: 12.5%;
 }
 
+@media (max-width: 62.5em) {
+  .O__topNav-item:nth-last-child(1) a .M__topNavButton-main .M__topNavButton-container {
+    border: none;
+  }
+}
+
 .O__footColumnList-item {
   width: 12.5%;
 }
@@ -1638,6 +1782,25 @@ O__categoryList-heading {
   .O__socialShareList-main {
     border: 0;
     margin-bottom: 1.875em;
+  }
+}
+
+#__menuContent-col0 {
+  display: none;
+}
+
+@media (max-width: 62.5em) {
+  #__menuContent-col0 {
+    display: block;
+  }
+  #__menuContent-col1 {
+    display: none;
+  }
+}
+
+@media (max-width: 43.75em) {
+  #__menuContent-col0 {
+    display: none;
   }
 }
 
@@ -1777,6 +1940,77 @@ O__categoryList-heading {
   display: none;
 }
 
+@media (max-width: 81.25em) {
+  #__mainNav-centre {
+    width: 90%;
+  }
+  #__mainNav-col1 {
+    width: 95%;
+  }
+  #__mainNav-col2 {
+    width: 5%;
+  }
+  #__secondaryNav-centre {
+    width: 90%;
+  }
+  #__menuContent-col1 {
+    width: 300px;
+  }
+}
+
+@media (max-width: 62.5em) {
+  #__menuContent-col0 {
+    float: none;
+    text-align: center;
+    padding-top: 20px;
+  }
+  #__menuContent-col1 {
+    float: none;
+    text-align: center;
+  }
+  #__menuContent-col2 {
+    float: none;
+    text-align: center;
+    margin-top: 20px;
+  }
+  #__mainNav-centre {
+    width: 100%;
+  }
+  #__mainNav-col1 {
+    width: 90%;
+  }
+  #__mainNav-col2 {
+    width: 10%;
+  }
+  #__topNav-col1-col1 {
+    float: none;
+  }
+  #__topNav-col1-col2 {
+    float: none;
+    display: table;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 43.75em) {
+  #__leaderboard-main {
+    display: none;
+  }
+  #__topNav-col1-col1 {
+    display: none;
+  }
+  #__topNav-col1-col2 {
+    height: 3.75em;
+    padding-top: 0.625em;
+  }
+  #__menuContent-col1 {
+    width: 100%;
+  }
+  #__menuContent-col2 {
+    display: none;
+  }
+}
+
 #__foot-main {
   background: #2b2b2b;
   color: #cccccc;
@@ -1835,7 +2069,7 @@ O__categoryList-heading {
 @media (max-width: 62.5em) {
   #__foot-BottomBar-row2 {
     width: 31.25em;
-    margin: 1.875em auto;
+    margin: 1.875em auto 0 auto;
   }
   #__foot-BottomBar-row2 {
     float: none;
@@ -1884,7 +2118,7 @@ O__categoryList-heading {
 /* The scripts also wraps the element in this to avoid jumpy behaviour when switching to pos: fixed */
 @media (max-width: 62.5em) {
   body {
-    font-size: 1.25em;
+    font-size: 20px;
   }
 }
 
@@ -1957,6 +2191,9 @@ O__categoryList-heading {
   #__articleHeader-col2 {
     width: 20%;
     margin-top: 5em;
+  }
+  #__mainNav-main {
+    height: 100px;
   }
 }
 
@@ -2090,6 +2327,9 @@ O__categoryList-heading {
   #__articleFooter-col1 {
     padding-right: 0;
     display: table;
+  }
+  #__articleFooter-col1 {
+    width: 100%;
   }
 }
 
