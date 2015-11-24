@@ -29,7 +29,7 @@ include ../_global/head.jade
 
 
 #__articleHeader-main
-        #__articleHeader-centre.u-cf
+        #__articleHeader-centre.u-cf(class="#{article.content.header.photoGallery!=null ? '__articleHeader-centre--photoGallery': '__none'}")
 
 
             //-///////////////////////////////////////////////////////////////////////////////
@@ -147,7 +147,7 @@ include ../_global/head.jade
                 if(article.content.article.report!=null)
                     //- REPORT
                     #__articleContent-typeAssets
-                        +M__textPrompt--heading-report ('aheading', 'labelasdasd', 'textasdas')
+                        +O__textPrompt--report
 
 
                 //-///////////////////////////////////////////////////////////////////////////////
@@ -180,7 +180,7 @@ include ../_global/head.jade
                 if(article.content.article.tenderDetails!=null)
                     //- TENDER
                     #__articleContent-typeAssets
-                        +M__textPrompt('--titleHeading', 'Download Report', 'PDF', 'Smart grid')
+                        +O__textPrompt--tender
 
 
                 //-///////////////////////////////////////////////////////////////////////////////
@@ -229,10 +229,17 @@ include ../_global/head.jade
 
 
                 if(article.content.article.eventIntro!=null)
-                    //- EVENT INTRO
-                    #__articleContent-typeAssets
-                        +M__textPrompt('--titleHeading', 'Download Report', 'PDF', 'Smart grid')
-
+                    //- REGULAR INTRO
+                    #__articleContent-col2-row1
+                        +A__smallTitle(null, '17 SEPTEMBER 2015')
+                    #__articleContent-col2-row0
+                        #__articleContent-col2-row0-row1
+                            #__articleContent-col2-row0-row1-col1
+                        #__articleContent-col2-row0-row2
+                    #__articleContent-col2-row2
+                        h1 Post Heading
+                    #__articleContent-col2-row3
+                        h2 Post Sub-Heading
 
                 //-///////////////////////////////////////////////////////////////////////////////
                 //-                                                                             //
@@ -285,9 +292,9 @@ include ../_global/head.jade
                 if(article.content.article.textCTA!=null)
                     //-CONTENT
                     #__textCTA-main
-                        #__textCTA-main
+                        #__textCTA-row1
                             +M__heading('Interested in more Tenders?')
-                        #__textCTA-main
+                        #__textCTA-row2
                             +M__textPrompt--blue('text')
 
             //-///////////////////////////////////////////////////////////////////////////////
@@ -312,8 +319,9 @@ include ../_global/head.jade
 
 
 
-                    
-                    
+
+
+
 
 //-///////////////////////////////////////////////////////////////////////////////
 //-                                                                             //
@@ -378,9 +386,9 @@ include ../_global/head.jade
                     +M__heading('Join the Discussion')
                 #__articleFooter-col1-row2
                     |HTML_comments
-                    
-                    
-                    
+
+
+
             //-///////////////////////////////////////////////////////////////////////////////
             //-                                                                             //
             //-                                                                             //
@@ -389,7 +397,7 @@ include ../_global/head.jade
             //-    OTHER TENDERS                                                            //
             //-                                                                             //
             //-                                                                             //
-            //-///////////////////////////////////////////////////////////////////////////////               
+            //-///////////////////////////////////////////////////////////////////////////////
             if(article.content.footer.submitButton!=null)
                 #__articleFooter-col1-row3
                     +M__heading('Submit News Story')

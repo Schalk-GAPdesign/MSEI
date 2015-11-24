@@ -34,22 +34,15 @@
 //-///////////////////////////////////////////////////////////////////////////////
 
 
-
-
-
 #__articleHeader-centre {
     background: white;
     height: 500px;
     margin-top: 60px;
-
 }
-
 #__articleHeader-centre--photoGallery {
     background: white;
     height: auto;
-
 }
-
 #__articleHeader-centre {
     width: 1255px;
     margin-left: auto;
@@ -61,7 +54,6 @@
 #__articleHeader-col2 {
     width: 370px;
     margin-top: 49px;
-
 }
 #__articleHeader-main {
     height: auto;
@@ -78,25 +70,16 @@
     #__articleHeader-col2 {
         width: 37.5%;
         margin-top: 50px;
-
     }
     #__articleHeader-main {
         height: auto;
     }
-    #__menuSearch-centre{
+    #__menuSearch-centre {
         width: 90%;
     }
-    
-    
-
-
-#__articleHeader-centre {
-
-    height: auto;
-
-
-}
-
+    #__articleHeader-centre {
+        height: auto;
+    }
 }
 @include tablet {
     #__articleContent-main {
@@ -115,18 +98,13 @@
         width: 20%;
         margin-top: 80px;
     }
-
-    #__mainNav-main
-{
-    height: 100px;
+    #__mainNav-main {
+        height: 100px;
+    }
+    #__menuSearch-item {
+        width: 100%
+    }
 }
-
-    #__menuSearch-item {width: 100%}
-
-
-}
-
-
 @include mobile {
     #__articleContent-col1-row1 {
         margin-bottom: 15px;
@@ -141,9 +119,10 @@
     #__articleHeader-col2 {
         width: 100%;
         margin-top: 44px;
-
     }
 }
+
+
 
 
 //-///////////////////////////////////////////////////////////////////////////////
@@ -181,7 +160,6 @@
 }
 #__articleContent-col2 {
     width: 600px;
-
 }
 #__articleContent-container {
     width: 858px
@@ -196,10 +174,10 @@
     }
     #__articleContent-col2 {
         float: left;
-
     }
     #__articleContent-col1 {
-        float: right;margin-right: 30px;
+        float: right;
+        margin-right: 30px;
     }
     #__articleContent-main {
         margin-top: 30px;
@@ -219,10 +197,15 @@
     #__articleContent-col1-row1 {
         margin: 120px auto 30px auto;
     }
-
 }
 
+#__textCTA-main {padding: 60px 0;}
 
+
+.__articleHeader-centre--photoGallery{
+    height: auto !important;
+    
+}
 
 //-///////////////////////////////////////////////////////////////////////////////
 //-                                                                             //
@@ -246,9 +229,10 @@
 //-                                                                             //
 //-///////////////////////////////////////////////////////////////////////////////
 
-#__otherTenders-main {margin-bottom: 60px;}
 
-
+#__otherTenders-main {
+    margin-bottom: 60px;
+}
 #__articleFooter-main {
     background: #eeeeee;
     padding: 60px 0;
@@ -265,41 +249,6 @@
 #__articleFooter-centre {
     width: 1255px;
     margin: 0 auto;
-}
-@include laptop {
-    #__articleFooter-centre {
-        width: 90%
-    }
-    #__articleFooter-col2 {
-        width: 37.5%
-    }
-    #__articleFooter-col1 {
-        width: 62.5%;
-        padding-right: 20px;
-    }
-}
-@include tablet {
-    #__articleFooter-centre {
-        width: 90%;
-    }
-    #__articleFooter-col1 {
-        float: none;
-    }
-    #__articleFooter-col2 {
-        float: none;
-    }
-    #__articleFooter-col2 {
-        width: 100%;
-        margin-top: 60px;
-    }
-    #__articleFooter-col1 {
-        padding-right: 0;
-        display: table;
-    }
-
-
-    #__articleFooter-col1 {width: 100%}
-
 }
 #__articleFooterelatedContentAlt-center {
     width: 1255px;
@@ -341,5 +290,50 @@
 #__pressRelease-extend {
     width: 1265px;
 }
+#__articleContent-col1 {
+    margin: 0;
+}
+@include laptop {
+    #__articleFooter-centre {
+        width: 90%
+    }
+    #__articleFooter-col2 {
+        width: 37.5%
+    }
+    #__articleFooter-col1 {
+        width: 62.5%;
+        padding-right: 20px;
+    }
+}
+@include tablet {
+    #__articleFooter-centre {
+        width: 90%;
+    }
+    #__articleFooter-col1 {
+        float: none;
+    }
+    #__articleFooter-col2 {
+        float: none;
+    }
+    #__articleFooter-col2 {
+        width: 100%;
+        margin-top: 60px;
+    }
+    #__articleFooter-col1 {
+        padding-right: 0;
+        display: table;
+    }
+    #__articleFooter-col1 {
+        width: 100%
+    }
+    #__articleFooterRelatedContentAlt-main {
+        margin: 0;
+    }
+    #__articleFooterelatedContentAlt-center {
+        width: 90%;
+    }
+}
 
-
+@include tablet {
+.__articleHeader-centre--photoGallery {height: auto !important; }
+}

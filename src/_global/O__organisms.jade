@@ -87,9 +87,11 @@ mixin O__magazineMockupBlock
 
 mixin O__photoGalleryList
     .O__photoGalleryList-main.u-cf
-        each val in article.content.header.photoGallery.data
+        each val in article.content.header.photoGallery
             .O__photoGalleryList-item.u-floatLeft
                 +M__photoGalleryItem
+
+
 
 
 //-///////////////////////////////////////////////////////////////////////////////
@@ -331,6 +333,47 @@ mixin O__secondaryNavList
                 +M__secondaryNavButton(index, val.text)
 
 
+///////////////////////
+
+
+
+
+
+////////////////////////
+
+
+mixin O__textPrompt--report
+    .O__textPrompt-main
+        .O__textPrompt-row1
+            .O__textPrompt-heading Download Report Files
+        .O__textPrompt-row2
+            each val in article.content.article.report
+                .O__textPrompt-item
+                    +M__textPrompt--report(val.type, val.title)
+
+
+
+mixin O__textPrompt--tender
+    .O__textPrompt-main
+        .O__textPrompt-row1
+            .O__textPrompt-heading TENDER DETAILS
+        .O__textPrompt-row2.O__textPrompt-row2--tender
+            .O__textPrompt-tenderData
+                span.M__textPrompt-field Location:
+                span.M__textPrompt-data Cape Town, South Africa
+            .O__textPrompt-tenderData
+                span.M__textPrompt-field Deadline:
+                span.M__textPrompt-data 13 September 2016
+            .O__textPrompt-tenderData
+                span.M__textPrompt-field Contact Name:
+                span.M__textPrompt-data Radomir Drodz
+            .O__textPrompt-tenderData
+                span.M__textPrompt-field Contact Number:
+                span.M__textPrompt-data +42 054 512 0278
+
+
+
+
 //-///////////////////////////////////////////////////////////////////////////////
 //-                                                                             //
 //-                                                                             //
@@ -375,7 +418,7 @@ mixin O__mainNavList
                         +M__mainNavButton(val.text, val.arrow, true)
                     else
                         +M__mainNavButton(val.text, val.arrow)
-                        
+
 
 mixin O__mainNavList--mobile
     select.O__mainNavList-main--mobile(onChange="window.location.href=this.value")

@@ -1,16 +1,5 @@
-////////////////////////
 
-.M__contentVideo-main {margin: 30px 0; text-align: center;}
-.M__contentVideo-video { text-align: center;}
-
-
-
-
-
-
-
-
-
+/*
 
 //-///////////////////////////////////////////////////////////////////////////////
 //-                                                                             //
@@ -23,28 +12,48 @@
 //-///////////////////////////////////////////////////////////////////////////////
 
 
-.M__closeButton-main {padding: 25px; background: #adadad; border-radius: 35px; color: black; text-transform: uppercase; font: 700 24px "Roboto Condensed"}
-.M__closeButton-main:hover {background: red; color: white;}
-.M__closeButton-main:hover .M__closeButton-col1 {@extend .icon-closeWhite}
+.M__closeButton-main {
+    padding: 25px;
+    background: #adadad;
+    border-radius: 35px;
+    color: black;
+    text-transform: uppercase;
+    font: 700 24px "Roboto Condensed"
+}
+.M__closeButton-main:hover {
+    background: red;
+    color: white;
+}
+.M__closeButton-main:hover .M__closeButton-col1 {
+    @extend .icon-closeWhite
+}
+.M__closeButton-col1 {
+    margin-top: 2px;
+}
+.M__closeButton-col2 {
+    padding-left: 10px;
+}
 
+*/
 
+// - ^ DEPRECATED
 
-.M__closeButton-col1 {margin-top: 2px;}
-.M__closeButton-col2 {padding-left: 10px;}
 
 //-///////////////////////////////////////////////////////////////////////////////
 //-                                                                             //
 //-                                                                             //
 //-    MOLECULE                                                                 //
 //-   ---------------                                                           //
-//-    CLOSE BUTTON                                                             //
+//-    EMBEDDED IN CONTENT YOUTUBE VIDEO                                        //
 //-                                                                             //
 //-                                                                             //
 //-///////////////////////////////////////////////////////////////////////////////
 
 
-.M__magazineReadPrompt-main {background: red; color: white; padding: 10px 20px; display: table; margin: 30px auto 30px auto; text-transform: uppercase; }
-.M__magazineReadPrompt-main:hover {background: #cdcdcd; color: black;}
+.M__contentVideo-main {
+    margin: 30px 0;
+    text-align: center;
+}
 
 
 
@@ -53,7 +62,32 @@
 //-                                                                             //
 //-    MOLECULE                                                                 //
 //-   ---------------                                                           //
-//-    ???                                                                      //
+//-    MAGAZINE READ ONLINE PROMPT BUTTON                                       //
+//-                                                                             //
+//-                                                                             //
+//-///////////////////////////////////////////////////////////////////////////////
+
+
+.M__magazineReadPrompt-main {
+    background: red;
+    color: white;
+    padding: 10px 20px;
+    display: table;
+    margin: 30px auto 30px auto;
+    text-transform: uppercase;
+}
+.M__magazineReadPrompt-main:hover {
+    background: #cdcdcd;
+    color: black;
+}
+
+
+//-///////////////////////////////////////////////////////////////////////////////
+//-                                                                             //
+//-                                                                             //
+//-    MOLECULE                                                                 //
+//-   ---------------                                                           //
+//-    TEXT LIST OF FILES FOR DOWNLOAD WITH A PREPENDING LABEL                  //
 //-                                                                             //
 //-                                                                             //
 //-///////////////////////////////////////////////////////////////////////////////
@@ -81,26 +115,31 @@
     font-weight: 700;
     letter-spacing: 1px;
 }
-
 .M__labeledLinkItem-title {
     padding-left: 10px;
     vertical-align: middle;
     font-weight: 700;
 }
+.M__labeledLinkItem-label--presentation {
+    background: #888888;
+    ;
+}
 
-.M__labeledLinkItem-label--presentation{ background: #888888;;}
 
 //-///////////////////////////////////////////////////////////////////////////////
 //-                                                                             //
 //-                                                                             //
 //-    MOLECULE                                                                 //
 //-   ---------------                                                           //
-//-    ???                                                                      //
+//-    MAGAZINE SHOWCASE QUOTE COMPONENT                                        //
 //-                                                                             //
 //-                                                                             //
 //-///////////////////////////////////////////////////////////////////////////////
 
-.M__quote-row2 {padding: 10px 0}
+
+.M__quote-row2 {
+    padding: 10px 0
+}
 .M__quote-text {
     font-weight: 700;
     font-size: 20px;
@@ -119,7 +158,7 @@
 //-                                                                             //
 //-    MOLECULE                                                                 //
 //-   ---------------                                                           //
-//-    MAGAZINE PREVIEW BUTTON                                                  //
+//-    MAGAZINE HOMEPAGE PREVIEW BUTTON (CURRENT ISSUE / ARCHIVE)               //
 //-                                                                             //
 //-                                                                             //
 //-///////////////////////////////////////////////////////////////////////////////
@@ -136,16 +175,14 @@
 }
 .M__magazinePreviewButton-main--grey {
     background: grey;
-
 }
 .M__magazinePreviewButton-main:hover {
     background: #aaa;
 }
-
 @include tablet {
-
-.M__magazinePreviewButton-main {padding: 30px 20px;}
-    
+    .M__magazinePreviewButton-main {
+        padding: 30px 20px;
+    }
 }
 
 
@@ -154,7 +191,7 @@
 //-                                                                             //
 //-    MOLECULE                                                                 //
 //-   ---------------                                                           //
-//-    MAGAZINE PREVIEW ARTICLE                                                 //
+//-    MAGAZINE PREVIEW ARTICLES LINKS - TEXT LIST                              //
 //-                                                                             //
 //-                                                                             //
 //-///////////////////////////////////////////////////////////////////////////////
@@ -176,7 +213,7 @@
 //-                                                                             //
 //-    MOLECULE                                                                 //
 //-   ---------------                                                           //
-//-    CONTENT THUMB                                                            //
+//-    GLOBAL CONTENT THUMBNAIL COMPONENT                                       //
 //-                                                                             //
 //-                                                                             //
 //-///////////////////////////////////////////////////////////////////////////////
@@ -186,7 +223,6 @@
     text-transform: uppercase;
     border: 1px solid white;
     border-radius: 20px;
-
     margin-top: 10px;
     font-size: 700;
     font: 700 13px "Roboto";
@@ -249,8 +285,6 @@ img.M__contentThumb-imageu.u-absolute {
 .M__contentThumb-subheading {
     display: none;
 }
-
-
 .M__contentThumb-prompt {
     height: 0;
     width: 112px;
@@ -266,16 +300,13 @@ img.M__contentThumb-imageu.u-absolute {
     transition: all 0.3s ease;
     opacity: 1;
 }
-
-
-@include mobile {.M__contentThumb-main{height: 300px;}
-
-.M__contentThumb-container.u-relative {
-    height: 300px;
-
-}
-
-
+@include mobile {
+    .M__contentThumb-main {
+        height: 300px;
+    }
+    .M__contentThumb-container.u-relative {
+        height: 300px;
+    }
 }
 
 
@@ -284,7 +315,7 @@ img.M__contentThumb-imageu.u-absolute {
 //-                                                                             //
 //-    MOLECULE                                                                 //
 //-   ---------------                                                           //
-//-    LARGE SKYSCRAPER ADVERT                                                  //
+//-    MAGAZINE 3D MOCKUP TRANSFORM PREVIEW IMAGE                               //
 //-                                                                             //
 //-                                                                             //
 //-///////////////////////////////////////////////////////////////////////////////
@@ -324,15 +355,17 @@ img.M__contentThumb-imageu.u-absolute {
     transform: rotateY(33deg) rotateZ(-20deg) rotateX(52deg);
     -webkit-backface-visibility: hidden;
 }
-
-.M__largeSkyscraperAdvert-image--mobile {width:100%}
+.M__largeSkyscraperAdvert-image--mobile {
+    width: 100%
+}
 
 //-///////////////////////////////////////////////////////////////////////////////
 //-                                                                             //
 //-                                                                             //
 //-    MOLECULE                                                                 //
 //-   ---------------                                                           //
-//-    MAGAZINE MOCKUO                                                          //
+//-    LARGE SKYSCRAPER ADVERTISEMENT BANNER                                    //
+//-                                                                             //
 //-                                                                             //
 //-                                                                             //
 //-///////////////////////////////////////////////////////////////////////////////
@@ -356,10 +389,10 @@ img.M__contentThumb-imageu.u-absolute {
     display: table;
     margin: 0 auto;
 }
-
 @include tablet {
-    .M__largeSkyscraperAdvert-title{font-size: 10px;}
-
+    .M__largeSkyscraperAdvert-title {
+        font-size: 10px;
+    }
 }
 
 
@@ -368,14 +401,10 @@ img.M__contentThumb-imageu.u-absolute {
 //-                                                                             //
 //-    MOLECULE                                                                 //
 //-   ---------------                                                           //
-//-    HEADING                                                                  //
+//-    DEFAULT SECTION HEADING                                                  //
 //-                                                                             //
 //-                                                                             //
 //-///////////////////////////////////////////////////////////////////////////////
-
-
-//---------------------------------------------------------------------------------
-//------------------------------------------------------------------------- Desktop
 
 
 .M__heading-main {
@@ -409,12 +438,6 @@ img.M__contentThumb-imageu.u-absolute {
     margin-top: 1px;
     margin-left: 12px;
 }
-
-
-//---------------------------------------------------------------------------------
-//-------------------------------------------------------------------------- Tablet
-
-
 @include tablet {
     .M__heading-title {
         padding: 20px 15px 0 15px;
@@ -433,27 +456,21 @@ img.M__contentThumb-imageu.u-absolute {
         margin-top: 2px;
     }
 }
-
-//---------------------------------------------------------------------------------
-///------------------------------------------------------------------------- Mobile
-
-
- @include mobile {
-     .M__heading-title {
-         float: none;
-         height: 100%;
-         padding-bottom: 20px;
-             text-align: center;
-     }
-     .M__heading-main {
-         width: 100%;
-     }
-     .M__heading-promptContainer {
-         display: table;
-         margin: 0 auto;
-     }
- }
-
+@include mobile {
+    .M__heading-title {
+        float: none;
+        height: 100%;
+        padding-bottom: 20px;
+        text-align: center;
+    }
+    .M__heading-main {
+        width: 100%;
+    }
+    .M__heading-promptContainer {
+        display: table;
+        margin: 0 auto;
+    }
+}
 
 
 //-///////////////////////////////////////////////////////////////////////////////
@@ -461,7 +478,7 @@ img.M__contentThumb-imageu.u-absolute {
 //-                                                                             //
 //-    MOLECULE                                                                 //
 //-   ---------------                                                           //
-//-    CONTENT BUTTON                                                           //
+//-    CATEGORY PAGE INTRODUCTION SECTION CONTENT/DROPDOWN BUTTON               //
 //-                                                                             //
 //-                                                                             //
 //-///////////////////////////////////////////////////////////////////////////////
@@ -499,7 +516,7 @@ img.M__contentThumb-imageu.u-absolute {
 //-                                                                             //
 //-    MOLECULE                                                                 //
 //-   ---------------                                                           //
-//-    FEATURED IMAGE                                                           //
+//-    CONTENT ARTICLE FEATURED IMAGE                                           //
 //-                                                                             //
 //-                                                                             //
 //-///////////////////////////////////////////////////////////////////////////////
@@ -530,12 +547,6 @@ img.M__contentThumb-imageu.u-absolute {
     background: red;
     margin-left: 29%;
 }
-@include mobile {
-    .M__featuredImage-label {
-        margin-left: 0;
-    }
-}
-
 @include laptop {
     .M__featuredImage-image {
         height: 100%;
@@ -544,15 +555,19 @@ img.M__contentThumb-imageu.u-absolute {
         height: 680px;
     }
 }
-
 @include tablet {
-    .M__featuredImage-container {  height: 691px; }
+    .M__featuredImage-container {
+        height: 691px;
+    }
 }
-
 @include mobile {
-    .M__featuredImage-container {  height: 300px; }
+    .M__featuredImage-container {
+        height: 300px;
+    }
+    .M__featuredImage-label {
+        margin-left: 0;
+    }
 }
-
 
 
 //-///////////////////////////////////////////////////////////////////////////////
@@ -560,7 +575,7 @@ img.M__contentThumb-imageu.u-absolute {
 //-                                                                             //
 //-    MOLECULE                                                                 //
 //-   ---------------                                                           //
-//-    TOP NAV BUTTON                                                           //
+//-    TOP NAVIGATION MENU BUTTON                                               //
 //-                                                                             //
 //-                                                                             //
 //-///////////////////////////////////////////////////////////////////////////////
@@ -582,13 +597,12 @@ img.M__contentThumb-imageu.u-absolute {
 }
 
 
-
 //-///////////////////////////////////////////////////////////////////////////////
 //-                                                                             //
 //-                                                                             //
 //-    MOLECULE                                                                 //
 //-   ---------------                                                           //
-//-    SOCIAL SHARE BUTTON                                                      //
+//-    INSIDE ARTICLE SOCIAL SHARE BUTTON                                       //
 //-                                                                             //
 //-                                                                             //
 //-///////////////////////////////////////////////////////////////////////////////
@@ -656,19 +670,25 @@ img.M__contentThumb-imageu.u-absolute {
         text-align: center;
         padding-left: 0;
     }
-
-    .M__socialShareButton-text
-    {
+    .M__socialShareButton-text {
         display: none;
     }
-
-
-
+}
+@include tablet {
+    .M__socialShareButton-container {
+        height: 95px;
+    }
 }
 @include mobile {
     .M__socialShareButton-main {
         width: 50%;
         margin-bottom: 20px;
+    }
+}
+@include mobile {
+    .M__socialShareButton-container {
+        margin-right: 5px;
+        margin-left: 5px
     }
 }
 
@@ -677,23 +697,21 @@ img.M__contentThumb-imageu.u-absolute {
 //-                                                                             //
 //-    MOLECULE                                                                 //
 //-   ---------------                                                           //
-//-    TEXT PROMPT                                                              //
+//-    GLOBAL TEXT BUTTON COMPONENT                                             //
 //-                                                                             //
 //-                                                                             //
 //-///////////////////////////////////////////////////////////////////////////////
 
 
-.M__textPrompt-label {background: #222222; color: white; padding: 5px 10px;}
-
-
-.M__textPrompt-main{
-border: 1px solid #cdcdcd;
-color: black;
+.M__textPrompt-main {
+    border: 1px solid #cdcdcd;
+    color: black;
 }
-
+.M__textPrompt-col1--report {
+    width: 100%;
+}
 .M__textPrompt-row2 {
     color: black;
-
     &:hover {
         background: #b8b8b8;
         color: white;
@@ -702,22 +720,10 @@ color: black;
         @extend .icon-arrowWhite
     }
 }
-
-
-@include tablet {
-    .M__textPrompt-container {
-        height: 80px;
-        padding: 0 10px 0 10px;
-
-    }
-    .M__textPrompt-col1 {
-        padding-top: 28px
-    }
-
-
+.O__textPrompt-item:nth-child(1) .M__textPrompt-main--report {
+    border: 0;
 }
 .M__textPrompt-col1-row1 {
-    text-transform: uppercase;
     font-weight: 700;
     font-family: "Roboto Condensed";
 }
@@ -755,21 +761,104 @@ color: black;
     width: 100%;
 }
 .M__textPrompt-row1 {
-    text-transform: uppercase;
     font: 700 16px "Roboto Condensed";
     padding: 15px;
     background: #eeeeee;
 }
+.M__textPrompt-label {
+    text-align: center;
+}
+.M__textPrompt-row2--blue {
+    background: #06c4f7;
+    border: 0;
+    color: white;
+ 
+}
+.M__textPrompt-main--report {
+    border-top: 1px solid #cdcdcd;
+    color: red;
+    font-weight: 700;
+    padding: 20px;
+    &:hover {
+        background: #bbb;
+        color: white;
+        & .M__textPrompt-label .M__textPrompt-labelContent {
+            background: white;
+            color: #bbb;
+        }
+    }
+}
+.M__textPrompt-text {
+    vertical-align: middle;
+    padding: 0 20px 0 20px;
+    font: 700 16px Roboto;
+    width: 100%;
+}
+.M__textPrompt-label {
+    width: 100px;
+    vertical-align: middle;
+}
+.M__textPrompt-labelContent {
+    background: #222222;
+    color: white;
+    padding: 5px 10px;
+    width: 100px;
+}
+.M__textPrompt-arrow {
+    vertical-align: middle;
+}
+.M__textPrompt-main--report:hover .M__textPrompt-col1--report .M__textPrompt-col1-row1 .M__textPrompt-arrow .M__textPrompt-arrowContent {
+    @extend .icon-arrowWhite
+}
 
-.M__textPrompt-row2--blue{background: #06c4f7; border: 0; color: white;}
 
+.M__textPrompt-main--report:hover .M__textPrompt-col1--report .M__textPrompt-col1-row0  {
+    color: white
+}
+
+
+.M__textPrompt-col1-row0 {
+    display: none !important; color: lightgrey;
+}
+@include tablet {
+    .M__textPrompt-container {
+        height: 80px;
+        padding: 0 10px 0 10px;
+    }
+    .M__textPrompt-col1 {
+        padding-top: 28px
+    }
+}
+@include mobile {
+    .M__textPrompt-col1-row0 {
+        text-align: center;
+        text-transform: uppercase;
+        display: block !important;
+    }
+    .M__textPrompt-label {
+        display: none !important;
+    }
+    .M__textPrompt-arrow {
+        display: none !important;
+    }
+    .M__textPrompt-text.u-tableCell {
+        padding: 0;
+        padding-top: 10px;
+    }
+}
+
+
+.O__textPrompt-row2--tender {padding: 10px !important;}
+.O__textPrompt-tenderData {padding: 5px 0;}
+
+.M__textPrompt-text--blue {color: white; text-transform: uppercase; padding: 0px}
 
 //-///////////////////////////////////////////////////////////////////////////////
 //-                                                                             //
 //-                                                                             //
 //-    MOLECULE                                                                 //
 //-   ---------------                                                           //
-//-    SHORTCODE BOX                                                            //
+//-    INSIDE CONTENT STYLED BOX DIV - SHORTCODE                                //
 //-                                                                             //
 //-                                                                             //
 //-///////////////////////////////////////////////////////////////////////////////
@@ -780,10 +869,8 @@ color: black;
     background: #eeeeee;
     border: solid 1px #cdcdcd;
     margin: 30px 0;
-
     font-size: 18px;
     line-height: 26px;
-
 }
 
 
@@ -792,7 +879,7 @@ color: black;
 //-                                                                             //
 //-    MOLECULE                                                                 //
 //-   ---------------                                                           //
-//-    DISCLAIMER LINK ITEM                                                     //
+//-    FOOT DISCLAIMER ADDITIONAL LINKS BUTTON ITEM                             //
 //-                                                                             //
 //-                                                                             //
 //-///////////////////////////////////////////////////////////////////////////////
@@ -820,12 +907,12 @@ color: black;
     .M__disclaimerLink-dot--tabletHide {
         display: none;
     }
-}
-@include mobile {
     .M__disclaimerLink-dot {
         display: none;
         text-align: center;
     }
+}
+@include mobile {
     .M__disclaimerLink-text {
         width: 100%;
         text-align: center
@@ -841,7 +928,7 @@ color: black;
 //-                                                                             //
 //-    MOLECULE                                                                 //
 //-   ---------------                                                           //
-//-    SECONDARY MENU BUTTON                                                    //
+//-    SECONDARY NAVIGATION MENU BUTTON ITEM                                    //
 //-                                                                             //
 //-                                                                             //
 //-///////////////////////////////////////////////////////////////////////////////
@@ -853,7 +940,6 @@ color: black;
     font-size: 13px;
     font-weight: 700;
     border-right: 1px solid #999999;
-    //letter-spacing: 1px;
 }
 .M__secondaryNavButton-main {
     padding: 10px 0;
@@ -863,12 +949,18 @@ color: black;
         color: red;
     }
 }
-
 @include tablet {
-    .M__secondaryNavButton-container{font-size: 13px; padding-top: 20px;}
-
-    .M__secondaryNavButton-main {height: 80px;}
-    .M__secondaryNavButton-container{ height: 60px; vertical-align: middle;}
+    .M__secondaryNavButton-container {
+        font-size: 13px;
+        padding-top: 20px;
+    }
+    .M__secondaryNavButton-main {
+        height: 80px;
+    }
+    .M__secondaryNavButton-container {
+        height: 60px;
+        vertical-align: middle;
+    }
 }
 
 
@@ -877,14 +969,10 @@ color: black;
 //-                                                                             //
 //-    MOLECULE                                                                 //
 //-   ---------------                                                           //
-//-    SEARCH                                                                   //
+//-    ENTIRE SEARCH FUNCTIONALITY EMBEDDED INSIDE DROPDOWN MENU                //
 //-                                                                             //
 //-                                                                             //
 //-///////////////////////////////////////////////////////////////////////////////
-
-
-//---------------------------------------------------------------------------------
-//------------------------------------------------------------------------- Desktop
 
 
 .M__Search-keywordContainer {
@@ -917,7 +1005,6 @@ color: black;
     background: #ed1b25;
     color: white;
     border: none;
-    //padding: 0 10px;
     text-transform: uppercase;
     font-family: "Roboto Condensed";
     font-weight: 700;
@@ -954,11 +1041,78 @@ color: black;
         width: 100%
     }
 }
+@include tablet {
+    .M__Search-keywordContainer {
+        width: 50%;
+    }
+    .M__Search-buttonContainer {
+        width: 20%;
+    }
+    .M__Search-categoryContainer {
+        width: 30%;
+    }
+    .M__Search-keyword {
+        width: 100%;
+        max-width: 100%;
+    }
+    .M__Search-button {
+        width: 100%;
+        max-width: 100%;
+    }
+    .M__Search-category {
+        width: 100%;
+        max-width: 100%;
+    }
+    .M__Search-keyword {
+        height: 60px;
+    }
+    .M__Search-button {
+        height: 60px;
+    }
+    .M__Search-category {
+        height: 60px;
+    }
+    .M__Search-main {
+        height: 100px;
+    }
+    .M__Search-button {
+        padding: 0;
+    }
+}
+@include mobile {
+    .M__Search-keywordContainer {
+        width: 100%; max-width: 100%;
+    }
+    .M__Search-categoryContainer {
+        width: 100%;
+        padding: 20px 0
+    }
+    .M__Search-buttonContainer {
+        width: 100%;
+        padding: 0
+    }
+    .M__Search-keyword {
+        height: 90px;  width: 100% !important; max-width: 100% !important;
+    }
+    .M__Search-category {
+        height: 90px;
+    }
+    .M__Search-button {
+        height: 90px;
+    }
+}
 
-/////////////////////////////
 
 
-
+//-///////////////////////////////////////////////////////////////////////////////
+//-                                                                             //
+//-                                                                             //
+//-    MOLECULE                                                                 //
+//-   ---------------                                                           //
+//-    SEARCH ICON INSIDE MAIN MENU NAVIGATION BAR                              //
+//-                                                                             //
+//-                                                                             //
+//-///////////////////////////////////////////////////////////////////////////////
 
 
 .M__mainNavsearch-main {
@@ -991,94 +1145,25 @@ color: black;
 .M__Search-keyword {
     max-width: 400px
 }
-
-.M__Search-button{
+.M__Search-button {
     padding: 0 40px;
 }
-
-
-
-
 @include tablet {
-    .M__mainNavsearch-container {height: 100px;
-
-
-
+    .M__mainNavsearch-container {
+        height: 100px;
     }
-
     .M__mainNavsearch-icon {
-    margin-top: 22px;
+        margin-top: 22px;
+    }
 }
 
-
-
-
-}
-
-
-
-
-
-
-//---------------------------------------------------------------------------------
-//-------------------------------------------------------------------------- Tablet
-
-
-@include tablet {
-
-
-    .M__Search-keywordContainer {
-        width: 50%;
-    }
-    .M__Search-buttonContainer {
-        width: 20%;
-    }
-    .M__Search-categoryContainer {
-        width: 30%;
-    }
-
-
-     .M__Search-keyword {
-        width: 100%; max-width: 100%;
-    }
-    .M__Search-button {
-        width: 100%; max-width: 100%;
-    }
-    .M__Search-category {
-        width: 100%; max-width: 100%;
-    }
-
-
-
-
-     .M__Search-keyword {
-        height: 60px;
-    }
-    .M__Search-button {
-        height: 60px;
-    }
-    .M__Search-category {
-        height: 60px;
-    }
-
-       .M__Search-main{
-      height: 100px;
-
-    }
-
-    .M__Search-button{
-    padding: 0;
-}
-
-
-}
 
 //-///////////////////////////////////////////////////////////////////////////////
 //-                                                                             //
 //-                                                                             //
 //-    MOLECULE                                                                 //
 //-   ---------------                                                           //
-//-    PULL QUOTE SHORTCODE                                                     //
+//-    INSIDE CONTENT PULL QUOTE - SHORTCODE                                    //
 //-                                                                             //
 //-                                                                             //
 //-///////////////////////////////////////////////////////////////////////////////
@@ -1091,16 +1176,16 @@ color: black;
     font-weight: 700;
     padding: 5px 0;
     width: 240px;
-
 }
-
-
-
-
-.M__pullQuote-quote:hover .M__pullQuote-text {color: red;}
-.M__pullQuote-quote:hover .M__pullQuote-retweet {color: red;}
-.M__pullQuote-quote:hover .M__pullQuote-icon {@extend .icon-articleShareRed}
-
+.M__pullQuote-quote:hover .M__pullQuote-text {
+    color: red;
+}
+.M__pullQuote-quote:hover .M__pullQuote-retweet {
+    color: red;
+}
+.M__pullQuote-quote:hover .M__pullQuote-icon {
+    @extend .icon-articleShareRed
+}
 .M__pullQuote-quote {
     border-left: 1px solid grey;
     padding-left: 20px;
@@ -1128,38 +1213,27 @@ color: black;
     .M__pullQuote-main {
         max-width: 300px;
         width: 100%;
-
     }
-
-
 }
-
-
-
-
 @include tablet {
     .M__pullQuote-main {
         max-width: 100%;
         margin: 30px 0;
         padding: 20px 0;
-         border-top:  1px solid black;
+        border-top: 1px solid black;
         border-bottom: 1px solid black;
     }
     .M__pullQuote-quote {
         margin: 0;
         padding: 0;
         border-left: 0;
-       
     }
 }
-
-
-
 @include mobile {
-   .M__pullQuote-main{margin: 50px 0}
-
+    .M__pullQuote-main {
+        margin: 50px 0
+    }
 }
-
 
 
 //-///////////////////////////////////////////////////////////////////////////////
@@ -1167,7 +1241,7 @@ color: black;
 //-                                                                             //
 //-    MOLECULE                                                                 //
 //-   ---------------                                                           //
-//-    FOOT COLUMN ITEM                                                         //
+//-    FOOT SITEMAP COLUMN ITEM                                                 //
 //-                                                                             //
 //-                                                                             //
 //-///////////////////////////////////////////////////////////////////////////////
@@ -1198,7 +1272,7 @@ color: black;
 //-                                                                             //
 //-    MOLECULE                                                                 //
 //-   ---------------                                                           //
-//-    SOCIAL LINK BUTTON                                                       //
+//-    SOCIAL LINK ICON BUTTON (HEADER / FOOTER)                                //
 //-                                                                             //
 //-                                                                             //
 //-///////////////////////////////////////////////////////////////////////////////
@@ -1243,7 +1317,7 @@ color: black;
 //-                                                                             //
 //-    MOLECULE                                                                 //
 //-   ---------------                                                           //
-//-    LOGIN BUTTON                                                             //
+//-    MENU TOP NAVIGATION BAR LOGIN BUTTON                                     //
 //-                                                                             //
 //-                                                                             //
 //-///////////////////////////////////////////////////////////////////////////////
@@ -1279,7 +1353,7 @@ color: black;
 //-                                                                             //
 //-    MOLECULE                                                                 //
 //-   ---------------                                                           //
-//-    MAIN NAV BUTTON                                                          //
+//-    MENU MAIN NAVIGATION BUTTON                                              //
 //-                                                                             //
 //-                                                                             //
 //-///////////////////////////////////////////////////////////////////////////////
@@ -1303,9 +1377,10 @@ color: black;
     &:hover:not(.is-activated) {
         background: red;
         color: white;
-
     }
-    &:hover .M__mainNavButton-container { border-bottom: 4px solid red;}
+    &:hover .M__mainNavButton-container {
+        border-bottom: 4px solid red;
+    }
     &.is-activated .M__mainNavButton-container {
         border-bottom: 4px solid #cdcdcd;
         background: #cdcdcd;

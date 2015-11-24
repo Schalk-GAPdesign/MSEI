@@ -9,6 +9,31 @@
 //-///////////////////////////////////////////////////////////////////////////////
 
 
+
+
+.O__textPrompt-main{
+border: 1px solid #cdcdcd;
+color: black;
+    margin-bottom: 30px;
+}
+
+
+
+.O__textPrompt-row2 {
+    padding: 0;
+}
+
+.O__textPrompt-row1 {
+    text-transform: uppercase;
+    font: 700 16px "Roboto Condensed";
+    padding: 15px;
+    background: #eeeeee;
+}
+
+
+
+
+
 //-///////////////////////////////////////////////////////////////////////////////
 //-                                                                             //
 //-                                                                             //
@@ -148,6 +173,12 @@
 .O__relatedContentList-item--noComments:nth-child(3n) .O__relatedContentList-container--noComments {
     margin-left: auto
 }
+
+@include tablet {
+.O__relatedContentList-item--noComments {float: none; width: 100%;}
+    .O__relatedContentList-container--noComments { width: 100%;}
+}
+
 
 
 //-///////////////////////////////////////////////////////////////////////////////
@@ -469,7 +500,7 @@ O__categoryList-heading {
     display: table;
     margin: 0 auto;
 }
-@include mobile {
+@include tablet {
     .O__disclaimerLinksList-main {
         display: block;
         border-bottom: 1px solid white;
