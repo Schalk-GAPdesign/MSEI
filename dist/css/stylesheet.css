@@ -477,7 +477,7 @@ Icon classes can be used entirely standalone. They are named after their origina
   color: white;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 750px) {
   .A__textMSEI-main {
     text-align: center;
   }
@@ -730,7 +730,7 @@ img.M__contentThumb-imageu.u-absolute {
   opacity: 1;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 750px) {
   .M__contentThumb-main {
     height: 300px;
   }
@@ -855,7 +855,7 @@ img.M__contentThumb-imageu.u-absolute {
   }
 }
 
-@media (max-width: 1000px) and (max-width: 700px) {
+@media (max-width: 1000px) and (max-width: 750px) {
   .M__heading-prompt {
     float: none;
   }
@@ -867,7 +867,7 @@ img.M__contentThumb-imageu.u-absolute {
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 750px) {
   .M__heading-title {
     float: none;
     height: 100%;
@@ -907,7 +907,7 @@ img.M__contentThumb-imageu.u-absolute {
   text-align: center;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 750px) {
   .M__contentButton-main {
     height: 100px;
   }
@@ -941,7 +941,7 @@ img.M__contentThumb-imageu.u-absolute {
   margin-left: 29%;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 750px) {
   .M__featuredImage-label {
     margin-left: 0;
   }
@@ -962,7 +962,7 @@ img.M__contentThumb-imageu.u-absolute {
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 750px) {
   .M__featuredImage-container {
     height: 300px;
   }
@@ -1035,7 +1035,7 @@ img.M__contentThumb-imageu.u-absolute {
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 750px) {
   .M__socialShareButton-main {
     width: 50%;
     margin-bottom: 20px;
@@ -1171,7 +1171,7 @@ img.M__contentThumb-imageu.u-absolute {
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 750px) {
   .M__disclaimerLink-dot {
     display: none;
     text-align: center;
@@ -1268,7 +1268,7 @@ img.M__contentThumb-imageu.u-absolute {
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 750px) {
   .M__Search-keywordContainer {
     float: none;
     width: 100%;
@@ -1442,7 +1442,7 @@ img.M__contentThumb-imageu.u-absolute {
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 750px) {
   .M__pullQuote-main {
     margin: 50px 0;
   }
@@ -1812,7 +1812,7 @@ O__categoryList-heading {
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 750px) {
   .M__footColumn-heading {
     margin: 0;
   }
@@ -1842,7 +1842,7 @@ O__categoryList-heading {
   margin: 0 auto;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 750px) {
   .O__disclaimerLinksList-main {
     display: block;
     border-bottom: 1px solid white;
@@ -1882,7 +1882,7 @@ O__categoryList-heading {
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 750px) {
   #__menuContent-col0 {
     display: none;
   }
@@ -2089,7 +2089,7 @@ O__categoryList-heading {
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 750px) {
   #__leaderboard-main {
     display: none;
   }
@@ -2229,7 +2229,7 @@ O__categoryList-heading {
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 750px) {
   #__foot-BottomBar-row2 {
     display: block;
     width: 90%;
@@ -2333,7 +2333,7 @@ O__categoryList-heading {
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 750px) {
   #__articleContent-col1-row1 {
     margin-bottom: 15px;
   }

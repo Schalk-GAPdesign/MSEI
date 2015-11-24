@@ -476,7 +476,7 @@ Icon classes can be used entirely standalone. They are named after their origina
   text-transform: uppercase;
   color: white; }
 
-@media (max-width: 700px) {
+@media (max-width: 750px) {
   /* line 134, C:/MSEI/src/_global/A__atoms.scss */
   .A__textMSEI-main {
     text-align: center; } }
@@ -722,7 +722,7 @@ img.M__contentThumb-imageu.u-absolute {
   transition: all 0.3s ease;
   opacity: 1; }
 
-@media (max-width: 700px) {
+@media (max-width: 750px) {
   /* line 271, C:/MSEI/src/_global/M__molecules.scss */
   .M__contentThumb-main {
     height: 300px; }
@@ -841,7 +841,7 @@ img.M__contentThumb-imageu.u-absolute {
     padding: 28px 15px 0 15px;
     height: 70px; } }
 
-@media (max-width: 1000px) and (max-width: 700px) {
+@media (max-width: 1000px) and (max-width: 750px) {
   /* line 428, C:/MSEI/src/_global/M__molecules.scss */
   .M__heading-prompt {
     float: none; } }
@@ -851,7 +851,7 @@ img.M__contentThumb-imageu.u-absolute {
   .M__heading-arrow {
     margin-top: 2px; } }
 
-@media (max-width: 700px) {
+@media (max-width: 750px) {
   /* line 442, C:/MSEI/src/_global/M__molecules.scss */
   .M__heading-title {
     float: none;
@@ -889,7 +889,7 @@ img.M__contentThumb-imageu.u-absolute {
 .M__contentButton-main--pagination {
   text-align: center; }
 
-@media (max-width: 700px) {
+@media (max-width: 750px) {
   /* line 491, C:/MSEI/src/_global/M__molecules.scss */
   .M__contentButton-main {
     height: 100px; } }
@@ -922,7 +922,7 @@ img.M__contentThumb-imageu.u-absolute {
   background: red;
   margin-left: 29%; }
 
-@media (max-width: 700px) {
+@media (max-width: 750px) {
   /* line 534, C:/MSEI/src/_global/M__molecules.scss */
   .M__featuredImage-label {
     margin-left: 0; } }
@@ -940,7 +940,7 @@ img.M__contentThumb-imageu.u-absolute {
   .M__featuredImage-container {
     height: 691px; } }
 
-@media (max-width: 700px) {
+@media (max-width: 750px) {
   /* line 553, C:/MSEI/src/_global/M__molecules.scss */
   .M__featuredImage-container {
     height: 300px; } }
@@ -1009,7 +1009,7 @@ img.M__contentThumb-imageu.u-absolute {
   .M__socialShareButton-text {
     display: none; } }
 
-@media (max-width: 700px) {
+@media (max-width: 750px) {
   /* line 669, C:/MSEI/src/_global/M__molecules.scss */
   .M__socialShareButton-main {
     width: 50%;
@@ -1140,7 +1140,7 @@ img.M__contentThumb-imageu.u-absolute {
   .M__disclaimerLink-dot--tabletHide {
     display: none; } }
 
-@media (max-width: 700px) {
+@media (max-width: 750px) {
   /* line 825, C:/MSEI/src/_global/M__molecules.scss */
   .M__disclaimerLink-dot {
     display: none;
@@ -1232,7 +1232,7 @@ img.M__contentThumb-imageu.u-absolute {
     padding-left: 32px;
     padding-right: 32px; } }
 
-@media (max-width: 700px) {
+@media (max-width: 750px) {
   /* line 935, C:/MSEI/src/_global/M__molecules.scss */
   .M__Search-keywordContainer {
     float: none;
@@ -1399,7 +1399,7 @@ img.M__contentThumb-imageu.u-absolute {
     padding: 0;
     border-left: 0; } }
 
-@media (max-width: 700px) {
+@media (max-width: 750px) {
   /* line 1159, C:/MSEI/src/_global/M__molecules.scss */
   .M__pullQuote-main {
     margin: 50px 0; } }
@@ -1754,7 +1754,7 @@ O__categoryList-heading {
   .O__footColumnList-item:nth-of-type(-n+4) {
     min-height: 250px; } }
 
-@media (max-width: 700px) {
+@media (max-width: 750px) {
   /* line 418, C:/MSEI/src/_global/O__organisms.scss */
   .M__footColumn-heading {
     margin: 0; }
@@ -1783,7 +1783,7 @@ O__categoryList-heading {
   display: table;
   margin: 0 auto; }
 
-@media (max-width: 700px) {
+@media (max-width: 750px) {
   /* line 473, C:/MSEI/src/_global/O__organisms.scss */
   .O__disclaimerLinksList-main {
     display: block;
@@ -1820,7 +1820,7 @@ O__categoryList-heading {
   #__menuContent-col1 {
     display: none; } }
 
-@media (max-width: 700px) {
+@media (max-width: 750px) {
   /* line 33, C:/MSEI/src/_global/head.scss */
   #__menuContent-col0 {
     display: none; } }
@@ -2020,7 +2020,7 @@ O__categoryList-heading {
   #__menuMagazine-centre {
     width: 90%; } }
 
-@media (max-width: 700px) {
+@media (max-width: 750px) {
   /* line 182, C:/MSEI/src/_global/head.scss */
   #__leaderboard-main {
     display: none; }
@@ -2157,7 +2157,7 @@ O__categoryList-heading {
   #__foot-BottomBar-row2 {
     width: 410px; } }
 
-@media (max-width: 700px) {
+@media (max-width: 750px) {
   /* line 103, C:/MSEI/src/_global/foot.scss */
   #__foot-BottomBar-row2 {
     display: block;
@@ -2257,7 +2257,7 @@ O__categoryList-heading {
   #__menuSearch-item {
     width: 100%; } }
 
-@media (max-width: 700px) {
+@media (max-width: 750px) {
   /* line 131, C:/MSEI/src/_global/#__layouts.scss */
   #__articleContent-col1-row1 {
     margin-bottom: 15px; }
