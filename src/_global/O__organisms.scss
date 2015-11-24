@@ -43,8 +43,8 @@
 
 
 .O__magazineMockupBlock-main {border: solid 1px #cdcdcd;}
-.O__magazineMockupBlock-row2 {padding: em(25) em(15);  }
-.O__magazineMockupBlock-row3 {border-top: 1px solid #cdcdcd; margin: 0 em(15);}
+.O__magazineMockupBlock-row2 {padding: 25px 15px;  }
+.O__magazineMockupBlock-row3 {border-top: 1px solid #cdcdcd; margin: 0 15px;}
 
 
 //-///////////////////////////////////////////////////////////////////////////////
@@ -59,14 +59,14 @@
 
 
 .O__photoGallery-item {
-    padding-left: em(6);
-    padding-bottom: em(6);
+    padding-left: 6px;
+    padding-bottom: 6px;
 }
 .O__photoGallery-item:nth-child(13n+1) {
     padding: 0;
 }
 .O__photoGalleryList-item {
-    margin: 0 em(10) em(10) 0
+    margin: 0 10px 10px 0
 }
 .O__photoGalleryList-main {
     border-bottom: 1px solid #cdcdcd;
@@ -100,7 +100,7 @@
 
 .O__newsThumbList-item {
     width: col(7);
-    padding-right: em(10);
+    padding-right: 10px;
 }
 
 
@@ -116,7 +116,7 @@
 
 
 .O__labeledLinksList-main {
-    padding: em(30);
+    padding: 30px;
     border: 1px solid #cdcdcd;
     background: white
 }
@@ -137,7 +137,7 @@
     width: col(3);
 }
 .O__relatedContentList-container--noComments {
-    width: em(400);
+    width: 400px;
 }
 .O__relatedContentList-item--noComments:nth-child(3n+1) .O__relatedContentList-container--noComments {
     margin-right: auto
@@ -178,20 +178,38 @@
 
 
 .O__magazinePreview-col2 {
-    margin-left: em(15);
+    margin-left: 15px;
 }
 .O__magazinePreview-col2-row1 {
-    margin-bottom: em(20);
+    margin-bottom: 20px;
 }
 .O__magazinePreview-col2-row2 {
-    width: em(600);
+    width: 600px;
 }
 .O__magazinePreview-col2-row3 {
-    margin-top: em(15);
+    margin-top: 15px;
 }
 .O__magazinePreview-col3 {
-    width: em(425);
+    width: 425px;
+
 }
+
+@include laptop {
+
+  .O__magazinePreview-col3 {
+    display: none;}
+}
+
+
+@include tablet {
+
+  .O__magazinePreview-col1 {
+    display: none;}
+.O__magazinePreview-col2 {margin-left: 0;}
+
+}
+
+
 
 
 //-///////////////////////////////////////////////////////////////////////////////
@@ -206,13 +224,13 @@
 
 
 .O__socialLinkList-item {
-    margin-left: em(20);
+    margin-left: 20px;
 }
 @include tablet {
     .O__socialLinkList-item {
         width: col(6);
         margin: 0;
-        padding: em(10);
+        padding: 10px;
         ;
     }
 }
@@ -239,7 +257,7 @@
 
 .O__categoryList-item {
     width: col(3);
-    padding: 0 em(10);
+    padding: 0 10px;
 }
 .O__categoryList-item:nth-of-type(3n+1) {
     padding-left: 0;
@@ -255,41 +273,41 @@
     display: block;
 }
 .O__categoryList-item:nth-child(-n+3) .M__contentThumb-title {
-    font: 700 em(38) "Roboto Condensed";
-    margin-top: em(10)
+    font: 700 38px "Roboto Condensed";
+    margin-top: 10px
 }
 .O__categoryList-item:nth-child(2) .M__contentThumb-title,
 .O__categoryList-item:nth-child(3) .M__contentThumb-title {
-    margin-top: em(30)
+    margin-top: 30px
 }
 .O__categoryList-item:nth-child(-n+3) .M__contentThumb-subheading {
     display: block;
-    margin-top: em(5);
-    margin-bottom: em(40)
+    margin-top: 5px;
+    margin-bottom: 40px
 }
 .O__categoryList-item:nth-child(-n+3) .M__contentThumb-date {
     display: none;
 }
 .O__categoryList-item:nth-child(1) .M__contentThumb-main {
-    height: em(450);
+    height: 450px;
 }
 .O__categoryList-item:nth-child(2) {
     width: col(2);
     padding-left: 0
 }
 .O__categoryList-item:nth-child(2) .M__contentThumb-main {
-    height: em(300);
+    height: 300px;
 }
 .O__categoryList-item:nth-child(3) {
     width: col(2);
     padding-right: 0
 }
 .O__categoryList-item:nth-child(3) .M__contentThumb-main {
-    height: em(300);
+    height: 300px;
 }
 O__categoryList-heading {
     width: 100%;
-    margin-top: em(60);
+    margin-top: 60px;
 }
 
 
@@ -305,8 +323,8 @@ O__categoryList-heading {
 
 
 .O__paginationNumbers-item {
-    width: em(41);
-    margin-left: em(5);
+    width: 41px;
+    margin-left: 5px;
 }
 
 
@@ -340,6 +358,23 @@ O__categoryList-heading {
 .O__mainNavList-item {
     width: col(8);
 }
+
+
+.O__mainNavList-main--mobile{
+    height: 100px;
+    
+}
+
+
+.O__mainNavList-main--mobile {
+    background: #eee;
+    border-bottom: 4px solid #aaa;
+    border-left: 0px;
+    border-right: 0px;
+    border-top: 0px;
+    padding: 0 10px;
+}
+
 
 //-///////////////////////////////////////////////////////////////////////////////
 //-                                                                             //
@@ -376,7 +411,7 @@ O__categoryList-heading {
         width: col(4)
     }
     .O__footColumnList-item:nth-of-type(-n+4) {
-        min-height: em(250);
+        min-height: 250px;
     }
 }
 @include mobile {
@@ -386,19 +421,37 @@ O__categoryList-heading {
     .O__footColumnList-item {
         float: none;
         width: 100%;
-        padding: em(30) 0;
+        padding: 30px 0;
         text-align: center;
-        border-bottom: solid em(1) white;
+        border-bottom: solid 1px white;
         margin: 0;
     }
     .M__footColumn-link {
         display: none;
     }
     .O__footColumnList-item:nth-of-type(-n+4) {
-        min-height: em(0);
+        min-height: 0;
         margin: 0;
     }
 }
+
+
+//-///////////////////////////////////////////////////////////////////////////////
+//-                                                                             //
+//-                                                                             //
+//-    ORGANISM                                                                 //
+//-   ---------------                                                           //
+//-    DISCLAIMER TEXT LINKS LIST                                               //
+//-                                                                             //
+//-                                                                             //
+//-///////////////////////////////////////////////////////////////////////////////
+
+
+
+.O__mainNavList-main--mobile {width: 100%}
+
+
+
 
 
 //-///////////////////////////////////////////////////////////////////////////////
@@ -423,7 +476,7 @@ O__categoryList-heading {
     }
     .O__disclaimerLinksList-item {
         float: none;
-        padding: em(30) 0;
+        padding: 30px 0;
         border-top: 1px solid white;
     }
 }
@@ -442,11 +495,12 @@ O__categoryList-heading {
 
 
 .O__socialShareList-main {
-    border-top: em(1) solid #cdcdcd;
+    border-top: 1px solid #cdcdcd;
 }
 @include tablet {
     .O__socialShareList-main {
         border: 0;
-        margin-bottom: em(30);
+        margin-bottom: 30px;
     }
 }
+

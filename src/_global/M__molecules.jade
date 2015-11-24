@@ -1,6 +1,6 @@
-- var tablet = 62.563
-- var laptop = 81.313
-- var mobile = 43.813
+- var tablet = 1301
+- var laptop = 1001
+- var mobile = 701
 
 //-///////////////////////////////////////////////////////////////////////////////
 //-                                                                             //
@@ -68,7 +68,7 @@ mixin M__quote
         .M__quote-row1.u-cf
             .M__quote-openQuote.icon-openQuoteRed.u-floatLeft
         .M__quote-row2
-            .M__quote-text Fusce commodo aliquam arcu. Aenean vulputate eleifend tellus. Duis vel nibh at velit scelerisque suscipit. Praesent porttitor, nulla vitae posuere iaculis, arcu nisl dignissim dolor, a pretium mi sem ut ipsum. Nunc egestas, augue at pellentesque laoreet, felis eros vehicula leo, at malesuada velit leo quis pede.
+            .M__quote-text Fusce commodo aliquam arcu. Aenean vulputate eleifend tellus. Duis vel nibh at velit scelerisque suscipit. Praessent porttitor, nulla vitae posuere iaculis, arcu nisl dignissim dolor, a pretium mi sem ut ipsum. Nunc egestas, augue at pellentesque laoreet, felis eros vehicula leo, at malesuada velit leo quis pede.
         .M__quote-row3.u-cf
             .M_quote-closeQuote.icon-closeQuoteRed.u-floatRight
         .M__quote-row4
@@ -184,14 +184,30 @@ mixin M__footColumn(heading, ...links)
 //-///////////////////////////////////////////////////////////////////////////////
 
 
-mixin M__mainNavButton(text, arrow)
+mixin M__mainNavButton(text, arrow, activate)
     a(href="#")
-        .M__mainNavButton-main
-            .M__mainNavButton-container
-                .M__mainNavButton-centre.u-cf
-                    .M__mainNavButton-text.u-floatLeft= text
-                    if arrow
-                        .M__mainNavButton-arrow.icon-dropdown.u-floatRight
+        if activate
+            .M__mainNavButton-main.is-activated
+                .M__mainNavButton-container
+                    .M__mainNavButton-centre.u-cf
+                        .M__mainNavButton-text.u-floatLeft= text
+                        if arrow
+                            .M__mainNavButton-arrow.icon-dropdown.u-floatRight
+        else
+            .M__mainNavButton-main
+                    .M__mainNavButton-container
+                        .M__mainNavButton-centre.u-cf
+                            .M__mainNavButton-text.u-floatLeft= text
+                            if arrow
+                                .M__mainNavButton-arrow.icon-dropdown.u-floatRight
+                    
+
+
+
+
+
+
+
 
 
 //-///////////////////////////////////////////////////////////////////////////////
@@ -267,7 +283,7 @@ mixin M__Search
             input.M__Search-keyword(placeholder="Search")
         .M__Search-categoryContainer.u-floatLeft
             select.M__Search-category
-                each val in head.static.mainNav
+                each val in head.static.mainNav.data
                     option= val.text
         .M__Search-buttonContainer.u-floatLeft
             button.M__Search-button Search
@@ -325,7 +341,7 @@ mixin M__shortcodeBox-main(text)
 
 
 mixin M__pullQuote(Quote)
-    
+
     .M__pullQuote-main.u-floatRight
             a(href="#").u-noUnderline
                 .M__pullQuote-quote.u-cf
@@ -350,7 +366,7 @@ mixin M__contentThumb()
         .M__contentThumb-main.u-relative
             .M__contentThumb-container.u-relative
                 picture
-                    source.M__contentThumb-image.u-absolute(srcset="http://lorempixel.com/640/200" media="(max-width: #{mobile}em)")
+                    source.M__contentThumb-image.u-absolute(srcset="http://lorempixel.com/640/300" media="(max-width: #{mobile}px)")
                     img.M__contentThumb-imageu.u-absolute(src="http://lorempixel.com/885/200")
             .M__contentThumb-container.u-absolute
                 .M__contentThumb-label.u-table Label
@@ -359,9 +375,12 @@ mixin M__contentThumb()
                         .M__contentThumb-content.u-tableCell
                             .M__contentThumb-showcase Top Story
                             .M__contentThumb-title Copenhagen builds carbon signaling waste-to-power plant
-                            .M__contentThumb-subheading Copenhagen builds carbon signaling waste-to-power plant
+                            .M__contentThumb-subheading Copenhagen builds carbon signaling waste-to-power plants
                             .M__contentThumb-date 11 SEPTEMBER 2015
                             .M__contentThumb-prompt Read More
+
+
+
 
 
 //-///////////////////////////////////////////////////////////////////////////////
@@ -378,7 +397,7 @@ mixin M__contentThumb()
 mixin M__leaderboardAdvert
     a(href="#")
         picture
-            source.M__leaderboardAdvert-image(srcset="http://lorempixel.com/968/100" media="(min-width: #{tablet}em)")
+            source.M__leaderboardAdvert-image(srcset="http://lorempixel.com/968/100" media="(min-width: #{tablet}px)")
             img.M__leaderboardAdvert-image(src="http://lorempixel.com/680/100")
 
 
@@ -571,7 +590,7 @@ mixin M__featuredImage(url, label)
     .M__featuredImage-main.u-relative
         .M__featuredImage-container.u-relative
             picture
-                source.M__featuredImage-image.u-absolute(srcset="http://lorempixel.com/640/570" media="(max-width: #{mobile}em)")
+                source.M__featuredImage-image.u-absolute(srcset="http://lorempixel.com/640/300" media="(max-width: #{mobile}px)")
                 img.M__featuredImage-image.u-absolute(src="http://lorempixel.com/860/590")
         .M__featuredImage-label.u-absolute= label
 
@@ -593,8 +612,8 @@ mixin M__largeSkyscraperAdvert
                 .M__largeSkyscraperAdvert-title Advertisement
                 picture
                     // Het mobile en tablet weergawe ook ingesit vir responsiveness
-                    source.M__largeSkyscraperAdvert-image--desktop(srcset="http://lorempixel.com/300/600" media="(min-width: #{tablet}em)")
-                    source.M__largeSkyscraperAdvert-image--tablet(srcset="http://lorempixel.com/120/600" media="(min-width: #{mobile}em) and (max-width: #{tablet}em)")
+                    source.M__largeSkyscraperAdvert-image--desktop(srcset="http://lorempixel.com/300/600" media="(min-width: #{tablet}px)")
+                    source.M__largeSkyscraperAdvert-image--tablet(srcset="http://lorempixel.com/120/600" media="(min-width: #{mobile}px) and (max-width: #{tablet}px)")
                     img.M__largeSkyscraperAdvert-image--mobile(src="http://lorempixel.com/270/80")
 
 

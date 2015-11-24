@@ -17,34 +17,34 @@
     color: #cccccc
 }
 #__footTopBar-centre {
-    width: em(1255);
+    width: 1255px;
     margin: 0 auto;
 }
 #__footContent-centre {
-    width: em(1255);
+    width: 1255px;
     margin: 0 auto;
 }
 #__footBottomBar-centre {
-    width: em(1255);
+    width: 1255px;
     margin: 0 auto;
 }
 #__footContent-centre {
-    border-top: em(1) solid white;
-    border-bottom: em(1) solid #cccccc;
-    padding: em(30) 0 em(40) 0;
+    border-top: 1px solid white;
+    border-bottom: 1px solid #cccccc;
+    padding: 30px 0 40px 0;
 }
 #__footBottomBar-centre {
-    padding: em(30) 0;
+    padding: 30px 0;
 }
 #__foot-BottomBar-row2 {
-    padding-top: em(20);
-    padding-bottom: em(60);
+    padding-top: 20px;
+    padding-bottom: 60px;
 }
 #__footTopBar-main {
-    padding: em(35) 0;
+    padding: 35px 0;
 }
 #__footBottomBar-row1{
-        padding-top: em(30);
+        padding-top: 30px;
 
 }
 
@@ -64,16 +64,16 @@
 
 @include tablet {
     #__foot-BottomBar-row2 {
-        width: em(500);
-        margin: em(30) auto 0 auto;
+        width: 500px;
+        margin: 30px auto 0 auto;
     }
     #__foot-BottomBar-row2 {
         float: none;
-        margin-top: em(30);
+        margin-top: 30px;
     }
 
     #__footBottomBar-row1 {
-        margin-top: em(30);
+        margin-top: 30px;
     }
 
     #__footTopBar-col1 {
@@ -88,13 +88,13 @@
         width: 100%;
     }
 
-    #__footTopBar-col2{padding-top: em(20);}
+    #__footTopBar-col2{padding-top: 20px;}
     #__foot-BottomBar-row2 {
-        width: em(410);
+        width: 410px;
 
     }
-    
-    
+
+
 
 }
 

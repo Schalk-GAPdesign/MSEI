@@ -215,9 +215,9 @@ style
       <div id="__mainNav-col0" class="u-floatLeft">
         <select onChange="window.location.href=this.value" class="O__mainNavList-main--mobile">
           <option class="O__mainNavList-item--mobile">Homepagess</option>
-          <option disabled="disabled" selected="selected" value="http://www.google.coms" class="O__mainNavList-item--mobile">News</option>
+          <option value="http://www.google.coms" class="O__mainNavList-item--mobile">News</option>
           <option value="http://www.google.coms" class="O__mainNavList-item--mobile">Features</option>
-          <option value="http://www.google.coms" class="O__mainNavList-item--mobile">Magazine</option>
+          <option disabled="disabled" selected="selected" value="http://www.google.coms" class="O__mainNavList-item--mobile">Magazine</option>
           <option value="http://www.google.coms" class="O__mainNavList-item--mobile">Reports</option>
           <option value="http://www.google.coms" class="O__mainNavList-item--mobile">Tenders</option>
           <option value="http://www.google.coms" class="O__mainNavList-item--mobile">Multimedia</option>
@@ -228,7 +228,7 @@ style
       <div id="__mainNav-col1" class="u-floatLeft">
         <div class="O__mainNavList-main u-cf">
           <div class="O__mainNavList-item u-floatLeft"><a href="#">
-              <div class="M__mainNavButton-main is-activated">
+              <div class="M__mainNavButton-main">
                 <div class="M__mainNavButton-container">
                   <div class="M__mainNavButton-centre u-cf">
                     <div class="M__mainNavButton-text u-floatLeft">News</div>
@@ -246,7 +246,7 @@ style
               </div></a>
           </div>
           <div class="O__mainNavList-item O__mainNavList-item--magazine u-floatLeft"><a href="#">
-              <div class="M__mainNavButton-main">
+              <div class="M__mainNavButton-main is-activated">
                 <div class="M__mainNavButton-container">
                   <div class="M__mainNavButton-centre u-cf">
                     <div class="M__mainNavButton-text u-floatLeft">Magazine</div>
@@ -398,32 +398,12 @@ style
       <div class="O__secondaryNavList-main u-cf">
         <div class="O__secondaryNavList-item u-floatLeft"><a href="#" class="u-noUnderline">
             <div class="M__secondaryNavButton-main">
-              <div class="M__secondaryNavButton-container u-borderLeft">Smart Meters</div>
+              <div class="M__secondaryNavButton-container u-borderLeft">Latest Issue</div>
             </div></a>
         </div>
         <div class="O__secondaryNavList-item u-floatLeft"><a href="#" class="u-noUnderline">
             <div class="M__secondaryNavButton-main">
-              <div class="M__secondaryNavButton-container">Smart Grid</div>
-            </div></a>
-        </div>
-        <div class="O__secondaryNavList-item u-floatLeft"><a href="#" class="u-noUnderline">
-            <div class="M__secondaryNavButton-main">
-              <div class="M__secondaryNavButton-container">Smart Energy</div>
-            </div></a>
-        </div>
-        <div class="O__secondaryNavList-item u-floatLeft"><a href="#" class="u-noUnderline">
-            <div class="M__secondaryNavButton-main">
-              <div class="M__secondaryNavButton-container">M2M</div>
-            </div></a>
-        </div>
-        <div class="O__secondaryNavList-item u-floatLeft"><a href="#" class="u-noUnderline">
-            <div class="M__secondaryNavButton-main">
-              <div class="M__secondaryNavButton-container">Data &amp; Analytics</div>
-            </div></a>
-        </div>
-        <div class="O__secondaryNavList-item u-floatLeft"><a href="#" class="u-noUnderline">
-            <div class="M__secondaryNavButton-main">
-              <div class="M__secondaryNavButton-container">IOT</div>
+              <div class="M__secondaryNavButton-container">Archive</div>
             </div></a>
         </div>
       </div>
@@ -437,7 +417,7 @@ style
     <div id="__articleHeader-col1" class="u-floatLeft">
       <div id="__articleHeader-col1-row1">
         <div class="M__heading-main u-cf">
-          <div class="M__heading-title u-floatLeft">News Story</div><a href="#" class="u-noUnderline">
+          <div class="M__heading-title u-floatLeft">Magazine Article</div><a href="#" class="u-noUnderline">
             <div class="M__heading-prompt u-floatLeft">
               <!-- Het ekstra parent DIV ingesit: .M__heading-container-->
               <div class="M__heading-promptContainer u-cf">
@@ -461,19 +441,27 @@ style
       
     </div>
     
-    <div id="__articleHeader-col2" class="u-floatRight"><a href="#" class="u-noUnderline">
-        <div class="M__largeSkyscraperAdvert-main">
-          <div class="M__largeSkyscraperAdvert-container">
-            <div class="M__largeSkyscraperAdvert-title">Advertisement</div>
-            <picture>
-              <!-- Het mobile en tablet weergawe ook ingesit vir responsiveness-->
-              <source srcset="http://lorempixel.com/300/600" media="(min-width: 1301px)" class="M__largeSkyscraperAdvert-image--desktop"/>
-              <source srcset="http://lorempixel.com/120/600" media="(min-width: 701px) and (max-width: 1301px)" class="M__largeSkyscraperAdvert-image--tablet"/><img src="http://lorempixel.com/270/80" class="M__largeSkyscraperAdvert-image--mobile"/>
-            </picture>
-          </div>
-        </div></a>
-    </div>
     
+    <!--= MAGAZINE ADVERT-->
+    <div id="__articleHeader-col2" class="u-floatRight">
+      <div class="O__magazineMockupBlock-main">
+        <div class="O__magazineMockupBlock-row1">
+          <div class="M__magazineMockup-main">
+            <div class="M__magazineMockup-centre">
+              <div class="M__magazineMockup-container"><img src="http://dev.gapdesign.co.za/img/magazine-bg.png" class="M__magazineMockup-background"/>
+                <div class="M__magazineMockup-imageContainer"><img src="http://lorempixel.com/210/295" class="M__magazineMockup-image"/></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="O__magazineMockupBlock-row2">
+          <div class="A__magazineMockupText-main">This article originally <strong>appeared in the following issue of our bi-monthly print magazine</strong>. The digital version of the magazine can be read online or downloaded entirely free of charge.a</div>
+        </div>
+        <div class="O__magazineMockupBlock-row3"><a href="#" class="u-noUnderline">
+            <div class="M__magazineReadPrompt-main">Click Here to Read Online</div></a>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 

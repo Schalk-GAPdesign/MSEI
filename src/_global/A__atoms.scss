@@ -68,7 +68,7 @@
 
 
 .A__magazinePreviewTitle-main {
-    font: 700 em(25) "Roboto Condensed";
+    font: 700 25px "Roboto Condensed";
     text-transform: uppercase;
 }
 
@@ -87,17 +87,17 @@
 .A__disclaimerText-line {
     text-align: center;
     color: #ccc;
-    padding-left: em(5);
+    padding-left: 5px;
 }
 .A__disclaimerText-row {
-    padding: em(5) 0;
+    padding: 5px 0;
     display: table;
     margin: 0 auto;
 }
 .A__disclaimerText-main {
-    line-height: em(18);
-    font-size: em(13);
-    letter-spacing: em(1);
+    line-height: 18px;
+    font-size: 13px;
+    letter-spacing: 1px;
     text-align: center;
 }
 .A__disclaimerText-Link {
@@ -106,7 +106,7 @@
 @include tablet {
     .A__disclaimerText-line {
         float: none;
-        line-height: em(20);
+        line-height: 20px;
     }
 }
 
@@ -123,13 +123,11 @@
 
 
 .A__textMSEI-main {
-    font: 700 em(26) "Roboto Condensed";
+    font: 700 26px "Roboto Condensed";
     text-transform: uppercase;
     color: white;
 
-.A__textMSEI-main--footer:hover {
-    color: red;
-}
+
 
 }
 @include mobile {
@@ -138,6 +136,9 @@
     }
 }
 
+.A__textMSEI-main--footer:hover {
+    color: red;
+}
 
 //-///////////////////////////////////////////////////////////////////////////////
 //-                                                                             //
@@ -153,7 +154,7 @@
 .A__smallTitle-main {
     text-transform: uppercase;
     white-space: nowrap;
-    font: 700 em(16) "Roboto Condensed";
+    font: 700 16px "Roboto Condensed";
     color: #aaaaaa;
 }
 .A__smallTitle-main--socialShare {

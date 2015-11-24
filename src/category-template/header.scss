@@ -1,4 +1,4 @@
-//body {width: em(300); margin: 0 auto}
+//body {width: 300px; margin: 0 auto}
 
 
 
@@ -38,12 +38,12 @@
     /* ensures the image is always in the h-middle */
     overflow: hidden;
     /* hide the cropped portion */
-    height: em(200);
+    height: 200px;
     color: white;
-    margin-bottom: em(18);
+    margin-bottom: 18px;
 }
 .M__contentThumb-showcase {
-    margin-top: em(15);
+    margin-top: 15px;
     display: none;
     text-transform: uppercase;
     font-weight: 700;
@@ -63,29 +63,29 @@
     bottom: 0;
 }
 .M__contentThumb-label {
-    padding: em(5) em(15) em(5) em(10);
+    padding: 5px 15px 5px 10px;
     ;
     background: red;
 }
 .M__contentThumb-overlay {
-    padding: 0 em(20);
+    padding: 0 20px;
     background: rgba(0, 0, 0, 0.7);
-    height: em(100);
+    height: 100px;
     width: 100%;
 }
 .M__contentThumb-mediaPlay {
     vertical-align: middle;
-    width: em(70);
+    width: 70px;
 }
 .M__contentThumb-title {
     font-weight: 700;
-    margin-top: em(20);
+    margin-top: 20px;
 }
 .M__contentThumb-date {
-    font-size: em(13);
+    font-size: 13px;
     color: #ccc;
-    margin-top: em(10);
-    margin-bottom: em(30);
+    margin-top: 10px;
+    margin-bottom: 30px;
 }
 .M__contentThumb-subheading {
     display: none;
@@ -107,12 +107,12 @@
     background: blue;
 }
 #__leaderboard-centre {
-    width: em(968);
+    width: 968px;
     margin: 0 auto;
 }
 @include tablet {
     #__leaderboard-centre {
-        width: em(680);
+        width: 680px;
         margin: 0 auto;
     }
 }
@@ -123,32 +123,32 @@
 // MOLECULE: HEADING
 
 .M__heading-main {
-    border-bottom: solid em(8) black;
+    border-bottom: solid 8px black;
     font-family: "Roboto Condensed";
     font-weight: 700;
     text-transform: uppercase;
 }
 .M__heading-title {
     background: #ed1b25;
-    font-size: em(26);
+    font-size: 26px;
     color: white;
     text-align: center;
-    padding: em(3) em(8) em(3) em(6);
+    padding: 3px 8px 3px 6px;
 
 }
 .M__heading-prompt {
     background: grey;
     color: black;
-    font-size: em(16);
+    font-size: 16px;
     text-align: center;
-    padding: em(3) em(8) em(3) em(6);
+    padding: 3px 8px 3px 6px;
 
 }
 
 
 .M__introParagraph-main {
     background: #eeeeee;
-    padding: em(10) em(15);
+    padding: 10px 15px;
 }
 
 @include mobile {
@@ -161,8 +161,8 @@
 
 .M__contentButton-main {
     width: 100%;
-    padding: em(11);
-    font: 700 em(16) "Roboto Condensed";
+    padding: 11px;
+    font: 700 16px "Roboto Condensed";
     text-transform: uppercase;
     background: #eee;
     border: none;
@@ -179,7 +179,7 @@
 text-align: center;}
 
 @include mobile {
-    .M__contentButton-main {height: em(100);}
+    .M__contentButton-main {height: 100px;}
 }
 
 
@@ -202,7 +202,7 @@ text-align: center;}
 
 .O__categoryList-item {
     width: col(3);
-    padding: 0 em(10);
+    padding: 0 10px;
 }
 .O__categoryList-item:nth-of-type(3n+1) {
     padding-left: 0;
@@ -218,46 +218,46 @@ text-align: center;}
     display: block;
 }
 .O__categoryList-item:nth-child(-n+3) .M__contentThumb-title {
-    font: 700 em(38) "Roboto Condensed";
-    margin-top: em(10)
+    font: 700 38px "Roboto Condensed";
+    margin-top: 10px
 }
 .O__categoryList-item:nth-child(2) .M__contentThumb-title,
 .O__categoryList-item:nth-child(3) .M__contentThumb-title {
-    margin-top: em(30)
+    margin-top: 30px
 }
 .O__categoryList-item:nth-child(-n+3) .M__contentThumb-subheading {
     display: block;
-    margin-top: em(5);
-    margin-bottom: em(40)
+    margin-top: 5px;
+    margin-bottom: 40px
 }
 .O__categoryList-item:nth-child(-n+3) .M__contentThumb-date {
     display: none;
 }
 .O__categoryList-item:nth-child(1) .M__contentThumb-main {
-    height: em(450);
+    height: 450px;
 }
 .O__categoryList-item:nth-child(2) {
     width: col(2);
     padding-left: 0
 }
 .O__categoryList-item:nth-child(2) .M__contentThumb-main {
-    height: em(300);
+    height: 300px;
 }
 .O__categoryList-item:nth-child(3) {
     width: col(2);
     padding-right: 0
 }
 .O__categoryList-item:nth-child(3) .M__contentThumb-main {
-    height: em(300);
+    height: 300px;
 }
 O__categoryList-heading {
     width: 100%;
-    margin-top: em(60);
+    margin-top: 60px;
 }
 
 ////////////////////////////////////////////////////////////////////////////////////////////
 // ORGANISM: PAGINATION NUMBERS LIST
-.O__paginationNumbers-item {width: em(41); margin-left: em(5);}
+.O__paginationNumbers-item {width: 41px; margin-left: 5px;}
 
 
 
@@ -280,11 +280,11 @@ O__categoryList-heading {
 
 #__topNav-main {background: #26292a; color: white; }
 #__menuContent-main {background: red;}
-#__menuContent-centre {width: em(1255); margin: 0 auto;}
+#__menuContent-centre {width: 1255px; margin: 0 auto;}
 #__mainNav-main {background: #efefef}
-#__mainNav-centre {width: em(1255); margin: 0 auto;}
+#__mainNav-centre {width: 1255px; margin: 0 auto;}
 #__secondaryNav-main {background: #cdcdcd; }
-#__secondaryNav-centre {width: em(1255); margin: 0 auto;}
+#__secondaryNav-centre {width: 1255px; margin: 0 auto;}
 
 
 
@@ -294,20 +294,20 @@ O__categoryList-heading {
 
 
 
-#__content-main {padding-top: em(80); padding-bottom: em(60);}
+#__content-main {padding-top: 80px; padding-bottom: 60px;}
 
-#__intro-centre {width: em(1255); margin: 0 auto;}
-#__intro-row2-col1 {width: em(827)}
-#__intro-row2-col2 {width: em(400)}
+#__intro-centre {width: 1255px; margin: 0 auto;}
+#__intro-row2-col1 {width: 827px}
+#__intro-row2-col2 {width: 400px}
 
-#__pagination-main {margin-top: em(60);}
+#__pagination-main {margin-top: 60px;}
 #__pagination-centre {margin: 0 auto;}
-#__pageination-row1-col1 {width: em(217); margin-right: em(10);}
-#__pageination-row1-col2 {width: em(217); }
-#__pageination-row2  {margin: 0 auto; margin-top: em(15);}
+#__pageination-row1-col1 {width: 217px; margin-right: 10px;}
+#__pageination-row1-col2 {width: 217px; }
+#__pageination-row2  {margin: 0 auto; margin-top: 15px;}
 
-#__categoryList-main {margin-top: em(60);}
-#__categoryList-centre {width: em(1255); margin: 0 auto;}
+#__categoryList-main {margin-top: 60px;}
+#__categoryList-centre {width: 1255px; margin: 0 auto;}
 #__categoryList-main {width: 100%;}
 
 

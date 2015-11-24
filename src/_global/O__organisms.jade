@@ -127,8 +127,8 @@ mixin O__labeledLinksList--otherFiles
             each val in article.content.footer.otherFiles
                 .O__labeledLinksList-item
                         +M__labeledLinkItem(val.label, val.text)
-                        
-                        
+
+
 mixin O__labeledLinksList--presentationFiles
     a(href="#").u-noUnderline
         .O__labeledLinksList-main
@@ -278,7 +278,7 @@ mixin O__relatedContentList(modifier)
             each val, index in article.content.footer.relatedContent
                 .O__relatedContentList-item
                     +M__contentThumb
-    
+
 //-///////////////////////////////////////////////////////////////////////////////
 //-                                                                             //
 //-                                                                             //
@@ -296,22 +296,22 @@ mixin O_noCommentrelated
                 .O__relatedContentList-item--noComments.u-floatLeft
                     .O__relatedContentList-container--noComments
                         +M__contentThumb
-                        
+
  mixin O_noCommentrelated--pressReleases
     .O__relatedContentList-main.u-cf
         each val, index in article.content.footer.pressRelease
             .O__relatedContentList-item--noComments.u-floatLeft
                 .O__relatedContentList-container--noComments
-                    +M__contentThumb                       
+                    +M__contentThumb
 
  mixin O_noCommentrelated--media
     .O__relatedContentList-main.u-cf
         each val, index in article.content.footer.media
             .O__relatedContentList-item--noComments.u-floatLeft
                 .O__relatedContentList-container--noComments
-                    +M__contentThumb                       
+                    +M__contentThumb
 
-   
+
 
 //-///////////////////////////////////////////////////////////////////////////////
 //-                                                                             //
@@ -362,14 +362,32 @@ mixin O__footColumnList
 
 mixin O__mainNavList
     .O__mainNavList-main.u-cf
-        each val,index in head.static.mainNav
+        each val,index in head.static.mainNav.data
             if(index!=2)
                 .O__mainNavList-item.u-floatLeft
-                    +M__mainNavButton(val.text, val.arrow)
+                    if val.active
+                        +M__mainNavButton(val.text, val.arrow, true)
+                    else
+                        +M__mainNavButton(val.text, val.arrow)
             else
                 .O__mainNavList-item.O__mainNavList-item--magazine.u-floatLeft
-                    +M__mainNavButton(val.text, val.arrow)
+                    if val.active
+                        +M__mainNavButton(val.text, val.arrow, true)
+                    else
+                        +M__mainNavButton(val.text, val.arrow)
+                        
 
+mixin O__mainNavList--mobile
+    select.O__mainNavList-main--mobile(onChange="window.location.href=this.value")
+        if (head.static.mainNav.homepage)
+                option.O__mainNavList-item--mobile(disabled selected) Homepage
+            if (head.static.mainNav.homepage==false)
+                option.O__mainNavList-item--mobile Homepagess
+        each val,index in head.static.mainNav.data
+            if(val.active==true)
+                option.O__mainNavList-item--mobile(disabled selected)(value="http://www.google.coms")= val.text
+            if(val.active==false)
+                option.O__mainNavList-item--mobile(value="http://www.google.coms")= val.text
 
 //-///////////////////////////////////////////////////////////////////////////////
 //-                                                                             //
@@ -423,7 +441,7 @@ mixin O__socialShareList
     .O__socialShareList-main.u-cf
         each val in article.content.article.socialShare
             +M__socialShareButton(val.icon, val.text, val.link.prepend, val.link.data, val.link.append)
-            
+
 
 //-///////////////////////////////////////////////////////////////////////////////
 //-                                                                             //
@@ -441,8 +459,8 @@ mixin O__textPromptList
             each val in article.content.footer.submitButtons
                 .O_textPromptList-item
                     +M__textPrompt(val.text)
-                    
-                    
+
+
 //-///////////////////////////////////////////////////////////////////////////////
 //-                                                                             //
 //-                                                                             //
@@ -459,8 +477,8 @@ mixin O__textPromptList--tenders
             each val in article.content.footer.otherTenders
                 .O_textPromptList-item
                     +M__textPrompt--tenders(val.text, val.location, val.deadline)
-                    
-                    
+
+
 //-///////////////////////////////////////////////////////////////////////////////
 //-                                                                             //
 //-                                                                             //

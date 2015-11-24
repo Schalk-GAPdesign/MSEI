@@ -1,3 +1,17 @@
+////////////////////////
+
+.M__contentVideo-main {margin: 30px 0; text-align: center;}
+.M__contentVideo-video { text-align: center;}
+
+
+
+
+
+
+
+
+
+
 //-///////////////////////////////////////////////////////////////////////////////
 //-                                                                             //
 //-                                                                             //
@@ -9,14 +23,14 @@
 //-///////////////////////////////////////////////////////////////////////////////
 
 
-.M__closeButton-main {padding: em(25); background: #adadad; border-radius: em(35); color: black; text-transform: uppercase; font: 700 em(24) "Roboto Condensed"}
+.M__closeButton-main {padding: 25px; background: #adadad; border-radius: 35px; color: black; text-transform: uppercase; font: 700 24px "Roboto Condensed"}
 .M__closeButton-main:hover {background: red; color: white;}
 .M__closeButton-main:hover .M__closeButton-col1 {@extend .icon-closeWhite}
 
 
 
-.M__closeButton-col1 {margin-top: em(2);}
-.M__closeButton-col2 {padding-left: em(10);}
+.M__closeButton-col1 {margin-top: 2px;}
+.M__closeButton-col2 {padding-left: 10px;}
 
 //-///////////////////////////////////////////////////////////////////////////////
 //-                                                                             //
@@ -29,7 +43,7 @@
 //-///////////////////////////////////////////////////////////////////////////////
 
 
-.M__magazineReadPrompt-main {background: red; color: white; padding: em(10) em(20); display: table; margin: em(30) auto em(30) auto; text-transform: uppercase; }
+.M__magazineReadPrompt-main {background: red; color: white; padding: 10px 20px; display: table; margin: 30px auto 30px auto; text-transform: uppercase; }
 .M__magazineReadPrompt-main:hover {background: #cdcdcd; color: black;}
 
 
@@ -46,7 +60,7 @@
 
 
 .M__labeledLinkItem-main {
-    margin-bottom: em(15);
+    margin-bottom: 15px;
     color: black;
     &:hover {
         color: red;
@@ -59,17 +73,17 @@
     vertical-align: middle;
 }
 .M__labeledLinkItem-label {
-    padding: em(8) em(10);
+    padding: 8px 10px;
     background: #555555;
     text-transform: uppercase;
     color: white;
-    font-size: em(13);
+    font-size: 13px;
     font-weight: 700;
     letter-spacing: 1px;
 }
 
 .M__labeledLinkItem-title {
-    padding-left: em(10);
+    padding-left: 10px;
     vertical-align: middle;
     font-weight: 700;
 }
@@ -86,14 +100,14 @@
 //-                                                                             //
 //-///////////////////////////////////////////////////////////////////////////////
 
-.M__quote-row2 {padding: em(10) 0}
+.M__quote-row2 {padding: 10px 0}
 .M__quote-text {
     font-weight: 700;
-    font-size: em(20);
+    font-size: 20px;
     color: red;
 }
 .M_quote-source {
-    font-size: em(13);
+    font-size: 13px;
     color: red;
     font-weight: 700;
     text-transform: uppercase;
@@ -115,10 +129,10 @@
     background: red;
     color: white;
     text-transform: uppercase;
-    font: 700 em(13) "Roboto Condensed";
-    padding: em(5) em(10);
+    font: 700 13px "Roboto Condensed";
+    padding: 5px 10px;
     letter-spacing: 1px;
-    margin-right: em(10);
+    margin-right: 10px;
 }
 .M__magazinePreviewButton-main--grey {
     background: grey;
@@ -126,6 +140,12 @@
 }
 .M__magazinePreviewButton-main:hover {
     background: #aaa;
+}
+
+@include tablet {
+
+.M__magazinePreviewButton-main {padding: 30px 20px;}
+    
 }
 
 
@@ -141,9 +161,10 @@
 
 
 .M__magazinePreviewArticle-main {
-    font: 700 em(16) "Roboto";
+    font: 700 16px "Roboto";
+    color: black;
     border-top: 1px solid #aaa;
-    padding: em(10) 0;
+    padding: 10px 0;
     &:hover {
         background: #aaa;
     }
@@ -164,20 +185,20 @@
 .M__contentThumb-prompt {
     text-transform: uppercase;
     border: 1px solid white;
-    border-radius: em(20);
+    border-radius: 20px;
 
-    margin-top: em(10);
+    margin-top: 10px;
     font-size: 700;
-    font: 700 em(13) "Roboto";
+    font: 700 13px "Roboto";
 }
 .M__contentThumb-main {
     color: white;
-    margin-bottom: em(18);
+    margin-bottom: 18px;
     transition: all 1s ease-in-out;
 }
 .M__contentThumb-container.u-relative {
     width: 100%;
-    height: em(200);
+    height: 200px;
     overflow: hidden;
 }
 img.M__contentThumb-imageu.u-absolute {
@@ -190,7 +211,7 @@ img.M__contentThumb-imageu.u-absolute {
     min-width: 100%;
 }
 .M__contentThumb-showcase {
-    margin-top: em(15);
+    margin-top: 15px;
     display: none;
     text-transform: uppercase;
     font-weight: 700;
@@ -201,29 +222,29 @@ img.M__contentThumb-imageu.u-absolute {
     bottom: 0;
 }
 .M__contentThumb-label {
-    padding: em(5) em(15) em(5) em(10);
+    padding: 5px 15px 5px 10px;
     background: red;
 }
 .M__contentThumb-overlay {
-    padding: 0 em(20);
+    padding: 0 20px;
     background: rgb(0, 0, 0);
     background: rgba(0, 0, 0, 0.7);
-    height: em(100);
+    height: 100px;
     width: 100%;
-    padding-bottom: em(20);
+    padding-bottom: 20px;
 }
 .M__contentThumb-mediaPlay {
     vertical-align: middle;
-    width: em(70);
+    width: 70px;
 }
 .M__contentThumb-title {
     font-weight: 700;
-    margin-top: em(20);
+    margin-top: 20px;
 }
 .M__contentThumb-date {
-    font-size: em(13);
+    font-size: 13px;
     color: #ccc;
-    margin-top: em(10);
+    margin-top: 10px;
 }
 .M__contentThumb-subheading {
     display: none;
@@ -232,18 +253,29 @@ img.M__contentThumb-imageu.u-absolute {
 
 .M__contentThumb-prompt {
     height: 0;
-    width: em(112);
-    padding: 0 0 0 em(10);
+    width: 112px;
+    padding: 0 0 0 10px;
     overflow: hidden;
     transition: all 0.5s ease;
     opacity: 0;
-    margin-top: em(20)
+    margin-top: 20px
 }
 .M__contentThumb-main:hover .M__contentThumb-container .M__contentThumb-overlay .M__contentThumb-row .M__contentThumb-content .M__contentThumb-prompt {
-    height: em(30);
-    padding: em(5) 0 0 em(10);
+    height: 30px;
+    padding: 5px 0 0 10px;
     transition: all 0.3s ease;
     opacity: 1;
+}
+
+
+@include mobile {.M__contentThumb-main{height: 300px;}
+
+.M__contentThumb-container.u-relative {
+    height: 300px;
+
+}
+
+
 }
 
 
@@ -261,33 +293,33 @@ img.M__contentThumb-imageu.u-absolute {
 .M__magazineMockup-main {
     background: #e5e5e5;
     width: 100%;
-    height: em(250);
+    height: 250px;
     display: table;
 }
 .M__magazineMockup-centre {
     position: relative;
-    width: em(310);
-    height: em(215);
+    width: 310px;
+    height: 215px;
     overflow: hidden;
     margin: 0 auto;
-    margin-top: em(15);
+    margin-top: 15px;
 }
 .M__magazineMockup-background {
     position: absolute;
-    top: em(8);
-    left: em(-2);
+    top: 8px;
+    left: -2;
 }
 .M__magazineMockup-imageContainer {
-    width: em(141);
-    height: em(310);
-    perspective: em(900);
+    width: 141px;
+    height: 310px;
+    perspective: 900px;
     position: absolute;
 }
 .M__magazineMockup-image {
-    width: em(200);
-    height: em(250);
-    margin-left: em(51);
-    margin-top: em(-32);
+    width: 200px;
+    height: 250px;
+    margin-left: 51px;
+    margin-top: -32px;
     opacity: 1;
     transform: rotateY(33deg) rotateZ(-20deg) rotateX(52deg);
     -webkit-backface-visibility: hidden;
@@ -307,18 +339,18 @@ img.M__contentThumb-imageu.u-absolute {
 
 
 .M__largeSkyscraperAdvert-main {
-    border: em(1) solid #cdcdcd;
+    border: 1px solid #cdcdcd;
     background: #eeeeee;
-    padding: em(30) 0;
+    padding: 30px 0;
 }
 .M__largeSkyscraperAdvert-title {
-    font-size: em(13);
+    font-size: 13px;
     text-transform: uppercase;
     font-weight: 700;
     color: #a5a5a5;
-    letter-spacing: em(1);
+    letter-spacing: 1px;
     text-align: center;
-    margin-bottom: em(10);
+    margin-bottom: 10px;
 }
 .M__largeSkyscraperAdvert-container {
     display: table;
@@ -326,7 +358,7 @@ img.M__contentThumb-imageu.u-absolute {
 }
 
 @include tablet {
-    .M__largeSkyscraperAdvert-title{font-size: em(10);}
+    .M__largeSkyscraperAdvert-title{font-size: 10px;}
 
 }
 
@@ -347,24 +379,24 @@ img.M__contentThumb-imageu.u-absolute {
 
 
 .M__heading-main {
-    border-bottom: solid em(8) black;
+    border-bottom: solid 8px black;
     font-family: "Roboto Condensed";
     font-weight: 700;
     text-transform: uppercase;
 }
 .M__heading-title {
     background: #ed1b25;
-    font-size: em(26);
+    font-size: 26px;
     color: white;
-    padding: em(6) em(8) 0 em(6);
-    height: em(31);
+    padding: 10px 8px 0 6px;
+    height: 50px;
 }
 .M__heading-prompt {
     background: #efefef;
     color: black;
-    font-size: em(16);
-    padding: em(16) em(20) 0 em(20);
-    height: em(50);
+    font-size: 16px;
+    padding: 16px 20px 0 20px;
+    height: 50px;
     &:hover {
         background: #cdcdcd;
         color: white;
@@ -374,8 +406,8 @@ img.M__contentThumb-imageu.u-absolute {
     }
 }
 .M__heading-arrow {
-    margin-top: em(1);
-    margin-left: em(12);
+    margin-top: 1px;
+    margin-left: 12px;
 }
 
 
@@ -385,12 +417,12 @@ img.M__contentThumb-imageu.u-absolute {
 
 @include tablet {
     .M__heading-title {
-        padding: em(14) em(10) 0 em(10);
-        height: em(43);
+        padding: 20px 15px 0 15px;
+        height: 70px;
     }
     .M__heading-prompt {
-        padding: em(30) em(15) 0 em(15);
-        height: em(70);
+        padding: 28px 15px 0 15px;
+        height: 70px;
     }
     @include mobile {
         .M__heading-prompt {
@@ -398,7 +430,7 @@ img.M__contentThumb-imageu.u-absolute {
         }
     }
     .M__heading-arrow {
-        margin-top: em(2);
+        margin-top: 2px;
     }
 }
 
@@ -410,7 +442,7 @@ img.M__contentThumb-imageu.u-absolute {
      .M__heading-title {
          float: none;
          height: 100%;
-         padding-bottom: em(10);
+         padding-bottom: 20px;
              text-align: center;
      }
      .M__heading-main {
@@ -437,8 +469,8 @@ img.M__contentThumb-imageu.u-absolute {
 
 .M__contentButton-main {
     width: 100%;
-    padding: em(11);
-    font: 700 em(16) "Roboto Condensed";
+    padding: 11px;
+    font: 700 16px "Roboto Condensed";
     text-transform: uppercase;
     background: #eee;
     border: none;
@@ -450,14 +482,14 @@ img.M__contentThumb-imageu.u-absolute {
 }
 .M__contentButton-main--filter {
     width: 100%;
-    border-bottom: em(2) solid white;
+    border-bottom: 2px solid white;
 }
 .M__contentButton-main--pagination {
     text-align: center;
 }
 @include mobile {
     .M__contentButton-main {
-        height: em(100);
+        height: 100px;
     }
 }
 
@@ -477,9 +509,9 @@ img.M__contentThumb-imageu.u-absolute {
     width: 100%;
     text-align: center;
     overflow: hidden;
-    height: em(430);
+    height: 430px;
     color: white;
-    margin-bottom: em(18);
+    margin-bottom: 18px;
 }
 .M__featuredImage-image {
     left: -1000%;
@@ -493,7 +525,7 @@ img.M__contentThumb-imageu.u-absolute {
 .M__featuredImage-label {
     background: red;
     bottom: 0;
-    padding: em(5) em(15) em(5) em(10);
+    padding: 5px 15px 5px 10px;
     color: white;
     background: red;
     margin-left: 29%;
@@ -509,16 +541,16 @@ img.M__contentThumb-imageu.u-absolute {
         height: 100%;
     }
     .M__featuredImage-container {
-        height: em(680);
+        height: 680px;
     }
 }
 
 @include tablet {
-    .M__featuredImage-container {  height: em(564); }
+    .M__featuredImage-container {  height: 691px; }
 }
 
 @include mobile {
-    .M__featuredImage-container {  height: em(300); }
+    .M__featuredImage-container {  height: 300px; }
 }
 
 
@@ -536,12 +568,12 @@ img.M__contentThumb-imageu.u-absolute {
 
 .M__topNavButton-container {
     border-right: 1px solid #777;
-    padding: 0 em(15);
-    margin: em(15) 0;
+    padding: 0 15px;
+    margin: 15px 0;
 }
 
 .M__topNavButton-main {
-    font-size: em(13);
+    font-size: 13px;
     color: #cccccc;
     height: 100%;
     &:hover {
@@ -563,8 +595,8 @@ img.M__contentThumb-imageu.u-absolute {
 
 
 .M__socialShareButton-container {
-    padding: em(7) em(4);
-    border-bottom: em(1) solid #cdcdcd;
+    padding: 7px 4px;
+    border-bottom: 1px solid #cdcdcd;
     color: #999999;
     &:hover .M__socialShareButton-container {
         background: #b8b8b8;
@@ -597,9 +629,9 @@ img.M__contentThumb-imageu.u-absolute {
 }
 .M__socialShareButton-text {
     text-transform: uppercase;
-    font-size: em(13);
+    font-size: 13px;
     font-weight: 700;
-    padding: em(8) 0 em(8) em(10);
+    padding: 8px 0 8px 10px;
 }
 @include tablet {
     .M__socialShareButton-main {
@@ -609,14 +641,14 @@ img.M__contentThumb-imageu.u-absolute {
     }
     .M__socialShareButton-container {
         background: #eee;
-        padding: em(20);
-        height: em(90);
-        margin-right: em(20);
-        border-radius: em(10);
+        padding: 20px;
+        height: 90px;
+        margin-right: 20px;
+        border-radius: 10px;
     }
     .M__socialShareButton-icon {
         float: none;
-        margin: em(14) auto;
+        margin: 14px auto;
         display: table;
     }
     .M__socialShareButton-text {
@@ -636,7 +668,7 @@ img.M__contentThumb-imageu.u-absolute {
 @include mobile {
     .M__socialShareButton-main {
         width: 50%;
-        margin-bottom: em(20);
+        margin-bottom: 20px;
     }
 }
 
@@ -651,7 +683,7 @@ img.M__contentThumb-imageu.u-absolute {
 //-///////////////////////////////////////////////////////////////////////////////
 
 
-.M__textPrompt-label {background: #222222; color: white; padding: em(5) em(10);}
+.M__textPrompt-label {background: #222222; color: white; padding: 5px 10px;}
 
 
 .M__textPrompt-main{
@@ -674,12 +706,12 @@ color: black;
 
 @include tablet {
     .M__textPrompt-container {
-        height: em(80);
-        padding: 0 em(10) 0 em(10);
+        height: 80px;
+        padding: 0 10px 0 10px;
 
     }
     .M__textPrompt-col1 {
-        padding-top: em(28)
+        padding-top: 28px
     }
 
 
@@ -690,21 +722,21 @@ color: black;
     font-family: "Roboto Condensed";
 }
 .M__textPrompt-col1-row2 {
-    font-size: em(14);
-    margin-top: em(3);
+    font-size: 14px;
+    margin-top: 3px;
 }
 .M__textPrompt-field {
     color: red;
-    margin-right: em(5);
+    margin-right: 5px;
 }
 .M__textPrompt-data {
-    margin-right: em(7);
+    margin-right: 7px;
 }
 .M__textPrompt-main {
     width: 100%;
 }
 .M__textPrompt-col2 {
-    width: em(20);
+    width: 20px;
     vertical-align: middle;
 }
 .M__textPrompt-col1 {
@@ -712,20 +744,20 @@ color: black;
 }
 .M__textPrompt-titleBar {
     background: #eeeeee;
-    padding: em(10) em(12);
-    font: 700 em(16) "Roboto Condensed";
+    padding: 10px 12px;
+    font: 700 16px "Roboto Condensed";
     text-transform: uppercase;
 }
 .M__textPrompt-row2 {
-    padding: em(15);
+    padding: 15px;
 }
 .M__textPrompt-container {
     width: 100%;
 }
 .M__textPrompt-row1 {
     text-transform: uppercase;
-    font: 700 em(16) "Roboto Condensed";
-    padding: em(15);
+    font: 700 16px "Roboto Condensed";
+    padding: 15px;
     background: #eeeeee;
 }
 
@@ -744,10 +776,14 @@ color: black;
 
 
 .M__shortcodeBox-main {
-    padding: em(30);
+    padding: 30px;
     background: #eeeeee;
-    border: solid em(1) #cdcdcd;
-    margin: em(60) 0;
+    border: solid 1px #cdcdcd;
+    margin: 30px 0;
+
+    font-size: 18px;
+    line-height: 26px;
+
 }
 
 
@@ -763,13 +799,13 @@ color: black;
 
 
 .M__disclaimerLink-main {
-    padding: 0 0 0 em(10);
+    padding: 0 0 0 10px;
     text-transform: uppercase;
-    letter-spacing: em(1);
-    font-size: em(13);
+    letter-spacing: 1px;
+    font-size: 13px;
 }
 .M__disclaimerLink-icon {
-    padding-right: em(10);
+    padding-right: 10px;
 }
 .M__disclaimerLink-text {
     color: #ccc;
@@ -778,7 +814,7 @@ color: black;
     }
 }
 .M__disclaimerLink-dot {
-    margin-top: em(6);
+    margin-top: 6px;
 }
 @include tablet {
     .M__disclaimerLink-dot--tabletHide {
@@ -814,13 +850,13 @@ color: black;
 .M__secondaryNavButton-container {
     text-align: center;
     text-transform: uppercase;
-    font-size: em(13);
+    font-size: 13px;
     font-weight: 700;
     border-right: 1px solid #999999;
-    letter-spacing: em(1);
+    //letter-spacing: 1px;
 }
 .M__secondaryNavButton-main {
-    padding: em(10) 0;
+    padding: 10px 0;
     color: black;
     height: 100%;
     &:hover {
@@ -829,7 +865,7 @@ color: black;
 }
 
 @include tablet {
-    .M__secondaryNavButton-container{font-size: em(10); padding-top: 20px;}
+    .M__secondaryNavButton-container{font-size: 13px; padding-top: 20px;}
 
     .M__secondaryNavButton-main {height: 80px;}
     .M__secondaryNavButton-container{ height: 60px; vertical-align: middle;}
@@ -852,58 +888,93 @@ color: black;
 
 
 .M__Search-keywordContainer {
-    width: em(400);
+    width: 400px;
 }
 .M__Search-keyword {
     font-weight: 700;
     color: #999;
-    height: em(40);
-    padding: 0 em(10);
+    height: 40px;
+    padding: 0 10px;
     width: 100%;
 }
 .M__Search-categoryContainer {
-    padding-left: em(20);
+    padding-left: 20px;
 }
 .M__Search-category {
     text-transform: uppercase;
     font-weight: 700;
     color: #999;
-    height: em(40);
-    padding: 0 em(10);
+    height: 40px;
+    padding: 0 10px;
     cursor: pointer;
     width: 100%;
 }
 .M__Search-buttonContainer {
-    padding-left: em(20);
+    padding-left: 20px;
 }
 .M__Search-button {
-    height: em(40);
+    height: 40px;
     background: #ed1b25;
     color: white;
     border: none;
-
-
+    //padding: 0 10px;
     text-transform: uppercase;
     font-family: "Roboto Condensed";
     font-weight: 700;
-      &:hover {
+    &:hover {
         background: #777;
     }
 }
+@include tablet {
+    .M__Search-button {
+        padding-left: 32px;
+        padding-right: 32px
+    }
+}
+@include mobile {
+    .M__Search-keywordContainer {
+        float: none;
+        width: 100%
+    }
+    .M__Search-categoryContainer {
+        float: none;
+        width: 100%
+    }
+    .M__Search-buttonContainer {
+        float: none;
+        width: 100%
+    }
+    .M__Search-keyword {
+        width: 100%
+    }
+    .M__Search-category {
+        width: 100%
+    }
+    .M__Search-button {
+        width: 100%
+    }
+}
+
+/////////////////////////////
+
+
+
+
+
 .M__mainNavsearch-main {
-    border-left: em(1) solid white;
-    border-right: em(1) solid white;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
 }
 .M__mainNavsearch-container {
-    border-bottom: em(4) solid #aaaaaa;
-    height: em(50);
-    padding-top: em(14);
+    border-bottom: 4px solid #aaaaaa;
+    height: 50px;
+    padding-top: 14px;
     &.is-activated {
-        border-bottom: em(4) solid #cdcdcd;
+        border-bottom: 4px solid #cdcdcd;
         background: #cdcdcd;
     }
     &:hover:not(.is-activated) {
-        border-bottom: em(4) solid red;
+        border-bottom: 4px solid red;
     }
 }
 .M__mainNavsearch-main {
@@ -918,14 +989,13 @@ color: black;
     @extend .icon-searchWhite
 }
 .M__Search-keyword {
-    max-width: em(400)
+    max-width: 400px
 }
 
-    @include tablet {
-    .M__Search-button {
-        padding-left: em(15);
-        padding-right: em(15)
-        }}
+.M__Search-button{
+    padding: 0 40px;
+}
+
 
 
 
@@ -941,18 +1011,10 @@ color: black;
 }
 
 
-}
 
-@include mobile  {
-    .M__Search-keywordContainer {float: none; width: 100%}
-    .M__Search-categoryContainer {float: none; width: 100%}
-    .M__Search-buttonContainer {float: none; width: 100%}
-
-      .M__Search-keyword { width: 100%}
-    .M__Search-category {width: 100%}
-    .M__Search-button { width: 100%}
 
 }
+
 
 
 
@@ -969,25 +1031,44 @@ color: black;
         width: 50%;
     }
     .M__Search-buttonContainer {
-        width: 25%;
+        width: 20%;
     }
     .M__Search-categoryContainer {
-        width: 25%;
+        width: 30%;
     }
+
+
      .M__Search-keyword {
-        height: em(60);
+        width: 100%; max-width: 100%;
     }
     .M__Search-button {
-        height: em(60);
+        width: 100%; max-width: 100%;
     }
     .M__Search-category {
-        height: em(60);
+        width: 100%; max-width: 100%;
+    }
+
+
+
+
+     .M__Search-keyword {
+        height: 60px;
+    }
+    .M__Search-button {
+        height: 60px;
+    }
+    .M__Search-category {
+        height: 60px;
     }
 
        .M__Search-main{
       height: 100px;
 
     }
+
+    .M__Search-button{
+    padding: 0;
+}
 
 
 }
@@ -1008,9 +1089,11 @@ color: black;
     background: white;
     font-family: "Roboto Condensed";
     font-weight: 700;
-    padding: em(5) 0;
-    width: em(240);
+    padding: 5px 0;
+    width: 240px;
+
 }
+
 
 
 
@@ -1019,36 +1102,35 @@ color: black;
 .M__pullQuote-quote:hover .M__pullQuote-icon {@extend .icon-articleShareRed}
 
 .M__pullQuote-quote {
-    border-left: em(1) solid grey;
-    padding-left: em(20);
-    margin-left: em(20);
-    margin-bottom: em(40);
+    border-left: 1px solid grey;
+    padding-left: 20px;
+    margin-left: 20px;
+    margin-bottom: 40px;
 }
 .M__pullQuote-text {
     color: black;
-    font-size: em(20);
+    font-size: 20px;
 }
 .M__pullQuote-icon {
-    margin-top: em(10);
-    margin-right: em(10);
+    margin-top: 10px;
+    margin-right: 10px;
 }
 .M__pullQuote-retweet {
-    margin-bottom: em(12);
-    margin-top: em(22);
+    margin-bottom: 12px;
+    margin-top: 22px;
     color: grey;
-    font-size: em(12);
-    margin-left: em(18);
-    letter-spacing: em(1);
+    font-size: 12px;
+    margin-left: 18px;
+    letter-spacing: 1px;
     text-transform: uppercase;
 }
 @include tablet {
     .M__pullQuote-main {
-        max-width: em(300);
+        max-width: 300px;
         width: 100%;
 
     }
 
-    .M__pullQuote-main{margin-bottom: em(50)}
 
 }
 
@@ -1058,14 +1140,25 @@ color: black;
 @include tablet {
     .M__pullQuote-main {
         max-width: 100%;
+        margin: 30px 0;
+        padding: 20px 0;
+         border-top:  1px solid black;
+        border-bottom: 1px solid black;
     }
     .M__pullQuote-quote {
         margin: 0;
         padding: 0;
-        border: 0;
+        border-left: 0;
+       
     }
 }
 
+
+
+@include mobile {
+   .M__pullQuote-main{margin: 50px 0}
+
+}
 
 
 
@@ -1081,20 +1174,20 @@ color: black;
 
 
 .M__footColumn-main {
-    padding-left: em(20);
+    padding-left: 20px;
 }
 .M__footColumn-link {
-    margin-bottom: em(13);
+    margin-bottom: 13px;
     color: #ccc;
-    font-size: em(13);
+    font-size: 13px;
     &:hover {color: red;}
 }
 
 .M__footColumn-heading {
-    font: 700 em(16) "Roboto Condensed";
+    font: 700 16px "Roboto Condensed";
     text-transform: uppercase;
     color: white;
-    margin-bottom: em(15);
+    margin-bottom: 15px;
     color: #ccc;
     &:hover {color: red;}
 }
@@ -1133,11 +1226,11 @@ color: black;
 @include tablet {
     .M__socialLinkButton-circle {
         background: #444;
-        height: em(80);
-        border-radius: em(40);
+        height: 80px;
+        border-radius: 40px;
     }
     .M__socialLinkButton-container {
-        padding-top: em(30);
+        padding-top: 30px;
     }
     .M__socialLinkButton-icon {
         margin: 0 auto;
@@ -1158,7 +1251,7 @@ color: black;
 
 .M__Login-main {
     color: #ccc;
-    font-size: em(13);
+    font-size: 13px;
     font-weight: 700;
     text-transform: uppercase;
     height: 100%;
@@ -1167,11 +1260,11 @@ color: black;
     }
 }
 .M__Login-container {
-    padding: 0 em(15);
-    margin: em(15) 0
+    padding: 0 15px;
+    margin: 15px 0
 }
 .M__Login-icon {
-    margin-right: em(7)
+    margin-right: 7px
 }
 .M__Login-icon {
     margin-top: 1px;
@@ -1206,13 +1299,15 @@ color: black;
 }
 .M__mainNavButton-main {
     color: black;
-    border-left: em(1) solid white;
+    border-left: 1px solid white;
     &:hover:not(.is-activated) {
         background: red;
-        color: white
+        color: white;
+
     }
+    &:hover .M__mainNavButton-container { border-bottom: 4px solid red;}
     &.is-activated .M__mainNavButton-container {
-        border-bottom: em(4) solid #cdcdcd;
+        border-bottom: 4px solid #cdcdcd;
         background: #cdcdcd;
     }
 }
@@ -1220,13 +1315,13 @@ color: black;
     @extend .icon-dropdownWhite;
 }
 .M__mainNavButton-container {
-    border-bottom: em(4) solid #aaaaaa;
-    padding-top: em(15);
-    height: em(50);
+    border-bottom: 4px solid #aaaaaa;
+    padding-top: 15px;
+    height: 50px;
 }
 .M__mainNavButton-arrow {
-    margin-top: em(6);
-    margin-left: em(3);
+    margin-top: 6px;
+    margin-left: 3px;
 }
 @include tablet {
     .M__mainNavButton-container {
@@ -1236,9 +1331,11 @@ color: black;
         display: none;
     }
     .M__mainNavButton-centre {
-        font-size: em(10)
+        font-size: 13px
     }
     .M__mainNavButton-centre {
-        padding-top: 23px;
+        padding-top: 27px;
     }
 }
+
+
