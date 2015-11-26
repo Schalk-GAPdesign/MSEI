@@ -99,6 +99,10 @@ li {
   border-left: 1px solid #999999;
 }
 
+.u-tableColumn {
+  display: table-column !important;
+}
+
 /*
 Icon classes can be used entirely standalone. They are named after their original file names.
 
@@ -453,6 +457,11 @@ Icon classes can be used entirely standalone. They are named after their origina
   height: 31px;
 }
 
+.A__introParagraph {
+  background: #eee;
+  padding: 20px 10px;
+}
+
 .A__logo-image {
   max-width: 100%;
 }
@@ -565,12 +574,19 @@ Icon classes can be used entirely standalone. They are named after their origina
   color: white;
   padding: 10px 20px;
   display: table;
-  margin: 30px auto 30px auto;
+  margin: 0 auto;
   text-transform: uppercase;
+  font: 700 16px "Roboto Condensed";
+  letter-spacing: 1px;
 }
 
 .M__magazineReadPrompt-main:hover {
   background: #cdcdcd;
+  color: black;
+}
+
+.M__labeledLinkItem-main--noLinks {
+  margin-bottom: 15px;
   color: black;
 }
 
@@ -626,6 +642,14 @@ Icon classes can be used entirely standalone. They are named after their origina
   color: red;
   font-weight: 700;
   text-transform: uppercase;
+}
+
+.M_quote-source--grey {
+  color: #aaa;
+}
+
+.M__quote-text--grey {
+  color: #aaa;
 }
 
 .M__magazinePreviewButton-main {
@@ -863,6 +887,14 @@ img.M__contentThumb-imageu.u-absolute {
   height: 50px;
 }
 
+.M__heading-prompt--noLinks {
+  background: #efefef;
+  color: black;
+  font-size: 16px;
+  padding: 16px 20px 0 20px;
+  height: 50px;
+}
+
 .M__heading-prompt {
   background: #efefef;
   color: black;
@@ -935,7 +967,7 @@ img.M__contentThumb-imageu.u-absolute {
   background: #b8b8b8;
 }
 
-.M__contentButton-main--filter {
+.M__contentButton-main {
   width: 100%;
   border-bottom: 2px solid white;
 }
@@ -947,6 +979,17 @@ img.M__contentThumb-imageu.u-absolute {
 @media (max-width: 700px) {
   .M__contentButton-main {
     height: 100px;
+  }
+}
+
+.M__contentButton-main--button {
+  padding-left: 14px;
+}
+
+@media (max-width: 1000px) {
+  .M__contentButton-main {
+    padding-top: 30px;
+    padding-bottom: 30px;
   }
 }
 
@@ -1930,7 +1973,7 @@ label {
   color: #aaa;
 }
 
-select, input {
+select.ninja-forms-field, input.ninja-forms-field {
   height: 40px;
   width: 100%;
   margin-top: 10px;
@@ -1939,11 +1982,11 @@ select, input {
   border: 1px solid #ccc;
 }
 
-select {
+selectn.ninja-forms-field {
   background: #eee;
 }
 
-input[type='submit'] {
+input[type='submit'].ninja-forms-field {
   background: #ed1b25;
   color: white;
   text-transform: uppercase;
@@ -1953,6 +1996,47 @@ input[type='submit'] {
   border: none;
 }
 
+/*
+
+
+.O__intro-paragraph {
+    padding-right: 2px;
+    vertical-align: top;
+}
+.O__intro-buttonsContainer {
+    width: 400px;
+}
+.O__intro-buttonsItem:nth-child(1) {
+    border-bottom: 2px solid white;
+}
+.M__button-main:hover {
+    background: #aaa;
+    color: white;
+}
+.M__button-main--dropdown {
+    padding: 0;
+}
+.M__button-main {
+    background: #eee;
+    text-transform: uppercase;
+    font: 700 16px "Roboto Condensed";
+    padding: 10px 20px;
+    color: black;
+    border: 0;
+    margin-top: 0;
+    cursor: pointer;
+}
+.M__button-main--dropdown {padding-left: 16px;}
+
+
+
+
+.A__introParagraph {
+    padding: 10px;
+    background: #eee;
+    line-height: 22px;
+}
+*/
 .O__textPrompt-main {
   border: 1px solid #cdcdcd;
   color: black;
@@ -2192,6 +2276,32 @@ input[type='submit'] {
 O__categoryList-heading {
   width: 100%;
   margin-top: 60px;
+}
+
+.O__categoryList-item--twoColumn {
+  width: 50%;
+}
+
+.O__categoryList-item--twoColumn:nth-child(2n+1) {
+  padding-left: 0px;
+  padding-right: 10px;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.O__categoryList-item--twoColumn:nth-child(2n) {
+  padding-left: 10px;
+  padding-right: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.O__categoryList-magazineImage {
+  padding-right: 20px;
+}
+
+.O__categoryList-magazineImage:nth-child(6n) {
+  padding-right: 0px;
 }
 
 .O__paginationNumbers-item {
@@ -2966,6 +3076,52 @@ O__categoryList-heading {
   #__articleFooterelatedContentAlt-center {
     background: green !important;
   }
+}
+
+#__introduction-row1-col1 {
+  width: 80%;
+  padding-right: 4px;
+}
+
+#__introduction-row1-col2 {
+  width: 20%;
+}
+
+#__issueContent-col1 {
+  width: 400px;
+}
+
+#__issueContent-col2 {
+  width: 830px;
+}
+
+#__issueContent-col1-row2 {
+  border: 1px solid #bbb;
+  padding: 0 30px;
+}
+
+#__issueContent-col1-row2-row1 {
+  border-bottom: 1px solid #bbb;
+  padding: 40px 0;
+}
+
+#__issueContent-col1-row2-row2 {
+  padding: 30px 0 30px 0;
+}
+
+#__introduction-main {
+  width: 1255px;
+  margin: 0 auto;
+}
+
+#__issueContent-centre {
+  width: 1255px;
+  margin: 0 auto;
+}
+
+#__otherIssues-main {
+  width: 1150px;
+  margin: 0 auto;
 }
 
 /*# sourceMappingURL=stylesheet.css.map */

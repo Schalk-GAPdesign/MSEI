@@ -79,15 +79,23 @@ mixin M__magazinePreviewThumb
 
 
 mixin M__labeledLinkItem(label, title)
-    .M__labeledLinkItem-main.u-table
+    .M__labeledLinkItem-mainContainer.u-table
         .M__labeledLinkItem-main.u-tableRow
             .M__labeledLinkItem-labelContainer.u-tableCell
                 .M__labeledLinkItem-label= label
             .M__labeledLinkItem-title.u-tableCell= title
 
 mixin M__labeledLinkItem--presentation(label, title)
-    .M__labeledLinkItem-main.u-table
+    .M__labeledLinkItem-mainContainer.u-table
         .M__labeledLinkItem-main.u-tableRow
+            .M__labeledLinkItem-labelContainer.u-tableCell
+                .M__labeledLinkItem-label.M__labeledLinkItem-label--presentation= label
+            .M__labeledLinkItem-title.u-tableCell= title
+
+
+mixin M__labeledLinkItem--presentation--noLinks(label, title)
+    .M__labeledLinkItem-mainContainer.M__labeledLinkItem-main--noLinks.u-table
+        .M__labeledLinkItem-main--noLinks.u-tableRow
             .M__labeledLinkItem-labelContainer.u-tableCell
                 .M__labeledLinkItem-label.M__labeledLinkItem-label--presentation= label
             .M__labeledLinkItem-title.u-tableCell= title
@@ -114,6 +122,18 @@ mixin M__quote
             .M_quote-closeQuote.icon-closeQuoteRed.u-floatRight
         .M__quote-row4
             .M_quote-source - John Doe,
+
+
+mixin M__quote--grey
+    .M__quote-main
+        .M__quote-row1.u-cf
+            .M__quote-openQuote.icon-openQuote.u-floatLeft
+        .M__quote-row2
+            .M__quote-text.M__quote-text--grey Fusce commodo aliquam arcu. Aenean vulputate eleifend tellus. Duis vel nibh at velit scelerisque suscipit. Praessent porttitor, nulla vitae posuere iaculis, arcu nisl dignissim dolor, a pretium mi sem ut ipsum. Nunc egestas, augue at pellentesque laoreet, felis eros vehicula leo, at malesuada velit leo quis pede.
+        .M__quote-row3.u-cf
+            .M_quote-closeQuote.icon-closeQuote.u-floatRight
+        .M__quote-row4
+            .M_quote-source.M_quote-source--grey - John Doe,
 
 
 //-///////////////////////////////////////////////////////////////////////////////
@@ -504,8 +524,7 @@ mixin M__magazineMockup
 
 mixin M__filterButton(title, dropdown, ...options )
     if(dropdown == true)
-        select.M__contentButton-main.M__contentButton-main--filter
-
+        select.M__contentButton-main
             each val, index in options
                 if(val!=null)
                     if(index==0)
@@ -514,7 +533,7 @@ mixin M__filterButton(title, dropdown, ...options )
                         option= val
     if(dropdown == false)
         a.u-noUnderline(href="#")
-            .M__contentButton-main.M__contentButton-main--filter= title
+            .M__contentButton-main.M__contentButton-main--button= title
 
 
 //-///////////////////////////////////////////////////////////////////////////////
@@ -568,7 +587,7 @@ mixin M__introParagraph(text1)
 
 //-///////////////////////////////////////////////////////////////////////////////
 //-                                                                             //
-//-                                                                             //
+//-                                    ss                                         //
 //-    MOLECULE                                                                 //
 //-   ---------------                                                           //
 //-    DEFAULT SECTION HEADING                                                  //
@@ -577,7 +596,7 @@ mixin M__introParagraph(text1)
 //-///////////////////////////////////////////////////////////////////////////////
 
 
-mixin M__heading(text1, text2, link)
+mixin M__heading(text1, text2)
 
     .M__heading-main.u-cf
         if text1
@@ -590,6 +609,18 @@ mixin M__heading(text1, text2, link)
                         .M__heading-promptText.u-floatLeft= text2
                         if link
                             .M__heading-arrow.icon-arrow.u-floatRight
+
+mixin M__heading--noArrow--noLinks(text1, text2)
+    .M__heading-main.u-cf
+        if text1
+            .M__heading-title.u-floatLeft= text1
+        if text2
+                .M__heading-prompt--noLinks.u-floatLeft
+                    // Het ekstra parent DIV ingesit: .M__heading-container
+                    .M__heading-promptContainer
+                        .M__heading-promptText= text2
+
+
 
 
 //-///////////////////////////////////////////////////////////////////////////////

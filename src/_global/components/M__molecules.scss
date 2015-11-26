@@ -73,8 +73,10 @@
     color: white;
     padding: 10px 20px;
     display: table;
-    margin: 30px auto 30px auto;
+    margin: 0 auto;
     text-transform: uppercase;
+    font: 700 16px "Roboto Condensed";
+    letter-spacing: 1px;
 }
 .M__magazineReadPrompt-main:hover {
     background: #cdcdcd;
@@ -92,6 +94,12 @@
 //-                                                                             //
 //-///////////////////////////////////////////////////////////////////////////////
 
+
+.M__labeledLinkItem-main--noLinks {
+   margin-bottom: 15px;
+    color: black;
+
+}
 
 .M__labeledLinkItem-main {
     margin-bottom: 15px;
@@ -152,6 +160,9 @@
     text-transform: uppercase;
 }
 
+.M_quote-source--grey {color: #aaa;}
+
+.M__quote-text--grey {color: #aaa;}
 
 //-///////////////////////////////////////////////////////////////////////////////
 //-                                                                             //
@@ -429,6 +440,20 @@ img.M__contentThumb-imageu.u-absolute {
     padding: 10px 20px 0 20px;
     height: 50px;
 }
+
+
+.M__heading-prompt--noLinks{
+
+
+  background: #efefef;
+    color: black;
+    font-size: 16px;
+    padding: 16px 20px 0 20px;
+    height: 50px;
+
+}
+
+
 .M__heading-prompt {
     background: #efefef;
     color: black;
@@ -506,7 +531,7 @@ img.M__contentThumb-imageu.u-absolute {
         background: #b8b8b8;
     }
 }
-.M__contentButton-main--filter {
+.M__contentButton-main{
     width: 100%;
     border-bottom: 2px solid white;
 }
@@ -519,6 +544,10 @@ img.M__contentThumb-imageu.u-absolute {
     }
 }
 
+.M__contentButton-main--button {padding-left: 14px;}
+
+
+@include tablet {.M__contentButton-main{padding-top:30px;padding-bottom:30px;}}
 
 //-///////////////////////////////////////////////////////////////////////////////
 //-                                                                             //
@@ -1515,12 +1544,12 @@ img.M__contentThumb-imageu.u-absolute {
 .field-wrap { margin: 30px 20px;}
 
 label {font: 400 16 Roboto; color: #aaa; }
-select, input {height: 40px;  width: 100%; margin-top: 10px ; padding: 5px; font: 700 16px Roboto; border: 1px solid #ccc;}
+select.ninja-forms-field , input.ninja-forms-field  {height: 40px;  width: 100%; margin-top: 10px ; padding: 5px; font: 700 16px Roboto; border: 1px solid #ccc;}
 
 
-select {background: #eee;}
+selectn.ninja-forms-field  {background: #eee;}
 
-input[type='submit'] {background: #ed1b25; color: white; text-transform: uppercase; padding: 13px; font: 700 26px "Roboto Condensed"; height: auto; border: none;}
+input[type='submit'].ninja-forms-field  {background: #ed1b25; color: white; text-transform: uppercase; padding: 13px; font: 700 26px "Roboto Condensed"; height: auto; border: none;}
 
 
 

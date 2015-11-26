@@ -131,12 +131,13 @@ mixin O__labeledLinksList--otherFiles
                         +M__labeledLinkItem('val.label', 'val.text')
 
 
-mixin O__labeledLinksList--presentationFiles
-    a(href="#").u-noUnderline
+mixin O__labeledLinksList--presentationFiles--noLinks
         .O__labeledLinksList-main
             each val in article.content.footer.speakerSlides
                 .O__labeledLinksList-item
-                        +M__labeledLinkItem--presentation('val.label', 'val.text')
+                        +M__labeledLinkItem--presentation--noLinks('val.label', 'val.text')
+
+
 
 mixin O__labeledLinksList--partnerFiles
     a(href="#").u-noUnderline
@@ -241,11 +242,7 @@ mixin O__disclaimerLinksList
 //-///////////////////////////////////////////////////////////////////////////////
 
 
-mixin O__filterButtons
-    .O__filterButtons-main
-        each val in content.static.introduction.buttons
-            .O__filterButtons-item
-                +M__filterButton(val.title, val.dropdown, val.title, val.options[0], val.options[1], val.options[2], val.options[3], val.options[4], val.options[5], val.options[6], val.options[7], val.options[8])
+
 
 
 //-///////////////////////////////////////////////////////////////////////////////
@@ -284,6 +281,24 @@ mixin O__categoryList--partnerContent
             .O__categoryList-item.u-floatLeft
                 .O__categoryList-position
                     +M__contentThumb
+
+
+
+
+mixin O__categoryList--twoColumn
+    .O__categoryList-main.u-cf
+        each val, index in article.content.footer.relatedContentAlt
+            .O__categoryList-item.O__categoryList-item--twoColumn.u-floatLeft
+                .O__categoryList-position
+                    +M__contentThumb
+
+
+
+mixin O__categoryList--magazine
+    .O__categoryList-main.u-cf
+        each val, index in article.content.footer.relatedContentAlt
+            img.O__categoryList-magazineImage(src="http://lorempixel.com/175/250")
+
 
 
 //-///////////////////////////////////////////////////////////////////////////////
@@ -371,7 +386,7 @@ mixin O__textPrompt--report
         .O__textPrompt-row2
             each val in article.content.article.report
                 .O__textPrompt-item
-                    +M__textPrompt--report(val.type, val.title)
+                    +M__textPrompt--report('val.type', 'val.title')
 
 
 
@@ -604,4 +619,8 @@ mixin O__horizontalSectionList
         each val in article.staticPages.landscapeSections
             .O__horizontalSectionList-item
                 +M__horizontalSectionItem(val.heading, val.text)
+
+
+
+
 

@@ -1,207 +1,248 @@
-    #__mainNav-col0 {display: none}
-
-//-///////////////////////////////////////////////////////////////////////////////
-//-                                                                             //
-//-                                                                             //
-//-                                                                             //
-//-                                                                             //
-//-                                                                             //
-//-                                                                             //
-//-                                                                             //
-//-                                     #  #                                    //
-//-                                   ########                                  //
-//-                                     #  #                                    //
-//-                                   ########                                  //
-//-                                     #  #                                    //
-//-                                                                             //
-//-                                                                             //
-//-                                                                             //
-//-                                     4444                                     //
-//-                                                                             //
-//-                                                                             //
-//-                                                                             //
-//-///////////////////////////////////////////////////////////////////////////////
-
-
-#__menuContent-col0 {display: none;}
-@include tablet {
-    #__menuContent-col0 {display: block;}
-    #__menuContent-col1 {display: none;}
-}
-
-@include mobile {
-    #__menuContent-col0 {display: none;}
-}
-
-//-///////////////////////////////////////////////////////////////////////////////
-//-                                                                             //
-//-                                                                             //
-//-    LAYOUT                                                                   //
-//-   ---------------                                                           //
-//-    HEAD SECTION                                                             //
-//-                                                                             //
-//-                                                                             //
-//-///////////////////////////////////////////////////////////////////////////////
-
-#__leaderboard-main {
-    background: blue;
-    height: 100px;
-}
-#__leaderboard-centre {
-    display: table;
-    margin: 0 auto;
-
-}
-
-
-#__topNav-main {
-    background: #26292a;
-    color: white;
-}
-#__menuContent-main {
-    background: red;
-}
-#__menuContent-centre {
-    width: 1255px;
-    margin: 0 auto;
-}
-#__mainNav-main {
-    background: #efefef
-}
-#__mainNav-centre {
-    width: 1255px;
-    margin: 0 auto;
-}
-#__secondaryNav-main {
-    background: #cdcdcd;
-    &:not(.is-activated){display: none;}
-}
-#__secondaryNav-centre {
-    width: 1255px;
-    margin: 0 auto;
-}
-#__content-main {
-    padding: 90px 0 0 0
-}
-#__menuContent-col1 {
-    margin: 30px 0;
-}
-#__menuContent-col2 {
-    margin: 30px 0;
-}
-#__mainNav-col1 {
-    background: #efefef;
-    width: 1205px;
-}
-#__mainNav-col2 {
-    width: 50px
-}
-#__mainNav-main {
-    border-bottom: 4px solid #aaaaaa;
-    height: 50px;
-}
-#__topNav-centre {width: 1255px; margin: 0 auto;}
-#__topNav-col2{margin-top: 11px;}
-
-#__menuSearch-main {
-    background: #cdcdcd;
-    display: none;
-
-      &.is-activated {
-          display: block;
+    #__mainNav-col0 {
+        display: none
     }
-
-}
-
-#__menuSearch-centre {max-width: 1255px; margin: 0 auto; padding: 20px 0;}
-#__menuSearch-item {display: table;}
-
-
-@include laptop {
-
-     #__topNav-centre {width: 90%;}
-      #__menuContent-centre {
-    width: 90%;}
-}
-
-
-@include tablet {
-    #__menuSearch-centre {width: 90%}
-    #__menuSearch-item {float: none;}
-    #__topNav-container {display: table; margin: 0 auto;}
-    #__topNav-col2 {display: none;}
-
-
-
-}
-
-#__menuMagazine-main {background: #cdcdcd; padding-top: 30px; padding-bottom: 35px;}
-#__menuMagazine-centre {width: 1255px; margin: 0 auto;}
-
-#__menuMagazine-main:not(.is-activated) {display: none;}
-
-
-
-
-@include laptop {
-
-
-
-    #__mainNav-centre {width: 90%}
-
-        #__mainNav-col1{ width: 95%;}
-         #__mainNav-col2{ width: 5%;}
-    #__secondaryNav-centre {width: 90%}
-    #__menuContent-col1 {width: 300px;}
-        #__menuMagazine-centre{width: 900px;}
-    #__menuContent-col1 {width: 400px;}
-}
-
-
-
-
-@include tablet {
-
- #__menuContent-col0 {float: none; text-align: center; padding-top: 20px;}
- #__menuContent-col1 {float: none; text-align: center;}
-#__menuContent-col2 {float: none; text-align: center; margin-top: 20px;}
-    #__mainNav-centre {width: 100%;}
- #__secondaryNav-centre {width: 100%}
-       #__mainNav-col1{ width: 90%;}
-         #__mainNav-col2{ width: 10%;}
-
-    #__topNav-col1-col1 {float: none;}
-
-       #__topNav-col1-col2 {float: none; display: table; margin: 0 auto;}
-   #__menuMagazine-centre{width: 90%;}
-
-}
-
-
-@include mobile {
-
-    #__leaderboard-main {display: none;}
-    #__topNav-col1-col1 {display: none;}
-    #__topNav-col1-col2 {height: 60px; padding-top: 10px}
-
-    #__menuContent-main {margin: 0; padding: 0;}
-    #__menuContent-centre {margin: 0; padding: 30px;}
-    #__menuContent-col1 {width: 100%; margin: 0; padding: 0;}
-
-
-    #__menuContent-col1 {display: block;}
-    #__menuContent-col2 {display: none; margin: 0;  padding: 0}
-   #__menuContent-col3 {display: none; margin: 0;  padding: 0}
-
-
-    #__mainNav-col1 {display: none;}
-             #__mainNav-col0 {display: block;}
-
-
-          #__mainNav-col0{ width: 70%; cursor: pointer;}
-         #__mainNav-col2{ width: 30%;}
-
-    #__secondaryNav-main {display: none;}
-}
-
-
+    #__menuContent-col0 {
+        display: none;
+    }
+    @include tablet {
+        #__menuContent-col0 {
+            display: block;
+        }
+        #__menuContent-col1 {
+            display: none;
+        }
+    }
+    @include mobile {
+        #__menuContent-col0 {
+            display: none;
+        }
+    }
+    #__leaderboard-main {
+        background: blue;
+        height: 100px;
+    }
+    #__leaderboard-centre {
+        display: table;
+        margin: 0 auto;
+    }
+    #__topNav-main {
+        background: #26292a;
+        color: white;
+    }
+    #__menuContent-main {
+        background: red;
+    }
+    #__menuContent-centre {
+        width: 1255px;
+        margin: 0 auto;
+    }
+    #__mainNav-main {
+        background: #efefef
+    }
+    #__mainNav-centre {
+        width: 1255px;
+        margin: 0 auto;
+    }
+    #__secondaryNav-main {
+        background: #cdcdcd;
+        &:not(.is-activated) {
+            display: none;
+        }
+    }
+    #__secondaryNav-centre {
+        width: 1255px;
+        margin: 0 auto;
+    }
+    #__content-main {
+        padding: 90px 0 0 0
+    }
+    #__menuContent-col1 {
+        margin: 30px 0;
+    }
+    #__menuContent-col2 {
+        margin: 30px 0;
+    }
+    #__mainNav-col1 {
+        background: #efefef;
+        width: 1205px;
+    }
+    #__mainNav-col2 {
+        width: 50px
+    }
+    #__mainNav-main {
+        border-bottom: 4px solid #aaaaaa;
+        height: 50px;
+    }
+    #__topNav-centre {
+        width: 1255px;
+        margin: 0 auto;
+    }
+    #__topNav-col2 {
+        margin-top: 11px;
+    }
+    #__menuSearch-main {
+        background: #cdcdcd;
+        display: none;
+        &.is-activated {
+            display: block;
+        }
+    }
+    #__menuSearch-centre {
+        max-width: 1255px;
+        margin: 0 auto;
+        padding: 20px 0;
+    }
+    #__menuSearch-item {
+        display: table;
+    }
+    @include laptop {
+        #__topNav-centre {
+            width: 90%;
+        }
+        #__menuContent-centre {
+            width: 90%;
+        }
+    }
+    @include tablet {
+        #__menuSearch-centre {
+            width: 90%
+        }
+        #__menuSearch-item {
+            float: none;
+        }
+        #__topNav-container {
+            display: table;
+            margin: 0 auto;
+        }
+        #__topNav-col2 {
+            display: none;
+        }
+    }
+    #__menuMagazine-main {
+        background: #cdcdcd;
+        padding-top: 30px;
+        padding-bottom: 35px;
+    }
+    #__menuMagazine-centre {
+        width: 1255px;
+        margin: 0 auto;
+    }
+    #__menuMagazine-main:not(.is-activated) {
+        display: none;
+    }
+    @include laptop {
+        #__mainNav-centre {
+            width: 90%
+        }
+        #__mainNav-col1 {
+            width: 95%;
+        }
+        #__mainNav-col2 {
+            width: 5%;
+        }
+        #__secondaryNav-centre {
+            width: 90%
+        }
+        #__menuContent-col1 {
+            width: 300px;
+        }
+        #__menuMagazine-centre {
+            width: 900px;
+        }
+        #__menuContent-col1 {
+            width: 400px;
+        }
+    }
+    @include tablet {
+        #__menuContent-col0 {
+            float: none;
+            text-align: center;
+            padding-top: 20px;
+        }
+        #__menuContent-col1 {
+            float: none;
+            text-align: center;
+        }
+        #__menuContent-col2 {
+            float: none;
+            text-align: center;
+            margin-top: 20px;
+        }
+        #__mainNav-centre {
+            width: 100%;
+        }
+        #__secondaryNav-centre {
+            width: 100%
+        }
+        #__mainNav-col1 {
+            width: 90%;
+        }
+        #__mainNav-col2 {
+            width: 10%;
+        }
+        #__topNav-col1-col1 {
+            float: none;
+        }
+        #__topNav-col1-col2 {
+            float: none;
+            display: table;
+            margin: 0 auto;
+        }
+        #__menuMagazine-centre {
+            width: 90%;
+        }
+    }
+    @include mobile {
+        #__leaderboard-main {
+            display: none;
+        }
+        #__topNav-col1-col1 {
+            display: none;
+        }
+        #__topNav-col1-col2 {
+            height: 60px;
+            padding-top: 10px
+        }
+        #__menuContent-main {
+            margin: 0;
+            padding: 0;
+        }
+        #__menuContent-centre {
+            margin: 0;
+            padding: 30px;
+        }
+        #__menuContent-col1 {
+            width: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        #__menuContent-col1 {
+            display: block;
+        }
+        #__menuContent-col2 {
+            display: none;
+            margin: 0;
+            padding: 0
+        }
+        #__menuContent-col3 {
+            display: none;
+            margin: 0;
+            padding: 0
+        }
+        #__mainNav-col1 {
+            display: none;
+        }
+        #__mainNav-col0 {
+            display: block;
+        }
+        #__mainNav-col0 {
+            width: 70%;
+            cursor: pointer;
+        }
+        #__mainNav-col2 {
+            width: 30%;
+        }
+        #__secondaryNav-main {
+            display: none;
+        }
+    }

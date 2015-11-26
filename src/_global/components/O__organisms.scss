@@ -1,3 +1,47 @@
+
+/*
+
+
+.O__intro-paragraph {
+    padding-right: 2px;
+    vertical-align: top;
+}
+.O__intro-buttonsContainer {
+    width: 400px;
+}
+.O__intro-buttonsItem:nth-child(1) {
+    border-bottom: 2px solid white;
+}
+.M__button-main:hover {
+    background: #aaa;
+    color: white;
+}
+.M__button-main--dropdown {
+    padding: 0;
+}
+.M__button-main {
+    background: #eee;
+    text-transform: uppercase;
+    font: 700 16px "Roboto Condensed";
+    padding: 10px 20px;
+    color: black;
+    border: 0;
+    margin-top: 0;
+    cursor: pointer;
+}
+.M__button-main--dropdown {padding-left: 16px;}
+
+
+
+
+.A__introParagraph {
+    padding: 10px;
+    background: #eee;
+    line-height: 22px;
+}
+*/
+
+
 //-///////////////////////////////////////////////////////////////////////////////
 //-                                                                             //
 //-                                                                             //
@@ -359,6 +403,19 @@ O__categoryList-heading {
     margin-top: 60px;
 }
 
+
+.O__categoryList-item--twoColumn { width: col(2);}
+
+.O__categoryList-item--twoColumn:nth-child(2n+1) {padding-left: 0px; padding-right: 10px; padding-top: 0; padding-bottom: 0;  }
+
+.O__categoryList-item--twoColumn:nth-child(2n) {padding-left: 10px; padding-right: 0; padding-top: 0; padding-bottom: 0;  }
+
+
+
+
+.O__categoryList-magazineImage {padding-right: 20px;}
+
+.O__categoryList-magazineImage:nth-child(6n) {padding-right: 0px; }
 
 //-///////////////////////////////////////////////////////////////////////////////
 //-                                                                             //
