@@ -1,0 +1,555 @@
+//-///////////////////////////////////////////////////////////////////////////////
+//-                                                                             //
+//-                                                                             //
+//-    ORGANISM                                                                 //
+//-   ---------------                                                           //
+//-    ???                                                                      //
+//-                                                                             //
+//-                                                                             //
+//-///////////////////////////////////////////////////////////////////////////////
+
+
+
+
+.O__textPrompt-main{
+border: 1px solid #cdcdcd;
+color: black;
+    margin-bottom: 30px;
+}
+
+
+
+.O__textPrompt-row2 {
+    padding: 0;
+}
+
+.O__textPrompt-row1 {
+    text-transform: uppercase;
+    font: 700 16px "Roboto Condensed";
+    padding: 15px;
+    background: #eeeeee;
+}
+
+
+.O__textPrompt-item{ border-top: 1px solid #ccc;}
+.O__textPrompt-item:nth-child(1){ border-top: 0;}
+
+
+.O__textPrompt-row2--tender:hover {background: #aaa;
+
+    & .M__textPrompt-data {color: white;}
+& .M__textPrompt-field {color: white;}
+
+}
+
+
+//-///////////////////////////////////////////////////////////////////////////////
+//-                                                                             //
+//-                                                                             //
+//-    ORGANISM                                                                 //
+//-   ---------------                                                           //
+//-    ???                                                                      //
+//-                                                                             //
+//-                                                                             //
+//-///////////////////////////////////////////////////////////////////////////////
+
+
+//-///////////////////////////////////////////////////////////////////////////////
+//-                                                                             //
+//-                                                                             //
+//-    ORGANISM                                                                 //
+//-   ---------------                                                           //
+//-    ???                                                                      //
+//-                                                                             //
+//-                                                                             //
+//-///////////////////////////////////////////////////////////////////////////////
+
+
+//-///////////////////////////////////////////////////////////////////////////////
+//-                                                                             //
+//-                                                                             //
+//-    ORGANISM                                                                 //
+//-   ---------------                                                           //
+//-    MAGZINE MOCKUP BLOCK                                                     //
+//-                                                                             //
+//-                                                                             //
+//-///////////////////////////////////////////////////////////////////////////////
+
+
+.O__magazineMockupBlock-main {border: solid 1px #cdcdcd;}
+.O__magazineMockupBlock-row2 {padding: 25px 15px;  }
+.O__magazineMockupBlock-row3 {border-top: 1px solid #cdcdcd; margin: 0 15px;}
+
+
+//-///////////////////////////////////////////////////////////////////////////////
+//-                                                                             //
+//-                                                                             //
+//-    ORGANISM                                                                 //
+//-   ---------------                                                           //
+//-    PAGE PHOTO GALLERY LIST                                                  //
+//-                                                                             //
+//-                                                                             //
+//-///////////////////////////////////////////////////////////////////////////////
+
+
+.O__photoGallery-item {
+    padding-left: 6px;
+    padding-bottom: 6px;
+}
+.O__photoGallery-item:nth-child(13n+1) {
+    padding: 0;
+}
+.O__photoGalleryList-item {
+    margin: 0 10px 10px 0
+}
+.O__photoGalleryList-main {
+    border-bottom: 1px solid #cdcdcd;
+}
+
+//-///////////////////////////////////////////////////////////////////////////////
+//-                                                                             //
+//-                                                                             //
+//-    ORGANISMS                                                                //
+//-   ---------------                                                           //
+//-    BASIC TEXT PROMPT BUTTON LIST                                            //
+//-                                                                             //
+//-                                                                             //
+//-///////////////////////////////////////////////////////////////////////////////
+
+
+.O_textPromptList-main {
+    background: white;
+}
+
+
+//-///////////////////////////////////////////////////////////////////////////////
+//-                                                                             //
+//-                                                                             //
+//-    ORGANISM                                                                 //
+//-   ---------------                                                           //
+//-    NEWS THUMBNAILS LIST                                                     //
+//-                                                                             //
+//-                                                                             //
+//-///////////////////////////////////////////////////////////////////////////////
+
+.O__newsThumbList-item {
+    width: col(7);
+    padding-right: 10px;
+}
+
+
+//-///////////////////////////////////////////////////////////////////////////////
+//-                                                                             //
+//-                                                                             //
+//-    ORGANISM                                                                 //
+//-   ---------------                                                           //
+//-    LABELED TEXT LINKS LIST                                                  //
+//-                                                                             //
+//-                                                                             //
+//-///////////////////////////////////////////////////////////////////////////////
+
+
+.O__labeledLinksList-main {
+    padding: 30px;
+    border: 1px solid #cdcdcd;
+    background: white
+}
+
+
+//-///////////////////////////////////////////////////////////////////////////////
+//-                                                                             //
+//-                                                                             //
+//-    ORGANISMS                                                                //
+//-   ---------------                                                           //
+//-    RELATED CONTENT LIST (ALTERNATIVE VERSION WITHOUT COMMENTS)              //
+//-                                                                             //
+//-                                                                             //
+//-///////////////////////////////////////////////////////////////////////////////
+
+
+.O__relatedContentList-item--noComments {
+    width: col(3);
+}
+.O__relatedContentList-container--noComments {
+    width: 400px;
+}
+.O__relatedContentList-item--noComments:nth-child(3n+1) .O__relatedContentList-container--noComments {
+    margin-right: auto
+}
+.O__relatedContentList-item--noComments:nth-child(3n+2) .O__relatedContentList-container--noComments {
+    margin: 0 auto
+}
+.O__relatedContentList-item--noComments:nth-child(3n) .O__relatedContentList-container--noComments {
+    margin-left: auto
+}
+
+@include tablet {
+.O__relatedContentList-item--noComments {float: none; width: 100%;}
+    .O__relatedContentList-container--noComments { width: 100%;}
+}
+
+
+
+//-///////////////////////////////////////////////////////////////////////////////
+//-                                                                             //
+//-                                                                             //
+//-    ORGANISM                                                                 //
+//-   ---------------                                                           //
+//-    MAGAZINE PREVIEW ARTICLE LIST                                            //
+//-                                                                             //
+//-                                                                             //
+//-///////////////////////////////////////////////////////////////////////////////
+
+
+.O__magazinePreviewArticles-main {
+    border-bottom: 1px solid #aaa;
+}
+
+
+//-///////////////////////////////////////////////////////////////////////////////
+//-                                                                             //
+//-                                                                             //
+//-    ORGANISM                                                                 //
+//-   ---------------                                                           //
+//-    MAGAZINE PREVIEW BLOCK                                                   //
+//-                                                                             //
+//-                                                                             //
+//-///////////////////////////////////////////////////////////////////////////////
+
+
+.O__magazinePreview-col2 {
+    margin-left: 15px;
+}
+.O__magazinePreview-col2-row1 {
+    margin-bottom: 20px;
+}
+.O__magazinePreview-col2-row2 {
+    width: 600px;
+}
+.O__magazinePreview-col2-row3 {
+    margin-top: 15px;
+}
+.O__magazinePreview-col3 {
+    width: 425px;
+
+}
+
+@include laptop {
+
+  .O__magazinePreview-col3 {
+    display: none;}
+}
+
+
+@include tablet {
+
+  .O__magazinePreview-col1 {
+    display: none;}
+.O__magazinePreview-col2 {margin-left: 0;}
+
+}
+
+
+
+
+//-///////////////////////////////////////////////////////////////////////////////
+//-                                                                             //
+//-                                                                             //
+//-    ORGANISM                                                                 //
+//-   ---------------                                                           //
+//-    SOCIAL MEDIA LINKS LIST                                                  //
+//-                                                                             //
+//-                                                                             //
+//-///////////////////////////////////////////////////////////////////////////////
+
+
+.O__socialLinkList-item {
+    margin-left: 20px;
+}
+@include tablet {
+    .O__socialLinkList-item {
+        width: col(6);
+        margin: 0;
+        padding: 10px;
+        ;
+    }
+}
+@include tablet {
+    .O__socialLinkList--head-main {
+        display: none;
+    }
+    .O__socialLinkList-item {
+        width: col(2);
+    }
+}
+
+
+//-///////////////////////////////////////////////////////////////////////////////
+//-                                                                             //
+//-                                                                             //
+//-    ORGANISMS                                                                //
+//-   ---------------                                                           //
+//-    CATEGORY PAGE THUMBNAILS LIST                                            //
+//-                                                                             //
+//-                                                                             //
+//-///////////////////////////////////////////////////////////////////////////////
+
+
+.O__categoryList-item--category:nth-child(1) {
+    width: col(1);
+    padding: 0
+}
+.O__categoryList-item--category:nth-child(2) {
+    width: col(2);
+    padding-left: 0
+}
+.O__categoryList-item--category:nth-child(2) .M__contentThumb-main {
+    height: 300px;
+}
+.O__categoryList-item--category:nth-child(3) {
+    width: col(2);
+    padding-right: 0
+}
+.O__categoryList-item--category:nth-child(3) .M__contentThumb-main {
+    height: 300px;
+}
+
+
+
+
+
+
+.O__categoryList-item {
+    width: col(3);
+    padding: 0 10px;
+}
+.O__categoryList-item:nth-of-type(3n+1) {
+    padding-left: 0;
+}
+.O__categoryList-item:nth-of-type(3n) {
+    padding-right: 0;
+}
+
+.O__categoryList-item--category:nth-child(1) .M__contentThumb-showcase {
+    display: block;
+}
+.O__categoryList-item--category:nth-child(-n+3) .M__contentThumb-title {
+    font: 700 38px "Roboto Condensed";
+    margin-top: 10px
+}
+.O__categoryList-item--category:nth-child(2) .M__contentThumb-title,
+.O__categoryList-item--category:nth-child(3) .M__contentThumb-title {
+    margin-top: 30px
+}
+.O__categoryList-item--category:nth-child(-n+3) .M__contentThumb-subheading {
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 40px
+}
+.O__categoryList-item--category:nth-child(-n+3) .M__contentThumb-date {
+    display: none;
+}
+.O__categoryList-item--category:nth-child(1) .M__contentThumb-main {
+    height: 450px;
+}
+
+
+O__categoryList-heading {
+    width: 100%;
+    margin-top: 60px;
+}
+
+
+//-///////////////////////////////////////////////////////////////////////////////
+//-                                                                             //
+//-                                                                             //
+//-    ORGANISMS                                                                //
+//-   ---------------                                                           //
+//-    DIRECT PAGINATION NUMBERS LIST                                           //
+//-                                                                             //
+//-                                                                             //
+//-///////////////////////////////////////////////////////////////////////////////
+
+
+.O__paginationNumbers-item {
+    width: 41px;
+    margin-left: 5px;
+}
+
+
+//-///////////////////////////////////////////////////////////////////////////////
+//-                                                                             //
+//-                                                                             //
+//-    ORGANISMS                                                                //
+//-   ---------------                                                           //
+//-    SECONDARY NAVIGATION MENU LIST                                           //
+//-                                                                             //
+//-                                                                             //
+//-///////////////////////////////////////////////////////////////////////////////
+
+
+.O__secondaryNavList-item {
+    width: col(6);
+}
+
+
+//-///////////////////////////////////////////////////////////////////////////////
+//-                                                                             //
+//-                                                                             //
+//-    ORGANISMS                                                                //
+//-   ---------------                                                           //
+//-    MAIN NAVIGATION MENU LIST                                                //
+//-                                                                             //
+//-                                                                             //
+//-///////////////////////////////////////////////////////////////////////////////
+
+
+.O__mainNavList-item {
+    width: col(8);
+}
+
+
+.O__mainNavList-main--mobile{
+    height: 100px;
+
+}
+
+
+.O__mainNavList-main--mobile {
+    background: #eee;
+    border-bottom: 4px solid #aaa;
+    border-left: 0px;
+    border-right: 0px;
+    border-top: 0px;
+    padding: 0 10px;
+}
+
+
+//-///////////////////////////////////////////////////////////////////////////////
+//-                                                                             //
+//-                                                                             //
+//-    ORGANISMS                                                                //
+//-   ---------------                                                           //
+//-    MAIN NAVIGATION MENU LIST                                                //
+//-                                                                             //
+//-                                                                             //
+//-///////////////////////////////////////////////////////////////////////////////
+
+
+@include tablet {
+.O__topNav-item:nth-last-child(1) a .M__topNavButton-main .M__topNavButton-container {border: none;}
+}
+
+
+//-///////////////////////////////////////////////////////////////////////////////
+//-                                                                             //
+//-                                                                             //
+//-    ORGANISMS                                                                //
+//-   ---------------                                                           //
+//-   TEMPLATE FOOT COLUMN LIST                                                 //
+//-                                                                             //
+//-                                                                             //
+//-///////////////////////////////////////////////////////////////////////////////
+
+
+.O__footColumnList-item {
+    width: col(8);
+}
+@include tablet {
+    .O__footColumnList-item {
+        width: col(4)
+    }
+    .O__footColumnList-item:nth-of-type(-n+4) {
+        min-height: 250px;
+    }
+}
+@include mobile {
+    .M__footColumn-heading {
+        margin: 0;
+    }
+    .O__footColumnList-item {
+        float: none;
+        width: 100%;
+        padding: 30px 0;
+        text-align: center;
+        border-bottom: solid 1px white;
+        margin: 0;
+    }
+    .M__footColumn-link {
+        display: none;
+    }
+    .O__footColumnList-item:nth-of-type(-n+4) {
+        min-height: 0;
+        margin: 0;
+    }
+}
+
+
+//-///////////////////////////////////////////////////////////////////////////////
+//-                                                                             //
+//-                                                                             //
+//-    ORGANISM                                                                 //
+//-   ---------------                                                           //
+//-    DISCLAIMER TEXT LINKS LIST                                               //
+//-                                                                             //
+//-                                                                             //
+//-///////////////////////////////////////////////////////////////////////////////
+
+
+
+.O__mainNavList-main--mobile {width: 100%}
+
+
+
+
+
+//-///////////////////////////////////////////////////////////////////////////////
+//-                                                                             //
+//-                                                                             //
+//-    ORGANISM                                                                 //
+//-   ---------------                                                           //
+//-    DISCLAIMER TEXT LINKS LIST                                               //
+//-                                                                             //
+//-                                                                             //
+//-///////////////////////////////////////////////////////////////////////////////
+
+
+.O__disclaimerLinksList-main {
+    display: table;
+    margin: 0 auto;
+}
+@include tablet {
+    .O__disclaimerLinksList-main {
+        display: block;
+        border-bottom: 1px solid white;
+    }
+    .O__disclaimerLinksList-item {
+        float: none;
+        padding: 30px 0;
+        border-top: 1px solid white;
+    }
+}
+
+
+//-///////////////////////////////////////////////////////////////////////////////
+//-                                                                             //
+//-                                                                             //
+//-    ORGANISMS                                                                //
+//-   ---------------                                                           //
+//-    SOCIAL SHARE BUTTONS LIST                                                //
+//-                                                                             //
+//-                                                                             //
+//-///////////////////////////////////////////////////////////////////////////////
+
+
+
+.O__socialShareList-main {
+    border-top: 1px solid #cdcdcd;
+}
+@include tablet {
+    .O__socialShareList-main {
+        border: 0;
+        margin-bottom: 30px;
+    }
+}
+

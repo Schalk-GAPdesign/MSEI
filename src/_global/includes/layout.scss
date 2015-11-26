@@ -1,0 +1,14 @@
+@import '../base/utilities.scss';
+@import '../base/spritesheet.scss';
+@import '../components/A__atoms.scss';
+@import '../components/M__molecules.scss';
+@import '../components/O__organisms.scss';
+@import 'head/head.scss';
+@import 'foot/foot.scss';
+
+@include tablet {
+    body{ font-size: 20px;}
+}
+
+@import '../../article/#__article.scss';
+@import '../../static/#__static.scss';
