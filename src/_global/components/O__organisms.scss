@@ -357,12 +357,6 @@ color: black;
 .O__categoryList-item--category:nth-child(3) .M__contentThumb-main {
     height: 300px;
 }
-
-
-
-
-
-
 .O__categoryList-item {
     width: col(3);
     padding: 0 10px;
@@ -373,7 +367,6 @@ color: black;
 .O__categoryList-item:nth-of-type(3n) {
     padding-right: 0;
 }
-
 .O__categoryList-item--category:nth-child(1) .M__contentThumb-showcase {
     display: block;
 }
@@ -396,26 +389,59 @@ color: black;
 .O__categoryList-item--category:nth-child(1) .M__contentThumb-main {
     height: 450px;
 }
-
-
 O__categoryList-heading {
     width: 100%;
     margin-top: 60px;
 }
+.O__categoryList-item--twoColumn {
+    width: col(2);
+}
+.O__categoryList-item--twoColumn:nth-child(2n+1) {
+    padding-left: 0px;
+    padding-right: 10px;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.O__categoryList-item--twoColumn:nth-child(2n) {
+    padding-left: 10px;
+    padding-right: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.O__categoryList-magazineImage {
+    padding-right: 20px;
+}
+.O__categoryList-magazineImage:nth-child(6n) {
+    padding-right: 0px;
+}
+@include laptop {
+    .O__categoryList-magazineImage:nth-child(6n) {
+        padding-right: 10px;
+    }
+    .O__categoryList-magazineImage:nth-child(4n) {
+        padding-right: 0px;
+    }
+    .O__categoryList-magazineImage:nth-child(n+5) {
+        display: none
+    }
+}
+@include tablet {
+    .O__categoryList-magazineImage:nth-child(3n) {
+        padding-right: 0px;
+    }
+    .O__categoryList-magazineImage:nth-child(n+4) {
+        display: none
+    }
+}
+
+@include mobile {.O__categoryList-item{padding: 0 !important; width: 100%;}
+.O__categoryList-magazineImage {padding: 0; width: 100%; float: none;}
 
 
-.O__categoryList-item--twoColumn { width: col(2);}
-
-.O__categoryList-item--twoColumn:nth-child(2n+1) {padding-left: 0px; padding-right: 10px; padding-top: 0; padding-bottom: 0;  }
-
-.O__categoryList-item--twoColumn:nth-child(2n) {padding-left: 10px; padding-right: 0; padding-top: 0; padding-bottom: 0;  }
+}
 
 
 
-
-.O__categoryList-magazineImage {padding-right: 20px;}
-
-.O__categoryList-magazineImage:nth-child(6n) {padding-right: 0px; }
 
 //-///////////////////////////////////////////////////////////////////////////////
 //-                                                                             //

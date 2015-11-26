@@ -319,7 +319,9 @@ img.M__contentThumb-imageu.u-absolute {
         height: 300px;
     }
 }
-
+@include tablet{
+.M__contentThumb-container--magazine {height: 300px !important;}
+}
 
 //-///////////////////////////////////////////////////////////////////////////////
 //-                                                                             //
@@ -497,6 +499,17 @@ img.M__contentThumb-imageu.u-absolute {
         padding-bottom: 20px;
         text-align: center;
     }
+
+    .M__heading-prompt--noLinks{
+  float: none;
+        height: 100%;
+        padding-bottom: 20px;
+        text-align: center;
+
+}
+
+
+
     .M__heading-main {
         width: 100%;
     }
@@ -506,6 +519,8 @@ img.M__contentThumb-imageu.u-absolute {
     }
 }
 
+
+.M__heading-main--noBar {border-bottom: 0px;}
 
 //-///////////////////////////////////////////////////////////////////////////////
 //-                                                                             //

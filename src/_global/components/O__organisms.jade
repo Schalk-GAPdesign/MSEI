@@ -290,7 +290,7 @@ mixin O__categoryList--twoColumn
         each val, index in article.content.footer.relatedContentAlt
             .O__categoryList-item.O__categoryList-item--twoColumn.u-floatLeft
                 .O__categoryList-position
-                    +M__contentThumb
+                    +M__contentThumb--magazine
 
 
 
@@ -298,6 +298,7 @@ mixin O__categoryList--magazine
     .O__categoryList-main.u-cf
         each val, index in article.content.footer.relatedContentAlt
             img.O__categoryList-magazineImage(src="http://lorempixel.com/175/250")
+
 
 
 

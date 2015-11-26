@@ -1,5 +1,5 @@
-#__introduction-row1-col1 {width: 80%; padding-right: 4px;}
-#__introduction-row1-col2 {width: 20%}
+#__introduction-row1-col1 {width: 68%; padding-right: 4px;}
+#__introduction-row1-col2 {width: 32%}
 
 #__issueContent-col1 {width: 400px;}
 #__issueContent-col2 {width: 830px;}
@@ -18,4 +18,34 @@
     #__issueContent-centre {width: 1255px; margin: 0 auto;}
 
 
-#__otherIssues-main {width: 1150px; margin: 0 auto;}
+#__otherIssues-centre {width: 1150px; margin: 0 auto;}
+
+
+@include laptop{
+
+    #__introduction-main {width: 90%; margin: 0 auto;}
+
+    #__issueContent-centre {width: 90%; margin: 0 auto;}
+#__issueContent-col1 {width: 30%;}
+#__issueContent-col2 {width: 68%;}
+
+#__otherIssues-centre {width: 760px; margin: 0 auto;}
+
+}
+
+@media (max-width: 1220px) {
+
+    #__issueContent-col1-row1 {display: none;}
+}
+
+@include tablet{
+
+    #__otherIssues-centre {width: 565px; margin: 0 auto;}
+#__introduction-row1-col1 {width: 100%; padding-right: 0px; }
+#__introduction-row1-col2 {width: 100%;border-top: 2px solid white;}
+    #__issueContent-col1 {display: none;}
+       #__issueContent-col2 {width: 100%;}
+
+}
+
+@include mobile {#__otherIssues-centre{width: 90%;}}

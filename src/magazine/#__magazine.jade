@@ -22,8 +22,8 @@ include ../_global/includes/head/head.jade
                 #__introduction-row1-col1.u-floatLeft
                     +A__introParagraph('Si litteris aut quamquam do anim tempor ne mandaremus, nam nisi commodo adipisicing eu est noster non nisi. Eu anim mentitum, o laboris iis proident qui magna iudicem ab pariatur sunt elit mandaremus noster se singulis anim expetendis quo dolore an quamquam quo quorum eu consequat ubi fabulas, ullamco ')
                 #__introduction-row1-col2.u-floatRight
-                    +M__filterButton('title', false)
-                    +M__filterButton('title', true, '...options', '...options', '...options'  )
+                    +M__filterButton('Subscribe to Physical Copy', false)
+                    +M__filterButton('View all Issues', true, '...options', '...options', '...options'  )
 
 
 
@@ -45,11 +45,11 @@ include ../_global/includes/head/head.jade
 
                 #__issueContent-col2.u-floatRight
                      #__issueContent-col2-row1
-                        +M__heading--noArrow--noLinks(null, 'Features')
+                        +M__heading--noArrow--noLinks--noBar(null, 'Features')
                      #__issueContent-col2-row2
                         +O__categoryList--twoColumn
                      #__issueContent-col2-row3
-                        +M__heading--noArrow--noLinks(null, 'Also in this Issue')
+                        +M__heading--noArrow--noLinks--noBar(null, 'Also in this Issue')
                      #__issueContent-col2-row4
                         +O__labeledLinksList--presentationFiles--noLinks
 

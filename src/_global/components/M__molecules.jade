@@ -454,6 +454,29 @@ mixin M__contentThumb()
 
 
 
+mixin M__contentThumb--magazine()
+    a(href="#")
+        .M__contentThumb-main.u-relative
+            .M__contentThumb-container.M__contentThumb-container--magazine.u-relative
+                picture
+                    source.M__contentThumb-image.u-absolute(srcset="http://lorempixel.com/640/300" media="(max-width: #{tablet}px)")
+                    img.M__contentThumb-image.u-absolute(src="http://lorempixel.com/885/200")
+            .M__contentThumb-container.u-absolute
+                .M__contentThumb-label.u-table Label
+                .M__contentThumb-overlay.u-table
+                    .M__contentThumb-row.u-tableRow
+                        .M__contentThumb-content.u-tableCell
+                            .M__contentThumb-showcase Top Story
+                            .M__contentThumb-title Copenhagen builds carbon signaling waste-to-power plant
+                            .M__contentThumb-subheading Copenhagen builds carbon signaling waste-to-power plants
+                            .M__contentThumb-date 11 SEPTEMBER 2015
+                            .M__contentThumb-prompt Read More
+
+
+
+
+
+
 
 
 //-///////////////////////////////////////////////////////////////////////////////
@@ -612,6 +635,17 @@ mixin M__heading(text1, text2)
 
 mixin M__heading--noArrow--noLinks(text1, text2)
     .M__heading-main.u-cf
+        if text1
+            .M__heading-title.u-floatLeft= text1
+        if text2
+                .M__heading-prompt--noLinks.u-floatLeft
+                    // Het ekstra parent DIV ingesit: .M__heading-container
+                    .M__heading-promptContainer
+                        .M__heading-promptText= text2
+
+
+mixin M__heading--noArrow--noLinks--noBar(text1, text2)
+    .M__heading-main.M__heading-main--noBar.u-cf
         if text1
             .M__heading-title.u-floatLeft= text1
         if text2
