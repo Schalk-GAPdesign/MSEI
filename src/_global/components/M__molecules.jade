@@ -93,6 +93,15 @@ mixin M__labeledLinkItem--presentation(label, title)
             .M__labeledLinkItem-title.u-tableCell= title
 
 
+
+mixin M__labeledLinkItem--presentationFiles(label, title)
+    .M__labeledLinkItem-mainContainer.u-table
+        .M__labeledLinkItem-main.u-tableRow
+            .M__labeledLinkItem-labelContainer.u-tableCell
+                .M__labeledLinkItem-label.M__labeledLinkItem-label--presentation= label
+            .M__labeledLinkItem-title.u-tableCell= title
+
+
 mixin M__labeledLinkItem--presentation--noLinks(label, title)
     .M__labeledLinkItem-mainContainer.M__labeledLinkItem-main--noLinks.u-table
         .M__labeledLinkItem-main--noLinks.u-tableRow
@@ -340,6 +349,9 @@ mixin A__smallSuperbannerAdvert
                 img(src="http://lorempixel.com/468/60")
 
 
+
+
+
 //-///////////////////////////////////////////////////////////////////////////////
 //-                                                                             //
 //-                                                                             //
@@ -434,13 +446,13 @@ mixin M__pullQuote(Quote)
 //-///////////////////////////////////////////////////////////////////////////////
 
 
-mixin M__contentThumb()
+mixin M__contentThumb--event
     a(href="#")
         .M__contentThumb-main.u-relative
-            .M__contentThumb-container.u-relative
+            .M__contentThumb-container.M__contentThumb-container--event.u-relative
                 picture
                     source.M__contentThumb-image.u-absolute(srcset="http://lorempixel.com/640/300" media="(max-width: #{mobile}px)")
-                    img.M__contentThumb-imageu.u-absolute(src="http://lorempixel.com/885/200")
+                    img.M__contentThumb-image.u-absolute(src="http://lorempixel.com/885/200")
             .M__contentThumb-container.u-absolute
                 .M__contentThumb-label.u-table Label
                 .M__contentThumb-overlay.u-table
@@ -451,6 +463,80 @@ mixin M__contentThumb()
                             .M__contentThumb-subheading Copenhagen builds carbon signaling waste-to-power plants
                             .M__contentThumb-date 11 SEPTEMBER 2015
                             .M__contentThumb-prompt Read More
+
+
+
+
+
+
+mixin M__contentThumb()
+    a(href="#")
+        .M__contentThumb-main.u-relative
+            .M__contentThumb-container.u-relative
+                picture
+                    source.M__contentThumb-image.u-absolute(srcset="http://lorempixel.com/640/300" media="(max-width: #{mobile}px)")
+                    img.M__contentThumb-image.u-absolute(src="http://lorempixel.com/885/200")
+            .M__contentThumb-container.u-absolute
+                .M__contentThumb-label.u-table Label
+                .M__contentThumb-overlay.u-table
+                    .M__contentThumb-row.u-tableRow
+                        .M__contentThumb-content.u-tableCell
+                            .M__contentThumb-showcase Top Story
+                            .M__contentThumb-title Copenhagen builds carbon signaling waste-to-power plant
+                            .M__contentThumb-subheading Copenhagen builds carbon signaling waste-to-power plants
+                            .M__contentThumb-date 11 SEPTEMBER 2015
+                            .M__contentThumb-prompt Read More
+
+
+mixin M__contentThumb--showcase
+    a(href="#")
+        .M__contentThumb-main.u-relative
+            .M__contentThumb-container.M__contentThumb-container--showcase.u-relative
+                picture
+                    source.M__contentThumb-image.u-absolute(srcset="http://lorempixel.com/640/300" media="(max-width: #{mobile}px)")
+                    img.M__contentThumb-image.u-absolute(src="http://lorempixel.com/885/200")
+            .M__contentThumb-container.u-absolute
+                .M__contentThumb-label.u-table Label
+                .M__contentThumb-overlay.u-table
+                    .M__contentThumb-row.u-tableRow
+                        .M__contentThumb-content.u-tableCell
+                            .M__contentThumb-showcase.M__contentThumb-showcase--showcase Top Story
+                            .M__contentThumb-title.M__contentThumb-title--showcase Copenhagen builds carbon signaling waste-to-power plant
+                            .M__contentThumb-subheading.M__contentThumb-subheading--showcase Copenhagen builds carbon signaling waste-to-power plants
+                            .M__contentThumb-date 11 SEPTEMBER 2015
+                            .M__contentThumb-prompt Read More
+
+
+
+
+mixin M__contentThumb--newsCrop
+    a(href="#")
+        .M__contentThumb-main.u-relative
+            .M__contentThumb-container.M__contentThumb-container--newsCrop.u-relative
+                picture
+                    source.M__contentThumb-image.u-absolute(srcset="http://lorempixel.com/640/300" media="(max-width: #{mobile}px)")
+                    img.M__contentThumb-image.u-absolute(src="http://lorempixel.com/885/200")
+            .M__contentThumb-container.u-absolute
+                .M__contentThumb-label.u-table Label
+                .M__contentThumb-overlay.u-table
+                    .M__contentThumb-row.u-tableRow
+                        .M__contentThumb-content.u-tableCell
+                            .M__contentThumb-showcase Top Story
+                            .M__contentThumb-title Copenhagen builds carbon signaling waste-to-power plant
+                            .M__contentThumb-subheading Copenhagen builds carbon signaling waste-to-power plants
+                            .M__contentThumb-date 11 SEPTEMBER 2015
+                            .M__contentThumb-prompt Read More
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -630,8 +716,8 @@ mixin M__heading(text1, text2)
                     // Het ekstra parent DIV ingesit: .M__heading-container
                     .M__heading-promptContainer.u-cf
                         .M__heading-promptText.u-floatLeft= text2
-                        if link
-                            .M__heading-arrow.icon-arrow.u-floatRight
+                        .M__heading-arrow.icon-arrow.u-floatRight
+
 
 mixin M__heading--noArrow--noLinks(text1, text2)
     .M__heading-main.u-cf
@@ -707,6 +793,37 @@ mixin M__largeSkyscraperAdvert--logo
                 .M__largeSkyscraperAdvert-title Partner Name
                 picture
                     img.M__largeSkyscraperAdvert-image--mobile(src="http://lorempixel.com/300/300")
+
+
+
+  mixin M__largeSkyscraperAdvert--small
+    a(href="#").u-noUnderline
+        .M__largeSkyscraperAdvert-main
+            .M__largeSkyscraperAdvert-container
+                .M__largeSkyscraperAdvert-title Advertisement
+                picture
+                    img.M__largeSkyscraperAdvert-image--mobile(src="http://lorempixel.com/120/600")
+
+
+  mixin M__largeSkyscraperAdvert--superbanner
+    a(href="#").u-noUnderline
+        .M__largeSkyscraperAdvert-main
+            .M__largeSkyscraperAdvert-container
+                .M__largeSkyscraperAdvert-title Advertisement
+                picture
+                    img.M__largeSkyscraperAdvert-image--mobile(src="http://lorempixel.com/700/80")
+
+
+  mixin M__largeSkyscraperAdvert--islandAds
+    a(href="#").u-noUnderline
+        .M__largeSkyscraperAdvert-main
+            .M__largeSkyscraperAdvert-container
+                .M__largeSkyscraperAdvert-title Advertisement
+                picture
+                    img.M__largeSkyscraperAdvert-image(src="http://lorempixel.com/260/250")
+                    img.M__largeSkyscraperAdvert-image(src="http://lorempixel.com/260/250")
+                    img.M__largeSkyscraperAdvert-image(src="http://lorempixel.com/260/250")
+                    img.M__largeSkyscraperAdvert-image(src="http://lorempixel.com/260/250")
 
 
 //-///////////////////////////////////////////////////////////////////////////////
@@ -806,6 +923,20 @@ mixin M__textPrompt--tenders(text, deadline, location)
 
 
 mixin M__textPrompt--blue(text)
+        a(href="#").u-noUnderline
+            .M__textPrompt-main.M__textPrompt-row2--blue
+                .M__textPrompt-row2
+                    .M__textPrompt-container.u-table
+                        .M__textPrompt-row.u-tableRow
+                            .M__textPrompt-col1.u-tableCell
+                                .M__textPrompt-col1-row1.M__textPrompt-col1-row1.u-cf
+                                    .M__textPrompt-text.M__textPrompt-text--blue.u-floatLeft= text
+
+                            .M__textPrompt-col2.u-tableCell.u-cf
+                                .M__textPrompt-arrow.icon-arrowWhite
+
+
+mixin M__textPrompt--blue--noHead(text)
         a(href="#").u-noUnderline
             .M__textPrompt-main.M__textPrompt-row2--blue
                 .M__textPrompt-row2

@@ -138,11 +138,18 @@ mixin O__labeledLinksList--presentationFiles--noLinks
                         +M__labeledLinkItem--presentation--noLinks('val.label', 'val.text')
 
 
+mixin O__labeledLinksList--presentationFiles
+        .O__labeledLinksList-main
+            each val in article.content.footer.speakerSlides
+                .O__labeledLinksList-item
+                        +M__labeledLinkItem--presentation--noLinks('val.label', 'val.text')
+
+
 
 mixin O__labeledLinksList--partnerFiles
     a(href="#").u-noUnderline
         .O__labeledLinksList-main
-            each val in article.content.footer.partnerFiles
+            each val in [1,2,3,4,5,6,7]
                 .O__labeledLinksList-item
                         +M__labeledLinkItem('val.label', 'val.text')
 
@@ -300,6 +307,13 @@ mixin O__categoryList--magazine
             img.O__categoryList-magazineImage(src="http://lorempixel.com/175/250")
 
 
+
+mixin O__categoryList--events
+    .O__categoryList-main.u-cf
+        each val, index in [1,2,3]
+            .O__categoryList-item.u-floatLeft
+                .O__categoryList-position
+                    +M__contentThumb--event
 
 
 //-///////////////////////////////////////////////////////////////////////////////

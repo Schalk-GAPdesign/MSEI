@@ -1,0 +1,143 @@
+include ../_global/includes/layout.jade
+include ../_global/includes/head/head.jade
+
+
+//-///////////////////////////////////////////////////////////////////////////////
+//-                                                                             //
+//-                                                                             //
+//-    LAYOUT                                                                   //
+//-   ---------------                                                           //
+//-    START                        d                                            //
+//-                                                                             //
+//-                                                                             //
+//-///////////////////////////////////////////////////////////////////////////////
+
+#__topNewsHome-main
+    #__topNewsHome-centre
+        #__topNewsHome-row1
+          +M__heading('Breaking News', 'More News')
+        #__topNewsHome-row2.u-cf
+            #__topNewsHome-row2-col1.u-floatLeft
+                +M__contentThumb--showcase
+            #__topNewsHome-row2-col2.u-floatRight
+                +M__largeSkyscraperAdvert--small
+
+            #__topNewsHome-row2-col3.u-floatLeft
+                .O__categoryList-main.u-cf
+                    each val in [1,2,3,4,5,6]
+                        .O__categoryList-item.u-floatLeft
+                            +M__contentThumb--newsCrop
+
+//-///////////////////////////////////////////////////////////////////////////////
+//-                                                                             //
+//-                                                                             //
+//-    LAYOUT                                                                   //
+//-   ---------------                                                           //
+//-    START                                                                    //
+//-                                                                             //
+//-                                                                             //
+//-///////////////////////////////////////////////////////////////////////////////
+
+#__featuresHome-main
+    #__featuresHome-centre.u-cf
+        #__featuresHome-col1.u-floatLeft
+            #__featuresHome-col1-row1
+                +M__heading('Popular News')
+            #__featuresHome-col1-row2
+            .O__categoryList-main.u-cf
+                    each val in [1,2,3,4]
+                        .O__categoryList-item.O__categoryList-item--fiveColumn.u-floatLeft
+                            +M__contentThumb--newsCrop
+            #__featuresHome-col1-row2
+                +M__largeSkyscraperAdvert--superbanner
+            #__featuresHome-col1-row3
+                +M__heading('Popular News')
+            #__featuresHome-col1-row4
+                +M__contentThumb--showcase
+        #__featuresHome-col2.u-floatRight
+            +M__largeSkyscraperAdvert--islandAds
+        #__featuresHome-col4.u-floatLeft
+            #__featuresHome-col4-row1
+                +M__heading('Feature', 'View more')
+            #__featuresHome-col4-row2
+                .O__categoryList-main.u-cf
+                        each val in [1,2,3,4,5,6]
+                            .O__categoryList-item.u-floatLeft
+                                +M__contentThumb
+        #__featuresHome-col5.u-floatRight
+            +M__largeSkyscraperAdvert
+        #__featuresHome-col6.u-floatLeft
+            #__featuresHome-col4-row1
+                +M__largeSkyscraperAdvert--superbanner
+            #__featuresHome-col4-row2
+                +M__heading('asdads')
+            #__featuresHome-col4-row3
+                +M__textPrompt--blue--noHead
+            #__featuresHome-col4-row5
+                +O__labeledLinksList--partnerFiles
+
+//-///////////////////////////////////////////////////////////////////////////////
+//-                                                                             //
+//-                                                                             //
+//-    LAYOUT                                                                   //
+//-   ---------------                                                           //
+//-    OTHER                                                                    //
+//-                                                                             //
+//-                                                                             //
+//-///////////////////////////////////////////////////////////////////////////////
+
+#__mediaHome-main
+    #__mediaHome-centre.u-cf
+        #__mediaHome-col1.u-floatLeft
+            #__mediaHome-col1-row1
+                +M__heading('asdsa')
+            #__mediaHome-col1-row2
+        #__mediaHome-col2.u-floatLeft
+            #__mediaHome-col2-row1
+                +M__heading('asdsa')
+            #__mediaHome-col2-row2
+        #__mediaHome-col3
+            #__mediaHome-col3-row1
+                +M__heading('asdsa')
+            #__mediaHome-col3-row2
+
+
+
+#__tendersHome-main
+    #__tendersHome-centre
+        #__tendersHome-row1
+            +M__heading('latest Tenders', 'View all Tenders')
+        #__featuresHome-col4-row3
+            +M__textPrompt--blue--noHead
+        #__featuresHome-col4-row5
+            +O__labeledLinksList--partnerFiles
+
+#__magazineHome-main
+    #__magazineHome-centre
+        #__magazineHome-row1
+            +M__heading('Free Online Magazine', 'View Previous Issues')
+        #__magazineHome-row2
+            +O__magazinePreview
+
+
+#__eventsHome-main
+    #__eventsHome-centre
+        #__eventsHome-row1
+            +M__heading('Upcoming Events', 'View All Events')
+        #__eventsHome-row2
+            +O__categoryList--events
+
+
+
+
+//-///////////////////////////////////////////////////////////////////////////////
+//-                                                                             //
+//-                                                                             //
+//-    LAYOUT                                                                   //
+//-   ---------------                                                           //
+//-    END                                                                      //
+//-                                                                             //
+//-                                                                             //
+//-///////////////////////////////////////////////////////////////////////////////
+
+include ../_global/includes/foot/foot.jade

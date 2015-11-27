@@ -691,7 +691,6 @@ Icon classes can be used entirely standalone. They are named after their origina
   text-transform: uppercase;
   border: 1px solid white;
   border-radius: 20px;
-  margin-top: 10px;
   font-size: 700;
   font: 700 13px "Roboto";
 }
@@ -709,7 +708,7 @@ Icon classes can be used entirely standalone. They are named after their origina
   overflow: hidden;
 }
 
-img.M__contentThumb-imageu.u-absolute {
+img.M__contentThumb-image.u-absolute {
   left: -1000%;
   right: -1000%;
   top: -1000%;
@@ -774,7 +773,6 @@ img.M__contentThumb-imageu.u-absolute {
   -webkit-transition: all 0.5s ease;
           transition: all 0.5s ease;
   opacity: 0;
-  margin-top: 20px;
 }
 
 .M__contentThumb-main:hover .M__contentThumb-container .M__contentThumb-overlay .M__contentThumb-row .M__contentThumb-content .M__contentThumb-prompt {
@@ -783,6 +781,7 @@ img.M__contentThumb-imageu.u-absolute {
   -webkit-transition: all 0.3s ease;
           transition: all 0.3s ease;
   opacity: 1;
+  margin-top: 20px;
 }
 
 @media (max-width: 700px) {
@@ -2844,6 +2843,140 @@ O__categoryList-heading {
   }
 }
 
+#__topNewsHome-centre {
+  width: 1255px;
+  margin: 0 auto;
+}
+
+#__topNewsHome-row1 {
+  width: 1035px;
+}
+
+#__topNewsHome-row2-col1 {
+  width: 415px;
+  margin-right: 20px;
+}
+
+#__topNewsHome-row2-col2 {
+  width: 200px;
+}
+
+#__topNewsHome-row2-col3 {
+  width: 600px;
+}
+
+.M__contentThumb-container--newsCrop {
+  height: 336px !important;
+}
+
+.M__contentThumb-container--showcase {
+  height: 690px !important;
+}
+
+.M__contentThumb-showcase--showcase {
+  display: block !important;
+}
+
+.M__contentThumb-title--showcase {
+  font-size: 38px;
+  line-height: 42px;
+  margin: 10px 0 20px 0;
+}
+
+.M__contentThumb-subheading--showcase {
+  display: block !important;
+}
+
+#__featuresHome-centre {
+  width: 1255px;
+  margin: 0 auto;
+}
+
+.O__categoryList-item--fiveColumn {
+  width: 25% !important;
+}
+
+.O__categoryList-item--fiveColumn {
+  padding-right: 10px !important;
+  padding-left: 5px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+#__featuresHome-col1 {
+  width: 800px;
+}
+
+#__featuresHome-col1 {
+  width: 800px;
+}
+
+#__featuresHome-col2 {
+  width: 455px;
+}
+
+#__featuresHome-col4 {
+  width: 100%;
+}
+
+#__featuresHome-col5 {
+  background: blue;
+  width: 400px;
+}
+
+#__eventsHome-centre {
+  width: 1255px;
+  margin: 0 auto;
+}
+
+.M__contentThumb-container--event {
+  height: 336px !important;
+}
+
+#__magazineHome-centre {
+  width: 1255px;
+  margin: 0 auto;
+}
+
+#__tendersHome-centre {
+  width: 1255px;
+  margin: 0 auto;
+}
+
+#__mediaHome-centre {
+  width: 1255px;
+  margin: 0 auto;
+}
+
+#__mediaHome-col1 {
+  width: 50%;
+}
+
+#__mediaHome-col2 {
+  width: 50%;
+}
+
+#__mediaHome-col3 {
+  width: 100%;
+}
+
+#__topNewsHome-main {
+  padding-top: 60px;
+  padding-bottom: 50px;
+}
+
+#__featuresHome-col1-row1 {
+  width: 790px;
+}
+
+#__featuresHome-col2 {
+  padding-left: 25px;
+}
+
+#__featuresHome-col1-row2 {
+  padding-right: 10px;
+}
+
 #__articleHeader-centre {
   background: white;
   height: 500px;
@@ -3161,11 +3294,13 @@ O__categoryList-heading {
 #__introduction-main {
   width: 1255px;
   margin: 0 auto;
+  margin-top: 60px;
 }
 
 #__issueContent-centre {
   width: 1255px;
   margin: 0 auto;
+  margin-top: 60px;
 }
 
 #__otherIssues-centre {
