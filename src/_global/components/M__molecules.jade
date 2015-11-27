@@ -445,6 +445,227 @@ mixin M__pullQuote(Quote)
 //-                                                                             //
 //-///////////////////////////////////////////////////////////////////////////////
 
+mixin M__thumbnail
+    a(href="#")
+        .M__thumbnail-main
+            //- Determine Height at .M__thumbnail-container
+            .M__thumbnail-container.u-relative
+                picture
+                    source.M__thumbnail-image.u-absolute(srcset="http://lorempixel.com/640/336" media="(max-width: #{mobile}px)")
+                    img.M__thumbnail-image.u-absolute(src="http://lorempixel.com/885/200")
+                .M__thumbnail-overlay.u-absolute
+                    .M__thumbnail-label.u-table Label
+                    .M__thumbnail-lens.u-table
+                        .M__thumbnail-row.u-tableRow
+                            .M__thumbnail-content.u-tableCell
+                                .M__thumbnail-title Copenhagen builds carbon signaling waste-to-power plant
+                                .M__thumbnail-date
+                                    .M__thumbnail-icon
+                                    .M__thumbnail-text 11 SEPTEMBER 2015
+                                .M__thumbnail-prompt Read More
+
+
+mixin M__thumbnail--event--large
+    a(href="#")
+        .M__thumbnail-main
+            //- Determine Height at .M__thumbnail-container
+            .M__thumbnail-container.M__thumbnail-container--large.u-relative
+                picture
+                    source.M__thumbnail-image.u-absolute(srcset="http://lorempixel.com/640/336" media="(max-width: #{mobile}px)")
+                    img.M__thumbnail-image.u-absolute(src="http://lorempixel.com/885/200")
+                .M__thumbnail-overlay.u-absolute
+                    .M__thumbnail-label.u-table Label
+                    .M__thumbnail-lens.u-table
+                        .M__thumbnail-row.u-tableRow
+                            .M__thumbnail-content.u-tableCell
+                                .M__thumbnail-title Copenhagen builds carbon signaling waste-to-power plant
+                                .M__thumbnail-date
+                                    .M__thumbnail-icon
+                                    .M__thumbnail-text 11 SEPTEMBER 2015
+                                .M__thumbnail-prompt Read More
+
+
+
+mixin M__thumbnail--report
+    a(href="#")
+        .M__thumbnail-main
+            //- Determine Height at .M__thumbnail-container
+            .M__thumbnail-container.u-relative
+                picture
+                    source.M__thumbnail-image.u-absolute(srcset="http://lorempixel.com/640/336" media="(max-width: #{mobile}px)")
+                    img.M__thumbnail-image.u-absolute(src="http://lorempixel.com/885/200")
+                .M__thumbnail-overlay.u-absolute
+                    .M__thumbnail-label.u-table Label
+                    .M__thumbnail-lens.u-table
+                        .M__thumbnail-row.u-tableRow
+                            .M__thumbnail-content.u-tableCell
+                                .M__thumbnail-title Copenhagen builds carbon signaling waste-to-power plant
+
+                                .M__thumbnail-date.u-cf
+                                    .M__thumbnail-icon.icon-attachment.u-floatLeft
+                                    .M__thumbnail-text.M__thumbnail-text--icon.u-floatLeft PDF
+                                .M__thumbnail-prompt Read More
+
+
+mixin M__thumbnail--event
+    a(href="#")
+        .M__thumbnail-main
+            //- Determine Height at .M__thumbnail-container
+            .M__thumbnail-container.u-relative
+                picture
+                    source.M__thumbnail-image.u-absolute(srcset="http://lorempixel.com/640/336" media="(max-width: #{mobile}px)")
+                    img.M__thumbnail-image.u-absolute(src="http://lorempixel.com/885/200")
+                .M__thumbnail-overlay.u-absolute
+                    .M__thumbnail-label.u-table Label
+                    .M__thumbnail-lens.u-table
+                        .M__thumbnail-row.u-tableRow
+                            .M__thumbnail-content.u-tableCell
+                                .M__thumbnail-title Copenhagen builds carbon signaling waste-to-power plant
+
+                                .M__thumbnail-date.u-cf
+                                    .M__thumbnail-icon.icon-calender.u-floatLeft
+                                    .M__thumbnail-text.M__thumbnail-text--icon.u-floatLeft 11 SEPTEMBER 2015
+                                .M__thumbnail-prompt Read More
+
+
+mixin M__thumbnail--event--large
+    a(href="#")
+        .M__thumbnail-main
+            //- Determine Height at .M__thumbnail-container
+            .M__thumbnail-container.M__thumbnail-container--large.u-relative
+                picture
+                    source.M__thumbnail-image.u-absolute(srcset="http://lorempixel.com/640/336" media="(max-width: #{mobile}px)")
+                    img.M__thumbnail-image.u-absolute(src="http://lorempixel.com/885/200")
+                .M__thumbnail-overlay.u-absolute
+                    .M__thumbnail-label.u-table Label
+                    .M__thumbnail-lens.u-table
+                        .M__thumbnail-row.u-tableRow
+                            .M__thumbnail-content.u-tableCell
+                                .M__thumbnail-title Copenhagen builds carbon signaling waste-to-power plant
+
+                                .M__thumbnail-date.u-cf
+                                    .M__thumbnail-icon.icon-calender.u-floatLeft
+                                    .M__thumbnail-text.M__thumbnail-text--icon.u-floatLeft 11 SEPTEMBER 2015
+                                .M__thumbnail-prompt Read More
+
+
+
+
+
+mixin M__thumbnail--showcase
+    a(href="#")
+        .M__thumbnail-main
+            //- Determine Height at .M__thumbnail-container
+            .M__thumbnail-container.M__thumbnail-container--showcase.u-relative
+                picture
+                    source.M__thumbnail-image.u-absolute(srcset="http://lorempixel.com/640/336" media="(max-width: #{mobile}px)")
+                    img.M__thumbnail-image.u-absolute(src="http://lorempixel.com/885/200")
+                .M__thumbnail-overlay.u-absolute
+                    .M__thumbnail-label.u-table Label
+                    .M__thumbnail-lens.u-table
+                        .M__thumbnail-row.u-tableRow
+                            .M__thumbnail-content.u-tableCell
+                                .M__thumbnail-showcase Top Story
+                                .M__thumbnail-title.M__thumbnail-title--showcase Copenhagen builds carbon signaling waste-to-power plant
+                                .M__thumbnail-subheading Copenhagen builds carbon signaling waste-to-power plants
+                                .M__thumbnail-date
+                                    .M__thumbnail-icon
+                                    .M__thumbnail-text 11 SEPTEMBER 2015
+                                .M__thumbnail-prompt Read More
+
+
+
+mixin M__thumbnail--media
+    a(href="#")
+        .M__thumbnail-main
+            //- Determine Height at .M__thumbnail-container
+            .M__thumbnail-container.u-relative
+                picture
+                    source.M__thumbnail-image.u-absolute(srcset="http://lorempixel.com/640/336" media="(max-width: #{mobile}px)")
+                    img.M__thumbnail-image.u-absolute(src="http://lorempixel.com/885/200")
+                .M__thumbnail-overlay.u-absolute
+                    .M__thumbnail-label.u-table Label
+                    .M__thumbnail-lens.u-table
+                        .M__thumbnail-row.u-tableRow
+                            .M__thumbnail-play.u-tableCell
+                                .M__thumbnail-playIcon.icon-thumbPlay
+                            .M__thumbnail-content.u-tableCell
+                                .M__thumbnail-title Copenhagen builds carbon signaling waste-to-power plant
+                                .M__thumbnail-date
+                                    .M__thumbnail-icon
+                                    .M__thumbnail-text 11 SEPTEMBER 2015
+
+
+
+mixin M__thumbnail--tender
+    a(href="#")
+        .M__thumbnail-main
+            //- Determine Height at .M__thumbnail-container
+            .M__thumbnail-container.u-relative
+                picture
+                    source.M__thumbnail-image.u-absolute(srcset="http://lorempixel.com/640/336" media="(max-width: #{mobile}px)")
+                    img.M__thumbnail-image.u-absolute(src="http://lorempixel.com/885/200")
+                .M__thumbnail-overlay.u-absolute
+                    .M__thumbnail-label.u-table Tender
+                    .M__thumbnail-lens.u-table
+                        .M__thumbnail-row.u-tableRow
+                            .M__thumbnail-content.u-tableCell
+                                .M__thumbnail-title Copenhagen builds carbon signaling waste-to-power plant
+
+                                .M__thumbnail-date.u-cf
+                                    .M__thumbnail-icon.icon-tender.u-floatLeft
+                                    .M__thumbnail-text.M__thumbnail-text--icon.u-floatLeft Deadline: Expired
+                                .M__thumbnail-prompt Read More
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/// legacy
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 mixin M__contentThumb--event
     a(href="#")
@@ -768,62 +989,70 @@ mixin M__featuredImage(url, label)
 //-                                                                             //
 //-    MOLECULE                                                                 //
 //-   ---------------                                                           //
-//-    LARGE SKYSCRAPER ADVERTISEMENT BANNER                                    //
+//-    * LARGE SKYSCRAPER ADVERTISEMENT BANNER                                    //
 //-                                                                             //
 //-                                                                             //
 //-///////////////////////////////////////////////////////////////////////////////
 
-
-mixin M__largeSkyscraperAdvert
+mixin M__advert
     a(href="#").u-noUnderline
-        .M__largeSkyscraperAdvert-main
-            .M__largeSkyscraperAdvert-container
-                .M__largeSkyscraperAdvert-title Advertisement
+        .M__advert-main
+            .M__advert-title Advertisement
+            picture
+                img.M__advert-image(src="http://lorempixel.com/270/80")
+
+
+mixin M__advert--largeSkyscraper
+        a(href="#").u-noUnderline
+            .M__advert-main
+                .M__advert-title Advertisement
                 picture
-                    // Het mobile en tablet weergawe ook ingesit vir responsiveness
-                    source.M__largeSkyscraperAdvert-image--desktop(srcset="http://lorempixel.com/300/600" media="(min-width: #{tablet}px)")
-                    source.M__largeSkyscraperAdvert-image--tablet(srcset="http://lorempixel.com/120/600" media="(min-width: #{mobile}px) and (max-width: #{tablet}px)")
-                    img.M__largeSkyscraperAdvert-image--mobile(src="http://lorempixel.com/270/80")
+                    source.M__advert-image(srcset="http://lorempixel.com/300/600" media="(min-width: #{tablet}px)")
+                    source.M__advert-image(srcset="http://lorempixel.com/120/600" media="(min-width: #{mobile}px) and (max-width: #{tablet}px)")
+                    img.M__advert-image(src="http://lorempixel.com/270/80")
 
 
-mixin M__largeSkyscraperAdvert--logo
-    a(href="#").u-noUnderline
-        .M__largeSkyscraperAdvert-main
-            .M__largeSkyscraperAdvert-container
-                .M__largeSkyscraperAdvert-title Partner Name
+mixin M__advert--partnerLogo
+        a(href="#").u-noUnderline
+            .M__advert-main
+                .M__advert-title Advertisement
                 picture
-                    img.M__largeSkyscraperAdvert-image--mobile(src="http://lorempixel.com/300/300")
+                    img.M__advert-image(src="http://lorempixel.com/300/300")
 
-
-
-  mixin M__largeSkyscraperAdvert--small
-    a(href="#").u-noUnderline
-        .M__largeSkyscraperAdvert-main
-            .M__largeSkyscraperAdvert-container
-                .M__largeSkyscraperAdvert-title Advertisement
+mixin M__advert--smallSkyscraper
+        a(href="#").u-noUnderline
+            .M__advert-main
+                .M__advert-title Advertisement
                 picture
-                    img.M__largeSkyscraperAdvert-image--mobile(src="http://lorempixel.com/120/600")
+                    source.M__advert-image(srcset="http://lorempixel.com/120/600" media="(min-width: #{mobile}px)")
+                    img.M__advert-image(src="http://lorempixel.com/270/80")
 
 
-  mixin M__largeSkyscraperAdvert--superbanner
-    a(href="#").u-noUnderline
-        .M__largeSkyscraperAdvert-main
-            .M__largeSkyscraperAdvert-container
-                .M__largeSkyscraperAdvert-title Advertisement
+
+mixin M__advert--largeSuperbanner
+        a(href="#").u-noUnderline
+            .M__advert-main
+                .M__advert-title Advertisement
                 picture
-                    img.M__largeSkyscraperAdvert-image--mobile(src="http://lorempixel.com/700/80")
+                    source.M__advert-image(srcset="http://lorempixel.com/700/80" media="(min-width: #{mobile}px)")
+                    img.M__advert-image(src="http://lorempixel.com/270/80")
 
 
-  mixin M__largeSkyscraperAdvert--islandAds
-    a(href="#").u-noUnderline
-        .M__largeSkyscraperAdvert-main
-            .M__largeSkyscraperAdvert-container
-                .M__largeSkyscraperAdvert-title Advertisement
-                picture
-                    img.M__largeSkyscraperAdvert-image(src="http://lorempixel.com/260/250")
-                    img.M__largeSkyscraperAdvert-image(src="http://lorempixel.com/260/250")
-                    img.M__largeSkyscraperAdvert-image(src="http://lorempixel.com/260/250")
-                    img.M__largeSkyscraperAdvert-image(src="http://lorempixel.com/260/250")
+mixin M__advert--islandAdverts
+        .M__advert-main
+            .M__advert-title Advertisement
+            .M__advert-islandAdvertContainer
+                a(href="#")
+                    img.M__advert-image--islandAd(src="http://lorempixel.com/260/250")
+            .M__advert-islandAdvertContainer
+                a(href="#")
+                    img.M__advert-image--islandAd(src="http://lorempixel.com/260/250")
+            .M__advert-islandAdvertContainer
+                a(href="#")
+                    img.M__advert-image--islandAd(src="http://lorempixel.com/260/250")
+            .M__advert-islandAdvertContainer
+                a(href="#")
+                    img.M__advert-image--islandAd(src="http://lorempixel.com/260/250")
 
 
 //-///////////////////////////////////////////////////////////////////////////////

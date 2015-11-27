@@ -116,329 +116,336 @@ Icon classes can be used entirely standalone. They are named after their origina
 */
 .icon-arrow {
   background-image: url(../img/spritesheet.png);
-  background-position: -191px -67px;
+  background-position: -19px -186px;
   width: 10px;
   height: 16px;
 }
 
 .icon-arrowWhite, .M__heading-prompt:hover .icon-arrow, .M__textPrompt-row2:hover .icon-arrow, .M__textPrompt-main--report:hover .M__textPrompt-col1--report .M__textPrompt-col1-row1 .M__textPrompt-arrow .M__textPrompt-arrowContent, .M__textPrompt-container-main--otherTenders:hover .M__textPrompt-container .M__textPrompt-row .M__textPrompt-col2 .M__textPrompt-arrow {
   background-image: url(../img/spritesheet.png);
-  background-position: -191px -51px;
+  background-position: -112px -112px;
   width: 10px;
   height: 16px;
 }
 
 .icon-articleShare {
   background-image: url(../img/spritesheet.png);
-  background-position: -142px -30px;
+  background-position: -160px -57px;
   width: 27px;
   height: 27px;
 }
 
 .icon-articleShareRed, .M__pullQuote-quote:hover .M__pullQuote-icon {
   background-image: url(../img/spritesheet.png);
-  background-position: -142px -57px;
+  background-position: -160px -30px;
   width: 27px;
   height: 27px;
 }
 
 .icon-close {
   background-image: url(../img/spritesheet.png);
-  background-position: -130px -141px;
+  background-position: -160px -135px;
   width: 24px;
   height: 25px;
 }
 
 .icon-closeQuote {
   background-image: url(../img/spritesheet.png);
-  background-position: -66px -141px;
+  background-position: -66px -160px;
   width: 32px;
   height: 26px;
 }
 
 .icon-closeQuoteRed {
   background-image: url(../img/spritesheet.png);
-  background-position: -98px -141px;
+  background-position: -98px -160px;
   width: 32px;
   height: 26px;
 }
 
 .icon-closeWhite {
   background-image: url(../img/spritesheet.png);
-  background-position: -142px -110px;
+  background-position: -160px -110px;
   width: 24px;
   height: 25px;
 }
 
 .icon-dropdown {
   background-image: url(../img/spritesheet.png);
-  background-position: -191px -90px;
+  background-position: -130px -120px;
   width: 10px;
   height: 7px;
 }
 
 .icon-dropdownWhite, .M__mainNavButton-main:hover:not(.is-activated) .M__mainNavButton-container .M__mainNavButton-centre .M__mainNavButton-arrow {
   background-image: url(../img/spritesheet.png);
-  background-position: -191px -83px;
+  background-position: -190px -177px;
   width: 10px;
   height: 7px;
 }
 
 .icon-footerDot {
   background-image: url(../img/spritesheet.png);
-  background-position: -191px -97px;
+  background-position: -208px -34px;
   width: 4px;
   height: 3px;
 }
 
 .icon-login {
   background-image: url(../img/spritesheet.png);
-  background-position: -24px -167px;
+  background-position: -190px -149px;
   width: 13px;
   height: 13px;
 }
 
 .icon-loginRed, .M__Login-main:hover .M__Login-container .icon-login {
   background-image: url(../img/spritesheet.png);
-  background-position: -120px -127px;
+  background-position: -190px -136px;
   width: 13px;
   height: 13px;
 }
 
 .icon-openQuote {
   background-image: url(../img/spritesheet.png);
-  background-position: -33px -141px;
+  background-position: 0px -160px;
   width: 33px;
   height: 26px;
 }
 
 .icon-openQuoteRed {
   background-image: url(../img/spritesheet.png);
-  background-position: 0px -141px;
+  background-position: -33px -160px;
   width: 33px;
   height: 26px;
 }
 
 .icon-pullQuote {
   background-image: url(../img/spritesheet.png);
-  background-position: -142px -84px;
+  background-position: -160px -84px;
   width: 26px;
   height: 26px;
 }
 
 .icon-search {
   background-image: url(../img/spritesheet.png);
-  background-position: -112px -90px;
+  background-position: -130px -160px;
   width: 20px;
   height: 20px;
 }
 
 .icon-searchWhite, .M__mainNavsearch-main:hover .M__mainNavsearch-container:not(.is-activated) .M__mainNavsearch-icon {
   background-image: url(../img/spritesheet.png);
-  background-position: -90px -81px;
+  background-position: -109px -81px;
   width: 20px;
   height: 20px;
 }
 
 .icon-facebook {
   background-image: url(../img/spritesheet.png);
-  background-position: -191px -15px;
+  background-position: -150px -130px;
   width: 9px;
   height: 18px;
 }
 
 .icon-facebookRed, .M__socialLinkButton-icon.icon-facebook:hover {
   background-image: url(../img/spritesheet.png);
-  background-position: -191px -33px;
+  background-position: -208px 0px;
   width: 9px;
   height: 18px;
 }
 
 .icon-google {
   background-image: url(../img/spritesheet.png);
-  background-position: -172px -54px;
+  background-position: -112px -49px;
   width: 18px;
   height: 18px;
 }
 
 .icon-googleRed, .M__socialLinkButton-icon.icon-google:hover {
   background-image: url(../img/spritesheet.png);
-  background-position: -172px -36px;
+  background-position: -190px 0px;
   width: 18px;
   height: 18px;
 }
 
 .icon-linkedin {
   background-image: url(../img/spritesheet.png);
-  background-position: -172px -18px;
+  background-position: -150px -160px;
   width: 19px;
   height: 18px;
 }
 
 .icon-linkedinRed, .M__socialLinkButton-icon.icon-linkedin:hover {
   background-image: url(../img/spritesheet.png);
-  background-position: -172px 0px;
+  background-position: -169px -160px;
   width: 19px;
   height: 18px;
 }
 
 .icon-rss {
   background-image: url(../img/spritesheet.png);
-  background-position: -172px -121px;
+  background-position: -190px -35px;
   width: 17px;
   height: 17px;
 }
 
 .icon-rssRed, .M__socialLinkButton-icon.icon-rss:hover {
   background-image: url(../img/spritesheet.png);
-  background-position: -172px -104px;
+  background-position: -190px -18px;
   width: 17px;
   height: 17px;
 }
 
 .icon-twitter {
   background-image: url(../img/spritesheet.png);
-  background-position: -172px -72px;
+  background-position: 0px -186px;
   width: 19px;
   height: 16px;
 }
 
 .icon-twitterRed, .M__socialLinkButton-icon.icon-twitter:hover {
   background-image: url(../img/spritesheet.png);
-  background-position: -172px -88px;
+  background-position: -93px -112px;
   width: 19px;
   height: 16px;
 }
 
 .icon-youtube {
   background-image: url(../img/spritesheet.png);
-  background-position: -81px -62px;
+  background-position: -71px -112px;
   width: 22px;
   height: 16px;
 }
 
 .icon-youtubeRed, .M__socialLinkButton-icon.icon-youtube:hover {
   background-image: url(../img/spritesheet.png);
-  background-position: -120px -111px;
+  background-position: -49px -112px;
   width: 22px;
   height: 16px;
 }
 
 .icon-commentShare {
   background-image: url(../img/spritesheet.png);
-  background-position: -60px -81px;
+  background-position: -79px -81px;
   width: 30px;
   height: 30px;
 }
 
 .icon-commentShareWhite, .M__socialShareButton-main:hover .icon-commentShare {
   background-image: url(../img/spritesheet.png);
-  background-position: -30px -81px;
+  background-position: -30px -130px;
   width: 30px;
   height: 30px;
 }
 
 .icon-emailShare {
   background-image: url(../img/spritesheet.png);
-  background-position: 0px -81px;
+  background-position: -130px -90px;
   width: 30px;
   height: 30px;
 }
 
 .icon-emailShareWhite, .M__socialShareButton-main:hover .icon-emailShare {
   background-image: url(../img/spritesheet.png);
-  background-position: 0px -111px;
+  background-position: -130px -60px;
   width: 30px;
   height: 30px;
 }
 
 .icon-facebookShare {
   background-image: url(../img/spritesheet.png);
-  background-position: -112px -30px;
+  background-position: -130px -30px;
   width: 30px;
   height: 30px;
 }
 
 .icon-facebookShareWhite, .M__socialShareButton-main:hover .icon-facebookShare {
   background-image: url(../img/spritesheet.png);
-  background-position: -112px 0px;
+  background-position: -130px 0px;
   width: 30px;
   height: 30px;
 }
 
 .icon-googleShare {
   background-image: url(../img/spritesheet.png);
-  background-position: -90px -111px;
+  background-position: -60px -130px;
   width: 30px;
   height: 30px;
 }
 
 .icon-googleShareWhite, .M__socialShareButton-main:hover .icon-googleShare {
   background-image: url(../img/spritesheet.png);
-  background-position: -142px 0px;
+  background-position: -90px -130px;
   width: 30px;
   height: 30px;
 }
 
 .icon-linkedShareWhite, .M__socialShareButton-main:hover .icon-linkedinShare {
   background-image: url(../img/spritesheet.png);
-  background-position: -30px -111px;
+  background-position: -160px 0px;
   width: 30px;
   height: 30px;
 }
 
 .icon-linkedinShare {
   background-image: url(../img/spritesheet.png);
-  background-position: -60px -111px;
+  background-position: -120px -130px;
   width: 30px;
   height: 30px;
 }
 
 .icon-twitterShare {
   background-image: url(../img/spritesheet.png);
-  background-position: -81px -31px;
+  background-position: -49px -81px;
   width: 30px;
   height: 31px;
 }
 
 .icon-twitterShareWhite, .M__socialShareButton-main:hover .icon-twitterShare {
   background-image: url(../img/spritesheet.png);
-  background-position: -112px -60px;
+  background-position: 0px -130px;
   width: 30px;
   height: 30px;
 }
 
+.icon-attachment {
+  background-image: url(../img/spritesheet.png);
+  background-position: -208px -18px;
+  width: 9px;
+  height: 16px;
+}
+
 .icon-calender {
   background-image: url(../img/spritesheet.png);
-  background-position: -154px -141px;
+  background-position: -190px -87px;
   width: 14px;
   height: 17px;
 }
 
 .icon-calenderRed {
   background-image: url(../img/spritesheet.png);
-  background-position: -172px -138px;
+  background-position: -190px -69px;
   width: 15px;
   height: 18px;
 }
 
 .icon-map {
   background-image: url(../img/spritesheet.png);
-  background-position: -191px 0px;
+  background-position: -190px -162px;
   width: 11px;
   height: 15px;
 }
 
 .icon-mapLarge {
   background-image: url(../img/spritesheet.png);
-  background-position: -12px -167px;
+  background-position: -190px -104px;
   width: 12px;
   height: 16px;
 }
 
 .icon-mapRed, .M__eventIntro-location:hover .M__eventIntro-locationIcon {
   background-image: url(../img/spritesheet.png);
-  background-position: 0px -167px;
+  background-position: -190px -120px;
   width: 12px;
   height: 16px;
 }
@@ -452,9 +459,30 @@ Icon classes can be used entirely standalone. They are named after their origina
 
 .icon-playSmall {
   background-image: url(../img/spritesheet.png);
-  background-position: -81px 0px;
+  background-position: -81px -49px;
   width: 31px;
   height: 31px;
+}
+
+.icon-tender {
+  background-image: url(../img/spritesheet.png);
+  background-position: -190px -52px;
+  width: 16px;
+  height: 17px;
+}
+
+.icon-thumbPlay {
+  background-image: url(../img/spritesheet.png);
+  background-position: 0px -81px;
+  width: 49px;
+  height: 49px;
+}
+
+.icon-thumbPlayRed, .M__thumbnail-main:hover .M__thumbnail-container .M__thumbnail-overlay .M__thumbnail-lens .M__thumbnail-row .M__thumbnail-play .M__thumbnail-playIcon, .M__thumbnail-main:hover .M__thumbnail-container--showcase .M__thumbnail-overlay .M__thumbnail-lens .M__thumbnail-row .M__thumbnail-play .M__thumbnail-playIcon {
+  background-image: url(../img/spritesheet.png);
+  background-position: -81px 0px;
+  width: 49px;
+  height: 49px;
 }
 
 .A__introParagraph {
@@ -687,28 +715,25 @@ Icon classes can be used entirely standalone. They are named after their origina
   background: #aaa;
 }
 
-.M__contentThumb-prompt {
-  text-transform: uppercase;
-  border: 1px solid white;
-  border-radius: 20px;
-  font-size: 700;
-  font: 700 13px "Roboto";
-}
-
-.M__contentThumb-main {
+.M__thumbnail-main {
   color: white;
-  margin-bottom: 18px;
-  -webkit-transition: all 1s ease-in-out;
-          transition: all 1s ease-in-out;
 }
 
-.M__contentThumb-container.u-relative {
-  width: 100%;
+.M__thumbnail-container, .M__thumbnail-container--showcase {
   height: 200px;
   overflow: hidden;
 }
 
-img.M__contentThumb-image.u-absolute {
+.M__thumbnail-container--showcase {
+  height: 690px;
+  height: 690px;
+}
+
+.M__thumbnail-container--large {
+  height: 336px;
+}
+
+.M__thumbnail-image {
   left: -1000%;
   right: -1000%;
   top: -1000%;
@@ -718,84 +743,97 @@ img.M__contentThumb-image.u-absolute {
   min-width: 100%;
 }
 
-.M__contentThumb-showcase {
-  margin-top: 15px;
-  display: none;
-  text-transform: uppercase;
-  font-weight: 700;
-}
-
-.M__contentThumb-container.u-absolute {
-  text-align: left;
-  width: 100%;
+.M__thumbnail-overlay {
   bottom: 0;
+  width: 100%;
 }
 
-.M__contentThumb-label {
+.M__thumbnail-label {
   padding: 5px 15px 5px 10px;
   background: red;
 }
 
-.M__contentThumb-overlay {
-  padding: 0 20px;
+.M__thumbnail-lens {
+  padding: 20px;
   background: black;
   background: rgba(0, 0, 0, 0.7);
-  height: 100px;
   width: 100%;
   padding-bottom: 20px;
 }
 
-.M__contentThumb-mediaPlay {
-  vertical-align: middle;
-  width: 70px;
-}
-
-.M__contentThumb-title {
+.M__thumbnail-showcase {
   font-weight: 700;
-  margin-top: 20px;
+  margin-top: 15px;
+  text-transform: uppercase;
+  font-size: 15px;
+  margin-bottom: 8px;
 }
 
-.M__contentThumb-date {
+.M__thumbnail-title {
+  font-weight: 700;
+}
+
+.M__thumbnail-title--showcase {
+  font-size: 38px;
+}
+
+.M__thumbnail-subheading {
+  margin-top: 15px;
+}
+
+.M__thumbnail-text {
   font-size: 13px;
   color: #ccc;
+}
+
+.M__thumbnail-text--icon {
+  padding-top: 2px;
+  padding-left: 9px;
+}
+
+.M__thumbnail-date, .M__thumbnail-map {
   margin-top: 10px;
 }
 
-.M__contentThumb-subheading {
-  display: none;
-}
-
-.M__contentThumb-prompt {
+.M__thumbnail-prompt {
+  text-transform: uppercase;
+  border: 1px solid white;
+  border-radius: 20px;
+  font-size: 700;
+  font-size: 13px;
   height: 0;
-  width: 102px;
-  padding: 0 0 0 10px;
+  width: 100px;
+  padding: 0 0 0 12px;
   overflow: hidden;
   -webkit-transition: all 0.5s ease;
           transition: all 0.5s ease;
   opacity: 0;
 }
 
-.M__contentThumb-main:hover .M__contentThumb-container .M__contentThumb-overlay .M__contentThumb-row .M__contentThumb-content .M__contentThumb-prompt {
+.M__thumbnail-play {
+  width: 40px;
+  padding-right: 20px;
+  vertical-align: middle;
+}
+
+.M__thumbnail-main:hover .M__thumbnail-container .M__thumbnail-overlay .M__thumbnail-lens .M__thumbnail-row .M__thumbnail-content .M__thumbnail-prompt, .M__thumbnail-main:hover .M__thumbnail-container--showcase .M__thumbnail-overlay .M__thumbnail-lens .M__thumbnail-row .M__thumbnail-content .M__thumbnail-prompt {
   height: 30px;
-  padding: 5px 0 0 10px;
+  padding: 7px 0 0 12px;
   -webkit-transition: all 0.3s ease;
           transition: all 0.3s ease;
   opacity: 1;
   margin-top: 20px;
 }
 
-@media (max-width: 700px) {
-  .M__contentThumb-main {
-    height: 300px;
-  }
-  .M__contentThumb-container.u-relative {
-    height: 300px;
-  }
-}
-
 @media (max-width: 1000px) {
-  .M__contentThumb-container--magazine {
-    height: 300px !important;
+  .M__thumbnail-container, .M__thumbnail-container--showcase {
+    height: 336px !important;
+  }
+  .M__thumbnail-title--showcase {
+    font-size: 20px;
+  }
+  .M__thumbnail-subheading {
+    display: none;
   }
 }
 
@@ -844,13 +882,14 @@ img.M__contentThumb-image.u-absolute {
   width: 100%;
 }
 
-.M__largeSkyscraperAdvert-main {
+.M__advert-main {
   border: 1px solid #cdcdcd;
   background: #eeeeee;
   padding: 30px 0;
+  text-align: center;
 }
 
-.M__largeSkyscraperAdvert-title {
+.M__advert-title {
   font-size: 13px;
   text-transform: uppercase;
   font-weight: 700;
@@ -860,21 +899,8 @@ img.M__contentThumb-image.u-absolute {
   margin-bottom: 10px;
 }
 
-.M__largeSkyscraperAdvert-container {
-  display: table;
-  margin: 0 auto;
-}
-
-@media (max-width: 1000px) {
-  .M__largeSkyscraperAdvert-title {
-    font-size: 10px;
-  }
-}
-
-.M__largeSkyscraperAdvert-main {
-  border: 1px solid #cdcdcd;
-  background: #eeeeee;
-  padding: 30px 0;
+.M__advert-islandAdvertContainer {
+  margin-bottom: 15px;
 }
 
 .M__heading-main {

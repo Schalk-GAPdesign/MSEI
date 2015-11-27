@@ -230,29 +230,21 @@
 //-///////////////////////////////////////////////////////////////////////////////
 
 
-
-
-////
-
-.M__contentThumb-prompt {
-    text-transform: uppercase;
-    border: 1px solid white;
-    border-radius: 20px;
-    //margin-top: 10px;
-    font-size: 700;
-    font: 700 13px "Roboto";
-}
-.M__contentThumb-main {
+.M__thumbnail-main {
     color: white;
-    margin-bottom: 18px;
-    transition: all 1s ease-in-out;
 }
-.M__contentThumb-container.u-relative {
-    width: 100%;
+.M__thumbnail-container {
     height: 200px;
     overflow: hidden;
 }
-img.M__contentThumb-image.u-absolute {
+.M__thumbnail-container--showcase {
+    height: 690px;
+    height: 690px;
+}
+.M__thumbnail-container--large {
+    height: 336px;
+}
+.M__thumbnail-image {
     left: -1000%;
     right: -1000%;
     top: -1000%;
@@ -261,71 +253,90 @@ img.M__contentThumb-image.u-absolute {
     min-height: 100%;
     min-width: 100%;
 }
-.M__contentThumb-showcase {
-    margin-top: 15px;
-    display: none;
-    text-transform: uppercase;
-    font-weight: 700;
-}
-.M__contentThumb-container.u-absolute {
-    text-align: left;
-    width: 100%;
+.M__thumbnail-overlay {
     bottom: 0;
+    width: 100%;
 }
-.M__contentThumb-label {
+.M__thumbnail-label {
     padding: 5px 15px 5px 10px;
     background: red;
 }
-.M__contentThumb-overlay {
-    padding: 0 20px;
+.M__thumbnail-lens {
+    padding: 20px;
     background: rgb(0, 0, 0);
     background: rgba(0, 0, 0, 0.7);
-    height: 100px;
     width: 100%;
     padding-bottom: 20px;
 }
-.M__contentThumb-mediaPlay {
-    vertical-align: middle;
-    width: 70px;
-}
-.M__contentThumb-title {
+.M__thumbnail-showcase {
     font-weight: 700;
-    margin-top: 20px;
+    margin-top: 15px;
+    text-transform: uppercase;
+    font-size: 15px;
+    margin-bottom: 8px;
 }
-.M__contentThumb-date {
+.M__thumbnail-title {
+    font-weight: 700;
+}
+.M__thumbnail-title--showcase {
+    font-size: 38px;
+}
+.M__thumbnail-subheading {
+    margin-top: 15px;
+}
+.M__thumbnail-text {
     font-size: 13px;
     color: #ccc;
-    margin-top: 10px;
+
+
 }
-.M__contentThumb-subheading {
-    display: none;
-}
-.M__contentThumb-prompt {
+.M__thumbnail-text--icon {padding-top: 2px; padding-left: 9px;}
+.M__thumbnail-date, .M__thumbnail-map{
+    margin-top: 10px;}
+
+.M__thumbnail-prompt {
+    text-transform: uppercase;
+    border: 1px solid white;
+    border-radius: 20px;
+    font-size: 700;
+    font-size: 13px;
     height: 0;
-    width: 102px;
-    padding: 0 0 0 10px;
+    width: 100px;
+    padding: 0 0 0 12px;
     overflow: hidden;
     transition: all 0.5s ease;
     opacity: 0;
-    //margin-top: 20px
 }
-.M__contentThumb-main:hover .M__contentThumb-container .M__contentThumb-overlay .M__contentThumb-row .M__contentThumb-content .M__contentThumb-prompt {
+
+.M__thumbnail-play {width: 40px; padding-right: 20px; vertical-align: middle;}
+
+
+.M__thumbnail-main:hover .M__thumbnail-container .M__thumbnail-overlay .M__thumbnail-lens .M__thumbnail-row .M__thumbnail-content .M__thumbnail-prompt {
     height: 30px;
-    padding: 5px 0 0 10px;
+    padding: 7px 0 0 12px;
     transition: all 0.3s ease;
     opacity: 1;
     margin-top: 20px;
 }
-@include mobile {
-    .M__contentThumb-main {
-        height: 300px;
-    }
-    .M__contentThumb-container.u-relative {
-        height: 300px;
-    }
+
+.M__thumbnail-main:hover .M__thumbnail-container .M__thumbnail-overlay .M__thumbnail-lens .M__thumbnail-row .M__thumbnail-play .M__thumbnail-playIcon {
+  @extend .icon-thumbPlayRed
 }
-@include tablet{
-.M__contentThumb-container--magazine {height: 300px !important;}
+
+
+@include tablet {
+    .M__thumbnail-container {
+        height: 336px !important;
+    }
+    .M__thumbnail-title--showcase {
+        font-size: 20px;
+    }
+    .M__thumbnail-container--showcase {
+        @extend .M__thumbnail-container
+    }
+    .M__thumbnail-subheading {
+        display: none;
+    }
 }
 
 
@@ -392,12 +403,13 @@ img.M__contentThumb-image.u-absolute {
 //-///////////////////////////////////////////////////////////////////////////////
 
 
-.M__largeSkyscraperAdvert-main {
+.M__advert-main {
     border: 1px solid #cdcdcd;
     background: #eeeeee;
     padding: 30px 0;
+    text-align: center
 }
-.M__largeSkyscraperAdvert-title {
+.M__advert-title {
     font-size: 13px;
     text-transform: uppercase;
     font-weight: 700;
@@ -406,24 +418,9 @@ img.M__contentThumb-image.u-absolute {
     text-align: center;
     margin-bottom: 10px;
 }
-.M__largeSkyscraperAdvert-container {
-    display: table;
-    margin: 0 auto;
+.M__advert-islandAdvertContainer {
+    margin-bottom: 15px;
 }
-@include tablet {
-    .M__largeSkyscraperAdvert-title {
-        font-size: 10px;
-    }
-}
-
-.M__largeSkyscraperAdvert-main {
-    border: 1px solid #cdcdcd;
-    background: #eeeeee;
-    padding: 30px 0;
-}
-
-
-
 
 
 //-///////////////////////////////////////////////////////////////////////////////
@@ -450,20 +447,13 @@ img.M__contentThumb-image.u-absolute {
     padding: 10px 20px 0 20px;
     height: 50px;
 }
-
-
-.M__heading-prompt--noLinks{
-
-
-  background: #efefef;
+.M__heading-prompt--noLinks {
+    background: #efefef;
     color: black;
     font-size: 16px;
     padding: 16px 20px 0 20px;
     height: 50px;
-
 }
-
-
 .M__heading-prompt {
     background: #efefef;
     color: black;
@@ -507,17 +497,12 @@ img.M__contentThumb-image.u-absolute {
         padding-bottom: 20px;
         text-align: center;
     }
-
-    .M__heading-prompt--noLinks{
-  float: none;
+    .M__heading-prompt--noLinks {
+        float: none;
         height: 100%;
         padding-bottom: 20px;
         text-align: center;
-
-}
-
-
-
+    }
     .M__heading-main {
         width: 100%;
     }
@@ -526,9 +511,9 @@ img.M__contentThumb-image.u-absolute {
         margin: 0 auto;
     }
 }
-
-
-.M__heading-main--noBar {border-bottom: 0px;}
+.M__heading-main--noBar {
+    border-bottom: 0px;
+}
 
 //-///////////////////////////////////////////////////////////////////////////////
 //-                                                                             //
