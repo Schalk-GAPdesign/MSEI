@@ -83,35 +83,31 @@ li {
 }
 
 .u-absolute {
-  position: absolute !important;
+  position: absolute;
 }
 
 .u-relative {
-  position: relative !important;
+  position: relative;
 }
 
 .u-fixed {
-  position: fixed !important;
+  position: fixed;
 }
 
 .u-noUnderline {
-    text-decoration: none !important;
-}
-
-.u-noMargin {
-    margin: 0 !important;
+    text-decoration: none;
 }
 
 .u-table {
-    display: table !important;
+    display: table;
 }
 
 .u-tableRow {
-    display: table-row !important;
+    display: table-row;
 }
 
 .u-tableCell {
-    display: table-cell !important;
+    display: table-cell;
 }
 
 
@@ -120,16 +116,30 @@ li {
 
 }
 .u-tableColumn {
-    display: table-column !important;
+    display: table-column;
 }
 
 
+.u-col1 {width: col(1); padding-left: 0; padding-left: 0; padding-bottom: 20px;}
+.u-col3:nth-last-child(1) {padding-bottom: 0px;}
+
+.u-col2 {width: col(2); padding-left: 0; padding-left: 0; padding-bottom: 20px;}
+.u-col2:nth-child(2n+1) {padding-left: 0; padding-right: 10px;}
+.u-col2:nth-child(2n) { padding-left: 10px; padding-right: 0;}
+.u-col2:nth-last-child(-n+2) {padding-bottom: 0px;}
 
 
+.u-col3 {width: col(3); padding-left: 5px; padding-right: 5px; padding-bottom: 20px;}
+.u-col3:nth-child(3n+1) {padding-left: 0; padding-right: 10px;}
+.u-col3:nth-child(3n) { padding-left: 10px; padding-right: 0;}
+.u-col3:nth-last-child(-n+3) {padding-bottom: 0px;}
 
-
-
-
+.u-col4 {width: col(4); padding-bottom: 20px;}
+.u-col4:nth-child(4n+1) {padding-left: 0; padding-right: 20px;}
+.u-col4:nth-child(4n+2) { padding-left: 0; padding-right: 10px;}
+.u-col4:nth-child(4n+3) { padding-left: 10px; padding-right: 0;}
+.u-col4:nth-child(4n) { padding-left: 20px; padding-right: 0;}
+.u-col4:nth-last-child(-n+4) {padding-bottom: 0px;}
 
 //---------------------------------------------------------- Base Styles
 

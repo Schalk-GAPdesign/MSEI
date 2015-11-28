@@ -32,12 +32,12 @@ include ../_global/includes/head/head.jade
             //- 3.1 PARTNER LOGO
             if(article.content.header.partnerLogo!=null)
                 #__articleHeader-col2.u-floatRight
-                    +M__advert--partnerLogo
+                    +Advert-partnerLogo
 
             //- 3.2 SKYSCRAPER ADVERT
             if(article.content.header.largeSkyscraperAdvert!=null)
                 #__articleHeader-col2.u-floatRight
-                    +M__advert--largeSkyscraper
+                    +Advert--largeSkyscraper
 
             //- 3.3 MAGAZINE ADVERT
             if(article.content.header.magazineAdvertisement!=null)
@@ -65,27 +65,27 @@ include ../_global/includes/head/head.jade
                 //- 1.1 REPORT
                 if(article.content.article.report!=null)
                     #__articleContent-typeAssets
-                        +O__textPrompt--report
+                        +TextPrompt--report
 
                 //- 1.2 REPORT--SIGNEDOUT
                 if(article.content.article.report__signedOut!=null)
                     #__articleContent-typeAssets
-                        +M__textPrompt('--titleHeading', 'Download Report', 'PDF', 'Smart grid')
+                        +TextPrompt
 
                 //- 2.1 TENDER
                 if(article.content.article.tenderDetails!=null)
                     #__articleContent-typeAssets
-                        +O__textPrompt--tender
+                        +TextPrompt--tender
 
                 //- 2.2 TENDER--SIGNEDOUT
                 if(article.content.article.tenderDetails__signedOut!=null)
                     #__articleContent-typeAssets
-                        +O__textPrompt--tender--signedOut
+                        |+TextPrompt--tender--signedOut
 
                 //- 2.3 TENDER--EXPIRED
                 if(article.content.article.tenderDetail__expired!=null)
                     #__articleContent-typeAssets
-                        +O__textPrompt--tender--expired
+                        +TextPrompt--tender--expired
 
                 //- 3.1 INTRO
                 if(article.content.article.regularIntro!=null)
@@ -117,7 +117,7 @@ include ../_global/includes/head/head.jade
                         #__textCTA-row1
                             +M__heading('Interested in more Tenders?')
                         #__textCTA-row2
-                            +M__textPrompt--blue(article.content.article.textCTA)
+                            +TextButton--blue(article.content.article.textCTA)
 
                 //- 6 OTHER TENDERS LIST
                 if(article.content.article.otherTenders!=null)
@@ -179,8 +179,10 @@ include ../_global/includes/head/head.jade
                 #__articleFooterelatedContentAlt-center
                     #__articleFooterRelatedContentAlt-row1
                         +M__heading('Press Releases')
-                    #__articleFooterRelatedContentAlt-row2
-                        +O__categoryList--relatedContentAlt
+                    #__articleFooterRelatedContentAlt-row2.u-cf
+                        each val in [1,2,3]
+                            .ThumbnailContainer.ThumbnailContainer--three.u-floatLeft
+                                +Thumbnail
 
         //- 2.2 RELATED CONTENT -- PRESS RELEASE
         if(article.content.footer.pressRelease!=null)
@@ -189,8 +191,10 @@ include ../_global/includes/head/head.jade
                 #__pressRelease-centre
                     #__pressRelease-row1
                         +M__heading('Related Content')
-                    #__pressRelease-row2
-                        +O__categoryList--relatedContentAlt
+                    #__pressRelease-row2.u-cf
+                        each val in [1,2,3]
+                            .ThumbnailContainer.ThumbnailContainer--three.u-floatLeft
+                                +Thumbnail
 
         //- 2.3 RELATED CONTENT -- PARTNER CONTENT
         if(article.content.footer.partnerContent!=null)
@@ -198,8 +202,10 @@ include ../_global/includes/head/head.jade
                 #__pressRelease-centre
                     #__pressRelease-row1
                         +M__heading('Partner Content')
-                    #__pressRelease-row2
-                        +O__categoryList--partnerContent
+                    #__pressRelease-row2.u-cf
+                        each val in [1,2,3]
+                            .ThumbnailContainer.ThumbnailContainer--three.u-floatLeft
+                                +Thumbnail
 
         //- 2.4 RELATED CONTENT -- WITH COMMENTS
         if(article.content.footer.relatedContent!=null)
@@ -207,7 +213,9 @@ include ../_global/includes/head/head.jade
                 #__articleFooter-col2-row1
                     +M__heading('Related Content')
                 #__articleFooter-col2-row2
-                    +O__relatedContentList
+                        each val in [1,2,3]
+                            .ThumbnailContainer
+                                +Thumbnail
 
         //- 3.1 FILES
         if(article.content.footer.otherFiles!=null)
@@ -235,7 +243,7 @@ include ../_global/includes/head/head.jade
                     #__presentationFiles-row1
                         +M__heading('View Speaker Presentation Files')
                     #__presentationFiles-row2
-                        +O__labeledLinksList--presentationFiles
+                        |s
 
 
 //-///////////////////////////////////////////////////////////////////////////////

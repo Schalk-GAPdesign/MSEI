@@ -257,70 +257,6 @@ mixin O__disclaimerLinksList
 //-                                                                             //
 //-    ORGANISMS                                                                //
 //-   ---------------                                                           //
-//-    CATEGORY PAGE THUMBNAILS LIST                                            //
-//-                                                                             //
-//-                                                                             //
-//-///////////////////////////////////////////////////////////////////////////////
-
-
-mixin O__categoryList
-    .O__categoryList-main.u-cf
-        each val, index in content.dynamic.thumbnails
-            if(index==3)
-                O__categoryList-heading.u-floatLeft
-                    +M__heading(content.static.headings[1].title)
-            .O__categoryList-item.u-floatLeft
-                .O__categoryList-position
-                    +M__contentThumb
-
-
-mixin O__categoryList--relatedContentAlt
-    .O__categoryList-main.u-cf
-        each val, index in article.content.footer.relatedContentAlt
-            .O__categoryList-item.u-floatLeft
-                .O__categoryList-position
-                    +M__contentThumb
-
-
-mixin O__categoryList--partnerContent
-    .O__categoryList-main.u-cf
-        each val, index in article.content.footer.partnerContent
-            .O__categoryList-item.u-floatLeft
-                .O__categoryList-position
-                    +M__contentThumb
-
-
-
-
-mixin O__categoryList--twoColumn
-    .O__categoryList-main.u-cf
-        each val, index in article.content.footer.relatedContentAlt
-            .O__categoryList-item.O__categoryList-item--twoColumn.u-floatLeft
-                .O__categoryList-position
-                    +M__contentThumb--magazine
-
-
-
-mixin O__categoryList--magazine
-    .O__categoryList-main.u-cf
-        each val, index in article.content.footer.relatedContentAlt
-            img.O__categoryList-magazineImage(src="http://lorempixel.com/175/250")
-
-
-
-mixin O__categoryList--events
-    .O__categoryList-main.u-cf
-        each val, index in [1,2,3]
-            .O__categoryList-item.u-floatLeft
-                .O__categoryList-position
-                    +M__contentThumb--event
-
-
-//-///////////////////////////////////////////////////////////////////////////////
-//-                                                                             //
-//-                                                                             //
-//-    ORGANISMS                                                                //
-//-   ---------------                                                           //
 //-    RELATED CONTENT LIST            //
 //-                                                                             //
 //-                                                                             //
@@ -331,7 +267,7 @@ mixin O__relatedContentList(modifier)
         .O__relatedContentList-main
             each val, index in article.content.footer.relatedContent
                 .O__relatedContentList-item
-                    +M__contentThumb
+                    +M__thumbnail
 
 //-///////////////////////////////////////////////////////////////////////////////
 //-                                                                             //
@@ -349,21 +285,21 @@ mixin O_noCommentrelated
             if (index<3)
                 .O__relatedContentList-item--noComments.u-floatLeft
                     .O__relatedContentList-container--noComments
-                        +M__contentThumb
+                        +M__thumbnail
 
  mixin O_noCommentrelated--pressReleases
     .O__relatedContentList-main.u-cf
         each val, index in article.content.footer.pressRelease
             .O__relatedContentList-item--noComments.u-floatLeft
                 .O__relatedContentList-container--noComments
-                    +M__contentThumb
+                    +M__thumbnail
 
  mixin O_noCommentrelated--media
     .O__relatedContentList-main.u-cf
         each val, index in article.content.footer.media
             .O__relatedContentList-item--noComments.u-floatLeft
                 .O__relatedContentList-container--noComments
-                    +M__contentThumb
+                    +M__thumbnail
 
 
 
@@ -386,6 +322,10 @@ mixin O__secondaryNavList
 
 
 ///////////////////////
+
+
+
+
 
 
 

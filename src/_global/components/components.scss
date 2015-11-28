@@ -1,0 +1,463 @@
+//-///////////////////////////////////////////////////////////////////////////////
+//-                                                                             //
+//-                                                                             //
+//-    COMPONENT                                                                //
+//-   ---------------                                                           //
+//-    QUOTE                                                                    //
+//-                                                                             //
+//-                                                                             //
+//-///////////////////////////////////////////////////////////////////////////////
+
+
+//BASE STYLING
+.Quote-row2 {
+    padding: 10px 0
+}
+.Quote-text {
+    font-weight: 700;
+    font-size: 20px;
+    color: red;
+}
+.Quote-source {
+    font-size: 13px;
+    color: red;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+//MODIFIERS
+.Quote-source--grey {color: #aaa;}
+.Quote-text--grey {color: #aaa;}
+
+
+//-///////////////////////////////////////////////////////////////////////////////
+//-                                                                             //
+//-                                                                             //
+//-    COMPONENT                                                                //
+//-   ---------------                                                           //
+//-    THUMBNAIL                                                                //
+//-                                                                             //
+//-                                                                             //
+//-///////////////////////////////////////////////////////////////////////////////
+
+
+//BASE STYLING
+
+
+
+.Heading-main {
+    border-bottom: solid 8px black;
+    font-family: "Roboto Condensed";
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.Heading-title {
+    background: #ed1b25;
+    font-size: 26px;
+    color: white;
+    padding: 10px 20px 0 20px;
+    height: 50px;
+}
+.Heading-prompt--noLinks {
+    background: #efefef;
+    color: black;
+    font-size: 16px;
+    padding: 16px 20px 0 20px;
+    height: 50px;
+}
+.Heading-prompt {
+    background: #efefef;
+    color: black;
+    font-size: 16px;
+    padding: 16px 20px 0 20px;
+    height: 50px;
+}
+
+
+
+
+
+.Heading-prompt:hover {
+    background: #cdcdcd;
+    color: white;
+}
+.Heading-prompt:hover .icon-arrow {
+    @extend .icon-arrowWhite
+}
+
+
+.Heading-arrow {
+    margin-top: 1px;
+    margin-left: 12px;
+}
+.Heading-main--noBar {
+    border-bottom: 0px;
+}
+
+
+
+
+
+@include tablet {
+    .Heading-title {
+        padding: 20px 15px 0 15px;
+        height: 70px;
+    }
+    .Heading-prompt {
+        padding: 28px 15px 0 15px;
+        height: 70px;
+    }
+    @include mobile {
+        .Heading-prompt {
+            float: none;
+        }
+    }
+    .Heading-arrow {
+        margin-top: 2px;
+    }
+}
+@include mobile {
+    .Heading-title {
+        float: none;
+        height: 100%;
+        padding-bottom: 20px;
+        text-align: center;
+    }
+    .Heading-prompt--noLinks {
+        float: none;
+        height: 100%;
+        padding-bottom: 20px;
+        text-align: center;
+    }
+    .Heading-main {
+        width: 100%;
+    }
+    .Heading-promptContainer {
+        display: table;
+        margin: 0 auto;
+    }
+}
+
+
+
+
+/// Containers
+
+
+
+.Thumbnail-main {
+    color: white;
+
+}
+.Thumbnail-container {
+    height: 200px;
+    overflow: hidden;
+}
+.Thumbnail-container--showcase {
+    height: 690px;
+    height: 690px;
+}
+.Thumbnail-container--large {
+    height: 336px;
+}
+.Thumbnail-image {
+    left: -1000%;
+    right: -1000%;
+    top: -1000%;
+    bottom: -1000%;
+    margin: auto;
+    min-height: 100%;
+    min-width: 100%;
+}
+.Thumbnail-overlay {
+    bottom: 0;
+    width: 100%;
+}
+.Thumbnail-label {
+    padding: 5px 15px 5px 10px;
+    background: red;
+}
+.Thumbnail-lens {
+    padding: 20px;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    padding-bottom: 20px;
+}
+.Thumbnail-showcase {
+    font-weight: 700;
+    margin-top: 15px;
+    text-transform: uppercase;
+    font-size: 15px;
+    margin-bottom: 8px;
+}
+.Thumbnail-title {
+    font-weight: 700;
+}
+.Thumbnail-title--showcase {
+    font-size: 38px;
+}
+.Thumbnail-subheading {
+    margin-top: 15px;
+}
+.Thumbnail-text {
+    font-size: 13px;
+    color: #ccc;
+
+
+}
+.Thumbnail-text--icon {padding-top: 2px; padding-left: 9px;}
+.Thumbnail-date, .Thumbnail-map{
+    margin-top: 10px;}
+
+.Thumbnail-prompt {
+    text-transform: uppercase;
+    border: 1px solid white;
+    border-radius: 20px;
+    font-size: 700;
+    font-size: 13px;
+    height: 0;
+    width: 100px;
+    padding: 0 0 0 12px;
+    overflow: hidden;
+    transition: all 0.5s ease;
+    opacity: 0;
+}
+
+.Thumbnail-play {width: 40px; padding-right: 20px; vertical-align: middle;}
+
+
+.Thumbnail-main:hover:not(.Thumbnail-main--noHover) .Thumbnail-container .Thumbnail-overlay .Thumbnail-lens .Thumbnail-row .Thumbnail-content .Thumbnail-prompt {
+    height: 30px;
+    padding: 7px 0 0 12px;
+    transition: all 0.3s ease;
+    opacity: 1;
+    margin-top: 20px;
+}
+
+.Thumbnail-main:hover:not(.Thumbnail-main--noHover) .Thumbnail-container .Thumbnail-overlay .Thumbnail-lens .Thumbnail-row .Thumbnail-play .Thumbnail-playIcon {
+  @extend .icon-thumbPlayRed
+}
+
+
+@include tablet {
+    .Thumbnail-container {
+        height: 336px !important;
+    }
+    .Thumbnail-title--showcase {
+        font-size: 20px;
+    }
+    .Thumbnail-container--showcase {
+        @extend .Thumbnail-container
+    }
+    .Thumbnail-subheading {
+        display: none;
+    }
+}
+
+
+
+.Thumbnail-container--media--showcase {height: 450px;}
+
+
+
+
+
+
+
+
+.Thumbnail-container--magazine {height: 295px;}
+
+
+
+
+
+
+
+////
+
+
+
+.Advert-main {
+    border: 1px solid #cdcdcd;
+    background: #eeeeee;
+    padding: 30px 0;
+    text-align: center
+}
+.Advert-title {
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #a5a5a5;
+    letter-spacing: 1px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.Advert-islandAdvertContainer {
+    margin-bottom: 15px;
+}
+
+
+///
+
+
+
+
+.TextButton-item {
+border-bottom: 1px solid #cdcdcd;
+    color: black;
+    padding: 15px 20px;
+      width: 100%;
+    font-size: 14px;
+
+}
+
+
+
+a:nth-last-of-type(1) .TextButton-item {
+border:0;
+}
+
+
+
+
+.TextButton-col3 {width: 5px; vertical-align: middle;}
+
+
+.TextButton-item:hover .TextButton-col3 .TextButton-arrow{
+    @extend .icon-arrowWhite
+}
+
+
+.TextButton-item--blue {background: #06c4f7; color: white;}
+
+.TextButton-heading{
+    background: #eeeeee;
+    padding: 10px 12px;
+font: 700 16px "Roboto Condensed";
+    text-transform: uppercase;
+ width: 100%;
+    padding: 15px 20px;
+
+}
+
+.TextButton-col1 {
+    vertical-align: middle;
+}
+.TextButton-label {
+    background: #222222;
+    color: white;
+    padding: 5px 10px;
+    width: 100px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.TextButton-col2 {
+    width: 100%;
+}
+.TextButton-col2--report {
+    font-size: 16px;
+    font-weight: 700;
+    color: red;
+    padding: 0 15px;
+    vertical-align: middle;
+}
+
+
+.TextButton-col2--ButtonList {
+    font-size: 16px;
+    font-weight: 700;
+    //color: red;
+    //padding: 0 15px;
+    vertical-align: middle;
+}
+
+
+
+
+
+
+.TextButton-item:hover:not(.TextButton-item--noHover) {
+    background: #aaa;
+}
+.TextButton-item:hover:not(.TextButton-item--noHover) .TextButton-col2 {
+    color: white;
+}
+.TextButton-item:hover:not(.TextButton-item--noHover) .TextButton-col1 .TextButton-label {
+    background: white;
+    color: #aaa;
+}
+.TextButton-item:hover:not(.TextButton-item--noHover) .TextButton-col2 .TextButton-text .TextButton-textHighlight {
+    color: white;
+}
+.TextButton-textHighlight {
+    color: red;
+}
+.TextButton-textSpan,
+.TextButton-textHighlight {
+    margin-right: 5px;
+}
+.TextButton-text--notification {
+    border-bottom: 1px solid;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+}
+.TextButton-textHighlight--indent {
+    padding-left: 10px;
+}
+.TextButton-item:hover:not(.TextButton-item--noHover) .TextButton-col2 .TextButton-text .TextButton-textHighlight {
+    color: white;
+}
+.TextButton-text--bold {
+    font: 700 16px "Roboto Condensed";
+    text-transform: uppercase;
+}
+
+.TextButton-item--grey {
+   background: #cdcdcd;
+}
+
+
+
+
+
+
+
+.TextButton-main{
+border: 1px solid #cdcdcd;
+color: black;
+background: white;
+    //margin-bottom: 30px;
+}
+
+
+
+.TextButton-row2 {
+    padding: 0;
+}
+
+.TextButton-row1 {
+    text-transform: uppercase;
+    font: 700 16px "Roboto Condensed";
+    padding: 15px;
+    background: #eeeeee;
+}
+
+
+.TextButton-item{ border-top: 1px solid #ccc;}
+.TextButton-item:nth-child(1){ border-top: 0;}
+
+
+.TextButton-row2--tender:hover {background: #aaa;
+
+    & .TextButton-data {color: white;}
+& .TextButton-field {color: white;}
+
+}
+
+
+.TextButton-text--files {color: black;}
+
+
+.TextButton-item--webinar {background: #444; padding: 47px; color: white;}
+.TextButton-main--webinar { border: 0; }

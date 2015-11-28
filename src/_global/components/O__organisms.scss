@@ -54,37 +54,192 @@
 
 
 
+/*
+.M__textPrompt-main
 
-.O__textPrompt-main{
-border: 1px solid #cdcdcd;
-color: black;
-    margin-bottom: 30px;
+
+.O__textButton-item:hover:not(.O__textButton-item--noHover) .O__textButton-col2 .O__textButton-text .O__textButton-textHighlight  { color: white;}
+
+
+
+
+
+.M__textPrompt-col1-row1 {
+    font-weight: 700;
+    font-family: "Roboto Condensed";
+}
+.M__textPrompt-row2:hover {
+    background: #b8b8b8;
+    color: white;
 }
 
 
 
-.O__textPrompt-row2 {
-    padding: 0;
+.M__textPrompt-col2 {width: 50px;}
+
+
+
+
+.M__textPrompt-col1--report {
+    width: 100%;
 }
 
-.O__textPrompt-row1 {
-    text-transform: uppercase;
+
+.M__textPrompt-col1-row2 {
+    font-size: 14px;
+    margin-top: 3px;
+}
+.M__textPrompt-field {
+    color: red;
+    margin-right: 5px;
+}
+.M__textPrompt-data {
+    margin-right: 7px;
+    color: black;
+}
+.M__textPrompt-main {
+    width: 100%;
+}
+.M__textPrompt-col2 {
+    width: 20px;
+    vertical-align: middle;
+}
+.M__textPrompt-col1 {
+    width: auto;
+}
+.M__textPrompt-titleBar {
+
+}
+.M__textPrompt-row2 {
+    padding: 15px;
+}
+.M__textPrompt-container {
+    width: 100%;
+}
+.M__textPrompt-row1 {
     font: 700 16px "Roboto Condensed";
     padding: 15px;
     background: #eeeeee;
 }
-
-
-.O__textPrompt-item{ border-top: 1px solid #ccc;}
-.O__textPrompt-item:nth-child(1){ border-top: 0;}
-
-
-.O__textPrompt-row2--tender:hover {background: #aaa;
-
-    & .M__textPrompt-data {color: white;}
-& .M__textPrompt-field {color: white;}
+.M__textPrompt-label {
+    text-align: center;
+}
+.M__textPrompt-row2--blue {
+    background: #06c4f7;
+    border: 0;
+    color: white;
 
 }
+.M__textPrompt-main--report {
+    border-top: 1px solid #cdcdcd;
+    color: red;
+    font-weight: 700;
+    padding: 20px;
+    &:hover {
+        background: #bbb;
+        color: white;
+        & .M__textPrompt-label .M__textPrompt-labelContent {
+            background: white;
+            color: #bbb;
+        }
+    }
+}
+.M__textPrompt-text {
+    vertical-align: middle;
+    padding: 0 20px 0 20px;
+    font: 700 16px Roboto;
+    width: 100%;
+}
+.M__textPrompt-label {
+    width: 100px;
+    vertical-align: middle;
+}
+.M__textPrompt-labelContent {
+
+}
+.M__textPrompt-arrow {
+    vertical-align: middle;
+}
+.M__textPrompt-main--report:hover .M__textPrompt-col1--report .M__textPrompt-col1-row1 .M__textPrompt-arrow .M__textPrompt-arrowContent {
+    @extend .icon-arrowWhite
+}
+
+
+.M__textPrompt-main--report:hover .M__textPrompt-col1--report .M__textPrompt-col1-row0  {
+    color: white
+}
+
+
+.M__textPrompt-col1-row0 {
+    display: none !important; color: lightgrey;
+}
+@include tablet {
+    .M__textPrompt-container {
+        height: 80px;
+        padding: 0 10px 0 10px;
+    }
+    .M__textPrompt-col1 {
+        padding-top: 28px
+    }
+}
+@include mobile {
+    .M__textPrompt-col1-row0 {
+        text-align: center;
+        text-transform: uppercase;
+        display: block !important;
+    }
+    .M__textPrompt-label {
+        display: none !important;
+    }
+    .M__textPrompt-arrow {
+        display: none !important;
+    }
+    .M__textPrompt-text.u-tableCell {
+        padding: 0;
+        padding-top: 10px;
+    }
+}
+
+
+.O__textPrompt-row2--tender {padding: 10px !important;}
+.O__textPrompt-tenderData {padding: 5px 0;}
+
+.M__textPrompt-text--blue {color: white; text-transform: uppercase; padding: 0px}
+
+.M__textPrompt-text--otherTender {text-transform: uppercase !important; margin-bottom: 2px;}
+.M__textPrompt-col2-row1 {margin-left: 20px;}
+
+
+.M__textPrompt-container--otherTender{ padding: 10px 0;}
+.M__textPrompt-deadline--otherTenders {margin-left: 10px;}
+.M__textPrompt-container-main--otherTenders {color: black;
+    &:hover {background: #bbb; color: white;
+    }
+
+}
+
+.M__textPrompt-container-main--otherTenders:hover .M__textPrompt-container .M__textPrompt-row .M__textPrompt-col1 .M__textPrompt-col2-row1 .M__textPrompt-location .M__textPrompt-field {color: white;}
+
+.M__textPrompt-container-main--otherTenders:hover .M__textPrompt-container .M__textPrompt-row .M__textPrompt-col1 .M__textPrompt-col2-row1 .M__textPrompt-location .M__textPrompt-data {color: white;}
+
+.M__textPrompt-container-main--otherTenders:hover .M__textPrompt-container .M__textPrompt-row .M__textPrompt-col1 .M__textPrompt-col2-row1 .M__textPrompt-deadline .M__textPrompt-field {color: white;}
+
+.M__textPrompt-container-main--otherTenders:hover .M__textPrompt-container .M__textPrompt-row .M__textPrompt-col1 .M__textPrompt-col2-row1 .M__textPrompt-deadline .M__textPrompt-data {color: white;}
+
+.M__textPrompt-container-main--otherTenders:hover .M__textPrompt-container .M__textPrompt-row .M__textPrompt-col2 .M__textPrompt-arrow {@extend .icon-arrowWhite}
+
+*/
+
+
+
+
+
+
+
+
+
+
+
 
 
 //-///////////////////////////////////////////////////////////////////////////////
@@ -439,7 +594,6 @@ O__categoryList-heading {
 
 
 }
-
 
 
 

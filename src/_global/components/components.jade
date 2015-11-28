@@ -1,0 +1,634 @@
+- var tablet = 1001
+- var laptop = 1301
+- var mobile = 701
+
+
+
+
+
+
+
+//////////////
+
+
+
+
+
+mixin Quote
+    .Quote-main
+        .Quote-row1.u-cf
+            .Quote-openQuote.icon-openQuoteRed.u-floatLeft
+        .Quote-row2
+            .Quote-text Fusce commodo aliquam arcu. Aenean vulputate eleifend tellus. Duis vel nibh at velit scelerisque suscipit. Praessent porttitor, nulla vitae posuere iaculis, arcu nisl dignissim dolor, a pretium mi sem ut ipsum. Nunc egestas, augue at pellentesque laoreet, felis eros vehicula leo, at malesuada velit leo quis pede.
+        .Quote-row3.u-cf
+            .M_quote-closeQuote.icon-closeQuoteRed.u-floatRight
+        .Quote-row4
+            .M_quote-source - John Doe,
+
+
+mixin Quote--grey
+    .Quote-main
+        .Quote-row1.u-cf
+            .Quote-openQuote.icon-openQuote.u-floatLeft
+        .Quote-row2
+            .Quote-text.Quote-text--grey Fusce commodo aliquam arcu. Aenean vulputate eleifend tellus. Duis vel nibh at velit scelerisque suscipit. Praessent porttitor, nulla vitae posuere iaculis, arcu nisl dignissim dolor, a pretium mi sem ut ipsum.
+        .Quote-row3.u-cf
+            .M_quote-closeQuote.icon-closeQuote.u-floatRight
+        .Quote-row4
+            .M_quote-source.M_quote-source--grey - John Doe,
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//////////////
+
+
+
+mixin Heading(text1, text2)
+
+    .Heading-main.u-cf
+        if text1
+            .Heading-title.u-floatLeft= text1
+        if text2
+            a(href="#").u-noUnderline
+                .Heading-prompt.u-floatLeft
+                    .Heading-promptContainer.u-cf
+                        .Heading-promptText.u-floatLeft= text2
+                        .Heading-arrow.icon-arrow.u-floatRight
+
+
+mixin Heading--noArrow--noLinks(text1, text2)
+    .Heading-main.u-cf
+        if text1
+            .Heading-title.u-floatLeft= text1
+        if text2
+                .Heading-prompt--noLinks.u-floatLeft
+                    .Heading-promptContainer
+                        .Heading-promptText= text2
+
+
+mixin Heading--noArrow--noLinks--noBar(text1, text2)
+    .Heading-main.Heading-main--noBar.u-cf
+        if text1
+            .Heading-title.u-floatLeft= text1
+        if text2
+                .Heading-prompt--noLinks.u-floatLeft
+                    .Heading-promptContainer
+                        .Heading-promptText= text2
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//-///////////////////////////////////////////////////////////////////////////////
+//-                                                                             //
+//-                                                                             //
+//-    MOLECULE                                                                 //
+//-   ---------------                                                           //
+//-    LARGE SKYSCRAPER ADVERTISEMENT BANNER                                    //
+//-                                                                             //
+//-                                                                             //
+//-///////////////////////////////////////////////////////////////////////////////
+
+mixin Advert
+    a(href="#").u-noUnderline
+        .Advert-main
+            .Advert-title Advertisement
+            picture
+                img.Advert-image(src="http://lorempixel.com/270/80")
+
+
+mixin Advert--largeSkyscraper
+        a(href="#").u-noUnderline
+            .Advert-main
+                .Advert-title Advertisement
+                picture
+                    source.Advert-image(srcset="http://lorempixel.com/300/600" media="(min-width: #{tablet}px)")
+                    source.Advert-image(srcset="http://lorempixel.com/120/600" media="(min-width: #{mobile}px) and (max-width: #{tablet}px)")
+                    img.Advert-image(src="http://lorempixel.com/270/80")
+
+
+mixin Advert--partnerLogo
+        a(href="#").u-noUnderline
+            .Advert-main
+                .Advert-title Advertisement
+                picture
+                    img.Advert-image(src="http://lorempixel.com/300/300")
+
+mixin Advert--smallSkyscraper
+        a(href="#").u-noUnderline
+            .Advert-main
+                .Advert-title Advertisement
+                picture
+                    source.Advert-image(srcset="http://lorempixel.com/120/600" media="(min-width: #{mobile}px)")
+                    img.Advert-image(src="http://lorempixel.com/270/80")
+
+
+
+mixin Advert--largeSuperbanner
+        a(href="#").u-noUnderline
+            .Advert-main
+                .Advert-title Advertisement
+                picture
+                    source.Advert-image(srcset="http://lorempixel.com/700/80" media="(min-width: #{mobile}px)")
+                    img.Advert-image(src="http://lorempixel.com/270/80")
+
+
+mixin Advert--islandAdverts
+        .Advert-main
+            .Advert-title Advertisement
+            .Advert-islandAdvertContainer
+                a(href="#")
+                    img.Advert-image--islandAd(src="http://lorempixel.com/260/250")
+            .Advert-islandAdvertContainer
+                a(href="#")
+                    img.Advert-image--islandAd(src="http://lorempixel.com/260/250")
+            .Advert-islandAdvertContainer
+                a(href="#")
+                    img.Advert-image--islandAd(src="http://lorempixel.com/260/250")
+            .Advert-islandAdvertContainer
+                a(href="#")
+                    img.Advert-image--islandAd(src="http://lorempixel.com/260/250")
+
+
+//-///////////////////////////////////////////////////////////////////////////////
+//-                                                                             //
+//-                                                                             //
+//-    MOLECULE                                                                 //
+//-   ---------------                                                           //
+//-    * GLOBAL CONTENT THUMBNAIL COMPONENT                                     //
+//-                                                                             //
+//-                                                                             //
+//-///////////////////////////////////////////////////////////////////////////////
+
+mixin Thumbnail--magazine
+    a(href="#")
+        .Thumbnail-main
+            //- Determine Height at .Thumbnail-container
+            .Thumbnail-container.Thumbnail-container--magazine.u-relative
+                picture
+                    img(src="http://lorempixel.com/208/295")
+                .Thumbnail-overlay.u-absolute
+                    .Thumbnail-label.u-table Label
+
+
+
+
+mixin Thumbnail
+    a(href="#")
+        .Thumbnail-main
+            //- Determine Height at .Thumbnail-container
+            .Thumbnail-container.u-relative
+                picture
+                    source.Thumbnail-image.u-absolute(srcset="http://lorempixel.com/640/336" media="(max-width: #{mobile}px)")
+                    img.Thumbnail-image.u-absolute(src="http://lorempixel.com/885/200")
+                .Thumbnail-overlay.u-absolute
+                    .Thumbnail-label.u-table Label
+                    .Thumbnail-lens.u-table
+                        .Thumbnail-row.u-tableRow
+                            .Thumbnail-content.u-tableCell
+                                .Thumbnail-title Copenhagen builds carbon signaling waste-to-power plant
+                                .Thumbnail-date
+                                    .Thumbnail-icon
+                                    .Thumbnail-text 11 SEPTEMBER 2015
+                                .Thumbnail-prompt Read More
+
+
+mixin Thumbnail--event--large
+    a(href="#")
+        .Thumbnail-main
+            //- Determine Height at .Thumbnail-container
+            .Thumbnail-container.Thumbnail-container--large.u-relative
+                picture
+                    source.Thumbnail-image.u-absolute(srcset="http://lorempixel.com/640/336" media="(max-width: #{mobile}px)")
+                    img.Thumbnail-image.u-absolute(src="http://lorempixel.com/885/200")
+                .Thumbnail-overlay.u-absolute
+                    .Thumbnail-label.u-table Label
+                    .Thumbnail-lens.u-table
+                        .Thumbnail-row.u-tableRow
+                            .Thumbnail-content.u-tableCell
+                                .Thumbnail-title Copenhagen builds carbon signaling waste-to-power plant
+                                .Thumbnail-date
+                                    .Thumbnail-icon
+                                    .Thumbnail-text 11 SEPTEMBER 2015
+                                .Thumbnail-prompt Read More
+
+
+
+mixin Thumbnail--report
+    a(href="#")
+        .Thumbnail-main
+            //- Determine Height at .Thumbnail-container
+            .Thumbnail-container.u-relative
+                picture
+                    source.Thumbnail-image.u-absolute(srcset="http://lorempixel.com/640/336" media="(max-width: #{mobile}px)")
+                    img.Thumbnail-image.u-absolute(src="http://lorempixel.com/885/200")
+                .Thumbnail-overlay.u-absolute
+                    .Thumbnail-label.u-table Label
+                    .Thumbnail-lens.u-table
+                        .Thumbnail-row.u-tableRow
+                            .Thumbnail-content.u-tableCell
+                                .Thumbnail-title Copenhagen builds carbon signaling waste-to-power plant
+
+                                .Thumbnail-date.u-cf
+                                    .Thumbnail-icon.icon-attachment.u-floatLeft
+                                    .Thumbnail-text.Thumbnail-text--icon.u-floatLeft PDF
+                                .Thumbnail-prompt Read More
+
+
+mixin Thumbnail--event
+    a(href="#")
+        .Thumbnail-main
+            //- Determine Height at .Thumbnail-container
+            .Thumbnail-container.u-relative
+                picture
+                    source.Thumbnail-image.u-absolute(srcset="http://lorempixel.com/640/336" media="(max-width: #{mobile}px)")
+                    img.Thumbnail-image.u-absolute(src="http://lorempixel.com/885/200")
+                .Thumbnail-overlay.u-absolute
+                    .Thumbnail-label.u-table Label
+                    .Thumbnail-lens.u-table
+                        .Thumbnail-row.u-tableRow
+                            .Thumbnail-content.u-tableCell
+                                .Thumbnail-title Copenhagen builds carbon signaling waste-to-power plant
+
+                                .Thumbnail-date.u-cf
+                                    .Thumbnail-icon.icon-calender.u-floatLeft
+                                    .Thumbnail-text.Thumbnail-text--icon.u-floatLeft 11 SEPTEMBER 2015
+                                .Thumbnail-prompt Read More
+
+
+mixin Thumbnail--event--large
+    a(href="#")
+        .Thumbnail-main
+            //- Determine Height at .Thumbnail-container
+            .Thumbnail-container.Thumbnail-container--large.u-relative
+                picture
+                    source.Thumbnail-image.u-absolute(srcset="http://lorempixel.com/640/336" media="(max-width: #{mobile}px)")
+                    img.Thumbnail-image.u-absolute(src="http://lorempixel.com/885/200")
+                .Thumbnail-overlay.u-absolute
+                    .Thumbnail-label.u-table Label
+                    .Thumbnail-lens.u-table
+                        .Thumbnail-row.u-tableRow
+                            .Thumbnail-content.u-tableCell
+                                .Thumbnail-title Copenhagen builds carbon sisgnaling waste-to-power plant
+
+                                .Thumbnail-date.u-cf
+                                    .Thumbnail-icon.icon-calender.u-floatLeft
+                                    .Thumbnail-text.Thumbnail-text--icon.u-floatLeft 11 SEPTEMBER 2015
+                                .Thumbnail-prompt Read More
+
+
+
+
+
+mixin Thumbnail--showcase
+    a(href="#")
+        .Thumbnail-main
+            //- Determine Height at .Thumbnail-container
+            .Thumbnail-container.Thumbnail-container--showcase.u-relative
+                picture
+                    source.Thumbnail-image.u-absolute(srcset="http://lorempixel.com/640/336" media="(max-width: #{mobile}px)")
+                    img.Thumbnail-image.u-absolute(src="http://lorempixel.com/885/200")
+                .Thumbnail-overlay.u-absolute
+                    .Thumbnail-label.u-table Label
+                    .Thumbnail-lens.u-table
+                        .Thumbnail-row.u-tableRow
+                            .Thumbnail-content.u-tableCell
+                                .Thumbnail-showcase Top Story
+                                .Thumbnail-title.Thumbnail-title--showcase Copenhagen builds carbon signaling waste-to-power plant
+                                .Thumbnail-subheading Copenhagen builds carbon signaling waste-to-power plants
+                                .Thumbnail-date
+                                    .Thumbnail-icon
+                                    .Thumbnail-text 11 SEPTEMBER 2015
+                                .Thumbnail-prompt Read More
+
+
+
+mixin Thumbnail--media
+    a(href="#")
+        .Thumbnail-main
+            //- Determine Height at .Thumbnail-container
+            .Thumbnail-container.u-relative
+                picture
+                    img.Thumbnail-image.u-absolute(src="http://img.youtube.com/vi/b1dRZNMqw7o/hqdefault.jpg")
+                .Thumbnail-overlay.u-absolute
+                    .Thumbnail-label.u-table Label
+                    .Thumbnail-lens.u-table
+                        .Thumbnail-row.u-tableRow
+                            .Thumbnail-play.u-tableCell
+                                .Thumbnail-playIcon.icon-thumbPlay
+                            .Thumbnail-content.u-tableCell
+                                .Thumbnail-title Copenhagen builds carbon signaling waste-to-power plant
+                                .Thumbnail-date
+                                    .Thumbnail-icon
+                                    .Thumbnail-text 11 SEPTEMBER 2015
+
+
+
+mixin Thumbnail--tender
+    a(href="#")
+        .Thumbnail-main
+            //- Determine Height at .Thumbnail-container
+            .Thumbnail-container.u-relative
+                picture
+                    source.Thumbnail-image.u-absolute(srcset="http://lorempixel.com/640/336" media="(max-width: #{mobile}px)")
+                    img.Thumbnail-image.u-absolute(src="http://lorempixel.com/885/200")
+                .Thumbnail-overlay.u-absolute
+                    .Thumbnail-label.u-table Label
+                    .Thumbnail-lens.u-table
+                        .Thumbnail-row.u-tableRow
+                            .Thumbnail-content.u-tableCell
+                                .Thumbnail-title Copenhagen builds carbon signaling waste-to-power plant
+
+                                .Thumbnail-date.u-cf
+                                    .Thumbnail-icon.icon-tender.u-floatLeft
+                                    .Thumbnail-text.Thumbnail-text--icon.u-floatLeft Deadline: Expired
+                                .Thumbnail-prompt Read More
+
+
+
+
+
+
+
+mixin Thumbnail--news
+    a(href="#")
+        .Thumbnail-main
+            //- Determine Height at .Thumbnail-container
+            .Thumbnail-container.Thumbnail-container--large.u-relative
+                picture
+                    source.Thumbnail-image.u-absolute(srcset="http://lorempixel.com/640/336" media="(max-width: #{mobile}px)")
+                    img.Thumbnail-image.u-absolute(src="http://lorempixel.com/885/200")
+                .Thumbnail-overlay.u-absolute
+                    .Thumbnail-label.u-table Label
+                    .Thumbnail-lens.u-table
+                        .Thumbnail-row.u-tableRow
+                            .Thumbnail-content.u-tableCell
+                                .Thumbnail-title Copenhagen builds carbon signaling waste-to-power plant
+
+                                .Thumbnail-date
+                                    .Thumbnail-icon
+                                    .Thumbnail-text 11 SEPTEMBER 2015
+                                .Thumbnail-prompt Read More
+
+
+
+mixin Thumbnail--media--showcase
+    a(href="#")
+        .Thumbnail-main
+            //- Determine Height at .Thumbnail-container
+            .Thumbnail-container.Thumbnail-container--media--showcase.u-relative
+                picture
+                    img.Thumbnail-image.u-absolute(src="http://img.youtube.com/vi/b1dRZNMqw7o/hqdefault.jpg")
+                .Thumbnail-overlay.u-absolute
+                    .Thumbnail-label.u-table Label
+                    .Thumbnail-lens.u-table
+                        .Thumbnail-row.u-tableRow
+                            .Thumbnail-play.u-tableCell
+                                .Thumbnail-playIcon.icon-thumbPlay
+                            .Thumbnail-content.u-tableCell
+                                .Thumbnail-title Copenhagen builds carbon signaling waste-to-power plant
+                                .Thumbnail-date
+                                    .Thumbnail-icon
+                                    .Thumbnail-text 11 SEPTEMBER 2015
+
+
+mixin Thumbnail--event--large--noHover
+    a(href="#")
+        .Thumbnail-main.Thumbnail-main--noHover
+            //- Determine Height at .Thumbnail-container
+            .Thumbnail-container.Thumbnail-container--large.u-relative
+                picture
+                    source.Thumbnail-image.u-absolute(srcset="http://lorempixel.com/640/336" media="(max-width: #{mobile}px)")
+                    img.Thumbnail-image.u-absolute(src="http://lorempixel.com/885/200")
+                .Thumbnail-overlay.u-absolute
+                    .Thumbnail-label.u-table Label
+                    .Thumbnail-lens.u-table
+                        .Thumbnail-row.u-tableRow
+                            .Thumbnail-content.u-tableCell
+                                .Thumbnail-title Copenhagen builds carbon signaling waste-to-power plant
+
+                                .Thumbnail-date.u-cf
+                                    .Thumbnail-icon.icon-calender.u-floatLeft
+                                    .Thumbnail-text.Thumbnail-text--icon.u-floatLeft 11 SEPTEMBER 2015
+                                .Thumbnail-prompt Read More
+
+
+
+
+
+
+//-///////////////////////////////////////////////////////////////////////////////
+//-                                                                             //
+//-                                                                             //
+//-    MOLECULE                                                                 //
+//-   ---------------                                                           //
+//-    GLOBAL TEXT BUTTON COMPONENT                                             //
+//-                                                                             //
+//-                                                                             //
+//-///////////////////////////////////////////////////////////////////////////////
+
+
+
+
+mixin TextButton--bold--webinar
+    .TextButton-main.TextButton-main--webinar
+            a(href="#").u-noUnderline
+                .TextButton-item.TextButton-item--webinar.u-table
+                    .TextButton-col2.u-tableCell
+                        .TextButton-text.TextButton-text--bold Book Now
+                    .TextButton-col3.u-tableCell
+                        .TextButton-arrow.icon-arrowWhite
+
+
+
+mixin TextButton
+    .TextButton-main
+        .TextButton-content
+            a(href="#").u-noUnderline
+                .TextButton-item.u-table
+                    .TextButton-col2.u-tableCell
+                        .TextButton-text Item
+                    .TextButton-col3.u-tableCell
+                        .TextButton-arrow.icon-arrow
+
+
+
+mixin TextButton--bold
+    .TextButton-main
+        .TextButton-content
+            each val in [1,2]
+                a(href="#").u-noUnderline
+                    .TextButton-item.u-table
+                        .TextButton-col2.u-tableCell
+                            .TextButton-text.TextButton-text--bold Item
+                        .TextButton-col3.u-tableCell
+                            .TextButton-arrow.icon-arrow
+
+
+mixin TextButton--bold--grey
+    .TextButton-main
+        .TextButton-content
+            a(href="#").u-noUnderline
+                .TextButton-item.TextButton-item--grey.u-table
+                    .TextButton-col2.u-tableCell
+                        .TextButton-text.TextButton-text--bold Item
+                    .TextButton-col3.u-tableCell
+                        .TextButton-arrow.icon-arrow
+
+mixin TextButton--blue
+    .TextButton-main
+        .TextButton-content
+            a(href="#").u-noUnderline
+                .TextButton-item.TextButton-item--blue.u-table
+                    .TextButton-col2.u-tableCell
+                        .TextButton-text Items
+                    .TextButton-col3.u-tableCell
+                        .TextButton-arrow.icon-arrowWhite
+
+
+
+mixin TextButton--heading
+    .TextButton-main
+        .TextButton-content
+                .TextButton-heading.u-table Heading
+                a(href="#").u-noUnderline
+                    .TextButton-item.u-table
+                        .TextButton-col2.u-tableCell
+                            .TextButton-text Item
+                        .TextButton-col3.u-tableCell
+                            .TextButton-arrow.icon-arrow
+
+
+mixin TextButton--report
+    .TextButton-main
+        .TextButton-content
+                .TextButton-heading.u-table Download Report
+                each val in [1,2,3]
+                    a(href="#").u-noUnderline
+                        .TextButton-item.TextButton-item--list.u-table
+                            .TextButton-col1.u-tableCell
+                                .TextButton-label PDF
+                            .TextButton-col2.TextButton-col2--report.u-tableCell
+                                .TextButton-text Hello
+                            .TextButton-col3.u-tableCell
+                                .TextButton-arrow.icon-arrow
+
+
+mixin TextButton--files(...items)
+    .TextButton-main
+        .TextButton-content
+                each val in items
+                    a(href="#").u-noUnderline
+                        .TextButton-item.TextButton-item--list.u-table
+                            .TextButton-col1.u-tableCell
+                                .TextButton-label PDF
+                            .TextButton-col2.TextButton-col2--report.u-tableCell
+                                .TextButton-text.TextButton-text--files Hello
+                            .TextButton-col3.u-tableCell
+                                .TextButton-arrow.icon-arrow
+
+mixin TextButton--files--noLabel
+    .TextButton-main
+        .TextButton-content
+                each val in [1,2,3,4]
+                    a(href="#").u-noUnderline
+                        .TextButton-item.TextButton-item--list.u-table
+
+                            .TextButton-col2.TextButton-col2--ButtonList.u-tableCell
+                                .TextButton-text Hello
+                            .TextButton-col3.u-tableCell
+                                .TextButton-arrow.icon-arrow
+
+
+
+
+
+mixin TextButton--heading--signedOut
+    .TextButton-main
+        .TextButton-content
+                .TextButton-heading.u-table Heading
+                a(href="#").u-noUnderline
+                    .TextButton-item.u-table
+                        .TextButton-col2.u-tableCell
+                            .TextButton-text
+                                span.TextButton-textHighlight Sign in
+                                span.TextButton-textSpan or
+                                span.TextButton-textHighlight Register
+                                span.TextButton-textSpan for a free Metering.com
+                        .TextButton-col3.u-tableCell
+                            .TextButton-arrow.icon-arrow
+
+
+
+mixin TextButton--tender
+    .TextButton-main
+        .TextButton-content
+                .TextButton-heading.u-table Tender Details
+                .TextButton-item.TextButton-item--noHover.u-table
+                    .TextButton-col2
+                        .TextButton-text.TextButton-text--notification Eiusmod veniam nisi et sint a cernantur quid doctrina. Et hic coniunctione, enim sed admodum et quis, eram firmissimum ingeniis multos deserunt, aute pariatur nostrud, eu irure mentitum commodo ne ita quorum sint qui appellat, deserunt sunt illum eu quorum, magna sempiternum vidisse elit vidisse. Senserit nam varias pariatur ubi non laboris familiaritatem, sint non admodum a dolore, nam eram qui nulla, irure mandaremus adipisicing te o occaecat ubi ingeniis, e doctrina adipisicing in iudicem eu mentitu
+                    .TextButton-col2
+                        .TextButton-col2.u-tableCell
+                            each val in ['Cape Town','Durban','Pretoria']
+                                .TextButton-text
+                                    span.TextButton-textHighlight Location:
+                                    span.TextButton-textSpan= val
+
+mixin TextButton--otherTenders
+    .TextButton-main
+        .TextButton-content
+                .TextButton-heading.u-table Download Report
+                each val in [1,2,3]
+                    a(href="#").u-noUnderline
+                        .TextButton-item.u-table
+                            .TextButton-col2.u-tableCell
+                                .TextButton-textItem.TextButton-text--bold Supply of Electricity Meters
+                                .TextButton-text
+                                    span.TextButton-textHighlight Location:
+                                    span.TextButton-textSpan Cape Town
+                                    span.TextButton-textHighlight.TextButton-textHighlight--indent Deadline:
+                                    span.TextButton-textSpan 10 October 2015
+                            .TextButton-col3.u-tableCell
+                                .TextButton-arrow.icon-arrow
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

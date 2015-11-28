@@ -7,125 +7,173 @@ include ../_global/includes/head/head.jade
 //-                                                                             //
 //-    LAYOUT                                                                   //
 //-   ---------------                                                           //
-//-    START                        d                                            //
+//-    NEWS HOME                                                                   //
 //-                                                                             //
 //-                                                                             //
 //-///////////////////////////////////////////////////////////////////////////////
 
-#__topNewsHome-main
-    #__topNewsHome-centre
-        #__topNewsHome-row1
-          +M__heading('Breaking News', 'More News')
-        #__topNewsHome-row2.u-cf
-            #__topNewsHome-row2-col1.u-floatLeft
-                +M__contentThumb--showcase
-            #__topNewsHome-row2-col2.u-floatRight
-                +M__advert--smallSkyscraper
+#NewsHome-main
+    #NewsHome-centre
+        #NewsHome-row1
+          +Heading('Breaking News', 'More News')
+        #NewsHome-row2.u-cf
+            #NewsHome-row2-col1.u-floatLeft
+                +Thumbnail--showcase
+            #NewsHome-row2-col2.u-floatRight
+                +Advert--smallSkyscraper
 
-            #__topNewsHome-row2-col3.u-floatLeft
-                .O__categoryList-main.u-cf
+            #NewsHome-row2-col3.u-floatLeft.u-cf
                     each val in [1,2,3,4,5,6]
-                        .O__categoryList-item.u-floatLeft
-                            +M__contentThumb--newsCrop
+                        .u-col3.u-floatLeft
+                            +Thumbnail--news
 
 //-///////////////////////////////////////////////////////////////////////////////
 //-                                                                             //
 //-                                                                             //
 //-    LAYOUT                                                                   //
 //-   ---------------                                                           //
-//-    START                                                                    //
+//-    FEATURES HOME                                                            //
 //-                                                                             //
 //-                                                                             //
 //-///////////////////////////////////////////////////////////////////////////////
 
-#__featuresHome-main
-    #__featuresHome-centre.u-cf
-        #__featuresHome-col1.u-floatLeft
-            #__featuresHome-col1-row1
-                +M__heading('Popular News')
-            #__featuresHome-col1-row2
-            .O__categoryList-main.u-cf
+#FeaturesHome-main
+    #FeaturesHome-centre.u-cf
+        #FeaturesHome-col1.u-floatLeft
+            #FeaturesHome-col1-row1
+                +Heading('Top Stories')
+            #FeaturesHome-col1-row2.u-cf
                     each val in [1,2,3,4]
-                        .O__categoryList-item.O__categoryList-item--fiveColumn.u-floatLeft
-                            +M__contentThumb--newsCrop
-            #__featuresHome-col1-row2
-                +M__advert--largeSuperbanner
-            #__featuresHome-col1-row3
-                +M__heading('Popular News')
-            #__featuresHome-col1-row4
-                +M__contentThumb--showcase
-        #__featuresHome-col2.u-floatRight
-            +M__advert--islandAdverts
-        #__featuresHome-col4.u-floatLeft
-            #__featuresHome-col4-row1
-                +M__heading('Feature', 'View more')
-            #__featuresHome-col4-row2
-                .O__categoryList-main.u-cf
-                        each val in [1,2,3,4,5,6]
-                            .O__categoryList-item.u-floatLeft
-                                +M__contentThumb
-        #__featuresHome-col5.u-floatRight
-            +M__advert--largeSkyscraper
-        #__featuresHome-col6.u-floatLeft
-            #__featuresHome-col4-row1
-                +M__advert--largeSuperbanner
-            #__featuresHome-col4-row2
-                +M__heading('asdads')
-            #__featuresHome-col4-row3
-                +M__textPrompt--blue--noHead
-            #__featuresHome-col4-row5
-                +O__labeledLinksList--partnerFiles
+                        .u-col4.u-floatLeft
+                            +Thumbnail--news
+            #FeaturesHome-col1-row3
+                +Advert--largeSuperbanner
+            #FeaturesHome-col1-row4
+                +Heading('Popular News')
+            #FeaturesHome-col1-row5
+                +Thumbnail--showcase
+        #FeaturesHome-col2.u-floatRight
+            +Advert--islandAdverts
+        #FeaturesHome-col4.u-floatLeft
+            #FeaturesHome-col4-row1
+                +Heading('Feature', 'View more Features')
+            #FeaturesHome-col4-row2
+                each val in [1,2,3,4,5,6]
+                    .u-col3.u-floatLeft
+                        +Thumbnail
+
+
 
 //-///////////////////////////////////////////////////////////////////////////////
 //-                                                                             //
 //-                                                                             //
 //-    LAYOUT                                                                   //
 //-   ---------------                                                           //
-//-    OTHER                                                                    //
+//-    REPORT HOME                                                              //
+//-                                                                             //
+//-                                                                             //
+//-///////////////////////////////////////////////////////////////////////////////
+
+
+#__reportHome-main
+    #__reportHome-centre.u-cf
+        #__reportHome-col1.u-floatLeft
+            #__reportHome-col1-row1
+                +Advert--largeSuperbanner
+            #__reportHome-col1-row2
+                +Heading('Industry Reports', 'More Reports')
+            #__reportHome-col1-row3
+                +TextButton--bold--grey('Browse the MSEI Report Library')
+            #__reportHome-col1-row4a
+                +TextButton--files(1,2,3,4)
+        #__reportHome-col2.u-floatRight
+            +Advert--largeSkyscraper
+
+
+//-///////////////////////////////////////////////////////////////////////////////
+//-                                                                             //
+//-                                                                             //
+//-    LAYOUT                                                                   //
+//-   ---------------                                                           //
+//-    MEDIA HOME                                                               //
 //-                                                                             //
 //-                                                                             //
 //-///////////////////////////////////////////////////////////////////////////////
 
 #__mediaHome-main
-    #__mediaHome-centre.u-cf
-        #__mediaHome-col1.u-floatLeft
-            #__mediaHome-col1-row1
-                +M__heading('asdsa')
-            #__mediaHome-col1-row2
-        #__mediaHome-col2.u-floatLeft
-            #__mediaHome-col2-row1
-                +M__heading('asdsa')
-            #__mediaHome-col2-row2
-        #__mediaHome-col3
-            #__mediaHome-col3-row1
-                +M__heading('asdsa')
-            #__mediaHome-col3-row2
+    #__mediaHome-centre
+        #__mediaHome-row1.u-cf
+            #__mediaHome-row1-col1.u-floatLeft
+                #__mediaHome-row1-col1-row1
+                    +Heading('Upcoming Webinar')
+                #__mediaHome-row1-col1-row2
+                    +Thumbnail--event--large--noHover
+                #__mediaHome-row1-col1-row3
+                    +TextButton--bold--webinar
 
 
+            #__mediaHome-row1-col2.u-floatRight
+                #__mediaHome-row1-col2-row1
+                    +Heading('Featured Video')
+                #__mediaHome-row1-col2-row2
+                    +Thumbnail--media--showcase
+        #__mediaHome-row2
+                +Heading('Latest Media' , 'View All Media')
+        #__mediaHome-row3.u-cf
+                each val in [1,2,3]
+                    .u-col3.u-floatLeft
+                        +Thumbnail--media
+
+//-///////////////////////////////////////////////////////////////////////////////
+//-                                                                             //
+//-                                                                             //
+//-    LAYOUT                                                                   //
+//-   ---------------                                                           //
+//-    MEDIA HOME                                                               //
+//-                                                                             //
+//-                                                                             //
+//-///////////////////////////////////////////////////////////////////////////////
 
 #__tendersHome-main
     #__tendersHome-centre
         #__tendersHome-row1
-            +M__heading('latest Tenders', 'View all Tenders')
-        #__featuresHome-col4-row3
-            +M__textPrompt--blue--noHead
-        #__featuresHome-col4-row5
-            +O__labeledLinksList--partnerFiles
+            //+M__heading('latest Tenders', 'View all Tenders')
+        #FeaturesHome-col4-row3
+            //+M__textPrompt--blue--noHead
+        #FeaturesHome-col4-row5
+            //+O__labeledLinksList--partnerFiles s
+
+//-///////////////////////////////////////////////////////////////////////////////
+//-                                                                             //
+//-                                                                             //
+//-    LAYOUT                                                                   //
+//-   ---------------                                                           //
+//-    MAGAZINE HOME                                                               //
+//-                                                                             //
+//-                                                                             //
+//-///////////////////////////////////////////////////////////////////////////////
 
 #__magazineHome-main
     #__magazineHome-centre
         #__magazineHome-row1
             +M__heading('Free Online Magazine', 'View Previous Issues')
-        #__magazineHome-row2
-            +O__magazinePreview
+        #__magazineHome-row2.u-table
+            #__magazineHome-row2-col1.u-tableCell
+                +Thumbnail--magazine
+            #__magazineHome-row2-col2.u-tableCell
+                +TextButton--files--noLabel
+            #__magazineHome-row2-col3.u-tableCell
+                +Quote--grey
 
 
 #__eventsHome-main
     #__eventsHome-centre
         #__eventsHome-row1
-            +M__heading('Upcoming Events', 'View All Events')
-        #__eventsHome-row2
-            +O__categoryList--events
+            +Heading('Upcoming Events', 'View All Events')
+        #__eventsHome-row2.u-cf
+            each val in [1,2,3]
+                .u-col3.u-floatLeft
+                    +Thumbnail--event--large
 
 
 
@@ -133,9 +181,9 @@ include ../_global/includes/head/head.jade
 //-///////////////////////////////////////////////////////////////////////////////
 //-                                                                             //
 //-                                                                             //
-//-    LAYOUT                                                                   //
+//-    LAYOUT                                                                 //
 //-   ---------------                                                           //
-//-    END                                                                      //
+//-    END            s                                                        //
 //-                                                                             //
 //-                                                                             //
 //-///////////////////////////////////////////////////////////////////////////////
