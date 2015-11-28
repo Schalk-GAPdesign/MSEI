@@ -1,3 +1,13 @@
+
+
+
+
+
+
+
+
+
+
 #__introduction-row1-col1 {width: 68%; padding-right: 4px;}
 #__introduction-row1-col2 {width: 32%}
 
@@ -49,3 +59,59 @@
 }
 
 @include mobile {#__otherIssues-centre{width: 90%;}}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/////////////////
+
+
+
+
+
+
+
+
+
+
+
+
+ #__introduction-row1-col1 {background: #eee; padding: 20px 10px; width: 840px;}
+
+
+
+#__issueContent-main {padding-bottom: 60px;}
+
+#__otherIssues-main  {background: #e6e7e8; padding: 60px 0 80px 0;}
+#__otherIssues-center {width: 1255px; }
+#__otherIssues-row1 {width: 1255px;}
+#__otherIssues-row2 {width: 1255px}
+
+.__otherIssues-container {width: 200px; margin-right: 11px;  }
+
+.__otherIssues-container:nth-last-child(1){margin-right: 0;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

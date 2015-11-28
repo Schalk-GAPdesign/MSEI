@@ -11,7 +11,22 @@ style
     |.display {padding: 150px 0; display: table; margin: 0 auto;}
 
 
-h1 +Advert
+.display
+    a(href="#Advert")
+        div +Advert
+    a(href="#TextButton")
+        div +TextButton
+    a(href="#Quote")
+        div +Quote
+    a(href="#Thumbnail")
+        div +Thumbnail
+    a(href="#MagazineMockup")
+        div +MagazineMockup
+
+
+
+
+h1#Advert +Advert
 .display(style="width: 400px;") +Advert
     +Advert
 .display(style="width: 400px;") +Advert--largeSkyscraper
@@ -23,10 +38,10 @@ h1 +Advert
 .display(style="width: 400px;") +Advert--largeSuperbannerr
     +Advert--largeSuperbanner
 .display(style="width: 400px;")  +Advert--islandAdverts
-    +Advert--islandAdverts
+    +Advert--container
 
 
-h1 +TextButton
+h1#TextButton +TextButton
 .display(style="width: 400px;") +TextButton
     +TextButton
 .display(style="width: 400px;") +TextButton--blue
@@ -36,7 +51,9 @@ h1 +TextButton
 .display(style="width: 400px;") +TextButton--report
     +TextButton--report
 .display(style="width: 400px;") +TextButton--files
-    +TextButton--files
+    +TextButton--files(1,2,3,4)
+.display(style="width: 400px;") +TextButton--files--noLink
+    +TextButton--files--noLink(1,2,3,4)
 .display(style="width: 400px;") +TextButton--heading--signedOut
     +TextButton--heading--signedOut
 .display(style="width: 400px;") +TextButton--tender
@@ -47,12 +64,14 @@ h1 +TextButton
     +TextButton--bold
 .display(style="width: 400px;") +TextButton--bold--grey
     +TextButton--bold--grey
+.display(style="width: 400px;") +TextButton--bold--blue
+    +TextButton--bold--blue
 .display(style="width: 400px;") +TextButton--files--noLabel
     +TextButton--files--noLabel
 
 
 
-h1 +Heading
+h1#Heading +Heading
 .display(style="width: 400px;") +Heading
     +Heading('Text','Text')
 .display(style="width: 400px;") +Heading--noArrow--noLinks
@@ -61,14 +80,14 @@ h1 +Heading
     +Heading--noArrow--noLinks--noBar(null, 'Text')
 
 
-h1 +Quote
+h1#Quote +Quote
 .display(style="width: 400px;") +Quote
     +Quote
 .display(style="width: 400px;") +Quote--grey
     +Quote--grey
 
 
-h1 Thumbnail
+h1#Thumbnail +Thumbnail
 .display(style="width: 400px;") +Thumbnail--media
     +Thumbnail--media
 .display(style="width: 400px;") +Thumbnail--event
@@ -89,6 +108,10 @@ h1 Thumbnail
     +Thumbnail--media--showcase
 .display(style="width: 200px;") +Thumbnail--magazine
     +Thumbnail--magazine
+
+h1#MagazineMockup +MagazineMockup
+.display(style="width: 400px;") +MagazineMockup
+    +MagazineMockup
 
 
 |</body>

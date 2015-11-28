@@ -7,7 +7,7 @@ include ../_global/includes/head/head.jade
 //-                                                                             //
 //-    LAYOUT                                                                   //
 //-   ---------------                                                           //
-//-    NEWS HOME                                                                   //
+//-    NEWS HOME                                                                //
 //-                                                                             //
 //-                                                                             //
 //-///////////////////////////////////////////////////////////////////////////////
@@ -21,11 +21,12 @@ include ../_global/includes/head/head.jade
                 +Thumbnail--showcase
             #NewsHome-row2-col2.u-floatRight
                 +Advert--smallSkyscraper
-
             #NewsHome-row2-col3.u-floatLeft.u-cf
                     each val in [1,2,3,4,5,6]
                         .u-col3.u-floatLeft
                             +Thumbnail--news
+        #NewsHome-row3
+            +Advert
 
 //-///////////////////////////////////////////////////////////////////////////////
 //-                                                                             //
@@ -49,21 +50,25 @@ include ../_global/includes/head/head.jade
             #FeaturesHome-col1-row3
                 +Advert--largeSuperbanner
             #FeaturesHome-col1-row4
-                +Heading('Popular News')
+                +Heading('Latest Feature')
             #FeaturesHome-col1-row5
                 +Thumbnail--showcase
         #FeaturesHome-col2.u-floatRight
-            +Advert--islandAdverts
+            +Advert--container
+                #FeaturesHome-group.u-cf
+                    each val in [1,2,3,4]
+                        .FeaturesHome-container
+                            a(href="#")
+                                img(src="http://lorempixel.com/260/250")
         #FeaturesHome-col4.u-floatLeft
             #FeaturesHome-col4-row1
                 +Heading('Feature', 'View more Features')
-            #FeaturesHome-col4-row2
+            #FeaturesHome-col4-row2.u-cf
                 each val in [1,2,3,4,5,6]
-                    .u-col3.u-floatLeft
-                        +Thumbnail
-
-
-
+                    .u-col3.FeaturesHome-container.FeaturesHome-container--hide.u-floatLeft
+                        +Thumbnail--homeResize
+        #FeaturesHome-col5.u-floatRight
+            +Advert--largeSkyscraper
 //-///////////////////////////////////////////////////////////////////////////////
 //-                                                                             //
 //-                                                                             //
@@ -75,19 +80,22 @@ include ../_global/includes/head/head.jade
 //-///////////////////////////////////////////////////////////////////////////////
 
 
-#__reportHome-main
-    #__reportHome-centre.u-cf
-        #__reportHome-col1.u-floatLeft
-            #__reportHome-col1-row1
-                +Advert--largeSuperbanner
-            #__reportHome-col1-row2
-                +Heading('Industry Reports', 'More Reports')
-            #__reportHome-col1-row3
-                +TextButton--bold--grey('Browse the MSEI Report Library')
-            #__reportHome-col1-row4a
-                +TextButton--files(1,2,3,4)
-        #__reportHome-col2.u-floatRight
-            +Advert--largeSkyscraper
+#ReportHome-main
+    #ReportHome-centre
+        #ReportHome-row1.u-cf
+            #ReportHome-col1.u-floatLeft
+                #ReportHome-col1-row1
+                    +Advert--largeSuperbanner
+                #ReportHome-col1-row2
+                    +Heading('Industry Reports', 'More Reports')
+                #ReportHome-col1-row3
+                    +TextButton--bold--grey('Browse the MSEI Report Library')
+                #ReportHome-col1-row4
+                    +TextButton--files(1,2,3,4)
+            #ReportHome-col2.u-floatRight
+                +Advert--largeSkyscraper
+        #ReportHome-row2
+            +Advert
 
 
 //-///////////////////////////////////////////////////////////////////////////////
@@ -100,29 +108,33 @@ include ../_global/includes/head/head.jade
 //-                                                                             //
 //-///////////////////////////////////////////////////////////////////////////////
 
-#__mediaHome-main
-    #__mediaHome-centre
-        #__mediaHome-row1.u-cf
-            #__mediaHome-row1-col1.u-floatLeft
-                #__mediaHome-row1-col1-row1
+#MediaHome-main
+    #MediaHome-centre
+        #MediaHome-row1.u-cf
+            #MediaHome-row1-col1.u-floatLeft
+                #MediaHome-row1-col1-row1
                     +Heading('Upcoming Webinar')
-                #__mediaHome-row1-col1-row2
-                    +Thumbnail--event--large--noHover
-                #__mediaHome-row1-col1-row3
+                #MediaHome-row1-col1-row2
+                    +Thumbnail--event--large--webinar
+                #MediaHome-row1-col1-row3
                     +TextButton--bold--webinar
 
 
-            #__mediaHome-row1-col2.u-floatRight
-                #__mediaHome-row1-col2-row1
+            #MediaHome-row1-col2.u-floatRight
+                #MediaHome-row1-col2-row1
                     +Heading('Featured Video')
-                #__mediaHome-row1-col2-row2
+                #MediaHome-row1-col2-row2
                     +Thumbnail--media--showcase
-        #__mediaHome-row2
+        #MediaHome-row2
                 +Heading('Latest Media' , 'View All Media')
-        #__mediaHome-row3.u-cf
+        #MediaHome-row3.u-cf
                 each val in [1,2,3]
-                    .u-col3.u-floatLeft
+                    .u-col3.MediaHome-container.u-floatLeft
                         +Thumbnail--media
+
+
+
+
 
 //-///////////////////////////////////////////////////////////////////////////////
 //-                                                                             //
@@ -134,56 +146,70 @@ include ../_global/includes/head/head.jade
 //-                                                                             //
 //-///////////////////////////////////////////////////////////////////////////////
 
-#__tendersHome-main
-    #__tendersHome-centre
-        #__tendersHome-row1
-            //+M__heading('latest Tenders', 'View all Tenders')
-        #FeaturesHome-col4-row3
-            //+M__textPrompt--blue--noHead
-        #FeaturesHome-col4-row5
-            //+O__labeledLinksList--partnerFiles s
+#TenderHome-main
+    #TenderHome-centre
+        #TenderHome-row1
+            +Heading('latest Tenders', 'View all Tenders')
+        #TenderHome-row2
+            #FeaturesHome-col4-row3
+                +TextButton--bold--blue
+            #FeaturesHome-col4-row5
+                +TextButton--files--noLabel
+
+
 
 //-///////////////////////////////////////////////////////////////////////////////
 //-                                                                             //
 //-                                                                             //
 //-    LAYOUT                                                                   //
 //-   ---------------                                                           //
-//-    MAGAZINE HOME                                                               //
+//-    MAGAZINE HOME                                                            //
 //-                                                                             //
 //-                                                                             //
 //-///////////////////////////////////////////////////////////////////////////////
 
-#__magazineHome-main
-    #__magazineHome-centre
-        #__magazineHome-row1
+#MagazineHome-main
+    #MagazineHome-centre
+        #MagazineHome-row1
             +M__heading('Free Online Magazine', 'View Previous Issues')
-        #__magazineHome-row2.u-table
-            #__magazineHome-row2-col1.u-tableCell
+        #MagazineHome-row2.u-table
+            #MagazineHome-row2-col1.u-tableCell
                 +Thumbnail--magazine
-            #__magazineHome-row2-col2.u-tableCell
+            #MagazineHome-row2-col2.u-tableCell
                 +TextButton--files--noLabel
-            #__magazineHome-row2-col3.u-tableCell
+            #MagazineHome-row2-col3.u-tableCell
                 +Quote--grey
+        #MagazineHome-row3
+            +Advert
 
+//-///////////////////////////////////////////////////////////////////////////////
+//-                                                                             //
+//-                                                                             //
+//-    LAYOUT                                                                   //
+//-   ---------------                                                           //
+//-    MAGAZINE HOME                                                            //
+//-                                                                             //
+//-                                                                             //
+//-///////////////////////////////////////////////////////////////////////////////
 
-#__eventsHome-main
-    #__eventsHome-centre
-        #__eventsHome-row1
+#EventsHome-main
+    #EventsHome-centre
+        #EventsHome-row1
             +Heading('Upcoming Events', 'View All Events')
-        #__eventsHome-row2.u-cf
+        #EventsHome-row2.u-cf
             each val in [1,2,3]
                 .u-col3.u-floatLeft
                     +Thumbnail--event--large
-
-
+        #EventsHome-row3
+            +Advert
 
 
 //-///////////////////////////////////////////////////////////////////////////////
 //-                                                                             //
 //-                                                                             //
-//-    LAYOUT                                                                 //
+//-    LAYOUT                                                                   //
 //-   ---------------                                                           //
-//-    END            s                                                        //
+//-    END                                                                      //
 //-                                                                             //
 //-                                                                             //
 //-///////////////////////////////////////////////////////////////////////////////

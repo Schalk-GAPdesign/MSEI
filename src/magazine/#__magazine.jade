@@ -3,13 +3,13 @@ include ../_global/includes/head/head.jade
 
 
 //-///////////////////////////////////////////////////////////////////////////////
-//-                                                                             //
-//-                                                                             //
-//-    LAYOUT                                                                   //
-//-   ---------------                                                           //
-//-    MAGAZINE                                                                   //
-//-                                                                             //
-//-                                                                             //
+//-                                                                            x //
+//-                                                   f                          //
+//-    LAYOUT                      f                                aaaaaaa   fd         //
+//-   ---------------                 d               d    f                 k     //
+//-    MAGAZINE      s                       d   s     ss  d  s               gggf           //
+//-                                           g  fd    df f        gh   s               //
+//-                                          d fjk                                 //
 //-///////////////////////////////////////////////////////////////////////////////
 
 #__contentWrapper
@@ -17,64 +17,67 @@ include ../_global/includes/head/head.jade
     #__introduction-main
         #__introduction-centre
             #__introduction-row1
-                +M__heading--noArrow--noLinks('Issue 1', '2015')
+                +Heading--noArrow--noLinks('Issue 1', '2015')
             #__introduction-row2.u-cf
-                #__introduction-row1-col1.u-floatLeft
-                    +A__introParagraph('Si litteris aut quamquam do anim tempor ne mandaremus, nam nisi commodo adipisicing eu est noster non nisi. Eu anim mentitum, o laboris iis proident qui magna iudicem ab pariatur sunt elit mandaremus noster se singulis anim expetendis quo dolore an quamquam quo quorum eu consequat ubi fabulas, ullamco ')
+                #__introduction-row1-col1.u-floatLeft Si litteris aut quamquam do anim tempor ne mandaremus, nam nisi commodo adipisicing eu est noster non nisi. Eu anim mentitum, o laboris iis proident qui magna iudicem ab pariatur sunt elit mandaremus noster se singulis anim expxetendis quo dolore an quamquam quo quorum eu consequat ubi fabulas, ullamco
                 #__introduction-row1-col2.u-floatRight
-                    +M__filterButton('Subscribe to Physical Copy', false)
-                    +M__filterButton('View all Issues', true, '...options', '...options', '...options'  )
-
-
+                    +TextButton--bold--grey
+                    +TextButton--bold--grey--dropdown
 
 
 
     #__issueContent-main
         #__issueContent-centre
             #__issueContent-row1
-                +M__heading--noArrow--noLinks('Online Version')
+               +Heading--noArrow--noLinks('Online Version')
             #__issueContent-row2.u-cf
                 #__issueContent-col1.u-floatLeft
                     #__issueContent-col1-row1
-                        +M__magazineMockup
+                        +MagazineMockup
                     #__issueContent-col1-row2
                         #__issueContent-col1-row2-row1
-                            +M__magazineReadPrompt
+                            +TextButton--bold--red
                         #__issueContent-col1-row2-row2
-                            +M__quote--grey
+                            +Quote--grey
 
                 #__issueContent-col2.u-floatRight
                      #__issueContent-col2-row1
-                        +M__heading--noArrow--noLinks--noBar(null, 'Features')
-                     #__issueContent-col2-row2
-                        +O__categoryList--twoColumn
+                        +Heading--noArrow--noLinks--noBar(null, 'Features')
+                     #__issueContent-col2-row2.u-cf
+                        each val in [1,2,3,4]
+                            .u-col2.u-floatLeft
+                                +Thumbnail
                      #__issueContent-col2-row3
-                        +M__heading--noArrow--noLinks--noBar(null, 'Also in this Issue')
+                        +Heading--noArrow--noLinks--noBar(null, 'Also in this Issue')
                      #__issueContent-col2-row4
-                        +O__labeledLinksList--presentationFiles--noLinks
+                        +TextButton--files--noLink(1,2,3,4,5,6,7,8,9,10,11)
 
 
     #__otherIssues-main
         #__otherIssues-centre
             #__otherIssues-row1
-                +M__heading('Other Issues', 'View all Issues')
-            #__otherIssues-row2
-                +O__categoryList--magazine
+                +Heading('Other Issues', 'View all Issues')
+            #__otherIssues-row2.u-cf
+                each val in [1,2,3,4,5,6]
+                    .__otherIssues-container.u-floatLeft
+                        +Thumbnail--magazine
 
 
-//-///////////////////////////////////////////////////////////////////////////////
+
+
+//-//////////////////////////////////////////////////////////d/////////////////////
+//-                                              d                               //
 //-                                                                             //
 //-                                                                             //
 //-                                                                             //
 //-                                                                             //
+//-                                                  f  d                         //
 //-                                                                             //
 //-                                                                             //
-//-                                                                             //
-//-                                                                             //
-//-                                                                             //
+//-                                  s                                           //
 //-                                      END                                    //
 //-                                                                             //
-//-                                                                             //
+//-                               w                                              //
 //-                                                                             //
 //-                                                                             //
 //-                                                                             //

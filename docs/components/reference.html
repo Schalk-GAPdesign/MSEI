@@ -10,13 +10,7 @@
 
 
 
-<!--mixin A__mediaEmbed
-style
 
-.A__mediaEmbed-main
-
-
--->
 
 
 
@@ -125,7 +119,13 @@ style
   h1 {text-transform: uppercase;; background: #ddd; width: 100%; text-align: center; padding: 30px 0;}
   .display {padding: 150px 0; display: table; margin: 0 auto;}
 </style>
-<h1>+Advert</h1>
+<div class="display"><a href="#Advert">
+    <div>+Advert</div></a><a href="#TextButton">
+    <div>+TextButton</div></a><a href="#Quote">
+    <div>+Quote</div></a><a href="#Thumbnail">
+    <div>+Thumbnail</div></a><a href="#MagazineMockup">
+    <div>+MagazineMockup</div></a></div>
+<h1 id="Advert">+Advert</h1>
 <div style="width: 400px;" class="display">+Advert<a href="#" class="u-noUnderline">
     <div class="Advert-main">
       <div class="Advert-title">Advertisement</div>
@@ -166,13 +166,9 @@ style
 <div style="width: 400px;" class="display"> +Advert--islandAdverts
   <div class="Advert-main">
     <div class="Advert-title">Advertisement</div>
-    <div class="Advert-islandAdvertContainer"><a href="#"><img src="http://lorempixel.com/260/250" class="Advert-image--islandAd"/></a></div>
-    <div class="Advert-islandAdvertContainer"><a href="#"><img src="http://lorempixel.com/260/250" class="Advert-image--islandAd"/></a></div>
-    <div class="Advert-islandAdvertContainer"><a href="#"><img src="http://lorempixel.com/260/250" class="Advert-image--islandAd"/></a></div>
-    <div class="Advert-islandAdvertContainer"><a href="#"><img src="http://lorempixel.com/260/250" class="Advert-image--islandAd"/></a></div>
   </div>
 </div>
-<h1>+TextButton</h1>
+<h1 id="TextButton">+TextButton</h1>
 <div style="width: 400px;" class="display">+TextButton
   <div class="TextButton-main">
     <div class="TextButton-content"><a href="#" class="u-noUnderline">
@@ -256,7 +252,89 @@ style
 </div>
 <div style="width: 400px;" class="display">+TextButton--files
   <div class="TextButton-main">
+    <div class="TextButton-content"><a href="#" class="u-noUnderline">
+        <div class="TextButton-item TextButton-item--list u-table">
+          <div class="TextButton-col1 u-tableCell">
+            <div class="TextButton-label">PDF</div>
+          </div>
+          <div class="TextButton-col2 TextButton-col2--report u-tableCell">
+            <div class="TextButton-text TextButton-text--files">Hello</div>
+          </div>
+          <div class="TextButton-col3 u-tableCell">
+            <div class="TextButton-arrow icon-arrow"></div>
+          </div>
+        </div></a><a href="#" class="u-noUnderline">
+        <div class="TextButton-item TextButton-item--list u-table">
+          <div class="TextButton-col1 u-tableCell">
+            <div class="TextButton-label">PDF</div>
+          </div>
+          <div class="TextButton-col2 TextButton-col2--report u-tableCell">
+            <div class="TextButton-text TextButton-text--files">Hello</div>
+          </div>
+          <div class="TextButton-col3 u-tableCell">
+            <div class="TextButton-arrow icon-arrow"></div>
+          </div>
+        </div></a><a href="#" class="u-noUnderline">
+        <div class="TextButton-item TextButton-item--list u-table">
+          <div class="TextButton-col1 u-tableCell">
+            <div class="TextButton-label">PDF</div>
+          </div>
+          <div class="TextButton-col2 TextButton-col2--report u-tableCell">
+            <div class="TextButton-text TextButton-text--files">Hello</div>
+          </div>
+          <div class="TextButton-col3 u-tableCell">
+            <div class="TextButton-arrow icon-arrow"></div>
+          </div>
+        </div></a><a href="#" class="u-noUnderline">
+        <div class="TextButton-item TextButton-item--list u-table">
+          <div class="TextButton-col1 u-tableCell">
+            <div class="TextButton-label">PDF</div>
+          </div>
+          <div class="TextButton-col2 TextButton-col2--report u-tableCell">
+            <div class="TextButton-text TextButton-text--files">Hello</div>
+          </div>
+          <div class="TextButton-col3 u-tableCell">
+            <div class="TextButton-arrow icon-arrow"></div>
+          </div>
+        </div></a>
+    </div>
+  </div>
+</div>
+<div style="width: 400px;" class="display">+TextButton--files--noLink
+  <div class="TextButton-main">
     <div class="TextButton-content">
+      <div class="TextButton-item TextButton-item--list TextButton-item--noHover u-table">
+        <div class="TextButton-col1 u-tableCell">
+          <div class="TextButton-label">PDF</div>
+        </div>
+        <div class="TextButton-col2 TextButton-col2--report u-tableCell">
+          <div class="TextButton-text TextButton-text--files">Hello</div>
+        </div>
+      </div>
+      <div class="TextButton-item TextButton-item--list TextButton-item--noHover u-table">
+        <div class="TextButton-col1 u-tableCell">
+          <div class="TextButton-label">PDF</div>
+        </div>
+        <div class="TextButton-col2 TextButton-col2--report u-tableCell">
+          <div class="TextButton-text TextButton-text--files">Hello</div>
+        </div>
+      </div>
+      <div class="TextButton-item TextButton-item--list TextButton-item--noHover u-table">
+        <div class="TextButton-col1 u-tableCell">
+          <div class="TextButton-label">PDF</div>
+        </div>
+        <div class="TextButton-col2 TextButton-col2--report u-tableCell">
+          <div class="TextButton-text TextButton-text--files">Hello</div>
+        </div>
+      </div>
+      <div class="TextButton-item TextButton-item--list TextButton-item--noHover u-table">
+        <div class="TextButton-col1 u-tableCell">
+          <div class="TextButton-label">PDF</div>
+        </div>
+        <div class="TextButton-col2 TextButton-col2--report u-tableCell">
+          <div class="TextButton-text TextButton-text--files">Hello</div>
+        </div>
+      </div>
     </div>
   </div>
 </div>
@@ -363,6 +441,19 @@ style
         </div></a></div>
   </div>
 </div>
+<div style="width: 400px;" class="display">+TextButton--bold--blue
+  <div class="TextButton-main">
+    <div class="TextButton-content"><a href="#" class="u-noUnderline">
+        <div class="TextButton-item TextButton-item--blue u-table">
+          <div class="TextButton-col2 u-tableCell">
+            <div class="TextButton-text TextButton-text--bold">Item</div>
+          </div>
+          <div class="TextButton-col3 u-tableCell">
+            <div class="TextButton-arrow icon-arrowWhite"></div>
+          </div>
+        </div></a></div>
+  </div>
+</div>
 <div style="width: 400px;" class="display">+TextButton--files--noLabel
   <div class="TextButton-main">
     <div class="TextButton-content"><a href="#" class="u-noUnderline">
@@ -401,7 +492,7 @@ style
     </div>
   </div>
 </div>
-<h1>+Heading</h1>
+<h1 id="Heading">+Heading</h1>
 <div style="width: 400px;" class="display">+Heading
   <div class="Heading-main u-cf">
     <div class="Heading-title u-floatLeft">Text</div><a href="#" class="u-noUnderline">
@@ -432,7 +523,7 @@ style
     </div>
   </div>
 </div>
-<h1>+Quote</h1>
+<h1 id="Quote">+Quote</h1>
 <div style="width: 400px;" class="display">+Quote
   <div class="Quote-main">
     <div class="Quote-row1 u-cf">
@@ -465,7 +556,7 @@ style
     </div>
   </div>
 </div>
-<h1>Thumbnail</h1>
+<h1 id="Thumbnail">+Thumbnail</h1>
 <div style="width: 400px;" class="display">+Thumbnail--media<a href="#">
     <div class="Thumbnail-main">
       <div class="Thumbnail-container u-relative">
@@ -686,12 +777,22 @@ style
 </div>
 <div style="width: 200px;" class="display">+Thumbnail--magazine<a href="#">
     <div class="Thumbnail-main">
-      <div class="Thumbnail-container Thumbnail-container--magazine u-relative">
-        <picture><img src="http://lorempixel.com/208/295"/></picture>
-        <div class="Thumbnail-overlay u-absolute">
+      <div class="Thumbnail-container--magazine u-relative">
+        <picture><img src="http://lorempixel.com/208/295" class="Thumbnail-image--magazine"/></picture>
+        <div class="Thumbnail-overlay Thumbnail-overlay--magazine u-absolute">
           <div class="Thumbnail-label u-table">Label</div>
         </div>
       </div>
     </div></a>
+</div>
+<h1 id="MagazineMockup">+MagazineMockup</h1>
+<div style="width: 400px;" class="display">+MagazineMockup
+  <div class="MagazineMockup-main">
+    <div class="MagazineMockup-centre">
+      <div class="MagazineMockup-container"><img src="http://dev.gapdesign.co.za/img/magazine-bg.png" class="MagazineMockup-background"/>
+        <div class="MagazineMockup-imageContainer"><img src="http://lorempixel.com/210/295" class="MagazineMockup-image"/></div>
+      </div>
+    </div>
+  </div>
 </div></body>
 </html>

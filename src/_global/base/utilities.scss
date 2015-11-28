@@ -1,6 +1,32 @@
 
 
 
+$laptop-width: 1300px;
+$tablet-width: 1000px;
+$mobile-width: 700px;
+
+
+
+@mixin laptop {
+  @media (max-width: #{$laptop-width}) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (max-width: #{$tablet-width}) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media (max-width: #{$mobile-width}) {
+    @content;
+  }
+}
+
+
+
 //---------------------------------------------------------- EM function
 $browser-context: 16;
 @function em($pixels, $context: $browser-context) {
@@ -94,6 +120,10 @@ li {
   position: fixed;
 }
 
+.u-overflowHidden{
+    overflow: hidden;
+}
+
 .u-noUnderline {
     text-decoration: none;
 }
@@ -125,7 +155,7 @@ li {
 
 .u-col2 {width: col(2); padding-left: 0; padding-left: 0; padding-bottom: 20px;}
 .u-col2:nth-child(2n+1) {padding-left: 0; padding-right: 10px;}
-.u-col2:nth-child(2n) { padding-left: 10px; padding-right: 0;}
+.u-col2:nth-child(2n) { padding-left: 10px; padding-right: 0; }
 .u-col2:nth-last-child(-n+2) {padding-bottom: 0px;}
 
 
@@ -141,32 +171,38 @@ li {
 .u-col4:nth-child(4n) { padding-left: 20px; padding-right: 0;}
 .u-col4:nth-last-child(-n+4) {padding-bottom: 0px;}
 
+.u-col5 {width: col(5); padding-bottom: 20px; padding-left: 10px; padding-right: 10px; }
+.u-col5:nth-child(5n+1) {padding-left: 0; padding-right: 20px;}
+.u-col5:nth-child(5n+2) { padding-left: 0; padding-right: 10px;}
+.u-col5:nth-child(5n+4) { padding-left: 10px; padding-right: 0;}
+.u-col5:nth-child(5n) { padding-left: 20px; padding-right: 0;}
+.u-col5:nth-last-child(-n+5) {padding-bottom: 0px;}
+
+
+
+
+
+@include mobile {
+    .u-col1:nth-of-type(n),
+    .u-col2:nth-of-type(n),
+    .u-col3:nth-of-type(n),
+    .u-col4:nth-of-type(n),
+    .u-col5:nth-of-type(n) {
+        width: 100%;
+        padding-left:0;
+        padding-right: 0;
+        padding-top: 0;
+        padding-bottom: 20px;
+    }
+    .u-col1:nth-last-child(1),
+    .u-col2:nth-last-child(1),
+    .u-col3:nth-last-child(1),
+    .u-col4:nth-last-child(1),
+    .u-col5:nth-last-child(1) {
+        padding-bottom: 0px;
+    }
+}
+
 //---------------------------------------------------------- Base Styles
-
-
-$laptop-width: 1300px;
-$tablet-width: 1000px;
-$mobile-width: 700px;
-
-
-
-@mixin laptop {
-  @media (max-width: #{$laptop-width}) {
-    @content;
-  }
-}
-
-@mixin tablet {
-  @media (max-width: #{$tablet-width}) {
-    @content;
-  }
-}
-
-@mixin mobile {
-  @media (max-width: #{$mobile-width}) {
-    @content;
-  }
-}
-
 
 

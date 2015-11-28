@@ -153,6 +153,8 @@
     height: 200px;
     overflow: hidden;
 }
+
+
 .Thumbnail-container--showcase {
     height: 690px;
     height: 690px;
@@ -173,14 +175,22 @@
     bottom: 0;
     width: 100%;
 }
+
+.Thumbnail-overlay--magazine {
+    bottom: 3px;
+}
+
 .Thumbnail-label {
     padding: 5px 15px 5px 10px;
     background: red;
 }
+
+
+
 .Thumbnail-lens {
     padding: 20px;
     background: rgb(0, 0, 0);
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(0, 0, 0, 0.8);
     width: 100%;
     padding-bottom: 20px;
 }
@@ -242,19 +252,28 @@
 
 @include tablet {
     .Thumbnail-container {
-        height: 336px !important;
+        height: 336px;
+    }
+     .Thumbnail-container--showcase {
+        height: 690px;
     }
     .Thumbnail-title--showcase {
         font-size: 20px;
     }
     .Thumbnail-container--showcase {
-        @extend .Thumbnail-container
+
     }
     .Thumbnail-subheading {
         display: none;
     }
 }
 
+@include mobile {
+         .Thumbnail-container--showcase {
+        height: 336px;
+    }
+
+}
 
 
 .Thumbnail-container--media--showcase {height: 450px;}
@@ -266,10 +285,11 @@
 
 
 
-.Thumbnail-container--magazine {height: 295px;}
+.Thumbnail-container--magazine {height: auto;}
 
-
-
+@include laptop {
+    .Thumbnail-container--homeResize {height: 306px;}
+}
 
 
 
@@ -294,11 +314,8 @@
     margin-bottom: 10px;
 }
 .Advert-islandAdvertContainer {
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
-
-
-///
 
 
 
@@ -331,6 +348,10 @@ border:0;
 
 .TextButton-item--blue {background: #06c4f7; color: white;}
 
+.TextButton-item--red {background: red; color: white;}
+
+
+
 .TextButton-heading{
     background: #eeeeee;
     padding: 10px 12px;
@@ -352,6 +373,10 @@ font: 700 16px "Roboto Condensed";
     border-radius: 5px;
     overflow: hidden;
 }
+
+
+
+
 .TextButton-col2 {
     width: 100%;
 }
@@ -414,10 +439,13 @@ font: 700 16px "Roboto Condensed";
 }
 
 .TextButton-item--grey {
-   background: #cdcdcd;
+   background: #eee;
 }
 
-
+.TextButton-item--bold{
+        font: 700 16px "Roboto Condensed";
+    text-transform: uppercase;
+}
 
 
 
@@ -461,3 +489,64 @@ background: white;
 
 .TextButton-item--webinar {background: #444; padding: 47px; color: white;}
 .TextButton-main--webinar { border: 0; }
+
+
+
+
+
+
+
+
+
+
+.MagazineMockup-main {
+    background: #e5e5e5;
+    width: 100%;
+    height: 250px;
+    display: table;
+}
+.MagazineMockup-centre {
+    position: relative;
+    width: 310px;
+    height: 215px;
+    overflow: hidden;
+    margin: 0 auto;
+    margin-top: 15px;
+}
+.MagazineMockup-background {
+    position: absolute;
+    top: 8px;
+    left: -2;
+}
+.MagazineMockup-imageContainer {
+    width: 141px;
+    height: 310px;
+    perspective: 900px;
+    position: absolute;
+}
+.MagazineMockup-image {
+    width: 200px;
+    height: 250px;
+    margin-left: 51px;
+    margin-top: -32px;
+    opacity: 1;
+    transform: rotateY(33deg) rotateZ(-20deg) rotateX(52deg);
+    -webkit-backface-visibility: hidden;
+}
+
+
+
+
+
+
+
+
+.Thumbnail-image--magazine {max-width:100% !important; max-width:100% !important;}
+
+
+.TextButton-main--cursor {cursor: pointer;}
+
+
+
+
+

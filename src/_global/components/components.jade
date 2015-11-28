@@ -156,41 +156,29 @@ mixin Advert--largeSuperbanner
                     img.Advert-image(src="http://lorempixel.com/270/80")
 
 
-mixin Advert--islandAdverts
+mixin Advert--container
         .Advert-main
             .Advert-title Advertisement
-            .Advert-islandAdvertContainer
-                a(href="#")
-                    img.Advert-image--islandAd(src="http://lorempixel.com/260/250")
-            .Advert-islandAdvertContainer
-                a(href="#")
-                    img.Advert-image--islandAd(src="http://lorempixel.com/260/250")
-            .Advert-islandAdvertContainer
-                a(href="#")
-                    img.Advert-image--islandAd(src="http://lorempixel.com/260/250")
-            .Advert-islandAdvertContainer
-                a(href="#")
-                    img.Advert-image--islandAd(src="http://lorempixel.com/260/250")
-
+            block
 
 //-///////////////////////////////////////////////////////////////////////////////
 //-                                                                             //
-//-                                                                             //
-//-    MOLECULE                                                                 //
-//-   ---------------                                                           //
-//-    * GLOBAL CONTENT THUMBNAIL COMPONENT                                     //
-//-                                                                             //
-//-                                                                             //
+//-                                           g                                  //
+//-    MOLECULE                                a                                 //
+//-   ---------------                     k k    s       ds                          //
+//-    * GLOBAL CONTENT THUMBNAIL COMPONENT         s                            //
+//-                                            s                                 //
+//-                                                           j                  //
 //-///////////////////////////////////////////////////////////////////////////////
 
 mixin Thumbnail--magazine
     a(href="#")
         .Thumbnail-main
             //- Determine Height at .Thumbnail-container
-            .Thumbnail-container.Thumbnail-container--magazine.u-relative
+            .Thumbnail-container--magazine.u-relative
                 picture
-                    img(src="http://lorempixel.com/208/295")
-                .Thumbnail-overlay.u-absolute
+                    img.Thumbnail-image--magazine(src="http://lorempixel.com/208/295")
+                .Thumbnail-overlay.Thumbnail-overlay--magazine.u-absolute
                     .Thumbnail-label.u-table Label
 
 
@@ -216,6 +204,27 @@ mixin Thumbnail
                                 .Thumbnail-prompt Read More
 
 
+mixin Thumbnail--homeResize
+    a(href="#")
+        .Thumbnail-main
+            //- Determine Height at .Thumbnail-container
+            .Thumbnail-container.Thumbnail-container--homeResize.u-relative
+                picture
+                    source.Thumbnail-image.u-absolute(srcset="http://lorempixel.com/640/336" media="(max-width: #{mobile}px)")
+                    img.Thumbnail-image.u-absolute(src="http://lorempixel.com/885/200")
+                .Thumbnail-overlay.u-absolute
+                    .Thumbnail-label.u-table Label
+                    .Thumbnail-lens.u-table
+                        .Thumbnail-row.u-tableRow
+                            .Thumbnail-content.u-tableCell
+                                .Thumbnail-title Copenhagen builds carbon signaling waste-to-power plant
+                                .Thumbnail-date
+                                    .Thumbnail-icon
+                                    .Thumbnail-text 11 SEPTEMBER 2015
+                                .Thumbnail-prompt Read More
+
+
+
 mixin Thumbnail--event--large
     a(href="#")
         .Thumbnail-main
@@ -234,6 +243,24 @@ mixin Thumbnail--event--large
                                     .Thumbnail-icon
                                     .Thumbnail-text 11 SEPTEMBER 2015
                                 .Thumbnail-prompt Read More
+
+mixin Thumbnail--event--large--webinar
+    .Thumbnail-main
+        //- Determine Height at .Thumbnail-container
+        .Thumbnail-container.Thumbnail-container--large.u-relative
+            picture
+                source.Thumbnail-image.u-absolute(srcset="http://lorempixel.com/640/336" media="(max-width: #{mobile}px)")
+                img.Thumbnail-image.u-absolute(src="http://lorempixel.com/885/200")
+            .Thumbnail-overlay.u-absolute
+                .Thumbnail-label.u-table Label
+                .Thumbnail-lens.u-table
+                    .Thumbnail-row.u-tableRow
+                        .Thumbnail-content.u-tableCell
+                            .Thumbnail-title Copenhagen builds carbon signaling waste-to-power plant
+                            .Thumbnail-date
+                                .Thumbnail-icon
+                                .Thumbnail-text 11 SEPTEMBER 2015
+
 
 
 
@@ -498,6 +525,42 @@ mixin TextButton--bold--grey
                     .TextButton-col3.u-tableCell
                         .TextButton-arrow.icon-arrow
 
+
+mixin TextButton--bold--grey--dropdown
+    .TextButton-main.TextButton-main--cursor
+        .TextButton-content
+            a(href="#").u-noUnderline
+                select.TextButton-item.TextButton-item--grey.TextButton-item--bold.u-table
+                    option Item
+                    option Item
+                    option Item
+                    option Item
+                    option Item
+
+
+
+mixin TextButton--bold--red
+    .TextButton-main
+        .TextButton-content
+            a(href="#").u-noUnderline
+                .TextButton-item.TextButton-item--red.u-table
+                    .TextButton-col2.u-tableCell
+                        .TextButton-text.TextButton-text--bold Item
+                    .TextButton-col3.u-tableCell
+                        .TextButton-arrow.icon-arrowWhite
+
+
+
+mixin TextButton--bold--blue
+    .TextButton-main
+        .TextButton-content
+            a(href="#").u-noUnderline
+                .TextButton-item.TextButton-item--blue.u-table
+                    .TextButton-col2.u-tableCell
+                        .TextButton-text.TextButton-text--bold Item
+                    .TextButton-col3.u-tableCell
+                        .TextButton-arrow.icon-arrowWhite
+
 mixin TextButton--blue
     .TextButton-main
         .TextButton-content
@@ -537,6 +600,22 @@ mixin TextButton--report
                                 .TextButton-arrow.icon-arrow
 
 
+mixin TextButton--report--noHeader
+    .TextButton-main
+        .TextButton-content
+            each val in [1,2,3]
+                a(href="#").u-noUnderline
+                    .TextButton-item.TextButton-item--list.u-table
+                        .TextButton-col1.u-tableCell
+                            .TextButton-label PDF
+                        .TextButton-col2.TextButton-col2--report.u-tableCell
+                            .TextButton-text Hello
+                        .TextButton-col3.u-tableCell
+                            .TextButton-arrow.icon-arrow
+
+
+
+
 mixin TextButton--files(...items)
     .TextButton-main
         .TextButton-content
@@ -549,6 +628,19 @@ mixin TextButton--files(...items)
                                 .TextButton-text.TextButton-text--files Hello
                             .TextButton-col3.u-tableCell
                                 .TextButton-arrow.icon-arrow
+
+
+mixin TextButton--files--noLink(...items)
+    .TextButton-main
+        .TextButton-content
+                each val in items
+                        .TextButton-item.TextButton-item--list.TextButton-item--noHover.u-table
+                            .TextButton-col1.u-tableCell
+                                .TextButton-label PDF
+                            .TextButton-col2.TextButton-col2--report.u-tableCell
+                                .TextButton-text.TextButton-text--files Hello
+
+
 
 mixin TextButton--files--noLabel
     .TextButton-main
@@ -622,8 +714,13 @@ mixin TextButton--otherTenders
 
 
 
-
-
+mixin MagazineMockup
+    .MagazineMockup-main
+        .MagazineMockup-centre
+                .MagazineMockup-container
+                    img.MagazineMockup-background(src='http://dev.gapdesign.co.za/img/magazine-bg.png')
+                    .MagazineMockup-imageContainer
+                        img(src="http://lorempixel.com/210/295").MagazineMockup-image
 
 
 
