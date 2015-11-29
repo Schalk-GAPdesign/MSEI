@@ -178,10 +178,6 @@ li {
 .u-col5:nth-child(5n) { padding-left: 20px; padding-right: 0;}
 .u-col5:nth-last-child(-n+5) {padding-bottom: 0px;}
 
-
-
-
-
 @include mobile {
     .u-col1:nth-of-type(n),
     .u-col2:nth-of-type(n),
@@ -203,6 +199,14 @@ li {
     }
 }
 
-//---------------------------------------------------------- Base Styles
+.u-col1--noGutter{width: col(1);}
+.u-col2--noGutter{width: col(2);}
+.u-col3--noGutter{width: col(3);}
+.u-col4--noGutter{width: col(4);}
+.u-col5--noGutter{width: col(5);}
+.u-col6--noGutter{width: col(6);}
+.u-col7--noGutter{width: col(7);}
+.u-col8--noGutter{width: col(8);}
 
+//---------------------------------------------------------- Base Styles
 

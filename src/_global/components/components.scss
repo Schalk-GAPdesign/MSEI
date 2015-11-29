@@ -3,13 +3,204 @@
 //-                                                                             //
 //-    COMPONENT                                                                //
 //-   ---------------                                                           //
+//-    MENU ITEM                                                                //
+//-                                                                             //
+//-                                                                             //
+//-///////////////////////////////////////////////////////////////////////////////
+
+
+.MenuItem-main {
+    display: table;
+    background: #26292a;
+    font-size: 14px;
+    color: #cccccc;
+    text-align: center;
+    padding: 10px 0;
+}
+.MenuItem-container {
+    border-right: 1px solid #777;
+    padding: 0 15px;
+}
+.MenuItem-main--secondary {
+    background: #ccc;
+    font-size: 13px;
+    color: black;
+    text-transform: uppercase;
+    width: 100%;
+}
+.MenuItem-container--secondary {
+    border-right: 1px solid #777;
+}
+.MenuItem-container--secondary--first {
+    border-left: 1px solid #777;
+}
+.MenuItem-container--login {
+    border: 0
+}
+.MenuItem-text {
+    text-transform: uppercase;
+    padding-left: 10px;
+    font-weight: 700
+}
+.MenuItem-text--noPadding {padding: 0;}
+
+
+.MenuItem-icon {
+    margin-top: 2px;
+}
+.MenuItem-main--main {
+    background: #eeeeee;
+    font: 700 16px "Roboto Condensed";
+    color: black;
+    border-left: 1px solid white;
+    padding: 0;
+    display: static;
+    width: 100%;
+
+}
+.MenuItem-container--main {
+    border-right: 0;
+    border-bottom: 4px solid #a9a9a9;
+    padding-top: 15px;
+    height: 50px;
+}
+.MenuItem-container--columnHeader {
+    font-size: 16px;
+    color: white;
+}
+.MenuItem-container--footer {
+    padding: 0;
+}
+.MenuItem-main--footer {
+    padding: 0;
+}
+.MenuItem-icon--search {
+    margin: 0 auto;
+}
+.MenuItem-icon--footerDot {
+    margin-top: 7px;
+}
+.MenuItem-text--footer {
+    font-weight: 400;
+    padding-right: 10px;
+}
+.MenuItem-main--main:hover {
+    background: red;
+
+}
+.MenuItem-main--main:hover .MenuItem-container {
+    border-bottom: 4px solid red;  color: white;
+}
+.MenuItem-main--secondary:hover {
+    color: #ed1b25;
+}
+.MenuItem-main:hover .MenuItem-container .MenuItem-icon {
+    @extend .icon-loginRed
+}
+.MenuItem-main:hover {
+    color: #ed1b25;
+}
+.MenuItem-main--main:hover .MenuItem-container .MenuItem-box .MenuItem-text .MenuItem-icon--search {
+    @extend .icon-searchWhite
+}
+.MenuItem-main--main--saerch{border-right: 1px solid white;}
+
+//-///////////////////////////////////////////////////////////////////////////////
+//-                                                                             //
+//-                                                                             //
+//-    COMPONENT                                                                //
+//-   ---------------                                                           //
+//-    SOCIAL MEDIA                                                             //
+//-                                                                             //
+//-                                                                             //
+//-///////////////////////////////////////////////////////////////////////////////
+
+
+.SocialMedia-main {
+    background: #2b2b2b;
+    display: table;
+}
+.SocialMedia-icon {
+    margin-left: 20px;
+}
+.SocialMedia-main--white {
+    background: white;
+}
+.SocialMedia-icon--twitter:hover {
+    @extend .icon-twitterRed
+}
+.SocialMedia-icon--linkedin:hover {
+    @extend .icon-linkedinRed
+}
+.SocialMedia-icon--facebook:hover {
+    @extend .icon-facebookRed
+}
+.SocialMedia-icon--google:hover {
+    @extend .icon-googleRed
+}
+.SocialMedia-icon--youtube:hover {
+    @extend .icon-youtubeRed
+}
+.SocialMedia-icon--rss:hover {
+    @extend .icon-rssRed
+}
+.SocialMedia-icon--twitter--black:hover {
+    @extend .icon-twitterRed
+}
+.SocialMedia-icon--linkedin--black:hover {
+    @extend .icon-linkedinRed
+}
+.SocialMedia-icon--facebook--black:hover {
+    @extend .icon-facebookRed
+}
+.SocialMedia-icon--google--black:hover {
+    @extend .icon-googleRed
+}
+.SocialMedia-icon--youtube--black:hover {
+    @extend .icon-youtubeRed
+}
+.SocialMedia-icon--rss--black:hover {
+    @extend .icon-rssRed
+}
+
+
+//-///////////////////////////////////////////////////////////////////////////////
+//-                                                                             //
+//-                                                                             //
+//-    COMPONENT                                                                //
+//-   ---------------                                                           //
+//-    COLUMN                                                                   //
+//-                                                                             //
+//-                                                                             //
+//-///////////////////////////////////////////////////////////////////////////////
+
+
+.Column-main {
+    background: #2b2b2b;
+}
+.Column-heading {
+    font: 700 16px "Roboto Condensed";
+    color: white;
+    text-transform: uppercase;
+}
+.Column-item {
+    color: #ccc;
+    font-size: 13px;
+    margin-top: 10px;
+}
+
+
+//-///////////////////////////////////////////////////////////////////////////////
+//-                                                                             //
+//-                                                                             //
+//-    COMPONENT                                                                //
+//-   ---------------                                                           //
 //-    QUOTE                                                                    //
 //-                                                                             //
 //-                                                                             //
 //-///////////////////////////////////////////////////////////////////////////////
 
 
-//BASE STYLING
 .Quote-row2 {
     padding: 10px 0
 }
@@ -24,10 +215,12 @@
     font-weight: 700;
     text-transform: uppercase;
 }
-
-//MODIFIERS
-.Quote-source--grey {color: #aaa;}
-.Quote-text--grey {color: #aaa;}
+.Quote-source--grey {
+    color: #aaa;
+}
+.Quote-text--grey {
+    color: #aaa;
+}
 
 
 //-///////////////////////////////////////////////////////////////////////////////
@@ -35,14 +228,10 @@
 //-                                                                             //
 //-    COMPONENT                                                                //
 //-   ---------------                                                           //
-//-    THUMBNAIL                                                                //
+//-    HEADING                                                                  //
 //-                                                                             //
 //-                                                                             //
 //-///////////////////////////////////////////////////////////////////////////////
-
-
-//BASE STYLING
-
 
 
 .Heading-main {
@@ -72,11 +261,6 @@
     padding: 16px 20px 0 20px;
     height: 50px;
 }
-
-
-
-
-
 .Heading-prompt:hover {
     background: #cdcdcd;
     color: white;
@@ -84,8 +268,6 @@
 .Heading-prompt:hover .icon-arrow {
     @extend .icon-arrowWhite
 }
-
-
 .Heading-arrow {
     margin-top: 1px;
     margin-left: 12px;
@@ -93,11 +275,6 @@
 .Heading-main--noBar {
     border-bottom: 0px;
 }
-
-
-
-
-
 @include tablet {
     .Heading-title {
         padding: 20px 15px 0 15px;
@@ -139,22 +316,23 @@
 }
 
 
-
-
-/// Containers
-
-
+//-///////////////////////////////////////////////////////////////////////////////
+//-                                                                             //
+//-                                                                             //
+//-    COMPONENT                                                                //
+//-   ---------------                                                           //
+//-    THUMBNAIL                                                                //
+//-                                                                             //
+//-                                                                             //
+//-///////////////////////////////////////////////////////////////////////////////
 
 .Thumbnail-main {
     color: white;
-
 }
 .Thumbnail-container {
     height: 200px;
     overflow: hidden;
 }
-
-
 .Thumbnail-container--showcase {
     height: 690px;
     height: 690px;
@@ -175,18 +353,13 @@
     bottom: 0;
     width: 100%;
 }
-
 .Thumbnail-overlay--magazine {
     bottom: 3px;
 }
-
 .Thumbnail-label {
     padding: 5px 15px 5px 10px;
     background: red;
 }
-
-
-
 .Thumbnail-lens {
     padding: 20px;
     background: rgb(0, 0, 0);
@@ -213,13 +386,15 @@
 .Thumbnail-text {
     font-size: 13px;
     color: #ccc;
-
-
 }
-.Thumbnail-text--icon {padding-top: 2px; padding-left: 9px;}
-.Thumbnail-date, .Thumbnail-map{
-    margin-top: 10px;}
-
+.Thumbnail-text--icon {
+    padding-top: 2px;
+    padding-left: 9px;
+}
+.Thumbnail-date,
+.Thumbnail-map {
+    margin-top: 10px;
+}
 .Thumbnail-prompt {
     text-transform: uppercase;
     border: 1px solid white;
@@ -233,10 +408,21 @@
     transition: all 0.5s ease;
     opacity: 0;
 }
-
-.Thumbnail-play {width: 40px; padding-right: 20px; vertical-align: middle;}
-
-
+.Thumbnail-play {
+    width: 40px;
+    padding-right: 20px;
+    vertical-align: middle;
+}
+.Thumbnail-container--media--showcase {
+    height: 450px;
+}
+.Thumbnail-container--magazine {
+    height: auto;
+}
+.Thumbnail-image--magazine {
+    max-width: 100% !important;
+    max-width: 100% !important;
+}
 .Thumbnail-main:hover:not(.Thumbnail-main--noHover) .Thumbnail-container .Thumbnail-overlay .Thumbnail-lens .Thumbnail-row .Thumbnail-content .Thumbnail-prompt {
     height: 30px;
     padding: 7px 0 0 12px;
@@ -244,58 +430,52 @@
     opacity: 1;
     margin-top: 20px;
 }
-
 .Thumbnail-main:hover:not(.Thumbnail-main--noHover) .Thumbnail-container .Thumbnail-overlay .Thumbnail-lens .Thumbnail-row .Thumbnail-play .Thumbnail-playIcon {
-  @extend .icon-thumbPlayRed
+    @extend .icon-thumbPlayRed
 }
-
 
 @include tablet {
     .Thumbnail-container {
         height: 336px;
     }
-     .Thumbnail-container--showcase {
+    .Thumbnail-container--showcase {
         height: 690px;
     }
     .Thumbnail-title--showcase {
         font-size: 20px;
     }
-    .Thumbnail-container--showcase {
-
-    }
+    .Thumbnail-container--showcase {}
     .Thumbnail-subheading {
         display: none;
     }
 }
-
 @include mobile {
-         .Thumbnail-container--showcase {
+    .Thumbnail-container--showcase {
         height: 336px;
     }
-
+    .Thumbnail-overlay--magazine {
+        position: static;
+        .Thumbnail-label {
+            display: block;
+        }
+    }
 }
-
-
-.Thumbnail-container--media--showcase {height: 450px;}
-
-
-
-
-
-
-
-
-.Thumbnail-container--magazine {height: auto;}
-
 @include laptop {
-    .Thumbnail-container--homeResize {height: 306px;}
+    .Thumbnail-container--homeResize {
+        height: 306px;
+    }
 }
 
 
-
-
-////
-
+//-///////////////////////////////////////////////////////////////////////////////
+//-                                                                             //
+//-                                                                             //
+//-    COMPONENT                                                                //
+//-   ---------------                                                           //
+//-    ADVERT                                                                   //
+//-                                                                             //
+//-                                                                             //
+//-///////////////////////////////////////////////////////////////////////////////
 
 
 .Advert-main {
@@ -318,50 +498,50 @@
 }
 
 
+//-///////////////////////////////////////////////////////////////////////////////
+//-                                                                             //
+//-                                                                             //
+//-    COMPONENT                                                                //
+//-   ---------------                                                           //
+//-    TEXT BUTTON                                                              //
+//-                                                                             //
+//-                                                                             //
+//-///////////////////////////////////////////////////////////////////////////////
 
 
 .TextButton-item {
-border-bottom: 1px solid #cdcdcd;
+    border-bottom: 1px solid #cdcdcd;
     color: black;
     padding: 15px 20px;
-      width: 100%;
+    width: 100%;
     font-size: 14px;
-
 }
-
-
-
 a:nth-last-of-type(1) .TextButton-item {
-border:0;
+    border: 0;
 }
-
-
-
-
-.TextButton-col3 {width: 5px; vertical-align: middle;}
-
-
-.TextButton-item:hover .TextButton-col3 .TextButton-arrow{
+.TextButton-col3 {
+    width: 5px;
+    vertical-align: middle;
+}
+.TextButton-item:hover .TextButton-col3 .TextButton-arrow {
     @extend .icon-arrowWhite
 }
-
-
-.TextButton-item--blue {background: #06c4f7; color: white;}
-
-.TextButton-item--red {background: red; color: white;}
-
-
-
-.TextButton-heading{
+.TextButton-item--blue {
+    background: #06c4f7;
+    color: white;
+}
+.TextButton-item--red {
+    background: red;
+    color: white;
+}
+.TextButton-heading {
     background: #eeeeee;
     padding: 10px 12px;
-font: 700 16px "Roboto Condensed";
+    font: 700 16px "Roboto Condensed";
     text-transform: uppercase;
- width: 100%;
+    width: 100%;
     padding: 15px 20px;
-
 }
-
 .TextButton-col1 {
     vertical-align: middle;
 }
@@ -373,10 +553,6 @@ font: 700 16px "Roboto Condensed";
     border-radius: 5px;
     overflow: hidden;
 }
-
-
-
-
 .TextButton-col2 {
     width: 100%;
 }
@@ -387,8 +563,6 @@ font: 700 16px "Roboto Condensed";
     padding: 0 15px;
     vertical-align: middle;
 }
-
-
 .TextButton-col2--ButtonList {
     font-size: 16px;
     font-weight: 700;
@@ -396,12 +570,6 @@ font: 700 16px "Roboto Condensed";
     //padding: 0 15px;
     vertical-align: middle;
 }
-
-
-
-
-
-
 .TextButton-item:hover:not(.TextButton-item--noHover) {
     background: #aaa;
 }
@@ -437,66 +605,95 @@ font: 700 16px "Roboto Condensed";
     font: 700 16px "Roboto Condensed";
     text-transform: uppercase;
 }
-
 .TextButton-item--grey {
-   background: #eee;
+    background: #eee;
 }
-
-.TextButton-item--bold{
-        font: 700 16px "Roboto Condensed";
+.TextButton-item--bold {
+    font: 700 16px "Roboto Condensed";
     text-transform: uppercase;
 }
+.TextButton-main {
+    border: 1px solid #cdcdcd;
+    color: black;
 
-
-
-
-
-.TextButton-main{
-border: 1px solid #cdcdcd;
-color: black;
-background: white;
     //margin-bottom: 30px;
 }
-
-
-
 .TextButton-row2 {
     padding: 0;
 }
-
 .TextButton-row1 {
     text-transform: uppercase;
     font: 700 16px "Roboto Condensed";
     padding: 15px;
     background: #eeeeee;
 }
-
-
-.TextButton-item{ border-top: 1px solid #ccc;}
-.TextButton-item:nth-child(1){ border-top: 0;}
-
-
-.TextButton-row2--tender:hover {background: #aaa;
-
-    & .TextButton-data {color: white;}
-& .TextButton-field {color: white;}
-
+.TextButton-item {
+    border-top: 1px solid #ccc;
+}
+.TextButton-item:nth-child(1) {
+    border-top: 0;
+}
+.TextButton-row2--tender:hover {
+    background: #aaa;
+}
+.TextButton-row2--tender:hover .TextButton-data {
+    color: white;
+}
+.TextButton-row2--tender:hover .TextButton-field {
+    color: white;
+}
+.TextButton-text--files {
+    color: black;
+}
+.TextButton-item--webinar {
+    background: #444;
+    padding: 47px;
+    color: white;
+}
+.TextButton-main--webinar {
+    border: 0;
+}
+.TextButton-main--cursor {
+    cursor: pointer;
+}
+@include tablet {
+    .TextButton-item {
+        padding-top: 30px;
+        padding-bottom: 30px
+    }
+}
+@include mobile {
+    .TextButton-col1 {
+        width: 100%;
+        display: block
+    }
+    .TextButton-col2 {
+        width: 100%;
+        display: block;
+        margin-top: 10px;
+    }
+    .TextButton-label {
+        width: 100%;
+        display: block;
+        text-align: center;
+    }
+    .TextButton-text {
+        width: 100%;
+        display: block;
+        font-size: 20px;
+    }
 }
 
 
-.TextButton-text--files {color: black;}
-
-
-.TextButton-item--webinar {background: #444; padding: 47px; color: white;}
-.TextButton-main--webinar { border: 0; }
-
-
-
-
-
-
-
-
+//-///////////////////////////////////////////////////////////////////////////////
+//-                                                                             //
+//-                                                                             //
+//-    COMPONENT                                                                //
+//-   ---------------                                                           //
+//-    MAGAZINE MOCKUP                                                          //
+//-                                                                             //
+//-                                                                             //
+//-///////////////////////////////////////////////////////////////////////////////
 
 
 .MagazineMockup-main {
@@ -535,18 +732,76 @@ background: white;
 }
 
 
+//-///////////////////////////////////////////////////////////////////////////////
+//-                                                                             //
+//-                                                                             //
+//-    COMPONENT                                                                //
+//-   ---------------                                                           //
+//-    SEARCH                                                                   //
+//-                                                                             //
+//-                                                                             //
+//-///////////////////////////////////////////////////////////////////////////////
 
 
 
 
 
 
-.Thumbnail-image--magazine {max-width:100% !important; max-width:100% !important;}
 
 
-.TextButton-main--cursor {cursor: pointer;}
+.Search-keywordContainer {
+    width: 60%;
+}
+.Search-keyword {
+    font-weight: 700;
+    color: #999;
+    height: 40px;
+    padding: 0 10px;
+    vertical-align: middle;
+    width: 100%;
+}
 
+.Search-categoryContainer {
+    padding-left: 20px; width: 20%;
+}
+.Search-category {
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #999;
+    height: 40px;
+    padding: 0 10px;
+    vertical-align: middle;
+    cursor: pointer;
+    width: 100%;
+}
 
+.Search-buttonContainer {
+    padding-left: 20px; width: 20%;
+}
+.Search-button {
+    width: 100%;
+    height: 40px;
+    background: #ed1b25;
+    color: white;
+    border: none;
+    text-transform: uppercase;
+    font-family: "Roboto Condensed";
+    font-weight: 700;
+vertical-align: middle;
+}
 
+.Search-button:hover {
+        background: #777;
+    }
 
-
+@include laptop {
+    .Search-keywordContainer {
+    width: 40%;
+}
+    .Search-categoryContainer {
+    padding-left: 20px; width: 40%;
+}
+    .Search-keyword {height: 80px;}
+    .Search-button {height: 80px;}
+    .Search-category {height: 80px;}
+}

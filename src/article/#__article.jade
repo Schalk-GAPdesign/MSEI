@@ -20,7 +20,7 @@ include ../_global/includes/head/head.jade
             if(article.content.header.imageHeader!=null)
                 #__articleHeader-col1.u-floatLeft
                     #__articleHeader-col1-row1
-                        +M__heading(article.content.header.imageHeader.text1, article.content.header.imageHeader.text2, true)
+                        |+M__heading(article.content.header.imageHeader.text1, article.content.header.imageHeader.text2, true)
                     #__articleHeader-col1-row2
                         +M__featuredImage('http://lorempixel.com/860/430/technics', '*WP Category*')
 
@@ -115,7 +115,7 @@ include ../_global/includes/head/head.jade
                 if(article.content.article.textCTA!=null)
                     #__textCTA-main
                         #__textCTA-row1
-                            +M__heading('Interested in more Tenders?')
+                            |+M__heading('Interested in more Tenders?')
                         #__textCTA-row2
                             +TextButton--blue(article.content.article.textCTA)
 
@@ -123,7 +123,7 @@ include ../_global/includes/head/head.jade
                 if(article.content.article.otherTenders!=null)
                     #__textCTA-main
                         #__textCTA-row1
-                            +M__heading('Other Tenders')
+                            |+M__heading('Other Tenders')
                         #__textCTA-row2
                             asdsd
                             +O__textPrompt--otherTenders
@@ -162,14 +162,14 @@ include ../_global/includes/head/head.jade
             //- 1.1 COMMENTS (INCLUDE)
             if(article.content.footer.comments!=null)
                 #__articleFooter-col1-row1
-                    +M__heading('Join the Discussion')
+                    |+M__heading('Join the Discussion')
                 #__articleFooter-col1-row2
                     |HTML_comments
 
             //- 1.2 SUBMIT BUTTONS
             if(article.content.footer.submitButton!=null)
                 #__articleFooter-col1-row3
-                    +M__heading('Submit News Story')
+                    |+M__heading('Submit News Story')
                 #__articleFooter-col1-row4
                     +O__textPromptList
 
@@ -178,7 +178,7 @@ include ../_global/includes/head/head.jade
             #__articleFooterRelatedContentAlt-main
                 #__articleFooterelatedContentAlt-center
                     #__articleFooterRelatedContentAlt-row1
-                        +M__heading('Press Releases')
+                        |+M__heading('Press Releases')
                     #__articleFooterRelatedContentAlt-row2.u-cf
                         each val in [1,2,3]
                             .ThumbnailContainer.ThumbnailContainer--three.u-floatLeft
@@ -190,7 +190,7 @@ include ../_global/includes/head/head.jade
             #__pressReleases-main
                 #__pressRelease-centre
                     #__pressRelease-row1
-                        +M__heading('Related Content')
+                        |+M__heading('Related Content')
                     #__pressRelease-row2.u-cf
                         each val in [1,2,3]
                             .ThumbnailContainer.ThumbnailContainer--three.u-floatLeft
@@ -201,7 +201,7 @@ include ../_global/includes/head/head.jade
             #__pressReleases-main
                 #__pressRelease-centre
                     #__pressRelease-row1
-                        +M__heading('Partner Content')
+                        |+M__heading('Partner Content')
                     #__pressRelease-row2.u-cf
                         each val in [1,2,3]
                             .ThumbnailContainer.ThumbnailContainer--three.u-floatLeft
@@ -211,7 +211,7 @@ include ../_global/includes/head/head.jade
         if(article.content.footer.relatedContent!=null)
             #__articleFooter-col2.u-floatRight
                 #__articleFooter-col2-row1
-                    +M__heading('Related Content')
+                    |+M__heading('Related Content')
                 #__articleFooter-col2-row2
                         each val in [1,2,3]
                             .ThumbnailContainer
@@ -223,7 +223,7 @@ include ../_global/includes/head/head.jade
             #__otherFiles-main
                 #__otherFiles-centre
                     #__otherFiles-row1
-                        +M__heading('Other Files')
+                        |+M__heading('Other Files')
                     #__otherFiles-row2
                         +O__labeledLinksList--otherFiles
 
@@ -232,7 +232,7 @@ include ../_global/includes/head/head.jade
             #__otherFiles-main
                 #__otherFiles-centre
                     #__otherFiles-row1
-                        +M__heading('Partner Downloadable Files')
+                        |+M__heading('Partner Downloadable Files')
                     #__otherFiles-row2
                         +O__labeledLinksList--partnerFiles
 
@@ -241,7 +241,7 @@ include ../_global/includes/head/head.jade
             #__presentationFiles-main
                 #__presentationFiles-centre
                     #__presentationFiles-row1
-                        +M__heading('View Speaker Presentation Files')
+                        |+M__heading('View Speaker Presentation Files')
                     #__presentationFiles-row2
                         |s
 

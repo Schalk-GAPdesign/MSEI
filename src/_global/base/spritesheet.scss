@@ -11,31 +11,31 @@ Icon classes can be used entirely standalone. They are named after their origina
 */
 .icon-arrow {
   background-image: url(../img/spritesheet.png);
-  background-position: -19px -186px;
+  background-position: -218px -16px;
   width: 10px;
   height: 16px;
 }
 .icon-arrowWhite {
   background-image: url(../img/spritesheet.png);
-  background-position: -112px -112px;
+  background-position: -218px 0px;
   width: 10px;
   height: 16px;
 }
 .icon-articleShare {
   background-image: url(../img/spritesheet.png);
-  background-position: -160px -57px;
+  background-position: -160px -30px;
   width: 27px;
   height: 27px;
 }
 .icon-articleShareRed {
   background-image: url(../img/spritesheet.png);
-  background-position: -160px -30px;
+  background-position: -160px -57px;
   width: 27px;
   height: 27px;
 }
 .icon-close {
   background-image: url(../img/spritesheet.png);
-  background-position: -160px -135px;
+  background-position: -160px -110px;
   width: 24px;
   height: 25px;
 }
@@ -53,49 +53,49 @@ Icon classes can be used entirely standalone. They are named after their origina
 }
 .icon-closeWhite {
   background-image: url(../img/spritesheet.png);
-  background-position: -160px -110px;
+  background-position: -160px -135px;
   width: 24px;
   height: 25px;
 }
 .icon-dropdown {
   background-image: url(../img/spritesheet.png);
-  background-position: -130px -120px;
+  background-position: -218px -73px;
   width: 10px;
   height: 7px;
 }
 .icon-dropdownWhite {
   background-image: url(../img/spritesheet.png);
-  background-position: -190px -177px;
+  background-position: -218px -66px;
   width: 10px;
   height: 7px;
 }
 .icon-footerDot {
   background-image: url(../img/spritesheet.png);
-  background-position: -208px -34px;
+  background-position: -218px -80px;
   width: 4px;
   height: 3px;
 }
 .icon-login {
   background-image: url(../img/spritesheet.png);
-  background-position: -190px -149px;
+  background-position: -112px -66px;
   width: 13px;
   height: 13px;
 }
 .icon-loginRed {
   background-image: url(../img/spritesheet.png);
-  background-position: -190px -136px;
+  background-position: -190px -171px;
   width: 13px;
   height: 13px;
 }
 .icon-openQuote {
   background-image: url(../img/spritesheet.png);
-  background-position: 0px -160px;
+  background-position: -33px -160px;
   width: 33px;
   height: 26px;
 }
 .icon-openQuoteRed {
   background-image: url(../img/spritesheet.png);
-  background-position: -33px -160px;
+  background-position: 0px -160px;
   width: 33px;
   height: 26px;
 }
@@ -123,25 +123,43 @@ Icon classes can be used entirely standalone. They are named after their origina
   width: 9px;
   height: 18px;
 }
+.icon-facebookBlack {
+  background-image: url(../img/spritesheet.png);
+  background-position: -218px -48px;
+  width: 8px;
+  height: 18px;
+}
 .icon-facebookRed {
   background-image: url(../img/spritesheet.png);
-  background-position: -208px 0px;
+  background-position: -209px 0px;
   width: 9px;
   height: 18px;
 }
 .icon-google {
   background-image: url(../img/spritesheet.png);
-  background-position: -112px -49px;
+  background-position: -190px -54px;
+  width: 18px;
+  height: 18px;
+}
+.icon-googleBlack {
+  background-image: url(../img/spritesheet.png);
+  background-position: -190px -36px;
   width: 18px;
   height: 18px;
 }
 .icon-googleRed {
   background-image: url(../img/spritesheet.png);
-  background-position: -190px 0px;
+  background-position: -190px -18px;
   width: 18px;
   height: 18px;
 }
 .icon-linkedin {
+  background-image: url(../img/spritesheet.png);
+  background-position: -169px -160px;
+  width: 19px;
+  height: 18px;
+}
+.icon-linkedinBlack {
   background-image: url(../img/spritesheet.png);
   background-position: -150px -160px;
   width: 19px;
@@ -149,79 +167,97 @@ Icon classes can be used entirely standalone. They are named after their origina
 }
 .icon-linkedinRed {
   background-image: url(../img/spritesheet.png);
-  background-position: -169px -160px;
+  background-position: -190px 0px;
   width: 19px;
   height: 18px;
 }
 .icon-rss {
   background-image: url(../img/spritesheet.png);
-  background-position: -190px -35px;
+  background-position: -190px -120px;
+  width: 17px;
+  height: 17px;
+}
+.icon-rssBlack {
+  background-image: url(../img/spritesheet.png);
+  background-position: -190px -137px;
   width: 17px;
   height: 17px;
 }
 .icon-rssRed {
   background-image: url(../img/spritesheet.png);
-  background-position: -190px -18px;
+  background-position: -190px -154px;
   width: 17px;
   height: 17px;
 }
 .icon-twitter {
   background-image: url(../img/spritesheet.png);
-  background-position: 0px -186px;
+  background-position: -190px -104px;
+  width: 19px;
+  height: 16px;
+}
+.icon-twitterBlack {
+  background-image: url(../img/spritesheet.png);
+  background-position: -190px -72px;
   width: 19px;
   height: 16px;
 }
 .icon-twitterRed {
   background-image: url(../img/spritesheet.png);
-  background-position: -93px -112px;
+  background-position: -190px -88px;
   width: 19px;
   height: 16px;
 }
 .icon-youtube {
   background-image: url(../img/spritesheet.png);
-  background-position: -71px -112px;
+  background-position: -72px -112px;
   width: 22px;
+  height: 16px;
+}
+.icon-youtubeBlack {
+  background-image: url(../img/spritesheet.png);
+  background-position: -49px -112px;
+  width: 23px;
   height: 16px;
 }
 .icon-youtubeRed {
   background-image: url(../img/spritesheet.png);
-  background-position: -49px -112px;
+  background-position: -94px -112px;
   width: 22px;
   height: 16px;
 }
 .icon-commentShare {
   background-image: url(../img/spritesheet.png);
-  background-position: -79px -81px;
+  background-position: -130px 0px;
   width: 30px;
   height: 30px;
 }
 .icon-commentShareWhite {
   background-image: url(../img/spritesheet.png);
-  background-position: -30px -130px;
+  background-position: -79px -81px;
   width: 30px;
   height: 30px;
 }
 .icon-emailShare {
   background-image: url(../img/spritesheet.png);
-  background-position: -130px -90px;
+  background-position: -30px -130px;
   width: 30px;
   height: 30px;
 }
 .icon-emailShareWhite {
   background-image: url(../img/spritesheet.png);
-  background-position: -130px -60px;
+  background-position: -130px -90px;
   width: 30px;
   height: 30px;
 }
 .icon-facebookShare {
   background-image: url(../img/spritesheet.png);
-  background-position: -130px -30px;
+  background-position: -130px -60px;
   width: 30px;
   height: 30px;
 }
 .icon-facebookShareWhite {
   background-image: url(../img/spritesheet.png);
-  background-position: -130px 0px;
+  background-position: -130px -30px;
   width: 30px;
   height: 30px;
 }
@@ -233,19 +269,19 @@ Icon classes can be used entirely standalone. They are named after their origina
 }
 .icon-googleShareWhite {
   background-image: url(../img/spritesheet.png);
-  background-position: -90px -130px;
+  background-position: -160px 0px;
   width: 30px;
   height: 30px;
 }
 .icon-linkedShareWhite {
   background-image: url(../img/spritesheet.png);
-  background-position: -160px 0px;
+  background-position: -120px -130px;
   width: 30px;
   height: 30px;
 }
 .icon-linkedinShare {
   background-image: url(../img/spritesheet.png);
-  background-position: -120px -130px;
+  background-position: -90px -130px;
   width: 30px;
   height: 30px;
 }
@@ -263,37 +299,37 @@ Icon classes can be used entirely standalone. They are named after their origina
 }
 .icon-attachment {
   background-image: url(../img/spritesheet.png);
-  background-position: -208px -18px;
+  background-position: -218px -32px;
   width: 9px;
   height: 16px;
 }
 .icon-calender {
   background-image: url(../img/spritesheet.png);
-  background-position: -190px -87px;
+  background-position: -15px -186px;
   width: 14px;
   height: 17px;
 }
 .icon-calenderRed {
   background-image: url(../img/spritesheet.png);
-  background-position: -190px -69px;
+  background-position: 0px -186px;
   width: 15px;
   height: 18px;
 }
 .icon-map {
   background-image: url(../img/spritesheet.png);
-  background-position: -190px -162px;
+  background-position: -41px -186px;
   width: 11px;
   height: 15px;
 }
 .icon-mapLarge {
   background-image: url(../img/spritesheet.png);
-  background-position: -190px -104px;
+  background-position: -29px -186px;
   width: 12px;
   height: 16px;
 }
 .icon-mapRed {
   background-image: url(../img/spritesheet.png);
-  background-position: -190px -120px;
+  background-position: -116px -112px;
   width: 12px;
   height: 16px;
 }
@@ -311,7 +347,7 @@ Icon classes can be used entirely standalone. They are named after their origina
 }
 .icon-tender {
   background-image: url(../img/spritesheet.png);
-  background-position: -190px -52px;
+  background-position: -112px -49px;
   width: 16px;
   height: 17px;
 }

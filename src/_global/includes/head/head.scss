@@ -1,6 +1,259 @@
-    #__mainNav-col0 {
-        display: none
+
+
+//-///////////////////////////////////////////////////////////////////////////////
+//-                                                                             //
+//-                                                                             //
+//-    LAYOUT                                                                   //
+//-   ---------------                                                           //
+//-    LEADERBOARD                                                              //
+//-                                                                             //
+//-                                                                             //
+//-///////////////////////////////////////////////////////////////////////////////
+
+
+#Leaderboard-main {
+    height: 100px;
+    overflow: hidden;
+}
+#Leaderboard-centre {
+    display: table;
+    margin: 0 auto;
+}
+@include mobile {
+  #Leaderboard-main{display: none;
+}
+
+}
+
+//-///////////////////////////////////////////////////////////////////////////////
+//-                                                                             //
+//-                                                                             //
+//-    LAYOUT                                                                   //
+//-   ---------------                                                           //
+//-    TOP NAVIGATION                                                           //
+//-                                                                             //
+//-                                                                             //
+//-///////////////////////////////////////////////////////////////////////////////
+
+
+#TopNav-main {
+    background: #26292a;
+}
+#TopNav-centre {
+    width: 1255px;
+    margin: 0 auto;
+}
+#TopNav-col2 {
+    margin-top: 0px;
+
+}
+@include laptop {
+    #TopNav-centre {
+        width: 90%;
     }
+    #TopNav-col1 {
+        float: none;
+        margin: 0 auto;
+        padding: 20px;
+    }
+    #TopNav-col2 {
+        display: none;
+    }
+
+}
+
+
+//-///////////////////////////////////////////////////////////////////////////////
+//-                                                                             //
+//-                                                                             //
+//-    LAYOUT                                                                   //
+//-   ---------------                                                           //
+//-    MENU CONTENT                                                             //
+//-                                               s    dd                          //
+//-                                                                             //
+//-///////////////////////////////////////////////////////////////////////////////
+
+
+#MenuContent-main {
+    background: #ec1b25;
+}
+#MenuContent-centre {
+    width: 1255px;
+    margin: 0 auto;
+    padding: 30px 0;
+}
+#MenuContent-col1 {
+    display: none;
+}
+
+//-///////////////////////////////////////////////////////////////////////////////
+//-                                                                             //
+//-                                                                             //
+//-    LAYOUT                                                                   //
+//-   ---------------                                                           //
+//-    MAIN NAV                                                             //
+//-                              k    k                                           //
+//-                                                                             //
+//-///////////////////////////////////////////////////////////////////////////////
+
+
+#MainNav-main {
+    background: #eee;
+    height: 50px;
+    border-bottom: 4px solid #a9a9a9;
+}
+#MainNav-centre {
+    height: 54px;
+    width: 1255px;
+    margin: 0 auto;
+}
+#MainNav-col3 {
+    width: 50px;
+}
+#MainNav-col2 {
+    width: 1205px;
+}
+
+
+//-///////////////////////////////////////////////////////////////////////////////
+//-                                                                             //
+//-                                                                             //
+//-    LAYOUT                                                                   //
+//-   ---------------                                                           //
+//-    SECONDARY                                                            //
+//-                                                                             //
+//-                                                                             //
+//-///////////////////////////////////////////////////////////////////////////////
+
+#SecondaryNav-main {
+    background: #ccc;
+}
+#SecondaryNav-centre {
+    width: 1255px;
+    margin: 0 auto;
+}
+
+//-///////////////////////////////////////////////////////////////////////////////
+//-                                                                             //
+//-                                                                             //
+//-    LAYOUT                          l                                         //
+//-   ---------------                                                           //
+//-    SEARCH                                                             //
+//-                                                                             //
+//-                                                                             //
+//-///////////////////////////////////////////////////////////////////////////////
+
+#MenuSearch-centre {
+    width: 1255px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+@include laptop {#MenuSearch-centre {width: 90%}}
+
+
+@include mobile {
+    
+    
+    
+}
+
+
+
+//-///////////////////////////////////////////////////////////////////////////////
+//-                                                                             //
+//-                                                                             //
+//-    LAYOUT                          l                                         //
+//-   ---------------                                                           //
+//-    MAGAZINE                                                            //
+//-                                                                             //
+//-                                                                             //
+//-///////////////////////////////////////////////////////////////////////////////
+
+#MagazineHome-main--top {
+    background: #ccc;
+    padding: 10px 0;
+}
+#MagazineHome-centre--top {
+    width: 1255px;
+    margin: 0 auto;
+}
+#MagazineHome-row2--top {
+    width: 100%;
+    height: auto;
+}
+#MagazineHome-row2-col1--top {
+    width: 208px;
+    vertical-align: middle;
+}
+#MagazineHome-row2-col2--top {
+    vertical-align: middle;
+    padding: 0 30px;
+}
+#MagazineHome-row2-col3--top {
+    width: 400px;
+    padding: 0 40px;
+    vertical-align: middle;
+}
+#MagazineHome-row3--top {
+    display: none;
+}
+
+
+@include laptop {
+    #MagazineHome-centre--top {
+        width: 90%;
+    }
+    #MagazineHome-row2-col3--top {
+        display: none;
+    }
+@include tablet{
+    #MagazineHome-row2-col1--top {display: none;}
+    #MagazineHome-row2-col2--top {padding: 30px;}
+}
+@include mobile{
+    #MagazineHome-row3--top {margin-top: 20px; display: block;}
+}
+
+//-///////////////////////////////////////////////////////////////////////////////
+//-                                                                             //
+//-                                                                             //
+//-    LAYOUT                                                                   //
+//-   ---------------                                                           //
+//-    MAIN NAV                                                             //
+//-                              k                                               //
+//-                                                                             //
+//-///////////////////////////////////////////////////////////////////////////////
+
+
+#MainNav-centre {
+    width: 90%
+}
+#MainNav-col1 {
+    width: 95%;
+}
+#MainNav-col2 {
+    width: 5%;
+}
+#SecondaryNav-centre {
+    width: 90%
+}
+#MagazineHome-centre {
+    width: 90%;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
     #__menuContent-col0 {
         display: none;
     }
@@ -130,29 +383,7 @@
     #__menuMagazine-main:not(.is-activated) {
         display: none;
     }
-    @include laptop {
-        #__mainNav-centre {
-            width: 90%
-        }
-        #__mainNav-col1 {
-            width: 95%;
-        }
-        #__mainNav-col2 {
-            width: 5%;
-        }
-        #__secondaryNav-centre {
-            width: 90%
-        }
-        #__menuContent-col1 {
-            width: 300px;
-        }
-        #__menuMagazine-centre {
-            width: 900px;
-        }
-        #__menuContent-col1 {
-            width: 400px;
-        }
-    }
+
     @include tablet {
         #__menuContent-col0 {
             float: none;
@@ -246,3 +477,9 @@
             display: none;
         }
     }
+
+
+
+
+
+#MenuSearch-main {background: #ccc;}
