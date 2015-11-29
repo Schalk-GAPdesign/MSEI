@@ -1,0 +1,68 @@
+|<!doctype html>
+
+|<html>
+|<head>
+|<meta name="viewport" content="width=device-width" />
+script(src="https://cdn.rawgit.com/scottjehl/picturefill/master/dist/picturefill.min.js" async)
+script
+    |document.createElement( "picture" );
+link(rel="stylesheet" type="text/css" href="css/stylesheet.css")
+link(rel="stylesheet" type="text/css" href="js/libraries/fancybox/stylesheet.css")
+|<meta charset="utf-8">
+|</head>
+|<body>
+
+//- Head & Menu
+#__head-main
+    //-/// HEAD: LEADBOARD
+    #__leaderboard-main
+        #__leaderboard-centre
+            +M__leaderboardAdvert
+    //-/// HEAD: TOP NAV
+    #__topNav-main
+        #__topNav-centre.u-cf
+            #__topNav-container
+                #__topNav-col1.u-floatLeft.u-cf
+                    #__topNav-col1-col1.u-floatLeft
+                        +O__topNav
+                    #__topNav-col1-col2.u-floatLeft
+                        +M__login
+                #__topNav-col2.u-floatRight
+                    +O__socialLinkList
+    //-/// HEAD: MENU CONTENT
+    #__menuContent-main
+        #__menuContent-centre.u-cf
+            #__menuContent-col0.u-floatLeft
+                +A__textMSEI
+            #__menuContent-col1.u-floatLeft
+                +A__logo
+            #__menuContent-col2.u-floatRight
+                +A__smallSuperbannerAdvert
+     //-/// HEAD: MAIN NAV
+    #__mainNav-main
+        #__mainNav-centre.u-cf
+            #__mainNav-col0.u-floatLeft
+                +O__mainNavList--mobile
+            #__mainNav-col1.u-floatLeft
+                +O__mainNavList 
+            #__mainNav-col2.u-floatRight
+                +M__mainNavsearch
+
+    //-/// HEAD: SEARCH
+    #__menuSearch-main
+        #__menuSearch-centre.u-cf
+            #__menuSearch-item.u-floatRight
+                +M__Search
+
+
+    //-/// HEAD: MAGAZINE
+    #__menuMagazine-main
+        #__menuMagazine-centre
+            +O__magazinePreview
+
+
+
+    //-/// HEAD: SECONDARY NAV
+    #__secondaryNav-main.is-activated
+        #__secondaryNav-centre
+            +O__secondaryNavList

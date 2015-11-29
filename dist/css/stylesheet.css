@@ -1152,6 +1152,16 @@ Icon classes can be used entirely standalone. They are named after their origina
   margin: 15px 0;
 }
 
+.M__topNavButton-main {
+  font-size: 13px;
+  color: #cccccc;
+  height: 100%;
+}
+
+.M__topNavButton-main:hover {
+  color: #ed1b25;
+}
+
 .M__socialShareButton-container {
   padding: 7px 4px;
   border-bottom: 1px solid #cdcdcd;
@@ -3201,180 +3211,8 @@ a:nth-last-of-type(1) .TextButton-item {
   }
 }
 
-#Leaderboard-main {
-  height: 100px;
-  overflow: hidden;
-}
-
-#Leaderboard-centre {
-  display: table;
-  margin: 0 auto;
-}
-
-@media (max-width: 700px) {
-  #Leaderboard-main {
-    display: none;
-  }
-}
-
-#TopNav-main {
-  background: #26292a;
-}
-
-#TopNav-centre {
-  width: 1255px;
-  margin: 0 auto;
-}
-
-#TopNav-col2 {
-  margin-top: 0px;
-}
-
-@media (max-width: 1300px) {
-  #TopNav-centre {
-    width: 90%;
-  }
-  #TopNav-col1 {
-    float: none;
-    margin: 0 auto;
-    padding: 20px;
-  }
-  #TopNav-col2 {
-    display: none;
-  }
-}
-
-#MenuContent-main {
-  background: #ec1b25;
-}
-
-#MenuContent-centre {
-  width: 1255px;
-  margin: 0 auto;
-  padding: 30px 0;
-}
-
-#MenuContent-col1 {
+#__mainNav-col0 {
   display: none;
-}
-
-#MainNav-main {
-  background: #eee;
-  height: 50px;
-  border-bottom: 4px solid #a9a9a9;
-}
-
-#MainNav-centre {
-  height: 54px;
-  width: 1255px;
-  margin: 0 auto;
-}
-
-#MainNav-col3 {
-  width: 50px;
-}
-
-#MainNav-col2 {
-  width: 1205px;
-}
-
-#SecondaryNav-main {
-  background: #ccc;
-}
-
-#SecondaryNav-centre {
-  width: 1255px;
-  margin: 0 auto;
-}
-
-#MenuSearch-centre {
-  width: 1255px;
-  margin: 0 auto;
-  padding: 20px 0;
-}
-
-@media (max-width: 1300px) {
-  #MenuSearch-centre {
-    width: 90%;
-  }
-}
-
-#MagazineHome-main--top {
-  background: #ccc;
-  padding: 10px 0;
-}
-
-#MagazineHome-centre--top {
-  width: 1255px;
-  margin: 0 auto;
-}
-
-#MagazineHome-row2--top {
-  width: 100%;
-  height: auto;
-}
-
-#MagazineHome-row2-col1--top {
-  width: 208px;
-  vertical-align: middle;
-}
-
-#MagazineHome-row2-col2--top {
-  vertical-align: middle;
-  padding: 0 30px;
-}
-
-#MagazineHome-row2-col3--top {
-  width: 400px;
-  padding: 0 40px;
-  vertical-align: middle;
-}
-
-#MagazineHome-row3--top {
-  display: none;
-}
-
-@media (max-width: 1300px) {
-  #MagazineHome-centre--top {
-    width: 90%;
-  }
-  #MagazineHome-row2-col3--top {
-    display: none;
-  }
-}
-
-@media (max-width: 1300px) and (max-width: 1000px) {
-  #MagazineHome-row2-col1--top {
-    display: none;
-  }
-  #MagazineHome-row2-col2--top {
-    padding: 30px;
-  }
-}
-
-@media (max-width: 1300px) and (max-width: 700px) {
-  #MagazineHome-row3--top {
-    margin-top: 20px;
-    display: block;
-  }
-}
-
-@media (max-width: 1300px) {
-  #MainNav-centre {
-    width: 90%;
-  }
-  #MainNav-col1 {
-    width: 95%;
-  }
-  #MainNav-col2 {
-    width: 5%;
-  }
-  #SecondaryNav-centre {
-    width: 90%;
-  }
-  #MagazineHome-centre {
-    width: 90%;
-  }
 }
 
 #__menuContent-col0 {
@@ -3536,6 +3374,30 @@ a:nth-last-of-type(1) .TextButton-item {
   display: none;
 }
 
+@media (max-width: 1300px) {
+  #__mainNav-centre {
+    width: 90%;
+  }
+  #__mainNav-col1 {
+    width: 95%;
+  }
+  #__mainNav-col2 {
+    width: 5%;
+  }
+  #__secondaryNav-centre {
+    width: 90%;
+  }
+  #__menuContent-col1 {
+    width: 300px;
+  }
+  #__menuMagazine-centre {
+    width: 900px;
+  }
+  #__menuContent-col1 {
+    width: 400px;
+  }
+}
+
 @media (max-width: 1000px) {
   #__menuContent-col0 {
     float: none;
@@ -3629,10 +3491,6 @@ a:nth-last-of-type(1) .TextButton-item {
   #__secondaryNav-main {
     display: none;
   }
-}
-
-#MenuSearch-main {
-  background: #ccc;
 }
 
 #__foot-main {
@@ -4417,178 +4275,6 @@ a:nth-last-of-type(1) .TextButton-item {
   }
   #__articleFooterelatedContentAlt-center {
     background: green !important;
-  }
-}
-
-#__introduction-centre {
-  width: 1255px;
-  margin: 0 auto;
-  margin-top: 60px;
-}
-
-#__introduction-row1-col1 {
-  width: 67%;
-  background: #eee;
-  padding: 20px 10px;
-}
-
-#__introduction-row1-col2 {
-  width: 32%;
-}
-
-@media (max-width: 1300px) {
-  #__introduction-centre {
-    width: 90%;
-    margin: 0 auto;
-  }
-}
-
-@media (max-width: 1000px) {
-  #__introduction-row1-col1 {
-    width: 100%;
-    padding-right: 0px;
-  }
-  #__introduction-row1-col2 {
-    width: 100%;
-    border-top: 2px solid white;
-  }
-}
-
-#__issueContent-main {
-  padding-bottom: 60px;
-}
-
-#__issueContent-centre {
-  width: 1255px;
-  margin: 0 auto;
-  margin-top: 60px;
-}
-
-#__issueContent-col1 {
-  width: 400px;
-}
-
-#__issueContent-col1-row2 {
-  border: 1px solid #bbb;
-  padding: 0 30px;
-}
-
-#__issueContent-col1-row2-row1 {
-  border-bottom: 1px solid #bbb;
-  padding: 40px 0;
-}
-
-#__issueContent-col1-row2-row3 {
-  padding: 30px 0 30px 0;
-}
-
-#__issueContent-col2 {
-  width: 830px;
-}
-
-#__issueContent-col2-row1 {
-  margin-top: 30px;
-}
-
-#__issueContent-col2-row3 {
-  margin-top: 40px;
-}
-
-@media (max-width: 1300px) {
-  #__issueContent-centre {
-    width: 90%;
-    margin: 0 auto;
-  }
-  #__issueContent-col1 {
-    width: 30%;
-  }
-  #__issueContent-col2 {
-    width: 68%;
-  }
-}
-
-@media (max-width: 1220px) {
-  #__issueContent-col1-row1 {
-    display: none;
-  }
-}
-
-@media (max-width: 1000px) {
-  #__issueContent-col1 {
-    width: 100%;
-  }
-  #__issueContent-col2 {
-    width: 100%;
-  }
-}
-
-#__otherIssues-main {
-  background: #e6e7e8;
-  padding: 60px 0 80px 0;
-}
-
-#__otherIssues-centre {
-  margin: 0 auto;
-  width: 1255px;
-}
-
-.__otherIssues-container {
-  width: 200px;
-  margin-right: 11px;
-}
-
-.__otherIssues-container:nth-last-child(1) {
-  margin-right: 0;
-}
-
-@media (max-width: 1300px) {
-  #__otherIssues-centre {
-    width: 622px;
-    margin: 0 auto;
-  }
-  .__otherIssues-container:nth-of-type(3n) {
-    margin-right: 0;
-  }
-}
-
-@media (max-width: 700px) {
-  #__otherIssues-centre {
-    width: 90%;
-  }
-  .__otherIssues-container {
-    width: 150px;
-    margin: 0 5px 20px 5px;
-  }
-  #__otherIssues-row2 {
-    padding-top: 30px;
-    width: 480px;
-    margin: 0 auto;
-  }
-}
-
-@media (max-width: 560px) {
-  #__otherIssues-row2 {
-    width: 327px;
-  }
-  .__otherIssues-container:nth-of-type(n) {
-    margin-right: 11px;
-  }
-  .__otherIssues-container:nth-of-type(2n) {
-    margin-right: 0;
-  }
-}
-
-@media (max-width: 410px) {
-  .__otherIssues-container:nth-of-type(n) {
-    margin-right: 0;
-    margin: 0 auto;
-    display: table;
-    text-align: center;
-    width: 100%;
-    margin-bottom: 50px;
-  }
-  #__otherIssues-row2 {
-    width: 90%;
   }
 }
 

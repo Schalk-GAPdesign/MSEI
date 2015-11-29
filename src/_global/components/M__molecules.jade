@@ -797,6 +797,8 @@ mixin M__secondaryNavButton(index, text)
 mixin A__smallSuperbannerAdvert
     a(href="#")
         .A__smallSuperbannerAdvert-main
+            picture
+                img(src="http://lorempixel.com/468/60")
 
 
 
@@ -905,7 +907,10 @@ mixin M__pullQuote(Quote)
 
 
 mixin M__leaderboardAdvert
-    .s sd
+    a(href="#")
+        picture
+            source.M__leaderboardAdvert-image(srcset="http://lorempixel.com/968/100" media="(min-width: #{tablet}px)")
+            img.M__leaderboardAdvert-image(src="http://lorempixel.com/680/100")
 
 
 
@@ -920,16 +925,10 @@ mixin M__leaderboardAdvert
 //-///////////////////////////////////////////////////////////////////////////////
 
 
-mixin M__topNavButton
-    |s
-
-
-//--------------
-
-
-
-
-
+mixin M__topNavButton(text)
+    a(href="#").u-noUnderline
+        .M__topNavButton-main
+            .M__topNavButton-container= text
 
 
 //-///////////////////////////////////////////////////////////////////////////////
@@ -949,6 +948,7 @@ mixin M__magazineMockup
                     img.MagazineMockup-background(src='http://dev.gapdesign.co.za/img/magazine-bg.png')
                     .MagazineMockup-imageContainer
                         img(src="http://lorempixel.com/210/295").MagazineMockup-image
+
 
 //-///////////////////////////////////////////////////////////////////////////////
 //-                                                                             //
