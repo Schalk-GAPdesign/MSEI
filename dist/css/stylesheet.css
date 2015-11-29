@@ -237,6 +237,38 @@ li {
   }
 }
 
+.u-col1--noGutter {
+  width: 100%;
+}
+
+.u-col2--noGutter {
+  width: 50%;
+}
+
+.u-col3--noGutter {
+  width: 33.33333%;
+}
+
+.u-col4--noGutter {
+  width: 25%;
+}
+
+.u-col5--noGutter {
+  width: 20%;
+}
+
+.u-col6--noGutter {
+  width: 16.66667%;
+}
+
+.u-col7--noGutter {
+  width: 14.28571%;
+}
+
+.u-col8--noGutter {
+  width: 12.5%;
+}
+
 /*
 Icon classes can be used entirely standalone. They are named after their original file names.
 
@@ -250,35 +282,35 @@ Icon classes can be used entirely standalone. They are named after their origina
 */
 .icon-arrow {
   background-image: url(../img/spritesheet.png);
-  background-position: -19px -186px;
+  background-position: -218px -16px;
   width: 10px;
   height: 16px;
 }
 
 .icon-arrowWhite, .M__heading-prompt:hover .icon-arrow, .Heading-prompt:hover .icon-arrow, .TextButton-item:hover .TextButton-col3 .TextButton-arrow {
   background-image: url(../img/spritesheet.png);
-  background-position: -112px -112px;
+  background-position: -218px 0px;
   width: 10px;
   height: 16px;
 }
 
 .icon-articleShare {
   background-image: url(../img/spritesheet.png);
-  background-position: -160px -57px;
+  background-position: -160px -30px;
   width: 27px;
   height: 27px;
 }
 
 .icon-articleShareRed, .M__pullQuote-quote:hover .M__pullQuote-icon {
   background-image: url(../img/spritesheet.png);
-  background-position: -160px -30px;
+  background-position: -160px -57px;
   width: 27px;
   height: 27px;
 }
 
 .icon-close {
   background-image: url(../img/spritesheet.png);
-  background-position: -160px -135px;
+  background-position: -160px -110px;
   width: 24px;
   height: 25px;
 }
@@ -299,56 +331,56 @@ Icon classes can be used entirely standalone. They are named after their origina
 
 .icon-closeWhite {
   background-image: url(../img/spritesheet.png);
-  background-position: -160px -110px;
+  background-position: -160px -135px;
   width: 24px;
   height: 25px;
 }
 
 .icon-dropdown {
   background-image: url(../img/spritesheet.png);
-  background-position: -130px -120px;
+  background-position: -218px -73px;
   width: 10px;
   height: 7px;
 }
 
 .icon-dropdownWhite, .M__mainNavButton-main:hover:not(.is-activated) .M__mainNavButton-container .M__mainNavButton-centre .M__mainNavButton-arrow {
   background-image: url(../img/spritesheet.png);
-  background-position: -190px -177px;
+  background-position: -218px -66px;
   width: 10px;
   height: 7px;
 }
 
 .icon-footerDot {
   background-image: url(../img/spritesheet.png);
-  background-position: -208px -34px;
+  background-position: -218px -80px;
   width: 4px;
   height: 3px;
 }
 
 .icon-login {
   background-image: url(../img/spritesheet.png);
-  background-position: -190px -149px;
+  background-position: -112px -66px;
   width: 13px;
   height: 13px;
 }
 
-.icon-loginRed, .M__Login-main:hover .M__Login-container .icon-login {
+.icon-loginRed, .M__Login-main:hover .M__Login-container .icon-login, .MenuItem-main:hover .MenuItem-container .MenuItem-icon {
   background-image: url(../img/spritesheet.png);
-  background-position: -190px -136px;
+  background-position: -190px -171px;
   width: 13px;
   height: 13px;
 }
 
 .icon-openQuote {
   background-image: url(../img/spritesheet.png);
-  background-position: 0px -160px;
+  background-position: -33px -160px;
   width: 33px;
   height: 26px;
 }
 
 .icon-openQuoteRed {
   background-image: url(../img/spritesheet.png);
-  background-position: -33px -160px;
+  background-position: 0px -160px;
   width: 33px;
   height: 26px;
 }
@@ -367,7 +399,7 @@ Icon classes can be used entirely standalone. They are named after their origina
   height: 20px;
 }
 
-.icon-searchWhite, .M__mainNavsearch-main:hover .M__mainNavsearch-container:not(.is-activated) .M__mainNavsearch-icon {
+.icon-searchWhite, .M__mainNavsearch-main:hover .M__mainNavsearch-container:not(.is-activated) .M__mainNavsearch-icon, .MenuItem-main--main:hover .MenuItem-container .MenuItem-box .MenuItem-text .MenuItem-icon--search {
   background-image: url(../img/spritesheet.png);
   background-position: -109px -81px;
   width: 20px;
@@ -381,121 +413,163 @@ Icon classes can be used entirely standalone. They are named after their origina
   height: 18px;
 }
 
-.icon-facebookRed, .M__socialLinkButton-icon.icon-facebook:hover {
+.icon-facebookBlack {
   background-image: url(../img/spritesheet.png);
-  background-position: -208px 0px;
+  background-position: -218px -48px;
+  width: 8px;
+  height: 18px;
+}
+
+.icon-facebookRed, .M__socialLinkButton-icon.icon-facebook:hover, .SocialMedia-icon--facebook:hover, .SocialMedia-icon--facebook--black:hover {
+  background-image: url(../img/spritesheet.png);
+  background-position: -209px 0px;
   width: 9px;
   height: 18px;
 }
 
 .icon-google {
   background-image: url(../img/spritesheet.png);
-  background-position: -112px -49px;
+  background-position: -190px -54px;
   width: 18px;
   height: 18px;
 }
 
-.icon-googleRed, .M__socialLinkButton-icon.icon-google:hover {
+.icon-googleBlack {
   background-image: url(../img/spritesheet.png);
-  background-position: -190px 0px;
+  background-position: -190px -36px;
+  width: 18px;
+  height: 18px;
+}
+
+.icon-googleRed, .M__socialLinkButton-icon.icon-google:hover, .SocialMedia-icon--google:hover, .SocialMedia-icon--google--black:hover {
+  background-image: url(../img/spritesheet.png);
+  background-position: -190px -18px;
   width: 18px;
   height: 18px;
 }
 
 .icon-linkedin {
   background-image: url(../img/spritesheet.png);
+  background-position: -169px -160px;
+  width: 19px;
+  height: 18px;
+}
+
+.icon-linkedinBlack {
+  background-image: url(../img/spritesheet.png);
   background-position: -150px -160px;
   width: 19px;
   height: 18px;
 }
 
-.icon-linkedinRed, .M__socialLinkButton-icon.icon-linkedin:hover {
+.icon-linkedinRed, .M__socialLinkButton-icon.icon-linkedin:hover, .SocialMedia-icon--linkedin:hover, .SocialMedia-icon--linkedin--black:hover {
   background-image: url(../img/spritesheet.png);
-  background-position: -169px -160px;
+  background-position: -190px 0px;
   width: 19px;
   height: 18px;
 }
 
 .icon-rss {
   background-image: url(../img/spritesheet.png);
-  background-position: -190px -35px;
+  background-position: -190px -120px;
   width: 17px;
   height: 17px;
 }
 
-.icon-rssRed, .M__socialLinkButton-icon.icon-rss:hover {
+.icon-rssBlack {
   background-image: url(../img/spritesheet.png);
-  background-position: -190px -18px;
+  background-position: -190px -137px;
+  width: 17px;
+  height: 17px;
+}
+
+.icon-rssRed, .M__socialLinkButton-icon.icon-rss:hover, .SocialMedia-icon--rss:hover, .SocialMedia-icon--rss--black:hover {
+  background-image: url(../img/spritesheet.png);
+  background-position: -190px -154px;
   width: 17px;
   height: 17px;
 }
 
 .icon-twitter {
   background-image: url(../img/spritesheet.png);
-  background-position: 0px -186px;
+  background-position: -190px -104px;
   width: 19px;
   height: 16px;
 }
 
-.icon-twitterRed, .M__socialLinkButton-icon.icon-twitter:hover {
+.icon-twitterBlack {
   background-image: url(../img/spritesheet.png);
-  background-position: -93px -112px;
+  background-position: -190px -72px;
+  width: 19px;
+  height: 16px;
+}
+
+.icon-twitterRed, .M__socialLinkButton-icon.icon-twitter:hover, .SocialMedia-icon--twitter:hover, .SocialMedia-icon--twitter--black:hover {
+  background-image: url(../img/spritesheet.png);
+  background-position: -190px -88px;
   width: 19px;
   height: 16px;
 }
 
 .icon-youtube {
   background-image: url(../img/spritesheet.png);
-  background-position: -71px -112px;
+  background-position: -72px -112px;
   width: 22px;
   height: 16px;
 }
 
-.icon-youtubeRed, .M__socialLinkButton-icon.icon-youtube:hover {
+.icon-youtubeBlack {
   background-image: url(../img/spritesheet.png);
   background-position: -49px -112px;
+  width: 23px;
+  height: 16px;
+}
+
+.icon-youtubeRed, .M__socialLinkButton-icon.icon-youtube:hover, .SocialMedia-icon--youtube:hover, .SocialMedia-icon--youtube--black:hover {
+  background-image: url(../img/spritesheet.png);
+  background-position: -94px -112px;
   width: 22px;
   height: 16px;
 }
 
 .icon-commentShare {
   background-image: url(../img/spritesheet.png);
-  background-position: -79px -81px;
+  background-position: -130px 0px;
   width: 30px;
   height: 30px;
 }
 
 .icon-commentShareWhite, .M__socialShareButton-main:hover .icon-commentShare {
   background-image: url(../img/spritesheet.png);
-  background-position: -30px -130px;
+  background-position: -79px -81px;
   width: 30px;
   height: 30px;
 }
 
 .icon-emailShare {
   background-image: url(../img/spritesheet.png);
-  background-position: -130px -90px;
+  background-position: -30px -130px;
   width: 30px;
   height: 30px;
 }
 
 .icon-emailShareWhite, .M__socialShareButton-main:hover .icon-emailShare {
   background-image: url(../img/spritesheet.png);
-  background-position: -130px -60px;
+  background-position: -130px -90px;
   width: 30px;
   height: 30px;
 }
 
 .icon-facebookShare {
   background-image: url(../img/spritesheet.png);
-  background-position: -130px -30px;
+  background-position: -130px -60px;
   width: 30px;
   height: 30px;
 }
 
 .icon-facebookShareWhite, .M__socialShareButton-main:hover .icon-facebookShare {
   background-image: url(../img/spritesheet.png);
-  background-position: -130px 0px;
+  background-position: -130px -30px;
   width: 30px;
   height: 30px;
 }
@@ -509,21 +583,21 @@ Icon classes can be used entirely standalone. They are named after their origina
 
 .icon-googleShareWhite, .M__socialShareButton-main:hover .icon-googleShare {
   background-image: url(../img/spritesheet.png);
-  background-position: -90px -130px;
+  background-position: -160px 0px;
   width: 30px;
   height: 30px;
 }
 
 .icon-linkedShareWhite, .M__socialShareButton-main:hover .icon-linkedinShare {
   background-image: url(../img/spritesheet.png);
-  background-position: -160px 0px;
+  background-position: -120px -130px;
   width: 30px;
   height: 30px;
 }
 
 .icon-linkedinShare {
   background-image: url(../img/spritesheet.png);
-  background-position: -120px -130px;
+  background-position: -90px -130px;
   width: 30px;
   height: 30px;
 }
@@ -544,42 +618,42 @@ Icon classes can be used entirely standalone. They are named after their origina
 
 .icon-attachment {
   background-image: url(../img/spritesheet.png);
-  background-position: -208px -18px;
+  background-position: -218px -32px;
   width: 9px;
   height: 16px;
 }
 
 .icon-calender {
   background-image: url(../img/spritesheet.png);
-  background-position: -190px -87px;
+  background-position: -15px -186px;
   width: 14px;
   height: 17px;
 }
 
 .icon-calenderRed {
   background-image: url(../img/spritesheet.png);
-  background-position: -190px -69px;
+  background-position: 0px -186px;
   width: 15px;
   height: 18px;
 }
 
 .icon-map {
   background-image: url(../img/spritesheet.png);
-  background-position: -190px -162px;
+  background-position: -41px -186px;
   width: 11px;
   height: 15px;
 }
 
 .icon-mapLarge {
   background-image: url(../img/spritesheet.png);
-  background-position: -190px -104px;
+  background-position: -29px -186px;
   width: 12px;
   height: 16px;
 }
 
 .icon-mapRed, .M__eventIntro-location:hover .M__eventIntro-locationIcon {
   background-image: url(../img/spritesheet.png);
-  background-position: -190px -120px;
+  background-position: -116px -112px;
   width: 12px;
   height: 16px;
 }
@@ -600,7 +674,7 @@ Icon classes can be used entirely standalone. They are named after their origina
 
 .icon-tender {
   background-image: url(../img/spritesheet.png);
-  background-position: -190px -52px;
+  background-position: -112px -49px;
   width: 16px;
   height: 17px;
 }
@@ -2385,6 +2459,147 @@ O__categoryList-heading {
   }
 }
 
+.MenuItem-main {
+  display: table;
+  background: #26292a;
+  font-size: 14px;
+  color: #cccccc;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.MenuItem-container {
+  border-right: 1px solid #777;
+  padding: 0 15px;
+}
+
+.MenuItem-main--secondary {
+  background: #ccc;
+  font-size: 13px;
+  color: black;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+.MenuItem-container--secondary {
+  border-right: 1px solid #777;
+}
+
+.MenuItem-container--secondary--first {
+  border-left: 1px solid #777;
+}
+
+.MenuItem-container--login {
+  border: 0;
+}
+
+.MenuItem-text {
+  text-transform: uppercase;
+  padding-left: 10px;
+  font-weight: 700;
+}
+
+.MenuItem-text--noPadding {
+  padding: 0;
+}
+
+.MenuItem-icon {
+  margin-top: 2px;
+}
+
+.MenuItem-main--main {
+  background: #eeeeee;
+  font: 700 16px "Roboto Condensed";
+  color: black;
+  border-left: 1px solid white;
+  padding: 0;
+  display: static;
+  width: 100%;
+}
+
+.MenuItem-container--main {
+  border-right: 0;
+  border-bottom: 4px solid #a9a9a9;
+  padding-top: 15px;
+  height: 50px;
+}
+
+.MenuItem-container--columnHeader {
+  font-size: 16px;
+  color: white;
+}
+
+.MenuItem-container--footer {
+  padding: 0;
+}
+
+.MenuItem-main--footer {
+  padding: 0;
+}
+
+.MenuItem-icon--search {
+  margin: 0 auto;
+}
+
+.MenuItem-icon--footerDot {
+  margin-top: 7px;
+}
+
+.MenuItem-text--footer {
+  font-weight: 400;
+  padding-right: 10px;
+}
+
+.MenuItem-main--main:hover {
+  background: red;
+}
+
+.MenuItem-main--main:hover .MenuItem-container {
+  border-bottom: 4px solid red;
+  color: white;
+}
+
+.MenuItem-main--secondary:hover {
+  color: #ed1b25;
+}
+
+.MenuItem-main:hover {
+  color: #ed1b25;
+}
+
+.MenuItem-main--main--saerch {
+  border-right: 1px solid white;
+}
+
+.SocialMedia-main {
+  background: #2b2b2b;
+  display: table;
+}
+
+.SocialMedia-icon {
+  margin-left: 20px;
+}
+
+.SocialMedia-main--white {
+  background: white;
+}
+
+.Column-main {
+  background: #2b2b2b;
+}
+
+.Column-heading {
+  font: 700 16px "Roboto Condensed";
+  color: white;
+  text-transform: uppercase;
+}
+
+.Column-item {
+  color: #ccc;
+  font-size: 13px;
+  margin-top: 10px;
+}
+
 .Quote-row2 {
   padding: 10px 0;
 }
@@ -2580,7 +2795,8 @@ O__categoryList-heading {
   padding-left: 9px;
 }
 
-.Thumbnail-date, .Thumbnail-map {
+.Thumbnail-date,
+.Thumbnail-map {
   margin-top: 10px;
 }
 
@@ -2603,6 +2819,19 @@ O__categoryList-heading {
   width: 40px;
   padding-right: 20px;
   vertical-align: middle;
+}
+
+.Thumbnail-container--media--showcase {
+  height: 450px;
+}
+
+.Thumbnail-container--magazine {
+  height: auto;
+}
+
+.Thumbnail-image--magazine {
+  max-width: 100% !important;
+  max-width: 100% !important;
 }
 
 .Thumbnail-main:hover:not(.Thumbnail-main--noHover) .Thumbnail-container .Thumbnail-overlay .Thumbnail-lens .Thumbnail-row .Thumbnail-content .Thumbnail-prompt {
@@ -2633,14 +2862,12 @@ O__categoryList-heading {
   .Thumbnail-container--showcase {
     height: 336px;
   }
-}
-
-.Thumbnail-container--media--showcase {
-  height: 450px;
-}
-
-.Thumbnail-container--magazine {
-  height: auto;
+  .Thumbnail-overlay--magazine {
+    position: static;
+  }
+  .Thumbnail-overlay--magazine .Thumbnail-label {
+    display: block;
+  }
 }
 
 @media (max-width: 1300px) {
@@ -2794,7 +3021,6 @@ a:nth-last-of-type(1) .TextButton-item {
 .TextButton-main {
   border: 1px solid #cdcdcd;
   color: black;
-  background: white;
 }
 
 .TextButton-row2 {
@@ -2842,6 +3068,39 @@ a:nth-last-of-type(1) .TextButton-item {
   border: 0;
 }
 
+.TextButton-main--cursor {
+  cursor: pointer;
+}
+
+@media (max-width: 1000px) {
+  .TextButton-item {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
+
+@media (max-width: 700px) {
+  .TextButton-col1 {
+    width: 100%;
+    display: block;
+  }
+  .TextButton-col2 {
+    width: 100%;
+    display: block;
+    margin-top: 10px;
+  }
+  .TextButton-label {
+    width: 100%;
+    display: block;
+    text-align: center;
+  }
+  .TextButton-text {
+    width: 100%;
+    display: block;
+    font-size: 20px;
+  }
+}
+
 .MagazineMockup-main {
   background: #e5e5e5;
   width: 100%;
@@ -2883,13 +3142,73 @@ a:nth-last-of-type(1) .TextButton-item {
   -webkit-backface-visibility: hidden;
 }
 
-.Thumbnail-image--magazine {
-  max-width: 100% !important;
-  max-width: 100% !important;
+.Search-keywordContainer {
+  width: 60%;
 }
 
-.TextButton-main--cursor {
+.Search-keyword {
+  font-weight: 700;
+  color: #999;
+  height: 40px;
+  padding: 0 10px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+.Search-categoryContainer {
+  padding-left: 20px;
+  width: 20%;
+}
+
+.Search-category {
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #999;
+  height: 40px;
+  padding: 0 10px;
+  vertical-align: middle;
   cursor: pointer;
+  width: 100%;
+}
+
+.Search-buttonContainer {
+  padding-left: 20px;
+  width: 20%;
+}
+
+.Search-button {
+  width: 100%;
+  height: 40px;
+  background: #ed1b25;
+  color: white;
+  border: none;
+  text-transform: uppercase;
+  font-family: "Roboto Condensed";
+  font-weight: 700;
+  vertical-align: middle;
+}
+
+.Search-button:hover {
+  background: #777;
+}
+
+@media (max-width: 1300px) {
+  .Search-keywordContainer {
+    width: 40%;
+  }
+  .Search-categoryContainer {
+    padding-left: 20px;
+    width: 40%;
+  }
+  .Search-keyword {
+    height: 80px;
+  }
+  .Search-button {
+    height: 80px;
+  }
+  .Search-category {
+    height: 80px;
+  }
 }
 
 #__mainNav-col0 {
@@ -3959,21 +4278,52 @@ a:nth-last-of-type(1) .TextButton-item {
   }
 }
 
+#__introduction-centre {
+  width: 1255px;
+  margin: 0 auto;
+  margin-top: 60px;
+}
+
 #__introduction-row1-col1 {
-  width: 68%;
-  padding-right: 4px;
+  width: 67%;
+  background: #eee;
+  padding: 20px 10px;
 }
 
 #__introduction-row1-col2 {
   width: 32%;
 }
 
-#__issueContent-col1 {
-  width: 400px;
+@media (max-width: 1300px) {
+  #__introduction-centre {
+    width: 90%;
+    margin: 0 auto;
+  }
 }
 
-#__issueContent-col2 {
-  width: 830px;
+@media (max-width: 1000px) {
+  #__introduction-row1-col1 {
+    width: 100%;
+    padding-right: 0px;
+  }
+  #__introduction-row1-col2 {
+    width: 100%;
+    border-top: 2px solid white;
+  }
+}
+
+#__issueContent-main {
+  padding-bottom: 60px;
+}
+
+#__issueContent-centre {
+  width: 1255px;
+  margin: 0 auto;
+  margin-top: 60px;
+}
+
+#__issueContent-col1 {
+  width: 400px;
 }
 
 #__issueContent-col1-row2 {
@@ -3986,32 +4336,23 @@ a:nth-last-of-type(1) .TextButton-item {
   padding: 40px 0;
 }
 
-#__issueContent-col1-row2-row2 {
+#__issueContent-col1-row2-row3 {
   padding: 30px 0 30px 0;
 }
 
-#__introduction-main {
-  width: 1255px;
-  margin: 0 auto;
-  margin-top: 60px;
+#__issueContent-col2 {
+  width: 830px;
 }
 
-#__issueContent-centre {
-  width: 1255px;
-  margin: 0 auto;
-  margin-top: 60px;
+#__issueContent-col2-row1 {
+  margin-top: 30px;
 }
 
-#__otherIssues-centre {
-  width: 1150px;
-  margin: 0 auto;
+#__issueContent-col2-row3 {
+  margin-top: 40px;
 }
 
 @media (max-width: 1300px) {
-  #__introduction-main {
-    width: 90%;
-    margin: 0 auto;
-  }
   #__issueContent-centre {
     width: 90%;
     margin: 0 auto;
@@ -4022,10 +4363,6 @@ a:nth-last-of-type(1) .TextButton-item {
   #__issueContent-col2 {
     width: 68%;
   }
-  #__otherIssues-centre {
-    width: 760px;
-    margin: 0 auto;
-  }
 }
 
 @media (max-width: 1220px) {
@@ -4035,40 +4372,12 @@ a:nth-last-of-type(1) .TextButton-item {
 }
 
 @media (max-width: 1000px) {
-  #__otherIssues-centre {
-    width: 565px;
-    margin: 0 auto;
-  }
-  #__introduction-row1-col1 {
-    width: 100%;
-    padding-right: 0px;
-  }
-  #__introduction-row1-col2 {
-    width: 100%;
-    border-top: 2px solid white;
-  }
   #__issueContent-col1 {
-    display: none;
+    width: 100%;
   }
   #__issueContent-col2 {
     width: 100%;
   }
-}
-
-@media (max-width: 700px) {
-  #__otherIssues-centre {
-    width: 90%;
-  }
-}
-
-#__introduction-row1-col1 {
-  background: #eee;
-  padding: 20px 10px;
-  width: 840px;
-}
-
-#__issueContent-main {
-  padding-bottom: 60px;
 }
 
 #__otherIssues-main {
@@ -4076,15 +4385,8 @@ a:nth-last-of-type(1) .TextButton-item {
   padding: 60px 0 80px 0;
 }
 
-#__otherIssues-center {
-  width: 1255px;
-}
-
-#__otherIssues-row1 {
-  width: 1255px;
-}
-
-#__otherIssues-row2 {
+#__otherIssues-centre {
+  margin: 0 auto;
   width: 1255px;
 }
 
@@ -4095,6 +4397,57 @@ a:nth-last-of-type(1) .TextButton-item {
 
 .__otherIssues-container:nth-last-child(1) {
   margin-right: 0;
+}
+
+@media (max-width: 1300px) {
+  #__otherIssues-centre {
+    width: 622px;
+    margin: 0 auto;
+  }
+  .__otherIssues-container:nth-of-type(3n) {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 700px) {
+  #__otherIssues-centre {
+    width: 90%;
+  }
+  .__otherIssues-container {
+    width: 150px;
+    margin: 0 5px 20px 5px;
+  }
+  #__otherIssues-row2 {
+    padding-top: 30px;
+    width: 480px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 560px) {
+  #__otherIssues-row2 {
+    width: 327px;
+  }
+  .__otherIssues-container:nth-of-type(n) {
+    margin-right: 11px;
+  }
+  .__otherIssues-container:nth-of-type(2n) {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 410px) {
+  .__otherIssues-container:nth-of-type(n) {
+    margin-right: 0;
+    margin: 0 auto;
+    display: table;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  #__otherIssues-row2 {
+    width: 90%;
+  }
 }
 
 /*# sourceMappingURL=stylesheet.css.map */

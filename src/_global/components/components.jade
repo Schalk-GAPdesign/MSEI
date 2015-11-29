@@ -3,15 +3,209 @@
 - var mobile = 701
 
 
+//-///////////////////////////////////////////////////////////////////////////////
+//-                                                                             //
+//-                                                                             //
+//-    COMPONENT                                                                //
+//-   ---------------                                                           //
+//-    MENU ITEM                                                                //
+//-                                                                             //
+//-                                                                             //
+//-///////////////////////////////////////////////////////////////////////////////
 
 
+mixin MenuItem(text)
+    a(href="#").u-noUnderline
+        .MenuItem-main
+            .MenuItem-container
+                if text
+                    #{text}
+                else
+                    |Placeholder 1
 
 
+mixin MenuItem--login(text)
+    a(href="#").u-noUnderline
+        .MenuItem-main
+            .MenuItem-container.MenuItem-container--login.u-cf
+                .MenuItem-icon.icon-login.u-floatLeft
+                .MenuItem-text.u-floatLeft
+                    if text
+                        #{text}
+                    else
+                        |Placeholder 1
 
-//////////////
+
+mixin MenuItem--secondary(text)
+    a(href="#").u-noUnderline
+        .MenuItem-main.MenuItem-main--secondary
+            .MenuItem-container.MenuItem-container--secondary
+                if text
+                    #{text}
+                else
+                    |Placeholder 1
 
 
+mixin MenuItem--secondary--first(text)
+    a(href="#").u-noUnderline
+        .MenuItem-main.MenuItem-main--secondary
+            .MenuItem-container.MenuItem-container--secondary.MenuItem-container--secondary--first
+                if text
+                    #{text}
+                else
+                    |Placeholder 1
 
+
+mixin MenuItem--main(text)
+    a(href="#").u-noUnderline
+        .MenuItem-main.MenuItem-main--main
+            .MenuItem-container.MenuItem-container--main
+                .MenuItem-box
+                    .MenuItem-text.MenuItem-text--noPadding
+                        if text
+                            #{text}
+                        else
+                            |Placeholder 1
+
+
+mixin MenuItem--search(text)
+    a(href="#").u-noUnderline
+        .MenuItem-main.MenuItem-main--main.MenuItem-main--main--saerch
+            .MenuItem-container.MenuItem-container--main
+                .MenuItem-box
+                    .MenuItem-text.MenuItem-text--noPadding
+                        .MenuItem-icon--search.icon-search
+
+
+mixin MenuItem--main--dropdown(text)
+    a(href="#").u-noUnderline
+        .MenuItem-main.MenuItem-main--main
+            .MenuItem-container.MenuItem-container--main
+                .MenuItem-box
+                    .MenuItem-text
+                        if text
+                            #{text}
+                        else
+                            |Placeholder 1
+
+
+mixin MenuItem--footer(text)
+    a(href="#").u-noUnderline
+        .MenuItem-main.MenuItem-main--footer
+            .MenuItem-container.MenuItem-container--footer.u-cf
+                .MenuItem-icon--footerDot.icon-footerDot.u-floatLeft
+                .MenuItem-text.MenuItem-text--footer.u-floatLeft
+                    if text
+                        #{text}
+                    else
+                        |Placeholder 1
+
+
+mixin MenuItem--footer--first(text)
+    a(href="#").u-noUnderline
+        .MenuItem-main.MenuItem-main--footer
+            .MenuItem-container.MenuItem-container--footer
+                .MenuItem-text.MenuItem-text--footer
+                    if text
+                        #{text}
+                    else
+                        |Placeholder 1
+
+
+mixin Column(heading, ...items)
+    a(href="#").u-noUnderline
+        .Column-main
+            .Column-heading
+                if heading
+                    #{heading}
+                else
+                    |Placeholder 1
+            each val in items
+                .Column-item= items
+
+
+//-///////////////////////////////////////////////////////////////////////////////
+//-                                                                             //
+//-                                                                             //
+//-    LAYOUT                                                                   //
+//-   ---------------                                                           //
+//-    MENU DROPDOWN                                                            //
+//-                                                                             //
+//-                                                                             //
+//-///////////////////////////////////////////////////////////////////////////////
+
+
+mixin MenuDropdown(Heading, ...items)
+    select.MenuDropdown-main
+        option.MenuDropdown-item(disabled selected)
+        each val in items
+            option.MenuDropdown-item(value="http://www.google.coms")= items
+
+
+//-///////////////////////////////////////////////////////////////////////////////
+//-                                                                             //
+//-                                                                             //
+//-    LAYOUT                                                                   //
+//-   ---------------                                                           //
+//-    SOCIAL MEDIA                                                             //
+//-                                                                             //
+//-                                                                             //
+//-///////////////////////////////////////////////////////////////////////////////
+
+
+mixin SocialMedia
+    .SocialMedia-main.u-cf
+        a(href="")
+            .SocialMedia-icon.SocialMedia-icon--twitter.icon-twitter.u-floatLeft
+        a(href="")
+            .SocialMedia-icon.SocialMedia-icon--linkedin.icon-linkedin.u-floatLeft
+        a(href="")
+            .SocialMedia-icon.SocialMedia-icon--facebook.icon-facebook.u-floatLeft
+        a(href="")
+            .SocialMedia-icon.SocialMedia-icon--google.icon-google.u-floatLeft
+        a(href="")
+            .SocialMedia-icon.SocialMedia-icon--youtube.icon-youtube.u-floatLeft
+        a(href="")
+            .SocialMedia-icon.SocialMedia-icon--rss.icon-rss.u-floatLeft
+
+
+mixin SocialMedia--black
+    .SocialMedia-main.SocialMedia-main--white.u-cf
+        a(href="")
+            .SocialMedia-icon.SocialMedia-icon--twitter--black.icon-twitterBlack.u-floatLeft
+        a(href="")
+            .SocialMedia-icon.icon-linkedinBlack.SocialMedia-icon--linkedin--black.u-floatLeft
+        a(href="")
+            .SocialMedia-icon.icon-facebookBlack.SocialMedia-icon--facebook--black.u-floatLeft
+        a(href="")
+            .SocialMedia-icon.icon-googleBlack.SocialMedia-icon--google--black.u-floatLeft
+        a(href="")
+            .SocialMedia-icon.icon-youtubeBlack.SocialMedia-icon--youtube--black.u-floatLeft
+        a(href="")
+            .SocialMedia-icon.icon-rssBlack.SocialMedia-icon--rss--black.u-floatLeft
+
+
+//-///////////////////////////////////////////////////////////////////////////////
+//-                                                                             //
+//-                                                                             //
+//-    LAYOUT                                                                   //
+//-   ---------------                                                           //
+//-    SEARCH                                                                   //
+//-                                                                             //
+//-                                                                             //
+//-///////////////////////////////////////////////////////////////////////////////
+
+
+mixin Search
+    .Search-main.u-cf
+        .Search-keywordContainer.u-floatLeft
+            input.Search-keyword(placeholder="Search")
+        .Search-categoryContainer.u-floatLeft
+            select.Search-category
+                each val in [1,2,3]
+                    option= val
+        .Search-buttonContainer.u-floatLeft
+            button.Search-button Search
 
 
 mixin Quote
@@ -19,7 +213,7 @@ mixin Quote
         .Quote-row1.u-cf
             .Quote-openQuote.icon-openQuoteRed.u-floatLeft
         .Quote-row2
-            .Quote-text Fusce commodo aliquam arcu. Aenean vulputate eleifend tellus. Duis vel nibh at velit scelerisque suscipit. Praessent porttitor, nulla vitae posuere iaculis, arcu nisl dignissim dolor, a pretium mi sem ut ipsum. Nunc egestas, augue at pellentesque laoreet, felis eros vehicula leo, at malesuada velit leo quis pede.
+            .Quote-text Fusce commodo aliquam arcu. Aenean vulputate eleifend tellus. Duis vel nibh at velit scelerisque suscipit. Praessent porttitor, nulla vitae posuere iaculis, arcu nisl dignissim dolor, a pretium mi sem ut ipsum.
         .Quote-row3.u-cf
             .M_quote-closeQuote.icon-closeQuoteRed.u-floatRight
         .Quote-row4
@@ -38,21 +232,15 @@ mixin Quote--grey
             .M_quote-source.M_quote-source--grey - John Doe,
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-//////////////
-
+//-///////////////////////////////////////////////////////////////////////////////
+//-                                                                             //
+//-                                                                             //
+//-    LAYOUT                                                                   //
+//-   ---------------                                                           //
+//-    HEADING                                                                  //
+//-                                                                             //
+//-                                                                             //
+//-///////////////////////////////////////////////////////////////////////////////
 
 
 mixin Heading(text1, text2)
@@ -88,29 +276,16 @@ mixin Heading--noArrow--noLinks--noBar(text1, text2)
                         .Heading-promptText= text2
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 //-///////////////////////////////////////////////////////////////////////////////
 //-                                                                             //
 //-                                                                             //
-//-    MOLECULE                                                                 //
+//-    LAYOUT                                                                   //
 //-   ---------------                                                           //
-//-    LARGE SKYSCRAPER ADVERTISEMENT BANNER                                    //
+//-    TOP NAVIGATION                                                           //
 //-                                                                             //
 //-                                                                             //
 //-///////////////////////////////////////////////////////////////////////////////
+
 
 mixin Advert
     a(href="#").u-noUnderline
@@ -161,27 +336,27 @@ mixin Advert--container
             .Advert-title Advertisement
             block
 
+
 //-///////////////////////////////////////////////////////////////////////////////
 //-                                                                             //
-//-                                           g                                  //
-//-    MOLECULE                                a                                 //
-//-   ---------------                     k k    s       ds                          //
-//-    * GLOBAL CONTENT THUMBNAIL COMPONENT         s                            //
-//-                                            s                                 //
-//-                                                           j                  //
+//-                                                                             //
+//-    LAYOUT                                                                   //
+//-   ---------------                                                           //
+//-    TOP NAVIGATION                                                           //
+//-                                                                             //
+//-                                                                             //
 //-///////////////////////////////////////////////////////////////////////////////
 
+
 mixin Thumbnail--magazine
-    a(href="#")
+    a(href="#").u-noUnderline
         .Thumbnail-main
             //- Determine Height at .Thumbnail-container
             .Thumbnail-container--magazine.u-relative
                 picture
                     img.Thumbnail-image--magazine(src="http://lorempixel.com/208/295")
                 .Thumbnail-overlay.Thumbnail-overlay--magazine.u-absolute
-                    .Thumbnail-label.u-table Label
-
-
+                    .Thumbnail-label.u-table Issue 13: 2016
 
 
 mixin Thumbnail
@@ -224,7 +399,6 @@ mixin Thumbnail--homeResize
                                 .Thumbnail-prompt Read More
 
 
-
 mixin Thumbnail--event--large
     a(href="#")
         .Thumbnail-main
@@ -244,6 +418,7 @@ mixin Thumbnail--event--large
                                     .Thumbnail-text 11 SEPTEMBER 2015
                                 .Thumbnail-prompt Read More
 
+
 mixin Thumbnail--event--large--webinar
     .Thumbnail-main
         //- Determine Height at .Thumbnail-container
@@ -260,8 +435,6 @@ mixin Thumbnail--event--large--webinar
                             .Thumbnail-date
                                 .Thumbnail-icon
                                 .Thumbnail-text 11 SEPTEMBER 2015
-
-
 
 
 mixin Thumbnail--report
@@ -327,9 +500,6 @@ mixin Thumbnail--event--large
                                 .Thumbnail-prompt Read More
 
 
-
-
-
 mixin Thumbnail--showcase
     a(href="#")
         .Thumbnail-main
@@ -352,7 +522,6 @@ mixin Thumbnail--showcase
                                 .Thumbnail-prompt Read More
 
 
-
 mixin Thumbnail--media
     a(href="#")
         .Thumbnail-main
@@ -371,7 +540,6 @@ mixin Thumbnail--media
                                 .Thumbnail-date
                                     .Thumbnail-icon
                                     .Thumbnail-text 11 SEPTEMBER 2015
-
 
 
 mixin Thumbnail--tender
@@ -395,11 +563,6 @@ mixin Thumbnail--tender
                                 .Thumbnail-prompt Read More
 
 
-
-
-
-
-
 mixin Thumbnail--news
     a(href="#")
         .Thumbnail-main
@@ -419,7 +582,6 @@ mixin Thumbnail--news
                                     .Thumbnail-icon
                                     .Thumbnail-text 11 SEPTEMBER 2015
                                 .Thumbnail-prompt Read More
-
 
 
 mixin Thumbnail--media--showcase
@@ -463,65 +625,73 @@ mixin Thumbnail--event--large--noHover
                                 .Thumbnail-prompt Read More
 
 
-
-
-
-
 //-///////////////////////////////////////////////////////////////////////////////
 //-                                                                             //
 //-                                                                             //
-//-    MOLECULE                                                                 //
+//-    LAYOUT                                                                   //
 //-   ---------------                                                           //
-//-    GLOBAL TEXT BUTTON COMPONENT                                             //
+//-    TOP NAVIGATION                                                           //
 //-                                                                             //
 //-                                                                             //
 //-///////////////////////////////////////////////////////////////////////////////
 
 
-
-
-mixin TextButton--bold--webinar
+mixin TextButton--bold--webinar(text)
     .TextButton-main.TextButton-main--webinar
             a(href="#").u-noUnderline
                 .TextButton-item.TextButton-item--webinar.u-table
                     .TextButton-col2.u-tableCell
-                        .TextButton-text.TextButton-text--bold Book Now
+                        .TextButton-text.TextButton-text--bold
+                            if text
+                                #{text}
+                            else
+                                |Placeholder
                     .TextButton-col3.u-tableCell
                         .TextButton-arrow.icon-arrowWhite
 
 
-
-mixin TextButton
+mixin TextButton(text)
     .TextButton-main
         .TextButton-content
             a(href="#").u-noUnderline
                 .TextButton-item.u-table
                     .TextButton-col2.u-tableCell
-                        .TextButton-text Item
+                        .TextButton-text
+                            if text
+                                #{text}
+                            else
+                                |Placeholder
                     .TextButton-col3.u-tableCell
                         .TextButton-arrow.icon-arrow
 
 
-
-mixin TextButton--bold
+mixin TextButton--bold(text)
     .TextButton-main
         .TextButton-content
             each val in [1,2]
                 a(href="#").u-noUnderline
                     .TextButton-item.u-table
                         .TextButton-col2.u-tableCell
-                            .TextButton-text.TextButton-text--bold Item
+                            .TextButton-text.TextButton-text--bold
+                            if text
+                                #{text}
+                            else
+                                |Placeholder
                         .TextButton-col3.u-tableCell
                             .TextButton-arrow.icon-arrow
 
 
-mixin TextButton--bold--grey
+mixin TextButton--bold--grey(text)
     .TextButton-main
         .TextButton-content
             a(href="#").u-noUnderline
                 .TextButton-item.TextButton-item--grey.u-table
                     .TextButton-col2.u-tableCell
-                        .TextButton-text.TextButton-text--bold Item
+                        .TextButton-text.TextButton-text--bold
+                            if text
+                                #{text}
+                            else
+                                |Placeholder
                     .TextButton-col3.u-tableCell
                         .TextButton-arrow.icon-arrow
 
@@ -538,45 +708,55 @@ mixin TextButton--bold--grey--dropdown
                     option Item
 
 
-
-mixin TextButton--bold--red
+mixin TextButton--bold--red(text)
     .TextButton-main
         .TextButton-content
             a(href="#").u-noUnderline
                 .TextButton-item.TextButton-item--red.u-table
                     .TextButton-col2.u-tableCell
-                        .TextButton-text.TextButton-text--bold Item
+                        .TextButton-text.TextButton-text--bold
+                            if text
+                                #{text}
+                            else
+                                |Placeholder
                     .TextButton-col3.u-tableCell
                         .TextButton-arrow.icon-arrowWhite
 
 
-
-mixin TextButton--bold--blue
+mixin TextButton--bold--blue(text)
     .TextButton-main
         .TextButton-content
             a(href="#").u-noUnderline
                 .TextButton-item.TextButton-item--blue.u-table
                     .TextButton-col2.u-tableCell
-                        .TextButton-text.TextButton-text--bold Item
+                        .TextButton-text.TextButton-text--bold
+                            if text
+                                #{text}
+                            else
+                                |Placeholder
                     .TextButton-col3.u-tableCell
                         .TextButton-arrow.icon-arrowWhite
 
-mixin TextButton--blue
+
+mixin TextButton--blue(text)
     .TextButton-main
         .TextButton-content
             a(href="#").u-noUnderline
                 .TextButton-item.TextButton-item--blue.u-table
                     .TextButton-col2.u-tableCell
-                        .TextButton-text Items
+                        .TextButton-text
+                            if text
+                                #{text}
+                            else
+                                |Placeholder
                     .TextButton-col3.u-tableCell
                         .TextButton-arrow.icon-arrowWhite
 
 
-
-mixin TextButton--heading
+mixin TextButton--heading(text)
     .TextButton-main
         .TextButton-content
-                .TextButton-heading.u-table Heading
+                .TextButton-heading.u-table (text? #{text}: 'Placeholder')
                 a(href="#").u-noUnderline
                     .TextButton-item.u-table
                         .TextButton-col2.u-tableCell
@@ -585,7 +765,7 @@ mixin TextButton--heading
                             .TextButton-arrow.icon-arrow
 
 
-mixin TextButton--report
+mixin TextButton--report(text)
     .TextButton-main
         .TextButton-content
                 .TextButton-heading.u-table Download Report
@@ -595,12 +775,16 @@ mixin TextButton--report
                             .TextButton-col1.u-tableCell
                                 .TextButton-label PDF
                             .TextButton-col2.TextButton-col2--report.u-tableCell
-                                .TextButton-text Hello
+                                .TextButton-text
+                                    if text
+                                        #{text}
+                                    else
+                                        |Placeholder
                             .TextButton-col3.u-tableCell
                                 .TextButton-arrow.icon-arrow
 
 
-mixin TextButton--report--noHeader
+mixin TextButton--report--noHeader(text)
     .TextButton-main
         .TextButton-content
             each val in [1,2,3]
@@ -609,11 +793,9 @@ mixin TextButton--report--noHeader
                         .TextButton-col1.u-tableCell
                             .TextButton-label PDF
                         .TextButton-col2.TextButton-col2--report.u-tableCell
-                            .TextButton-text Hello
+                            .TextButton-text Placeholder
                         .TextButton-col3.u-tableCell
                             .TextButton-arrow.icon-arrow
-
-
 
 
 mixin TextButton--files(...items)
@@ -625,7 +807,7 @@ mixin TextButton--files(...items)
                             .TextButton-col1.u-tableCell
                                 .TextButton-label PDF
                             .TextButton-col2.TextButton-col2--report.u-tableCell
-                                .TextButton-text.TextButton-text--files Hello
+                                .TextButton-text.TextButton-text--files
                             .TextButton-col3.u-tableCell
                                 .TextButton-arrow.icon-arrow
 
@@ -638,11 +820,10 @@ mixin TextButton--files--noLink(...items)
                             .TextButton-col1.u-tableCell
                                 .TextButton-label PDF
                             .TextButton-col2.TextButton-col2--report.u-tableCell
-                                .TextButton-text.TextButton-text--files Hello
+                                .TextButton-text.TextButton-text--files Placeholder
 
 
-
-mixin TextButton--files--noLabel
+mixin TextButton--files--noLabel(text)
     .TextButton-main
         .TextButton-content
                 each val in [1,2,3,4]
@@ -650,29 +831,37 @@ mixin TextButton--files--noLabel
                         .TextButton-item.TextButton-item--list.u-table
 
                             .TextButton-col2.TextButton-col2--ButtonList.u-tableCell
-                                .TextButton-text Hello
+                                .TextButton-text Placeholder
                             .TextButton-col3.u-tableCell
                                 .TextButton-arrow.icon-arrow
 
 
 
-
-
-mixin TextButton--heading--signedOut
+mixin TextButton--heading--signedOut(heading, text, link)
+    if link==null
+        - var link = '#'
     .TextButton-main
         .TextButton-content
-                .TextButton-heading.u-table Heading
-                a(href="#").u-noUnderline
+                .TextButton-heading.u-table
+                if heading
+                    #{heading}
+                else
+                    Placeholder 1
+                Heading
+                a(href="#{link}").u-noUnderline
                     .TextButton-item.u-table
                         .TextButton-col2.u-tableCell
                             .TextButton-text
                                 span.TextButton-textHighlight Sign in
                                 span.TextButton-textSpan or
                                 span.TextButton-textHighlight Register
-                                span.TextButton-textSpan for a free Metering.com
+                                span.TextButton-textSpan
+                                    if heading
+                                        #{heading}
+                                    else
+                                        Placeholder 2
                         .TextButton-col3.u-tableCell
                             .TextButton-arrow.icon-arrow
-
 
 
 mixin TextButton--tender
@@ -688,6 +877,7 @@ mixin TextButton--tender
                                 .TextButton-text
                                     span.TextButton-textHighlight Location:
                                     span.TextButton-textSpan= val
+
 
 mixin TextButton--otherTenders
     .TextButton-main
@@ -707,13 +897,6 @@ mixin TextButton--otherTenders
                                 .TextButton-arrow.icon-arrow
 
 
-
-
-
-
-
-
-
 mixin MagazineMockup
     .MagazineMockup-main
         .MagazineMockup-centre
@@ -721,11 +904,3 @@ mixin MagazineMockup
                     img.MagazineMockup-background(src='http://dev.gapdesign.co.za/img/magazine-bg.png')
                     .MagazineMockup-imageContainer
                         img(src="http://lorempixel.com/210/295").MagazineMockup-image
-
-
-
-
-
-
-
-

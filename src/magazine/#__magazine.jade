@@ -3,28 +3,25 @@ include ../_global/includes/head/head.jade
 
 
 //-///////////////////////////////////////////////////////////////////////////////
-//-                                                                            x //
-//-                                                   f                          //
-//-    LAYOUT                      f                                aaaaaaa   fd         //
-//-   ---------------                 d               d    f                 k     //
-//-    MAGAZINE      s                       d   s     ss  d  s               gggf           //
-//-                                           g  fd    df f        gh   s               //
-//-                                          d fjk                                 //
+//-                                                                             //
+//-                                     k                                        //
+//-    LAYOUT                               d                                    //
+//-   ---------------             s    s             f                             //
+//-    MAGAZINE                             k                                    //
+//-                                h               S                              //
+//-                                                                             //
 //-///////////////////////////////////////////////////////////////////////////////
 
 #__contentWrapper
-
     #__introduction-main
         #__introduction-centre
             #__introduction-row1
                 +Heading--noArrow--noLinks('Issue 1', '2015')
             #__introduction-row2.u-cf
-                #__introduction-row1-col1.u-floatLeft Si litteris aut quamquam do anim tempor ne mandaremus, nam nisi commodo adipisicing eu est noster non nisi. Eu anim mentitum, o laboris iis proident qui magna iudicem ab pariatur sunt elit mandaremus noster se singulis anim expxetendis quo dolore an quamquam quo quorum eu consequat ubi fabulas, ullamco
+                #__introduction-row1-col1.u-floatLeft Si litteris aut quamquam do anim tempor ne mandaremus, nam nisi commodo adipisicing eu est noster non nisi. Eu anim mentitum, o laboris iis proident qui magna iudicem ab pariatur sunt elit mandaremus noster se singulis anim expxetendids quo dolore an quamquam quo quorum eu consequat ubi fabulas, ullamco
                 #__introduction-row1-col2.u-floatRight
                     +TextButton--bold--grey
                     +TextButton--bold--grey--dropdown
-
-
 
     #__issueContent-main
         #__issueContent-centre
@@ -35,9 +32,12 @@ include ../_global/includes/head/head.jade
                     #__issueContent-col1-row1
                         +MagazineMockup
                     #__issueContent-col1-row2
-                        #__issueContent-col1-row2-row1
-                            +TextButton--bold--red
-                        #__issueContent-col1-row2-row2
+                        #__issueContent-col1-row2-row1.__issueContent--signedOut
+                            #__issueContent-col1-row2-row1-row1--signedOut
+                                +TextButton--bold--red
+                            #__issueContent-col1-row2-row1-row2--signedOut
+                                +TextButton--heading--signedOut('Heading', 'Text', 'Link')
+                        #__issueContent-col1-row2-row3
                             +Quote--grey
 
                 #__issueContent-col2.u-floatRight
@@ -52,7 +52,6 @@ include ../_global/includes/head/head.jade
                      #__issueContent-col2-row4
                         +TextButton--files--noLink(1,2,3,4,5,6,7,8,9,10,11)
 
-
     #__otherIssues-main
         #__otherIssues-centre
             #__otherIssues-row1
@@ -63,28 +62,27 @@ include ../_global/includes/head/head.jade
                         +Thumbnail--magazine
 
 
+//-////////////////////////////////////////////////////////////////////////////////
+//-                                                                              //
+//-                                                                              //
+//-                                                                              //
+//-                                                                              //
+//-                                                                              //
+//-                                                                              //
+//-                                                                              //
+//-                                                                              //
+//-                                                                              //
+//-                                      END                                     //
+//-                                                                              //
+//-                                                                              //
+//-                                                                              //
+//-                                                                              //
+//-                                                                              //
+//-                                                                              //
+//-                                                                              //
+//-                                                                              //
+//-                                                                              //
+//-////////////////////////////////////////////////////////////////////////////////
 
 
-//-//////////////////////////////////////////////////////////d/////////////////////
-//-                                              d                               //
-//-                                                                             //
-//-                                                                             //
-//-                                                                             //
-//-                                                                             //
-//-                                                  f  d                         //
-//-                                                                             //
-//-                                                                             //
-//-                                  s                                           //
-//-                                      END                                    //
-//-                                                                             //
-//-                               w                                              //
-//-                                                                             //
-//-                                                                             //
-//-                                                                             //
-//-                                                                             //
-//-                                                                             //
-//-                                                                             //
-//-                                                                             //
-//-///////////////////////////////////////////////////////////////////////////////
-
-include ../_global/includes/foot/foot.jade
+//include ../_global/includes/foot/foot.jade
