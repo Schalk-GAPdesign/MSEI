@@ -23,13 +23,15 @@
 #__introduction-row1-col2 {
     width: 32%
 }
+
 @include laptop {
     #__introduction-centre {
         width: 90%;
-        margin: 0 auto;
+
     }
 
 }
+
 @include tablet {
     #__introduction-row1-col1 {
         width: 100%;
@@ -83,7 +85,7 @@
 @include laptop {
     #__issueContent-centre {
         width: 90%;
-        margin: 0 auto;
+
     }
     #__issueContent-col1 {
         width: 30%;
@@ -131,10 +133,12 @@
 .__otherIssues-container {
     width: 200px;
     margin-right: 11px;
+    margin-bottom: 20px;
 }
 .__otherIssues-container:nth-last-child(1) {
     margin-right: 0;
 }
+
 @include laptop {
     #__otherIssues-centre {
         width: 622px;

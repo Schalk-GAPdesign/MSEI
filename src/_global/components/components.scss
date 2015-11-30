@@ -316,6 +316,7 @@
 }
 
 
+
 //-///////////////////////////////////////////////////////////////////////////////
 //-                                                                             //
 //-                                                                             //
@@ -455,6 +456,7 @@
     }
     .Thumbnail-overlay--magazine {
         position: static;
+
         .Thumbnail-label {
             display: block;
         }
@@ -682,6 +684,8 @@ a:nth-last-of-type(1) .TextButton-item {
         display: block;
         font-size: 20px;
     }
+    .TextButton-arrow {display: none;}
+    .TextButton-item {text-align: center;}
 }
 
 

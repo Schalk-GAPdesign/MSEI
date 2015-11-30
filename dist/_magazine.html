@@ -248,11 +248,11 @@
           <option class="O__mainNavList-item--mobile">Homepagess</option>
           <option value="http://www.google.coms" class="O__mainNavList-item--mobile">News</option>
           <option value="http://www.google.coms" class="O__mainNavList-item--mobile">Features</option>
-          <option value="http://www.google.coms" class="O__mainNavList-item--mobile">Magazine</option>
+          <option disabled="disabled" selected="selected" value="http://www.google.coms" class="O__mainNavList-item--mobile">Magazine</option>
           <option value="http://www.google.coms" class="O__mainNavList-item--mobile">Reports</option>
           <option value="http://www.google.coms" class="O__mainNavList-item--mobile">Tenders</option>
           <option value="http://www.google.coms" class="O__mainNavList-item--mobile">Multimedia</option>
-          <option disabled="disabled" selected="selected" value="http://www.google.coms" class="O__mainNavList-item--mobile">Event</option>
+          <option value="http://www.google.coms" class="O__mainNavList-item--mobile">Event</option>
           <option value="http://www.google.coms" class="O__mainNavList-item--mobile">Partners</option>
         </select>
       </div>
@@ -277,7 +277,7 @@
               </div></a>
           </div>
           <div class="O__mainNavList-item O__mainNavList-item--magazine u-floatLeft"><a href="#">
-              <div class="M__mainNavButton-main">
+              <div class="M__mainNavButton-main is-activated">
                 <div class="M__mainNavButton-container">
                   <div class="M__mainNavButton-centre u-cf">
                     <div class="M__mainNavButton-text u-floatLeft">Magazine</div>
@@ -314,7 +314,7 @@
               </div></a>
           </div>
           <div class="O__mainNavList-item u-floatLeft"><a href="#">
-              <div class="M__mainNavButton-main is-activated">
+              <div class="M__mainNavButton-main">
                 <div class="M__mainNavButton-container">
                   <div class="M__mainNavButton-centre u-cf">
                     <div class="M__mainNavButton-text u-floatLeft">Event</div>
@@ -451,12 +451,13 @@
     <div id="__introduction-centre">
       <div id="__introduction-row1">
         <div class="Heading-main u-cf">
-          <div class="Heading-title u-floatLeft">Issue 1</div>
-          <div class="Heading-prompt--noLinks u-floatLeft">
-            <div class="Heading-promptContainer">
-              <div class="Heading-promptText">2015</div>
-            </div>
-          </div>
+          <div class="Heading-title u-floatLeft">Issue 1</div><a href="#" class="u-noUnderline">
+            <div class="Heading-prompt u-floatLeft">
+              <div class="Heading-promptContainer u-cf">
+                <div class="Heading-promptText u-floatLeft">2015</div>
+                
+              </div>
+            </div></a>
         </div>
       </div>
       <div id="__introduction-row2" class="u-cf">
@@ -466,7 +467,7 @@
             <div class="TextButton-content"><a href="#" class="u-noUnderline">
                 <div class="TextButton-item TextButton-item--grey u-table">
                   <div class="TextButton-col2 u-tableCell">
-                    <div class="TextButton-text TextButton-text--bold">Placeholder
+                    <div class="TextButton-text TextButton-text--bold">SUBSCRIBE TO PHYSICAL COPY
                     </div>
                   </div>
                   <div class="TextButton-col3 u-tableCell">
@@ -474,15 +475,17 @@
                   </div>
                 </div></a></div>
           </div>
-          <div class="TextButton-main TextButton-main--cursor">
+          <div class="TextButton-main">
             <div class="TextButton-content"><a href="#" class="u-noUnderline">
-                <select class="TextButton-item TextButton-item--grey TextButton-item--bold u-table">
-                  <option>Item</option>
-                  <option>Item</option>
-                  <option>Item</option>
-                  <option>Item</option>
-                  <option>Item</option>
-                </select></a></div>
+                <div class="TextButton-item TextButton-item--grey u-table">
+                  <div class="TextButton-col2 u-tableCell">
+                    <div class="TextButton-text TextButton-text--bold">VIEW MAGAZINE ARCHIVE
+                    </div>
+                  </div>
+                  <div class="TextButton-col3 u-tableCell">
+                    <div class="TextButton-arrow icon-arrow"></div>
+                  </div>
+                </div></a></div>
           </div>
         </div>
       </div>
@@ -513,31 +516,13 @@
                   <div class="TextButton-content"><a href="#" class="u-noUnderline">
                       <div class="TextButton-item TextButton-item--red u-table">
                         <div class="TextButton-col2 u-tableCell">
-                          <div class="TextButton-text TextButton-text--bold">Placeholder
+                          <div class="TextButton-text TextButton-text--bold">READ ONLINE
                           </div>
                         </div>
                         <div class="TextButton-col3 u-tableCell">
                           <div class="TextButton-arrow icon-arrowWhite"></div>
                         </div>
                       </div></a></div>
-                </div>
-              </div>
-              <div id="__issueContent-col1-row2-row1-row2--signedOut">
-                <div class="TextButton-main">
-                  <div class="TextButton-content">
-                    <div class="TextButton-heading u-table"></div>
-                    <Heading></Heading>
-                    <Heading></Heading><a href="Link" class="u-noUnderline">
-                      <div class="TextButton-item u-table">
-                        <div class="TextButton-col2 u-tableCell">
-                          <div class="TextButton-text"><span class="TextButton-textHighlight">Sign in</span><span class="TextButton-textSpan">or</span><span class="TextButton-textHighlight">Register</span><span class="TextButton-textSpan">
-                              <Heading></Heading></span></div>
-                        </div>
-                        <div class="TextButton-col3 u-tableCell">
-                          <div class="TextButton-arrow icon-arrow"></div>
-                        </div>
-                      </div></a>
-                  </div>
                 </div>
               </div>
             </div>
@@ -711,62 +696,6 @@
                     <div class="TextButton-text TextButton-text--files">Placeholder</div>
                   </div>
                 </div>
-                <div class="TextButton-item TextButton-item--list TextButton-item--noHover u-table">
-                  <div class="TextButton-col1 u-tableCell">
-                    <div class="TextButton-label">PDF</div>
-                  </div>
-                  <div class="TextButton-col2 TextButton-col2--report u-tableCell">
-                    <div class="TextButton-text TextButton-text--files">Placeholder</div>
-                  </div>
-                </div>
-                <div class="TextButton-item TextButton-item--list TextButton-item--noHover u-table">
-                  <div class="TextButton-col1 u-tableCell">
-                    <div class="TextButton-label">PDF</div>
-                  </div>
-                  <div class="TextButton-col2 TextButton-col2--report u-tableCell">
-                    <div class="TextButton-text TextButton-text--files">Placeholder</div>
-                  </div>
-                </div>
-                <div class="TextButton-item TextButton-item--list TextButton-item--noHover u-table">
-                  <div class="TextButton-col1 u-tableCell">
-                    <div class="TextButton-label">PDF</div>
-                  </div>
-                  <div class="TextButton-col2 TextButton-col2--report u-tableCell">
-                    <div class="TextButton-text TextButton-text--files">Placeholder</div>
-                  </div>
-                </div>
-                <div class="TextButton-item TextButton-item--list TextButton-item--noHover u-table">
-                  <div class="TextButton-col1 u-tableCell">
-                    <div class="TextButton-label">PDF</div>
-                  </div>
-                  <div class="TextButton-col2 TextButton-col2--report u-tableCell">
-                    <div class="TextButton-text TextButton-text--files">Placeholder</div>
-                  </div>
-                </div>
-                <div class="TextButton-item TextButton-item--list TextButton-item--noHover u-table">
-                  <div class="TextButton-col1 u-tableCell">
-                    <div class="TextButton-label">PDF</div>
-                  </div>
-                  <div class="TextButton-col2 TextButton-col2--report u-tableCell">
-                    <div class="TextButton-text TextButton-text--files">Placeholder</div>
-                  </div>
-                </div>
-                <div class="TextButton-item TextButton-item--list TextButton-item--noHover u-table">
-                  <div class="TextButton-col1 u-tableCell">
-                    <div class="TextButton-label">PDF</div>
-                  </div>
-                  <div class="TextButton-col2 TextButton-col2--report u-tableCell">
-                    <div class="TextButton-text TextButton-text--files">Placeholder</div>
-                  </div>
-                </div>
-                <div class="TextButton-item TextButton-item--list TextButton-item--noHover u-table">
-                  <div class="TextButton-col1 u-tableCell">
-                    <div class="TextButton-label">PDF</div>
-                  </div>
-                  <div class="TextButton-col2 TextButton-col2--report u-tableCell">
-                    <div class="TextButton-text TextButton-text--files">Placeholder</div>
-                  </div>
-                </div>
               </div>
             </div>
           </div>
@@ -853,4 +782,224 @@
   </div>
 </div>
 
-<!--include ../_global/includes/foot/foot.jade-->
+<div id="__foot-main">
+  <div id="__footTopBar-main">
+    <div id="__footTopBar-centre" class="u-cf">
+      <div id="__footTopBar-col1" class="u-floatLeft"><a href="#" class="u-noUnderline">
+          <div class="A__textMSEI-main A__textMSEI-main--footer">Metering & Smart Energy International</div></a>
+      </div>
+      <div id="__footTopBar-col2" class="u-floatRight">
+        <div class="O__socialLinkList--head-main u-cf">
+          <div class="O__socialLinkList-item u-floatLeft"><a href="#" class="u-noUnderline">
+              <div class="M__socialLinkButton-main">
+                <div class="M__socialLinkButton-circle">
+                  <div class="M__socialLinkButton-container">
+                    <div class="M__socialLinkButton-icon icon-facebook"></div>
+                  </div>
+                </div>
+              </div></a>
+          </div>
+          <div class="O__socialLinkList-item u-floatLeft"><a href="#" class="u-noUnderline">
+              <div class="M__socialLinkButton-main">
+                <div class="M__socialLinkButton-circle">
+                  <div class="M__socialLinkButton-container">
+                    <div class="M__socialLinkButton-icon icon-google"></div>
+                  </div>
+                </div>
+              </div></a>
+          </div>
+          <div class="O__socialLinkList-item u-floatLeft"><a href="#" class="u-noUnderline">
+              <div class="M__socialLinkButton-main">
+                <div class="M__socialLinkButton-circle">
+                  <div class="M__socialLinkButton-container">
+                    <div class="M__socialLinkButton-icon icon-linkedin"></div>
+                  </div>
+                </div>
+              </div></a>
+          </div>
+          <div class="O__socialLinkList-item u-floatLeft"><a href="#" class="u-noUnderline">
+              <div class="M__socialLinkButton-main">
+                <div class="M__socialLinkButton-circle">
+                  <div class="M__socialLinkButton-container">
+                    <div class="M__socialLinkButton-icon icon-rss"></div>
+                  </div>
+                </div>
+              </div></a>
+          </div>
+          <div class="O__socialLinkList-item u-floatLeft"><a href="#" class="u-noUnderline">
+              <div class="M__socialLinkButton-main">
+                <div class="M__socialLinkButton-circle">
+                  <div class="M__socialLinkButton-container">
+                    <div class="M__socialLinkButton-icon icon-twitter"></div>
+                  </div>
+                </div>
+              </div></a>
+          </div>
+          <div class="O__socialLinkList-item u-floatLeft"><a href="#" class="u-noUnderline">
+              <div class="M__socialLinkButton-main">
+                <div class="M__socialLinkButton-circle">
+                  <div class="M__socialLinkButton-container">
+                    <div class="M__socialLinkButton-icon icon-youtube"></div>
+                  </div>
+                </div>
+              </div></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="__footContent-main"></div>
+  <div id="__footContent-main">
+    <div id="__footContent-centre">
+      <div class="O__footColumnList-main u-cf">
+        <div class="O__footColumnList-item u-floatLeft">
+          <div class="M__footColumn-main"><a href="#" class="u-noUnderline">
+              <div class="M__footColumn-heading">News</div></a><a href="#" class="u-noUnderline">
+              <div class="M__footColumn-link">Europe and UK</div></a><a href="#" class="u-noUnderline">
+              <div class="M__footColumn-link">North America</div></a><a href="#" class="u-noUnderline">
+              <div class="M__footColumn-link">Asia</div></a><a href="#" class="u-noUnderline">
+              <div class="M__footColumn-link">Afirca and Middle East</div></a><a href="#" class="u-noUnderline">
+              <div class="M__footColumn-link">Australia and New Zealand</div></a><a href="#" class="u-noUnderline">
+              <div class="M__footColumn-link">Central and Latin America</div></a>
+          </div>
+        </div>
+        <div class="O__footColumnList-item u-floatLeft">
+          <div class="M__footColumn-main"><a href="#" class="u-noUnderline">
+              <div class="M__footColumn-heading">Features</div></a><a href="#" class="u-noUnderline">
+              <div class="M__footColumn-link">Industry Insights</div></a><a href="#" class="u-noUnderline">
+              <div class="M__footColumn-link">How-to Guides</div></a><a href="#" class="u-noUnderline">
+              <div class="M__footColumn-link">Engerati's Week in Smart Energy</div></a>
+          </div>
+        </div>
+        <div class="O__footColumnList-item u-floatLeft">
+          <div class="M__footColumn-main"><a href="#" class="u-noUnderline">
+              <div class="M__footColumn-heading">Magazines</div></a><a href="#" class="u-noUnderline">
+              <div class="M__footColumn-link">Latest Issue</div></a><a href="#" class="u-noUnderline">
+              <div class="M__footColumn-link">Back Issue</div></a>
+          </div>
+        </div>
+        <div class="O__footColumnList-item u-floatLeft">
+          <div class="M__footColumn-main"><a href="#" class="u-noUnderline">
+              <div class="M__footColumn-heading">Reports</div></a><a href="#" class="u-noUnderline">
+              <div class="M__footColumn-link">Free White Paper</div></a><a href="#" class="u-noUnderline">
+              <div class="M__footColumn-link">Industry Reports</div></a><a href="#" class="u-noUnderline">
+              <div class="M__footColumn-link">Special Reports</div></a>
+          </div>
+        </div>
+        <div class="O__footColumnList-item u-floatLeft">
+          <div class="M__footColumn-main"><a href="#" class="u-noUnderline">
+              <div class="M__footColumn-heading">Tenders</div></a><a href="#" class="u-noUnderline">
+              <div class="M__footColumn-link">Free Tenders</div></a><a href="#" class="u-noUnderline">
+              <div class="M__footColumn-link">Tender Library</div></a>
+          </div>
+        </div>
+        <div class="O__footColumnList-item u-floatLeft">
+          <div class="M__footColumn-main"><a href="#" class="u-noUnderline">
+              <div class="M__footColumn-heading">Multimedia</div></a><a href="#" class="u-noUnderline">
+              <div class="M__footColumn-link">Video</div></a><a href="#" class="u-noUnderline">
+              <div class="M__footColumn-link">Audio</div></a><a href="#" class="u-noUnderline">
+              <div class="M__footColumn-link">Webinar Archive</div></a>
+          </div>
+        </div>
+        <div class="O__footColumnList-item u-floatLeft">
+          <div class="M__footColumn-main"><a href="#" class="u-noUnderline">
+              <div class="M__footColumn-heading">Events</div></a><a href="#" class="u-noUnderline">
+              <div class="M__footColumn-link">MSEI Events</div></a><a href="#" class="u-noUnderline">
+              <div class="M__footColumn-link">Partner Events</div></a><a href="#" class="u-noUnderline">
+              <div class="M__footColumn-link">Training Academy</div></a>
+          </div>
+        </div>
+        <div class="O__footColumnList-item u-floatLeft">
+          <div class="M__footColumn-main"><a href="#" class="u-noUnderline">
+              <div class="M__footColumn-heading">Partners</div></a><a href="#" class="u-noUnderline">
+              <div class="M__footColumn-link">View Partners</div></a><a href="#" class="u-noUnderline">
+              <div class="M__footColumn-link">Become a Partner</div></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="__footBottomBar-main">
+    <div id="__footBottomBar-row1">
+      <div class="A__disclaimerText-main">
+        <div class="A__disclaimerText-row u-cf">
+          <div class="A__disclaimerText-line u-floatLeft">All content copyright</div>
+          <!-- insert PHP to make date generated dynamically-->
+          <div class="A__disclaimerText-line u-floatLeft">1997—2015 Spintelligent (PTY) Ltd,</div>
+          <div class="A__disclaimerText-line u-floatLeft">unless specified otherwise.</div>
+        </div><a href="#" class="u-noUnderline">
+          <div class="A__disclaimerText-row u-cf">
+            <div class="A__disclaimerText-line u-floatLeft">Website designed and developed by</div>
+            <div class="A__disclaimerText-line u-floatLeft">by Gap Design Cape Town</div>
+          </div></a><a href="#" class="u-noUnderline">
+          <div class="A__disclaimerText-row u-cf">
+            <div class="A__disclaimerText-line u-floatLeft">Website hosted and maintained by</div>
+            <div class="A__disclaimerText-line u-floatLeft">Web2Web</div>
+          </div></a>
+      </div>
+    </div>
+    <div id="__foot-BottomBar-row2">
+      <div class="O__disclaimerLinksList-main">
+        <div class="O__disclaimerLinksList-item u-floatLeft">
+          <div class="M__disclaimerLink-main u-cf"><a href="#" class="u-noUnderline">
+              <div class="M__disclaimerLink-text u-floatLeft">Terms of Use</div></a>
+          </div>
+        </div>
+        <div class="O__disclaimerLinksList-item u-floatLeft">
+          <div class="M__disclaimerLink-main u-cf">
+            <div class="M__disclaimerLink-icon u-floatLeft">
+              <div class="M__disclaimerLink-dot icon-footerDot"></div>
+            </div><a href="#" class="u-noUnderline">
+              <div class="M__disclaimerLink-text u-floatLeft">Privacy Policy</div></a>
+          </div>
+        </div>
+        <div class="O__disclaimerLinksList-item u-floatLeft">
+          <div class="M__disclaimerLink-main u-cf">
+            <div class="M__disclaimerLink-icon u-floatLeft">
+              <div class="M__disclaimerLink-dot icon-footerDot"></div>
+            </div><a href="#" class="u-noUnderline">
+              <div class="M__disclaimerLink-text u-floatLeft">Sitemap</div></a>
+          </div>
+        </div>
+        <div class="O__disclaimerLinksList-item u-floatLeft">
+          <div class="M__disclaimerLink-main u-cf">
+            <div class="M__disclaimerLink-icon u-floatLeft">
+              <div class="M__disclaimerLink-dot icon-footerDot"></div>
+            </div><a href="#" class="u-noUnderline">
+              <div class="M__disclaimerLink-text u-floatLeft">About Us</div></a>
+          </div>
+        </div>
+        <div class="O__disclaimerLinksList-item u-floatLeft">
+          <div class="M__disclaimerLink-main u-cf">
+            <div class="M__disclaimerLink-icon u-floatLeft">
+              <div class="M__disclaimerLink-dot M__disclaimerLink-dot--tabletHide icon-footerDot"></div>
+            </div><a href="#" class="u-noUnderline">
+              <div class="M__disclaimerLink-text u-floatLeft">Advisory Board</div></a>
+          </div>
+        </div>
+        <div class="O__disclaimerLinksList-item u-floatLeft">
+          <div class="M__disclaimerLink-main u-cf">
+            <div class="M__disclaimerLink-icon u-floatLeft">
+              <div class="M__disclaimerLink-dot icon-footerDot"></div>
+            </div><a href="#" class="u-noUnderline">
+              <div class="M__disclaimerLink-text u-floatLeft">Association Partners</div></a>
+          </div>
+        </div>
+        <div class="O__disclaimerLinksList-item u-floatLeft">
+          <div class="M__disclaimerLink-main u-cf">
+            <div class="M__disclaimerLink-icon u-floatLeft">
+              <div class="M__disclaimerLink-dot icon-footerDot"></div>
+            </div><a href="#" class="u-noUnderline">
+              <div class="M__disclaimerLink-text u-floatLeft">Contact</div></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<link rel="stylesheet prefetch" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.css"/>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.pack.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.12/jquery.mousewheel.min.js"></script>
+<script src="js/scripts.js"></script></body>
+</html>

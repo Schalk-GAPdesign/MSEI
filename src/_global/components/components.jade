@@ -257,13 +257,16 @@ mixin Heading(text1, text2)
 
 
 mixin Heading--noArrow--noLinks(text1, text2)
+
     .Heading-main.u-cf
         if text1
             .Heading-title.u-floatLeft= text1
         if text2
-                .Heading-prompt--noLinks.u-floatLeft
-                    .Heading-promptContainer
-                        .Heading-promptText= text2
+            a(href="#").u-noUnderline
+                .Heading-prompt.u-floatLeft
+                    .Heading-promptContainer.u-cf
+                        .Heading-promptText.u-floatLeft= text2
+                        //-.Heading-arrow.icon-arrow.u-floatRight
 
 
 mixin Heading--noArrow--noLinks--noBar(text1, text2)
@@ -643,7 +646,7 @@ mixin TextButton--bold--webinar(text)
                     .TextButton-col2.u-tableCell
                         .TextButton-text.TextButton-text--bold
                             if text
-                                #{text}
+                                |#{text}
                             else
                                 |Placeholder
                     .TextButton-col3.u-tableCell
@@ -658,7 +661,7 @@ mixin TextButton(text)
                     .TextButton-col2.u-tableCell
                         .TextButton-text
                             if text
-                                #{text}
+                                |#{text}
                             else
                                 |Placeholder
                     .TextButton-col3.u-tableCell
@@ -674,7 +677,7 @@ mixin TextButton--bold(text)
                         .TextButton-col2.u-tableCell
                             .TextButton-text.TextButton-text--bold
                             if text
-                                #{text}
+                                |#{text}
                             else
                                 |Placeholder
                         .TextButton-col3.u-tableCell
@@ -689,7 +692,7 @@ mixin TextButton--bold--grey(text)
                     .TextButton-col2.u-tableCell
                         .TextButton-text.TextButton-text--bold
                             if text
-                                #{text}
+                                |#{text}
                             else
                                 |Placeholder
                     .TextButton-col3.u-tableCell
@@ -716,7 +719,7 @@ mixin TextButton--bold--red(text)
                     .TextButton-col2.u-tableCell
                         .TextButton-text.TextButton-text--bold
                             if text
-                                #{text}
+                                |#{text}
                             else
                                 |Placeholder
                     .TextButton-col3.u-tableCell
@@ -731,7 +734,7 @@ mixin TextButton--bold--blue(text)
                     .TextButton-col2.u-tableCell
                         .TextButton-text.TextButton-text--bold
                             if text
-                                #{text}
+                                |#{text}
                             else
                                 |Placeholder
                     .TextButton-col3.u-tableCell
@@ -746,7 +749,7 @@ mixin TextButton--blue(text)
                     .TextButton-col2.u-tableCell
                         .TextButton-text
                             if text
-                                #{text}
+                                |#{text}
                             else
                                 |Placeholder
                     .TextButton-col3.u-tableCell
@@ -776,10 +779,7 @@ mixin TextButton--report(text)
                                 .TextButton-label PDF
                             .TextButton-col2.TextButton-col2--report.u-tableCell
                                 .TextButton-text
-                                    if text
-                                        #{text}
-                                    else
-                                        |Placeholder
+                                    |Placeholder
                             .TextButton-col3.u-tableCell
                                 .TextButton-arrow.icon-arrow
 
@@ -798,16 +798,16 @@ mixin TextButton--report--noHeader(text)
                             .TextButton-arrow.icon-arrow
 
 
-mixin TextButton--files(...items)
+mixin TextButton--files
     .TextButton-main
         .TextButton-content
-                each val in items
+                each val in [1,2,3,4]
                     a(href="#").u-noUnderline
                         .TextButton-item.TextButton-item--list.u-table
                             .TextButton-col1.u-tableCell
                                 .TextButton-label PDF
                             .TextButton-col2.TextButton-col2--report.u-tableCell
-                                .TextButton-text.TextButton-text--files
+                                .TextButton-text.TextButton-text--files Placeholder 1
                             .TextButton-col3.u-tableCell
                                 .TextButton-arrow.icon-arrow
 
@@ -815,7 +815,7 @@ mixin TextButton--files(...items)
 mixin TextButton--files--noLink(...items)
     .TextButton-main
         .TextButton-content
-                each val in items
+                each val in [1,2,3,4]
                         .TextButton-item.TextButton-item--list.TextButton-item--noHover.u-table
                             .TextButton-col1.u-tableCell
                                 .TextButton-label PDF
@@ -857,9 +857,9 @@ mixin TextButton--heading--signedOut(heading, text, link)
                                 span.TextButton-textHighlight Register
                                 span.TextButton-textSpan
                                     if heading
-                                        #{heading}
+                                        |#{heading}
                                     else
-                                        Placeholder 2
+                                        |Placeholder 2
                         .TextButton-col3.u-tableCell
                             .TextButton-arrow.icon-arrow
 

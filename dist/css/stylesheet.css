@@ -3099,6 +3099,12 @@ a:nth-last-of-type(1) .TextButton-item {
     display: block;
     font-size: 20px;
   }
+  .TextButton-arrow {
+    display: none;
+  }
+  .TextButton-item {
+    text-align: center;
+  }
 }
 
 .MagazineMockup-main {
@@ -3905,7 +3911,7 @@ a:nth-last-of-type(1) .TextButton-item {
 }
 
 @media (max-width: 1300px) {
-  #TenderHome {
+  #TenderHome-centre {
     width: 90%;
   }
 }
@@ -4297,7 +4303,6 @@ a:nth-last-of-type(1) .TextButton-item {
 @media (max-width: 1300px) {
   #__introduction-centre {
     width: 90%;
-    margin: 0 auto;
   }
 }
 
@@ -4355,7 +4360,6 @@ a:nth-last-of-type(1) .TextButton-item {
 @media (max-width: 1300px) {
   #__issueContent-centre {
     width: 90%;
-    margin: 0 auto;
   }
   #__issueContent-col1 {
     width: 30%;
@@ -4393,6 +4397,7 @@ a:nth-last-of-type(1) .TextButton-item {
 .__otherIssues-container {
   width: 200px;
   margin-right: 11px;
+  margin-bottom: 20px;
 }
 
 .__otherIssues-container:nth-last-child(1) {
