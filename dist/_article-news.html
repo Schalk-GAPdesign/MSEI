@@ -7,13 +7,6 @@
 
 
 
-<!--mixin A__mediaEmbed
-style
-
-.A__mediaEmbed-main
-
-
--->
 
 
 
@@ -23,6 +16,14 @@ style
 
 
 
+
+
+
+
+
+
+
+<!--/////-->
 
 
 
@@ -57,9 +58,10 @@ style
 
 
 
+<!--////////////////////////////////////////////-->
 
 
-<!--/////-->
+
 
 
 
@@ -83,6 +85,10 @@ style
 
 
 
+
+
+
+
 <!--//////////////////////-->
 
 
@@ -95,6 +101,14 @@ style
 
 
 <!--////-->
+
+
+
+
+
+
+
+
 
 <!doctype html>
 <html>
@@ -220,9 +234,7 @@ style
       </div>
       <div id="__menuContent-col1" class="u-floatLeft"><a href="#">
           <div class="A__logo-main">
-            <picture>
-              <!--source.A__logo-image(srcset="img/logo-compact.png" media="(max-width: #{tablet}em) and (min-width: #{mobile}em)")--><img src="img/logo.png" class="A__logo-image"/>
-            </picture>
+            <picture><img src="img/logo.png" class="A__logo-image"/></picture>
           </div></a>
       </div>
       <div id="__menuContent-col2" class="u-floatRight"><a href="#">
@@ -237,20 +249,20 @@ style
       <div id="__mainNav-col0" class="u-floatLeft">
         <select onChange="window.location.href=this.value" class="O__mainNavList-main--mobile">
           <option class="O__mainNavList-item--mobile">Homepagess</option>
-          <option value="http://www.google.coms" class="O__mainNavList-item--mobile">News</option>
+          <option disabled="disabled" selected="selected" value="http://www.google.coms" class="O__mainNavList-item--mobile">News</option>
           <option value="http://www.google.coms" class="O__mainNavList-item--mobile">Features</option>
           <option value="http://www.google.coms" class="O__mainNavList-item--mobile">Magazine</option>
           <option value="http://www.google.coms" class="O__mainNavList-item--mobile">Reports</option>
           <option value="http://www.google.coms" class="O__mainNavList-item--mobile">Tenders</option>
           <option value="http://www.google.coms" class="O__mainNavList-item--mobile">Multimedia</option>
-          <option disabled="disabled" selected="selected" value="http://www.google.coms" class="O__mainNavList-item--mobile">Event</option>
+          <option value="http://www.google.coms" class="O__mainNavList-item--mobile">Event</option>
           <option value="http://www.google.coms" class="O__mainNavList-item--mobile">Partners</option>
         </select>
       </div>
       <div id="__mainNav-col1" class="u-floatLeft">
         <div class="O__mainNavList-main u-cf">
           <div class="O__mainNavList-item u-floatLeft"><a href="#">
-              <div class="M__mainNavButton-main">
+              <div class="M__mainNavButton-main is-activated">
                 <div class="M__mainNavButton-container">
                   <div class="M__mainNavButton-centre u-cf">
                     <div class="M__mainNavButton-text u-floatLeft">News</div>
@@ -305,7 +317,7 @@ style
               </div></a>
           </div>
           <div class="O__mainNavList-item u-floatLeft"><a href="#">
-              <div class="M__mainNavButton-main is-activated">
+              <div class="M__mainNavButton-main">
                 <div class="M__mainNavButton-container">
                   <div class="M__mainNavButton-centre u-cf">
                     <div class="M__mainNavButton-text u-floatLeft">Event</div>
@@ -420,39 +432,266 @@ style
       <div class="O__secondaryNavList-main u-cf">
         <div class="O__secondaryNavList-item u-floatLeft"><a href="#" class="u-noUnderline">
             <div class="M__secondaryNavButton-main">
-              <div class="M__secondaryNavButton-container u-borderLeft">MSEI Event</div>
+              <div class="M__secondaryNavButton-container u-borderLeft">Smart Meters</div>
             </div></a>
         </div>
         <div class="O__secondaryNavList-item u-floatLeft"><a href="#" class="u-noUnderline">
             <div class="M__secondaryNavButton-main">
-              <div class="M__secondaryNavButton-container">Partner Event</div>
+              <div class="M__secondaryNavButton-container">Smart Grid</div>
             </div></a>
         </div>
         <div class="O__secondaryNavList-item u-floatLeft"><a href="#" class="u-noUnderline">
             <div class="M__secondaryNavButton-main">
-              <div class="M__secondaryNavButton-container">Training Academy</div>
+              <div class="M__secondaryNavButton-container">Smart Energy</div>
+            </div></a>
+        </div>
+        <div class="O__secondaryNavList-item u-floatLeft"><a href="#" class="u-noUnderline">
+            <div class="M__secondaryNavButton-main">
+              <div class="M__secondaryNavButton-container">M2M</div>
+            </div></a>
+        </div>
+        <div class="O__secondaryNavList-item u-floatLeft"><a href="#" class="u-noUnderline">
+            <div class="M__secondaryNavButton-main">
+              <div class="M__secondaryNavButton-container">Data &amp; Analytics</div>
+            </div></a>
+        </div>
+        <div class="O__secondaryNavList-item u-floatLeft"><a href="#" class="u-noUnderline">
+            <div class="M__secondaryNavButton-main">
+              <div class="M__secondaryNavButton-container">IOT</div>
             </div></a>
         </div>
       </div>
     </div>
   </div>
 </div>
-<div id="__staticPages-main">
-  <div id="__staticPages-centre">
-    <div class="M__heading-main u-cf">
-      <div class="M__heading-title u-floatLeft">About Us</div>
+<div id="__articleHeader-main">
+  <div id="__articleHeader-centre" class="u-cf __none">
+    <div id="__articleHeader-col1" class="u-floatLeft">
+      <div id="__articleHeader-col1-row1">
+        <div class="Heading-main u-cf">
+          <div class="Heading-title u-floatLeft">News Story</div><a href="#" class="u-noUnderline">
+            <div class="Heading-prompt u-floatLeft">
+              <div class="Heading-promptContainer u-cf">
+                <div class="Heading-promptText u-floatLeft">Leave Comment</div>
+                <div class="Heading-arrow icon-arrow u-floatRight"></div>
+              </div>
+            </div></a>
+        </div>
+      </div>
+      <div id="__articleHeader-col1-row2">
+        <div class="M__featuredImage-main u-relative">
+          <div class="M__featuredImage-container u-relative">
+            <picture>
+              <source srcset="http://lorempixel.com/640/300" media="(max-width: 701px)" class="M__featuredImage-image u-absolute"/><img src="http://lorempixel.com/860/590" class="M__featuredImage-image u-absolute"/>
+            </picture>
+          </div>
+        </div>
+      </div>
     </div>
-    <h1>Te varias laborum possumus ex minim iis do dolor aliquip. Pariatur nisi duis ab quis. Ea laborum comprehenderit. Eram ingeniis do vidisse ut dolor quibusdam adipisicing, est ubi culpa quid quid, aute nam non labore incididunt te singulis varias singulis iis quo labore hic aliqua id anim nesci</h1>
-    <h2>Te varias laborum possumus ex minim iis do dolor aliquip. Pariatur nisi duis ab quis. Ea laborum comprehenderit. Eram ingeniis do vidisse ut dolor quibusdam adipisicing, est ubi culpa quid quid, aute nam non labore incididunt te singulis varias singulis iis quo labore hic aliqua id anim nesci</h2>
-    <p>Te varias laborum possumus ex minim iis do dolor aliquip. Pariatur nisi duis ab quis. Ea laborum comprehenderit. Eram ingeniis do vidisse ut dolor quibusdam adipisicing, est ubi culpa quid quid, aute nam non labore incididunt te singulis varias singulis iis quo labore hic aliqua id anim nesci</p>
-    <div class="O__horizontalSection-main">
-      <div class="O__horizontalSection-item">xasdasd</div>
-      <div class="O__horizontalSection-item">xasdasd</div>
-      <div class="O__horizontalSection-item">xasdasd</div>
-      <div class="O__horizontalSection-item">xasdasd</div>
+    <div id="__articleHeader-col2" class="u-floatRight"><a href="#" class="u-noUnderline">
+        <div class="Advert-main">
+          <div class="Advert-title">Advertisement</div>
+          <picture>
+            <source srcset="http://lorempixel.com/300/600" media="(min-width: 1001px)" class="Advert-image"/>
+            <source srcset="http://lorempixel.com/120/600" media="(min-width: 701px) and (max-width: 1001px)" class="Advert-image"/><img src="http://lorempixel.com/270/80" class="Advert-image"/>
+          </picture>
+        </div></a>
     </div>
   </div>
 </div>
+
+<div id="__articleContent-main">
+  <div id="__articleContent-centre">
+    <div id="__articleContent-container" class="u-cf">
+      <div id="__articleContent-col2" class="u-floatRight">
+        <div id="__articleContent-col2-row1">
+          <div class="A__smallTitle-main">17 SEPTEMBER 2015</div>
+        </div>
+        <div id="__articleContent-col2-row2">
+          <h1>Post Title</h1>
+        </div>
+        <div id="__articleContent-col2-row3">
+          <h2>Post Sub-heading</h2>
+        </div>
+        <div id="__articleContent-col2-row3">
+          <p>Ofgem is proposing to observe services using its Social Obligations Reporting, a key part of the watchdog's work to protect consumer interests, Metering has learnt. As part of their licence conditions, energy suppliers are required to provide Ofgem with information on their performance in relation to their social obligations.</p>
+          <p>This includes information relevant to dealings with domestic customers about payment methods, levels of debt and disconnection rates. The energy regulator is also proposing that prepayment consumers are able to switch to credit mode when changing suppliers to avoid disconnection.</p></p>
+          <h3>Smart prepayment in UK</h3>
+          <p>On a related note, UK energy supplier EON in early May offered its 30,000 existing customers the chance to switch from prepaid meters to smart meters to reduce electricity costs.</p>
+          <p>E.ON's Smart Pay As You Go scheme will offer households with prepaid meters the same tariffs as post-paid households, which it claims makes bills GBP67 cheaper on average than its closest prepayment competitor, reported Metering.com.</p>
+          <div class="M__pullQuote-main u-floatRight"><a href="#" class="u-noUnderline">
+              <div class="M__pullQuote-quote u-cf">
+                <div class="M__pullQuote-text">"European regulators must recognise the electricity market value-chain paradigm is no fit for purpose"</div>
+                <div class="M__pullQuote-icon icon-articleShare u-floatLeft"></div>
+                <div class="M__pullQuote-retweet u-floatLeft">Retweet this Quote</div>
+              </div></a></div>
+          <p> E.ON customers will be able to top up using a mobile device app, online or over the phone, rather than paying cash at their local shop. On a related note, UK energy supplier EON in early May offered its 30,000 existing customers the chance to switch from prepaid meters to smart meters to reduce electricity costs.</p>
+          <p>E.ON's Smart Pay As You Go scheme will offer households with prepaid meters the same tariffs as post-paid households, which it claims makes bills GBP67 cheaper on average than its closest prepayment competitor, reported Metering.com.</p>
+          <div class="M__contentVideo-main"><style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='http://www.youtube.com/embed/QILiHiTD3uc' frameborder='0' allowfullscreen></iframe></div></div>
+          <p>The document states: "The trending analysis over the past twelve months shows that the pattern of line disturbances and outages are closely related, giving more proof that monitoring line disturbances as a precursor to outages should become an industry standard." And as found in previous reports, most events occur in the summer months then drop off dramatically in October, with a slight uptick in the winter during the months of November and December.</p>
+          <h3>Smart prepayment in UK</h3>
+          <p>The 3.0 version of the NIST smart grid standards released in September 2014 views smart grids as 'cyber-physical systems' - hybridized systems that combine computer-based communication, control, and command with physical equipment to yield improved performance, reliability, resiliency, and user and producer awareness.</p>
+          <div class="M__shortcodeBox-main">Dr Ebrahim Vaahedi, chair of the IEEE Smart Grid Publications Committee and senior director at Open Access Technology International, said the smart grid domains and sub-domains allow smart grid contributions and activities to be combined into specific areas for better understanding of the activities and their correlations. Mr Vaahedi said: “Introducing these IEEE Smart Grid Domains and Sub-domains provides a new and fresh way of looking at all things smart grid.&quot;</div>
+          <p>The document states: "The trending analysis over the past twelve months shows that the pattern of line disturbances and outages are closely related, giving more proof that monitoring line disturbances as a precursor to outages should become an industry standard." And as found in previous reports, most events occur in the summer months then drop off dramatically in October, with a slight uptick in the winter during the months of November and December. The data also shows a large spike in events of all types in March due to several ice storms that impacted a large section of North America.</p>
+        </div>
+      </div>
+      <div id="__articleContent-col1" class="u-floatLeft">
+        <div id="__articleContent-sticky">
+          <div id="__articleContent-col1-row1">
+            <div class="A__smallTitle-main A__smallTitle-main--socialShare">Share Article</div>
+          </div>
+          <div id="__articleContent-col1-row2">
+            <div class="O__socialShareList-main u-cf"><a href="#">
+                <div class="M__socialShareButton-main u-cf">
+                  <div class="M__socialShareButton-container u-cf">
+                    <div class="M__socialShareButton-icon u-floatLeft">
+                      <div class="M__socialShareList-icon icon-twitterShare"></div>
+                    </div>
+                    <div class="M__socialShareButton-text u-floatLeft">share</div>
+                  </div>
+                </div></a><a href="#">
+                <div class="M__socialShareButton-main u-cf">
+                  <div class="M__socialShareButton-container u-cf">
+                    <div class="M__socialShareButton-icon u-floatLeft">
+                      <div class="M__socialShareList-icon icon-linkedinShare"></div>
+                    </div>
+                    <div class="M__socialShareButton-text u-floatLeft">Share</div>
+                  </div>
+                </div></a><a href="#">
+                <div class="M__socialShareButton-main u-cf">
+                  <div class="M__socialShareButton-container u-cf">
+                    <div class="M__socialShareButton-icon u-floatLeft">
+                      <div class="M__socialShareList-icon icon-facebookShare"></div>
+                    </div>
+                    <div class="M__socialShareButton-text u-floatLeft">share</div>
+                  </div>
+                </div></a><a href="#">
+                <div class="M__socialShareButton-main u-cf">
+                  <div class="M__socialShareButton-container u-cf">
+                    <div class="M__socialShareButton-icon u-floatLeft">
+                      <div class="M__socialShareList-icon icon-googleShare"></div>
+                    </div>
+                    <div class="M__socialShareButton-text u-floatLeft">share</div>
+                  </div>
+                </div></a><a href="#">
+                <div class="M__socialShareButton-main u-cf">
+                  <div class="M__socialShareButton-container u-cf">
+                    <div class="M__socialShareButton-icon u-floatLeft">
+                      <div class="M__socialShareList-icon icon-emailShare"></div>
+                    </div>
+                    <div class="M__socialShareButton-text u-floatLeft">Email</div>
+                  </div>
+                </div></a><a href="#">
+                <div class="M__socialShareButton-main u-cf">
+                  <div class="M__socialShareButton-container u-cf">
+                    <div class="M__socialShareButton-icon u-floatLeft">
+                      <div class="M__socialShareList-icon icon-commentShare"></div>
+                    </div>
+                    <div class="M__socialShareButton-text u-floatLeft">share</div>
+                  </div>
+                </div></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="__articleFooter-main">
+  <div id="__articleFooter-centre" class="u-cf">
+    <div id="__articleFooter-col1" class="u-floatLeft">
+      <div id="__articleFooter-col1-row1">
+        <div class="Heading-main u-cf">
+          <div class="Heading-title u-floatLeft">Join the Discussion</div>
+        </div>
+      </div>
+      <div id="__articleFooter-col1-row2">HTML_comments</div>
+    </div>
+    <div id="__articleFooter-col2" class="u-floatRight">
+      <div id="__articleFooter-col2-row1">
+        <div class="Heading-main u-cf">
+          <div class="Heading-title u-floatLeft">Related Content</div>
+        </div>
+      </div>
+      <div id="__articleFooter-col2-row2">
+        <div class="u-col1"><a href="#">
+            <div class="Thumbnail-main">
+              <div class="Thumbnail-container u-relative">
+                <picture>
+                  <source srcset="http://lorempixel.com/640/336" media="(max-width: 701px)" class="Thumbnail-image u-absolute"/><img src="http://lorempixel.com/885/200" class="Thumbnail-image u-absolute"/>
+                </picture>
+                <div class="Thumbnail-overlay u-absolute">
+                  <div class="Thumbnail-label u-table">Label</div>
+                  <div class="Thumbnail-lens u-table">
+                    <div class="Thumbnail-row u-tableRow">
+                      <div class="Thumbnail-content u-tableCell">
+                        <div class="Thumbnail-title">Copenhagen builds carbon signaling waste-to-power plant</div>
+                        <div class="Thumbnail-date">
+                          <div class="Thumbnail-icon"></div>
+                          <div class="Thumbnail-text">11 SEPTEMBER 2015</div>
+                        </div>
+                        <div class="Thumbnail-prompt">Read More</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div></a>
+        </div>
+        <div class="u-col1"><a href="#">
+            <div class="Thumbnail-main">
+              <div class="Thumbnail-container u-relative">
+                <picture>
+                  <source srcset="http://lorempixel.com/640/336" media="(max-width: 701px)" class="Thumbnail-image u-absolute"/><img src="http://lorempixel.com/885/200" class="Thumbnail-image u-absolute"/>
+                </picture>
+                <div class="Thumbnail-overlay u-absolute">
+                  <div class="Thumbnail-label u-table">Label</div>
+                  <div class="Thumbnail-lens u-table">
+                    <div class="Thumbnail-row u-tableRow">
+                      <div class="Thumbnail-content u-tableCell">
+                        <div class="Thumbnail-title">Copenhagen builds carbon signaling waste-to-power plant</div>
+                        <div class="Thumbnail-date">
+                          <div class="Thumbnail-icon"></div>
+                          <div class="Thumbnail-text">11 SEPTEMBER 2015</div>
+                        </div>
+                        <div class="Thumbnail-prompt">Read More</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div></a>
+        </div>
+        <div class="u-col1"><a href="#">
+            <div class="Thumbnail-main">
+              <div class="Thumbnail-container u-relative">
+                <picture>
+                  <source srcset="http://lorempixel.com/640/336" media="(max-width: 701px)" class="Thumbnail-image u-absolute"/><img src="http://lorempixel.com/885/200" class="Thumbnail-image u-absolute"/>
+                </picture>
+                <div class="Thumbnail-overlay u-absolute">
+                  <div class="Thumbnail-label u-table">Label</div>
+                  <div class="Thumbnail-lens u-table">
+                    <div class="Thumbnail-row u-tableRow">
+                      <div class="Thumbnail-content u-tableCell">
+                        <div class="Thumbnail-title">Copenhagen builds carbon signaling waste-to-power plant</div>
+                        <div class="Thumbnail-date">
+                          <div class="Thumbnail-icon"></div>
+                          <div class="Thumbnail-text">11 SEPTEMBER 2015</div>
+                        </div>
+                        <div class="Thumbnail-prompt">Read More</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
 <div id="__foot-main">
   <div id="__footTopBar-main">
     <div id="__footTopBar-centre" class="u-cf">

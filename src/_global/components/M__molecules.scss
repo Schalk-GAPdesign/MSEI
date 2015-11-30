@@ -291,27 +291,27 @@
 //-///////////////////////////////////////////////////////////////////////////////
 
 
-.M__heading-main {
+.Heading-main {
     border-bottom: solid 8px black;
     font-family: "Roboto Condensed";
     font-weight: 700;
     text-transform: uppercase;
 }
-.M__heading-title {
+.Heading-title {
     background: #ed1b25;
     font-size: 26px;
     color: white;
     padding: 10px 20px 0 20px;
     height: 50px;
 }
-.M__heading-prompt--noLinks {
+.Heading-prompt--noLinks {
     background: #efefef;
     color: black;
     font-size: 16px;
     padding: 16px 20px 0 20px;
     height: 50px;
 }
-.M__heading-prompt {
+.Heading-prompt {
     background: #efefef;
     color: black;
     font-size: 16px;
@@ -325,50 +325,50 @@
         }
     }
 }
-.M__heading-arrow {
+.Heading-arrow {
     margin-top: 1px;
     margin-left: 12px;
 }
 @include tablet {
-    .M__heading-title {
+    .Heading-title {
         padding: 20px 15px 0 15px;
         height: 70px;
     }
-    .M__heading-prompt {
+    .Heading-prompt {
         padding: 28px 15px 0 15px;
         height: 70px;
     }
     @include mobile {
-        .M__heading-prompt {
+        .Heading-prompt {
             float: none;
         }
     }
-    .M__heading-arrow {
+    .Heading-arrow {
         margin-top: 2px;
     }
 }
 @include mobile {
-    .M__heading-title {
+    .Heading-title {
         float: none;
         height: 100%;
         padding-bottom: 20px;
         text-align: center;
     }
-    .M__heading-prompt--noLinks {
+    .Heading-prompt--noLinks {
         float: none;
         height: 100%;
         padding-bottom: 20px;
         text-align: center;
     }
-    .M__heading-main {
+    .Heading-main {
         width: 100%;
     }
-    .M__heading-promptContainer {
+    .Heading-promptContainer {
         display: table;
         margin: 0 auto;
     }
 }
-.M__heading-main--noBar {
+.Heading-main--noBar {
     border-bottom: 0px;
 }
 
@@ -520,6 +520,8 @@
         color: white
     }
 }
+.M__socialShareButton-icon {margin-left: 10px;}
+
 .M__socialShareButton-main {
     &:hover .M__socialShareButton-container {
         background: #b8b8b8;

@@ -1035,40 +1035,40 @@ mixin M__introParagraph(text1)
 //-///////////////////////////////////////////////////////////////////////////////
 
 
-mixin M__heading(text1, text2)
+mixin Heading(text1, text2)
 
-    .M__heading-main.u-cf
+    .Heading-main.u-cf
         if text1
-            .M__heading-title.u-floatLeft= text1
+            .Heading-title.u-floatLeft= text1
         if text2
             a(href="#").u-noUnderline
-                .M__heading-prompt.u-floatLeft
-                    // Het ekstra parent DIV ingesit: .M__heading-container
-                    .M__heading-promptContainer.u-cf
-                        .M__heading-promptText.u-floatLeft= text2
-                        .M__heading-arrow.icon-arrow.u-floatRight
+                .Heading-prompt.u-floatLeft
+                    // Het ekstra parent DIV ingesit: .Heading-container
+                    .Heading-promptContainer.u-cf
+                        .Heading-promptText.u-floatLeft= text2
+                        .Heading-arrow.icon-arrow.u-floatRight
 
 
-mixin M__heading--noArrow--noLinks(text1, text2)
-    .M__heading-main.u-cf
+mixin Heading--noArrow--noLinks(text1, text2)
+    .Heading-main.u-cf
         if text1
-            .M__heading-title.u-floatLeft= text1
+            .Heading-title.u-floatLeft= text1
         if text2
-                .M__heading-prompt--noLinks.u-floatLeft
-                    // Het ekstra parent DIV ingesit: .M__heading-container
-                    .M__heading-promptContainer
-                        .M__heading-promptText= text2
+                .Heading-prompt--noLinks.u-floatLeft
+                    // Het ekstra parent DIV ingesit: .Heading-container
+                    .Heading-promptContainer
+                        .Heading-promptText= text2
 
 
-mixin M__heading--noArrow--noLinks--noBar(text1, text2)
-    .M__heading-main.M__heading-main--noBar.u-cf
+mixin Heading--noArrow--noLinks--noBar(text1, text2)
+    .Heading-main.Heading-main--noBar.u-cf
         if text1
-            .M__heading-title.u-floatLeft= text1
+            .Heading-title.u-floatLeft= text1
         if text2
-                .M__heading-prompt--noLinks.u-floatLeft
-                    // Het ekstra parent DIV ingesit: .M__heading-container
-                    .M__heading-promptContainer
-                        .M__heading-promptText= text2
+                .Heading-prompt--noLinks.u-floatLeft
+                    // Het ekstra parent DIV ingesit: .Heading-container
+                    .Heading-promptContainer
+                        .Heading-promptText= text2
 
 
 
@@ -1100,7 +1100,7 @@ mixin M__featuredImage(url, label)
 //-                                                                             //
 //-                                                                             //
 //-    MOLECULE                                                                 //
-//-   ---------------                                                           //
+//-   ---------------                            d                               //
 //-    INSIDE ARTICLE SOCIAL SHARE BUTTON                                       //
 //-                                                                             //
 //-                                                                             //
@@ -1114,10 +1114,6 @@ mixin M__socialShareButton(icon, text, prepend, data, append)
                 .M__socialShareButton-icon.u-floatLeft
                     .M__socialShareList-icon(class="icon-#{icon}")
                 .M__socialShareButton-text.u-floatLeft= text
-
-
-
-                        .M__textPrompt-arrow.icon-arrow
 
 
 

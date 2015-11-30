@@ -110,10 +110,6 @@ li {
   padding-bottom: 20px;
 }
 
-.u-col3:nth-last-child(1) {
-  padding-bottom: 0px;
-}
-
 .u-col2 {
   width: 50%;
   padding-left: 0;
@@ -131,10 +127,6 @@ li {
   padding-right: 0;
 }
 
-.u-col2:nth-last-child(-n+2) {
-  padding-bottom: 0px;
-}
-
 .u-col3 {
   width: 33.33333%;
   padding-left: 5px;
@@ -150,10 +142,6 @@ li {
 .u-col3:nth-child(3n) {
   padding-left: 10px;
   padding-right: 0;
-}
-
-.u-col3:nth-last-child(-n+3) {
-  padding-bottom: 0px;
 }
 
 .u-col4 {
@@ -181,10 +169,6 @@ li {
   padding-right: 0;
 }
 
-.u-col4:nth-last-child(-n+4) {
-  padding-bottom: 0px;
-}
-
 .u-col5 {
   width: 20%;
   padding-bottom: 20px;
@@ -210,10 +194,6 @@ li {
 .u-col5:nth-child(5n) {
   padding-left: 20px;
   padding-right: 0;
-}
-
-.u-col5:nth-last-child(-n+5) {
-  padding-bottom: 0px;
 }
 
 @media (max-width: 700px) {
@@ -287,7 +267,7 @@ Icon classes can be used entirely standalone. They are named after their origina
   height: 16px;
 }
 
-.icon-arrowWhite, .M__heading-prompt:hover .icon-arrow, .Heading-prompt:hover .icon-arrow, .TextButton-item:hover .TextButton-col3 .TextButton-arrow {
+.icon-arrowWhite, .Heading-prompt:hover .icon-arrow, .TextButton-item:hover .TextButton-col3 .TextButton-arrow {
   background-image: url(../img/spritesheet.png);
   background-position: -218px 0px;
   width: 10px;
@@ -963,14 +943,14 @@ Icon classes can be used entirely standalone. They are named after their origina
   width: 100%;
 }
 
-.M__heading-main {
+.Heading-main {
   border-bottom: solid 8px black;
   font-family: "Roboto Condensed";
   font-weight: 700;
   text-transform: uppercase;
 }
 
-.M__heading-title {
+.Heading-title {
   background: #ed1b25;
   font-size: 26px;
   color: white;
@@ -978,7 +958,7 @@ Icon classes can be used entirely standalone. They are named after their origina
   height: 50px;
 }
 
-.M__heading-prompt--noLinks {
+.Heading-prompt--noLinks {
   background: #efefef;
   color: black;
   font-size: 16px;
@@ -986,7 +966,7 @@ Icon classes can be used entirely standalone. They are named after their origina
   height: 50px;
 }
 
-.M__heading-prompt {
+.Heading-prompt {
   background: #efefef;
   color: black;
   font-size: 16px;
@@ -994,62 +974,62 @@ Icon classes can be used entirely standalone. They are named after their origina
   height: 50px;
 }
 
-.M__heading-prompt:hover {
+.Heading-prompt:hover {
   background: #cdcdcd;
   color: white;
 }
 
-.M__heading-arrow {
+.Heading-arrow {
   margin-top: 1px;
   margin-left: 12px;
 }
 
 @media (max-width: 1000px) {
-  .M__heading-title {
+  .Heading-title {
     padding: 20px 15px 0 15px;
     height: 70px;
   }
-  .M__heading-prompt {
+  .Heading-prompt {
     padding: 28px 15px 0 15px;
     height: 70px;
   }
 }
 
 @media (max-width: 1000px) and (max-width: 700px) {
-  .M__heading-prompt {
+  .Heading-prompt {
     float: none;
   }
 }
 
 @media (max-width: 1000px) {
-  .M__heading-arrow {
+  .Heading-arrow {
     margin-top: 2px;
   }
 }
 
 @media (max-width: 700px) {
-  .M__heading-title {
+  .Heading-title {
     float: none;
     height: 100%;
     padding-bottom: 20px;
     text-align: center;
   }
-  .M__heading-prompt--noLinks {
+  .Heading-prompt--noLinks {
     float: none;
     height: 100%;
     padding-bottom: 20px;
     text-align: center;
   }
-  .M__heading-main {
+  .Heading-main {
     width: 100%;
   }
-  .M__heading-promptContainer {
+  .Heading-promptContainer {
     display: table;
     margin: 0 auto;
   }
 }
 
-.M__heading-main--noBar {
+.Heading-main--noBar {
   border-bottom: 0px;
 }
 
@@ -1171,6 +1151,10 @@ Icon classes can be used entirely standalone. They are named after their origina
 .M__socialShareButton-container:hover .M__socialShareButton-container {
   background: #b8b8b8;
   color: white;
+}
+
+.M__socialShareButton-icon {
+  margin-left: 10px;
 }
 
 .M__socialShareButton-main:hover .M__socialShareButton-container {
@@ -3072,6 +3056,11 @@ a:nth-last-of-type(1) .TextButton-item {
   cursor: pointer;
 }
 
+.TextButton-label--speaker {
+  width: 300px;
+  background: #aaa;
+}
+
 @media (max-width: 1000px) {
   .TextButton-item {
     padding-top: 30px;
@@ -3104,6 +3093,9 @@ a:nth-last-of-type(1) .TextButton-item {
   }
   .TextButton-item {
     text-align: center;
+  }
+  .TextButton-label--speaker {
+    width: 100%;
   }
 }
 
@@ -4001,6 +3993,22 @@ a:nth-last-of-type(1) .TextButton-item {
   }
 }
 
+#__otherTenders-main {
+  margin-top: 60px;
+}
+
+#__articleContent-typeAssets {
+  margin-bottom: 60px;
+}
+
+#__otherFiles-row2 {
+  background: white;
+}
+
+#__presentationFiles-row2 {
+  background: white;
+}
+
 #__articleHeader-centre {
   background: white;
   height: 500px;
@@ -4027,6 +4035,11 @@ a:nth-last-of-type(1) .TextButton-item {
   margin-top: 49px;
 }
 
+#__articleHeader-col2--magazine {
+  width: 370px;
+  margin-top: 49px;
+}
+
 #__articleHeader-main {
   height: auto;
 }
@@ -4036,6 +4049,9 @@ a:nth-last-of-type(1) .TextButton-item {
 }
 
 @media (max-width: 1300px) {
+  #__otherFiles-centre, #__presentationFiles-centre, #__articleFooterelatedContentAlt-center, #__pressRelease-centre {
+    width: 90% !important;
+  }
   #__articleHeader-col1 {
     padding-right: 20px;
     width: 62.5%;
@@ -4044,6 +4060,10 @@ a:nth-last-of-type(1) .TextButton-item {
     width: 90%;
   }
   #__articleHeader-col2 {
+    width: 37.5%;
+    margin-top: 50px;
+  }
+  #__articleHeader-col2--magazine {
     width: 37.5%;
     margin-top: 50px;
   }
@@ -4059,6 +4079,9 @@ a:nth-last-of-type(1) .TextButton-item {
 }
 
 @media (max-width: 1000px) {
+  #__articleHeader-col2--magazine {
+    width: 100%;
+  }
   #__articleContent-main {
     margin-top: 35px;
   }
@@ -4165,6 +4188,12 @@ a:nth-last-of-type(1) .TextButton-item {
   }
   #__articleContent-col1-row1 {
     margin: 120px auto 30px auto;
+  }
+}
+
+@media (max-width: 700px) {
+  #__otherTenders-main {
+    display: none;
   }
 }
 
@@ -4278,9 +4307,6 @@ a:nth-last-of-type(1) .TextButton-item {
   }
   #__articleFooter-col1 {
     width: 100%;
-  }
-  #__articleFooterelatedContentAlt-center {
-    background: green !important;
   }
 }
 

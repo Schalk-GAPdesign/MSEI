@@ -658,6 +658,7 @@ a:nth-last-of-type(1) .TextButton-item {
 .TextButton-main--cursor {
     cursor: pointer;
 }
+.TextButton-label--speaker {width: 300px; background: #aaa;}
 @include tablet {
     .TextButton-item {
         padding-top: 30px;
@@ -686,6 +687,7 @@ a:nth-last-of-type(1) .TextButton-item {
     }
     .TextButton-arrow {display: none;}
     .TextButton-item {text-align: center;}
+    .TextButton-label--speaker {width: 100%;}
 }
 
 

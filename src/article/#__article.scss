@@ -7,7 +7,13 @@
 //-                                                                             //
 //-                                                                             //
 //-///////////////////////////////////////////////////////////////////////////////
+#__otherTenders-main {margin-top: 60px;}
 
+#__articleContent-typeAssets {margin-bottom: 60px;}
+
+
+#__otherFiles-row2 {background: white;}
+#__presentationFiles-row2 {background: white;}
 
 #__articleHeader-centre {
     background: white;
@@ -30,13 +36,31 @@
     width: 370px;
     margin-top: 49px;
 }
+
+
+#__articleHeader-col2--magazine {
+    width: 370px;
+    margin-top: 49px;
+}
+
+
 #__articleHeader-main {
     height: auto;
 }
 .__articleHeader-centre--photoGallery {
     height: auto !important;
 }
+
+
 @include laptop {
+
+
+
+
+#__otherFiles-centre, #__presentationFiles-centre, #__articleFooterelatedContentAlt-center, #__pressRelease-centre {width: 90% !important;}
+
+
+
     #__articleHeader-col1 {
         padding-right: 20px;
         width: 62.5%;
@@ -45,6 +69,10 @@
         width: 90%;
     }
     #__articleHeader-col2 {
+        width: 37.5%;
+        margin-top: 50px;
+    }
+        #__articleHeader-col2--magazine{
         width: 37.5%;
         margin-top: 50px;
     }
@@ -59,6 +87,19 @@
     }
 }
 @include tablet {
+
+
+        #__articleHeader-col2--magazine{
+        width: 100%;
+
+    }
+
+
+
+
+
+
+
     #__articleContent-main {
         margin-top: 35px;
     }
@@ -85,6 +126,13 @@
         height: auto !important;
     }
 }
+
+
+
+
+
+
+
 @include mobile {
     #__articleContent-col1-row1 {
         margin-bottom: 15px;
@@ -168,7 +216,9 @@
         margin: 120px auto 30px auto;
     }
 }
-
+@include mobile {
+    #__otherTenders-main {display: none;}
+}
 
 //-///////////////////////////////////////////////////////////////////////////////
 //-                                                                             //
@@ -274,9 +324,7 @@
     #__articleFooter-col1 {
         width: 100%
     }
-    #__articleFooterelatedContentAlt-center {
-        background: green !important;
-    }
+
 }
 
 

@@ -7,7 +7,7 @@ include ../_global/includes/head/head.jade
 //-                                                                             //
 //-    LAYOUT                                                                   //
 //-   ---------------                                                           //
-//-    HEADER                                                                   //
+//-    HEADER                       s                                            //
 //-                                                                             //
 //-                                                                             //
 //-///////////////////////////////////////////////////////////////////////////////
@@ -20,7 +20,7 @@ include ../_global/includes/head/head.jade
             if(article.content.header.imageHeader!=null)
                 #__articleHeader-col1.u-floatLeft
                     #__articleHeader-col1-row1
-                        |+M__heading(article.content.header.imageHeader.text1, article.content.header.imageHeader.text2, true)
+                        +Heading(article.content.header.imageHeader.text1, article.content.header.imageHeader.text2, true)
                     #__articleHeader-col1-row2
                         +M__featuredImage('http://lorempixel.com/860/430/technics', '*WP Category*')
 
@@ -32,7 +32,7 @@ include ../_global/includes/head/head.jade
             //- 3.1 PARTNER LOGO
             if(article.content.header.partnerLogo!=null)
                 #__articleHeader-col2.u-floatRight
-                    +Advert-partnerLogo
+                    +Advert--partnerLogo
 
             //- 3.2 SKYSCRAPER ADVERT
             if(article.content.header.largeSkyscraperAdvert!=null)
@@ -41,9 +41,14 @@ include ../_global/includes/head/head.jade
 
             //- 3.3 MAGAZINE ADVERT
             if(article.content.header.magazineAdvertisement!=null)
-                //= MAGAZINE ADVERT
-                #__articleHeader-col2.u-floatRight
-                    +O__magazineMockupBlock
+                #__articleHeader-col2--magazine.u-floatRight
+                    #__issueContent-col1-row1
+                        +MagazineMockup
+                    #__issueContent-col1-row2
+                        #__issueContent-col1-row2-row1.__issueContent--signedOut
+                            .A__magazineMockupText-main This article originally <strong>appeared in the following issue of our bi-monthly print magazine</strong>. The digital version of the magazine can be read online or downloaded entirely free of charge.a
+                        #__issueContent-col1-row2-row3
+                            +TextButton--bold--red('READ ONLINE')
 
 
 //-///////////////////////////////////////////////////////////////////////////////
@@ -65,7 +70,7 @@ include ../_global/includes/head/head.jade
                 //- 1.1 REPORT
                 if(article.content.article.report!=null)
                     #__articleContent-typeAssets
-                        +TextPrompt--report
+                        +TextButton--report
 
                 //- 1.2 REPORT--SIGNEDOUT
                 if(article.content.article.report__signedOut!=null)
@@ -75,12 +80,12 @@ include ../_global/includes/head/head.jade
                 //- 2.1 TENDER
                 if(article.content.article.tenderDetails!=null)
                     #__articleContent-typeAssets
-                        +TextPrompt--tender
+                        +TextButton--tender
 
                 //- 2.2 TENDER--SIGNEDOUT
                 if(article.content.article.tenderDetails__signedOut!=null)
                     #__articleContent-typeAssets
-                        |+TextPrompt--tender--signedOut
+                        +TextPrompt--tender--signedOut
 
                 //- 2.3 TENDER--EXPIRED
                 if(article.content.article.tenderDetail__expired!=null)
@@ -115,18 +120,18 @@ include ../_global/includes/head/head.jade
                 if(article.content.article.textCTA!=null)
                     #__textCTA-main
                         #__textCTA-row1
-                            |+M__heading('Interested in more Tenders?')
+                            +Heading('Interested in more Tenders?')
                         #__textCTA-row2
-                            +TextButton--blue(article.content.article.textCTA)
+                            +TextButton--bold--blue(article.content.article.textCTA)
 
                 //- 6 OTHER TENDERS LIST
                 if(article.content.article.otherTenders!=null)
-                    #__textCTA-main
-                        #__textCTA-row1
-                            |+M__heading('Other Tenders')
-                        #__textCTA-row2
+                    #__otherTenders-main
+                        #__otherTenders-row1
+                            +Heading('Other Tenders')
+                        #__otherTenders-row2
                             asdsd
-                            +O__textPrompt--otherTenders
+                            +TextButton--otherTenders
 
                 //- 7 FORM (INCLUDE)
                 if(article.content.article.form!=null)
@@ -148,8 +153,8 @@ include ../_global/includes/head/head.jade
 //-                                                                             //
 //-    LAYOUT                                                                   //
 //-   ---------------                                                           //
-//-    ARTICLE FOOTER                                                           //
-//-                                                                             //
+//-    ARTICLE FOOTER                               s                            //
+//-                                                          s    s s              //
 //-                                                                             //
 //-///////////////////////////////////////////////////////////////////////////////
 
@@ -162,14 +167,14 @@ include ../_global/includes/head/head.jade
             //- 1.1 COMMENTS (INCLUDE)
             if(article.content.footer.comments!=null)
                 #__articleFooter-col1-row1
-                    |+M__heading('Join the Discussion')
+                    +Heading('Join the Discussion')
                 #__articleFooter-col1-row2
                     |HTML_comments
 
             //- 1.2 SUBMIT BUTTONS
             if(article.content.footer.submitButton!=null)
                 #__articleFooter-col1-row3
-                    |+M__heading('Submit News Story')
+                    +Heading('Submit News Story')
                 #__articleFooter-col1-row4
                     +O__textPromptList
 
@@ -178,10 +183,10 @@ include ../_global/includes/head/head.jade
             #__articleFooterRelatedContentAlt-main
                 #__articleFooterelatedContentAlt-center
                     #__articleFooterRelatedContentAlt-row1
-                        |+M__heading('Press Releases')
+                        +Heading('Related Content')
                     #__articleFooterRelatedContentAlt-row2.u-cf
-                        each val in [1,2,3]
-                            .ThumbnailContainer.ThumbnailContainer--three.u-floatLeft
+                        each val in [1,2]
+                            .u-col3.u-floatLeft
                                 +Thumbnail
 
         //- 2.2 RELATED CONTENT -- PRESS RELEASE
@@ -190,31 +195,32 @@ include ../_global/includes/head/head.jade
             #__pressReleases-main
                 #__pressRelease-centre
                     #__pressRelease-row1
-                        |+M__heading('Related Content')
+                        +Heading('Press Releases')
                     #__pressRelease-row2.u-cf
-                        each val in [1,2,3]
-                            .ThumbnailContainer.ThumbnailContainer--three.u-floatLeft
+                        each val in [1,2,3,4,5]
+                            .u-col3.u-floatLeft
                                 +Thumbnail
+
 
         //- 2.3 RELATED CONTENT -- PARTNER CONTENT
         if(article.content.footer.partnerContent!=null)
             #__pressReleases-main
                 #__pressRelease-centre
                     #__pressRelease-row1
-                        |+M__heading('Partner Content')
+                        +Heading('Partner Content')
                     #__pressRelease-row2.u-cf
-                        each val in [1,2,3]
-                            .ThumbnailContainer.ThumbnailContainer--three.u-floatLeft
+                        each val in [1,2,3,4,5]
+                            .u-col3.u-floatLeft
                                 +Thumbnail
 
         //- 2.4 RELATED CONTENT -- WITH COMMENTS
         if(article.content.footer.relatedContent!=null)
             #__articleFooter-col2.u-floatRight
                 #__articleFooter-col2-row1
-                    |+M__heading('Related Content')
+                    +Heading('Related Content')
                 #__articleFooter-col2-row2
                         each val in [1,2,3]
-                            .ThumbnailContainer
+                            .u-col1
                                 +Thumbnail
 
         //- 3.1 FILES
@@ -223,27 +229,27 @@ include ../_global/includes/head/head.jade
             #__otherFiles-main
                 #__otherFiles-centre
                     #__otherFiles-row1
-                        |+M__heading('Other Files')
+                        +Heading('Other Files')
                     #__otherFiles-row2
-                        +O__labeledLinksList--otherFiles
+                        +TextButton--files
 
         //- 3.2 FILES -- PARTNER
         if(article.content.footer.partnerFiles!=null)
             #__otherFiles-main
                 #__otherFiles-centre
                     #__otherFiles-row1
-                        |+M__heading('Partner Downloadable Files')
+                        +Heading('Partner Downloadable Files')
                     #__otherFiles-row2
-                        +O__labeledLinksList--partnerFiles
+                        +TextButton--files
 
         //- 3.3 FILES - SPEAKER PRESENTATIONS
         if(article.content.footer.speakerSlides!=null)
             #__presentationFiles-main
                 #__presentationFiles-centre
                     #__presentationFiles-row1
-                        |+M__heading('View Speaker Presentation Files')
+                        +Heading('View Speaker Presentation Files')
                     #__presentationFiles-row2
-                        |s
+                        +TextButton--files--speaker
 
 
 //-///////////////////////////////////////////////////////////////////////////////
