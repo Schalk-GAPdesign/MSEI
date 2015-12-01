@@ -1,0 +1,161 @@
+include ../_global/includes/layout.jade
+include ../_global/includes/head/head.jade
+
+
+#__introduction-main
+    #__introduction-centre
+        #__introduction-row1
+            +Heading(article.heading1)
+        #__introduction-row2.u-cf
+            #__introduction-row1-col1.u-floatLeft
+                if article.intro
+                    |#{article.intro}
+                else
+                    |Si litteris aut quamquam do anim tempor ne mandaremus, nam nisi commodo adipisicing eu est noster non nisi. Eu anim mentitum, o laboris iis proident qui magna iudicem ab pariatur sunt elit mandaremus noster se singulis anim expxetendids quo dolore an quamquam quo quorum eu consequat ubi fabulas, ullamco
+            #__introduction-row1-col2.u-floatRight
+                #__introduction-row1-col2-row1
+                    if article.button1
+                        +TextButton--bold--grey(article.button1)
+                    if article.dropdown1
+                        +TextButton--bold--grey--dropdown(article.dropdown1.data[0],article.dropdown1.data[1],article.dropdown1.data[2],article.dropdown1.data[3],article.dropdown1.data[4],article.dropdown1.data[5],article.dropdown1.data[6],article.dropdown1.data[7],article.dropdown1.data[8],article.dropdown1.data[9])
+                #__introduction-row1-col2-row2
+
+                    if article.dropdown2
+                        +TextButton--bold--grey--dropdown(article.dropdown2.data[0],article.dropdown2.data[1],article.dropdown2.data[2],article.dropdown2.data[3],article.dropdown2.data[4], article.dropdown2.data[5],article.dropdown2.data[6],article.dropdown2.data[7],article.dropdown2.data[8],article.dropdown2.data[9])
+                    if article.button2
+                        +TextButton--bold--grey(article.button2)
+
+
+if article.first
+    #CategoryFeatured-main
+        #CategoryFeatured-centre
+            #CategoryFeatured-row1
+                if article.heading1
+                    +Heading(article.heading2)
+            #CategoryFeatured-row2.u-cf
+                #CategoryFeatured-row2-col1
+                        if article.type=='articles'
+                            +Thumbnail--showcase--archive
+                        if article.type=='media'
+                            +Thumbnail--media--showcase
+                        if article.type=='reports'
+                            +Thumbnail--showcase--archive--report
+                        if article.type=='tenders'
+                            +Thumbnail--showcase--archive--tender
+                        if article.type=='events'
+                            +Thumbnail--showcase--archive--event
+
+            #CategoryFeatured-row3.u-cf
+                #CategoryFeatured-row3-col1.u-floatLeft
+                        if article.type=='articles'
+                            +Thumbnail--showcase--archive
+                        if article.type=='media'
+                            +Thumbnail--media--showcase
+                        if article.type=='reports'
+                            +Thumbnail--showcase--archive--report
+                        if article.type=='tenders'
+                            +Thumbnail--showcase--archive--tender
+                        if article.type=='events'
+                            +Thumbnail--showcase--archive--event
+                #CategoryFeatured-row3-col2.u-floatLeft
+                        if article.type=='articles'
+                            +Thumbnail--showcase--archive
+                        if article.type=='media'
+                            +Thumbnail--media--showcase
+                        if article.type=='reports'
+                            +Thumbnail--showcase--archive--report
+                        if article.type=='tenders'
+                            +Thumbnail--showcase--archive--tender
+                        if article.type=='events'
+                            +Thumbnail--showcase--archive--event
+
+if (article.type!="magazine")
+    if article.type
+        #CategoryArchive-main
+            #CategoryArchive-centre
+                #CategoryArchive-row1
+                    +Heading(article.heading3)
+                #CategoryArchive-row2.u-cf
+                    if (article.first!=true)
+                        each val in [1,2,3]
+                            .u-col3.u-floatLeft
+                                if article.type=='articles'
+                                    +Thumbnail
+                                if article.type=='media'
+                                    +Thumbnail--media
+                                if article.type=='reports'
+                                    +Thumbnail--report
+                                if article.type=='tenders'
+                                    +Thumbnail--tender
+                                if article.type=='events'
+                                    +Thumbnail--event
+
+                if (article.magazine!="magazine")
+                    #CategoryArchive-row3.u-cf
+                        each val in [1,2,3,4,5,6,7,8,9]
+                            .u-col3.u-floatLeft
+                                if article.type=='articles'
+                                    +Thumbnail
+                                if article.type=='media'
+                                    +Thumbnail--media
+                                if article.type=='reports'
+                                    +Thumbnail--report
+                                if article.type=='tenders'
+                                    +Thumbnail--tender
+                                if article.type=='events'
+                                    +Thumbnail--event
+
+if (article.type=="magazine")
+    #__Magazine-Category
+        #__otherIssues-centre
+            #__otherIssues-row1
+                +Heading('Browse Archive')
+            #__otherIssues-row2.u-cf
+                each val in [1,2,3,4,5,6,7,8,9,10,11,12]
+                    .__otherIssues-container.u-floatLeft
+                        +Thumbnail--magazine
+
+
+
+
+
+
+
+#CategoryPagination-main
+    #CategoryPagination-centre.u-cf
+            #CategoryPagination-row1-col1.u-floatLeft
+                +TextButton--bold--grey--noArrow('Previous')
+            #CategoryPagination-row1-col2.u-floatRight
+                +TextButton--bold--grey--noArrow('Next')
+            each val in ["1", "2", "3"]
+                .CategoryPagination-item.col3.u-floatLeft
+                    +TextButton--bold--grey--noArrow(val)
+
+
+
+
+
+//-////////////////////////////////////////////////////////////////////////////////
+//-                                                                              //
+//-                                                                              //
+//-                                             s                                 //
+//-                                                                              //
+//-                                                                              //
+//-                                                                              //
+//-                                                                 w             //
+//-                                                         s                     //
+//-                                                                              //
+//-                                      END   s    f                              //
+//-                                                       as                       //
+//-                                                                              //
+//-                                                                              //
+//-                                                                              //
+//-                                         dd     s                                //
+//-                                                                              //
+//-                                                                              //
+//-                                                                              //
+//-                                                                              //
+//-////////////////////////////////////////////////////////////////////////////////
+
+
+include ../_global/includes/foot/foot.jade

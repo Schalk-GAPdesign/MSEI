@@ -13,15 +13,6 @@ jQuery(document).ready(function () {
         jQuery('#__menuMagazine-main').addClass('is-activated');
     });
 
-
-     jQuery('#__issueContent-col1-row2-row1-row1--signedOut').click(function () {
-        jQuery(this).addClass('is-activated');
-    });
-
-
-
-
-
     jQuery('.O__mainNavList-item--magazine').find('.M__mainNavButton-main');
     jQuery(".fancybox").fancybox({
         openEffect: 'fade',
@@ -34,5 +25,13 @@ jQuery(document).ready(function () {
             }
         }
     });
+    $('.fancybox-media').fancybox({
+		openEffect  : 'none',
+		closeEffect : 'none',
+		helpers : {
+			media : {}
+		}
+	});
+
 });
 
