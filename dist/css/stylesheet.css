@@ -4420,10 +4420,6 @@ textarea {
   margin-top: 0;
 }
 
-#StaticWrapper-table {
-  padding-top: 30px;
-}
-
 #StaticWrapper-form {
   margin-top: 100px;
 }
@@ -4526,6 +4522,14 @@ textarea {
 
 .Team-item--advisory {
   padding: 60px 0;
+}
+
+.StaticList-row2 {
+  padding: 30px 0 5px 0;
+}
+
+#StaticWrapper-tableContainer {
+  padding-top: 60px;
 }
 
 #__introduction-centre {

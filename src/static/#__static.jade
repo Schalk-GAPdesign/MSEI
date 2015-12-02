@@ -6,7 +6,7 @@ include ../_global/includes/head/head.jade
 //-                                                                             //
 //-                                     k           s             s                //
 //-    LAYOUT                               d                s                    //
-//-   ---------------             s    s        f f s s  f   f     a           s          //
+//-   ---------------             s    s        f f s s  ff   f     a           s          //
 //-    MAGAZINE                             k  x             s                     //
 //-                                h               S     s  fs      s                 //
 //-                                                                             //
@@ -28,8 +28,8 @@ include ../_global/includes/head/head.jade
         if (article.team!=null)
             +Team
 
-        //if (article.teamAdvisory!=null) a
-        +Team--advisory
+        if (article.teamAdvisory!=null)
+            +Team--advisory
 
         if(!article.hide)
             #StaticWrapper-content
@@ -62,13 +62,28 @@ include ../_global/includes/head/head.jade
                         if val.text
                             p!= val.text
 
-        if article.table
-            #StaticWrapper-table
-                if article.blockHeader2
-                    div
-                        +Heading(article.blockHeader2)
-                div
-                    +TextButton--table--noLink
+        if !article.includes.table
+            #StaticWrapper-tableContainer
+                if article.table
+                    #StaticWrapper-table
+                        if article.blockHeader2
+                            div
+                                +Heading(article.blockHeader2)
+                        div
+                            +TextButton--table--noLink
+        else
+            div
+                if article.table
+                    #StaticWrapper-table
+                        if article.blockHeader2
+                            div
+                                +Heading(article.blockHeader2)
+                        div
+                            +TextButton--table--noLink
+
+
+
+
 
         if article.includes.form
             #StaticWrapper-form

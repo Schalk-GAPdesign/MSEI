@@ -61,7 +61,7 @@ textarea {width: 100%; border: 1px solid #ccc;}
 .StaticList-p {color: #aaa}
 
 #ninja_forms_form_41_cont.ninja-forms-cont {margin-top: 0;}
-#StaticWrapper-table {padding-top: 30px;}
+//#StaticWrapper-table {padding-top: 30px;}
 #StaticWrapper-form {margin-top: 100px;}
 
 #StaticWrapper-introBlock {padding: 10px 20px; background: #eee;}
@@ -75,6 +75,7 @@ textarea {min-height: 200px;}
 
 .Team-item {border-top: 1px solid #cdcdcd; padding: 25px 0;}
 .Team-item:nth-child(1) {border-top: 0;}
+
 
 .Team-name {font: 700 26px Roboto; color: red;}
 
@@ -122,3 +123,8 @@ text-transform: uppercase;
 .Team-bioIntro {margin-bottom: 15px;padding-top: 10px; font-weight: 700}
 .Team-position--red {color: red;}
 .Team-item--advisory {padding: 60px 0;}
+
+.StaticList-row2 {padding: 30px 0 5px 0;}
+
+
+#StaticWrapper-tableContainer {padding-top: 60px;}
