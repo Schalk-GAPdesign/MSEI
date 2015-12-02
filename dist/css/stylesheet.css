@@ -4313,6 +4313,221 @@ a:nth-last-of-type(1) .TextButton-item {
   }
 }
 
+.hp-wrap {
+  display: none;
+}
+
+a {
+  color: red;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#StaticWrapper-centre {
+  width: 600px;
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 160px;
+}
+
+#StaticIntroduction-centre {
+  background: #eee;
+  padding: 10px 20px;
+  margin: 0 auto;
+  width: 600px;
+}
+
+#StaticContent-centre, #StaticList-centre, #StaticTable-centre, #StaticContactPrompt-centre, #StaticForm-centre {
+  margin: 0 auto;
+  width: 600px;
+}
+
+.StaticList-item {
+  padding-bottom: 5px;
+  padding-top: 10px;
+  margin: 30px 0;
+  border-top: 1px solid #cdcdcd;
+}
+
+#StaticTable-centre {
+  padding: 60px 0;
+}
+
+textarea {
+  width: 100%;
+  border: 1px solid #ccc;
+}
+
+.Profiles-item {
+  border: 1px solid #ccc;
+}
+
+.Profiles-content {
+  padding: 20px 30px;
+  width: 590px;
+}
+
+.Profiles-main {
+  border: 1px solid #ccc;
+}
+
+.Profiles-item {
+  border-top: 1px solid #ccc;
+}
+
+@media (max-width: 1000px) {
+  .Profile-imageContainer {
+    display: none;
+  }
+  .Profiles-item {
+    height: auto;
+  }
+  .Profiles-content {
+    width: auto;
+  }
+}
+
+.Profiles-item:nth-of-type(2n) .Profile-imageContainer {
+  float: right;
+}
+
+.Profiles-item--paddingFix {
+  height: 300px;
+  overflow: hidden;
+}
+
+.Profiles-item--contact {
+  padding: 30xp 0;
+}
+
+#StaticWrapper-content {
+  margin-bottom: 60px;
+}
+
+#StaticWrapper-row2 {
+  padding-top: 20px;
+  color: red;
+  font-size: 16px;
+}
+
+.StaticList-p {
+  color: #aaa;
+}
+
+#ninja_forms_form_41_cont.ninja-forms-cont {
+  margin-top: 0;
+}
+
+#StaticWrapper-table {
+  padding-top: 30px;
+}
+
+#StaticWrapper-form {
+  margin-top: 100px;
+}
+
+#StaticWrapper-introBlock {
+  padding: 10px 20px;
+  background: #eee;
+}
+
+textarea {
+  min-height: 200px;
+}
+
+#ninja_forms_form_51_cont.ninja-forms-cont {
+  margin-top: 0;
+}
+
+.Team-main {
+  border: 1px solid #cdcdcd;
+}
+
+.Team-item {
+  border-top: 1px solid #cdcdcd;
+  padding: 25px 0;
+}
+
+.Team-item:nth-child(1) {
+  border-top: 0;
+}
+
+.Team-name {
+  font: 700 26px Roboto;
+  color: red;
+}
+
+.Team-col2 {
+  width: 400px;
+  padding: 0 30px;
+}
+
+@media (max-width: 700px) {
+  #StaticWrapper-centre {
+    width: 90%;
+  }
+  .Team-col1 {
+    display: none;
+  }
+  .Team-col2 {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+.Team-content {
+  padding: 0 25px;
+}
+
+.Team-position {
+  font: 700 16px Roboto;
+  padding-bottom: 10px;
+}
+
+.Team-heading {
+  background-attachment: scroll;
+  background-clip: border-box;
+  background-color: #eeeeee;
+  background-image: none;
+  background-origin: padding-box;
+  background-size: auto;
+  box-sizing: border-box;
+  color: black;
+  font-family: 'Roboto Condensed';
+  font-size: 16px;
+  font-stretch: normal;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: bold;
+  height: 49px;
+  line-height: normal;
+  padding-bottom: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 15px;
+  text-transform: uppercase;
+}
+
+.Team-item--company {
+  padding: 25px;
+}
+
+.Team-bioIntro {
+  margin-bottom: 15px;
+  padding-top: 10px;
+  font-weight: 700;
+}
+
+.Team-position--red {
+  color: red;
+}
+
+.Team-item--advisory {
+  padding: 60px 0;
+}
+
 #__introduction-centre {
   width: 1255px;
   margin: 0 auto;

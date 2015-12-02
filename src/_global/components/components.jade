@@ -7,7 +7,7 @@
 //-                                                             s                //
 //-                                                                            s //
 //-    COMPONENT                                                                //
-//-   ---------------                                                           //
+//-   ---------------                                    d                       //
 //-    MENU ITEM                                                                //
 //-                                                                             //
 //-                                                                             //
@@ -828,8 +828,8 @@ mixin TextButton--bold--grey(text)
                                 |Placeholder
                     .TextButton-col3.u-tableCell
                         .TextButton-arrow.icon-arrow
-                        
-                        
+
+
 
 mixin TextButton--bold--grey--noArrow(text)
     .TextButton-main
@@ -843,8 +843,8 @@ mixin TextButton--bold--grey--noArrow(text)
                             else
                                 |Placeholder
                     .TextButton-col3.u-tableCell
-                
-                        
+
+
 
 mixin TextButton--bold--grey--dropdown(...items)
     .TextButton-main.TextButton-main--cursor
@@ -936,6 +936,32 @@ mixin TextButton--report(text)
                                     |Placeholder
                             .TextButton-col3.u-tableCell
                                 .TextButton-arrow.icon-arrow
+
+
+mixin TextButton--table--noLink
+    .TextButton-main
+        .TextButton-content
+            each val in article.table
+                .TextButton-heading.u-table= val.heading
+                each level2 in val.data
+                    .TextButton-item.TextButton-item--list.TextButton-item--noHover.u-table
+                        .TextButton-col2.u-tableCell
+                            each level3 in level2
+                                if level3.link
+                                    a(href="#")
+                                          .TextButton-text
+                                                span.TextButton-textHighlight= level3.name
+                                                span.TextButton-textSpan= level3.position
+                                                span.TextButton-textSpan= level3.phone
+                                else
+                                      .TextButton-text
+                                            span.TextButton-textHighlight= level3.name
+                                            span.TextButton-textSpan= level3.position
+                                            span.TextButton-textSpan= level3.phone
+
+
+
+
 
 
 mixin TextButton--report--noHeader(text)
@@ -1039,7 +1065,7 @@ mixin TextButton--tender
                 .TextButton-heading.u-table Tender Details
                 .TextButton-item.TextButton-item--noHover.u-table
                     .TextButton-col2
-                        .TextButton-text.TextButton-text--notification Eiusmod veniam nisi et sint a cernantur quid doctrina. Et hic coniunctione, enim sed admodum et quis, eram firmissimum ingeniis multos deserunt, aute pariatur nostrud, eu irure mentitum commodo ne ita quorum sint qui appellat, deserunt sunt illum eu quorum, magna sempiternum vidisse elit vidisse. Senserit nam varias pariatur ubi non laboris familiaritatem, sint non admodum a dolore, nam eram qui nulla, irure mandaremus adipisicing te o occaecat ubi ingeniis, e doctrina adipisicing in iudicem eu mentitu
+                        .TextButton-text.TextButton-text--notification Eiusmod veniam nisi et sint a cernantur quid doctrina. Et hic coniunctione, enim sed admodum et quis, eram firmissimum ingeniis multos deserunt, aute pariatur nostrud, eu irure mentitum commodo ne ita quorum sint qui appellat, deserunt sunt illum eu quorum, magna sempiternum vidisse elit vidisse. Sensesrit nam varias pariatur ubi non laboris familiaritatem, sint non admodum a dolore, nam eram qui nulla, irure mandaremus adipisicing te o occaecat ubi ingeniis, e doctrina adipisicing in iudicem eu mentitu
                     .TextButton-col2
                         .TextButton-col2.u-tableCell
                             each val in ['Cape Town','Durban','Pretoria']
@@ -1073,3 +1099,99 @@ mixin MagazineMockup
                     img.MagazineMockup-background(src='http://dev.gapdesign.co.za/img/magazine-bg.png')
                     .MagazineMockup-imageContainer
                         img(src="http://lorempixel.com/210/295").MagazineMockup-image
+
+
+
+
+
+//PROFILES
+
+
+mixin Profiles
+    .Profiles-main
+        each val in [1,2,3]
+                .Profiles-item.Profiles-item--paddingFix.u-cf
+                    .Profile-imageContainer.Profile-imageContainer--alternate.u-floatLeft
+                        img.Profile-image(src="http://lorempixel.com/200/300/")
+                    .Profiles-content.u-floatLeft
+                        .Profiles-name Meghan Markss
+                        .Profiles-title Director of Global Marketing
+                        .Profiles-description Excepteur eu mentitum. Aut te noster illum elit. Iis ab minim ullamco est expetendis do offendit. Eiusmod ita mentitum, aliqua consequat praesentibus. Quorum appellat iudicem e nam elit cohaerescant. Eu anim quorsum varias ingeniis in quorum laboris admodum, qui ut summis minim quem non expetendis cillum eram cesrnantur summids, incididunt philoasophari in tempor qui veniam te de culpa senserit ut eiusmod cohaerescant a probant do malis non laborum ne fore.
+
+
+
+
+mixin Profiles-contact
+    .Profiles-main
+        each val in [1,2,3]
+                .Profiles-item.Profiles-item--contact.u-cf
+                    .Profile-imageContainer.u-floatLeft
+                        img.Profile-image(src="http://lorempixel.com/110/155/")
+                    .Profiles-content.u-floatLeft
+                        .Profiles-name Meghan Markss
+                        .Profiles-title Director of Global Marketing
+
+
+
+
+
+
+
+
+
+
+
+///////////s
+
+
+
+
+
+
+
+
+mixin Team
+    .Team-main
+        each val in article.team
+            .Team-heading= val.heading
+            .Team-content
+                if val.data
+                    each level1 in val.data
+                        .Team-item.u-cf
+                            .Team-col1.u-floatLeft
+                                img(src="http://lorempixel.com/110/155")
+                            .Team-col2.u-floatLeft
+                                .Team-name= level1.name
+                                .Team-position= level1.position
+                                a(href="#").Team-email= level1.email
+                                .Team-number= level1.phone
+
+        .Team-item.Team-item--company
+                |<strong>Spintelligent (Pty) Ltd <br>
+                |Spintelligent House, 31 Bell Crescent, Tokai<br>
+                |PO Box 321, Steenberg, 7947, South Africa<br>
+                |+27 21 700 3500<br>
+                |Spintelligent is a Level 2 BBBEE contributor</strong>
+
+
+
+
+
+mixin Team--advisory
+    .Team-main
+        each val in article.teamAdvisory
+            .Team-content
+                if val.data
+                    each level1 in val.data
+                        .Team-item.Team-item--advisory.u-cf
+                            .Team-col1.u-floatLeft
+                                img(src="http://lorempixel.com/110/155")
+                            .Team-col2.u-floatLeft
+                                .Team-name= level1.name
+                                .Team-position.Team-position--red= level1.position
+                                .Team-bioIntro= level1.sub
+                                .Team-bio= level1.email
+
+
+
+

@@ -1,37 +1,118 @@
-include ../_global/A__atoms.jade
-include ../_global/M__molecules.jade
-include ../_global/O__organisms.jade
-
-include ../_global/head.jade
+include ../_global/includes/layout.jade
+include ../_global/includes/head/head.jade
 
 
-
-#__staticPages-main
-    #__staticPages-centre
-
-
-
-        |+Heading('About Us')
-
-        h1 Te varias laborum possumus ex minim iis do dolor aliquip. Pariatur nisi duis ab quis. Ea laborum comprehenderit. Eram ingeniis do vidisse ut dolor quibusdam adipisicing, est ubi culpa quid quid, aute nam non labore incididunt te singulis varias singulis iis quo labore hic aliqua id anim nesci
-
-        h2 Te varias laborum possumus ex minim iis do dolor aliquip. Pariatur nisi duis ab quis. Ea laborum comprehenderit. Eram ingeniis do vidisse ut dolor quibusdam adipisicing, est ubi culpa quid quid, aute nam non labore incididunt te singulis varias singulis iis quo labore hic aliqua id anim nesci
-
-        p Te varias laborum possumus ex minim iis do dolor aliquip. Pariatur nisi duis ab quis. Ea laborum comprehenderit. Eram ingeniis do vidisse ut dolor quibusdam adipisicing, est ubi culpa quid quid, aute nam non labore incididunt te singulis varias singulis iis quo labore hic aliqua id anim nesci
-
-        +O__horizontalSectionList
+//-///////////////////////////////////////////////////////////////////////////////
+//-                                                                             //
+//-                                     k           s             s                //
+//-    LAYOUT                               d                s                    //
+//-   ---------------             s    s        f f s s  f   f     a           s          //
+//-    MAGAZINE                             k  x             s                     //
+//-                                h               S     s  fs      s                 //
+//-                                                                             //
+//-/////////////////////////////s//////////////////////////////////////////////////
 
 
 
 
 
+#StaticWrapper-main
+    #StaticWrapper-centre
+
+        if article.blockHeader
+            #StaticWrapper-header
+                +Heading(article.blockHeader)
+        if article.introBlock
+            #StaticWrapper-introBlock= article.introBlock
+
+        if (article.team!=null)
+            +Team
+
+        //if (article.teamAdvisory!=null) a
+        +Team--advisory
+
+        if(!article.hide)
+            #StaticWrapper-content
+                if article.heading1
+                    h1= article.heading1
+                if article.subheading1
+                    h2= article.subheading1
+                if article.includes.about!=null
+                    include includes/about.jade
+                if article.includes.advertise!=null
+                    include includes/advertise.jade
+                if article.includes.privacy!=null
+                    include includes/privacy.jade
+                if article.includes.terms!=null
+                    include includes/termsOfUse.jade
+
+        if article.list
+            #StaticWrapper-list
+                if article.listHeader
+                    .StaticList-row1
+                        +Heading(article.listHeader)
+                if article.listIntro
+                    .StaticList-row2
+                        p.StaticList-p= article.listIntro
+               .StaticList-row3
+                each val in article.list
+                    .StaticList-item
+                        if val.heading
+                            h3= val.heading
+                        if val.text
+                            p!= val.text
+
+        if article.table
+            #StaticWrapper-table
+                if article.blockHeader2
+                    div
+                        +Heading(article.blockHeader2)
+                div
+                    +TextButton--table--noLink
+
+        if article.includes.form
+            #StaticWrapper-form
+                if article.blockHeader3
+                    div
+                        +Heading(article.blockHeader3)
+                    div
+                include includes/downloadForm.jade
+
+
+        if article.includes.contact
+            #StaticWrapper-form
+                if article.blockHeader3
+                    div
+                        +Heading(article.blockHeader3)
+                    div
+                include includes/contactForm.jade
 
 
 
 
 
 
+//-////////////////////////////////////////////////////////////////////////////////
+//-                                                                              //
+//-                                                                              //
+//-                                                                              //
+//-                                                                              //
+//-                                                                              //
+//-                                                                              //
+//-                                                                              //
+//-                                                                              //
+//-                                                                              //
+//-                                      END        f                             //
+//-                                                                              //
+//-                                            j                                  //
+//-                                       j                                       //
+//-                                                                              //
+//-                                                                              //
+//-                                                                              //
+//-                                                                              //
+//-                                                                              //
+//-                                                                              //
+//-////////////////////////////////////////////////////////////////////////////////
 
-include ../_global/foot.jade
 
-
+include ../_global/includes/foot/foot.jade
