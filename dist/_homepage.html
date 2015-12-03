@@ -121,10 +121,13 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width" />
-<script src="https://cdn.rawgit.com/scottjehl/picturefill/master/dist/picturefill.min.js" async="async"></script>
+<!--if !IE
+    <script src="https://cdn.rawgit.com/scottjehl/picturefill/master/dist/picturefill.min.js" async="async"></script>
 <script>document.createElement( "picture" );</script>
 <link rel="stylesheet" type="text/css" href="css/stylesheet.css"/>
 <link rel="stylesheet" type="text/css" href="js/libraries/fancybox/stylesheet.css"/><meta charset="utf-8">
+
+-->
 </head>
 <body>
 <!--if lte IE 7
@@ -189,6 +192,7 @@
 
 
 -->
+    <!--if !IE
 <div id="__head-main">
   <div id="__leaderboard-main">
     <div id="__leaderboard-centre"><a href="#">
@@ -1804,5 +1808,8 @@
 <script src="http://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.pack.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/helpers/jquery.fancybox-media.js"></script>
 <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.12/jquery.mousewheel.min.js"></script>
-<script src="js/scripts.js"></script></body>
+<script src="js/scripts.js"></script>
+-->
+
+</body>
 </html>
