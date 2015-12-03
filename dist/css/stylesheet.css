@@ -4709,8 +4709,6 @@ textarea {
 
 select {
   cursor: pointer;
-  border: none;
-  text-shadow: none;
 }
 
 #CategoryFeatured-centre {
