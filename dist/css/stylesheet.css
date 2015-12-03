@@ -262,378 +262,420 @@ Icon classes can be used entirely standalone. They are named after their origina
 */
 .icon-arrow {
   background-image: url(../img/spritesheet.png);
-  background-position: -218px -16px;
+  background-position: -289px -178px;
   width: 10px;
   height: 16px;
 }
 
 .icon-arrowWhite, .Heading-prompt:hover .icon-arrow, .TextButton-item:hover .TextButton-col3 .TextButton-arrow {
   background-image: url(../img/spritesheet.png);
-  background-position: -218px 0px;
+  background-position: -289px -162px;
   width: 10px;
   height: 16px;
 }
 
+.icon-benefits-1 {
+  background-image: url(../img/spritesheet.png);
+  background-position: 0px -154px;
+  width: 73px;
+  height: 73px;
+}
+
+.icon-benefits-2 {
+  background-image: url(../img/spritesheet.png);
+  background-position: -81px 0px;
+  width: 73px;
+  height: 73px;
+}
+
+.icon-benefits-3 {
+  background-image: url(../img/spritesheet.png);
+  background-position: -154px -73px;
+  width: 73px;
+  height: 73px;
+}
+
+.icon-benefits-4 {
+  background-image: url(../img/spritesheet.png);
+  background-position: 0px -81px;
+  width: 73px;
+  height: 73px;
+}
+
+.icon-benefits-5 {
+  background-image: url(../img/spritesheet.png);
+  background-position: -73px -81px;
+  width: 73px;
+  height: 73px;
+}
+
+.icon-benefits-6 {
+  background-image: url(../img/spritesheet.png);
+  background-position: -154px 0px;
+  width: 73px;
+  height: 73px;
+}
+
 .icon-articleShare {
   background-image: url(../img/spritesheet.png);
-  background-position: -160px -30px;
+  background-position: -257px -53px;
   width: 27px;
   height: 27px;
 }
 
 .icon-articleShareRed, .M__pullQuote-quote:hover .M__pullQuote-icon {
   background-image: url(../img/spritesheet.png);
-  background-position: -160px -57px;
+  background-position: -257px -26px;
   width: 27px;
   height: 27px;
 }
 
 .icon-close {
   background-image: url(../img/spritesheet.png);
-  background-position: -160px -110px;
+  background-position: -257px -106px;
   width: 24px;
   height: 25px;
 }
 
 .icon-closeQuote {
   background-image: url(../img/spritesheet.png);
-  background-position: -66px -160px;
+  background-position: -257px 0px;
   width: 32px;
   height: 26px;
 }
 
 .icon-closeQuoteRed {
   background-image: url(../img/spritesheet.png);
-  background-position: -98px -160px;
+  background-position: -216px -227px;
   width: 32px;
   height: 26px;
 }
 
 .icon-closeWhite {
   background-image: url(../img/spritesheet.png);
-  background-position: -160px -135px;
+  background-position: -257px -131px;
   width: 24px;
   height: 25px;
 }
 
 .icon-dropdown {
   background-image: url(../img/spritesheet.png);
-  background-position: -218px -55px;
+  background-position: -289px -217px;
   width: 10px;
   height: 7px;
 }
 
 .icon-dropdownWhite, .M__mainNavButton-main:hover:not(.is-activated) .M__mainNavButton-container .M__mainNavButton-centre .M__mainNavButton-arrow {
   background-image: url(../img/spritesheet.png);
-  background-position: -218px -48px;
+  background-position: -289px -210px;
   width: 10px;
   height: 7px;
 }
 
 .icon-footerDot {
   background-image: url(../img/spritesheet.png);
-  background-position: -218px -62px;
+  background-position: -300px -93px;
   width: 4px;
   height: 3px;
 }
 
 .icon-login {
   background-image: url(../img/spritesheet.png);
-  background-position: -112px -66px;
+  background-position: -289px -67px;
   width: 13px;
   height: 13px;
 }
 
 .icon-loginRed, .M__Login-main:hover .M__Login-container .icon-login, .MenuItem-main:hover .MenuItem-container .MenuItem-icon {
   background-image: url(../img/spritesheet.png);
-  background-position: -190px -171px;
+  background-position: -289px -80px;
   width: 13px;
   height: 13px;
 }
 
 .icon-openQuote {
   background-image: url(../img/spritesheet.png);
-  background-position: -33px -160px;
+  background-position: -150px -227px;
   width: 33px;
   height: 26px;
 }
 
 .icon-openQuoteRed {
   background-image: url(../img/spritesheet.png);
-  background-position: 0px -160px;
+  background-position: -183px -227px;
   width: 33px;
   height: 26px;
 }
 
 .icon-pullQuote {
   background-image: url(../img/spritesheet.png);
-  background-position: -160px -84px;
+  background-position: -257px -80px;
   width: 26px;
   height: 26px;
 }
 
 .icon-search {
   background-image: url(../img/spritesheet.png);
-  background-position: -130px -160px;
+  background-position: -257px -176px;
   width: 20px;
   height: 20px;
 }
 
 .icon-searchWhite, .M__mainNavsearch-main:hover .M__mainNavsearch-container:not(.is-activated) .M__mainNavsearch-icon, .MenuItem-main--main:hover .MenuItem-container .MenuItem-box .MenuItem-text .MenuItem-icon--search {
   background-image: url(../img/spritesheet.png);
-  background-position: -109px -81px;
+  background-position: -257px -156px;
   width: 20px;
   height: 20px;
 }
 
 .icon-facebook {
   background-image: url(../img/spritesheet.png);
-  background-position: -150px -130px;
+  background-position: -289px -108px;
   width: 9px;
   height: 18px;
 }
 
 .icon-facebookBlack {
   background-image: url(../img/spritesheet.png);
-  background-position: -209px 0px;
+  background-position: -289px -126px;
   width: 9px;
   height: 18px;
 }
 
 .icon-facebookRed, .M__socialLinkButton-icon.icon-facebook:hover, .SocialMedia-icon--facebook:hover, .SocialMedia-icon--facebook--black:hover {
   background-image: url(../img/spritesheet.png);
-  background-position: -209px -18px;
+  background-position: -289px -144px;
   width: 9px;
   height: 18px;
 }
 
 .icon-google {
   background-image: url(../img/spritesheet.png);
-  background-position: -190px -54px;
+  background-position: -73px -203px;
   width: 18px;
   height: 18px;
 }
 
 .icon-googleBlack {
   background-image: url(../img/spritesheet.png);
-  background-position: -190px -36px;
+  background-position: -209px -185px;
   width: 18px;
   height: 18px;
 }
 
 .icon-googleRed, .M__socialLinkButton-icon.icon-google:hover, .SocialMedia-icon--google:hover, .SocialMedia-icon--google--black:hover {
   background-image: url(../img/spritesheet.png);
-  background-position: -190px -18px;
+  background-position: -91px -203px;
   width: 18px;
   height: 18px;
 }
 
 .icon-linkedin {
   background-image: url(../img/spritesheet.png);
-  background-position: -169px -160px;
+  background-position: -202px -154px;
   width: 19px;
   height: 18px;
 }
 
 .icon-linkedinBlack {
   background-image: url(../img/spritesheet.png);
-  background-position: -150px -160px;
+  background-position: -171px -185px;
   width: 19px;
   height: 18px;
 }
 
 .icon-linkedinRed, .M__socialLinkButton-icon.icon-linkedin:hover, .SocialMedia-icon--linkedin:hover, .SocialMedia-icon--linkedin--black:hover {
   background-image: url(../img/spritesheet.png);
-  background-position: -190px 0px;
+  background-position: -190px -185px;
   width: 19px;
   height: 18px;
 }
 
 .icon-rss {
   background-image: url(../img/spritesheet.png);
-  background-position: -190px -120px;
+  background-position: 0px -257px;
   width: 17px;
   height: 17px;
 }
 
 .icon-rssBlack {
   background-image: url(../img/spritesheet.png);
-  background-position: -190px -137px;
+  background-position: -17px -257px;
   width: 17px;
   height: 17px;
 }
 
 .icon-rssRed, .M__socialLinkButton-icon.icon-rss:hover, .SocialMedia-icon--rss:hover, .SocialMedia-icon--rss--black:hover {
   background-image: url(../img/spritesheet.png);
-  background-position: -190px -154px;
+  background-position: -34px -257px;
   width: 17px;
   height: 17px;
 }
 
 .icon-twitter {
   background-image: url(../img/spritesheet.png);
-  background-position: -190px -104px;
+  background-position: -109px -203px;
   width: 19px;
   height: 16px;
 }
 
 .icon-twitterBlack {
   background-image: url(../img/spritesheet.png);
-  background-position: -190px -72px;
+  background-position: -128px -203px;
   width: 19px;
   height: 16px;
 }
 
 .icon-twitterRed, .M__socialLinkButton-icon.icon-twitter:hover, .SocialMedia-icon--twitter:hover, .SocialMedia-icon--twitter--black:hover {
   background-image: url(../img/spritesheet.png);
-  background-position: -190px -88px;
+  background-position: -227px -211px;
   width: 19px;
   height: 16px;
 }
 
 .icon-youtube {
   background-image: url(../img/spritesheet.png);
-  background-position: -49px -112px;
+  background-position: -257px -228px;
   width: 22px;
   height: 16px;
 }
 
 .icon-youtubeBlack {
   background-image: url(../img/spritesheet.png);
-  background-position: -71px -112px;
+  background-position: -257px -212px;
   width: 22px;
   height: 16px;
 }
 
 .icon-youtubeRed, .M__socialLinkButton-icon.icon-youtube:hover, .SocialMedia-icon--youtube:hover, .SocialMedia-icon--youtube--black:hover {
   background-image: url(../img/spritesheet.png);
-  background-position: -93px -112px;
+  background-position: -257px -196px;
   width: 22px;
   height: 16px;
 }
 
 .icon-commentShare {
   background-image: url(../img/spritesheet.png);
-  background-position: -130px 0px;
+  background-position: -227px -61px;
   width: 30px;
   height: 30px;
 }
 
 .icon-commentShareWhite, .M__socialShareButton-main:hover .icon-commentShare {
   background-image: url(../img/spritesheet.png);
-  background-position: -79px -81px;
+  background-position: -227px -91px;
   width: 30px;
   height: 30px;
 }
 
 .icon-emailShare {
   background-image: url(../img/spritesheet.png);
-  background-position: -30px -130px;
+  background-position: -227px -121px;
   width: 30px;
   height: 30px;
 }
 
 .icon-emailShareWhite, .M__socialShareButton-main:hover .icon-emailShare {
   background-image: url(../img/spritesheet.png);
-  background-position: -130px -90px;
+  background-position: -227px -181px;
   width: 30px;
   height: 30px;
 }
 
 .icon-facebookShare {
   background-image: url(../img/spritesheet.png);
-  background-position: -130px -60px;
+  background-position: 0px -227px;
   width: 30px;
   height: 30px;
 }
 
 .icon-facebookShareWhite, .M__socialShareButton-main:hover .icon-facebookShare {
   background-image: url(../img/spritesheet.png);
-  background-position: -130px -30px;
+  background-position: -120px -227px;
   width: 30px;
   height: 30px;
 }
 
 .icon-googleShare {
   background-image: url(../img/spritesheet.png);
-  background-position: -60px -130px;
+  background-position: -30px -227px;
   width: 30px;
   height: 30px;
 }
 
 .icon-googleShareWhite, .M__socialShareButton-main:hover .icon-googleShare {
   background-image: url(../img/spritesheet.png);
-  background-position: -160px 0px;
+  background-position: -60px -227px;
   width: 30px;
   height: 30px;
 }
 
 .icon-linkedShareWhite, .M__socialShareButton-main:hover .icon-linkedinShare {
   background-image: url(../img/spritesheet.png);
-  background-position: -120px -130px;
+  background-position: -227px -31px;
   width: 30px;
   height: 30px;
 }
 
 .icon-linkedinShare {
   background-image: url(../img/spritesheet.png);
-  background-position: -90px -130px;
+  background-position: -90px -227px;
   width: 30px;
   height: 30px;
 }
 
 .icon-twitterShare {
   background-image: url(../img/spritesheet.png);
-  background-position: -49px -81px;
+  background-position: -227px 0px;
   width: 30px;
   height: 31px;
 }
 
 .icon-twitterShareWhite, .M__socialShareButton-main:hover .icon-twitterShare {
   background-image: url(../img/spritesheet.png);
-  background-position: 0px -130px;
+  background-position: -227px -151px;
   width: 30px;
   height: 30px;
 }
 
 .icon-attachment {
   background-image: url(../img/spritesheet.png);
-  background-position: -218px -32px;
+  background-position: -289px -194px;
   width: 9px;
   height: 16px;
 }
 
 .icon-calender {
   background-image: url(../img/spritesheet.png);
-  background-position: -15px -186px;
+  background-position: -289px -18px;
   width: 14px;
   height: 17px;
 }
 
 .icon-calenderRed {
   background-image: url(../img/spritesheet.png);
-  background-position: 0px -186px;
+  background-position: -289px 0px;
   width: 15px;
   height: 18px;
 }
 
 .icon-map {
   background-image: url(../img/spritesheet.png);
-  background-position: -41px -186px;
+  background-position: -289px -93px;
   width: 11px;
   height: 15px;
 }
 
 .icon-mapLarge {
   background-image: url(../img/spritesheet.png);
-  background-position: -115px -112px;
+  background-position: -289px -51px;
   width: 12px;
   height: 16px;
 }
 
 .icon-mapRed, .M__eventIntro-location:hover .M__eventIntro-locationIcon {
   background-image: url(../img/spritesheet.png);
-  background-position: -29px -186px;
+  background-position: -289px -35px;
   width: 12px;
   height: 16px;
 }
@@ -647,28 +689,28 @@ Icon classes can be used entirely standalone. They are named after their origina
 
 .icon-playSmall {
   background-image: url(../img/spritesheet.png);
-  background-position: -81px -49px;
+  background-position: -171px -154px;
   width: 31px;
   height: 31px;
 }
 
 .icon-tender {
   background-image: url(../img/spritesheet.png);
-  background-position: -112px -49px;
+  background-position: -51px -257px;
   width: 16px;
   height: 17px;
 }
 
 .icon-thumbPlay {
   background-image: url(../img/spritesheet.png);
-  background-position: 0px -81px;
+  background-position: -73px -154px;
   width: 49px;
   height: 49px;
 }
 
 .icon-thumbPlayRed, .Thumbnail-main:hover:not(.Thumbnail-main--noHover) .Thumbnail-container .Thumbnail-overlay .Thumbnail-lens .Thumbnail-row .Thumbnail-play .Thumbnail-playIcon {
   background-image: url(../img/spritesheet.png);
-  background-position: -81px 0px;
+  background-position: -122px -154px;
   width: 49px;
   height: 49px;
 }
@@ -4950,6 +4992,351 @@ select {
   }
   #Notifications-centre {
     padding-top: 10px;
+  }
+}
+
+#Registration-centre {
+  width: 1255px;
+  margin: 90px auto;
+}
+
+#Registration-col1, #Registration-col2 {
+  width: 600px;
+}
+
+.TextButton-col2--benefits {
+  color: black;
+}
+
+.TextButton-text--benefits {
+  padding-left: 10px;
+}
+
+#Registration-heading {
+  font-weight: 700;
+}
+
+#Registration-col2-row2 {
+  margin-top: 35px;
+}
+
+#Registration-col1-row2 {
+  background: #eee;
+}
+
+.login-username, login-password, login-remember {
+  padding: 0;
+  margin: 0;
+}
+
+.ninja-forms-cont {
+  border: 1px solid #ccc;
+  margin: 60px 0;
+}
+
+.ninja-forms-required-items {
+  font-size: 16px;
+  color: white;
+  background: #333;
+  padding: 10px 20px;
+}
+
+.nf-desc {
+  background: #eee;
+  font: 700 16px "Roboto Condensed";
+  text-transform: uppercase;
+  padding: 5px 20px;
+}
+
+.nf-desc p {
+  line-height: 19px;
+}
+
+.field-wrap {
+  margin: 30px 20px;
+}
+
+label {
+  font: 400 16 Roboto;
+  color: #aaa;
+}
+
+select.ninja-forms-field, input.ninja-forms-field, #user_login, #user_pass,
+input[class^="s2"], select[class^="s2"] {
+  height: 40px;
+  width: 100%;
+  margin-top: 10px;
+  padding: 5px;
+  font: 700 16px Roboto;
+  border: 1px solid #ccc;
+  margin-bottom: 25px;
+}
+
+select.ninja-forms-field {
+  background: #eee;
+}
+
+input[type='submit'].ninja-forms-field, #s2member-pro-paypal-registration-submit {
+  background: #ed1b25;
+  color: white;
+  text-transform: uppercase;
+  padding: 13px;
+  font: 700 26px "Roboto Condensed";
+  height: auto;
+  border: none;
+  width: 100%;
+}
+
+input[type='submit'].ninja-forms-field:hover {
+  background: #aaa !important;
+}
+
+#s2member-pro-paypal-registration-submit:hover {
+  background: #aaa !important;
+}
+
+#wp-submit:hover {
+  background: #aaa !important;
+}
+
+.login-username label {
+  display: none;
+}
+
+.login-password label {
+  display: none;
+}
+
+#Registration-col1-row2 {
+  padding: 20px;
+}
+
+.login-password {
+  margin-top: 3px;
+}
+
+#wp-submit {
+  background: #ed1b25;
+  color: white;
+  text-transform: uppercase;
+  padding: 13px;
+  font: 700 16px "Roboto Condensed";
+  height: auto;
+  border: none;
+  width: 250px;
+}
+
+#gpd_Login-forgot {
+  padding-left: 15px;
+  font-size: 14px !important;
+  margin-top: 15px;
+  padding-left: 20px;
+}
+
+#gpd_Login-remember {
+  padding-left: 30px;
+  margin-top: 14px;
+}
+
+#gpd_Login-rememberItem {
+  color: red !important;
+  font-size: 14px;
+  padding-left: 5px;
+  vertical-align: top;
+  line-height: 22px;
+}
+
+input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+}
+
+#s2member-pro-paypal-registration-form-options-section-title {
+  display: none;
+}
+
+#s2member-pro-paypal-registration-options {
+  display: none;
+}
+
+#Registration-col1-row3 {
+  margin-top: 40px;
+}
+
+#Registration-s2 {
+  border: 1px solid #ccc;
+}
+
+#Registration-s2Box {
+  padding: 20px;
+}
+
+#s2member-pro-paypal-registration-form-registration-section-title {
+  display: none;
+}
+
+#s2member-pro-paypal-registration-password1 {
+  margin-bottom: 0 !important;
+}
+
+#s2member-pro-paypal-registration-form-custom-fields-section-title {
+  display: none;
+}
+
+#s2member-pro-paypal-registration-form-password-strength {
+  display: none;
+}
+
+#s2member-pro-paypal-registration-form-custom-reg-field-user-phone-divider-section {
+  display: none;
+}
+
+#s2member-pro-paypal-registration-custom-reg-field-user-phone {
+  color: #cdcdcd;
+  font-weight: 400;
+}
+
+#s2member-pro-paypal-registration-form-custom-reg-field-terms-conditions-divider-section {
+  display: none;
+}
+
+#s2member-pro-paypal-registration-form-submission-section-title {
+  display: none;
+}
+
+#s2member-pro-paypal-registration-form-captcha-section-title {
+  display: none;
+}
+
+#s2member-pro-paypal-registration-form-captcha-div {
+  display: table;
+  margin: 0 auto;
+  padding-bottom: 40px;
+}
+
+#user_login {
+  margin-bottom: 0px;
+}
+
+#user_pass {
+  margin-bottom: 5px;
+}
+
+#s2member-pro-paypal-registration-custom-reg-field-terms-conditions {
+  margin: 0;
+}
+
+#s2member-pro-paypal-registration-custom-reg-field-subscribe {
+  margin: 0;
+}
+
+#s2member-pro-paypal-registration-form-custom-reg-field-position-title-divider-section {
+  display: none;
+}
+
+textarea[class^="s2"] {
+  margin-bottom: 25px;
+}
+
+#s2member-pro-paypal-registration-custom-reg-field-terms-conditions {
+  margin-bottom: 0px;
+}
+
+input[class^="s2"] {
+  color: black !important;
+}
+
+#s2member-pro-paypal-registration-custom-reg-field-user-address {
+  color: black !important;
+  font-weight: 700 !important;
+  padding: 5px;
+}
+
+#s2member-pro-paypal-registration-custom-reg-field-user-phone {
+  font-weight: 700 !important;
+}
+
+@media (max-width: 1300px) {
+  #Registration-centre {
+    width: 90%;
+  }
+  #Registration-col1 {
+    width: 60%;
+    padding-right: 60px;
+  }
+  #Registration-col2 {
+    width: 40%;
+  }
+}
+
+@media (max-width: 1000px) {
+  #s2member-pro-paypal-registration-form-custom-reg-field-terms-conditions-div {
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+  #s2member-pro-paypal-registration-custom-reg-field-subscribe {
+    margin-bottom: 30px;
+  }
+  select.ninja-forms-field, input.ninja-forms-field, #user_login, #user_pass,
+  input[class^="s2"]:not[type="checkbox"], select[class^="s2"]:not[type="checkbox"], #user_login, #user_pass {
+    height: 70px;
+    font-size: 30px;
+    padding: 0 10px;
+  }
+}
+
+@media (max-width: 1000px) {
+  #Registration-col1 {
+    width: 100%;
+    padding-right: 100px;
+    padding-right: 0;
+  }
+  #Registration-col2 {
+    display: none;
+  }
+  #gpd_Login-button {
+    width: 100%;
+  }
+  #gpd_Login-button {
+    float: none;
+    text-align: center;
+    font-size: 20px;
+  }
+  #gpd_Login-remember {
+    float: left;
+  }
+  #wp-submit {
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-bottom: 20px;
+  }
+  #gpd_Login-forgot {
+    float: right;
+    padding-right: 40px;
+  }
+  #Registration-col1-row1 {
+    display: none;
+  }
+  #s2member-pro-paypal-registration-custom-reg-field-terms-conditions {
+    margin-bottom: 20px;
+  }
+  #s2member-pro-paypal-registration-submit {
+    padding: 22px 0;
+  }
+  #user_login, #user_pass {
+    height: 80px;
+    font-size: 22px;
+    padding-left: 10px;
+  }
+}
+
+@media (max-width: 450px) {
+  #gpd_Login-remember {
+    padding: 0;
+  }
+  #gpd_Login-forgot {
+    padding: 0;
   }
 }
 

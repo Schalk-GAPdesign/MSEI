@@ -1,0 +1,71 @@
+include ../_global/includes/layout.jade
+include ../_global/includes/head/head.jade
+
+
+//-///////////////////////////////////////////////////////////////////////////////
+//-                                                                    f         //
+//-                                                         gf     s               //
+//-                                                d         gf     s               //
+//-    LAYOUT                      d      df                f      fd d                //
+//-   ---------------                      d d     s    f       f      ff  fd           //
+//-   ---------------    f              s    d    d   d      f sa s  s         g           //
+//-                                       s     s  dxa          ff   s                 //
+//-                          f                       f  d                          //
+//-///////////////////////////////////////////////////////////////////////////////
+
+#Registration-main
+    #Registration-centre.u-cf
+        #Registration-col1.u-floatLeft
+            #Registration-col1-row1
+                +Heading('Login')
+            #Registration-col1-row2
+                include includes/login.jade
+            #Registration-col1-row3
+                //div
+                    +Heading('Register')
+                #Registration-s2
+                    include includes/registration.jade
+
+        #Registration-col2.u-floatRight
+            #Registration-col2-row1
+                h2#Registration-heading To enjoy our premium content, we invite you to join our global community of like-minded professionals within smart meters, smart grid and smart energy.
+            #Registration-col2-row2
+                .TextButton-main
+                    .TextButton-content
+                            .TextButton-heading.u-table Free membership to Metering.com gives you:
+                            if article.benefits
+                                each val in article.benefits
+                                        .TextButton-item.TextButton-item--list.TextButton-item--noHover.u-table
+                                            .TextButton-col1.u-tableCell
+                                                div(class="#{val.icon}")
+                                            .TextButton-col2.TextButton-col2--report.TextButton-col2--benefits.u-tableCell
+                                                .TextButton-text.TextButton-text--benefits= val.text
+
+
+
+
+
+//-////////////////////////////////////////////////////////////////////////////////
+//-                                                                    d          //
+//-                                      s  sa                                      //
+//-                                                 s   s                          //
+//-                                                                              //
+//-                                              f                                //
+//-                                          s                     s              //
+//-                                                           e                   //ill
+//-                                   asd                                           //
+//-                               ds                                               //
+//-                                      END       s                              //
+//-                            asd                                                  //
+//-                                            sa       d                          //
+//-                                                                              //
+//-                                                     asd                         //
+//-                                                             fd                 //
+//-                                                                              //
+//-                                                                              //
+//-                                                                              //
+//-                                                                              //
+//-////////////////////////////////////////////////////////////////////////////////
+
+
+include ../_global/includes/foot/foot.jade

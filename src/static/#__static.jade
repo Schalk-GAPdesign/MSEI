@@ -26,7 +26,7 @@ include ../_global/includes/head/head.jade
             #StaticWrapper-introBlock= article.introBlock
 
         if (article.team!=null)
-            #TeamAdvisory-main
+            div
                 if article.blockHeader4
                     #StaticWrapper-header
                         +Heading(article.blockHeader4)
@@ -105,7 +105,7 @@ include ../_global/includes/head/head.jade
 
 
         if article.includes.contact
-            #StaticWrapper-form
+            #StaticWrapper-form--contact
                 if article.blockHeader3
                     div
                         +Heading(article.blockHeader3)
