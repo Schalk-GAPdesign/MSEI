@@ -154,10 +154,10 @@ include ../_global/includes/head/head.jade
 
 //-///////////////////////////////////////////////////////////////////////////////
 //-                                                                             //
-//-                                                                             //
-//-    LAYOUT                                                                   //
+//-                                            s                                //
+//-    LAYOUT                                        f                           //
 //-   ---------------                                                           //
-//-    ARTICLE FOOTER                               s                            //
+//-    ARTICLE FOOTER                               s              as              //
 //-                                                          s    s s              //
 //-                                                                             //
 //-///////////////////////////////////////////////////////////////////////////////
@@ -176,11 +176,11 @@ include ../_global/includes/head/head.jade
                     |HTML_comments
 
             //- 1.2 SUBMIT BUTTONS
-            if(article.content.footer.submitButton!=null)
+            if(article.content.footer.submitButtons!=null)
                 #__articleFooter-col1-row3
                     +Heading('Submit News Story')
                 #__articleFooter-col1-row4
-                    +O__textPromptList
+                    +TextButton--files--noLabel--submit
 
         //- 2.1 RELATED CONTENT
         if(article.content.footer.relatedContentAlt!=null)
@@ -193,7 +193,7 @@ include ../_global/includes/head/head.jade
                             .u-col3.u-floatLeft
                                 +Thumbnail
 
-        //- 2.2 RELATED CONTENT -- PRESS RELEASE
+        //- 2.2 RELATED CONTENT -- PRESS RELEASEs
         if(article.content.footer.pressRelease!=null)
             //- PRESS RELEASE
             #__pressReleases-main

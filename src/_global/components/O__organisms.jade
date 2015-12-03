@@ -206,7 +206,7 @@ mixin O__magazinePreviewArticles
 //-                                                                             //
 //-    ORGANISM                                                                 //
 //-   ---------------                                                           //
-//-    SOCIAL MEDIA LINKS LIST                                                  //
+//-    SOCIAL MEDIA LINKS LIST                               s                   //
 //-                                                                             //
 //-                                                                             //
 //-///////////////////////////////////////////////////////////////////////////////
@@ -218,6 +218,11 @@ mixin O__socialLinkList
                 .O__socialLinkList-item.u-floatLeft
                     +M__socialLinkButton(val.icon)
 
+mixin O__socialLinkList--black
+        .O__socialLinkList--head-main.u-cf
+            each val in foot.socialMedia
+                .O__socialLinkList-item.u-floatLeft
+                    +M__socialLinkButton--black(val.icon)
 
 
 //-///////////////////////////////////////////////////////////////////////////////

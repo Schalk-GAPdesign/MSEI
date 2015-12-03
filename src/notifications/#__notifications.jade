@@ -6,14 +6,41 @@ include ../_global/includes/head/head.jade
 //-                                                                             //
 //-                                                                             //
 //-    LAYOUT                                                                   //
-//-   ---------------                                                           //
-//-    MAGAZINE                                                                 //
+//-   ---------------                      d                        f             //
+//-    MAGAZINE                      s      d                s                    //
 //-                                                                             //
 //-                                                                             //
 //-///////////////////////////////////////////////////////////////////////////////
 
 
-#__contentWrapper
+#Notifications-main(class="#{article.fixed==true ? 'u-fixed' : undefined}")
+    #Notifications-centre(class="#{article.background ? article.background : undefined}")
+        #Notifications-container
+            if(article.logo)
+                #Notifications-logo
+                    img(src="img/logoRed.png")
+            #Notification-box
+                #Notifications-title #{article.text ? article.text : 'Placeholder Text'}
+                #Notifications-text !{article.description ? article.description : 'Placeholder Text'}
+            if(article.social)
+                #Notifications-social
+                    #Notifications-socialPrompt Contact and connect with us
+                    #Notifications-socialIcons
+                        +O__socialLinkList--black
+             if(article.prompt)
+                #Notifications-prompt= article.prompt
+
+#Notifications-recommended
+    #Notifications-recommendedCenter
+        #Notifications-recommendedHeader
+            +Heading('Popular News')
+        #Notifications-recommendedContent.u-cf
+            each val in [1,2,3]
+                .u-col3.u-floatLeft
+                    +Thumbnail--news
+
+
+
 
 
 
@@ -23,16 +50,16 @@ include ../_global/includes/head/head.jade
 //-                                                                              //
 //-                                                                              //
 //-                                                                              //
+//-                                          s                     s              //
+//-                                                           e                   //
 //-                                                                              //
 //-                                                                              //
+//-                                      END       s                              //
+//-                                                                              //
+//-                                            sa                                 //
 //-                                                                              //
 //-                                                                              //
-//-                                      END                                     //
-//-                                                                              //
-//-                                                                              //
-//-                                                                              //
-//-                                                                              //
-//-                                                                              //
+//-                                                             fd                 //
 //-                                                                              //
 //-                                                                              //
 //-                                                                              //

@@ -318,21 +318,21 @@ Icon classes can be used entirely standalone. They are named after their origina
 
 .icon-dropdown {
   background-image: url(../img/spritesheet.png);
-  background-position: -218px -73px;
+  background-position: -218px -55px;
   width: 10px;
   height: 7px;
 }
 
 .icon-dropdownWhite, .M__mainNavButton-main:hover:not(.is-activated) .M__mainNavButton-container .M__mainNavButton-centre .M__mainNavButton-arrow {
   background-image: url(../img/spritesheet.png);
-  background-position: -218px -66px;
+  background-position: -218px -48px;
   width: 10px;
   height: 7px;
 }
 
 .icon-footerDot {
   background-image: url(../img/spritesheet.png);
-  background-position: -218px -80px;
+  background-position: -218px -62px;
   width: 4px;
   height: 3px;
 }
@@ -395,14 +395,14 @@ Icon classes can be used entirely standalone. They are named after their origina
 
 .icon-facebookBlack {
   background-image: url(../img/spritesheet.png);
-  background-position: -218px -48px;
-  width: 8px;
+  background-position: -209px 0px;
+  width: 9px;
   height: 18px;
 }
 
 .icon-facebookRed, .M__socialLinkButton-icon.icon-facebook:hover, .SocialMedia-icon--facebook:hover, .SocialMedia-icon--facebook--black:hover {
   background-image: url(../img/spritesheet.png);
-  background-position: -209px 0px;
+  background-position: -209px -18px;
   width: 9px;
   height: 18px;
 }
@@ -493,21 +493,21 @@ Icon classes can be used entirely standalone. They are named after their origina
 
 .icon-youtube {
   background-image: url(../img/spritesheet.png);
-  background-position: -72px -112px;
+  background-position: -49px -112px;
   width: 22px;
   height: 16px;
 }
 
 .icon-youtubeBlack {
   background-image: url(../img/spritesheet.png);
-  background-position: -49px -112px;
-  width: 23px;
+  background-position: -71px -112px;
+  width: 22px;
   height: 16px;
 }
 
 .icon-youtubeRed, .M__socialLinkButton-icon.icon-youtube:hover, .SocialMedia-icon--youtube:hover, .SocialMedia-icon--youtube--black:hover {
   background-image: url(../img/spritesheet.png);
-  background-position: -94px -112px;
+  background-position: -93px -112px;
   width: 22px;
   height: 16px;
 }
@@ -626,14 +626,14 @@ Icon classes can be used entirely standalone. They are named after their origina
 
 .icon-mapLarge {
   background-image: url(../img/spritesheet.png);
-  background-position: -29px -186px;
+  background-position: -115px -112px;
   width: 12px;
   height: 16px;
 }
 
 .icon-mapRed, .M__eventIntro-location:hover .M__eventIntro-locationIcon {
   background-image: url(../img/spritesheet.png);
-  background-position: -116px -112px;
+  background-position: -29px -186px;
   width: 12px;
   height: 16px;
 }
@@ -4802,6 +4802,96 @@ select {
 .CategoryPagination-item {
   width: 14%;
   padding: 0 5px;
+}
+
+#Notifications-centre {
+  width: 1255px;
+  margin: 0 auto;
+  padding-top: 100px;
+}
+
+#Notifications-title {
+  border-top: 10px solid black;
+  padding-top: 25px;
+  margin-top: 20px;
+  text-transform: uppercase;
+  font: 700 130px "Roboto Condensed";
+  line-height: 110px;
+  padding-bottom: 30px;
+}
+
+#Notifications-main {
+  background: #eee;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 99999;
+}
+
+#Notifications-text {
+  font-weight: 700;
+  width: 530px;
+  font-size: 18px;
+}
+
+#Notification-box {
+  padding-bottom: 15px;
+  margin-bottom: 35px;
+  border-bottom: 1px solid;
+}
+
+#Notifications-socialIcons {
+  margin-top: 10px;
+}
+
+.O__socialLinkList-item:nth-child(1) {
+  margin-left: 0;
+}
+
+.Notifications-centre--IE {
+  margin-top: 60px;
+  background-image: url("../img/notification-IE.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 840px;
+}
+
+.Notifications-centre--upgrade {
+  margin-top: 60px;
+  background-image: url("../img/notification-maintenance.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 840px;
+}
+
+.Notifications-centre--check {
+  background-image: url("../img/notification-check.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 580px;
+}
+
+#Notifications-prompt {
+  color: red;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+#Notifications-recommendedCenter {
+  width: 900px;
+  margin: 60px auto 80px auto;
+}
+
+@media (max-width: 1000px) {
+  #Notifications-recommendedCenter {
+    width: 90%;
+  }
+}
+
+.TextButton-main--white {
+  background: white;
+  text-transform: uppercase;
 }
 
 /*# sourceMappingURL=stylesheet.css.map */

@@ -1122,7 +1122,7 @@ mixin M__socialShareButton(icon, text, prepend, data, append)
 //-                                                                             //
 //-    MOLECULE                                                                 //
 //-   ---------------                                                           //
-//-    SOCIAL LINK ICON BUTTON (HEADER / FOOTER)                                //
+//-    SOCIAL LINK ICON BUTTON (HEADER / FOOTER)          s       s               //
 //-                                                                             //
 //-                                                                             //
 //-///////////////////////////////////////////////////////////////////////////////
@@ -1136,6 +1136,12 @@ mixin M__socialLinkButton(val)
                     .M__socialLinkButton-icon(class="icon-#{val}")
 
 
+mixin M__socialLinkButton--black(val)
+    a(href="#").u-noUnderline
+        .M__socialLinkButton-main
+            .M__socialLinkButton-circle
+                .M__socialLinkButton-container
+                    .M__socialLinkButton-icon(class="icon-#{val}Black")
 
 
 
