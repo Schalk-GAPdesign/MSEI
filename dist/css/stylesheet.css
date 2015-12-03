@@ -4804,16 +4804,28 @@ select {
   padding: 0 5px;
 }
 
+#Notifications-bg {
+  background: #eee;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
 #Notifications-centre {
   width: 1255px;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
   padding-top: 100px;
 }
 
+@media (max-width: 1300px) {
+  #Notifications-centre {
+    width: 90%;
+  }
+}
+
 #Notifications-title {
-  border-top: 10px solid black;
-  padding-top: 25px;
-  margin-top: 20px;
   text-transform: uppercase;
   font: 700 130px "Roboto Condensed";
   line-height: 110px;
@@ -4821,7 +4833,6 @@ select {
 }
 
 #Notifications-main {
-  background: #eee;
   width: 100%;
   height: 100%;
   top: 0;
@@ -4831,11 +4842,14 @@ select {
 
 #Notifications-text {
   font-weight: 700;
-  width: 530px;
+  max-width: 530px;
   font-size: 18px;
 }
 
 #Notification-box {
+  border-top: 10px solid black;
+  padding-top: 25px;
+  margin-top: 20px;
   padding-bottom: 15px;
   margin-bottom: 35px;
   border-bottom: 1px solid;
@@ -4872,10 +4886,21 @@ select {
   min-height: 580px;
 }
 
+.Notifications-centre--404 {
+  background-image: url("../img/notification-404.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 900px;
+}
+
 #Notifications-prompt {
   color: red;
   font-weight: 700;
   font-size: 18px;
+}
+
+#Notifications-image {
+  max-width: 100%;
 }
 
 #Notifications-recommendedCenter {
@@ -4892,6 +4917,42 @@ select {
 .TextButton-main--white {
   background: white;
   text-transform: uppercase;
+}
+
+#Notifications-search {
+  margin-top: 60px;
+}
+
+.Notifications-recommendedListItem {
+  color: red;
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+}
+
+#Notifications-recommendedText {
+  margin-top: 60px;
+}
+
+#Notifications-prompt {
+  margin-bottom: 20px;
+}
+
+@media (max-width: 1000px) {
+  #Notifications-title {
+    font-size: 50px;
+    line-height: 45px;
+  }
+  .Notifications-centre--404, .Notifications-centre--check, .Notifications-centre--upgrade, .Notifications-centre--IE {
+    background-image: none !important;
+    min-height: auto;
+  }
+  #Notifications-prompt {
+    margin-bottom: 80px;
+  }
+  #Notifications-centre {
+    padding-top: 10px;
+  }
 }
 
 /*# sourceMappingURL=stylesheet.css.map */

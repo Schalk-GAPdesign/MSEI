@@ -207,6 +207,17 @@ mixin Search
         .Search-buttonContainer.u-floatLeft
             button.Search-button Search
 
+mixin Search--error
+    .Search-main.u-cf
+        .Search-keywordContainer.u-floatLeft
+            input.Search-keyword(placeholder="Search")
+        .Search-categoryContainer.u-floatLeft
+            select.Search-category
+                each val in ["All Content", "News","Features","Reports","Tenders","Multimedia","Events"]
+                    option= val
+        .Search-buttonContainer.u-floatLeft
+            button.Search-button Search
+
 
 mixin Quote
     .Quote-main
@@ -1029,8 +1040,8 @@ mixin TextButton--files--noLabel(text)
                                 .TextButton-text Placeholder
                             .TextButton-col3.u-tableCell
                                 .TextButton-arrow.icon-arrow
-                                
-                                
+
+
 mixin TextButton--files--noLabel--submit(text)
     .TextButton-main.TextButton-main--white
         .TextButton-content

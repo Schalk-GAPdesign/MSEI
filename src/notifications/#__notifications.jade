@@ -6,22 +6,40 @@ include ../_global/includes/head/head.jade
 //-                                                                             //
 //-                                                                             //
 //-    LAYOUT                                                                   //
-//-   ---------------                      d                        f             //
+//-   ---------------                      d      s                  f             //
 //-    MAGAZINE                      s      d                s                    //
-//-                                                                             //
+//-                                       s                                      //
 //-                                                                             //
 //-///////////////////////////////////////////////////////////////////////////////
 
-
-#Notifications-main(class="#{article.fixed==true ? 'u-fixed' : undefined}")
+#Notifications-bg(class="#{article.fixed==true ? 'u-fixed' : undefined}")
+#Notifications-main(class="#{article.fixed==true ? 'u-absolute' : undefined}")
     #Notifications-centre(class="#{article.background ? article.background : undefined}")
         #Notifications-container
             if(article.logo)
                 #Notifications-logo
-                    img(src="img/logoRed.png")
+                    img#Notifications-image(src="img/logoRed.png")
             #Notification-box
                 #Notifications-title #{article.text ? article.text : 'Placeholder Text'}
                 #Notifications-text !{article.description ? article.description : 'Placeholder Text'}
+                if article.search
+                    #Notifications-search
+                        div
+                            p Perhaps we can help you find it?
+                        div
+                            +Search--error
+
+                if article.recommendedText
+                    #Notifications-recommendedText
+                        div
+                            p You might be looking for one of these popular stories:
+                        div
+                            ul
+                                each val in [1,2,3,4,5]
+                                    li.Notifications-recommendedListItem
+                                        a(href="#")|AGCS urges protective policies as awareness of cyber risks increase
+
+
             if(article.social)
                 #Notifications-social
                     #Notifications-socialPrompt Contact and connect with us
@@ -30,14 +48,16 @@ include ../_global/includes/head/head.jade
              if(article.prompt)
                 #Notifications-prompt= article.prompt
 
-#Notifications-recommended
-    #Notifications-recommendedCenter
-        #Notifications-recommendedHeader
-            +Heading('Popular News')
-        #Notifications-recommendedContent.u-cf
-            each val in [1,2,3]
-                .u-col3.u-floatLeft
-                    +Thumbnail--news
+
+if article.recommended
+    #Notifications-recommended
+        #Notifications-recommendedCenter
+            #Notifications-recommendedHeader
+                +Heading('Popular News')
+            #Notifications-recommendedContent.u-cf
+                each val in [1,2,3]
+                    .u-col3.u-floatLeft
+                        +Thumbnail--news
 
 
 
@@ -45,20 +65,20 @@ include ../_global/includes/head/head.jade
 
 
 //-////////////////////////////////////////////////////////////////////////////////
+//-                                                                    d          //
+//-                                        sa                                      //
+//-                                                 s   s                          //
 //-                                                                              //
-//-                                                                              //
-//-                                                                              //
-//-                                                                              //
-//-                                                                              //
+//-                                              f                                //
 //-                                          s                     s              //
 //-                                                           e                   //
-//-                                                                              //
-//-                                                                              //
+//-                                   asd                                           //
+//-                               ds                                               //
 //-                                      END       s                              //
+//-                            asd                                                  //
+//-                                            sa       d                          //
 //-                                                                              //
-//-                                            sa                                 //
-//-                                                                              //
-//-                                                                              //
+//-                                                     asd                         //
 //-                                                             fd                 //
 //-                                                                              //
 //-                                                                              //
