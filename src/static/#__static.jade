@@ -26,10 +26,20 @@ include ../_global/includes/head/head.jade
             #StaticWrapper-introBlock= article.introBlock
 
         if (article.team!=null)
-            +Team
+            #TeamAdvisory-main
+                if article.blockHeader4
+                    #StaticWrapper-header
+                        +Heading(article.blockHeader4)
+                #TeamAdvisory-container
+                    +Team
 
         if (article.teamAdvisory!=null)
-            +Team--advisory
+            #TeamAdvisory-main
+                if article.blockHeader4
+                    #StaticWrapper-header
+                        +Heading(article.blockHeader4)
+                #TeamAdvisory-container
+                    +Team--advisory
 
         if(!article.hide)
             #StaticWrapper-content
@@ -109,7 +119,7 @@ include ../_global/includes/head/head.jade
 
 //-////////////////////////////////////////////////////////////////////////////////
 //-                                                                              //
-//-                                                                              //
+//-                                        f                                      //
 //-                                                                              //
 //-                                                                              //
 //-                                                                              //
