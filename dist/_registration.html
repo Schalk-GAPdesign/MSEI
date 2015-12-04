@@ -132,7 +132,7 @@
 <link rel="stylesheet" type="text/css" href="js/libraries/fancybox/stylesheet.css"/><meta charset="utf-8">
 </head>
 <body>
-<!--if lte IE 7
+<!--if lte IE 9
 #Notifications-bg.u-fixed
 #Notifications-main.u-absolute
   #Notifications-centre.Notifications-centre--IE
@@ -607,49 +607,19 @@
                   </label>
                 </div>
                 <div id="s2member-pro-paypal-registration-form-email-div" class="s2member-pro-paypal-form-div s2member-pro-paypal-registration-form-div s2member-pro-paypal-form-email-div s2member-pro-paypal-registration-form-email-div">
-                  <label id="s2member-pro-paypal-registration-form-email-label" for="s2member-pro-paypal-registration-email" class="s2member-pro-paypal-form-email-label s2member-pro-paypal-registration-form-email-label"><span>Email Address *</span><br/>
+                  <label id="s2member-pro-paypal-registration-form-email-label" for="s2member-pro-paypal-registration-email" class="s2member-pro-paypal-form-email-label s2member-pro-paypal-registration-form-email-label"><span>Job Title *</span><br/>
+                    <input id="s2member-pro-paypal-registration-last-name" type="text" aria-required="true" maxlength="100" autocomplete="off" name="s2member_pro_paypal_registration[last_name]" value="" tabindex="20" class="s2member-pro-paypal-last-name s2member-pro-paypal-registration-last-name form-control"/>
+                  </label>
+                </div>
+                <div id="s2member-pro-paypal-registration-form-email-div" class="s2member-pro-paypal-form-div s2member-pro-paypal-registration-form-div s2member-pro-paypal-form-email-div s2member-pro-paypal-registration-form-email-div">
+                  <label id="s2member-pro-paypal-registration-form-email-label" for="s2member-pro-paypal-registration-email" class="s2member-pro-paypal-form-email-label s2member-pro-paypal-registration-form-email-label"><span>Company Name *</span><br/>
+                    <input id="s2member-pro-paypal-registration-last-name" type="text" aria-required="true" maxlength="100" autocomplete="off" name="s2member_pro_paypal_registration[last_name]" value="" tabindex="20" class="s2member-pro-paypal-last-name s2member-pro-paypal-registration-last-name form-control"/>
+                  </label>
+                </div>
+                <div id="s2member-pro-paypal-registration-form-email-div" class="s2member-pro-paypal-form-div s2member-pro-paypal-registration-form-div s2member-pro-paypal-form-email-div s2member-pro-paypal-registration-form-email-div">
+                  <label id="s2member-pro-paypal-registration-form-email-label" for="s2member-pro-paypal-registration-email" class="s2member-pro-paypal-form-email-label s2member-pro-paypal-registration-form-email-label"><span>Email *</span><br/>
                     <input id="s2member-pro-paypal-registration-email" type="email" aria-required="true" data-expected="email" maxlength="100" autocomplete="off" name="s2member_pro_paypal_registration[email]" value="" tabindex="30" class="s2member-pro-paypal-email s2member-pro-paypal-registration-email form-control"/>
                   </label>
-                </div>
-                <div id="s2member-pro-paypal-registration-form-username-div" class="s2member-pro-paypal-form-div s2member-pro-paypal-registration-form-div s2member-pro-paypal-form-username-div s2member-pro-paypal-registration-form-username-div">
-                  <label id="s2member-pro-paypal-registration-form-username-label" for="s2member-pro-paypal-registration-username" class="s2member-pro-paypal-form-username-label s2member-pro-paypal-registration-form-username-label"><span>Username (lowercase alphanumeric) *</span><br/>
-                    <input id="s2member-pro-paypal-registration-username" type="text" aria-required="true" maxlength="60" autocomplete="off" name="s2member_pro_paypal_registration[username]" value="" tabindex="40" class="s2member-pro-paypal-username s2member-pro-paypal-registration-username form-control"/>
-                  </label>
-                </div>
-                <div id="s2member-pro-paypal-registration-form-password-div" class="s2member-pro-paypal-form-div s2member-pro-paypal-registration-form-div s2member-pro-paypal-form-password-div s2member-pro-paypal-registration-form-password-div">
-                  <label id="s2member-pro-paypal-registration-form-password-label" for="s2member-pro-paypal-registration-password1" class="s2member-pro-paypal-form-password-label s2member-pro-paypal-registration-form-password-label"><span>Password (type this twice please) *</span><br/>
-                    <input id="s2member-pro-paypal-registration-password1" type="password" aria-required="true" maxlength="100" autocomplete="off" name="s2member_pro_paypal_registration[password1]" value="" tabindex="50" style="background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACIUlEQVQ4EX2TOYhTURSG87IMihDsjGghBhFBmHFDHLWwSqcikk4RRKJgk0KL7C8bMpWpZtIqNkEUl1ZCgs0wOo0SxiLMDApWlgOPrH7/5b2QkYwX7jvn/uc//zl3edZ4PPbNGvF4fC4ajR5VrNvt/mo0Gr1ZPOtfgWw2e9Lv9+chX7cs64CS4Oxg3o9GI7tUKv0Q5o1dAiTfCgQCLwnOkfQOu+oSLyJ2A783HA7vIPLGxX0TgVwud4HKn0nc7Pf7N6vV6oZHkkX8FPG3uMfgXC0Wi2vCg/poUKGGcagQI3k7k8mcp5slcGswGDwpl8tfwGJg3xB6Dvey8vz6oH4C3iXcFYjbwiDeo1KafafkC3NjK7iL5ESFGQEUF7Sg+ifZdDp9GnMF/KGmfBdT2HCwZ7TwtrBPC7rQaav6Iv48rqZwg+F+p8hOMBj0IbxfMdMBrW5pAVGV/ztINByENkU0t5BIJEKRSOQ3Aj+Z57iFs1R5NK3EQS6HQqF1zmQdzpFWq3W42WwOTAf1er1PF2USFlC+qxMvFAr3HcexWX+QX6lUvsKpkTyPSEXJkw6MQ4S38Ljdbi8rmM/nY+CvgNcQqdH6U/xrYK9t244jZv6ByUOSiDdIfgBZ12U6dHEHu9TpdIr8F0OP692CtzaW/a6y3y0Wx5kbFHvGuXzkgf0xhKnPzA4UTyaTB8Ph8AvcHi3fnsrZ7Wore02YViqVOrRXXPhfqP8j6MYlawoAAAAASUVORK5CYII=); background-attachment: scroll; background-position: 100% 50%; background-repeat: no-repeat;" class="s2member-pro-paypal-password1 s2member-pro-paypal-registration-password1 form-control"/>
-                  </label>
-                  <input id="s2member-pro-paypal-registration-password2" type="password" maxlength="100" autocomplete="off" name="s2member_pro_paypal_registration[password2]" value="" tabindex="60" style="background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACIUlEQVQ4EX2TOYhTURSG87IMihDsjGghBhFBmHFDHLWwSqcikk4RRKJgk0KL7C8bMpWpZtIqNkEUl1ZCgs0wOo0SxiLMDApWlgOPrH7/5b2QkYwX7jvn/uc//zl3edZ4PPbNGvF4fC4ajR5VrNvt/mo0Gr1ZPOtfgWw2e9Lv9+chX7cs64CS4Oxg3o9GI7tUKv0Q5o1dAiTfCgQCLwnOkfQOu+oSLyJ2A783HA7vIPLGxX0TgVwud4HKn0nc7Pf7N6vV6oZHkkX8FPG3uMfgXC0Wi2vCg/poUKGGcagQI3k7k8mcp5slcGswGDwpl8tfwGJg3xB6Dvey8vz6oH4C3iXcFYjbwiDeo1KafafkC3NjK7iL5ESFGQEUF7Sg+ifZdDp9GnMF/KGmfBdT2HCwZ7TwtrBPC7rQaav6Iv48rqZwg+F+p8hOMBj0IbxfMdMBrW5pAVGV/ztINByENkU0t5BIJEKRSOQ3Aj+Z57iFs1R5NK3EQS6HQqF1zmQdzpFWq3W42WwOTAf1er1PF2USFlC+qxMvFAr3HcexWX+QX6lUvsKpkTyPSEXJkw6MQ4S38Ljdbi8rmM/nY+CvgNcQqdH6U/xrYK9t244jZv6ByUOSiDdIfgBZ12U6dHEHu9TpdIr8F0OP692CtzaW/a6y3y0Wx5kbFHvGuXzkgf0xhKnPzA4UTyaTB8Ph8AvcHi3fnsrZ7Wore02YViqVOrRXXPhfqP8j6MYlawoAAAAASUVORK5CYII=); background-attachment: scroll; background-position: 100% 50%; background-repeat: no-repeat;" class="s2member-pro-paypal-password2 s2member-pro-paypal-registration-password2 form-control"/>
-                  <div id="s2member-pro-paypal-registration-form-password-strength" class="ws-plugin--s2member-password-strength s2member-pro-paypal-form-password-strength s2member-pro-paypal-registration-form-password-strength"><em>password strength indicator</em></div>
-                </div>
-                <div style="clear:both;"></div>
-              </div>
-              <div id="s2member-pro-paypal-registration-form-custom-fields-section" class="s2member-pro-paypal-form-section s2member-pro-paypal-registration-form-section s2member-pro-paypal-form-custom-fields-section s2member-pro-paypal-registration-form-custom-fields-section">
-                <div id="s2member-pro-paypal-registration-form-custom-fields-section-title" class="s2member-pro-paypal-form-section-title s2member-pro-paypal-registration-form-section-title s2member-pro-paypal-form-custom-fields-section-title s2member-pro-paypal-registration-form-custom-fields-section-title"> Additional Info</div>
-              </div>
-              <div class="TextButton-heading u-table">Additional Information</div>
-              <div id="Registration-s2Box">
-                <div id="s2member-pro-paypal-registration-form-custom-reg-field-position-title-divider-section" class="s2member-pro-paypal-form-div s2member-pro-paypal-registration-form-div s2member-pro-paypal-form-custom-reg-field-divider-section-title s2member-pro-paypal-form-custom-reg-field-position-title-divider-section-title s2member-pro-paypal-registration-form-custom-reg-field-position-title-divider-section-title">User Details</div>
-                <div id="s2member-pro-paypal-registration-form-custom-reg-field-position-title-div" class="s2member-pro-paypal-form-div s2member-pro-paypal-registration-form-div s2member-pro-paypal-form-custom-reg-field-position-title-div s2member-pro-paypal-registration-form-custom-reg-field-position-title-div">
-                  <label id="s2member-pro-paypal-registration-form-custom-reg-field-position-title-label" for="s2member-pro-paypal-registration-custom-reg-field-position-title" class="s2member-pro-paypal-form-custom-reg-field-position-title-label s2member-pro-paypal-registration-form-custom-reg-field-position-title-label"><span>Position / Title *</span></label><br/>
-                  <input id="s2member-pro-paypal-registration-custom-reg-field-position-title" type="text" maxlength="100" autocomplete="off" value="" name="s2member_pro_paypal_registration[custom_fields][position_title]" aria-required="true" tabindex="100" class="s2member-pro-paypal-custom-reg-field-position-title s2member-pro-paypal-registration-custom-reg-field-position-title form-control"/>
-                </div>
-                <div id="s2member-pro-paypal-registration-form-custom-reg-field-company-name-div" class="s2member-pro-paypal-form-div s2member-pro-paypal-registration-form-div s2member-pro-paypal-form-custom-reg-field-company-name-div s2member-pro-paypal-registration-form-custom-reg-field-company-name-div">
-                  <label id="s2member-pro-paypal-registration-form-custom-reg-field-company-name-label" for="s2member-pro-paypal-registration-custom-reg-field-company-name" class="s2member-pro-paypal-form-custom-reg-field-company-name-label s2member-pro-paypal-registration-form-custom-reg-field-company-name-label"><span>Company *</span></label><br/>
-                  <input id="s2member-pro-paypal-registration-custom-reg-field-company-name" type="text" maxlength="100" autocomplete="off" value="" name="s2member_pro_paypal_registration[custom_fields][company_name]" aria-required="true" tabindex="101" class="s2member-pro-paypal-custom-reg-field-company-name s2member-pro-paypal-registration-custom-reg-field-company-name form-control"/>
-                </div>
-                <div id="s2member-pro-paypal-registration-form-custom-reg-field-user-address-div" class="s2member-pro-paypal-form-div s2member-pro-paypal-registration-form-div s2member-pro-paypal-form-custom-reg-field-user-address-div s2member-pro-paypal-registration-form-custom-reg-field-user-address-div">
-                  <label id="s2member-pro-paypal-registration-form-custom-reg-field-user-address-label" for="s2member-pro-paypal-registration-custom-reg-field-user-address" class="s2member-pro-paypal-form-custom-reg-field-user-address-label s2member-pro-paypal-registration-form-custom-reg-field-user-address-label"><span>Address</span></label><br/>
-                  <textarea id="s2member-pro-paypal-registration-custom-reg-field-user-address" rows="3" name="s2member_pro_paypal_registration[custom_fields][user_address]" tabindex="102" class="s2member-pro-paypal-custom-reg-field-user-address s2member-pro-paypal-registration-custom-reg-field-user-address form-control"></textarea>
-                </div>
-                <div id="s2member-pro-paypal-registration-form-custom-reg-field-user-city-div" class="s2member-pro-paypal-form-div s2member-pro-paypal-registration-form-div s2member-pro-paypal-form-custom-reg-field-user-city-div s2member-pro-paypal-registration-form-custom-reg-field-user-city-div">
-                  <label id="s2member-pro-paypal-registration-form-custom-reg-field-user-city-label" for="s2member-pro-paypal-registration-custom-reg-field-user-city" class="s2member-pro-paypal-form-custom-reg-field-user-city-label s2member-pro-paypal-registration-form-custom-reg-field-user-city-label"><span>City</span></label><br/>
-                  <input id="s2member-pro-paypal-registration-custom-reg-field-user-city" type="text" maxlength="100" autocomplete="off" value="" name="s2member_pro_paypal_registration[custom_fields][user_city]" tabindex="103" class="s2member-pro-paypal-custom-reg-field-user-city s2member-pro-paypal-registration-custom-reg-field-user-city form-control"/>
-                </div>
-                <div id="s2member-pro-paypal-registration-form-custom-reg-field-postal-code-div" class="s2member-pro-paypal-form-div s2member-pro-paypal-registration-form-div s2member-pro-paypal-form-custom-reg-field-postal-code-div s2member-pro-paypal-registration-form-custom-reg-field-postal-code-div">
-                  <label id="s2member-pro-paypal-registration-form-custom-reg-field-postal-code-label" for="s2member-pro-paypal-registration-custom-reg-field-postal-code" class="s2member-pro-paypal-form-custom-reg-field-postal-code-label s2member-pro-paypal-registration-form-custom-reg-field-postal-code-label"><span>Postal Code</span></label><br/>
-                  <input id="s2member-pro-paypal-registration-custom-reg-field-postal-code" type="text" maxlength="100" autocomplete="off" value="" name="s2member_pro_paypal_registration[custom_fields][postal_code]" tabindex="104" class="s2member-pro-paypal-custom-reg-field-postal-code s2member-pro-paypal-registration-custom-reg-field-postal-code form-control"/>
                 </div>
                 <div id="s2member-pro-paypal-registration-form-custom-reg-field-user-country-div" class="s2member-pro-paypal-form-div s2member-pro-paypal-registration-form-div s2member-pro-paypal-form-custom-reg-field-user-country-div s2member-pro-paypal-registration-form-custom-reg-field-user-country-div">
                   <label id="s2member-pro-paypal-registration-form-custom-reg-field-user-country-label" for="s2member-pro-paypal-registration-custom-reg-field-user-country" class="s2member-pro-paypal-form-custom-reg-field-user-country-label s2member-pro-paypal-registration-form-custom-reg-field-user-country-label"><span>Country *</span></label><br/>
@@ -905,27 +875,39 @@
                     <option value="ZW">Zimbabwe</option>
                   </select>
                 </div>
-                <div id="s2member-pro-paypal-registration-form-custom-reg-field-user-phone-divider-section" class="s2member-pro-paypal-form-div s2member-pro-paypal-registration-form-div s2member-pro-paypal-form-custom-reg-field-divider-section-title s2member-pro-paypal-form-custom-reg-field-user-phone-divider-section-title s2member-pro-paypal-registration-form-custom-reg-field-user-phone-divider-section-title">Phone</div>
-                <div id="s2member-pro-paypal-registration-form-custom-reg-field-user-phone-div" class="s2member-pro-paypal-form-div s2member-pro-paypal-registration-form-div s2member-pro-paypal-form-custom-reg-field-user-phone-div s2member-pro-paypal-registration-form-custom-reg-field-user-phone-div">
-                  <label id="s2member-pro-paypal-registration-form-custom-reg-field-user-phone-label" for="s2member-pro-paypal-registration-custom-reg-field-user-phone" class="s2member-pro-paypal-form-custom-reg-field-user-phone-label s2member-pro-paypal-registration-form-custom-reg-field-user-phone-label"><span>Phone - Example 27218238384</span></label><br/>
-                  <input id="s2member-pro-paypal-registration-custom-reg-field-user-phone" type="text" maxlength="100" autocomplete="off" value="Please include country code and area code" name="s2member_pro_paypal_registration[custom_fields][user_phone]" tabindex="106" data-expected="numeric-wp-commas" class="s2member-pro-paypal-custom-reg-field-user-phone s2member-pro-paypal-registration-custom-reg-field-user-phone form-control"/>
+                <div id="s2member-pro-paypal-registration-form-username-div" class="s2member-pro-paypal-form-div s2member-pro-paypal-registration-form-div s2member-pro-paypal-form-username-div s2member-pro-paypal-registration-form-username-div">
+                  <label id="s2member-pro-paypal-registration-form-username-label" for="s2member-pro-paypal-registration-username" class="s2member-pro-paypal-form-username-label s2member-pro-paypal-registration-form-username-label"><span>Username (lowercase alphanumeric) *</span><br/>
+                    <input id="s2member-pro-paypal-registration-username" type="text" aria-required="true" maxlength="60" autocomplete="off" name="s2member_pro_paypal_registration[username]" value="" tabindex="40" class="s2member-pro-paypal-username s2member-pro-paypal-registration-username form-control"/>
+                  </label>
                 </div>
+                <div id="s2member-pro-paypal-registration-form-password-div" class="s2member-pro-paypal-form-div s2member-pro-paypal-registration-form-div s2member-pro-paypal-form-password-div s2member-pro-paypal-registration-form-password-div">
+                  <label id="s2member-pro-paypal-registration-form-password-label" for="s2member-pro-paypal-registration-password1" class="s2member-pro-paypal-form-password-label s2member-pro-paypal-registration-form-password-label"><span>Password (type this twice please) *</span><br/>
+                    <input id="s2member-pro-paypal-registration-password1" type="password" aria-required="true" maxlength="100" autocomplete="off" name="s2member_pro_paypal_registration[password1]" value="" tabindex="50" style="background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACIUlEQVQ4EX2TOYhTURSG87IMihDsjGghBhFBmHFDHLWwSqcikk4RRKJgk0KL7C8bMpWpZtIqNkEUl1ZCgs0wOo0SxiLMDApWlgOPrH7/5b2QkYwX7jvn/uc//zl3edZ4PPbNGvF4fC4ajR5VrNvt/mo0Gr1ZPOtfgWw2e9Lv9+chX7cs64CS4Oxg3o9GI7tUKv0Q5o1dAiTfCgQCLwnOkfQOu+oSLyJ2A783HA7vIPLGxX0TgVwud4HKn0nc7Pf7N6vV6oZHkkX8FPG3uMfgXC0Wi2vCg/poUKGGcagQI3k7k8mcp5slcGswGDwpl8tfwGJg3xB6Dvey8vz6oH4C3iXcFYjbwiDeo1KafafkC3NjK7iL5ESFGQEUF7Sg+ifZdDp9GnMF/KGmfBdT2HCwZ7TwtrBPC7rQaav6Iv48rqZwg+F+p8hOMBj0IbxfMdMBrW5pAVGV/ztINByENkU0t5BIJEKRSOQ3Aj+Z57iFs1R5NK3EQS6HQqF1zmQdzpFWq3W42WwOTAf1er1PF2USFlC+qxMvFAr3HcexWX+QX6lUvsKpkTyPSEXJkw6MQ4S38Ljdbi8rmM/nY+CvgNcQqdH6U/xrYK9t244jZv6ByUOSiDdIfgBZ12U6dHEHu9TpdIr8F0OP692CtzaW/a6y3y0Wx5kbFHvGuXzkgf0xhKnPzA4UTyaTB8Ph8AvcHi3fnsrZ7Wore02YViqVOrRXXPhfqP8j6MYlawoAAAAASUVORK5CYII=); background-attachment: scroll; background-position: 100% 50%; background-repeat: no-repeat;" class="s2member-pro-paypal-password1 s2member-pro-paypal-registration-password1 form-control"/>
+                  </label>
+                  <input id="s2member-pro-paypal-registration-password2" type="password" maxlength="100" autocomplete="off" name="s2member_pro_paypal_registration[password2]" value="" tabindex="60" style="background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACIUlEQVQ4EX2TOYhTURSG87IMihDsjGghBhFBmHFDHLWwSqcikk4RRKJgk0KL7C8bMpWpZtIqNkEUl1ZCgs0wOo0SxiLMDApWlgOPrH7/5b2QkYwX7jvn/uc//zl3edZ4PPbNGvF4fC4ajR5VrNvt/mo0Gr1ZPOtfgWw2e9Lv9+chX7cs64CS4Oxg3o9GI7tUKv0Q5o1dAiTfCgQCLwnOkfQOu+oSLyJ2A783HA7vIPLGxX0TgVwud4HKn0nc7Pf7N6vV6oZHkkX8FPG3uMfgXC0Wi2vCg/poUKGGcagQI3k7k8mcp5slcGswGDwpl8tfwGJg3xB6Dvey8vz6oH4C3iXcFYjbwiDeo1KafafkC3NjK7iL5ESFGQEUF7Sg+ifZdDp9GnMF/KGmfBdT2HCwZ7TwtrBPC7rQaav6Iv48rqZwg+F+p8hOMBj0IbxfMdMBrW5pAVGV/ztINByENkU0t5BIJEKRSOQ3Aj+Z57iFs1R5NK3EQS6HQqF1zmQdzpFWq3W42WwOTAf1er1PF2USFlC+qxMvFAr3HcexWX+QX6lUvsKpkTyPSEXJkw6MQ4S38Ljdbi8rmM/nY+CvgNcQqdH6U/xrYK9t244jZv6ByUOSiDdIfgBZ12U6dHEHu9TpdIr8F0OP692CtzaW/a6y3y0Wx5kbFHvGuXzkgf0xhKnPzA4UTyaTB8Ph8AvcHi3fnsrZ7Wore02YViqVOrRXXPhfqP8j6MYlawoAAAAASUVORK5CYII=); background-attachment: scroll; background-position: 100% 50%; background-repeat: no-repeat;" class="s2member-pro-paypal-password2 s2member-pro-paypal-registration-password2 form-control"/>
+                  <div id="s2member-pro-paypal-registration-form-password-strength" class="ws-plugin--s2member-password-strength s2member-pro-paypal-form-password-strength s2member-pro-paypal-registration-form-password-strength"><em>password strength indicator</em></div>
+                </div>
+                <div style="clear:both;"></div>
+              </div>
+              <div id="s2member-pro-paypal-registration-form-custom-fields-section" class="s2member-pro-paypal-form-section s2member-pro-paypal-registration-form-section s2member-pro-paypal-form-custom-fields-section s2member-pro-paypal-registration-form-custom-fields-section">
+                <div id="s2member-pro-paypal-registration-form-custom-fields-section-title" class="s2member-pro-paypal-form-section-title s2member-pro-paypal-registration-form-section-title s2member-pro-paypal-form-custom-fields-section-title s2member-pro-paypal-registration-form-custom-fields-section-title"> Additional Info</div>
               </div>
               <div class="TextButton-heading u-table">Terms and Conditions</div>
               <div id="Registration-s2Box">
                 <div id="s2member-pro-paypal-registration-form-custom-reg-field-terms-conditions-divider-section" class="s2member-pro-paypal-form-div s2member-pro-paypal-registration-form-div s2member-pro-paypal-form-custom-reg-field-divider-section-title s2member-pro-paypal-form-custom-reg-field-terms-conditions-divider-section-title s2member-pro-paypal-registration-form-custom-reg-field-terms-conditions-divider-section-title">Terms and Conditions</div>
                 <div id="s2member-pro-paypal-registration-form-custom-reg-field-terms-conditions-div" class="s2member-pro-paypal-form-div s2member-pro-paypal-registration-form-div s2member-pro-paypal-form-custom-reg-field-terms-conditions-div s2member-pro-paypal-registration-form-custom-reg-field-terms-conditions-div">
-                  <label id="s2member-pro-paypal-registration-form-custom-reg-field-terms-conditions-label" for="s2member-pro-paypal-registration-custom-reg-field-terms-conditions" class="s2member-pro-paypal-form-custom-reg-field-terms-conditions-label s2member-pro-paypal-registration-form-custom-reg-field-terms-conditions-label"><span style="display:none;">Accept Terms and Conditions *</span></label>
+                  <label id="s2member-pro-paypal-registration-form-custom-reg-field-terms-conditions-label" for="s2member-pro-paypal-registration-custom-reg-field-terms-conditions" class="s2member-pro-paypal-form-custom-reg-field-terms-conditions-label s2member-pro-paypal-registration-form-custom-reg-field-terms-conditions-label"><span style="display:none;">I accept the Terms of Use *</span></label>
                   <input id="s2member-pro-paypal-registration-custom-reg-field-terms-conditions" type="checkbox" value="1" name="s2member_pro_paypal_registration[custom_fields][terms_conditions]" aria-required="true" tabindex="107" class="s2member-pro-paypal-custom-reg-field-terms-conditions s2member-pro-paypal-registration-custom-reg-field-terms-conditions"/>
-                  <label for="s2member-pro-paypal-registration-custom-reg-field-terms-conditions" style="display:inline !important; margin:0 !important; font-weight: 700 ; color: #888; vertical-align: top; line-height: 22px;">Accept Terms and Conditions</label>
+                  <label for="s2member-pro-paypal-registration-custom-reg-field-terms-conditions" style="display:inline !important; margin:0 !important; font-weight: 700 ; color: #888; vertical-align: top; line-height: 22px;">I accept the Terms of Use</label>
                 </div>
                 <div id="s2member-pro-paypal-registration-form-custom-reg-field-subscribe-div" class="s2member-pro-paypal-form-div s2member-pro-paypal-registration-form-div s2member-pro-paypal-form-custom-reg-field-subscribe-div s2member-pro-paypal-registration-form-custom-reg-field-subscribe-div">
                   <label id="s2member-pro-paypal-registration-form-custom-reg-field-subscribe-label" for="s2member-pro-paypal-registration-custom-reg-field-subscribe" class="s2member-pro-paypal-form-custom-reg-field-subscribe-label s2member-pro-paypal-registration-form-custom-reg-field-subscribe-label"><span style="display:none;">Please subscribe me to E-newsletter</span></label>
                   <input id="s2member-pro-paypal-registration-custom-reg-field-subscribe" type="checkbox" value="1" checked="checked" name="s2member_pro_paypal_registration[custom_fields][subscribe]" tabindex="108" class="s2member-pro-paypal-custom-reg-field-subscribe s2member-pro-paypal-registration-custom-reg-field-subscribe"/>
-                  <label for="s2member-pro-paypal-registration-custom-reg-field-subscribe" style="display:inline !important; margin:0 !important; font-weight: 700 ; color: #888; vertical-align: top; line-height: 22px;">Please subscribe me to E-newsletter</label>
+                  <label for="s2member-pro-paypal-registration-custom-reg-field-subscribe" style="display:inline !important; margin:0 !important; font-weight: 700 ; color: #888; vertical-align: top; line-height: 22px;">Please subscribe me to daily newsletter</label>
                 </div>
               </div>
               <div id="s2member-pro-paypal-registration-form-captcha-section" class="s2member-pro-paypal-form-section s2member-pro-paypal-registration-form-section s2member-pro-paypal-form-captcha-section s2member-pro-paypal-registration-form-captcha-section"></div>
+              <div class="toc-main"><a href="#">Click here to read our Terms of Use</a></div>
               <div class="TextButton-heading u-table">Security Verification</div>
               <div id="Registration-s2Box"></div>
               <div id="s2member-pro-paypal-registration-form-captcha-section-title" class="s2member-pro-paypal-form-section-title s2member-pro-paypal-registration-form-section-title s2member-pro-paypal-form-captcha-section-title s2member-pro-paypal-registration-form-captcha-section-title"> Security Verification</div>
@@ -934,32 +916,6 @@
                   <script type="text/javascript">if(typeof RecaptchaOptions!=='object'){var RecaptchaOptions={theme:'clean',lang:'en',tabindex:200};}</script>
                   <script type="text/javascript" src="//www.google.com/recaptcha/api/challenge?k=6LeCANsSAAAAAIIrlB3FrXe42mr0OSSZpT0pkpFK"></script>
                   <script type="text/javascript" src="http://www.google.com/recaptcha/api/js/recaptcha.js"></script>
-                  <div id="recaptcha_widget_div" class="recaptcha_nothad_incorrect_sol recaptcha_isnot_showing_audio">
-                    <div id="recaptcha_area">
-                      <table id="recaptcha_table" class="recaptchatable recaptcha_theme_clean">
-                        <tbody>
-                          <tr height="73">
-                            <td width="302" class="recaptcha_image_cell">
-                              <center>
-                                <div id="recaptcha_image" style="width: 300px; height: 57px;"><img id="recaptcha_challenge_image" alt="reCAPTCHA challenge image" height="57" width="300" src="http://www.google.com/recaptcha/api/image?c=03AHJ_VuuD2hNdXwhBkBGlYYeu-xizGALDkKk5JQunb1HGUAAxUzD7PDZh4bsf4tGo01XJyPQuVAi3NYena-_JbCTVa9KCERUVJfncyjdOyFuju3nN2WpdDjDJaVgWHFSUrkz5kQgRW_V_ASV5v3PHilifcXuUR5VeYSNo-3hbP79tGph2a_ZgJS_WJ_iC3x1isg6ll3tpIrI1FSqHoM1dZpvDZ6XXn3kNk1EWRTFYKzMGMX6g2Cx1p2FELe6NlUsAgcCkfevpoEHc0xKhPVlIjVMRxr_TgXr1Fg&amp;th=,4RCw9H71N_AV3E62qdktbybpyDXwAAAAKaAAAAAH-ABT01rNp2cAmMQlZ5HiejgJd-ygGTSglyeuR4WdWT0u2FEm-pxKj0gU-_vmAH6ytbEA38W5T7UYbajGT4B4ACbuFJjAMLG7ht9F7XPSJHU-QvW8I2rYANBDvW2DWNLeIt9VawLEy7_3-dZ1OCk4d9cGqgJTKEUZk8glZEyhsibvMATguAlgImN8UXuPMb8mApqYFst2NyJDYlZeQnYH9nnOKZrHxeyAy6ajxqJTHwDH3Ewcjyr9cCa8B7VnfBqxxRdQdEzxeDMHpSG-PmvSZbr4kY2FYEHyjuvmmZUiedS5ARHyetOsncZ58JUDRE6ew2LR0hqX91e5PZcoqZtU6ogk50qexQ-cjp4jLBOJZc3wttsC4AW3BMnm2uK0STFou2gBEtcqODqA"/></div>
-                              </center>
-                            </td>
-                            <td style="padding: 10px 7px 7px 7px;"><a id="recaptcha_reload_btn" title="Get a new challenge" tabindex="201"><img id="recaptcha_reload" width="25" height="18" alt="Get a new challenge" src="http://www.google.com/recaptcha/api/img/clean/refresh.png"/></a><a id="recaptcha_switch_audio_btn" title="Get an audio challenge" tabindex="202" class="recaptcha_only_if_image"><img id="recaptcha_switch_audio" width="25" height="15" alt="Get an audio challenge" src="http://www.google.com/recaptcha/api/img/clean/audio.png"/></a><a id="recaptcha_switch_img_btn" title="Get a visual challenge" tabindex="203" class="recaptcha_only_if_audio"><img id="recaptcha_switch_img" width="25" height="15" alt="Get a visual challenge" src="http://www.google.com/recaptcha/api/img/clean/text.png"/></a><a id="recaptcha_whatsthis_btn" title="Help" tabindex="204"><img id="recaptcha_whatsthis" width="25" height="16" src="http://www.google.com/recaptcha/api/img/clean/help.png" alt="Help"/></a></td>
-                            <td style="padding: 18px 7px 18px 7px;"><img id="recaptcha_logo" alt="" width="71" height="36" src="http://www.google.com/recaptcha/api/img/clean/logo.png"/></td>
-                          </tr>
-                          <tr>
-                            <td style="padding-left: 7px;">
-                              <div style="padding-top: 2px; padding-bottom: 7px;" class="recaptcha_input_area"><span id="recaptcha_challenge_field_holder" style="display: none;">
-                                  <input id="recaptcha_challenge_field" type="hidden" name="recaptcha_challenge_field" value="03AHJ_VuuD2hNdXwhBkBGlYYeu-xizGALDkKk5JQunb1HGUAAxUzD7PDZh4bsf4tGo01XJyPQuVAi3NYena-_JbCTVa9KCERUVJfncyjdOyFuju3nN2WpdDjDJaVgWHFSUrkz5kQgRW_V_ASV5v3PHilifcXuUR5VeYSNo-3hbP79tGph2a_ZgJS_WJ_iC3x1isg6ll3tpIrI1FSqHoM1dZpvDZ6XXn3kNk1EWRTFYKzMGMX6g2Cx1p2FELe6NlUsAgcCkfevpoEHc0xKhPVlIjVMRxr_TgXr1Fg"/></span>
-                                <input id="recaptcha_response_field" style="border: 1px solid #3c3c3c; width: 302px;" name="recaptcha_response_field" type="text" placeholder="Type the text" autocomplete="off" tabindex="200"/>
-                              </div>
-                            </td>
-                            <td colspan="2"><span id="recaptcha_privacy" tabindex="204" class="recaptcha_only_if_privacy"><a href="http://www.google.com/intl/en/policies/" target="_blank">Privacy & Terms</a></span></td>
-                          </tr>
-                        </tbody>
-                      </table>
-                    </div>
-                  </div>
                   <script type="text/javascript">if(typeof jQuery==='function'){jQuery('td a[id^="recaptcha"]').removeAttr('tabindex');}</script>
                 </label>
               </div>
@@ -1041,7 +997,7 @@
             </div>
             <div class="TextButton-item TextButton-item--list TextButton-item--noHover u-table">
               <div class="TextButton-col1 u-tableCell">
-                <div class="icon-benefits-6"></div>
+                <div class="icon-benefits-7"></div>
               </div>
               <div class="TextButton-col2 TextButton-col2--report TextButton-col2--benefits u-tableCell">
                 <div class="TextButton-text TextButton-text--benefits">Discounts on entry to partner events and conferences.</div>

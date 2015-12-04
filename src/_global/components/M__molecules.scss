@@ -1,44 +1,3 @@
-
-/*
-
-//-///////////////////////////////////////////////////////////////////////////////
-//-                                                                             //
-//-                                                                             //
-//-    MOLECULE                                                                 //
-//-   ---------------                                                           //
-//-    CLOSE BUTTON                                                             //
-//-                                                                             //
-//-                                                                             //
-//-///////////////////////////////////////////////////////////////////////////////
-
-
-.M__closeButton-main {
-    padding: 25px;
-    background: #adadad;
-    border-radius: 35px;
-    color: black;
-    text-transform: uppercase;
-    font: 700 24px "Roboto Condensed"
-}
-.M__closeButton-main:hover {
-    background: red;
-    color: white;
-}
-.M__closeButton-main:hover .M__closeButton-col1 {
-    @extend .icon-closeWhite
-}
-.M__closeButton-col1 {
-    margin-top: 2px;
-}
-.M__closeButton-col2 {
-    padding-left: 10px;
-}
-
-*/
-
-// - ^ DEPRECATED
-
-
 //-///////////////////////////////////////////////////////////////////////////////
 //-                                                                             //
 //-                                                                             //
@@ -75,7 +34,7 @@
     display: table;
     margin: 0 auto;
     text-transform: uppercase;
-    font: 700 16px "Roboto Condensed";
+    font: 700 16px "Roboto Condensed", Arial;
     letter-spacing: 1px;
 }
 .M__magazineReadPrompt-main:hover {
@@ -179,7 +138,7 @@
     background: red;
     color: white;
     text-transform: uppercase;
-    font: 700 13px "Roboto Condensed";
+    font: 700 13px "Roboto Condensed", Arial;
     padding: 5px 10px;
     letter-spacing: 1px;
     margin-right: 10px;
@@ -209,7 +168,7 @@
 
 
 .M__magazinePreviewArticle-main {
-    font: 700 16px "Roboto";
+    font: 700 16px "Roboto, Arial";
     color: black;
     border-top: 1px solid #aaa;
     padding: 10px 0;
@@ -293,7 +252,7 @@
 
 .Heading-main {
     border-bottom: solid 8px black;
-    font-family: "Roboto Condensed";
+    font-family: "Roboto Condensed", Arial;
     font-weight: 700;
     text-transform: uppercase;
 }
@@ -386,7 +345,7 @@
 .M__contentButton-main {
     width: 100%;
     padding: 11px;
-    font: 700 16px "Roboto Condensed";
+    font: 700 16px "Roboto Condensed", Arial;
     text-transform: uppercase;
     background: #eee;
     border: none;
@@ -761,7 +720,7 @@
     color: white;
     border: none;
     text-transform: uppercase;
-    font-family: "Roboto Condensed";
+    font-family: "Roboto Condensed", Arial;
     font-weight: 700;
     &:hover {
         background: #777;
@@ -927,7 +886,7 @@
 .M__pullQuote-main {
     height: auto;
     background: white;
-    font-family: "Roboto Condensed";
+    font-family: "Roboto Condensed", Arial;
     font-weight: 700;
     padding: 5px 0;
     width: 240px;
@@ -1013,7 +972,7 @@
 }
 
 .M__footColumn-heading {
-    font: 700 16px "Roboto Condensed";
+    font: 700 16px "Roboto Condensed", Arial;
     text-transform: uppercase;
     color: white;
     margin-bottom: 15px;
@@ -1074,12 +1033,12 @@
 
 .M__eventIntro-additional {display: none;}
 
-.M__eventIntro-dateContainer {color: red; text-transform: uppercase; font: 700 16px "Roboto Condensed"}
+.M__eventIntro-dateContainer {color: red; text-transform: uppercase; font: 700 16px "Roboto Condensed", Arial}
 .M__eventIntro-seperator {margin: 0 5px;}
 .M__eventIntro-dateIcon, .M__eventIntro-locationIcon  {margin-right: 5px;}
-.M__eventIntro-location {color: #bbb; text-transform: uppercase; font: 700 16px "Roboto Condensed"; margin-top: 5px;}
+.M__eventIntro-location {color: #bbb; text-transform: uppercase; font: 700 16px "Roboto Condensed", Arial; margin-top: 5px;}
 
-.M__eventIntro-buttonsContainer {font: 700 13px Roboto; text-transform: uppercase; }
+.M__eventIntro-buttonsContainer {font: 700 13px Roboto, Arial; text-transform: uppercase; }
 .M__eventIntro-button {border: 1px solid #bbb; padding: 3px 10px; margin-right: 5px; margin-top: 10px; color: #bbb;}
 
 .M__eventIntro-button:hover {background: #bbb; color: white;}
@@ -1174,7 +1133,7 @@
 
 .M__mainNavButton-main {
     text-align: center;
-    font-family: "Roboto Condensed"
+    font-family: "Roboto Condensed", Arial
 }
 .M__mainNavButton-centre {
     display: table;
@@ -1233,20 +1192,20 @@
 
 .ninja-forms-cont {border: 1px solid #ccc; margin: 60px 0;}
 .ninja-forms-required-items {font-size: 16px; color: white; background: #333; padding: 10px 20px;  }
-.nf-desc { background: #eee; font: 700 16px "Roboto Condensed"; text-transform: uppercase; padding: 5px 20px;}
+.nf-desc { background: #eee; font: 700 16px "Roboto Condensed", Arial; text-transform: uppercase; padding: 5px 20px;}
 .ninja-forms-field {}
 .nf-desc p {line-height: 19px;}
 
 
 .field-wrap { margin: 30px 20px;}
 
-label {font: 400 16 Roboto; color: #aaa; }
-select.ninja-forms-field , input.ninja-forms-field  {height: 40px;  width: 100%; margin-top: 10px ; padding: 5px; font: 700 16px Roboto; border: 1px solid #ccc;}
+label {font: 400 16 Roboto, Arial; color: #aaa; }
+select.ninja-forms-field , input.ninja-forms-field  {height: 40px;  width: 100%; margin-top: 10px ; padding: 5px; font: 700 16px Roboto, Arial; border: 1px solid #ccc;}
 
 
 selectn.ninja-forms-field  {background: #eee;}
 
-input[type='submit'].ninja-forms-field  {background: #ed1b25; color: white; text-transform: uppercase; padding: 13px; font: 700 26px "Roboto Condensed"; height: auto; border: none;}
+input[type='submit'].ninja-forms-field  {background: #ed1b25; color: white; text-transform: uppercase; padding: 13px; font: 700 26px "Roboto Condensed", Arial; height: auto; border: none;}
 
 
 

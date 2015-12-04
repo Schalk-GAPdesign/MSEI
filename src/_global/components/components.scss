@@ -50,7 +50,7 @@
 }
 .MenuItem-main--main {
     background: #eeeeee;
-    font: 700 16px "Roboto Condensed";
+    font: 700 16px "Roboto Condensed", Arial;
     color: black;
     border-left: 1px solid white;
     padding: 0;
@@ -179,7 +179,7 @@
     background: #2b2b2b;
 }
 .Column-heading {
-    font: 700 16px "Roboto Condensed";
+    font: 700 16px "Roboto Condensed", Arial;
     color: white;
     text-transform: uppercase;
 }
@@ -236,7 +236,7 @@
 
 .Heading-main {
     border-bottom: solid 8px black;
-    font-family: "Roboto Condensed";
+    font-family: "Roboto Condensed", Arial;
     font-weight: 700;
     text-transform: uppercase;
 }
@@ -543,7 +543,7 @@ a:nth-last-of-type(1) .TextButton-item {
 .TextButton-heading {
     background: #eeeeee;
     padding: 10px 12px;
-    font: 700 16px "Roboto Condensed";
+    font: 700 16px "Roboto Condensed", Arial;
     text-transform: uppercase;
     width: 100%;
     padding: 15px 20px;
@@ -608,14 +608,14 @@ a:nth-last-of-type(1) .TextButton-item {
     color: white;
 }
 .TextButton-text--bold {
-    font: 700 16px "Roboto Condensed";
+    font: 700 16px "Roboto Condensed", Arial;
     text-transform: uppercase;
 }
 .TextButton-item--grey {
     background: #eee;
 }
 .TextButton-item--bold {
-    font: 700 16px "Roboto Condensed";
+    font: 700 16px "Roboto Condensed", Arial;
     text-transform: uppercase;
 }
 .TextButton-main {
@@ -629,7 +629,7 @@ a:nth-last-of-type(1) .TextButton-item {
 }
 .TextButton-row1 {
     text-transform: uppercase;
-    font: 700 16px "Roboto Condensed";
+    font: 700 16px "Roboto Condensed", Arial;
     padding: 15px;
     background: #eeeeee;
 }
@@ -795,7 +795,7 @@ a:nth-last-of-type(1) .TextButton-item {
     color: white;
     border: none;
     text-transform: uppercase;
-    font-family: "Roboto Condensed";
+    font-family: "Roboto Condensed", Arial;
     font-weight: 700;
 vertical-align: middle;
 }

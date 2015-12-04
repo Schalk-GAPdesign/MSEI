@@ -24,23 +24,23 @@
 
 .ninja-forms-required-items {font-size: 16px; color: white; background: #333; padding: 10px 20px;  }
 
-.nf-desc { background: #eee; font: 700 16px "Roboto Condensed"; text-transform: uppercase; padding: 5px 20px;}
+.nf-desc { background: #eee; font: 700 16px "Roboto Condensed", Arial; text-transform: uppercase; padding: 5px 20px;}
 
 .nf-desc p {line-height: 19px;}
 
 
 .field-wrap { margin: 30px 20px;}
 
-label {font: 400 16 Roboto; color: #aaa; }
+label {font: 400 16 Roboto, Arial; color: #aaa; }
 select.ninja-forms-field , input.ninja-forms-field, #user_login, #user_pass,
 input[class^="s2"], select[class^="s2"]
- {height: 40px;  width: 100%; margin-top: 10px ; padding: 5px; font: 700 16px Roboto; border: 1px solid #ccc; margin-bottom: 25px;}
+ {height: 40px;  width: 100%; margin-top: 10px ; padding: 5px; font: 700 16px Roboto, Arial; border: 1px solid #ccc; margin-bottom: 25px;}
 
 
 select.ninja-forms-field  {background: #eee;}
 
 
-input[type='submit'].ninja-forms-field, #s2member-pro-paypal-registration-submit  {background: #ed1b25; color: white; text-transform: uppercase; padding: 13px; font: 700 26px "Roboto Condensed"; height: auto; border: none; width: 100%;}
+input[type='submit'].ninja-forms-field, #s2member-pro-paypal-registration-submit  {background: #ed1b25; color: white; text-transform: uppercase; padding: 13px; font: 700 26px "Roboto Condensed", Arial; height: auto; border: none; width: 100%;}
 
 
 input[type='submit'].ninja-forms-field:hover {background: #aaa !important;}
@@ -56,7 +56,7 @@ input[type='submit'].ninja-forms-field:hover {background: #aaa !important;}
 .login-password {margin-top: 3px;}
 
 
-#wp-submit {background: #ed1b25; color: white; text-transform: uppercase; padding: 13px; font: 700 16px "Roboto Condensed"; height: auto; border: none; width: 250px;}
+#wp-submit {background: #ed1b25; color: white; text-transform: uppercase; padding: 13px; font: 700 16px "Roboto Condensed", Arial; height: auto; border: none; width: 250px;}
 
 
 #gpd_Login-forgot{padding-left: 15px; font-size: 14px !important; margin-top: 15px; padding-left: 20px;}
@@ -159,3 +159,6 @@ input[class^="s2"]:not[type="checkbox"] , select[class^="s2"]:not[type="checkbox
 
 
 //h
+
+
+.toc-main {width: 320px; margin-left: 22px; margin-bottom: 30px; text-transform: uppercase;}

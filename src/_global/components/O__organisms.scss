@@ -22,7 +22,7 @@
 .M__button-main {
     background: #eee;
     text-transform: uppercase;
-    font: 700 16px "Roboto Condensed";
+    font: 700 16px "Roboto Condensed", Arial;
     padding: 10px 20px;
     color: black;
     border: 0;
@@ -66,7 +66,7 @@
 
 .M__textPrompt-col1-row1 {
     font-weight: 700;
-    font-family: "Roboto Condensed";
+    font-family: "Roboto Condensed", Arial;
 }
 .M__textPrompt-row2:hover {
     background: #b8b8b8;
@@ -117,7 +117,7 @@
     width: 100%;
 }
 .M__textPrompt-row1 {
-    font: 700 16px "Roboto Condensed";
+    font: 700 16px "Roboto Condensed", Arial;
     padding: 15px;
     background: #eeeeee;
 }
@@ -147,7 +147,7 @@
 .M__textPrompt-text {
     vertical-align: middle;
     padding: 0 20px 0 20px;
-    font: 700 16px Roboto;
+    font: 700 16px Roboto, Arial;
     width: 100%;
 }
 .M__textPrompt-label {
@@ -526,7 +526,7 @@
     display: block;
 }
 .O__categoryList-item--category:nth-child(-n+3) .M__contentThumb-title {
-    font: 700 38px "Roboto Condensed";
+    font: 700 38px "Roboto Condensed", Arial;
     margin-top: 10px
 }
 .O__categoryList-item--category:nth-child(2) .M__contentThumb-title,

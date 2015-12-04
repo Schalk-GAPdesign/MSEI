@@ -31,7 +31,7 @@ textarea {width: 100%; border: 1px solid #ccc;}
 .Profiles-content {padding: 20px 30px; width: 590px;}
 
 
-//.Team-position {text-transform: uppercase; font: 700 16px 'Roboto Condensed'; margin: 10px 0 15px 0;}
+//.Team-position {text-transform: uppercase; font: 700 16px "'Roboto, Arial Condensed", Arial; margin: 10px 0 15px 0;}
 
 .Profiles-main{border: 1px solid #ccc;}
 
@@ -77,7 +77,7 @@ textarea {min-height: 200px;}
 .Team-item:nth-child(1) {border-top: 0;}
 
 
-.Team-name {font: 700 26px Roboto; color: red;}
+.Team-name {font: 700 26px Roboto, Arial; color: red;}
 
 .Team-col2 {width: 400px; padding: 0 30px;}
 
@@ -94,7 +94,7 @@ textarea {min-height: 200px;}
 
 .Team-content {padding: 0 25px; }
 
-.Team-position{ font: 700 16px Roboto; padding-bottom: 10px;}
+.Team-position{ font: 700 16px Roboto, Arial; padding-bottom: 10px;}
 
 .Team-heading {background-attachment: scroll;
 background-clip: border-box;
@@ -104,7 +104,7 @@ background-origin: padding-box;
 background-size: auto;
 box-sizing: border-box;
 color: rgb(0, 0, 0);
-font-family: 'Roboto Condensed';
+font-family: "'Roboto, Arial Condensed", Arial;
 font-size: 16px;
 font-stretch: normal;
 font-style: normal;

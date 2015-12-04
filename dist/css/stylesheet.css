@@ -262,231 +262,662 @@ Icon classes can be used entirely standalone. They are named after their origina
 */
 .icon-arrow {
   background-image: url(../img/spritesheet.png);
-  background-position: -289px -178px;
+  background-position: -218px -16px;
   width: 10px;
   height: 16px;
 }
 
 .icon-arrowWhite, .Heading-prompt:hover .icon-arrow, .TextButton-item:hover .TextButton-col3 .TextButton-arrow {
   background-image: url(../img/spritesheet.png);
-  background-position: -289px -162px;
+  background-position: -218px 0px;
   width: 10px;
   height: 16px;
 }
 
-.icon-benefits-1 {
-  background-image: url(../img/spritesheet.png);
-  background-position: 0px -154px;
-  width: 73px;
-  height: 73px;
-}
-
-.icon-benefits-2 {
-  background-image: url(../img/spritesheet.png);
-  background-position: -81px 0px;
-  width: 73px;
-  height: 73px;
-}
-
-.icon-benefits-3 {
-  background-image: url(../img/spritesheet.png);
-  background-position: -154px -73px;
-  width: 73px;
-  height: 73px;
-}
-
-.icon-benefits-4 {
-  background-image: url(../img/spritesheet.png);
-  background-position: 0px -81px;
-  width: 73px;
-  height: 73px;
-}
-
-.icon-benefits-5 {
-  background-image: url(../img/spritesheet.png);
-  background-position: -73px -81px;
-  width: 73px;
-  height: 73px;
-}
-
-.icon-benefits-6 {
-  background-image: url(../img/spritesheet.png);
-  background-position: -154px 0px;
-  width: 73px;
-  height: 73px;
-}
-
 .icon-articleShare {
   background-image: url(../img/spritesheet.png);
-  background-position: -257px -53px;
+  background-position: -160px -30px;
   width: 27px;
   height: 27px;
 }
 
 .icon-articleShareRed, .M__pullQuote-quote:hover .M__pullQuote-icon {
   background-image: url(../img/spritesheet.png);
-  background-position: -257px -26px;
+  background-position: -160px -57px;
   width: 27px;
   height: 27px;
 }
 
 .icon-close {
   background-image: url(../img/spritesheet.png);
-  background-position: -257px -106px;
+  background-position: -160px -110px;
   width: 24px;
   height: 25px;
 }
 
 .icon-closeQuote {
   background-image: url(../img/spritesheet.png);
-  background-position: -257px 0px;
+  background-position: -66px -160px;
   width: 32px;
   height: 26px;
 }
 
 .icon-closeQuoteRed {
   background-image: url(../img/spritesheet.png);
-  background-position: -216px -227px;
+  background-position: -98px -160px;
   width: 32px;
   height: 26px;
 }
 
 .icon-closeWhite {
   background-image: url(../img/spritesheet.png);
-  background-position: -257px -131px;
+  background-position: -160px -135px;
   width: 24px;
   height: 25px;
 }
 
 .icon-dropdown {
   background-image: url(../img/spritesheet.png);
-  background-position: -289px -217px;
+  background-position: -218px -55px;
   width: 10px;
   height: 7px;
 }
 
 .icon-dropdownWhite, .M__mainNavButton-main:hover:not(.is-activated) .M__mainNavButton-container .M__mainNavButton-centre .M__mainNavButton-arrow {
   background-image: url(../img/spritesheet.png);
-  background-position: -289px -210px;
+  background-position: -218px -48px;
   width: 10px;
   height: 7px;
 }
 
 .icon-footerDot {
   background-image: url(../img/spritesheet.png);
-  background-position: -300px -93px;
+  background-position: -218px -62px;
   width: 4px;
   height: 3px;
 }
 
 .icon-login {
   background-image: url(../img/spritesheet.png);
-  background-position: -289px -67px;
+  background-position: -112px -66px;
   width: 13px;
   height: 13px;
 }
 
 .icon-loginRed, .M__Login-main:hover .M__Login-container .icon-login, .MenuItem-main:hover .MenuItem-container .MenuItem-icon {
   background-image: url(../img/spritesheet.png);
-  background-position: -289px -80px;
+  background-position: -190px -171px;
   width: 13px;
   height: 13px;
 }
 
 .icon-openQuote {
   background-image: url(../img/spritesheet.png);
-  background-position: -150px -227px;
+  background-position: -33px -160px;
   width: 33px;
   height: 26px;
 }
 
 .icon-openQuoteRed {
   background-image: url(../img/spritesheet.png);
-  background-position: -183px -227px;
+  background-position: 0px -160px;
   width: 33px;
   height: 26px;
 }
 
 .icon-pullQuote {
   background-image: url(../img/spritesheet.png);
-  background-position: -257px -80px;
+  background-position: -160px -84px;
   width: 26px;
   height: 26px;
 }
 
 .icon-search {
   background-image: url(../img/spritesheet.png);
-  background-position: -257px -176px;
+  background-position: -130px -160px;
   width: 20px;
   height: 20px;
 }
 
 .icon-searchWhite, .M__mainNavsearch-main:hover .M__mainNavsearch-container:not(.is-activated) .M__mainNavsearch-icon, .MenuItem-main--main:hover .MenuItem-container .MenuItem-box .MenuItem-text .MenuItem-icon--search {
   background-image: url(../img/spritesheet.png);
-  background-position: -257px -156px;
+  background-position: -109px -81px;
   width: 20px;
   height: 20px;
 }
 
 .icon-facebook {
   background-image: url(../img/spritesheet.png);
-  background-position: -289px -108px;
+  background-position: -150px -130px;
   width: 9px;
   height: 18px;
 }
 
 .icon-facebookBlack {
   background-image: url(../img/spritesheet.png);
-  background-position: -289px -126px;
+  background-position: -209px 0px;
   width: 9px;
   height: 18px;
 }
 
 .icon-facebookRed, .M__socialLinkButton-icon.icon-facebook:hover, .SocialMedia-icon--facebook:hover, .SocialMedia-icon--facebook--black:hover {
   background-image: url(../img/spritesheet.png);
-  background-position: -289px -144px;
+  background-position: -209px -18px;
   width: 9px;
   height: 18px;
 }
 
 .icon-google {
   background-image: url(../img/spritesheet.png);
-  background-position: -73px -203px;
+  background-position: -190px -54px;
   width: 18px;
   height: 18px;
 }
 
 .icon-googleBlack {
   background-image: url(../img/spritesheet.png);
-  background-position: -209px -185px;
+  background-position: -190px -36px;
   width: 18px;
   height: 18px;
 }
 
 .icon-googleRed, .M__socialLinkButton-icon.icon-google:hover, .SocialMedia-icon--google:hover, .SocialMedia-icon--google--black:hover {
   background-image: url(../img/spritesheet.png);
-  background-position: -91px -203px;
+  background-position: -190px -18px;
   width: 18px;
   height: 18px;
 }
 
 .icon-linkedin {
   background-image: url(../img/spritesheet.png);
-  background-position: -202px -154px;
+  background-position: -169px -160px;
   width: 19px;
   height: 18px;
 }
 
 .icon-linkedinBlack {
   background-image: url(../img/spritesheet.png);
-  background-position: -171px -185px;
+  background-position: -150px -160px;
   width: 19px;
   height: 18px;
 }
 
 .icon-linkedinRed, .M__socialLinkButton-icon.icon-linkedin:hover, .SocialMedia-icon--linkedin:hover, .SocialMedia-icon--linkedin--black:hover {
   background-image: url(../img/spritesheet.png);
-  background-position: -190px -185px;
+  background-position: -190px 0px;
+  width: 19px;
+  height: 18px;
+}
+
+.icon-rss {
+  background-image: url(../img/spritesheet.png);
+  background-position: -190px -120px;
+  width: 17px;
+  height: 17px;
+}
+
+.icon-rssBlack {
+  background-image: url(../img/spritesheet.png);
+  background-position: -190px -137px;
+  width: 17px;
+  height: 17px;
+}
+
+.icon-rssRed, .M__socialLinkButton-icon.icon-rss:hover, .SocialMedia-icon--rss:hover, .SocialMedia-icon--rss--black:hover {
+  background-image: url(../img/spritesheet.png);
+  background-position: -190px -154px;
+  width: 17px;
+  height: 17px;
+}
+
+.icon-twitter {
+  background-image: url(../img/spritesheet.png);
+  background-position: -190px -104px;
+  width: 19px;
+  height: 16px;
+}
+
+.icon-twitterBlack {
+  background-image: url(../img/spritesheet.png);
+  background-position: -190px -72px;
+  width: 19px;
+  height: 16px;
+}
+
+.icon-twitterRed, .M__socialLinkButton-icon.icon-twitter:hover, .SocialMedia-icon--twitter:hover, .SocialMedia-icon--twitter--black:hover {
+  background-image: url(../img/spritesheet.png);
+  background-position: -190px -88px;
+  width: 19px;
+  height: 16px;
+}
+
+.icon-youtube {
+  background-image: url(../img/spritesheet.png);
+  background-position: -49px -112px;
+  width: 22px;
+  height: 16px;
+}
+
+.icon-youtubeBlack {
+  background-image: url(../img/spritesheet.png);
+  background-position: -71px -112px;
+  width: 22px;
+  height: 16px;
+}
+
+.icon-youtubeRed, .M__socialLinkButton-icon.icon-youtube:hover, .SocialMedia-icon--youtube:hover, .SocialMedia-icon--youtube--black:hover {
+  background-image: url(../img/spritesheet.png);
+  background-position: -93px -112px;
+  width: 22px;
+  height: 16px;
+}
+
+.icon-commentShare {
+  background-image: url(../img/spritesheet.png);
+  background-position: -130px 0px;
+  width: 30px;
+  height: 30px;
+}
+
+.icon-commentShareWhite, .M__socialShareButton-main:hover .icon-commentShare {
+  background-image: url(../img/spritesheet.png);
+  background-position: -79px -81px;
+  width: 30px;
+  height: 30px;
+}
+
+.icon-emailShare {
+  background-image: url(../img/spritesheet.png);
+  background-position: -30px -130px;
+  width: 30px;
+  height: 30px;
+}
+
+.icon-emailShareWhite, .M__socialShareButton-main:hover .icon-emailShare {
+  background-image: url(../img/spritesheet.png);
+  background-position: -130px -90px;
+  width: 30px;
+  height: 30px;
+}
+
+.icon-facebookShare {
+  background-image: url(../img/spritesheet.png);
+  background-position: -130px -60px;
+  width: 30px;
+  height: 30px;
+}
+
+.icon-facebookShareWhite, .M__socialShareButton-main:hover .icon-facebookShare {
+  background-image: url(../img/spritesheet.png);
+  background-position: -130px -30px;
+  width: 30px;
+  height: 30px;
+}
+
+.icon-googleShare {
+  background-image: url(../img/spritesheet.png);
+  background-position: -60px -130px;
+  width: 30px;
+  height: 30px;
+}
+
+.icon-googleShareWhite, .M__socialShareButton-main:hover .icon-googleShare {
+  background-image: url(../img/spritesheet.png);
+  background-position: -160px 0px;
+  width: 30px;
+  height: 30px;
+}
+
+.icon-linkedShareWhite, .M__socialShareButton-main:hover .icon-linkedinShare {
+  background-image: url(../img/spritesheet.png);
+  background-position: -120px -130px;
+  width: 30px;
+  height: 30px;
+}
+
+.icon-linkedinShare {
+  background-image: url(../img/spritesheet.png);
+  background-position: -90px -130px;
+  width: 30px;
+  height: 30px;
+}
+
+.icon-twitterShare {
+  background-image: url(../img/spritesheet.png);
+  background-position: -49px -81px;
+  width: 30px;
+  height: 31px;
+}
+
+.icon-twitterShareWhite, .M__socialShareButton-main:hover .icon-twitterShare {
+  background-image: url(../img/spritesheet.png);
+  background-position: 0px -130px;
+  width: 30px;
+  height: 30px;
+}
+
+.icon-attachment {
+  background-image: url(../img/spritesheet.png);
+  background-position: -218px -32px;
+  width: 9px;
+  height: 16px;
+}
+
+.icon-calender {
+  background-image: url(../img/spritesheet.png);
+  background-position: -15px -186px;
+  width: 14px;
+  height: 17px;
+}
+
+.icon-calenderRed {
+  background-image: url(../img/spritesheet.png);
+  background-position: 0px -186px;
+  width: 15px;
+  height: 18px;
+}
+
+.icon-map {
+  background-image: url(../img/spritesheet.png);
+  background-position: -41px -186px;
+  width: 11px;
+  height: 15px;
+}
+
+.icon-mapLarge {
+  background-image: url(../img/spritesheet.png);
+  background-position: -115px -112px;
+  width: 12px;
+  height: 16px;
+}
+
+.icon-mapRed, .M__eventIntro-location:hover .M__eventIntro-locationIcon {
+  background-image: url(../img/spritesheet.png);
+  background-position: -29px -186px;
+  width: 12px;
+  height: 16px;
+}
+
+.icon-play {
+  background-image: url(../img/spritesheet.png);
+  background-position: 0px 0px;
+  width: 81px;
+  height: 81px;
+}
+
+.icon-playSmall {
+  background-image: url(../img/spritesheet.png);
+  background-position: -81px -49px;
+  width: 31px;
+  height: 31px;
+}
+
+.icon-tender {
+  background-image: url(../img/spritesheet.png);
+  background-position: -112px -49px;
+  width: 16px;
+  height: 17px;
+}
+
+.icon-thumbPlay {
+  background-image: url(../img/spritesheet.png);
+  background-position: 0px -81px;
+  width: 49px;
+  height: 49px;
+}
+
+.icon-thumbPlayRed, .Thumbnail-main:hover:not(.Thumbnail-main--noHover) .Thumbnail-container .Thumbnail-overlay .Thumbnail-lens .Thumbnail-row .Thumbnail-play .Thumbnail-playIcon {
+  background-image: url(../img/spritesheet.png);
+  background-position: -81px 0px;
+  width: 49px;
+  height: 49px;
+}
+
+/*
+Icon classes can be used entirely standalone. They are named after their original file names.
+
+```html
+<!-- `display: block` sprite -->
+<div class="icon-home"></div>
+
+<!-- `display: inline-block` sprite -->
+<img class="icon-home" />
+```
+*/
+.icon-arrow {
+  background-image: url(../img/spritesheet.png);
+  background-position: -298px -212px;
+  width: 10px;
+  height: 16px;
+}
+
+.icon-arrowWhite, .Heading-prompt:hover .icon-arrow, .TextButton-item:hover .TextButton-col3 .TextButton-arrow {
+  background-image: url(../img/spritesheet.png);
+  background-position: -298px -196px;
+  width: 10px;
+  height: 16px;
+}
+
+.icon-benefits-1 {
+  background-image: url(../img/spritesheet.png);
+  background-position: -73px -154px;
+  width: 73px;
+  height: 73px;
+}
+
+.icon-benefits-2 {
+  background-image: url(../img/spritesheet.png);
+  background-position: -154px -73px;
+  width: 73px;
+  height: 73px;
+}
+
+.icon-benefits-3 {
+  background-image: url(../img/spritesheet.png);
+  background-position: 0px -81px;
+  width: 73px;
+  height: 73px;
+}
+
+.icon-benefits-4 {
+  background-image: url(../img/spritesheet.png);
+  background-position: -73px -81px;
+  width: 73px;
+  height: 73px;
+}
+
+.icon-benefits-5 {
+  background-image: url(../img/spritesheet.png);
+  background-position: -154px 0px;
+  width: 73px;
+  height: 73px;
+}
+
+.icon-benefits-6 {
+  background-image: url(../img/spritesheet.png);
+  background-position: -81px 0px;
+  width: 73px;
+  height: 73px;
+}
+
+.icon-benefits-7 {
+  background-image: url(../img/spritesheet.png);
+  background-position: 0px -154px;
+  width: 73px;
+  height: 73px;
+}
+
+.icon-articleShare {
+  background-image: url(../img/spritesheet.png);
+  background-position: -276px -26px;
+  width: 27px;
+  height: 27px;
+}
+
+.icon-articleShareRed, .M__pullQuote-quote:hover .M__pullQuote-icon {
+  background-image: url(../img/spritesheet.png);
+  background-position: -276px -53px;
+  width: 27px;
+  height: 27px;
+}
+
+.icon-close {
+  background-image: url(../img/spritesheet.png);
+  background-position: -276px -131px;
+  width: 24px;
+  height: 25px;
+}
+
+.icon-closeQuote {
+  background-image: url(../img/spritesheet.png);
+  background-position: -276px 0px;
+  width: 32px;
+  height: 26px;
+}
+
+.icon-closeQuoteRed {
+  background-image: url(../img/spritesheet.png);
+  background-position: -243px -227px;
+  width: 32px;
+  height: 26px;
+}
+
+.icon-closeWhite {
+  background-image: url(../img/spritesheet.png);
+  background-position: -276px -106px;
+  width: 24px;
+  height: 25px;
+}
+
+.icon-dropdown {
+  background-image: url(../img/spritesheet.png);
+  background-position: -257px -98px;
+  width: 10px;
+  height: 7px;
+}
+
+.icon-dropdownWhite, .M__mainNavButton-main:hover:not(.is-activated) .M__mainNavButton-container .M__mainNavButton-centre .M__mainNavButton-arrow {
+  background-image: url(../img/spritesheet.png);
+  background-position: -258px -67px;
+  width: 10px;
+  height: 7px;
+}
+
+.icon-footerDot {
+  background-image: url(../img/spritesheet.png);
+  background-position: -303px -26px;
+  width: 4px;
+  height: 3px;
+}
+
+.icon-login {
+  background-image: url(../img/spritesheet.png);
+  background-position: -276px -244px;
+  width: 13px;
+  height: 13px;
+}
+
+.icon-loginRed, .M__Login-main:hover .M__Login-container .icon-login, .MenuItem-main:hover .MenuItem-container .MenuItem-icon {
+  background-image: url(../img/spritesheet.png);
+  background-position: -289px -244px;
+  width: 13px;
+  height: 13px;
+}
+
+.icon-openQuote {
+  background-image: url(../img/spritesheet.png);
+  background-position: -227px -201px;
+  width: 33px;
+  height: 26px;
+}
+
+.icon-openQuoteRed {
+  background-image: url(../img/spritesheet.png);
+  background-position: -210px -227px;
+  width: 33px;
+  height: 26px;
+}
+
+.icon-pullQuote {
+  background-image: url(../img/spritesheet.png);
+  background-position: -276px -80px;
+  width: 26px;
+  height: 26px;
+}
+
+.icon-search {
+  background-image: url(../img/spritesheet.png);
+  background-position: -276px -176px;
+  width: 20px;
+  height: 20px;
+}
+
+.icon-searchWhite, .M__mainNavsearch-main:hover .M__mainNavsearch-container:not(.is-activated) .M__mainNavsearch-icon, .MenuItem-main--main:hover .MenuItem-container .MenuItem-box .MenuItem-text .MenuItem-icon--search {
+  background-image: url(../img/spritesheet.png);
+  background-position: -276px -156px;
+  width: 20px;
+  height: 20px;
+}
+
+.icon-facebook {
+  background-image: url(../img/spritesheet.png);
+  background-position: -15px -274px;
+  width: 9px;
+  height: 18px;
+}
+
+.icon-facebookBlack {
+  background-image: url(../img/spritesheet.png);
+  background-position: -24px -274px;
+  width: 9px;
+  height: 18px;
+}
+
+.icon-facebookRed, .M__socialLinkButton-icon.icon-facebook:hover, .SocialMedia-icon--facebook:hover, .SocialMedia-icon--facebook--black:hover {
+  background-image: url(../img/spritesheet.png);
+  background-position: -33px -274px;
+  width: 9px;
+  height: 18px;
+}
+
+.icon-google {
+  background-image: url(../img/spritesheet.png);
+  background-position: -257px -171px;
+  width: 18px;
+  height: 18px;
+}
+
+.icon-googleBlack {
+  background-image: url(../img/spritesheet.png);
+  background-position: -258px -49px;
+  width: 18px;
+  height: 18px;
+}
+
+.icon-googleRed, .M__socialLinkButton-icon.icon-google:hover, .SocialMedia-icon--google:hover, .SocialMedia-icon--google--black:hover {
+  background-image: url(../img/spritesheet.png);
+  background-position: -195px -184px;
+  width: 18px;
+  height: 18px;
+}
+
+.icon-linkedin {
+  background-image: url(../img/spritesheet.png);
+  background-position: -257px -80px;
+  width: 19px;
+  height: 18px;
+}
+
+.icon-linkedinBlack {
+  background-image: url(../img/spritesheet.png);
+  background-position: -257px -111px;
+  width: 19px;
+  height: 18px;
+}
+
+.icon-linkedinRed, .M__socialLinkButton-icon.icon-linkedin:hover, .SocialMedia-icon--linkedin:hover, .SocialMedia-icon--linkedin--black:hover {
+  background-image: url(../img/spritesheet.png);
+  background-position: -257px -141px;
   width: 19px;
   height: 18px;
 }
@@ -514,168 +945,168 @@ Icon classes can be used entirely standalone. They are named after their origina
 
 .icon-twitter {
   background-image: url(../img/spritesheet.png);
-  background-position: -109px -203px;
+  background-position: -165px -203px;
   width: 19px;
   height: 16px;
 }
 
 .icon-twitterBlack {
   background-image: url(../img/spritesheet.png);
-  background-position: -128px -203px;
+  background-position: -184px -203px;
   width: 19px;
   height: 16px;
 }
 
 .icon-twitterRed, .M__socialLinkButton-icon.icon-twitter:hover, .SocialMedia-icon--twitter:hover, .SocialMedia-icon--twitter--black:hover {
   background-image: url(../img/spritesheet.png);
-  background-position: -227px -211px;
+  background-position: -146px -203px;
   width: 19px;
   height: 16px;
 }
 
 .icon-youtube {
   background-image: url(../img/spritesheet.png);
-  background-position: -257px -228px;
+  background-position: -276px -228px;
   width: 22px;
   height: 16px;
 }
 
 .icon-youtubeBlack {
   background-image: url(../img/spritesheet.png);
-  background-position: -257px -212px;
+  background-position: -276px -212px;
   width: 22px;
   height: 16px;
 }
 
 .icon-youtubeRed, .M__socialLinkButton-icon.icon-youtube:hover, .SocialMedia-icon--youtube:hover, .SocialMedia-icon--youtube--black:hover {
   background-image: url(../img/spritesheet.png);
-  background-position: -257px -196px;
+  background-position: -276px -196px;
   width: 22px;
   height: 16px;
 }
 
 .icon-commentShare {
   background-image: url(../img/spritesheet.png);
-  background-position: -227px -61px;
+  background-position: -60px -227px;
   width: 30px;
   height: 30px;
 }
 
 .icon-commentShareWhite, .M__socialShareButton-main:hover .icon-commentShare {
   background-image: url(../img/spritesheet.png);
-  background-position: -227px -91px;
+  background-position: -227px -171px;
   width: 30px;
   height: 30px;
 }
 
 .icon-emailShare {
   background-image: url(../img/spritesheet.png);
-  background-position: -227px -121px;
+  background-position: 0px -227px;
   width: 30px;
   height: 30px;
 }
 
 .icon-emailShareWhite, .M__socialShareButton-main:hover .icon-emailShare {
   background-image: url(../img/spritesheet.png);
-  background-position: -227px -181px;
+  background-position: -90px -227px;
   width: 30px;
   height: 30px;
 }
 
 .icon-facebookShare {
   background-image: url(../img/spritesheet.png);
-  background-position: 0px -227px;
+  background-position: -120px -227px;
   width: 30px;
   height: 30px;
 }
 
 .icon-facebookShareWhite, .M__socialShareButton-main:hover .icon-facebookShare {
   background-image: url(../img/spritesheet.png);
-  background-position: -120px -227px;
+  background-position: -150px -227px;
   width: 30px;
   height: 30px;
 }
 
 .icon-googleShare {
   background-image: url(../img/spritesheet.png);
-  background-position: -30px -227px;
+  background-position: -180px -227px;
   width: 30px;
   height: 30px;
 }
 
 .icon-googleShareWhite, .M__socialShareButton-main:hover .icon-googleShare {
   background-image: url(../img/spritesheet.png);
-  background-position: -60px -227px;
+  background-position: -227px -141px;
   width: 30px;
   height: 30px;
 }
 
 .icon-linkedShareWhite, .M__socialShareButton-main:hover .icon-linkedinShare {
   background-image: url(../img/spritesheet.png);
-  background-position: -227px -31px;
+  background-position: -227px -111px;
   width: 30px;
   height: 30px;
 }
 
 .icon-linkedinShare {
   background-image: url(../img/spritesheet.png);
-  background-position: -90px -227px;
+  background-position: -30px -227px;
   width: 30px;
   height: 30px;
 }
 
 .icon-twitterShare {
   background-image: url(../img/spritesheet.png);
-  background-position: -227px 0px;
+  background-position: -227px -80px;
   width: 30px;
   height: 31px;
 }
 
 .icon-twitterShareWhite, .M__socialShareButton-main:hover .icon-twitterShare {
   background-image: url(../img/spritesheet.png);
-  background-position: -227px -151px;
+  background-position: -195px -154px;
   width: 30px;
   height: 30px;
 }
 
 .icon-attachment {
   background-image: url(../img/spritesheet.png);
-  background-position: -289px -194px;
+  background-position: -298px -228px;
   width: 9px;
   height: 16px;
 }
 
 .icon-calender {
   background-image: url(../img/spritesheet.png);
-  background-position: -289px -18px;
+  background-position: -213px -184px;
   width: 14px;
   height: 17px;
 }
 
 .icon-calenderRed {
   background-image: url(../img/spritesheet.png);
-  background-position: -289px 0px;
+  background-position: 0px -274px;
   width: 15px;
   height: 18px;
 }
 
 .icon-map {
   background-image: url(../img/spritesheet.png);
-  background-position: -289px -93px;
+  background-position: -203px -203px;
   width: 11px;
   height: 15px;
 }
 
 .icon-mapLarge {
   background-image: url(../img/spritesheet.png);
-  background-position: -289px -51px;
+  background-position: -296px -176px;
   width: 12px;
   height: 16px;
 }
 
 .icon-mapRed, .M__eventIntro-location:hover .M__eventIntro-locationIcon {
   background-image: url(../img/spritesheet.png);
-  background-position: -289px -35px;
+  background-position: -296px -156px;
   width: 12px;
   height: 16px;
 }
@@ -689,28 +1120,28 @@ Icon classes can be used entirely standalone. They are named after their origina
 
 .icon-playSmall {
   background-image: url(../img/spritesheet.png);
-  background-position: -171px -154px;
+  background-position: -227px -49px;
   width: 31px;
   height: 31px;
 }
 
 .icon-tender {
   background-image: url(../img/spritesheet.png);
-  background-position: -51px -257px;
+  background-position: -260px -201px;
   width: 16px;
   height: 17px;
 }
 
 .icon-thumbPlay {
   background-image: url(../img/spritesheet.png);
-  background-position: -73px -154px;
+  background-position: -227px 0px;
   width: 49px;
   height: 49px;
 }
 
 .icon-thumbPlayRed, .Thumbnail-main:hover:not(.Thumbnail-main--noHover) .Thumbnail-container .Thumbnail-overlay .Thumbnail-lens .Thumbnail-row .Thumbnail-play .Thumbnail-playIcon {
   background-image: url(../img/spritesheet.png);
-  background-position: -122px -154px;
+  background-position: -146px -154px;
   width: 49px;
   height: 49px;
 }
@@ -720,7 +1151,7 @@ Icon classes can be used entirely standalone. They are named after their origina
 }
 
 .A__magazinePreviewTitle-main {
-  font: 700 25px "Roboto Condensed";
+  font: 700 25px "Roboto Condensed", Arial;
   text-transform: uppercase;
 }
 
@@ -755,7 +1186,7 @@ Icon classes can be used entirely standalone. They are named after their origina
 }
 
 .A__textMSEI-main {
-  font: 700 26px "Roboto Condensed";
+  font: 700 26px "Roboto Condensed", Arial;
   text-transform: uppercase;
   color: white;
 }
@@ -773,7 +1204,7 @@ Icon classes can be used entirely standalone. They are named after their origina
 .A__smallTitle-main {
   text-transform: uppercase;
   white-space: nowrap;
-  font: 700 16px "Roboto Condensed";
+  font: 700 16px "Roboto Condensed", Arial;
   color: #aaaaaa;
 }
 
@@ -781,42 +1212,6 @@ Icon classes can be used entirely standalone. They are named after their origina
   text-align: center;
 }
 
-/*
-
-//-///////////////////////////////////////////////////////////////////////////////
-//-                                                                             //
-//-                                                                             //
-//-    MOLECULE                                                                 //
-//-   ---------------                                                           //
-//-    CLOSE BUTTON                                                             //
-//-                                                                             //
-//-                                                                             //
-//-///////////////////////////////////////////////////////////////////////////////
-
-
-.M__closeButton-main {
-    padding: 25px;
-    background: #adadad;
-    border-radius: 35px;
-    color: black;
-    text-transform: uppercase;
-    font: 700 24px "Roboto Condensed"
-}
-.M__closeButton-main:hover {
-    background: red;
-    color: white;
-}
-.M__closeButton-main:hover .M__closeButton-col1 {
-    @extend .icon-closeWhite
-}
-.M__closeButton-col1 {
-    margin-top: 2px;
-}
-.M__closeButton-col2 {
-    padding-left: 10px;
-}
-
-*/
 .M__contentVideo-main {
   margin: 30px 0;
   text-align: center;
@@ -829,7 +1224,7 @@ Icon classes can be used entirely standalone. They are named after their origina
   display: table;
   margin: 0 auto;
   text-transform: uppercase;
-  font: 700 16px "Roboto Condensed";
+  font: 700 16px "Roboto Condensed", Arial;
   letter-spacing: 1px;
 }
 
@@ -909,7 +1304,7 @@ Icon classes can be used entirely standalone. They are named after their origina
   background: red;
   color: white;
   text-transform: uppercase;
-  font: 700 13px "Roboto Condensed";
+  font: 700 13px "Roboto Condensed", Arial;
   padding: 5px 10px;
   letter-spacing: 1px;
   margin-right: 10px;
@@ -930,7 +1325,7 @@ Icon classes can be used entirely standalone. They are named after their origina
 }
 
 .M__magazinePreviewArticle-main {
-  font: 700 16px "Roboto";
+  font: 700 16px "Roboto, Arial";
   color: black;
   border-top: 1px solid #aaa;
   padding: 10px 0;
@@ -987,7 +1382,7 @@ Icon classes can be used entirely standalone. They are named after their origina
 
 .Heading-main {
   border-bottom: solid 8px black;
-  font-family: "Roboto Condensed";
+  font-family: "Roboto Condensed", Arial;
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -1078,7 +1473,7 @@ Icon classes can be used entirely standalone. They are named after their origina
 .M__contentButton-main {
   width: 100%;
   padding: 11px;
-  font: 700 16px "Roboto Condensed";
+  font: 700 16px "Roboto Condensed", Arial;
   text-transform: uppercase;
   background: #eee;
   border: none;
@@ -1379,7 +1774,7 @@ Icon classes can be used entirely standalone. They are named after their origina
   color: white;
   border: none;
   text-transform: uppercase;
-  font-family: "Roboto Condensed";
+  font-family: "Roboto Condensed", Arial;
   font-weight: 700;
 }
 
@@ -1531,7 +1926,7 @@ Icon classes can be used entirely standalone. They are named after their origina
 .M__pullQuote-main {
   height: auto;
   background: white;
-  font-family: "Roboto Condensed";
+  font-family: "Roboto Condensed", Arial;
   font-weight: 700;
   padding: 5px 0;
   width: 240px;
@@ -1615,7 +2010,7 @@ Icon classes can be used entirely standalone. They are named after their origina
 }
 
 .M__footColumn-heading {
-  font: 700 16px "Roboto Condensed";
+  font: 700 16px "Roboto Condensed", Arial;
   text-transform: uppercase;
   color: white;
   margin-bottom: 15px;
@@ -1651,7 +2046,7 @@ Icon classes can be used entirely standalone. They are named after their origina
 .M__eventIntro-dateContainer {
   color: red;
   text-transform: uppercase;
-  font: 700 16px "Roboto Condensed";
+  font: 700 16px "Roboto Condensed", Arial;
 }
 
 .M__eventIntro-seperator {
@@ -1665,12 +2060,12 @@ Icon classes can be used entirely standalone. They are named after their origina
 .M__eventIntro-location {
   color: #bbb;
   text-transform: uppercase;
-  font: 700 16px "Roboto Condensed";
+  font: 700 16px "Roboto Condensed", Arial;
   margin-top: 5px;
 }
 
 .M__eventIntro-buttonsContainer {
-  font: 700 13px Roboto;
+  font: 700 13px Roboto, Arial;
   text-transform: uppercase;
 }
 
@@ -1795,7 +2190,7 @@ Icon classes can be used entirely standalone. They are named after their origina
 
 .M__mainNavButton-main {
   text-align: center;
-  font-family: "Roboto Condensed";
+  font-family: "Roboto Condensed", Arial;
 }
 
 .M__mainNavButton-centre {
@@ -1867,7 +2262,7 @@ Icon classes can be used entirely standalone. They are named after their origina
 
 .nf-desc {
   background: #eee;
-  font: 700 16px "Roboto Condensed";
+  font: 700 16px "Roboto Condensed", Arial;
   text-transform: uppercase;
   padding: 5px 20px;
 }
@@ -1881,7 +2276,7 @@ Icon classes can be used entirely standalone. They are named after their origina
 }
 
 label {
-  font: 400 16 Roboto;
+  font: 400 16 Roboto, Arial;
   color: #aaa;
 }
 
@@ -1890,7 +2285,7 @@ select.ninja-forms-field, input.ninja-forms-field {
   width: 100%;
   margin-top: 10px;
   padding: 5px;
-  font: 700 16px Roboto;
+  font: 700 16px Roboto, Arial;
   border: 1px solid #ccc;
 }
 
@@ -1903,7 +2298,7 @@ input[type='submit'].ninja-forms-field {
   color: white;
   text-transform: uppercase;
   padding: 13px;
-  font: 700 26px "Roboto Condensed";
+  font: 700 26px "Roboto Condensed", Arial;
   height: auto;
   border: none;
 }
@@ -1931,7 +2326,7 @@ input[type='submit'].ninja-forms-field {
 .M__button-main {
     background: #eee;
     text-transform: uppercase;
-    font: 700 16px "Roboto Condensed";
+    font: 700 16px "Roboto Condensed", Arial;
     padding: 10px 20px;
     color: black;
     border: 0;
@@ -1961,7 +2356,7 @@ input[type='submit'].ninja-forms-field {
 
 .M__textPrompt-col1-row1 {
     font-weight: 700;
-    font-family: "Roboto Condensed";
+    font-family: "Roboto Condensed", Arial;
 }
 .M__textPrompt-row2:hover {
     background: #b8b8b8;
@@ -2012,7 +2407,7 @@ input[type='submit'].ninja-forms-field {
     width: 100%;
 }
 .M__textPrompt-row1 {
-    font: 700 16px "Roboto Condensed";
+    font: 700 16px "Roboto Condensed", Arial;
     padding: 15px;
     background: #eeeeee;
 }
@@ -2042,7 +2437,7 @@ input[type='submit'].ninja-forms-field {
 .M__textPrompt-text {
     vertical-align: middle;
     padding: 0 20px 0 20px;
-    font: 700 16px Roboto;
+    font: 700 16px Roboto, Arial;
     width: 100%;
 }
 .M__textPrompt-label {
@@ -2300,7 +2695,7 @@ input[type='submit'].ninja-forms-field {
 }
 
 .O__categoryList-item--category:nth-child(-n+3) .M__contentThumb-title {
-  font: 700 38px "Roboto Condensed";
+  font: 700 38px "Roboto Condensed", Arial;
   margin-top: 10px;
 }
 
@@ -2535,7 +2930,7 @@ O__categoryList-heading {
 
 .MenuItem-main--main {
   background: #eeeeee;
-  font: 700 16px "Roboto Condensed";
+  font: 700 16px "Roboto Condensed", Arial;
   color: black;
   border-left: 1px solid white;
   padding: 0;
@@ -2615,7 +3010,7 @@ O__categoryList-heading {
 }
 
 .Column-heading {
-  font: 700 16px "Roboto Condensed";
+  font: 700 16px "Roboto Condensed", Arial;
   color: white;
   text-transform: uppercase;
 }
@@ -2653,7 +3048,7 @@ O__categoryList-heading {
 
 .Heading-main {
   border-bottom: solid 8px black;
-  font-family: "Roboto Condensed";
+  font-family: "Roboto Condensed", Arial;
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -2956,7 +3351,7 @@ a:nth-last-of-type(1) .TextButton-item {
 .TextButton-heading {
   background: #eeeeee;
   padding: 10px 12px;
-  font: 700 16px "Roboto Condensed";
+  font: 700 16px "Roboto Condensed", Arial;
   text-transform: uppercase;
   width: 100%;
   padding: 15px 20px;
@@ -3034,7 +3429,7 @@ a:nth-last-of-type(1) .TextButton-item {
 }
 
 .TextButton-text--bold {
-  font: 700 16px "Roboto Condensed";
+  font: 700 16px "Roboto Condensed", Arial;
   text-transform: uppercase;
 }
 
@@ -3043,7 +3438,7 @@ a:nth-last-of-type(1) .TextButton-item {
 }
 
 .TextButton-item--bold {
-  font: 700 16px "Roboto Condensed";
+  font: 700 16px "Roboto Condensed", Arial;
   text-transform: uppercase;
 }
 
@@ -3058,7 +3453,7 @@ a:nth-last-of-type(1) .TextButton-item {
 
 .TextButton-row1 {
   text-transform: uppercase;
-  font: 700 16px "Roboto Condensed";
+  font: 700 16px "Roboto Condensed", Arial;
   padding: 15px;
   background: #eeeeee;
 }
@@ -3226,7 +3621,7 @@ a:nth-last-of-type(1) .TextButton-item {
   color: white;
   border: none;
   text-transform: uppercase;
-  font-family: "Roboto Condensed";
+  font-family: "Roboto Condensed", Arial;
   font-weight: 700;
   vertical-align: middle;
 }
@@ -4493,7 +4888,7 @@ textarea {
 }
 
 .Team-name {
-  font: 700 26px Roboto;
+  font: 700 26px Roboto, Arial;
   color: red;
 }
 
@@ -4520,7 +4915,7 @@ textarea {
 }
 
 .Team-position {
-  font: 700 16px Roboto;
+  font: 700 16px Roboto, Arial;
   padding-bottom: 10px;
 }
 
@@ -4533,7 +4928,7 @@ textarea {
   background-size: auto;
   box-sizing: border-box;
   color: black;
-  font-family: 'Roboto Condensed';
+  font-family: "'Roboto, Arial Condensed", Arial;
   font-size: 16px;
   font-stretch: normal;
   font-style: normal;
@@ -4867,7 +5262,7 @@ select {
 
 #Notifications-title {
   text-transform: uppercase;
-  font: 700 130px "Roboto Condensed";
+  font: 700 130px "Roboto Condensed", Arial;
   line-height: 110px;
   padding-bottom: 30px;
 }
@@ -5043,7 +5438,7 @@ select {
 
 .nf-desc {
   background: #eee;
-  font: 700 16px "Roboto Condensed";
+  font: 700 16px "Roboto Condensed", Arial;
   text-transform: uppercase;
   padding: 5px 20px;
 }
@@ -5057,7 +5452,7 @@ select {
 }
 
 label {
-  font: 400 16 Roboto;
+  font: 400 16 Roboto, Arial;
   color: #aaa;
 }
 
@@ -5067,7 +5462,7 @@ input[class^="s2"], select[class^="s2"] {
   width: 100%;
   margin-top: 10px;
   padding: 5px;
-  font: 700 16px Roboto;
+  font: 700 16px Roboto, Arial;
   border: 1px solid #ccc;
   margin-bottom: 25px;
 }
@@ -5081,7 +5476,7 @@ input[type='submit'].ninja-forms-field, #s2member-pro-paypal-registration-submit
   color: white;
   text-transform: uppercase;
   padding: 13px;
-  font: 700 26px "Roboto Condensed";
+  font: 700 26px "Roboto Condensed", Arial;
   height: auto;
   border: none;
   width: 100%;
@@ -5120,7 +5515,7 @@ input[type='submit'].ninja-forms-field:hover {
   color: white;
   text-transform: uppercase;
   padding: 13px;
-  font: 700 16px "Roboto Condensed";
+  font: 700 16px "Roboto Condensed", Arial;
   height: auto;
   border: none;
   width: 250px;
@@ -5338,6 +5733,13 @@ input[class^="s2"] {
   #gpd_Login-forgot {
     padding: 0;
   }
+}
+
+.toc-main {
+  width: 320px;
+  margin-left: 22px;
+  margin-bottom: 30px;
+  text-transform: uppercase;
 }
 
 /*# sourceMappingURL=stylesheet.css.map */
