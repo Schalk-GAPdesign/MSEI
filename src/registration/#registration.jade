@@ -9,7 +9,7 @@ include ../_global/includes/head/head.jade
 //-    LAYOUT                      d      df                f      fd d                //
 //-   ---------------                      d d     s    f       f      ff  fd           //
 //-   ---------------    f              s    d    d   d      f sa s  s         g           //
-//-                                       s     s  dxa          ff   s                 //
+//-                                       s     s  dxa    f     ff   s                 //
 //-                          f                       f  d                          //
 //-///////////////////////////////////////////////////////////////////////////////
 
@@ -17,7 +17,7 @@ include ../_global/includes/head/head.jade
     #Registration-centre.u-cf
         #Registration-col1.u-floatLeft
             #Registration-col1-row1
-                +Heading('Login')
+                +Heading('Sign In')
             #Registration-col1-row2
                 include includes/login.jade
             #Registration-col1-row3
@@ -32,7 +32,7 @@ include ../_global/includes/head/head.jade
             #Registration-col2-row2
                 .TextButton-main
                     .TextButton-content
-                            .TextButton-heading.u-table Free membership to Metering.com gives you:
+                            .TextButton-heading.u-table Free Membership gives you:
                             if article.benefits
                                 each val in article.benefits
                                         .TextButton-item.TextButton-item--list.TextButton-item--noHover.u-table

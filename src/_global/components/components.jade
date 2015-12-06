@@ -1187,11 +1187,14 @@ mixin Team
                     each level1 in val.data
                         .Team-item.u-cf
                             .Team-col1.u-floatLeft
-                                img(src="http://lorempixel.com/110/155")
+                                if article.team
+                                    img(src="img/#{level1.img}")
+                                else
+                                    img(src="img/content/placeholder.png")
                             .Team-col2.u-floatLeft
                                 .Team-name= level1.name
                                 .Team-position= level1.position
-                                a(href="#").Team-email= level1.email
+                                a(href="mailto:#{level1.email}").Team-email= level1.email
                                 .Team-number= level1.phone
 
         .Team-item.Team-item--company
@@ -1213,7 +1216,10 @@ mixin Team--advisory
                     each level1 in val.data
                         .Team-item.Team-item--advisory.u-cf
                             .Team-col1.u-floatLeft
-                                img(src="http://lorempixel.com/110/155")
+                                if level1.img
+                                    img(src="img/#{level1.img}")
+                                else
+                                    img(src="img/content/placeholder.png")
                             .Team-col2.u-floatLeft
                                 .Team-name= level1.name
                                 .Team-position.Team-position--red= level1.position

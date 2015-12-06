@@ -25,14 +25,14 @@ include ../_global/includes/head/head.jade
                 if article.search
                     #Notifications-search
                         div
-                            p Perhaps we can help you find it?
+                            p Can we help you find the right page?
                         div
                             +Search--error
 
                 if article.recommendedText
                     #Notifications-recommendedText
                         div
-                            p You might be looking for one of these popular stories:
+                            p You might want to read one of these popular stories:
                         div
                             ul
                                 each val in [1,2,3,4,5]
@@ -53,7 +53,7 @@ if article.recommended
     #Notifications-recommended
         #Notifications-recommendedCenter
             #Notifications-recommendedHeader
-                +Heading('Popular News')
+                +Heading('Most Read')
             #Notifications-recommendedContent.u-cf
                 each val in [1,2,3]
                     .u-col3.u-floatLeft

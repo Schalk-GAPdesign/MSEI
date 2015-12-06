@@ -5390,13 +5390,9 @@ select {
   }
 }
 
-#Registration-centre {
-  width: 1255px;
-  margin: 90px auto;
-}
-
-#Registration-col1, #Registration-col2 {
-  width: 600px;
+.login-username, login-password, login-remember {
+  padding: 0;
+  margin: 0;
 }
 
 .TextButton-col2--benefits {
@@ -5405,23 +5401,6 @@ select {
 
 .TextButton-text--benefits {
   padding-left: 10px;
-}
-
-#Registration-heading {
-  font-weight: 700;
-}
-
-#Registration-col2-row2 {
-  margin-top: 35px;
-}
-
-#Registration-col1-row2 {
-  background: #eee;
-}
-
-.login-username, login-password, login-remember {
-  padding: 0;
-  margin: 0;
 }
 
 .ninja-forms-cont {
@@ -5502,10 +5481,6 @@ input[type='submit'].ninja-forms-field:hover {
   display: none;
 }
 
-#Registration-col1-row2 {
-  padding: 20px;
-}
-
 .login-password {
   margin-top: 3px;
 }
@@ -5519,6 +5494,51 @@ input[type='submit'].ninja-forms-field:hover {
   height: auto;
   border: none;
   width: 250px;
+}
+
+.toc-main {
+  width: 320px;
+  margin-left: 22px;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+
+#Registration-col1-row2 {
+  padding: 20px;
+}
+
+#Registration-centre {
+  width: 1255px;
+  margin: 90px auto;
+}
+
+#Registration-col1,
+#Registration-col2 {
+  width: 600px;
+}
+
+#Registration-heading {
+  font-weight: 700;
+}
+
+#Registration-col2-row2 {
+  margin-top: 35px;
+}
+
+#Registration-col1-row2 {
+  background: #eee;
+}
+
+#Registration-col1-row3 {
+  margin-top: 40px;
+}
+
+#Registration-s2 {
+  border: 1px solid #ccc;
+}
+
+#Registration-s2Box {
+  padding: 20px;
 }
 
 #gpd_Login-forgot {
@@ -5546,24 +5566,28 @@ input[type="checkbox"] {
   height: 20px;
 }
 
+#user_login {
+  margin-bottom: 0px;
+}
+
+#user_pass {
+  margin-bottom: 5px;
+}
+
+textarea[class^="s2"] {
+  margin-bottom: 25px;
+}
+
+input[class^="s2"] {
+  color: black !important;
+}
+
 #s2member-pro-paypal-registration-form-options-section-title {
   display: none;
 }
 
 #s2member-pro-paypal-registration-options {
   display: none;
-}
-
-#Registration-col1-row3 {
-  margin-top: 40px;
-}
-
-#Registration-s2 {
-  border: 1px solid #ccc;
-}
-
-#Registration-s2Box {
-  padding: 20px;
 }
 
 #s2member-pro-paypal-registration-form-registration-section-title {
@@ -5609,14 +5633,6 @@ input[type="checkbox"] {
   padding-bottom: 40px;
 }
 
-#user_login {
-  margin-bottom: 0px;
-}
-
-#user_pass {
-  margin-bottom: 5px;
-}
-
 #s2member-pro-paypal-registration-custom-reg-field-terms-conditions {
   margin: 0;
 }
@@ -5629,16 +5645,8 @@ input[type="checkbox"] {
   display: none;
 }
 
-textarea[class^="s2"] {
-  margin-bottom: 25px;
-}
-
 #s2member-pro-paypal-registration-custom-reg-field-terms-conditions {
   margin-bottom: 0px;
-}
-
-input[class^="s2"] {
-  color: black !important;
 }
 
 #s2member-pro-paypal-registration-custom-reg-field-user-address {
@@ -5672,15 +5680,18 @@ input[class^="s2"] {
   #s2member-pro-paypal-registration-custom-reg-field-subscribe {
     margin-bottom: 30px;
   }
-  select.ninja-forms-field, input.ninja-forms-field, #user_login, #user_pass,
-  input[class^="s2"]:not[type="checkbox"], select[class^="s2"]:not[type="checkbox"], #user_login, #user_pass {
+  select.ninja-forms-field,
+  input.ninja-forms-field,
+  #user_login,
+  #user_pass,
+  input[class^="s2"]:not[type="checkbox"],
+  select[class^="s2"]:not[type="checkbox"],
+  #user_login,
+  #user_pass {
     height: 70px;
     font-size: 30px;
     padding: 0 10px;
   }
-}
-
-@media (max-width: 1000px) {
   #Registration-col1 {
     width: 100%;
     padding-right: 100px;
@@ -5719,7 +5730,8 @@ input[class^="s2"] {
   #s2member-pro-paypal-registration-submit {
     padding: 22px 0;
   }
-  #user_login, #user_pass {
+  #user_login,
+  #user_pass {
     height: 80px;
     font-size: 22px;
     padding-left: 10px;
@@ -5733,13 +5745,6 @@ input[class^="s2"] {
   #gpd_Login-forgot {
     padding: 0;
   }
-}
-
-.toc-main {
-  width: 320px;
-  margin-left: 22px;
-  margin-bottom: 30px;
-  text-transform: uppercase;
 }
 
 /*# sourceMappingURL=stylesheet.css.map */
